@@ -65,8 +65,8 @@
             <a class="t-sm c-up w-semi" href="reports.html">Open queue</a></div>
           <div class="panel-body panel-body-flush">
             <div class="table-wrap" style="border:0">
-              <table class="data"><thead><tr>
-                <th>Type</th><th>Content</th><th>Reported by</th><th>Time</th><th>Status</th>
+              <table class="data is-compact"><thead><tr>
+                <th>Report</th><th>Status</th><th class="ta-r">When</th>
               </tr></thead><tbody id="recentReports"></tbody></table>
             </div>
           </div>
@@ -137,9 +137,11 @@ MB.ready(function () {
     }).join('');
 
     var max = Math.max.apply(null, d.growth);
-    document.getElementById('growthBars').innerHTML = d.growth.map(function (v) {
-      return '<div class="bar" title="' + MB.fmt.compact(v) + '"><i style="height:' +
-        Math.round(v / max * 100) + '%"></i></div>';
+    document.getElementById('growthBars').innerHTML = d.growth.map(function (v, i) {
+      /* the height belongs to the bar itself — a child cannot be a percentage
+         of a parent that has collapsed */
+      return '<div class="bar" style="height:' + Math.max(4, Math.round(v / max * 100)) +
+        '%" title="' + d.growth_labels[i] + ': ' + MB.fmt.compact(v) + '"><i></i></div>';
     }).join('');
     document.getElementById('growthAxis').innerHTML =
       d.growth_labels.map(function (l) { return '<span>' + l + '</span>'; }).join('');
@@ -166,10 +168,15 @@ MB.ready(function () {
   });
 
   MB.api.list('admin/reports').then(function (rows) {
-    document.getElementById('recentReports').innerHTML = rows.slice(0, 5).map(function (r) {
-      return '<tr><td>' + r.type.replace(/_/g, ' ') + '</td><td>' + r.content + '</td>' +
-        '<td>' + r.reported_by + '</td><td class="c-3">' + MB.fmt.ago(r.created_at) + '</td>' +
-        '<td>' + statusBadge(r.status) + '</td></tr>';
+    document.getElementById('recentReports').innerHTML = rows.slice(0, 6).map(function (r) {
+      var tone = { high:'c-down', medium:'c-warn', low:'c-3' }[r.priority] || 'c-3';
+      return '<tr>' +
+        '<td><div class="truncate" style="max-width:280px">' + MB.esc(r.excerpt) + '</div>' +
+          '<div class="h c-3"><span class="' + tone + '">' +
+          MB.esc(r.reason.replace(/_/g, ' ')) + '</span> · ' + MB.esc(r.target_type) +
+          ' · @' + MB.esc(r.reported_by) + '</div></td>' +
+        '<td>' + statusBadge(r.status) + '</td>' +
+        '<td class="c-3 ta-r" style="white-space:nowrap">' + MB.fmt.ago(r.created_at) + '</td></tr>';
     }).join('');
   });
 });

@@ -780,13 +780,13 @@ a.chip-market:hover { border-color: var(--mb-green-line); color: var(--mb-green)
 .table-wrap { overflow-x: auto; border: 1px solid var(--mb-border); border-radius: var(--mb-r-md); background: var(--mb-surface); }
 table.data { width: 100%; min-width: 640px; border-collapse: collapse; font-size: var(--mb-t-sm); }
 table.data th {
-  text-align: left; padding: var(--mb-s3) var(--mb-s4);
+  text-align: left; padding: var(--mb-s3) var(--mb-s5);
   font-size: var(--mb-t-xs); font-weight: var(--mb-w-bold);
   color: var(--mb-text-3); text-transform: uppercase; letter-spacing: .06em;
   border-bottom: 1px solid var(--mb-border-2); white-space: nowrap;
   background: var(--mb-surface-2);
 }
-table.data td { padding: var(--mb-s3) var(--mb-s4); border-bottom: 1px solid var(--mb-border); vertical-align: middle; }
+table.data td { padding: var(--mb-s4) var(--mb-s5); border-bottom: 1px solid var(--mb-border); vertical-align: middle; }
 table.data tr:last-child td { border-bottom: 0; }
 table.data tbody tr { transition: background var(--mb-fast) var(--mb-ease); }
 table.data tbody tr:hover { background: var(--mb-surface-2); }
@@ -1052,7 +1052,7 @@ table.data td.num { text-align: right; font-variant-numeric: tabular-nums; }
 .datatable { border: 1px solid var(--mb-border); border-radius: var(--mb-r-md); background: var(--mb-surface); overflow: hidden; }
 .dt-toolbar {
   display: flex; flex-wrap: wrap; align-items: center; gap: var(--mb-s2);
-  padding: var(--mb-s3) var(--mb-s4); border-bottom: 1px solid var(--mb-border);
+  padding: var(--mb-s4) var(--mb-s5); border-bottom: 1px solid var(--mb-border);
   background: var(--mb-surface);
 }
 .dt-search { flex: 1; min-width: 180px; max-width: 320px; }
@@ -1083,7 +1083,7 @@ table.data tr.is-selected { background: var(--mb-green-soft); }
 
 .dt-foot {
   display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between;
-  gap: var(--mb-s3); padding: var(--mb-s3) var(--mb-s4);
+  gap: var(--mb-s3); padding: var(--mb-s4) var(--mb-s5);
   border-top: 1px solid var(--mb-border); background: var(--mb-surface);
 }
 .dt-count { font-size: var(--mb-t-xs); color: var(--mb-text-3); font-variant-numeric: tabular-nums; }

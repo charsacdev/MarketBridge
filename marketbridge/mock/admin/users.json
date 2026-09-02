@@ -10,8 +10,8 @@
       "role": "signal_provider",
       "status": "banned",
       "is_verified": true,
-      "joined_at": "2024-10-10T05:56:07.063Z",
-      "last_seen_at": "2026-09-01T20:03:07.071Z",
+      "joined_at": "2024-10-10T07:41:06.791Z",
+      "last_seen_at": "2026-09-01T21:48:06.793Z",
       "followers": 1174,
       "following": 295,
       "signals": 40,
@@ -33,7 +33,7 @@
         "currency": "USD",
         "landing_company": "svg",
         "last_recorded_balance": 3301.28,
-        "balance_recorded_at": "2026-09-01T11:41:07.071Z",
+        "balance_recorded_at": "2026-09-01T13:26:06.793Z",
         "scopes": [
           "read",
           "trade",
@@ -46,28 +46,28 @@
           "name": "V75 (1s) Room",
           "kind": "market",
           "role": "member",
-          "joined_at": "2026-01-11T13:43:07.071Z"
+          "joined_at": "2026-01-11T15:28:06.793Z"
         },
         {
           "id": "room_BOOM500",
           "name": "Boom 500 Room",
           "kind": "market",
           "role": "member",
-          "joined_at": "2026-07-06T08:16:07.071Z"
+          "joined_at": "2026-07-06T10:01:06.793Z"
         },
         {
           "id": "room_frxAUDUSD",
           "name": "AUD/USD Room",
           "kind": "market",
           "role": "member",
-          "joined_at": "2025-12-22T19:55:07.071Z"
+          "joined_at": "2025-12-22T21:40:06.794Z"
         },
         {
           "id": "room_cryLTCUSD",
           "name": "LTC/USD Room",
           "kind": "market",
           "role": "member",
-          "joined_at": "2026-05-22T18:06:07.071Z"
+          "joined_at": "2026-05-22T19:51:06.794Z"
         }
       ],
       "security": {
@@ -80,7 +80,7 @@
         "device_type": "desktop",
         "two_factor": true,
         "failed_logins_30d": 4,
-        "password_changed_at": "2026-01-29T07:22:07.071Z",
+        "password_changed_at": "2026-01-29T09:07:06.794Z",
         "sessions": [
           {
             "ip": "49.10.173.194",
@@ -89,7 +89,7 @@
             "os": "macOS 14",
             "browser": "Chrome 127",
             "type": "desktop",
-            "last_active": "2026-08-16T19:37:07.071Z",
+            "last_active": "2026-08-16T21:22:06.794Z",
             "current": true
           },
           {
@@ -99,7 +99,7 @@
             "os": "iOS 17.5",
             "browser": "Safari 17",
             "type": "mobile",
-            "last_active": "2026-08-25T18:49:07.071Z",
+            "last_active": "2026-08-25T20:34:06.794Z",
             "current": false
           }
         ]
@@ -107,7 +107,7 @@
       "flags": {
         "reports_against": 5,
         "warnings": 2,
-        "suspended_until": "2026-10-02T05:29:07.071Z"
+        "suspended_until": "2026-10-02T07:14:06.794Z"
       }
     },
     {
@@ -120,8 +120,8 @@
       "role": "signal_provider",
       "status": "active",
       "is_verified": true,
-      "joined_at": "2025-09-20T06:08:07.071Z",
-      "last_seen_at": "2026-08-21T12:57:07.071Z",
+      "joined_at": "2025-09-20T07:53:06.794Z",
+      "last_seen_at": "2026-08-21T14:42:06.794Z",
       "followers": 1680,
       "following": 119,
       "signals": 104,
@@ -143,7 +143,7 @@
         "currency": "USD",
         "landing_company": "svg",
         "last_recorded_balance": 11762.09,
-        "balance_recorded_at": "2026-09-01T14:32:07.071Z",
+        "balance_recorded_at": "2026-09-01T16:17:06.794Z",
         "scopes": [
           "read",
           "trade",
@@ -156,21 +156,21 @@
           "name": "Boom 1000 Room",
           "kind": "market",
           "role": "member",
-          "joined_at": "2025-12-26T22:56:07.071Z"
+          "joined_at": "2025-12-27T00:41:06.794Z"
         },
         {
           "id": "room_frxUSDJPY",
           "name": "USD/JPY Room",
           "kind": "market",
           "role": "member",
-          "joined_at": "2026-01-30T12:55:07.071Z"
+          "joined_at": "2026-01-30T14:40:06.794Z"
         },
         {
           "id": "room_cryXRPUSD",
           "name": "XRP/USD Room",
           "kind": "market",
           "role": "member",
-          "joined_at": "2026-08-16T16:26:07.071Z"
+          "joined_at": "2026-08-16T18:11:06.794Z"
         }
       ],
       "security": {
@@ -183,7 +183,7 @@
         "device_type": "desktop",
         "two_factor": true,
         "failed_logins_30d": 3,
-        "password_changed_at": "2026-04-26T17:55:07.071Z",
+        "password_changed_at": "2026-04-26T19:40:06.794Z",
         "sessions": [
           {
             "ip": "124.253.130.158",
@@ -192,7 +192,7 @@
             "os": "Windows 10",
             "browser": "Edge 128",
             "type": "desktop",
-            "last_active": "2026-08-14T08:26:07.071Z",
+            "last_active": "2026-08-14T10:11:06.794Z",
             "current": false
           },
           {
@@ -202,7 +202,7 @@
             "os": "Windows 11",
             "browser": "Chrome 128",
             "type": "desktop",
-            "last_active": "2026-08-30T11:36:07.071Z",
+            "last_active": "2026-08-30T13:21:06.794Z",
             "current": false
           },
           {
@@ -212,7 +212,7 @@
             "os": "Android 14",
             "browser": "Chrome 128",
             "type": "mobile",
-            "last_active": "2026-08-20T18:18:07.071Z",
+            "last_active": "2026-08-20T20:03:06.794Z",
             "current": false
           }
         ]
@@ -233,8 +233,8 @@
       "role": "signal_provider",
       "status": "banned",
       "is_verified": false,
-      "joined_at": "2026-07-06T21:13:07.071Z",
-      "last_seen_at": "2026-08-24T21:43:07.071Z",
+      "joined_at": "2026-07-06T22:58:06.794Z",
+      "last_seen_at": "2026-08-24T23:28:06.794Z",
       "followers": 2091,
       "following": 137,
       "signals": 93,
@@ -256,7 +256,7 @@
         "currency": "USD",
         "landing_company": "svg",
         "last_recorded_balance": 894.83,
-        "balance_recorded_at": "2026-08-31T04:26:07.071Z",
+        "balance_recorded_at": "2026-08-31T06:11:06.794Z",
         "scopes": [
           "read",
           "trade",
@@ -269,7 +269,7 @@
           "name": "RB 100 Room",
           "kind": "market",
           "role": "member",
-          "joined_at": "2026-03-10T01:19:07.071Z"
+          "joined_at": "2026-03-10T03:04:06.794Z"
         }
       ],
       "security": {
@@ -282,7 +282,7 @@
         "device_type": "mobile",
         "two_factor": true,
         "failed_logins_30d": 9,
-        "password_changed_at": "2026-06-30T11:27:07.071Z",
+        "password_changed_at": "2026-06-30T13:12:06.794Z",
         "sessions": [
           {
             "ip": "133.110.191.190",
@@ -291,7 +291,7 @@
             "os": "Windows 11",
             "browser": "Chrome 128",
             "type": "desktop",
-            "last_active": "2026-08-14T15:38:07.071Z",
+            "last_active": "2026-08-14T17:23:06.794Z",
             "current": false
           },
           {
@@ -301,7 +301,7 @@
             "os": "Windows 11",
             "browser": "Chrome 128",
             "type": "desktop",
-            "last_active": "2026-08-16T04:24:07.071Z",
+            "last_active": "2026-08-16T06:09:06.794Z",
             "current": false
           }
         ]
@@ -309,7 +309,7 @@
       "flags": {
         "reports_against": 1,
         "warnings": 0,
-        "suspended_until": "2026-10-02T05:29:07.071Z"
+        "suspended_until": "2026-10-02T07:14:06.794Z"
       }
     },
     {
@@ -322,8 +322,8 @@
       "role": "signal_provider",
       "status": "active",
       "is_verified": true,
-      "joined_at": "2026-07-16T14:50:07.071Z",
-      "last_seen_at": "2026-08-28T12:52:07.071Z",
+      "joined_at": "2026-07-16T16:35:06.794Z",
+      "last_seen_at": "2026-08-28T14:37:06.794Z",
       "followers": 1125,
       "following": 318,
       "signals": 102,
@@ -345,7 +345,7 @@
         "currency": "USD",
         "landing_company": "vanuatu",
         "last_recorded_balance": 6843.14,
-        "balance_recorded_at": "2026-08-31T04:56:07.071Z",
+        "balance_recorded_at": "2026-08-31T06:41:06.794Z",
         "scopes": [
           "read",
           "trade",
@@ -358,35 +358,35 @@
           "name": "Step Room",
           "kind": "market",
           "role": "member",
-          "joined_at": "2026-08-16T07:42:07.071Z"
+          "joined_at": "2026-08-16T09:27:06.794Z"
         },
         {
           "id": "room_frxEURUSD",
           "name": "EUR/USD Room",
           "kind": "market",
           "role": "member",
-          "joined_at": "2025-12-05T12:21:07.071Z"
+          "joined_at": "2025-12-05T14:06:06.794Z"
         },
         {
           "id": "room_cryETHUSD",
           "name": "ETH/USD Room",
           "kind": "market",
           "role": "member",
-          "joined_at": "2025-12-02T00:25:07.071Z"
+          "joined_at": "2025-12-02T02:10:06.794Z"
         },
         {
           "id": "room_WTIUSD",
           "name": "WTI/USD Room",
           "kind": "market",
           "role": "member",
-          "joined_at": "2026-07-28T00:18:07.071Z"
+          "joined_at": "2026-07-28T02:03:06.794Z"
         },
         {
           "id": "room_u_JamesFX",
           "name": "JamesFX's Room",
           "kind": "trader",
           "role": "member",
-          "joined_at": "2026-04-29T10:16:07.071Z"
+          "joined_at": "2026-04-29T12:01:06.794Z"
         }
       ],
       "security": {
@@ -399,7 +399,7 @@
         "device_type": "desktop",
         "two_factor": false,
         "failed_logins_30d": 8,
-        "password_changed_at": "2026-05-04T09:39:07.071Z",
+        "password_changed_at": "2026-05-04T11:24:06.794Z",
         "sessions": [
           {
             "ip": "75.5.231.24",
@@ -408,7 +408,7 @@
             "os": "iOS 17.5",
             "browser": "Safari 17",
             "type": "mobile",
-            "last_active": "2026-08-28T23:32:07.071Z",
+            "last_active": "2026-08-29T01:17:06.794Z",
             "current": false
           },
           {
@@ -418,7 +418,7 @@
             "os": "Windows 11",
             "browser": "Chrome 128",
             "type": "desktop",
-            "last_active": "2026-08-31T22:28:07.071Z",
+            "last_active": "2026-09-01T00:13:06.794Z",
             "current": false
           },
           {
@@ -428,7 +428,7 @@
             "os": "Windows 11",
             "browser": "Chrome 128",
             "type": "desktop",
-            "last_active": "2026-08-21T12:49:07.071Z",
+            "last_active": "2026-08-21T14:34:06.794Z",
             "current": false
           },
           {
@@ -438,7 +438,7 @@
             "os": "macOS 14",
             "browser": "Chrome 127",
             "type": "desktop",
-            "last_active": "2026-08-14T05:32:07.071Z",
+            "last_active": "2026-08-14T07:17:06.794Z",
             "current": false
           }
         ]
@@ -459,8 +459,8 @@
       "role": "signal_provider",
       "status": "banned",
       "is_verified": true,
-      "joined_at": "2025-05-19T02:39:07.071Z",
-      "last_seen_at": "2026-08-19T18:28:07.071Z",
+      "joined_at": "2025-05-19T04:24:06.795Z",
+      "last_seen_at": "2026-08-19T20:13:06.795Z",
       "followers": 489,
       "following": 104,
       "signals": 57,
@@ -482,7 +482,7 @@
         "currency": "USD",
         "landing_company": "svg",
         "last_recorded_balance": 7852.72,
-        "balance_recorded_at": "2026-09-01T14:54:07.071Z",
+        "balance_recorded_at": "2026-09-01T16:39:06.795Z",
         "scopes": [
           "read",
           "trade",
@@ -495,35 +495,35 @@
           "name": "V10 Room",
           "kind": "market",
           "role": "member",
-          "joined_at": "2026-08-11T16:18:07.071Z"
+          "joined_at": "2026-08-11T18:03:06.795Z"
         },
         {
           "id": "room_JD25",
           "name": "Jump 25 Room",
           "kind": "market",
           "role": "member",
-          "joined_at": "2026-05-30T08:40:07.071Z"
+          "joined_at": "2026-05-30T10:25:06.795Z"
         },
         {
           "id": "room_cryBTCUSD",
           "name": "BTC/USD Room",
           "kind": "market",
           "role": "member",
-          "joined_at": "2026-02-02T05:16:07.071Z"
+          "joined_at": "2026-02-02T07:01:06.795Z"
         },
         {
           "id": "room_frxXPDUSD",
           "name": "XPD/USD Room",
           "kind": "market",
           "role": "member",
-          "joined_at": "2026-05-07T14:12:07.071Z"
+          "joined_at": "2026-05-07T15:57:06.795Z"
         },
         {
           "id": "room_u_AlphaKing",
           "name": "AlphaKing's Room",
           "kind": "trader",
           "role": "member",
-          "joined_at": "2026-08-21T09:28:07.071Z"
+          "joined_at": "2026-08-21T11:13:06.795Z"
         }
       ],
       "security": {
@@ -536,7 +536,7 @@
         "device_type": "mobile",
         "two_factor": false,
         "failed_logins_30d": 0,
-        "password_changed_at": "2026-08-19T01:04:07.071Z",
+        "password_changed_at": "2026-08-19T02:49:06.795Z",
         "sessions": [
           {
             "ip": "82.56.16.203",
@@ -545,7 +545,7 @@
             "os": "iOS 17.5",
             "browser": "Safari 17",
             "type": "mobile",
-            "last_active": "2026-08-31T21:19:07.071Z",
+            "last_active": "2026-08-31T23:04:06.795Z",
             "current": false
           }
         ]
@@ -553,7 +553,7 @@
       "flags": {
         "reports_against": 5,
         "warnings": 2,
-        "suspended_until": "2026-10-02T05:29:07.071Z"
+        "suspended_until": "2026-10-02T07:14:06.795Z"
       }
     },
     {
@@ -566,8 +566,8 @@
       "role": "signal_provider",
       "status": "banned",
       "is_verified": true,
-      "joined_at": "2025-08-09T17:43:07.071Z",
-      "last_seen_at": "2026-08-30T20:15:07.071Z",
+      "joined_at": "2025-08-09T19:28:06.795Z",
+      "last_seen_at": "2026-08-30T22:00:06.795Z",
       "followers": 1896,
       "following": 249,
       "signals": 203,
@@ -589,7 +589,7 @@
         "currency": "USD",
         "landing_company": "maltainvest",
         "last_recorded_balance": 5329.89,
-        "balance_recorded_at": "2026-08-30T20:31:07.071Z",
+        "balance_recorded_at": "2026-08-30T22:16:06.795Z",
         "scopes": [
           "read",
           "trade",
@@ -602,28 +602,28 @@
           "name": "V25 Room",
           "kind": "market",
           "role": "member",
-          "joined_at": "2026-08-26T09:21:07.071Z"
+          "joined_at": "2026-08-26T11:06:06.795Z"
         },
         {
           "id": "room_JD100",
           "name": "Jump 100 Room",
           "kind": "market",
           "role": "member",
-          "joined_at": "2026-06-30T15:51:07.071Z"
+          "joined_at": "2026-06-30T17:36:06.795Z"
         },
         {
           "id": "room_frxGBPJPY",
           "name": "GBP/JPY Room",
           "kind": "market",
           "role": "member",
-          "joined_at": "2025-12-15T08:15:07.071Z"
+          "joined_at": "2025-12-15T10:00:06.795Z"
         },
         {
           "id": "room_frxXPTUSD",
           "name": "XPT/USD Room",
           "kind": "market",
           "role": "member",
-          "joined_at": "2026-06-23T01:37:07.071Z"
+          "joined_at": "2026-06-23T03:22:06.795Z"
         }
       ],
       "security": {
@@ -636,7 +636,7 @@
         "device_type": "mobile",
         "two_factor": true,
         "failed_logins_30d": 5,
-        "password_changed_at": "2026-06-08T09:18:07.071Z",
+        "password_changed_at": "2026-06-08T11:03:06.795Z",
         "sessions": [
           {
             "ip": "105.46.19.249",
@@ -645,7 +645,7 @@
             "os": "iOS 17.5",
             "browser": "Safari 17",
             "type": "mobile",
-            "last_active": "2026-08-20T01:24:07.071Z",
+            "last_active": "2026-08-20T03:09:06.795Z",
             "current": false
           }
         ]
@@ -653,7 +653,7 @@
       "flags": {
         "reports_against": 1,
         "warnings": 0,
-        "suspended_until": "2026-10-02T05:29:07.071Z"
+        "suspended_until": "2026-10-02T07:14:06.795Z"
       }
     },
     {
@@ -666,8 +666,8 @@
       "role": "user",
       "status": "active",
       "is_verified": true,
-      "joined_at": "2025-07-30T07:01:07.071Z",
-      "last_seen_at": "2026-08-20T12:32:07.071Z",
+      "joined_at": "2025-07-30T08:46:06.795Z",
+      "last_seen_at": "2026-08-20T14:17:06.795Z",
       "followers": 1502,
       "following": 206,
       "signals": 27,
@@ -689,7 +689,7 @@
         "currency": "USD",
         "landing_company": "svg",
         "last_recorded_balance": 10767.05,
-        "balance_recorded_at": "2026-08-30T15:23:07.071Z",
+        "balance_recorded_at": "2026-08-30T17:08:06.795Z",
         "scopes": [
           "read",
           "trade",
@@ -702,35 +702,35 @@
           "name": "V50 Room",
           "kind": "market",
           "role": "member",
-          "joined_at": "2025-11-10T04:06:07.071Z"
+          "joined_at": "2025-11-10T05:51:06.795Z"
         },
         {
           "id": "room_JD75",
           "name": "Jump 75 Room",
           "kind": "market",
           "role": "member",
-          "joined_at": "2025-12-16T01:46:07.071Z"
+          "joined_at": "2025-12-16T03:31:06.795Z"
         },
         {
           "id": "room_frxEURJPY",
           "name": "EUR/JPY Room",
           "kind": "market",
           "role": "member",
-          "joined_at": "2026-08-14T00:21:07.071Z"
+          "joined_at": "2026-08-14T02:06:06.795Z"
         },
         {
           "id": "room_frxXAGUSD",
           "name": "XAG/USD Room",
           "kind": "market",
           "role": "member",
-          "joined_at": "2026-03-31T18:14:07.071Z"
+          "joined_at": "2026-03-31T19:59:06.795Z"
         },
         {
           "id": "room_u_FX_ProTrader",
           "name": "FX_ProTrader's Room",
           "kind": "trader",
           "role": "member",
-          "joined_at": "2025-11-30T02:20:07.071Z"
+          "joined_at": "2025-11-30T04:05:06.795Z"
         }
       ],
       "security": {
@@ -743,7 +743,7 @@
         "device_type": "mobile",
         "two_factor": false,
         "failed_logins_30d": 0,
-        "password_changed_at": "2026-04-14T03:43:07.071Z",
+        "password_changed_at": "2026-04-14T05:28:06.795Z",
         "sessions": [
           {
             "ip": "164.137.233.152",
@@ -752,7 +752,7 @@
             "os": "iOS 17.5",
             "browser": "Safari 17",
             "type": "mobile",
-            "last_active": "2026-08-20T11:12:07.071Z",
+            "last_active": "2026-08-20T12:57:06.795Z",
             "current": false
           },
           {
@@ -762,7 +762,7 @@
             "os": "iOS 17.5",
             "browser": "Safari 17",
             "type": "mobile",
-            "last_active": "2026-09-01T19:37:07.071Z",
+            "last_active": "2026-09-01T21:22:06.795Z",
             "current": false
           }
         ]
@@ -783,8 +783,8 @@
       "role": "user",
       "status": "banned",
       "is_verified": false,
-      "joined_at": "2025-04-17T20:48:07.071Z",
-      "last_seen_at": "2026-08-21T06:31:07.071Z",
+      "joined_at": "2025-04-17T22:33:06.795Z",
+      "last_seen_at": "2026-08-21T08:16:06.795Z",
       "followers": 867,
       "following": 373,
       "signals": 17,
@@ -806,7 +806,7 @@
         "currency": "USD",
         "landing_company": "maltainvest",
         "last_recorded_balance": 9298.07,
-        "balance_recorded_at": "2026-08-31T12:10:07.071Z",
+        "balance_recorded_at": "2026-08-31T13:55:06.795Z",
         "scopes": [
           "read",
           "trade",
@@ -819,21 +819,21 @@
           "name": "V50 (1s) Room",
           "kind": "market",
           "role": "member",
-          "joined_at": "2025-12-13T22:02:07.071Z"
+          "joined_at": "2025-12-13T23:47:06.795Z"
         },
         {
           "id": "room_CRASH300",
           "name": "Crash 300 Room",
           "kind": "market",
           "role": "member",
-          "joined_at": "2025-12-30T01:57:07.071Z"
+          "joined_at": "2025-12-30T03:42:06.795Z"
         },
         {
           "id": "room_frxEURGBP",
           "name": "EUR/GBP Room",
           "kind": "market",
           "role": "member",
-          "joined_at": "2025-11-27T17:36:07.071Z"
+          "joined_at": "2025-11-27T19:21:06.795Z"
         }
       ],
       "security": {
@@ -846,7 +846,7 @@
         "device_type": "mobile",
         "two_factor": false,
         "failed_logins_30d": 8,
-        "password_changed_at": "2025-09-25T02:29:07.071Z",
+        "password_changed_at": "2025-09-25T04:14:06.795Z",
         "sessions": [
           {
             "ip": "143.234.133.32",
@@ -855,7 +855,7 @@
             "os": "Android 13",
             "browser": "Chrome 128",
             "type": "mobile",
-            "last_active": "2026-08-27T06:44:07.071Z",
+            "last_active": "2026-08-27T08:29:06.795Z",
             "current": false
           },
           {
@@ -865,7 +865,7 @@
             "os": "macOS 14",
             "browser": "Chrome 127",
             "type": "desktop",
-            "last_active": "2026-08-31T19:48:07.071Z",
+            "last_active": "2026-08-31T21:33:06.795Z",
             "current": false
           }
         ]
@@ -873,7 +873,7 @@
       "flags": {
         "reports_against": 3,
         "warnings": 1,
-        "suspended_until": "2026-10-02T05:29:07.071Z"
+        "suspended_until": "2026-10-02T07:14:06.795Z"
       }
     },
     {
@@ -886,8 +886,8 @@
       "role": "user",
       "status": "banned",
       "is_verified": true,
-      "joined_at": "2024-09-02T05:39:07.071Z",
-      "last_seen_at": "2026-08-27T03:35:07.071Z",
+      "joined_at": "2024-09-02T07:24:06.795Z",
+      "last_seen_at": "2026-08-27T05:20:06.795Z",
       "followers": 507,
       "following": 88,
       "signals": 11,
@@ -909,7 +909,7 @@
         "currency": "USD",
         "landing_company": "vanuatu",
         "last_recorded_balance": 3982.08,
-        "balance_recorded_at": "2026-08-30T21:17:07.071Z",
+        "balance_recorded_at": "2026-08-30T23:02:06.795Z",
         "scopes": [
           "read",
           "trade",
@@ -922,7 +922,7 @@
           "name": "V100 Room",
           "kind": "market",
           "role": "member",
-          "joined_at": "2026-05-14T16:31:07.071Z"
+          "joined_at": "2026-05-14T18:16:06.795Z"
         }
       ],
       "security": {
@@ -935,7 +935,7 @@
         "device_type": "desktop",
         "two_factor": true,
         "failed_logins_30d": 6,
-        "password_changed_at": "2026-06-30T19:50:07.071Z",
+        "password_changed_at": "2026-06-30T21:35:06.795Z",
         "sessions": [
           {
             "ip": "96.68.81.25",
@@ -944,7 +944,7 @@
             "os": "Windows 11",
             "browser": "Chrome 128",
             "type": "desktop",
-            "last_active": "2026-08-18T23:36:07.071Z",
+            "last_active": "2026-08-19T01:21:06.795Z",
             "current": false
           },
           {
@@ -954,7 +954,7 @@
             "os": "Windows 10",
             "browser": "Edge 128",
             "type": "desktop",
-            "last_active": "2026-08-26T13:33:07.071Z",
+            "last_active": "2026-08-26T15:18:06.795Z",
             "current": false
           },
           {
@@ -964,7 +964,7 @@
             "os": "macOS 14",
             "browser": "Chrome 127",
             "type": "desktop",
-            "last_active": "2026-08-29T23:05:07.071Z",
+            "last_active": "2026-08-30T00:50:06.795Z",
             "current": false
           },
           {
@@ -974,7 +974,7 @@
             "os": "Windows 10",
             "browser": "Edge 128",
             "type": "desktop",
-            "last_active": "2026-08-29T16:39:07.071Z",
+            "last_active": "2026-08-29T18:24:06.795Z",
             "current": false
           }
         ]
@@ -982,7 +982,7 @@
       "flags": {
         "reports_against": 2,
         "warnings": 0,
-        "suspended_until": "2026-10-02T05:29:07.071Z"
+        "suspended_until": "2026-10-02T07:14:06.795Z"
       }
     },
     {
@@ -995,8 +995,8 @@
       "role": "signal_provider",
       "status": "inactive",
       "is_verified": true,
-      "joined_at": "2024-07-04T08:01:07.071Z",
-      "last_seen_at": "2026-09-01T12:29:07.072Z",
+      "joined_at": "2024-07-04T09:46:06.795Z",
+      "last_seen_at": "2026-09-01T14:14:06.795Z",
       "followers": 2160,
       "following": 148,
       "signals": 143,
@@ -1018,7 +1018,7 @@
         "currency": "USD",
         "landing_company": "vanuatu",
         "last_recorded_balance": 8795.79,
-        "balance_recorded_at": "2026-09-01T12:31:07.072Z",
+        "balance_recorded_at": "2026-09-01T14:16:06.795Z",
         "scopes": [
           "read",
           "trade",
@@ -1031,28 +1031,28 @@
           "name": "V100 (1s) Room",
           "kind": "market",
           "role": "member",
-          "joined_at": "2026-03-13T05:36:07.072Z"
+          "joined_at": "2026-03-13T07:21:06.795Z"
         },
         {
           "id": "room_CRASH1000",
           "name": "Crash 1000 Room",
           "kind": "market",
           "role": "member",
-          "joined_at": "2026-02-27T14:34:07.072Z"
+          "joined_at": "2026-02-27T16:19:06.795Z"
         },
         {
           "id": "room_frxUSDCHF",
           "name": "USD/CHF Room",
           "kind": "market",
           "role": "member",
-          "joined_at": "2026-07-11T03:17:07.072Z"
+          "joined_at": "2026-07-11T05:02:06.795Z"
         },
         {
           "id": "room_cryADAUSD",
           "name": "ADA/USD Room",
           "kind": "market",
           "role": "member",
-          "joined_at": "2026-04-03T22:32:07.072Z"
+          "joined_at": "2026-04-04T00:17:06.795Z"
         }
       ],
       "security": {
@@ -1065,7 +1065,7 @@
         "device_type": "desktop",
         "two_factor": false,
         "failed_logins_30d": 3,
-        "password_changed_at": "2026-01-23T02:08:07.072Z",
+        "password_changed_at": "2026-01-23T03:53:06.795Z",
         "sessions": [
           {
             "ip": "182.222.72.25",
@@ -1074,7 +1074,7 @@
             "os": "Android 14",
             "browser": "Chrome 128",
             "type": "mobile",
-            "last_active": "2026-08-21T07:37:07.072Z",
+            "last_active": "2026-08-21T09:22:06.795Z",
             "current": false
           },
           {
@@ -1084,7 +1084,7 @@
             "os": "Android 13",
             "browser": "Chrome 128",
             "type": "mobile",
-            "last_active": "2026-08-31T22:54:07.072Z",
+            "last_active": "2026-09-01T00:39:06.795Z",
             "current": false
           },
           {
@@ -1094,7 +1094,7 @@
             "os": "Android 14",
             "browser": "Chrome 128",
             "type": "mobile",
-            "last_active": "2026-08-20T02:56:07.072Z",
+            "last_active": "2026-08-20T04:41:06.795Z",
             "current": false
           }
         ]
@@ -1115,8 +1115,8 @@
       "role": "user",
       "status": "active",
       "is_verified": false,
-      "joined_at": "2024-09-21T07:57:07.072Z",
-      "last_seen_at": "2026-08-25T07:49:07.072Z",
+      "joined_at": "2024-09-21T09:42:06.796Z",
+      "last_seen_at": "2026-08-25T09:34:06.796Z",
       "followers": 1095,
       "following": 111,
       "signals": 26,
@@ -1138,7 +1138,7 @@
         "currency": "USD",
         "landing_company": "maltainvest",
         "last_recorded_balance": 3865.43,
-        "balance_recorded_at": "2026-09-02T01:39:07.072Z",
+        "balance_recorded_at": "2026-09-02T03:24:06.796Z",
         "scopes": [
           "read",
           "trade",
@@ -1151,28 +1151,28 @@
           "name": "V75 Room",
           "kind": "market",
           "role": "member",
-          "joined_at": "2026-05-14T01:22:07.072Z"
+          "joined_at": "2026-05-14T03:07:06.796Z"
         },
         {
           "id": "room_BOOM300",
           "name": "Boom 300 Room",
           "kind": "market",
           "role": "member",
-          "joined_at": "2026-08-25T09:50:07.072Z"
+          "joined_at": "2026-08-25T11:35:06.796Z"
         },
         {
           "id": "room_frxUSDCAD",
           "name": "USD/CAD Room",
           "kind": "market",
           "role": "member",
-          "joined_at": "2026-08-13T06:09:07.072Z"
+          "joined_at": "2026-08-13T07:54:06.796Z"
         },
         {
           "id": "room_cryBCHUSD",
           "name": "BCH/USD Room",
           "kind": "market",
           "role": "member",
-          "joined_at": "2026-03-15T13:16:07.072Z"
+          "joined_at": "2026-03-15T15:01:06.796Z"
         }
       ],
       "security": {
@@ -1185,7 +1185,7 @@
         "device_type": "desktop",
         "two_factor": false,
         "failed_logins_30d": 5,
-        "password_changed_at": "2026-06-29T10:26:07.072Z",
+        "password_changed_at": "2026-06-29T12:11:06.796Z",
         "sessions": [
           {
             "ip": "139.55.96.166",
@@ -1194,7 +1194,7 @@
             "os": "Ubuntu 24.04",
             "browser": "Firefox 129",
             "type": "desktop",
-            "last_active": "2026-08-26T19:36:07.072Z",
+            "last_active": "2026-08-26T21:21:06.796Z",
             "current": false
           },
           {
@@ -1204,7 +1204,7 @@
             "os": "Windows 10",
             "browser": "Edge 128",
             "type": "desktop",
-            "last_active": "2026-08-22T22:57:07.072Z",
+            "last_active": "2026-08-23T00:42:06.796Z",
             "current": false
           }
         ]
@@ -1225,8 +1225,8 @@
       "role": "signal_provider",
       "status": "active",
       "is_verified": false,
-      "joined_at": "2024-08-16T22:58:07.072Z",
-      "last_seen_at": "2026-08-23T09:36:07.072Z",
+      "joined_at": "2024-08-17T00:43:06.796Z",
+      "last_seen_at": "2026-08-23T11:21:06.796Z",
       "followers": 145,
       "following": 370,
       "signals": 210,
@@ -1248,7 +1248,7 @@
         "currency": "USD",
         "landing_company": "vanuatu",
         "last_recorded_balance": 1536.81,
-        "balance_recorded_at": "2026-09-01T19:23:07.072Z",
+        "balance_recorded_at": "2026-09-01T21:08:06.796Z",
         "scopes": [
           "read",
           "trade",
@@ -1261,35 +1261,35 @@
           "name": "V75 (1s) Room",
           "kind": "market",
           "role": "member",
-          "joined_at": "2026-06-27T08:38:07.072Z"
+          "joined_at": "2026-06-27T10:23:06.796Z"
         },
         {
           "id": "room_BOOM500",
           "name": "Boom 500 Room",
           "kind": "market",
           "role": "member",
-          "joined_at": "2025-11-10T12:19:07.072Z"
+          "joined_at": "2025-11-10T14:04:06.796Z"
         },
         {
           "id": "room_frxAUDUSD",
           "name": "AUD/USD Room",
           "kind": "market",
           "role": "member",
-          "joined_at": "2025-11-09T13:18:07.072Z"
+          "joined_at": "2025-11-09T15:03:06.796Z"
         },
         {
           "id": "room_cryLTCUSD",
           "name": "LTC/USD Room",
           "kind": "market",
           "role": "member",
-          "joined_at": "2026-06-18T01:33:07.072Z"
+          "joined_at": "2026-06-18T03:18:06.796Z"
         },
         {
           "id": "room_OTC_DJI",
           "name": "US 30 Room",
           "kind": "market",
           "role": "member",
-          "joined_at": "2026-02-10T22:01:07.072Z"
+          "joined_at": "2026-02-10T23:46:06.796Z"
         }
       ],
       "security": {
@@ -1302,7 +1302,7 @@
         "device_type": "desktop",
         "two_factor": false,
         "failed_logins_30d": 1,
-        "password_changed_at": "2026-01-18T06:48:07.072Z",
+        "password_changed_at": "2026-01-18T08:33:06.796Z",
         "sessions": [
           {
             "ip": "108.148.119.49",
@@ -1311,7 +1311,7 @@
             "os": "Android 14",
             "browser": "Chrome 128",
             "type": "mobile",
-            "last_active": "2026-08-13T12:47:07.072Z",
+            "last_active": "2026-08-13T14:32:06.796Z",
             "current": false
           }
         ]
@@ -1332,8 +1332,8 @@
       "role": "moderator",
       "status": "inactive",
       "is_verified": false,
-      "joined_at": "2026-04-20T02:09:07.072Z",
-      "last_seen_at": "2026-08-30T15:45:07.072Z",
+      "joined_at": "2026-04-20T03:54:06.796Z",
+      "last_seen_at": "2026-08-30T17:30:06.796Z",
       "followers": 1577,
       "following": 52,
       "signals": 24,
@@ -1355,7 +1355,7 @@
         "currency": "USD",
         "landing_company": "svg",
         "last_recorded_balance": 7636.65,
-        "balance_recorded_at": "2026-08-30T07:58:07.072Z",
+        "balance_recorded_at": "2026-08-30T09:43:06.796Z",
         "scopes": [
           "read",
           "trade",
@@ -1368,35 +1368,35 @@
           "name": "Boom 1000 Room",
           "kind": "market",
           "role": "member",
-          "joined_at": "2026-04-06T23:35:07.072Z"
+          "joined_at": "2026-04-07T01:20:06.796Z"
         },
         {
           "id": "room_frxUSDJPY",
           "name": "USD/JPY Room",
           "kind": "market",
           "role": "member",
-          "joined_at": "2026-01-29T06:23:07.072Z"
+          "joined_at": "2026-01-29T08:08:06.796Z"
         },
         {
           "id": "room_cryXRPUSD",
           "name": "XRP/USD Room",
           "kind": "market",
           "role": "member",
-          "joined_at": "2026-01-09T21:29:07.072Z"
+          "joined_at": "2026-01-09T23:14:06.796Z"
         },
         {
           "id": "room_OTC_NDX",
           "name": "US 100 Room",
           "kind": "market",
           "role": "member",
-          "joined_at": "2026-04-22T06:58:07.072Z"
+          "joined_at": "2026-04-22T08:43:06.796Z"
         },
         {
           "id": "room_u_SwingMaster",
           "name": "SwingMaster's Room",
           "kind": "trader",
           "role": "member",
-          "joined_at": "2026-02-15T08:32:07.072Z"
+          "joined_at": "2026-02-15T10:17:06.796Z"
         }
       ],
       "security": {
@@ -1409,7 +1409,7 @@
         "device_type": "desktop",
         "two_factor": true,
         "failed_logins_30d": 7,
-        "password_changed_at": "2025-10-20T23:54:07.072Z",
+        "password_changed_at": "2025-10-21T01:39:06.796Z",
         "sessions": [
           {
             "ip": "167.135.134.111",
@@ -1418,7 +1418,7 @@
             "os": "Android 14",
             "browser": "Chrome 128",
             "type": "mobile",
-            "last_active": "2026-08-19T21:42:07.072Z",
+            "last_active": "2026-08-19T23:27:06.796Z",
             "current": false
           },
           {
@@ -1428,7 +1428,7 @@
             "os": "Ubuntu 24.04",
             "browser": "Firefox 129",
             "type": "desktop",
-            "last_active": "2026-08-23T23:44:07.072Z",
+            "last_active": "2026-08-24T01:29:06.796Z",
             "current": false
           }
         ]
@@ -1449,8 +1449,8 @@
       "role": "user",
       "status": "inactive",
       "is_verified": true,
-      "joined_at": "2025-02-25T14:09:07.072Z",
-      "last_seen_at": "2026-08-28T05:18:07.072Z",
+      "joined_at": "2025-02-25T15:54:06.797Z",
+      "last_seen_at": "2026-08-28T07:03:06.797Z",
       "followers": 1909,
       "following": 321,
       "signals": 22,
@@ -1472,7 +1472,7 @@
         "currency": "USD",
         "landing_company": "vanuatu",
         "last_recorded_balance": 11547.49,
-        "balance_recorded_at": "2026-08-30T14:37:07.072Z",
+        "balance_recorded_at": "2026-08-30T16:22:06.797Z",
         "scopes": [
           "read",
           "trade",
@@ -1485,35 +1485,35 @@
           "name": "RB 100 Room",
           "kind": "market",
           "role": "member",
-          "joined_at": "2026-04-09T10:27:07.072Z"
+          "joined_at": "2026-04-09T12:12:06.797Z"
         },
         {
           "id": "room_frxGBPUSD",
           "name": "GBP/USD Room",
           "kind": "market",
           "role": "member",
-          "joined_at": "2026-01-06T04:05:07.072Z"
+          "joined_at": "2026-01-06T05:50:06.797Z"
         },
         {
           "id": "room_crySOLUSD",
           "name": "SOL/USD Room",
           "kind": "market",
           "role": "member",
-          "joined_at": "2026-03-31T03:12:07.072Z"
+          "joined_at": "2026-03-31T04:57:06.797Z"
         },
         {
           "id": "room_OTC_SPC",
           "name": "US 500 Room",
           "kind": "market",
           "role": "member",
-          "joined_at": "2025-12-12T19:20:07.072Z"
+          "joined_at": "2025-12-12T21:05:06.797Z"
         },
         {
           "id": "room_u_Mr_Market",
           "name": "Mr_Market's Room",
           "kind": "trader",
           "role": "member",
-          "joined_at": "2026-07-11T20:57:07.072Z"
+          "joined_at": "2026-07-11T22:42:06.797Z"
         }
       ],
       "security": {
@@ -1526,7 +1526,7 @@
         "device_type": "desktop",
         "two_factor": false,
         "failed_logins_30d": 0,
-        "password_changed_at": "2025-10-21T16:29:07.072Z",
+        "password_changed_at": "2025-10-21T18:14:06.797Z",
         "sessions": [
           {
             "ip": "46.6.106.117",
@@ -1535,7 +1535,7 @@
             "os": "Windows 10",
             "browser": "Edge 128",
             "type": "desktop",
-            "last_active": "2026-09-01T23:36:07.072Z",
+            "last_active": "2026-09-02T01:21:06.797Z",
             "current": false
           },
           {
@@ -1545,7 +1545,7 @@
             "os": "Windows 10",
             "browser": "Edge 128",
             "type": "desktop",
-            "last_active": "2026-08-23T02:32:07.072Z",
+            "last_active": "2026-08-23T04:17:06.797Z",
             "current": false
           },
           {
@@ -1555,7 +1555,7 @@
             "os": "macOS 14",
             "browser": "Chrome 127",
             "type": "desktop",
-            "last_active": "2026-08-14T15:20:07.072Z",
+            "last_active": "2026-08-14T17:05:06.797Z",
             "current": false
           },
           {
@@ -1565,7 +1565,7 @@
             "os": "Windows 10",
             "browser": "Edge 128",
             "type": "desktop",
-            "last_active": "2026-08-26T14:29:07.072Z",
+            "last_active": "2026-08-26T16:14:06.797Z",
             "current": false
           }
         ]
@@ -1586,8 +1586,8 @@
       "role": "moderator",
       "status": "active",
       "is_verified": true,
-      "joined_at": "2024-11-25T12:59:07.072Z",
-      "last_seen_at": "2026-08-28T22:21:07.072Z",
+      "joined_at": "2024-11-25T14:44:06.797Z",
+      "last_seen_at": "2026-08-29T00:06:06.797Z",
       "followers": 2074,
       "following": 201,
       "signals": 4,
@@ -1609,7 +1609,7 @@
         "currency": "USD",
         "landing_company": "vanuatu",
         "last_recorded_balance": 5042.84,
-        "balance_recorded_at": "2026-09-02T01:20:07.072Z",
+        "balance_recorded_at": "2026-09-02T03:05:06.797Z",
         "scopes": [
           "read",
           "trade",
@@ -1622,21 +1622,21 @@
           "name": "Step Room",
           "kind": "market",
           "role": "member",
-          "joined_at": "2026-07-14T14:14:07.072Z"
+          "joined_at": "2026-07-14T15:59:06.797Z"
         },
         {
           "id": "room_frxEURUSD",
           "name": "EUR/USD Room",
           "kind": "market",
           "role": "member",
-          "joined_at": "2026-05-03T02:28:07.072Z"
+          "joined_at": "2026-05-03T04:13:06.797Z"
         },
         {
           "id": "room_cryETHUSD",
           "name": "ETH/USD Room",
           "kind": "market",
           "role": "member",
-          "joined_at": "2026-01-26T22:44:07.072Z"
+          "joined_at": "2026-01-27T00:29:06.797Z"
         }
       ],
       "security": {
@@ -1649,7 +1649,7 @@
         "device_type": "desktop",
         "two_factor": true,
         "failed_logins_30d": 0,
-        "password_changed_at": "2025-12-17T22:47:07.072Z",
+        "password_changed_at": "2025-12-18T00:32:06.797Z",
         "sessions": [
           {
             "ip": "163.153.68.148",
@@ -1658,7 +1658,7 @@
             "os": "Windows 11",
             "browser": "Chrome 128",
             "type": "desktop",
-            "last_active": "2026-08-29T04:03:07.072Z",
+            "last_active": "2026-08-29T05:48:06.797Z",
             "current": false
           },
           {
@@ -1668,7 +1668,7 @@
             "os": "Ubuntu 24.04",
             "browser": "Firefox 129",
             "type": "desktop",
-            "last_active": "2026-08-24T18:59:07.072Z",
+            "last_active": "2026-08-24T20:44:06.797Z",
             "current": false
           },
           {
@@ -1678,7 +1678,7 @@
             "os": "macOS 14",
             "browser": "Chrome 127",
             "type": "desktop",
-            "last_active": "2026-08-19T21:26:07.072Z",
+            "last_active": "2026-08-19T23:11:06.797Z",
             "current": false
           },
           {
@@ -1688,7 +1688,7 @@
             "os": "Android 13",
             "browser": "Chrome 128",
             "type": "mobile",
-            "last_active": "2026-08-27T23:23:07.072Z",
+            "last_active": "2026-08-28T01:08:06.797Z",
             "current": false
           }
         ]
@@ -1709,8 +1709,8 @@
       "role": "moderator",
       "status": "active",
       "is_verified": false,
-      "joined_at": "2026-05-03T08:34:07.072Z",
-      "last_seen_at": "2026-08-21T04:03:07.072Z",
+      "joined_at": "2026-05-03T10:19:06.797Z",
+      "last_seen_at": "2026-08-21T05:48:06.797Z",
       "followers": 2207,
       "following": 47,
       "signals": 8,
@@ -1732,7 +1732,7 @@
         "currency": "USD",
         "landing_company": "vanuatu",
         "last_recorded_balance": 3570.86,
-        "balance_recorded_at": "2026-08-30T17:10:07.072Z",
+        "balance_recorded_at": "2026-08-30T18:55:06.797Z",
         "scopes": [
           "read",
           "trade",
@@ -1745,7 +1745,7 @@
           "name": "V10 Room",
           "kind": "market",
           "role": "member",
-          "joined_at": "2026-06-29T11:47:07.072Z"
+          "joined_at": "2026-06-29T13:32:06.797Z"
         }
       ],
       "security": {
@@ -1758,7 +1758,7 @@
         "device_type": "desktop",
         "two_factor": false,
         "failed_logins_30d": 1,
-        "password_changed_at": "2025-07-31T07:11:07.072Z",
+        "password_changed_at": "2025-07-31T08:56:06.797Z",
         "sessions": [
           {
             "ip": "86.114.160.164",
@@ -1767,7 +1767,7 @@
             "os": "macOS 14",
             "browser": "Chrome 127",
             "type": "desktop",
-            "last_active": "2026-08-31T12:37:07.072Z",
+            "last_active": "2026-08-31T14:22:06.797Z",
             "current": false
           }
         ]
@@ -1788,8 +1788,8 @@
       "role": "user",
       "status": "active",
       "is_verified": false,
-      "joined_at": "2025-02-24T08:06:07.072Z",
-      "last_seen_at": "2026-08-25T12:06:07.072Z",
+      "joined_at": "2025-02-24T09:51:06.797Z",
+      "last_seen_at": "2026-08-25T13:51:06.797Z",
       "followers": 1416,
       "following": 280,
       "signals": 20,
@@ -1811,7 +1811,7 @@
         "currency": "USD",
         "landing_company": "vanuatu",
         "last_recorded_balance": 10245.31,
-        "balance_recorded_at": "2026-08-31T11:15:07.072Z",
+        "balance_recorded_at": "2026-08-31T13:00:06.797Z",
         "scopes": [
           "read",
           "trade",
@@ -1824,21 +1824,21 @@
           "name": "V25 Room",
           "kind": "market",
           "role": "member",
-          "joined_at": "2026-05-10T17:29:07.072Z"
+          "joined_at": "2026-05-10T19:14:06.797Z"
         },
         {
           "id": "room_JD100",
           "name": "Jump 100 Room",
           "kind": "market",
           "role": "member",
-          "joined_at": "2025-12-23T22:32:07.072Z"
+          "joined_at": "2025-12-24T00:17:06.797Z"
         },
         {
           "id": "room_frxGBPJPY",
           "name": "GBP/JPY Room",
           "kind": "market",
           "role": "member",
-          "joined_at": "2026-03-23T02:49:07.072Z"
+          "joined_at": "2026-03-23T04:34:06.797Z"
         }
       ],
       "security": {
@@ -1851,7 +1851,7 @@
         "device_type": "mobile",
         "two_factor": false,
         "failed_logins_30d": 3,
-        "password_changed_at": "2026-07-21T06:50:07.072Z",
+        "password_changed_at": "2026-07-21T08:35:06.797Z",
         "sessions": [
           {
             "ip": "178.47.148.30",
@@ -1860,7 +1860,7 @@
             "os": "Windows 10",
             "browser": "Edge 128",
             "type": "desktop",
-            "last_active": "2026-08-25T01:35:07.072Z",
+            "last_active": "2026-08-25T03:20:06.797Z",
             "current": false
           },
           {
@@ -1870,7 +1870,7 @@
             "os": "Windows 11",
             "browser": "Chrome 128",
             "type": "desktop",
-            "last_active": "2026-08-23T06:04:07.072Z",
+            "last_active": "2026-08-23T07:49:06.797Z",
             "current": false
           },
           {
@@ -1880,7 +1880,7 @@
             "os": "Windows 11",
             "browser": "Chrome 128",
             "type": "desktop",
-            "last_active": "2026-08-16T18:48:07.072Z",
+            "last_active": "2026-08-16T20:33:06.797Z",
             "current": false
           },
           {
@@ -1890,7 +1890,7 @@
             "os": "Android 14",
             "browser": "Chrome 128",
             "type": "mobile",
-            "last_active": "2026-08-24T07:47:07.072Z",
+            "last_active": "2026-08-24T09:32:06.797Z",
             "current": false
           }
         ]
@@ -1911,8 +1911,8 @@
       "role": "signal_provider",
       "status": "active",
       "is_verified": false,
-      "joined_at": "2024-03-19T09:09:07.072Z",
-      "last_seen_at": "2026-08-29T04:30:07.072Z",
+      "joined_at": "2024-03-19T10:54:06.797Z",
+      "last_seen_at": "2026-08-29T06:15:06.797Z",
       "followers": 1560,
       "following": 262,
       "signals": 184,
@@ -1934,7 +1934,7 @@
         "currency": "USD",
         "landing_company": "svg",
         "last_recorded_balance": 8205.18,
-        "balance_recorded_at": "2026-09-01T07:06:07.072Z",
+        "balance_recorded_at": "2026-09-01T08:51:06.797Z",
         "scopes": [
           "read",
           "trade",
@@ -1947,35 +1947,35 @@
           "name": "V50 Room",
           "kind": "market",
           "role": "member",
-          "joined_at": "2026-06-26T08:48:07.072Z"
+          "joined_at": "2026-06-26T10:33:06.797Z"
         },
         {
           "id": "room_JD75",
           "name": "Jump 75 Room",
           "kind": "market",
           "role": "member",
-          "joined_at": "2026-02-07T11:03:07.072Z"
+          "joined_at": "2026-02-07T12:48:06.797Z"
         },
         {
           "id": "room_frxEURJPY",
           "name": "EUR/JPY Room",
           "kind": "market",
           "role": "member",
-          "joined_at": "2026-06-22T01:18:07.072Z"
+          "joined_at": "2026-06-22T03:03:06.797Z"
         },
         {
           "id": "room_frxXAGUSD",
           "name": "XAG/USD Room",
           "kind": "market",
           "role": "member",
-          "joined_at": "2026-04-06T10:11:07.072Z"
+          "joined_at": "2026-04-06T11:56:06.797Z"
         },
         {
           "id": "room_u_FX_ProTrader",
           "name": "FX_ProTrader's Room",
           "kind": "trader",
           "role": "member",
-          "joined_at": "2026-06-16T04:03:07.072Z"
+          "joined_at": "2026-06-16T05:48:06.797Z"
         }
       ],
       "security": {
@@ -1988,7 +1988,7 @@
         "device_type": "mobile",
         "two_factor": true,
         "failed_logins_30d": 5,
-        "password_changed_at": "2025-12-13T20:26:07.072Z",
+        "password_changed_at": "2025-12-13T22:11:06.797Z",
         "sessions": [
           {
             "ip": "71.30.50.132",
@@ -1997,7 +1997,7 @@
             "os": "iOS 17.5",
             "browser": "Safari 17",
             "type": "mobile",
-            "last_active": "2026-08-15T15:30:07.072Z",
+            "last_active": "2026-08-15T17:15:06.797Z",
             "current": false
           }
         ]
@@ -2018,8 +2018,8 @@
       "role": "user",
       "status": "banned",
       "is_verified": false,
-      "joined_at": "2025-03-21T05:21:07.072Z",
-      "last_seen_at": "2026-08-31T16:27:07.072Z",
+      "joined_at": "2025-03-21T07:06:06.797Z",
+      "last_seen_at": "2026-08-31T18:12:06.797Z",
       "followers": 464,
       "following": 123,
       "signals": 19,
@@ -2041,7 +2041,7 @@
         "currency": "USD",
         "landing_company": "svg",
         "last_recorded_balance": 11439.7,
-        "balance_recorded_at": "2026-08-31T19:06:07.072Z",
+        "balance_recorded_at": "2026-08-31T20:51:06.797Z",
         "scopes": [
           "read",
           "trade",
@@ -2054,14 +2054,14 @@
           "name": "V50 (1s) Room",
           "kind": "market",
           "role": "member",
-          "joined_at": "2026-04-17T20:01:07.072Z"
+          "joined_at": "2026-04-17T21:46:06.797Z"
         },
         {
           "id": "room_CRASH300",
           "name": "Crash 300 Room",
           "kind": "market",
           "role": "member",
-          "joined_at": "2026-01-22T16:07:07.072Z"
+          "joined_at": "2026-01-22T17:52:06.797Z"
         }
       ],
       "security": {
@@ -2074,7 +2074,7 @@
         "device_type": "mobile",
         "two_factor": true,
         "failed_logins_30d": 9,
-        "password_changed_at": "2026-05-25T12:51:07.072Z",
+        "password_changed_at": "2026-05-25T14:36:06.797Z",
         "sessions": [
           {
             "ip": "43.153.40.59",
@@ -2083,7 +2083,7 @@
             "os": "Ubuntu 24.04",
             "browser": "Firefox 129",
             "type": "desktop",
-            "last_active": "2026-08-19T11:13:07.072Z",
+            "last_active": "2026-08-19T12:58:06.797Z",
             "current": false
           },
           {
@@ -2093,7 +2093,7 @@
             "os": "Windows 11",
             "browser": "Chrome 128",
             "type": "desktop",
-            "last_active": "2026-08-23T13:19:07.072Z",
+            "last_active": "2026-08-23T15:04:06.797Z",
             "current": false
           },
           {
@@ -2103,7 +2103,7 @@
             "os": "Ubuntu 24.04",
             "browser": "Firefox 129",
             "type": "desktop",
-            "last_active": "2026-08-31T07:04:07.072Z",
+            "last_active": "2026-08-31T08:49:06.797Z",
             "current": false
           }
         ]
@@ -2111,7 +2111,7 @@
       "flags": {
         "reports_against": 2,
         "warnings": 1,
-        "suspended_until": "2026-10-02T05:29:07.072Z"
+        "suspended_until": "2026-10-02T07:14:06.797Z"
       }
     },
     {
@@ -2124,8 +2124,8 @@
       "role": "user",
       "status": "inactive",
       "is_verified": false,
-      "joined_at": "2024-04-11T23:08:07.072Z",
-      "last_seen_at": "2026-08-28T02:30:07.072Z",
+      "joined_at": "2024-04-12T00:53:06.797Z",
+      "last_seen_at": "2026-08-28T04:15:06.797Z",
       "followers": 1631,
       "following": 380,
       "signals": 19,
@@ -2147,7 +2147,7 @@
         "currency": "USD",
         "landing_company": "svg",
         "last_recorded_balance": 943.87,
-        "balance_recorded_at": "2026-08-30T19:21:07.072Z",
+        "balance_recorded_at": "2026-08-30T21:06:06.797Z",
         "scopes": [
           "read",
           "trade",
@@ -2160,28 +2160,28 @@
           "name": "V100 Room",
           "kind": "market",
           "role": "member",
-          "joined_at": "2026-01-16T06:09:07.072Z"
+          "joined_at": "2026-01-16T07:54:06.797Z"
         },
         {
           "id": "room_CRASH500",
           "name": "Crash 500 Room",
           "kind": "market",
           "role": "member",
-          "joined_at": "2026-07-06T13:10:07.072Z"
+          "joined_at": "2026-07-06T14:55:06.797Z"
         },
         {
           "id": "room_frxNZDUSD",
           "name": "NZD/USD Room",
           "kind": "market",
           "role": "member",
-          "joined_at": "2026-01-12T10:31:07.072Z"
+          "joined_at": "2026-01-12T12:16:06.797Z"
         },
         {
           "id": "room_cryDOGUSD",
           "name": "DOGE/USD Room",
           "kind": "market",
           "role": "member",
-          "joined_at": "2026-05-15T22:13:07.072Z"
+          "joined_at": "2026-05-15T23:58:06.797Z"
         }
       ],
       "security": {
@@ -2194,7 +2194,7 @@
         "device_type": "desktop",
         "two_factor": true,
         "failed_logins_30d": 2,
-        "password_changed_at": "2025-09-01T01:23:07.072Z",
+        "password_changed_at": "2025-09-01T03:08:06.797Z",
         "sessions": [
           {
             "ip": "56.76.99.210",
@@ -2203,7 +2203,7 @@
             "os": "Ubuntu 24.04",
             "browser": "Firefox 129",
             "type": "desktop",
-            "last_active": "2026-08-15T07:27:07.072Z",
+            "last_active": "2026-08-15T09:12:06.797Z",
             "current": false
           },
           {
@@ -2213,7 +2213,7 @@
             "os": "Windows 10",
             "browser": "Edge 128",
             "type": "desktop",
-            "last_active": "2026-08-22T07:24:07.072Z",
+            "last_active": "2026-08-22T09:09:06.797Z",
             "current": false
           }
         ]
@@ -2226,16 +2226,16 @@
     },
     {
       "id": "u21",
-      "username": "john_david",
+      "username": "john_david2",
       "display_name": "John David",
-      "email": "john.david@example.com",
+      "email": "john.david2@example.com",
       "phone": "+234 853 2649 945",
       "avatar_url": null,
       "role": "user",
       "status": "inactive",
       "is_verified": true,
-      "joined_at": "2026-03-22T18:57:07.072Z",
-      "last_seen_at": "2026-08-24T03:34:07.072Z",
+      "joined_at": "2026-03-22T20:42:06.797Z",
+      "last_seen_at": "2026-08-24T05:19:06.797Z",
       "followers": 1386,
       "following": 229,
       "signals": 5,
@@ -2257,7 +2257,7 @@
         "currency": "USD",
         "landing_company": "svg",
         "last_recorded_balance": 9102.32,
-        "balance_recorded_at": "2026-08-30T10:10:07.072Z",
+        "balance_recorded_at": "2026-08-30T11:55:06.797Z",
         "scopes": [
           "read",
           "trade",
@@ -2270,14 +2270,14 @@
           "name": "V100 (1s) Room",
           "kind": "market",
           "role": "member",
-          "joined_at": "2026-08-25T17:07:07.072Z"
+          "joined_at": "2026-08-25T18:52:06.797Z"
         },
         {
           "id": "room_CRASH1000",
           "name": "Crash 1000 Room",
           "kind": "market",
           "role": "member",
-          "joined_at": "2026-07-12T13:00:07.072Z"
+          "joined_at": "2026-07-12T14:45:06.797Z"
         }
       ],
       "security": {
@@ -2290,7 +2290,7 @@
         "device_type": "mobile",
         "two_factor": false,
         "failed_logins_30d": 1,
-        "password_changed_at": "2025-07-30T13:26:07.072Z",
+        "password_changed_at": "2025-07-30T15:11:06.797Z",
         "sessions": [
           {
             "ip": "114.221.241.62",
@@ -2299,7 +2299,7 @@
             "os": "Windows 10",
             "browser": "Edge 128",
             "type": "desktop",
-            "last_active": "2026-08-17T20:20:07.072Z",
+            "last_active": "2026-08-17T22:05:06.797Z",
             "current": false
           },
           {
@@ -2309,7 +2309,7 @@
             "os": "Windows 11",
             "browser": "Chrome 128",
             "type": "desktop",
-            "last_active": "2026-08-24T08:41:07.072Z",
+            "last_active": "2026-08-24T10:26:06.797Z",
             "current": false
           },
           {
@@ -2319,7 +2319,7 @@
             "os": "Android 14",
             "browser": "Chrome 128",
             "type": "mobile",
-            "last_active": "2026-08-16T19:05:07.072Z",
+            "last_active": "2026-08-16T20:50:06.797Z",
             "current": false
           }
         ]
@@ -2332,16 +2332,16 @@
     },
     {
       "id": "u22",
-      "username": "grace_eze",
+      "username": "grace_eze2",
       "display_name": "Grace Eze",
-      "email": "grace.eze@example.com",
+      "email": "grace.eze2@example.com",
       "phone": "+234 847 4590 789",
       "avatar_url": null,
       "role": "user",
       "status": "inactive",
       "is_verified": true,
-      "joined_at": "2024-03-27T05:20:07.072Z",
-      "last_seen_at": "2026-09-01T20:12:07.072Z",
+      "joined_at": "2024-03-27T07:05:06.797Z",
+      "last_seen_at": "2026-09-01T21:57:06.797Z",
       "followers": 1593,
       "following": 248,
       "signals": 5,
@@ -2363,7 +2363,7 @@
         "currency": "USD",
         "landing_company": "maltainvest",
         "last_recorded_balance": 7686.12,
-        "balance_recorded_at": "2026-09-01T13:18:07.072Z",
+        "balance_recorded_at": "2026-09-01T15:03:06.797Z",
         "scopes": [
           "read",
           "trade",
@@ -2376,21 +2376,21 @@
           "name": "V75 Room",
           "kind": "market",
           "role": "member",
-          "joined_at": "2025-11-18T03:35:07.072Z"
+          "joined_at": "2025-11-18T05:20:06.797Z"
         },
         {
           "id": "room_BOOM300",
           "name": "Boom 300 Room",
           "kind": "market",
           "role": "member",
-          "joined_at": "2026-02-16T09:53:07.072Z"
+          "joined_at": "2026-02-16T11:38:06.797Z"
         },
         {
           "id": "room_frxUSDCAD",
           "name": "USD/CAD Room",
           "kind": "market",
           "role": "member",
-          "joined_at": "2026-06-17T02:07:07.072Z"
+          "joined_at": "2026-06-17T03:52:06.797Z"
         }
       ],
       "security": {
@@ -2403,7 +2403,7 @@
         "device_type": "desktop",
         "two_factor": false,
         "failed_logins_30d": 0,
-        "password_changed_at": "2025-11-02T07:51:07.072Z",
+        "password_changed_at": "2025-11-02T09:36:06.797Z",
         "sessions": [
           {
             "ip": "127.175.157.67",
@@ -2412,7 +2412,7 @@
             "os": "Android 13",
             "browser": "Chrome 128",
             "type": "mobile",
-            "last_active": "2026-08-17T08:09:07.072Z",
+            "last_active": "2026-08-17T09:54:06.797Z",
             "current": false
           }
         ]
@@ -2425,16 +2425,16 @@
     },
     {
       "id": "u23",
-      "username": "femi_adamu",
+      "username": "femi_adamu2",
       "display_name": "Femi Adamu",
-      "email": "femi.adamu@example.com",
+      "email": "femi.adamu2@example.com",
       "phone": "+234 898 3031 536",
       "avatar_url": null,
       "role": "user",
       "status": "active",
       "is_verified": false,
-      "joined_at": "2025-03-07T03:09:07.072Z",
-      "last_seen_at": "2026-08-28T14:43:07.072Z",
+      "joined_at": "2025-03-07T04:54:06.797Z",
+      "last_seen_at": "2026-08-28T16:28:06.797Z",
       "followers": 1423,
       "following": 261,
       "signals": 8,
@@ -2456,7 +2456,7 @@
         "currency": "USD",
         "landing_company": "svg",
         "last_recorded_balance": 757.57,
-        "balance_recorded_at": "2026-09-01T16:39:07.072Z",
+        "balance_recorded_at": "2026-09-01T18:24:06.797Z",
         "scopes": [
           "read",
           "trade",
@@ -2469,7 +2469,7 @@
           "name": "V75 (1s) Room",
           "kind": "market",
           "role": "member",
-          "joined_at": "2026-02-15T09:04:07.072Z"
+          "joined_at": "2026-02-15T10:49:06.797Z"
         }
       ],
       "security": {
@@ -2482,7 +2482,7 @@
         "device_type": "desktop",
         "two_factor": false,
         "failed_logins_30d": 6,
-        "password_changed_at": "2025-08-01T06:46:07.072Z",
+        "password_changed_at": "2025-08-01T08:31:06.797Z",
         "sessions": [
           {
             "ip": "45.228.20.239",
@@ -2491,7 +2491,7 @@
             "os": "Windows 11",
             "browser": "Chrome 128",
             "type": "desktop",
-            "last_active": "2026-08-18T17:01:07.072Z",
+            "last_active": "2026-08-18T18:46:06.797Z",
             "current": false
           },
           {
@@ -2501,7 +2501,7 @@
             "os": "iOS 17.5",
             "browser": "Safari 17",
             "type": "mobile",
-            "last_active": "2026-08-25T03:17:07.072Z",
+            "last_active": "2026-08-25T05:02:06.797Z",
             "current": false
           }
         ]
@@ -2514,16 +2514,16 @@
     },
     {
       "id": "u24",
-      "username": "amara_okafor",
+      "username": "amara_okafor2",
       "display_name": "Amara Okafor",
-      "email": "amara.okafor@example.com",
+      "email": "amara.okafor2@example.com",
       "phone": "+234 863 4263 893",
       "avatar_url": null,
       "role": "user",
       "status": "inactive",
       "is_verified": false,
-      "joined_at": "2026-03-06T16:00:07.072Z",
-      "last_seen_at": "2026-08-26T17:34:07.072Z",
+      "joined_at": "2026-03-06T17:45:06.797Z",
+      "last_seen_at": "2026-08-26T19:19:06.797Z",
       "followers": 477,
       "following": 53,
       "signals": 29,
@@ -2545,7 +2545,7 @@
         "currency": "USD",
         "landing_company": "vanuatu",
         "last_recorded_balance": 2815.15,
-        "balance_recorded_at": "2026-09-01T19:54:07.072Z",
+        "balance_recorded_at": "2026-09-01T21:39:06.797Z",
         "scopes": [
           "read",
           "trade",
@@ -2558,28 +2558,28 @@
           "name": "Boom 1000 Room",
           "kind": "market",
           "role": "member",
-          "joined_at": "2025-11-26T18:23:07.072Z"
+          "joined_at": "2025-11-26T20:08:06.798Z"
         },
         {
           "id": "room_frxUSDJPY",
           "name": "USD/JPY Room",
           "kind": "market",
           "role": "member",
-          "joined_at": "2026-01-05T08:53:07.072Z"
+          "joined_at": "2026-01-05T10:38:06.798Z"
         },
         {
           "id": "room_cryXRPUSD",
           "name": "XRP/USD Room",
           "kind": "market",
           "role": "member",
-          "joined_at": "2026-06-17T08:53:07.072Z"
+          "joined_at": "2026-06-17T10:38:06.798Z"
         },
         {
           "id": "room_OTC_NDX",
           "name": "US 100 Room",
           "kind": "market",
           "role": "member",
-          "joined_at": "2026-07-16T11:24:07.072Z"
+          "joined_at": "2026-07-16T13:09:06.798Z"
         }
       ],
       "security": {
@@ -2592,7 +2592,7 @@
         "device_type": "mobile",
         "two_factor": false,
         "failed_logins_30d": 6,
-        "password_changed_at": "2026-08-11T16:25:07.072Z",
+        "password_changed_at": "2026-08-11T18:10:06.798Z",
         "sessions": [
           {
             "ip": "98.106.213.251",
@@ -2601,7 +2601,7 @@
             "os": "macOS 14",
             "browser": "Chrome 127",
             "type": "desktop",
-            "last_active": "2026-08-24T22:51:07.072Z",
+            "last_active": "2026-08-25T00:36:06.798Z",
             "current": false
           },
           {
@@ -2611,7 +2611,7 @@
             "os": "Windows 10",
             "browser": "Edge 128",
             "type": "desktop",
-            "last_active": "2026-08-22T09:36:07.072Z",
+            "last_active": "2026-08-22T11:21:06.798Z",
             "current": false
           },
           {
@@ -2621,7 +2621,7 @@
             "os": "Ubuntu 24.04",
             "browser": "Firefox 129",
             "type": "desktop",
-            "last_active": "2026-09-01T14:44:07.072Z",
+            "last_active": "2026-09-01T16:29:06.798Z",
             "current": false
           },
           {
@@ -2631,7 +2631,7 @@
             "os": "Windows 11",
             "browser": "Chrome 128",
             "type": "desktop",
-            "last_active": "2026-08-16T17:29:07.072Z",
+            "last_active": "2026-08-16T19:14:06.798Z",
             "current": false
           }
         ]
@@ -2644,16 +2644,16 @@
     },
     {
       "id": "u25",
-      "username": "kwame_yusuf",
+      "username": "kwame_yusuf2",
       "display_name": "Kwame Yusuf",
-      "email": "kwame.yusuf@example.com",
+      "email": "kwame.yusuf2@example.com",
       "phone": "+234 833 5090 886",
       "avatar_url": null,
       "role": "signal_provider",
       "status": "active",
       "is_verified": false,
-      "joined_at": "2026-08-04T04:21:07.072Z",
-      "last_seen_at": "2026-08-22T17:55:07.072Z",
+      "joined_at": "2026-08-04T06:06:06.798Z",
+      "last_seen_at": "2026-08-22T19:40:06.798Z",
       "followers": 2198,
       "following": 128,
       "signals": 33,
@@ -2675,7 +2675,7 @@
         "currency": "USD",
         "landing_company": "vanuatu",
         "last_recorded_balance": 4905.56,
-        "balance_recorded_at": "2026-08-30T19:20:07.072Z",
+        "balance_recorded_at": "2026-08-30T21:05:06.798Z",
         "scopes": [
           "read",
           "trade",
@@ -2688,28 +2688,28 @@
           "name": "RB 100 Room",
           "kind": "market",
           "role": "member",
-          "joined_at": "2025-12-09T10:47:07.072Z"
+          "joined_at": "2025-12-09T12:32:06.798Z"
         },
         {
           "id": "room_frxGBPUSD",
           "name": "GBP/USD Room",
           "kind": "market",
           "role": "member",
-          "joined_at": "2026-07-26T01:50:07.072Z"
+          "joined_at": "2026-07-26T03:35:06.798Z"
         },
         {
           "id": "room_crySOLUSD",
           "name": "SOL/USD Room",
           "kind": "market",
           "role": "member",
-          "joined_at": "2026-08-25T07:31:07.072Z"
+          "joined_at": "2026-08-25T09:16:06.798Z"
         },
         {
           "id": "room_OTC_SPC",
           "name": "US 500 Room",
           "kind": "market",
           "role": "member",
-          "joined_at": "2026-03-10T22:49:07.072Z"
+          "joined_at": "2026-03-11T00:34:06.798Z"
         }
       ],
       "security": {
@@ -2722,7 +2722,7 @@
         "device_type": "desktop",
         "two_factor": false,
         "failed_logins_30d": 9,
-        "password_changed_at": "2025-11-27T05:29:07.072Z",
+        "password_changed_at": "2025-11-27T07:14:06.798Z",
         "sessions": [
           {
             "ip": "172.213.249.110",
@@ -2731,7 +2731,7 @@
             "os": "Ubuntu 24.04",
             "browser": "Firefox 129",
             "type": "desktop",
-            "last_active": "2026-08-26T16:42:07.072Z",
+            "last_active": "2026-08-26T18:27:06.798Z",
             "current": false
           },
           {
@@ -2741,7 +2741,7 @@
             "os": "iOS 17.5",
             "browser": "Safari 17",
             "type": "mobile",
-            "last_active": "2026-08-14T23:55:07.072Z",
+            "last_active": "2026-08-15T01:40:06.798Z",
             "current": false
           },
           {
@@ -2751,7 +2751,7 @@
             "os": "macOS 14",
             "browser": "Chrome 127",
             "type": "desktop",
-            "last_active": "2026-08-20T10:34:07.072Z",
+            "last_active": "2026-08-20T12:19:06.798Z",
             "current": false
           }
         ]
@@ -2764,16 +2764,16 @@
     },
     {
       "id": "u26",
-      "username": "zainab_lawal",
+      "username": "zainab_lawal2",
       "display_name": "Zainab Lawal",
-      "email": "zainab.lawal@example.com",
+      "email": "zainab.lawal2@example.com",
       "phone": "+234 824 4183 302",
       "avatar_url": null,
       "role": "signal_provider",
       "status": "active",
       "is_verified": false,
-      "joined_at": "2026-01-25T01:52:07.072Z",
-      "last_seen_at": "2026-08-27T02:51:07.072Z",
+      "joined_at": "2026-01-25T03:37:06.798Z",
+      "last_seen_at": "2026-08-27T04:36:06.798Z",
       "followers": 1547,
       "following": 32,
       "signals": 22,
@@ -2795,7 +2795,7 @@
         "currency": "USD",
         "landing_company": "maltainvest",
         "last_recorded_balance": 8430.75,
-        "balance_recorded_at": "2026-08-31T03:19:07.072Z",
+        "balance_recorded_at": "2026-08-31T05:04:06.798Z",
         "scopes": [
           "read",
           "trade",
@@ -2808,21 +2808,21 @@
           "name": "Step Room",
           "kind": "market",
           "role": "member",
-          "joined_at": "2026-04-04T07:58:07.072Z"
+          "joined_at": "2026-04-04T09:43:06.798Z"
         },
         {
           "id": "room_frxEURUSD",
           "name": "EUR/USD Room",
           "kind": "market",
           "role": "member",
-          "joined_at": "2026-01-09T05:22:07.072Z"
+          "joined_at": "2026-01-09T07:07:06.798Z"
         },
         {
           "id": "room_cryETHUSD",
           "name": "ETH/USD Room",
           "kind": "market",
           "role": "member",
-          "joined_at": "2026-01-04T18:38:07.072Z"
+          "joined_at": "2026-01-04T20:23:06.798Z"
         }
       ],
       "security": {
@@ -2835,7 +2835,7 @@
         "device_type": "mobile",
         "two_factor": false,
         "failed_logins_30d": 4,
-        "password_changed_at": "2026-05-06T11:33:07.072Z",
+        "password_changed_at": "2026-05-06T13:18:06.798Z",
         "sessions": [
           {
             "ip": "178.98.164.11",
@@ -2844,7 +2844,7 @@
             "os": "macOS 14",
             "browser": "Chrome 127",
             "type": "desktop",
-            "last_active": "2026-08-13T13:25:07.072Z",
+            "last_active": "2026-08-13T15:10:06.798Z",
             "current": false
           }
         ]
@@ -2857,16 +2857,16 @@
     },
     {
       "id": "u27",
-      "username": "tunde_adeyemi",
+      "username": "tunde_adeyemi2",
       "display_name": "Tunde Adeyemi",
-      "email": "tunde.adeyemi@example.com",
+      "email": "tunde.adeyemi2@example.com",
       "phone": "+234 835 7982 354",
       "avatar_url": null,
       "role": "user",
       "status": "active",
       "is_verified": false,
-      "joined_at": "2024-04-02T20:12:07.072Z",
-      "last_seen_at": "2026-08-29T03:16:07.072Z",
+      "joined_at": "2024-04-02T21:57:06.798Z",
+      "last_seen_at": "2026-08-29T05:01:06.798Z",
       "followers": 57,
       "following": 348,
       "signals": 1,
@@ -2888,7 +2888,7 @@
         "currency": "USD",
         "landing_company": "maltainvest",
         "last_recorded_balance": 3915.01,
-        "balance_recorded_at": "2026-08-31T05:48:07.072Z",
+        "balance_recorded_at": "2026-08-31T07:33:06.798Z",
         "scopes": [
           "read",
           "trade",
@@ -2901,35 +2901,35 @@
           "name": "V10 Room",
           "kind": "market",
           "role": "member",
-          "joined_at": "2026-06-28T07:40:07.072Z"
+          "joined_at": "2026-06-28T09:25:06.798Z"
         },
         {
           "id": "room_JD25",
           "name": "Jump 25 Room",
           "kind": "market",
           "role": "member",
-          "joined_at": "2025-11-09T15:09:07.072Z"
+          "joined_at": "2025-11-09T16:54:06.798Z"
         },
         {
           "id": "room_cryBTCUSD",
           "name": "BTC/USD Room",
           "kind": "market",
           "role": "member",
-          "joined_at": "2026-08-28T01:51:07.072Z"
+          "joined_at": "2026-08-28T03:36:06.798Z"
         },
         {
           "id": "room_frxXPDUSD",
           "name": "XPD/USD Room",
           "kind": "market",
           "role": "member",
-          "joined_at": "2026-05-19T22:58:07.072Z"
+          "joined_at": "2026-05-20T00:43:06.798Z"
         },
         {
           "id": "room_u_AlphaKing",
           "name": "AlphaKing's Room",
           "kind": "trader",
           "role": "member",
-          "joined_at": "2026-01-02T10:12:07.072Z"
+          "joined_at": "2026-01-02T11:57:06.798Z"
         }
       ],
       "security": {
@@ -2942,7 +2942,7 @@
         "device_type": "desktop",
         "two_factor": false,
         "failed_logins_30d": 3,
-        "password_changed_at": "2025-12-15T23:42:07.072Z",
+        "password_changed_at": "2025-12-16T01:27:06.798Z",
         "sessions": [
           {
             "ip": "116.172.231.166",
@@ -2951,7 +2951,7 @@
             "os": "iOS 17.5",
             "browser": "Safari 17",
             "type": "mobile",
-            "last_active": "2026-08-16T14:15:07.072Z",
+            "last_active": "2026-08-16T16:00:06.798Z",
             "current": false
           }
         ]
@@ -2964,16 +2964,16 @@
     },
     {
       "id": "u28",
-      "username": "chioma_nwosu",
+      "username": "chioma_nwosu2",
       "display_name": "Chioma Nwosu",
-      "email": "chioma.nwosu@example.com",
+      "email": "chioma.nwosu2@example.com",
       "phone": "+234 842 4472 320",
       "avatar_url": null,
       "role": "moderator",
       "status": "active",
       "is_verified": true,
-      "joined_at": "2026-06-14T04:22:07.072Z",
-      "last_seen_at": "2026-09-02T00:25:07.072Z",
+      "joined_at": "2026-06-14T06:07:06.798Z",
+      "last_seen_at": "2026-09-02T02:10:06.798Z",
       "followers": 475,
       "following": 106,
       "signals": 2,
@@ -2995,7 +2995,7 @@
         "currency": "USD",
         "landing_company": "vanuatu",
         "last_recorded_balance": 1541.51,
-        "balance_recorded_at": "2026-08-30T06:42:07.072Z",
+        "balance_recorded_at": "2026-08-30T08:27:06.798Z",
         "scopes": [
           "read",
           "trade",
@@ -3008,7 +3008,7 @@
           "name": "V25 Room",
           "kind": "market",
           "role": "member",
-          "joined_at": "2026-03-07T09:29:07.072Z"
+          "joined_at": "2026-03-07T11:14:06.798Z"
         }
       ],
       "security": {
@@ -3021,7 +3021,7 @@
         "device_type": "mobile",
         "two_factor": false,
         "failed_logins_30d": 2,
-        "password_changed_at": "2026-01-16T01:29:07.072Z",
+        "password_changed_at": "2026-01-16T03:14:06.798Z",
         "sessions": [
           {
             "ip": "42.10.3.206",
@@ -3030,7 +3030,7 @@
             "os": "Android 14",
             "browser": "Chrome 128",
             "type": "mobile",
-            "last_active": "2026-08-13T12:29:07.072Z",
+            "last_active": "2026-08-13T14:14:06.798Z",
             "current": false
           },
           {
@@ -3040,7 +3040,7 @@
             "os": "iOS 17.5",
             "browser": "Safari 17",
             "type": "mobile",
-            "last_active": "2026-08-24T10:30:07.072Z",
+            "last_active": "2026-08-24T12:15:06.798Z",
             "current": false
           },
           {
@@ -3050,7 +3050,7 @@
             "os": "Ubuntu 24.04",
             "browser": "Firefox 129",
             "type": "desktop",
-            "last_active": "2026-08-27T22:46:07.072Z",
+            "last_active": "2026-08-28T00:31:06.798Z",
             "current": false
           }
         ]
@@ -3063,16 +3063,16 @@
     },
     {
       "id": "u29",
-      "username": "musa_okoro",
+      "username": "musa_okoro2",
       "display_name": "Musa Okoro",
-      "email": "musa.okoro@example.com",
+      "email": "musa.okoro2@example.com",
       "phone": "+234 819 3751 829",
       "avatar_url": null,
       "role": "user",
       "status": "active",
       "is_verified": true,
-      "joined_at": "2025-07-05T06:19:07.072Z",
-      "last_seen_at": "2026-08-20T09:58:07.072Z",
+      "joined_at": "2025-07-05T08:04:06.798Z",
+      "last_seen_at": "2026-08-20T11:43:06.798Z",
       "followers": 1366,
       "following": 164,
       "signals": 27,
@@ -3094,7 +3094,7 @@
         "currency": "USD",
         "landing_company": "maltainvest",
         "last_recorded_balance": 2511.56,
-        "balance_recorded_at": "2026-08-30T16:43:07.072Z",
+        "balance_recorded_at": "2026-08-30T18:28:06.798Z",
         "scopes": [
           "read",
           "trade",
@@ -3107,21 +3107,21 @@
           "name": "V50 Room",
           "kind": "market",
           "role": "member",
-          "joined_at": "2026-06-23T05:46:07.072Z"
+          "joined_at": "2026-06-23T07:31:06.798Z"
         },
         {
           "id": "room_JD75",
           "name": "Jump 75 Room",
           "kind": "market",
           "role": "member",
-          "joined_at": "2026-01-01T03:45:07.072Z"
+          "joined_at": "2026-01-01T05:30:06.798Z"
         },
         {
           "id": "room_frxEURJPY",
           "name": "EUR/JPY Room",
           "kind": "market",
           "role": "member",
-          "joined_at": "2026-08-12T18:49:07.072Z"
+          "joined_at": "2026-08-12T20:34:06.798Z"
         }
       ],
       "security": {
@@ -3134,7 +3134,7 @@
         "device_type": "mobile",
         "two_factor": false,
         "failed_logins_30d": 7,
-        "password_changed_at": "2025-10-19T08:07:07.072Z",
+        "password_changed_at": "2025-10-19T09:52:06.798Z",
         "sessions": [
           {
             "ip": "105.152.111.153",
@@ -3143,7 +3143,7 @@
             "os": "Windows 11",
             "browser": "Chrome 128",
             "type": "desktop",
-            "last_active": "2026-08-31T19:33:07.072Z",
+            "last_active": "2026-08-31T21:18:06.798Z",
             "current": false
           },
           {
@@ -3153,7 +3153,7 @@
             "os": "iOS 17.5",
             "browser": "Safari 17",
             "type": "mobile",
-            "last_active": "2026-08-31T01:13:07.072Z",
+            "last_active": "2026-08-31T02:58:06.798Z",
             "current": false
           }
         ]
@@ -3166,16 +3166,16 @@
     },
     {
       "id": "u30",
-      "username": "ada_bello",
+      "username": "ada_bello2",
       "display_name": "Ada Bello",
-      "email": "ada.bello@example.com",
+      "email": "ada.bello2@example.com",
       "phone": "+234 894 6290 789",
       "avatar_url": null,
       "role": "user",
       "status": "active",
       "is_verified": true,
-      "joined_at": "2026-05-06T16:07:07.072Z",
-      "last_seen_at": "2026-08-22T10:49:07.072Z",
+      "joined_at": "2026-05-06T17:52:06.798Z",
+      "last_seen_at": "2026-08-22T12:34:06.798Z",
       "followers": 96,
       "following": 62,
       "signals": 28,
@@ -3197,7 +3197,7 @@
         "currency": "USD",
         "landing_company": "svg",
         "last_recorded_balance": 4717.13,
-        "balance_recorded_at": "2026-08-30T08:05:07.072Z",
+        "balance_recorded_at": "2026-08-30T09:50:06.798Z",
         "scopes": [
           "read",
           "trade",
@@ -3210,21 +3210,21 @@
           "name": "V50 (1s) Room",
           "kind": "market",
           "role": "member",
-          "joined_at": "2025-12-28T11:09:07.072Z"
+          "joined_at": "2025-12-28T12:54:06.798Z"
         },
         {
           "id": "room_CRASH300",
           "name": "Crash 300 Room",
           "kind": "market",
           "role": "member",
-          "joined_at": "2026-03-04T18:56:07.072Z"
+          "joined_at": "2026-03-04T20:41:06.798Z"
         },
         {
           "id": "room_frxEURGBP",
           "name": "EUR/GBP Room",
           "kind": "market",
           "role": "member",
-          "joined_at": "2025-12-20T06:09:07.072Z"
+          "joined_at": "2025-12-20T07:54:06.798Z"
         }
       ],
       "security": {
@@ -3237,7 +3237,7 @@
         "device_type": "desktop",
         "two_factor": true,
         "failed_logins_30d": 9,
-        "password_changed_at": "2026-08-30T18:06:07.072Z",
+        "password_changed_at": "2026-08-30T19:51:06.798Z",
         "sessions": [
           {
             "ip": "54.144.94.181",
@@ -3246,7 +3246,7 @@
             "os": "macOS 14",
             "browser": "Chrome 127",
             "type": "desktop",
-            "last_active": "2026-08-31T06:29:07.072Z",
+            "last_active": "2026-08-31T08:14:06.798Z",
             "current": false
           },
           {
@@ -3256,7 +3256,7 @@
             "os": "iOS 17.5",
             "browser": "Safari 17",
             "type": "mobile",
-            "last_active": "2026-09-01T09:58:07.072Z",
+            "last_active": "2026-09-01T11:43:06.798Z",
             "current": false
           }
         ]
@@ -3269,16 +3269,16 @@
     },
     {
       "id": "u31",
-      "username": "daniel_achebe",
+      "username": "daniel_achebe2",
       "display_name": "Daniel Achebe",
-      "email": "daniel.achebe@example.com",
+      "email": "daniel.achebe2@example.com",
       "phone": "+234 871 8078 897",
       "avatar_url": null,
       "role": "signal_provider",
       "status": "active",
       "is_verified": false,
-      "joined_at": "2026-07-06T18:01:07.072Z",
-      "last_seen_at": "2026-08-19T16:09:07.072Z",
+      "joined_at": "2026-07-06T19:46:06.798Z",
+      "last_seen_at": "2026-08-19T17:54:06.798Z",
       "followers": 282,
       "following": 385,
       "signals": 151,
@@ -3300,7 +3300,7 @@
         "currency": "USD",
         "landing_company": "maltainvest",
         "last_recorded_balance": 10285.99,
-        "balance_recorded_at": "2026-09-02T00:53:07.072Z",
+        "balance_recorded_at": "2026-09-02T02:38:06.798Z",
         "scopes": [
           "read",
           "trade",
@@ -3313,14 +3313,14 @@
           "name": "V100 Room",
           "kind": "market",
           "role": "member",
-          "joined_at": "2026-05-29T23:06:07.072Z"
+          "joined_at": "2026-05-30T00:51:06.798Z"
         },
         {
           "id": "room_CRASH500",
           "name": "Crash 500 Room",
           "kind": "market",
           "role": "member",
-          "joined_at": "2026-07-28T07:05:07.072Z"
+          "joined_at": "2026-07-28T08:50:06.798Z"
         }
       ],
       "security": {
@@ -3333,7 +3333,7 @@
         "device_type": "desktop",
         "two_factor": true,
         "failed_logins_30d": 1,
-        "password_changed_at": "2025-08-09T23:45:07.072Z",
+        "password_changed_at": "2025-08-10T01:30:06.798Z",
         "sessions": [
           {
             "ip": "140.172.28.132",
@@ -3342,7 +3342,7 @@
             "os": "Android 13",
             "browser": "Chrome 128",
             "type": "mobile",
-            "last_active": "2026-08-23T02:40:07.072Z",
+            "last_active": "2026-08-23T04:25:06.798Z",
             "current": false
           }
         ]
@@ -3355,16 +3355,16 @@
     },
     {
       "id": "u32",
-      "username": "blessing_danjuma",
+      "username": "blessing_danjuma2",
       "display_name": "Blessing Danjuma",
-      "email": "blessing.danjuma@example.com",
+      "email": "blessing.danjuma2@example.com",
       "phone": "+234 838 6389 954",
       "avatar_url": null,
       "role": "user",
       "status": "active",
       "is_verified": false,
-      "joined_at": "2026-06-12T23:15:07.072Z",
-      "last_seen_at": "2026-08-21T06:54:07.072Z",
+      "joined_at": "2026-06-13T01:00:06.798Z",
+      "last_seen_at": "2026-08-21T08:39:06.798Z",
       "followers": 2204,
       "following": 52,
       "signals": 4,
@@ -3386,7 +3386,7 @@
         "currency": "USD",
         "landing_company": "svg",
         "last_recorded_balance": 5154.34,
-        "balance_recorded_at": "2026-08-30T17:12:07.072Z",
+        "balance_recorded_at": "2026-08-30T18:57:06.798Z",
         "scopes": [
           "read",
           "trade",
@@ -3399,7 +3399,7 @@
           "name": "V100 (1s) Room",
           "kind": "market",
           "role": "member",
-          "joined_at": "2026-01-10T05:34:07.072Z"
+          "joined_at": "2026-01-10T07:19:06.798Z"
         }
       ],
       "security": {
@@ -3412,7 +3412,7 @@
         "device_type": "mobile",
         "two_factor": false,
         "failed_logins_30d": 4,
-        "password_changed_at": "2026-04-22T07:16:07.072Z",
+        "password_changed_at": "2026-04-22T09:01:06.798Z",
         "sessions": [
           {
             "ip": "100.244.7.75",
@@ -3421,7 +3421,7 @@
             "os": "Ubuntu 24.04",
             "browser": "Firefox 129",
             "type": "desktop",
-            "last_active": "2026-08-23T17:50:07.072Z",
+            "last_active": "2026-08-23T19:35:06.798Z",
             "current": false
           },
           {
@@ -3431,7 +3431,7 @@
             "os": "Android 13",
             "browser": "Chrome 128",
             "type": "mobile",
-            "last_active": "2026-09-02T00:47:07.072Z",
+            "last_active": "2026-09-02T02:32:06.798Z",
             "current": false
           },
           {
@@ -3441,7 +3441,7 @@
             "os": "Android 14",
             "browser": "Chrome 128",
             "type": "mobile",
-            "last_active": "2026-08-28T21:30:07.073Z",
+            "last_active": "2026-08-28T23:15:06.798Z",
             "current": false
           },
           {
@@ -3451,7 +3451,7 @@
             "os": "iOS 17.5",
             "browser": "Safari 17",
             "type": "mobile",
-            "last_active": "2026-08-23T21:01:07.073Z",
+            "last_active": "2026-08-23T22:46:06.798Z",
             "current": false
           }
         ]
@@ -3464,16 +3464,16 @@
     },
     {
       "id": "u33",
-      "username": "ibrahim_mensah",
+      "username": "ibrahim_mensah2",
       "display_name": "Ibrahim Mensah",
-      "email": "ibrahim.mensah@example.com",
+      "email": "ibrahim.mensah2@example.com",
       "phone": "+234 869 1237 280",
       "avatar_url": null,
       "role": "user",
       "status": "banned",
       "is_verified": true,
-      "joined_at": "2024-08-09T22:01:07.073Z",
-      "last_seen_at": "2026-08-23T12:24:07.073Z",
+      "joined_at": "2024-08-09T23:46:06.798Z",
+      "last_seen_at": "2026-08-23T14:09:06.798Z",
       "followers": 479,
       "following": 219,
       "signals": 8,
@@ -3495,7 +3495,7 @@
         "currency": "USD",
         "landing_company": "svg",
         "last_recorded_balance": 1144.38,
-        "balance_recorded_at": "2026-09-01T21:54:07.073Z",
+        "balance_recorded_at": "2026-09-01T23:39:06.798Z",
         "scopes": [
           "read",
           "trade",
@@ -3508,14 +3508,14 @@
           "name": "V75 Room",
           "kind": "market",
           "role": "member",
-          "joined_at": "2026-02-06T16:32:07.073Z"
+          "joined_at": "2026-02-06T18:17:06.798Z"
         },
         {
           "id": "room_BOOM300",
           "name": "Boom 300 Room",
           "kind": "market",
           "role": "member",
-          "joined_at": "2025-11-26T23:32:07.073Z"
+          "joined_at": "2025-11-27T01:17:06.798Z"
         }
       ],
       "security": {
@@ -3528,7 +3528,7 @@
         "device_type": "desktop",
         "two_factor": false,
         "failed_logins_30d": 2,
-        "password_changed_at": "2025-09-03T17:24:07.073Z",
+        "password_changed_at": "2025-09-03T19:09:06.798Z",
         "sessions": [
           {
             "ip": "131.97.103.43",
@@ -3537,7 +3537,7 @@
             "os": "Android 13",
             "browser": "Chrome 128",
             "type": "mobile",
-            "last_active": "2026-08-22T03:41:07.073Z",
+            "last_active": "2026-08-22T05:26:06.798Z",
             "current": false
           }
         ]
@@ -3545,21 +3545,21 @@
       "flags": {
         "reports_against": 2,
         "warnings": 1,
-        "suspended_until": "2026-10-02T05:29:07.073Z"
+        "suspended_until": "2026-10-02T07:14:06.798Z"
       }
     },
     {
       "id": "u34",
-      "username": "ngozi_obi",
+      "username": "ngozi_obi2",
       "display_name": "Ngozi Obi",
-      "email": "ngozi.obi@example.com",
+      "email": "ngozi.obi2@example.com",
       "phone": "+234 893 6889 264",
       "avatar_url": null,
       "role": "user",
       "status": "active",
       "is_verified": true,
-      "joined_at": "2024-04-17T06:01:07.073Z",
-      "last_seen_at": "2026-08-23T22:45:07.073Z",
+      "joined_at": "2024-04-17T07:46:06.798Z",
+      "last_seen_at": "2026-08-24T00:30:06.798Z",
       "followers": 2170,
       "following": 9,
       "signals": 22,
@@ -3581,7 +3581,7 @@
         "currency": "USD",
         "landing_company": "maltainvest",
         "last_recorded_balance": 2391.5,
-        "balance_recorded_at": "2026-08-30T16:56:07.073Z",
+        "balance_recorded_at": "2026-08-30T18:41:06.798Z",
         "scopes": [
           "read",
           "trade",
@@ -3594,7 +3594,7 @@
           "name": "V75 (1s) Room",
           "kind": "market",
           "role": "member",
-          "joined_at": "2026-04-24T04:31:07.073Z"
+          "joined_at": "2026-04-24T06:16:06.798Z"
         }
       ],
       "security": {
@@ -3607,7 +3607,7 @@
         "device_type": "desktop",
         "two_factor": true,
         "failed_logins_30d": 1,
-        "password_changed_at": "2025-11-15T12:02:07.073Z",
+        "password_changed_at": "2025-11-15T13:47:06.798Z",
         "sessions": [
           {
             "ip": "196.118.69.147",
@@ -3616,7 +3616,7 @@
             "os": "Windows 11",
             "browser": "Chrome 128",
             "type": "desktop",
-            "last_active": "2026-08-24T22:46:07.073Z",
+            "last_active": "2026-08-25T00:31:06.798Z",
             "current": false
           },
           {
@@ -3626,7 +3626,7 @@
             "os": "iOS 17.5",
             "browser": "Safari 17",
             "type": "mobile",
-            "last_active": "2026-08-23T20:46:07.073Z",
+            "last_active": "2026-08-23T22:31:06.798Z",
             "current": false
           }
         ]
@@ -3639,16 +3639,16 @@
     },
     {
       "id": "u35",
-      "username": "samuel_mohammed",
+      "username": "samuel_mohammed2",
       "display_name": "Samuel Mohammed",
-      "email": "samuel.mohammed@example.com",
+      "email": "samuel.mohammed2@example.com",
       "phone": "+234 853 2547 815",
       "avatar_url": null,
       "role": "signal_provider",
       "status": "inactive",
       "is_verified": false,
-      "joined_at": "2025-07-31T04:15:07.073Z",
-      "last_seen_at": "2026-08-23T10:11:07.073Z",
+      "joined_at": "2025-07-31T06:00:06.798Z",
+      "last_seen_at": "2026-08-23T11:56:06.798Z",
       "followers": 1044,
       "following": 217,
       "signals": 132,
@@ -3670,7 +3670,7 @@
         "currency": "USD",
         "landing_company": "svg",
         "last_recorded_balance": 6645.97,
-        "balance_recorded_at": "2026-09-02T04:04:07.073Z",
+        "balance_recorded_at": "2026-09-02T05:49:06.798Z",
         "scopes": [
           "read",
           "trade",
@@ -3683,7 +3683,7 @@
           "name": "Boom 1000 Room",
           "kind": "market",
           "role": "member",
-          "joined_at": "2026-06-11T09:22:07.073Z"
+          "joined_at": "2026-06-11T11:07:06.798Z"
         }
       ],
       "security": {
@@ -3696,7 +3696,7 @@
         "device_type": "mobile",
         "two_factor": false,
         "failed_logins_30d": 7,
-        "password_changed_at": "2026-01-11T22:06:07.073Z",
+        "password_changed_at": "2026-01-11T23:51:06.798Z",
         "sessions": [
           {
             "ip": "112.196.83.131",
@@ -3705,7 +3705,7 @@
             "os": "macOS 14",
             "browser": "Chrome 127",
             "type": "desktop",
-            "last_active": "2026-08-15T19:13:07.073Z",
+            "last_active": "2026-08-15T20:58:06.798Z",
             "current": false
           },
           {
@@ -3715,7 +3715,7 @@
             "os": "Windows 10",
             "browser": "Edge 128",
             "type": "desktop",
-            "last_active": "2026-08-19T19:57:07.073Z",
+            "last_active": "2026-08-19T21:42:06.798Z",
             "current": false
           },
           {
@@ -3725,7 +3725,7 @@
             "os": "Windows 11",
             "browser": "Chrome 128",
             "type": "desktop",
-            "last_active": "2026-08-24T20:47:07.073Z",
+            "last_active": "2026-08-24T22:32:06.798Z",
             "current": false
           }
         ]
@@ -3738,16 +3738,16 @@
     },
     {
       "id": "u36",
-      "username": "aisha_ibrahim",
+      "username": "aisha_ibrahim2",
       "display_name": "Aisha Ibrahim",
-      "email": "aisha.ibrahim@example.com",
+      "email": "aisha.ibrahim2@example.com",
       "phone": "+234 835 6687 981",
       "avatar_url": null,
       "role": "user",
       "status": "active",
       "is_verified": false,
-      "joined_at": "2024-09-22T10:27:07.073Z",
-      "last_seen_at": "2026-08-30T22:47:07.073Z",
+      "joined_at": "2024-09-22T12:12:06.798Z",
+      "last_seen_at": "2026-08-31T00:32:06.798Z",
       "followers": 2323,
       "following": 72,
       "signals": 17,
@@ -3769,7 +3769,7 @@
         "currency": "USD",
         "landing_company": "maltainvest",
         "last_recorded_balance": 975.55,
-        "balance_recorded_at": "2026-09-01T21:24:07.073Z",
+        "balance_recorded_at": "2026-09-01T23:09:06.798Z",
         "scopes": [
           "read",
           "trade",
@@ -3782,28 +3782,28 @@
           "name": "RB 100 Room",
           "kind": "market",
           "role": "member",
-          "joined_at": "2026-07-14T04:29:07.073Z"
+          "joined_at": "2026-07-14T06:14:06.798Z"
         },
         {
           "id": "room_frxGBPUSD",
           "name": "GBP/USD Room",
           "kind": "market",
           "role": "member",
-          "joined_at": "2026-02-12T09:41:07.073Z"
+          "joined_at": "2026-02-12T11:26:06.798Z"
         },
         {
           "id": "room_crySOLUSD",
           "name": "SOL/USD Room",
           "kind": "market",
           "role": "member",
-          "joined_at": "2025-12-18T00:02:07.073Z"
+          "joined_at": "2025-12-18T01:47:06.798Z"
         },
         {
           "id": "room_OTC_SPC",
           "name": "US 500 Room",
           "kind": "market",
           "role": "member",
-          "joined_at": "2025-12-16T11:02:07.073Z"
+          "joined_at": "2025-12-16T12:47:06.798Z"
         }
       ],
       "security": {
@@ -3816,7 +3816,7 @@
         "device_type": "desktop",
         "two_factor": false,
         "failed_logins_30d": 0,
-        "password_changed_at": "2026-08-17T15:23:07.073Z",
+        "password_changed_at": "2026-08-17T17:08:06.798Z",
         "sessions": [
           {
             "ip": "71.147.172.95",
@@ -3825,7 +3825,7 @@
             "os": "Android 13",
             "browser": "Chrome 128",
             "type": "mobile",
-            "last_active": "2026-08-26T08:06:07.073Z",
+            "last_active": "2026-08-26T09:51:06.798Z",
             "current": false
           },
           {
@@ -3835,7 +3835,7 @@
             "os": "iOS 17.5",
             "browser": "Safari 17",
             "type": "mobile",
-            "last_active": "2026-08-26T16:43:07.073Z",
+            "last_active": "2026-08-26T18:28:06.798Z",
             "current": false
           }
         ]
@@ -3848,16 +3848,16 @@
     },
     {
       "id": "u37",
-      "username": "peter_suleiman",
+      "username": "peter_suleiman2",
       "display_name": "Peter Suleiman",
-      "email": "peter.suleiman@example.com",
+      "email": "peter.suleiman2@example.com",
       "phone": "+234 867 3462 324",
       "avatar_url": null,
       "role": "user",
       "status": "active",
       "is_verified": false,
-      "joined_at": "2024-04-16T04:41:07.073Z",
-      "last_seen_at": "2026-08-20T07:39:07.073Z",
+      "joined_at": "2024-04-16T06:26:06.798Z",
+      "last_seen_at": "2026-08-20T09:24:06.798Z",
       "followers": 598,
       "following": 364,
       "signals": 8,
@@ -3879,7 +3879,7 @@
         "currency": "USD",
         "landing_company": "maltainvest",
         "last_recorded_balance": 11837.33,
-        "balance_recorded_at": "2026-09-01T13:47:07.073Z",
+        "balance_recorded_at": "2026-09-01T15:32:06.798Z",
         "scopes": [
           "read",
           "trade",
@@ -3892,14 +3892,14 @@
           "name": "Step Room",
           "kind": "market",
           "role": "member",
-          "joined_at": "2025-12-10T03:03:07.073Z"
+          "joined_at": "2025-12-10T04:48:06.798Z"
         },
         {
           "id": "room_frxEURUSD",
           "name": "EUR/USD Room",
           "kind": "market",
           "role": "member",
-          "joined_at": "2026-07-22T05:51:07.073Z"
+          "joined_at": "2026-07-22T07:36:06.798Z"
         }
       ],
       "security": {
@@ -3912,7 +3912,7 @@
         "device_type": "desktop",
         "two_factor": false,
         "failed_logins_30d": 5,
-        "password_changed_at": "2026-05-11T05:02:07.073Z",
+        "password_changed_at": "2026-05-11T06:47:06.798Z",
         "sessions": [
           {
             "ip": "46.23.77.160",
@@ -3921,7 +3921,7 @@
             "os": "Windows 10",
             "browser": "Edge 128",
             "type": "desktop",
-            "last_active": "2026-08-20T00:21:07.073Z",
+            "last_active": "2026-08-20T02:06:06.798Z",
             "current": false
           },
           {
@@ -3931,7 +3931,7 @@
             "os": "Android 14",
             "browser": "Chrome 128",
             "type": "mobile",
-            "last_active": "2026-08-19T18:52:07.073Z",
+            "last_active": "2026-08-19T20:37:06.798Z",
             "current": false
           }
         ]
@@ -3944,16 +3944,16 @@
     },
     {
       "id": "u38",
-      "username": "fatima_ekene",
+      "username": "fatima_ekene2",
       "display_name": "Fatima Ekene",
-      "email": "fatima.ekene@example.com",
+      "email": "fatima.ekene2@example.com",
       "phone": "+234 839 4692 967",
       "avatar_url": null,
       "role": "user",
       "status": "banned",
       "is_verified": false,
-      "joined_at": "2025-09-21T22:35:07.073Z",
-      "last_seen_at": "2026-08-21T11:42:07.073Z",
+      "joined_at": "2025-09-22T00:20:06.798Z",
+      "last_seen_at": "2026-08-21T13:27:06.798Z",
       "followers": 1758,
       "following": 122,
       "signals": 4,
@@ -3975,7 +3975,7 @@
         "currency": "USD",
         "landing_company": "maltainvest",
         "last_recorded_balance": 1142.16,
-        "balance_recorded_at": "2026-09-01T17:57:07.073Z",
+        "balance_recorded_at": "2026-09-01T19:42:06.798Z",
         "scopes": [
           "read",
           "trade",
@@ -3988,7 +3988,7 @@
           "name": "V10 Room",
           "kind": "market",
           "role": "member",
-          "joined_at": "2026-01-17T00:14:07.073Z"
+          "joined_at": "2026-01-17T01:59:06.798Z"
         }
       ],
       "security": {
@@ -4001,7 +4001,7 @@
         "device_type": "desktop",
         "two_factor": false,
         "failed_logins_30d": 1,
-        "password_changed_at": "2026-08-10T22:16:07.073Z",
+        "password_changed_at": "2026-08-11T00:01:06.798Z",
         "sessions": [
           {
             "ip": "52.89.159.53",
@@ -4010,7 +4010,7 @@
             "os": "Windows 11",
             "browser": "Chrome 128",
             "type": "desktop",
-            "last_active": "2026-08-23T07:00:07.073Z",
+            "last_active": "2026-08-23T08:45:06.798Z",
             "current": false
           }
         ]
@@ -4018,21 +4018,21 @@
       "flags": {
         "reports_against": 3,
         "warnings": 1,
-        "suspended_until": "2026-10-02T05:29:07.073Z"
+        "suspended_until": "2026-10-02T07:14:06.798Z"
       }
     },
     {
       "id": "u39",
-      "username": "david_balogun",
+      "username": "david_balogun2",
       "display_name": "David Balogun",
-      "email": "david.balogun@example.com",
+      "email": "david.balogun2@example.com",
       "phone": "+234 882 9026 402",
       "avatar_url": null,
       "role": "signal_provider",
       "status": "banned",
       "is_verified": true,
-      "joined_at": "2024-05-10T13:34:07.073Z",
-      "last_seen_at": "2026-08-29T08:52:07.073Z",
+      "joined_at": "2024-05-10T15:19:06.798Z",
+      "last_seen_at": "2026-08-29T10:37:06.798Z",
       "followers": 1534,
       "following": 303,
       "signals": 154,
@@ -4054,7 +4054,7 @@
         "currency": "USD",
         "landing_company": "svg",
         "last_recorded_balance": 11660.73,
-        "balance_recorded_at": "2026-09-01T15:02:07.073Z",
+        "balance_recorded_at": "2026-09-01T16:47:06.798Z",
         "scopes": [
           "read",
           "trade",
@@ -4067,21 +4067,21 @@
           "name": "V25 Room",
           "kind": "market",
           "role": "member",
-          "joined_at": "2025-11-27T05:11:07.073Z"
+          "joined_at": "2025-11-27T06:56:06.798Z"
         },
         {
           "id": "room_JD100",
           "name": "Jump 100 Room",
           "kind": "market",
           "role": "member",
-          "joined_at": "2026-06-12T19:36:07.073Z"
+          "joined_at": "2026-06-12T21:21:06.798Z"
         },
         {
           "id": "room_frxGBPJPY",
           "name": "GBP/JPY Room",
           "kind": "market",
           "role": "member",
-          "joined_at": "2026-08-05T20:02:07.073Z"
+          "joined_at": "2026-08-05T21:47:06.798Z"
         }
       ],
       "security": {
@@ -4094,7 +4094,7 @@
         "device_type": "mobile",
         "two_factor": true,
         "failed_logins_30d": 8,
-        "password_changed_at": "2025-08-31T05:50:07.073Z",
+        "password_changed_at": "2025-08-31T07:35:06.798Z",
         "sessions": [
           {
             "ip": "69.158.240.197",
@@ -4103,7 +4103,7 @@
             "os": "Android 13",
             "browser": "Chrome 128",
             "type": "mobile",
-            "last_active": "2026-08-13T18:23:07.073Z",
+            "last_active": "2026-08-13T20:08:06.798Z",
             "current": false
           }
         ]
@@ -4111,21 +4111,21 @@
       "flags": {
         "reports_against": 3,
         "warnings": 0,
-        "suspended_until": "2026-10-02T05:29:07.073Z"
+        "suspended_until": "2026-10-02T07:14:06.798Z"
       }
     },
     {
       "id": "u40",
-      "username": "joy_chukwu",
+      "username": "joy_chukwu2",
       "display_name": "Joy Chukwu",
-      "email": "joy.chukwu@example.com",
+      "email": "joy.chukwu2@example.com",
       "phone": "+234 872 2162 849",
       "avatar_url": null,
       "role": "user",
       "status": "active",
       "is_verified": false,
-      "joined_at": "2026-01-08T07:22:07.073Z",
-      "last_seen_at": "2026-09-01T06:29:07.073Z",
+      "joined_at": "2026-01-08T09:07:06.798Z",
+      "last_seen_at": "2026-09-01T08:14:06.798Z",
       "followers": 263,
       "following": 89,
       "signals": 7,
@@ -4147,7 +4147,7 @@
         "currency": "USD",
         "landing_company": "svg",
         "last_recorded_balance": 5345.29,
-        "balance_recorded_at": "2026-08-31T03:44:07.073Z",
+        "balance_recorded_at": "2026-08-31T05:29:06.798Z",
         "scopes": [
           "read",
           "trade",
@@ -4160,35 +4160,35 @@
           "name": "V50 Room",
           "kind": "market",
           "role": "member",
-          "joined_at": "2026-06-06T02:32:07.073Z"
+          "joined_at": "2026-06-06T04:17:06.798Z"
         },
         {
           "id": "room_JD75",
           "name": "Jump 75 Room",
           "kind": "market",
           "role": "member",
-          "joined_at": "2026-07-25T03:51:07.073Z"
+          "joined_at": "2026-07-25T05:36:06.798Z"
         },
         {
           "id": "room_frxEURJPY",
           "name": "EUR/JPY Room",
           "kind": "market",
           "role": "member",
-          "joined_at": "2025-12-26T21:55:07.073Z"
+          "joined_at": "2025-12-26T23:40:06.798Z"
         },
         {
           "id": "room_frxXAGUSD",
           "name": "XAG/USD Room",
           "kind": "market",
           "role": "member",
-          "joined_at": "2025-12-07T23:00:07.073Z"
+          "joined_at": "2025-12-08T00:45:06.798Z"
         },
         {
           "id": "room_u_FX_ProTrader",
           "name": "FX_ProTrader's Room",
           "kind": "trader",
           "role": "owner",
-          "joined_at": "2025-12-22T21:20:07.073Z"
+          "joined_at": "2025-12-22T23:05:06.798Z"
         }
       ],
       "security": {
@@ -4201,7 +4201,7 @@
         "device_type": "mobile",
         "two_factor": false,
         "failed_logins_30d": 6,
-        "password_changed_at": "2026-05-26T03:42:07.073Z",
+        "password_changed_at": "2026-05-26T05:27:06.799Z",
         "sessions": [
           {
             "ip": "188.49.185.44",
@@ -4210,7 +4210,7 @@
             "os": "Windows 11",
             "browser": "Chrome 128",
             "type": "desktop",
-            "last_active": "2026-08-13T19:08:07.073Z",
+            "last_active": "2026-08-13T20:53:06.799Z",
             "current": false
           }
         ]
@@ -4223,16 +4223,16 @@
     },
     {
       "id": "u41",
-      "username": "john_david",
+      "username": "john_david3",
       "display_name": "John David",
-      "email": "john.david@example.com",
+      "email": "john.david3@example.com",
       "phone": "+234 899 5659 958",
       "avatar_url": null,
       "role": "moderator",
       "status": "inactive",
       "is_verified": true,
-      "joined_at": "2025-10-06T06:30:07.073Z",
-      "last_seen_at": "2026-08-28T00:35:07.073Z",
+      "joined_at": "2025-10-06T08:15:06.799Z",
+      "last_seen_at": "2026-08-28T02:20:06.799Z",
       "followers": 1142,
       "following": 95,
       "signals": 28,
@@ -4254,7 +4254,7 @@
         "currency": "USD",
         "landing_company": "vanuatu",
         "last_recorded_balance": 12003.47,
-        "balance_recorded_at": "2026-08-31T21:33:07.073Z",
+        "balance_recorded_at": "2026-08-31T23:18:06.799Z",
         "scopes": [
           "read",
           "trade",
@@ -4267,7 +4267,7 @@
           "name": "V50 (1s) Room",
           "kind": "market",
           "role": "member",
-          "joined_at": "2026-05-03T08:52:07.073Z"
+          "joined_at": "2026-05-03T10:37:06.799Z"
         }
       ],
       "security": {
@@ -4280,7 +4280,7 @@
         "device_type": "mobile",
         "two_factor": true,
         "failed_logins_30d": 8,
-        "password_changed_at": "2026-03-16T17:59:07.073Z",
+        "password_changed_at": "2026-03-16T19:44:06.799Z",
         "sessions": [
           {
             "ip": "137.198.190.37",
@@ -4289,7 +4289,7 @@
             "os": "Windows 10",
             "browser": "Edge 128",
             "type": "desktop",
-            "last_active": "2026-08-29T04:12:07.073Z",
+            "last_active": "2026-08-29T05:57:06.799Z",
             "current": false
           }
         ]
@@ -4302,16 +4302,16 @@
     },
     {
       "id": "u42",
-      "username": "grace_eze",
+      "username": "grace_eze3",
       "display_name": "Grace Eze",
-      "email": "grace.eze@example.com",
+      "email": "grace.eze3@example.com",
       "phone": "+234 872 2117 280",
       "avatar_url": null,
       "role": "signal_provider",
       "status": "active",
       "is_verified": false,
-      "joined_at": "2024-10-12T03:22:07.073Z",
-      "last_seen_at": "2026-08-23T13:06:07.073Z",
+      "joined_at": "2024-10-12T05:07:06.799Z",
+      "last_seen_at": "2026-08-23T14:51:06.799Z",
       "followers": 874,
       "following": 3,
       "signals": 186,
@@ -4333,7 +4333,7 @@
         "currency": "USD",
         "landing_company": "svg",
         "last_recorded_balance": 11704.52,
-        "balance_recorded_at": "2026-09-02T04:32:07.073Z",
+        "balance_recorded_at": "2026-09-02T06:17:06.799Z",
         "scopes": [
           "read",
           "trade",
@@ -4346,28 +4346,28 @@
           "name": "V100 Room",
           "kind": "market",
           "role": "member",
-          "joined_at": "2026-06-21T15:34:07.073Z"
+          "joined_at": "2026-06-21T17:19:06.799Z"
         },
         {
           "id": "room_CRASH500",
           "name": "Crash 500 Room",
           "kind": "market",
           "role": "member",
-          "joined_at": "2026-03-11T18:34:07.073Z"
+          "joined_at": "2026-03-11T20:19:06.799Z"
         },
         {
           "id": "room_frxNZDUSD",
           "name": "NZD/USD Room",
           "kind": "market",
           "role": "member",
-          "joined_at": "2026-07-14T16:54:07.073Z"
+          "joined_at": "2026-07-14T18:39:06.799Z"
         },
         {
           "id": "room_cryDOGUSD",
           "name": "DOGE/USD Room",
           "kind": "market",
           "role": "member",
-          "joined_at": "2026-03-25T23:31:07.073Z"
+          "joined_at": "2026-03-26T01:16:06.799Z"
         }
       ],
       "security": {
@@ -4380,7 +4380,7 @@
         "device_type": "mobile",
         "two_factor": true,
         "failed_logins_30d": 8,
-        "password_changed_at": "2025-08-21T00:07:07.073Z",
+        "password_changed_at": "2025-08-21T01:52:06.799Z",
         "sessions": [
           {
             "ip": "43.30.84.154",
@@ -4389,7 +4389,7 @@
             "os": "iOS 17.5",
             "browser": "Safari 17",
             "type": "mobile",
-            "last_active": "2026-08-30T23:54:07.073Z",
+            "last_active": "2026-08-31T01:39:06.799Z",
             "current": false
           },
           {
@@ -4399,7 +4399,7 @@
             "os": "Ubuntu 24.04",
             "browser": "Firefox 129",
             "type": "desktop",
-            "last_active": "2026-08-15T12:59:07.073Z",
+            "last_active": "2026-08-15T14:44:06.799Z",
             "current": false
           }
         ]
@@ -4412,16 +4412,16 @@
     },
     {
       "id": "u43",
-      "username": "femi_adamu",
+      "username": "femi_adamu3",
       "display_name": "Femi Adamu",
-      "email": "femi.adamu@example.com",
+      "email": "femi.adamu3@example.com",
       "phone": "+234 833 9889 621",
       "avatar_url": null,
       "role": "user",
       "status": "inactive",
       "is_verified": false,
-      "joined_at": "2024-08-04T15:03:07.073Z",
-      "last_seen_at": "2026-08-19T19:10:07.073Z",
+      "joined_at": "2024-08-04T16:48:06.799Z",
+      "last_seen_at": "2026-08-19T20:55:06.799Z",
       "followers": 350,
       "following": 27,
       "signals": 11,
@@ -4443,7 +4443,7 @@
         "currency": "USD",
         "landing_company": "vanuatu",
         "last_recorded_balance": 2675.06,
-        "balance_recorded_at": "2026-09-01T20:57:07.073Z",
+        "balance_recorded_at": "2026-09-01T22:42:06.799Z",
         "scopes": [
           "read",
           "trade",
@@ -4456,21 +4456,21 @@
           "name": "V100 (1s) Room",
           "kind": "market",
           "role": "member",
-          "joined_at": "2025-12-04T02:25:07.073Z"
+          "joined_at": "2025-12-04T04:10:06.799Z"
         },
         {
           "id": "room_CRASH1000",
           "name": "Crash 1000 Room",
           "kind": "market",
           "role": "member",
-          "joined_at": "2025-12-14T11:26:07.073Z"
+          "joined_at": "2025-12-14T13:11:06.799Z"
         },
         {
           "id": "room_frxUSDCHF",
           "name": "USD/CHF Room",
           "kind": "market",
           "role": "member",
-          "joined_at": "2026-02-08T19:18:07.073Z"
+          "joined_at": "2026-02-08T21:03:06.799Z"
         }
       ],
       "security": {
@@ -4483,7 +4483,7 @@
         "device_type": "desktop",
         "two_factor": false,
         "failed_logins_30d": 9,
-        "password_changed_at": "2026-03-26T00:11:07.073Z",
+        "password_changed_at": "2026-03-26T01:56:06.799Z",
         "sessions": [
           {
             "ip": "187.174.232.170",
@@ -4492,7 +4492,7 @@
             "os": "macOS 14",
             "browser": "Chrome 127",
             "type": "desktop",
-            "last_active": "2026-08-17T14:30:07.073Z",
+            "last_active": "2026-08-17T16:15:06.799Z",
             "current": false
           },
           {
@@ -4502,7 +4502,7 @@
             "os": "Android 14",
             "browser": "Chrome 128",
             "type": "mobile",
-            "last_active": "2026-08-30T07:04:07.073Z",
+            "last_active": "2026-08-30T08:49:06.799Z",
             "current": false
           }
         ]
@@ -4515,16 +4515,16 @@
     },
     {
       "id": "u44",
-      "username": "amara_okafor",
+      "username": "amara_okafor3",
       "display_name": "Amara Okafor",
-      "email": "amara.okafor@example.com",
+      "email": "amara.okafor3@example.com",
       "phone": "+234 863 5187 125",
       "avatar_url": null,
       "role": "signal_provider",
       "status": "active",
       "is_verified": false,
-      "joined_at": "2024-07-30T01:55:07.073Z",
-      "last_seen_at": "2026-08-24T12:17:07.073Z",
+      "joined_at": "2024-07-30T03:40:06.799Z",
+      "last_seen_at": "2026-08-24T14:02:06.799Z",
       "followers": 1842,
       "following": 110,
       "signals": 157,
@@ -4546,7 +4546,7 @@
         "currency": "USD",
         "landing_company": "maltainvest",
         "last_recorded_balance": 2051.6,
-        "balance_recorded_at": "2026-09-01T23:46:07.073Z",
+        "balance_recorded_at": "2026-09-02T01:31:06.799Z",
         "scopes": [
           "read",
           "trade",
@@ -4559,21 +4559,21 @@
           "name": "V75 Room",
           "kind": "market",
           "role": "member",
-          "joined_at": "2026-02-02T17:48:07.073Z"
+          "joined_at": "2026-02-02T19:33:06.799Z"
         },
         {
           "id": "room_BOOM300",
           "name": "Boom 300 Room",
           "kind": "market",
           "role": "member",
-          "joined_at": "2026-04-10T09:36:07.073Z"
+          "joined_at": "2026-04-10T11:21:06.799Z"
         },
         {
           "id": "room_frxUSDCAD",
           "name": "USD/CAD Room",
           "kind": "market",
           "role": "member",
-          "joined_at": "2026-02-23T17:57:07.073Z"
+          "joined_at": "2026-02-23T19:42:06.799Z"
         }
       ],
       "security": {
@@ -4586,7 +4586,7 @@
         "device_type": "mobile",
         "two_factor": true,
         "failed_logins_30d": 9,
-        "password_changed_at": "2026-04-09T15:52:07.073Z",
+        "password_changed_at": "2026-04-09T17:37:06.799Z",
         "sessions": [
           {
             "ip": "116.248.203.129",
@@ -4595,7 +4595,7 @@
             "os": "macOS 14",
             "browser": "Chrome 127",
             "type": "desktop",
-            "last_active": "2026-08-29T14:40:07.073Z",
+            "last_active": "2026-08-29T16:25:06.799Z",
             "current": false
           },
           {
@@ -4605,7 +4605,7 @@
             "os": "Windows 11",
             "browser": "Chrome 128",
             "type": "desktop",
-            "last_active": "2026-08-23T23:58:07.073Z",
+            "last_active": "2026-08-24T01:43:06.799Z",
             "current": false
           },
           {
@@ -4615,7 +4615,7 @@
             "os": "Windows 10",
             "browser": "Edge 128",
             "type": "desktop",
-            "last_active": "2026-08-22T16:53:07.073Z",
+            "last_active": "2026-08-22T18:38:06.799Z",
             "current": false
           },
           {
@@ -4625,7 +4625,7 @@
             "os": "Windows 11",
             "browser": "Chrome 128",
             "type": "desktop",
-            "last_active": "2026-08-25T18:41:07.073Z",
+            "last_active": "2026-08-25T20:26:06.799Z",
             "current": false
           }
         ]
@@ -4638,16 +4638,16 @@
     },
     {
       "id": "u45",
-      "username": "kwame_yusuf",
+      "username": "kwame_yusuf3",
       "display_name": "Kwame Yusuf",
-      "email": "kwame.yusuf@example.com",
+      "email": "kwame.yusuf3@example.com",
       "phone": "+234 859 1588 243",
       "avatar_url": null,
       "role": "user",
       "status": "active",
       "is_verified": false,
-      "joined_at": "2024-12-18T17:36:07.073Z",
-      "last_seen_at": "2026-08-28T21:10:07.073Z",
+      "joined_at": "2024-12-18T19:21:06.799Z",
+      "last_seen_at": "2026-08-28T22:55:06.799Z",
       "followers": 861,
       "following": 392,
       "signals": 20,
@@ -4669,7 +4669,7 @@
         "currency": "USD",
         "landing_company": "maltainvest",
         "last_recorded_balance": 9675.68,
-        "balance_recorded_at": "2026-09-01T06:34:07.073Z",
+        "balance_recorded_at": "2026-09-01T08:19:06.799Z",
         "scopes": [
           "read",
           "trade",
@@ -4682,14 +4682,14 @@
           "name": "V75 (1s) Room",
           "kind": "market",
           "role": "member",
-          "joined_at": "2025-12-23T19:59:07.073Z"
+          "joined_at": "2025-12-23T21:44:06.799Z"
         },
         {
           "id": "room_BOOM500",
           "name": "Boom 500 Room",
           "kind": "market",
           "role": "member",
-          "joined_at": "2025-12-27T14:26:07.073Z"
+          "joined_at": "2025-12-27T16:11:06.799Z"
         }
       ],
       "security": {
@@ -4702,7 +4702,7 @@
         "device_type": "mobile",
         "two_factor": false,
         "failed_logins_30d": 2,
-        "password_changed_at": "2025-11-19T16:52:07.073Z",
+        "password_changed_at": "2025-11-19T18:37:06.799Z",
         "sessions": [
           {
             "ip": "71.37.22.31",
@@ -4711,7 +4711,7 @@
             "os": "Android 14",
             "browser": "Chrome 128",
             "type": "mobile",
-            "last_active": "2026-08-26T14:31:07.073Z",
+            "last_active": "2026-08-26T16:16:06.799Z",
             "current": false
           },
           {
@@ -4721,7 +4721,7 @@
             "os": "Windows 11",
             "browser": "Chrome 128",
             "type": "desktop",
-            "last_active": "2026-08-15T10:35:07.073Z",
+            "last_active": "2026-08-15T12:20:06.799Z",
             "current": false
           },
           {
@@ -4731,7 +4731,7 @@
             "os": "Windows 11",
             "browser": "Chrome 128",
             "type": "desktop",
-            "last_active": "2026-08-14T06:39:07.073Z",
+            "last_active": "2026-08-14T08:24:06.799Z",
             "current": false
           },
           {
@@ -4741,7 +4741,7 @@
             "os": "Windows 11",
             "browser": "Chrome 128",
             "type": "desktop",
-            "last_active": "2026-08-18T19:13:07.073Z",
+            "last_active": "2026-08-18T20:58:06.799Z",
             "current": false
           }
         ]
@@ -4754,16 +4754,16 @@
     },
     {
       "id": "u46",
-      "username": "zainab_lawal",
+      "username": "zainab_lawal3",
       "display_name": "Zainab Lawal",
-      "email": "zainab.lawal@example.com",
+      "email": "zainab.lawal3@example.com",
       "phone": "+234 851 4146 679",
       "avatar_url": null,
       "role": "signal_provider",
       "status": "inactive",
       "is_verified": false,
-      "joined_at": "2025-05-26T10:38:07.073Z",
-      "last_seen_at": "2026-08-27T15:40:07.073Z",
+      "joined_at": "2025-05-26T12:23:06.799Z",
+      "last_seen_at": "2026-08-27T17:25:06.799Z",
       "followers": 609,
       "following": 357,
       "signals": 36,
@@ -4785,7 +4785,7 @@
         "currency": "USD",
         "landing_company": "svg",
         "last_recorded_balance": 4181.02,
-        "balance_recorded_at": "2026-08-30T09:57:07.073Z",
+        "balance_recorded_at": "2026-08-30T11:42:06.799Z",
         "scopes": [
           "read",
           "trade",
@@ -4798,21 +4798,21 @@
           "name": "Boom 1000 Room",
           "kind": "market",
           "role": "member",
-          "joined_at": "2026-06-18T20:55:07.073Z"
+          "joined_at": "2026-06-18T22:40:06.799Z"
         },
         {
           "id": "room_frxUSDJPY",
           "name": "USD/JPY Room",
           "kind": "market",
           "role": "member",
-          "joined_at": "2025-11-27T07:39:07.073Z"
+          "joined_at": "2025-11-27T09:24:06.799Z"
         },
         {
           "id": "room_cryXRPUSD",
           "name": "XRP/USD Room",
           "kind": "market",
           "role": "member",
-          "joined_at": "2026-06-10T09:23:07.073Z"
+          "joined_at": "2026-06-10T11:08:06.799Z"
         }
       ],
       "security": {
@@ -4825,7 +4825,7 @@
         "device_type": "desktop",
         "two_factor": false,
         "failed_logins_30d": 8,
-        "password_changed_at": "2026-08-14T10:10:07.073Z",
+        "password_changed_at": "2026-08-14T11:55:06.799Z",
         "sessions": [
           {
             "ip": "181.135.67.201",
@@ -4834,7 +4834,7 @@
             "os": "iOS 17.5",
             "browser": "Safari 17",
             "type": "mobile",
-            "last_active": "2026-09-01T03:32:07.073Z",
+            "last_active": "2026-09-01T05:17:06.799Z",
             "current": false
           },
           {
@@ -4844,7 +4844,7 @@
             "os": "Android 13",
             "browser": "Chrome 128",
             "type": "mobile",
-            "last_active": "2026-08-27T05:13:07.073Z",
+            "last_active": "2026-08-27T06:58:06.799Z",
             "current": false
           },
           {
@@ -4854,7 +4854,7 @@
             "os": "macOS 14",
             "browser": "Chrome 127",
             "type": "desktop",
-            "last_active": "2026-08-14T04:26:07.073Z",
+            "last_active": "2026-08-14T06:11:06.799Z",
             "current": false
           },
           {
@@ -4864,7 +4864,7 @@
             "os": "Android 13",
             "browser": "Chrome 128",
             "type": "mobile",
-            "last_active": "2026-08-29T10:24:07.073Z",
+            "last_active": "2026-08-29T12:09:06.799Z",
             "current": false
           }
         ]
@@ -4877,16 +4877,16 @@
     },
     {
       "id": "u47",
-      "username": "tunde_adeyemi",
+      "username": "tunde_adeyemi3",
       "display_name": "Tunde Adeyemi",
-      "email": "tunde.adeyemi@example.com",
+      "email": "tunde.adeyemi3@example.com",
       "phone": "+234 897 5623 773",
       "avatar_url": null,
       "role": "moderator",
       "status": "active",
       "is_verified": false,
-      "joined_at": "2025-01-28T23:11:07.073Z",
-      "last_seen_at": "2026-08-27T21:55:07.073Z",
+      "joined_at": "2025-01-29T00:56:06.799Z",
+      "last_seen_at": "2026-08-27T23:40:06.799Z",
       "followers": 751,
       "following": 224,
       "signals": 29,
@@ -4908,7 +4908,7 @@
         "currency": "USD",
         "landing_company": "vanuatu",
         "last_recorded_balance": 3571.46,
-        "balance_recorded_at": "2026-08-31T07:09:07.073Z",
+        "balance_recorded_at": "2026-08-31T08:54:06.799Z",
         "scopes": [
           "read",
           "trade",
@@ -4921,35 +4921,35 @@
           "name": "RB 100 Room",
           "kind": "market",
           "role": "member",
-          "joined_at": "2025-12-08T20:24:07.073Z"
+          "joined_at": "2025-12-08T22:09:06.799Z"
         },
         {
           "id": "room_frxGBPUSD",
           "name": "GBP/USD Room",
           "kind": "market",
           "role": "member",
-          "joined_at": "2025-12-16T18:26:07.073Z"
+          "joined_at": "2025-12-16T20:11:06.799Z"
         },
         {
           "id": "room_crySOLUSD",
           "name": "SOL/USD Room",
           "kind": "market",
           "role": "member",
-          "joined_at": "2025-12-12T18:52:07.073Z"
+          "joined_at": "2025-12-12T20:37:06.799Z"
         },
         {
           "id": "room_OTC_SPC",
           "name": "US 500 Room",
           "kind": "market",
           "role": "member",
-          "joined_at": "2026-05-04T05:34:07.073Z"
+          "joined_at": "2026-05-04T07:19:06.799Z"
         },
         {
           "id": "room_u_Mr_Market",
           "name": "Mr_Market's Room",
           "kind": "trader",
           "role": "owner",
-          "joined_at": "2026-04-15T12:56:07.073Z"
+          "joined_at": "2026-04-15T14:41:06.799Z"
         }
       ],
       "security": {
@@ -4962,7 +4962,7 @@
         "device_type": "mobile",
         "two_factor": false,
         "failed_logins_30d": 0,
-        "password_changed_at": "2025-12-28T22:32:07.073Z",
+        "password_changed_at": "2025-12-29T00:17:06.799Z",
         "sessions": [
           {
             "ip": "94.60.204.144",
@@ -4971,7 +4971,7 @@
             "os": "Android 14",
             "browser": "Chrome 128",
             "type": "mobile",
-            "last_active": "2026-08-18T18:31:07.073Z",
+            "last_active": "2026-08-18T20:16:06.799Z",
             "current": false
           },
           {
@@ -4981,7 +4981,7 @@
             "os": "Ubuntu 24.04",
             "browser": "Firefox 129",
             "type": "desktop",
-            "last_active": "2026-08-26T17:13:07.073Z",
+            "last_active": "2026-08-26T18:58:06.799Z",
             "current": false
           },
           {
@@ -4991,7 +4991,7 @@
             "os": "Ubuntu 24.04",
             "browser": "Firefox 129",
             "type": "desktop",
-            "last_active": "2026-08-25T21:09:07.073Z",
+            "last_active": "2026-08-25T22:54:06.799Z",
             "current": false
           },
           {
@@ -5001,7 +5001,7 @@
             "os": "Ubuntu 24.04",
             "browser": "Firefox 129",
             "type": "desktop",
-            "last_active": "2026-08-20T03:29:07.073Z",
+            "last_active": "2026-08-20T05:14:06.799Z",
             "current": false
           }
         ]
@@ -5014,16 +5014,16 @@
     },
     {
       "id": "u48",
-      "username": "chioma_nwosu",
+      "username": "chioma_nwosu3",
       "display_name": "Chioma Nwosu",
-      "email": "chioma.nwosu@example.com",
+      "email": "chioma.nwosu3@example.com",
       "phone": "+234 821 7094 121",
       "avatar_url": null,
       "role": "moderator",
       "status": "inactive",
       "is_verified": true,
-      "joined_at": "2026-01-05T07:16:07.073Z",
-      "last_seen_at": "2026-08-29T13:18:07.073Z",
+      "joined_at": "2026-01-05T09:01:06.799Z",
+      "last_seen_at": "2026-08-29T15:03:06.799Z",
       "followers": 386,
       "following": 236,
       "signals": 30,
@@ -5045,7 +5045,7 @@
         "currency": "USD",
         "landing_company": "vanuatu",
         "last_recorded_balance": 1717.9,
-        "balance_recorded_at": "2026-08-30T18:14:07.073Z",
+        "balance_recorded_at": "2026-08-30T19:59:06.799Z",
         "scopes": [
           "read",
           "trade",
@@ -5058,28 +5058,28 @@
           "name": "Step Room",
           "kind": "market",
           "role": "member",
-          "joined_at": "2025-12-22T08:00:07.073Z"
+          "joined_at": "2025-12-22T09:45:06.799Z"
         },
         {
           "id": "room_frxEURUSD",
           "name": "EUR/USD Room",
           "kind": "market",
           "role": "member",
-          "joined_at": "2026-02-06T05:57:07.073Z"
+          "joined_at": "2026-02-06T07:42:06.799Z"
         },
         {
           "id": "room_cryETHUSD",
           "name": "ETH/USD Room",
           "kind": "market",
           "role": "member",
-          "joined_at": "2026-03-20T23:46:07.073Z"
+          "joined_at": "2026-03-21T01:31:06.799Z"
         },
         {
           "id": "room_WTIUSD",
           "name": "WTI/USD Room",
           "kind": "market",
           "role": "member",
-          "joined_at": "2026-04-05T22:29:07.073Z"
+          "joined_at": "2026-04-06T00:14:06.799Z"
         }
       ],
       "security": {
@@ -5092,7 +5092,7 @@
         "device_type": "mobile",
         "two_factor": false,
         "failed_logins_30d": 3,
-        "password_changed_at": "2025-08-02T15:33:07.073Z",
+        "password_changed_at": "2025-08-02T17:18:06.799Z",
         "sessions": [
           {
             "ip": "126.8.32.191",
@@ -5101,7 +5101,7 @@
             "os": "macOS 14",
             "browser": "Chrome 127",
             "type": "desktop",
-            "last_active": "2026-08-31T08:12:07.073Z",
+            "last_active": "2026-08-31T09:57:06.799Z",
             "current": false
           },
           {
@@ -5111,7 +5111,7 @@
             "os": "Ubuntu 24.04",
             "browser": "Firefox 129",
             "type": "desktop",
-            "last_active": "2026-08-31T18:31:07.073Z",
+            "last_active": "2026-08-31T20:16:06.799Z",
             "current": false
           },
           {
@@ -5121,7 +5121,7 @@
             "os": "Android 13",
             "browser": "Chrome 128",
             "type": "mobile",
-            "last_active": "2026-08-29T02:55:07.073Z",
+            "last_active": "2026-08-29T04:40:06.799Z",
             "current": false
           },
           {
@@ -5131,7 +5131,7 @@
             "os": "iOS 17.5",
             "browser": "Safari 17",
             "type": "mobile",
-            "last_active": "2026-08-30T12:53:07.073Z",
+            "last_active": "2026-08-30T14:38:06.799Z",
             "current": false
           }
         ]
@@ -5144,16 +5144,16 @@
     },
     {
       "id": "u49",
-      "username": "musa_okoro",
+      "username": "musa_okoro3",
       "display_name": "Musa Okoro",
-      "email": "musa.okoro@example.com",
+      "email": "musa.okoro3@example.com",
       "phone": "+234 892 6910 777",
       "avatar_url": null,
       "role": "signal_provider",
       "status": "active",
       "is_verified": true,
-      "joined_at": "2026-02-19T07:46:07.073Z",
-      "last_seen_at": "2026-08-20T13:08:07.073Z",
+      "joined_at": "2026-02-19T09:31:06.799Z",
+      "last_seen_at": "2026-08-20T14:53:06.799Z",
       "followers": 1082,
       "following": 190,
       "signals": 181,
@@ -5175,7 +5175,7 @@
         "currency": "USD",
         "landing_company": "maltainvest",
         "last_recorded_balance": 8100.25,
-        "balance_recorded_at": "2026-08-31T03:42:07.073Z",
+        "balance_recorded_at": "2026-08-31T05:27:06.799Z",
         "scopes": [
           "read",
           "trade",
@@ -5188,14 +5188,14 @@
           "name": "V10 Room",
           "kind": "market",
           "role": "member",
-          "joined_at": "2026-09-02T03:02:07.073Z"
+          "joined_at": "2026-09-02T04:47:06.799Z"
         },
         {
           "id": "room_JD25",
           "name": "Jump 25 Room",
           "kind": "market",
           "role": "member",
-          "joined_at": "2026-03-05T21:08:07.073Z"
+          "joined_at": "2026-03-05T22:53:06.799Z"
         }
       ],
       "security": {
@@ -5208,7 +5208,7 @@
         "device_type": "desktop",
         "two_factor": false,
         "failed_logins_30d": 2,
-        "password_changed_at": "2025-12-30T15:09:07.073Z",
+        "password_changed_at": "2025-12-30T16:54:06.799Z",
         "sessions": [
           {
             "ip": "49.104.23.90",
@@ -5217,7 +5217,7 @@
             "os": "Android 14",
             "browser": "Chrome 128",
             "type": "mobile",
-            "last_active": "2026-08-19T01:32:07.073Z",
+            "last_active": "2026-08-19T03:17:06.799Z",
             "current": false
           }
         ]
@@ -5230,16 +5230,16 @@
     },
     {
       "id": "u50",
-      "username": "ada_bello",
+      "username": "ada_bello3",
       "display_name": "Ada Bello",
-      "email": "ada.bello@example.com",
+      "email": "ada.bello3@example.com",
       "phone": "+234 891 4123 472",
       "avatar_url": null,
       "role": "user",
       "status": "active",
       "is_verified": false,
-      "joined_at": "2026-04-07T16:07:07.073Z",
-      "last_seen_at": "2026-08-27T23:15:07.073Z",
+      "joined_at": "2026-04-07T17:52:06.799Z",
+      "last_seen_at": "2026-08-28T01:00:06.799Z",
       "followers": 231,
       "following": 253,
       "signals": 0,
@@ -5261,7 +5261,7 @@
         "currency": "USD",
         "landing_company": "vanuatu",
         "last_recorded_balance": 3137.52,
-        "balance_recorded_at": "2026-08-30T23:19:07.073Z",
+        "balance_recorded_at": "2026-08-31T01:04:06.799Z",
         "scopes": [
           "read",
           "trade",
@@ -5274,21 +5274,21 @@
           "name": "V25 Room",
           "kind": "market",
           "role": "member",
-          "joined_at": "2026-06-16T14:58:07.073Z"
+          "joined_at": "2026-06-16T16:43:06.799Z"
         },
         {
           "id": "room_JD100",
           "name": "Jump 100 Room",
           "kind": "market",
           "role": "member",
-          "joined_at": "2026-08-21T21:30:07.073Z"
+          "joined_at": "2026-08-21T23:15:06.799Z"
         },
         {
           "id": "room_frxGBPJPY",
           "name": "GBP/JPY Room",
           "kind": "market",
           "role": "member",
-          "joined_at": "2026-06-28T19:35:07.073Z"
+          "joined_at": "2026-06-28T21:20:06.799Z"
         }
       ],
       "security": {
@@ -5301,7 +5301,7 @@
         "device_type": "mobile",
         "two_factor": true,
         "failed_logins_30d": 3,
-        "password_changed_at": "2026-07-26T22:08:07.073Z",
+        "password_changed_at": "2026-07-26T23:53:06.799Z",
         "sessions": [
           {
             "ip": "95.184.168.241",
@@ -5310,7 +5310,7 @@
             "os": "Windows 10",
             "browser": "Edge 128",
             "type": "desktop",
-            "last_active": "2026-08-16T14:37:07.073Z",
+            "last_active": "2026-08-16T16:22:06.799Z",
             "current": false
           }
         ]
@@ -5323,16 +5323,16 @@
     },
     {
       "id": "u51",
-      "username": "daniel_achebe",
+      "username": "daniel_achebe3",
       "display_name": "Daniel Achebe",
-      "email": "daniel.achebe@example.com",
+      "email": "daniel.achebe3@example.com",
       "phone": "+234 870 5922 399",
       "avatar_url": null,
       "role": "user",
       "status": "active",
       "is_verified": false,
-      "joined_at": "2026-03-12T08:10:07.073Z",
-      "last_seen_at": "2026-08-29T05:52:07.073Z",
+      "joined_at": "2026-03-12T09:55:06.799Z",
+      "last_seen_at": "2026-08-29T07:37:06.799Z",
       "followers": 23,
       "following": 112,
       "signals": 13,
@@ -5354,7 +5354,7 @@
         "currency": "USD",
         "landing_company": "svg",
         "last_recorded_balance": 6110.06,
-        "balance_recorded_at": "2026-09-01T00:48:07.073Z",
+        "balance_recorded_at": "2026-09-01T02:33:06.799Z",
         "scopes": [
           "read",
           "trade",
@@ -5367,7 +5367,7 @@
           "name": "V50 Room",
           "kind": "market",
           "role": "member",
-          "joined_at": "2025-12-22T16:37:07.073Z"
+          "joined_at": "2025-12-22T18:22:06.799Z"
         }
       ],
       "security": {
@@ -5380,7 +5380,7 @@
         "device_type": "desktop",
         "two_factor": false,
         "failed_logins_30d": 7,
-        "password_changed_at": "2025-12-05T03:08:07.073Z",
+        "password_changed_at": "2025-12-05T04:53:06.799Z",
         "sessions": [
           {
             "ip": "85.52.6.55",
@@ -5389,7 +5389,7 @@
             "os": "macOS 14",
             "browser": "Chrome 127",
             "type": "desktop",
-            "last_active": "2026-08-15T03:39:07.073Z",
+            "last_active": "2026-08-15T05:24:06.799Z",
             "current": false
           },
           {
@@ -5399,7 +5399,7 @@
             "os": "Windows 10",
             "browser": "Edge 128",
             "type": "desktop",
-            "last_active": "2026-09-02T01:59:07.073Z",
+            "last_active": "2026-09-02T03:44:06.799Z",
             "current": false
           },
           {
@@ -5409,7 +5409,7 @@
             "os": "iOS 17.5",
             "browser": "Safari 17",
             "type": "mobile",
-            "last_active": "2026-08-15T15:22:07.073Z",
+            "last_active": "2026-08-15T17:07:06.799Z",
             "current": false
           }
         ]
@@ -5422,16 +5422,16 @@
     },
     {
       "id": "u52",
-      "username": "blessing_danjuma",
+      "username": "blessing_danjuma3",
       "display_name": "Blessing Danjuma",
-      "email": "blessing.danjuma@example.com",
+      "email": "blessing.danjuma3@example.com",
       "phone": "+234 870 5725 624",
       "avatar_url": null,
       "role": "user",
       "status": "active",
       "is_verified": true,
-      "joined_at": "2026-04-26T09:06:07.073Z",
-      "last_seen_at": "2026-08-20T05:51:07.073Z",
+      "joined_at": "2026-04-26T10:51:06.799Z",
+      "last_seen_at": "2026-08-20T07:36:06.799Z",
       "followers": 1435,
       "following": 376,
       "signals": 27,
@@ -5453,7 +5453,7 @@
         "currency": "USD",
         "landing_company": "svg",
         "last_recorded_balance": 726.21,
-        "balance_recorded_at": "2026-08-30T10:59:07.073Z",
+        "balance_recorded_at": "2026-08-30T12:44:06.799Z",
         "scopes": [
           "read",
           "trade",
@@ -5466,28 +5466,28 @@
           "name": "V50 (1s) Room",
           "kind": "market",
           "role": "member",
-          "joined_at": "2025-11-19T06:02:07.073Z"
+          "joined_at": "2025-11-19T07:47:06.799Z"
         },
         {
           "id": "room_CRASH300",
           "name": "Crash 300 Room",
           "kind": "market",
           "role": "member",
-          "joined_at": "2025-11-15T13:55:07.073Z"
+          "joined_at": "2025-11-15T15:40:06.799Z"
         },
         {
           "id": "room_frxEURGBP",
           "name": "EUR/GBP Room",
           "kind": "market",
           "role": "member",
-          "joined_at": "2025-12-22T20:42:07.073Z"
+          "joined_at": "2025-12-22T22:27:06.799Z"
         },
         {
           "id": "room_frxXAUUSD",
           "name": "XAU/USD Room",
           "kind": "market",
           "role": "member",
-          "joined_at": "2026-08-11T23:34:07.073Z"
+          "joined_at": "2026-08-12T01:19:06.799Z"
         }
       ],
       "security": {
@@ -5500,7 +5500,7 @@
         "device_type": "mobile",
         "two_factor": false,
         "failed_logins_30d": 3,
-        "password_changed_at": "2026-03-15T09:55:07.073Z",
+        "password_changed_at": "2026-03-15T11:40:06.799Z",
         "sessions": [
           {
             "ip": "167.234.41.239",
@@ -5509,7 +5509,7 @@
             "os": "macOS 14",
             "browser": "Chrome 127",
             "type": "desktop",
-            "last_active": "2026-08-16T06:05:07.073Z",
+            "last_active": "2026-08-16T07:50:06.799Z",
             "current": false
           },
           {
@@ -5519,7 +5519,7 @@
             "os": "macOS 14",
             "browser": "Chrome 127",
             "type": "desktop",
-            "last_active": "2026-08-19T16:10:07.073Z",
+            "last_active": "2026-08-19T17:55:06.799Z",
             "current": false
           },
           {
@@ -5529,7 +5529,7 @@
             "os": "macOS 14",
             "browser": "Chrome 127",
             "type": "desktop",
-            "last_active": "2026-08-15T05:13:07.073Z",
+            "last_active": "2026-08-15T06:58:06.799Z",
             "current": false
           }
         ]
@@ -5542,16 +5542,16 @@
     },
     {
       "id": "u53",
-      "username": "ibrahim_mensah",
+      "username": "ibrahim_mensah3",
       "display_name": "Ibrahim Mensah",
-      "email": "ibrahim.mensah@example.com",
+      "email": "ibrahim.mensah3@example.com",
       "phone": "+234 898 7259 545",
       "avatar_url": null,
       "role": "signal_provider",
       "status": "active",
       "is_verified": false,
-      "joined_at": "2024-10-26T06:08:07.073Z",
-      "last_seen_at": "2026-08-29T21:11:07.073Z",
+      "joined_at": "2024-10-26T07:53:06.799Z",
+      "last_seen_at": "2026-08-29T22:56:06.799Z",
       "followers": 787,
       "following": 279,
       "signals": 62,
@@ -5573,7 +5573,7 @@
         "currency": "USD",
         "landing_company": "maltainvest",
         "last_recorded_balance": 2634.25,
-        "balance_recorded_at": "2026-08-31T17:17:07.073Z",
+        "balance_recorded_at": "2026-08-31T19:02:06.799Z",
         "scopes": [
           "read",
           "trade",
@@ -5586,28 +5586,28 @@
           "name": "V100 Room",
           "kind": "market",
           "role": "member",
-          "joined_at": "2026-06-15T08:04:07.073Z"
+          "joined_at": "2026-06-15T09:49:06.799Z"
         },
         {
           "id": "room_CRASH500",
           "name": "Crash 500 Room",
           "kind": "market",
           "role": "member",
-          "joined_at": "2026-07-06T18:09:07.073Z"
+          "joined_at": "2026-07-06T19:54:06.799Z"
         },
         {
           "id": "room_frxNZDUSD",
           "name": "NZD/USD Room",
           "kind": "market",
           "role": "member",
-          "joined_at": "2026-08-14T18:41:07.073Z"
+          "joined_at": "2026-08-14T20:26:06.799Z"
         },
         {
           "id": "room_cryDOGUSD",
           "name": "DOGE/USD Room",
           "kind": "market",
           "role": "member",
-          "joined_at": "2026-05-10T14:00:07.073Z"
+          "joined_at": "2026-05-10T15:45:06.799Z"
         }
       ],
       "security": {
@@ -5620,7 +5620,7 @@
         "device_type": "mobile",
         "two_factor": false,
         "failed_logins_30d": 0,
-        "password_changed_at": "2026-05-30T15:02:07.073Z",
+        "password_changed_at": "2026-05-30T16:47:06.799Z",
         "sessions": [
           {
             "ip": "106.136.199.230",
@@ -5629,7 +5629,7 @@
             "os": "Android 13",
             "browser": "Chrome 128",
             "type": "mobile",
-            "last_active": "2026-08-24T05:43:07.073Z",
+            "last_active": "2026-08-24T07:28:06.799Z",
             "current": false
           },
           {
@@ -5639,7 +5639,7 @@
             "os": "Windows 10",
             "browser": "Edge 128",
             "type": "desktop",
-            "last_active": "2026-08-28T21:51:07.073Z",
+            "last_active": "2026-08-28T23:36:06.799Z",
             "current": false
           },
           {
@@ -5649,7 +5649,7 @@
             "os": "Ubuntu 24.04",
             "browser": "Firefox 129",
             "type": "desktop",
-            "last_active": "2026-08-30T07:18:07.073Z",
+            "last_active": "2026-08-30T09:03:06.799Z",
             "current": false
           }
         ]
@@ -5662,16 +5662,16 @@
     },
     {
       "id": "u54",
-      "username": "ngozi_obi",
+      "username": "ngozi_obi3",
       "display_name": "Ngozi Obi",
-      "email": "ngozi.obi@example.com",
+      "email": "ngozi.obi3@example.com",
       "phone": "+234 823 4452 311",
       "avatar_url": null,
       "role": "signal_provider",
       "status": "active",
       "is_verified": false,
-      "joined_at": "2024-04-04T19:32:07.073Z",
-      "last_seen_at": "2026-09-01T13:40:07.073Z",
+      "joined_at": "2024-04-04T21:17:06.799Z",
+      "last_seen_at": "2026-09-01T15:25:06.799Z",
       "followers": 1642,
       "following": 45,
       "signals": 62,
@@ -5693,7 +5693,7 @@
         "currency": "USD",
         "landing_company": "vanuatu",
         "last_recorded_balance": 9084.77,
-        "balance_recorded_at": "2026-09-01T14:57:07.073Z",
+        "balance_recorded_at": "2026-09-01T16:42:06.800Z",
         "scopes": [
           "read",
           "trade",
@@ -5706,7 +5706,7 @@
           "name": "V100 (1s) Room",
           "kind": "market",
           "role": "member",
-          "joined_at": "2026-06-15T04:03:07.073Z"
+          "joined_at": "2026-06-15T05:48:06.800Z"
         }
       ],
       "security": {
@@ -5719,7 +5719,7 @@
         "device_type": "desktop",
         "two_factor": false,
         "failed_logins_30d": 3,
-        "password_changed_at": "2026-07-27T05:08:07.073Z",
+        "password_changed_at": "2026-07-27T06:53:06.800Z",
         "sessions": [
           {
             "ip": "106.202.33.101",
@@ -5728,7 +5728,7 @@
             "os": "iOS 17.5",
             "browser": "Safari 17",
             "type": "mobile",
-            "last_active": "2026-08-26T11:30:07.073Z",
+            "last_active": "2026-08-26T13:15:06.800Z",
             "current": false
           }
         ]
@@ -5741,16 +5741,16 @@
     },
     {
       "id": "u55",
-      "username": "samuel_mohammed",
+      "username": "samuel_mohammed3",
       "display_name": "Samuel Mohammed",
-      "email": "samuel.mohammed@example.com",
+      "email": "samuel.mohammed3@example.com",
       "phone": "+234 899 5472 340",
       "avatar_url": null,
       "role": "signal_provider",
       "status": "inactive",
       "is_verified": false,
-      "joined_at": "2026-04-10T15:21:07.073Z",
-      "last_seen_at": "2026-08-29T08:04:07.073Z",
+      "joined_at": "2026-04-10T17:06:06.800Z",
+      "last_seen_at": "2026-08-29T09:49:06.800Z",
       "followers": 1522,
       "following": 347,
       "signals": 180,
@@ -5772,7 +5772,7 @@
         "currency": "USD",
         "landing_company": "svg",
         "last_recorded_balance": 5023.33,
-        "balance_recorded_at": "2026-08-31T18:57:07.073Z",
+        "balance_recorded_at": "2026-08-31T20:42:06.800Z",
         "scopes": [
           "read",
           "trade",
@@ -5785,7 +5785,7 @@
           "name": "V75 Room",
           "kind": "market",
           "role": "member",
-          "joined_at": "2026-07-26T12:47:07.073Z"
+          "joined_at": "2026-07-26T14:32:06.800Z"
         }
       ],
       "security": {
@@ -5798,7 +5798,7 @@
         "device_type": "desktop",
         "two_factor": false,
         "failed_logins_30d": 1,
-        "password_changed_at": "2026-07-09T09:07:07.073Z",
+        "password_changed_at": "2026-07-09T10:52:06.800Z",
         "sessions": [
           {
             "ip": "151.65.74.194",
@@ -5807,7 +5807,7 @@
             "os": "Windows 11",
             "browser": "Chrome 128",
             "type": "desktop",
-            "last_active": "2026-08-16T08:49:07.073Z",
+            "last_active": "2026-08-16T10:34:06.800Z",
             "current": false
           },
           {
@@ -5817,7 +5817,7 @@
             "os": "iOS 17.5",
             "browser": "Safari 17",
             "type": "mobile",
-            "last_active": "2026-08-30T06:08:07.073Z",
+            "last_active": "2026-08-30T07:53:06.800Z",
             "current": false
           },
           {
@@ -5827,7 +5827,7 @@
             "os": "Windows 11",
             "browser": "Chrome 128",
             "type": "desktop",
-            "last_active": "2026-08-17T11:31:07.073Z",
+            "last_active": "2026-08-17T13:16:06.800Z",
             "current": false
           }
         ]
@@ -5840,16 +5840,16 @@
     },
     {
       "id": "u56",
-      "username": "aisha_ibrahim",
+      "username": "aisha_ibrahim3",
       "display_name": "Aisha Ibrahim",
-      "email": "aisha.ibrahim@example.com",
+      "email": "aisha.ibrahim3@example.com",
       "phone": "+234 834 7408 431",
       "avatar_url": null,
       "role": "signal_provider",
       "status": "active",
       "is_verified": false,
-      "joined_at": "2026-05-29T08:57:07.073Z",
-      "last_seen_at": "2026-08-28T22:21:07.073Z",
+      "joined_at": "2026-05-29T10:42:06.800Z",
+      "last_seen_at": "2026-08-29T00:06:06.800Z",
       "followers": 691,
       "following": 166,
       "signals": 77,
@@ -5871,7 +5871,7 @@
         "currency": "USD",
         "landing_company": "vanuatu",
         "last_recorded_balance": 5211.58,
-        "balance_recorded_at": "2026-08-31T06:08:07.073Z",
+        "balance_recorded_at": "2026-08-31T07:53:06.800Z",
         "scopes": [
           "read",
           "trade",
@@ -5884,14 +5884,14 @@
           "name": "V75 (1s) Room",
           "kind": "market",
           "role": "member",
-          "joined_at": "2025-12-11T13:12:07.073Z"
+          "joined_at": "2025-12-11T14:57:06.800Z"
         },
         {
           "id": "room_BOOM500",
           "name": "Boom 500 Room",
           "kind": "market",
           "role": "member",
-          "joined_at": "2026-03-03T00:40:07.073Z"
+          "joined_at": "2026-03-03T02:25:06.800Z"
         }
       ],
       "security": {
@@ -5904,7 +5904,7 @@
         "device_type": "mobile",
         "two_factor": false,
         "failed_logins_30d": 6,
-        "password_changed_at": "2025-09-26T16:34:07.073Z",
+        "password_changed_at": "2025-09-26T18:19:06.800Z",
         "sessions": [
           {
             "ip": "125.163.228.104",
@@ -5913,7 +5913,7 @@
             "os": "Windows 10",
             "browser": "Edge 128",
             "type": "desktop",
-            "last_active": "2026-08-17T15:21:07.073Z",
+            "last_active": "2026-08-17T17:06:06.800Z",
             "current": false
           },
           {
@@ -5923,7 +5923,7 @@
             "os": "Android 14",
             "browser": "Chrome 128",
             "type": "mobile",
-            "last_active": "2026-08-17T08:41:07.073Z",
+            "last_active": "2026-08-17T10:26:06.800Z",
             "current": false
           },
           {
@@ -5933,7 +5933,7 @@
             "os": "Windows 10",
             "browser": "Edge 128",
             "type": "desktop",
-            "last_active": "2026-08-23T10:20:07.073Z",
+            "last_active": "2026-08-23T12:05:06.800Z",
             "current": false
           }
         ]
@@ -5946,16 +5946,16 @@
     },
     {
       "id": "u57",
-      "username": "peter_suleiman",
+      "username": "peter_suleiman3",
       "display_name": "Peter Suleiman",
-      "email": "peter.suleiman@example.com",
+      "email": "peter.suleiman3@example.com",
       "phone": "+234 847 6230 177",
       "avatar_url": null,
       "role": "user",
       "status": "active",
       "is_verified": false,
-      "joined_at": "2025-04-20T23:09:07.073Z",
-      "last_seen_at": "2026-08-30T05:56:07.073Z",
+      "joined_at": "2025-04-21T00:54:06.800Z",
+      "last_seen_at": "2026-08-30T07:41:06.800Z",
       "followers": 2284,
       "following": 383,
       "signals": 1,
@@ -5977,7 +5977,7 @@
         "currency": "USD",
         "landing_company": "maltainvest",
         "last_recorded_balance": 3396.1,
-        "balance_recorded_at": "2026-09-01T01:23:07.073Z",
+        "balance_recorded_at": "2026-09-01T03:08:06.800Z",
         "scopes": [
           "read",
           "trade",
@@ -5990,7 +5990,7 @@
           "name": "Boom 1000 Room",
           "kind": "market",
           "role": "member",
-          "joined_at": "2026-04-29T21:12:07.073Z"
+          "joined_at": "2026-04-29T22:57:06.800Z"
         }
       ],
       "security": {
@@ -6003,7 +6003,7 @@
         "device_type": "mobile",
         "two_factor": false,
         "failed_logins_30d": 0,
-        "password_changed_at": "2025-12-15T10:04:07.073Z",
+        "password_changed_at": "2025-12-15T11:49:06.800Z",
         "sessions": [
           {
             "ip": "165.26.141.43",
@@ -6012,7 +6012,7 @@
             "os": "Android 14",
             "browser": "Chrome 128",
             "type": "mobile",
-            "last_active": "2026-08-29T03:09:07.073Z",
+            "last_active": "2026-08-29T04:54:06.800Z",
             "current": false
           },
           {
@@ -6022,7 +6022,7 @@
             "os": "macOS 14",
             "browser": "Chrome 127",
             "type": "desktop",
-            "last_active": "2026-08-14T23:59:07.073Z",
+            "last_active": "2026-08-15T01:44:06.800Z",
             "current": false
           }
         ]
@@ -6035,16 +6035,16 @@
     },
     {
       "id": "u58",
-      "username": "fatima_ekene",
+      "username": "fatima_ekene3",
       "display_name": "Fatima Ekene",
-      "email": "fatima.ekene@example.com",
+      "email": "fatima.ekene3@example.com",
       "phone": "+234 849 9098 705",
       "avatar_url": null,
       "role": "user",
       "status": "active",
       "is_verified": false,
-      "joined_at": "2026-07-15T02:48:07.073Z",
-      "last_seen_at": "2026-08-26T17:35:07.073Z",
+      "joined_at": "2026-07-15T04:33:06.800Z",
+      "last_seen_at": "2026-08-26T19:20:06.800Z",
       "followers": 1285,
       "following": 311,
       "signals": 23,
@@ -6066,7 +6066,7 @@
         "currency": "USD",
         "landing_company": "maltainvest",
         "last_recorded_balance": 11226.46,
-        "balance_recorded_at": "2026-08-30T16:23:07.073Z",
+        "balance_recorded_at": "2026-08-30T18:08:06.800Z",
         "scopes": [
           "read",
           "trade",
@@ -6079,21 +6079,21 @@
           "name": "RB 100 Room",
           "kind": "market",
           "role": "member",
-          "joined_at": "2026-06-27T04:33:07.073Z"
+          "joined_at": "2026-06-27T06:18:06.800Z"
         },
         {
           "id": "room_frxGBPUSD",
           "name": "GBP/USD Room",
           "kind": "market",
           "role": "member",
-          "joined_at": "2026-03-26T18:46:07.073Z"
+          "joined_at": "2026-03-26T20:31:06.800Z"
         },
         {
           "id": "room_crySOLUSD",
           "name": "SOL/USD Room",
           "kind": "market",
           "role": "member",
-          "joined_at": "2026-08-09T21:59:07.073Z"
+          "joined_at": "2026-08-09T23:44:06.800Z"
         }
       ],
       "security": {
@@ -6106,7 +6106,7 @@
         "device_type": "desktop",
         "two_factor": false,
         "failed_logins_30d": 1,
-        "password_changed_at": "2026-01-31T08:32:07.073Z",
+        "password_changed_at": "2026-01-31T10:17:06.800Z",
         "sessions": [
           {
             "ip": "128.207.89.85",
@@ -6115,7 +6115,7 @@
             "os": "Android 14",
             "browser": "Chrome 128",
             "type": "mobile",
-            "last_active": "2026-08-13T22:22:07.073Z",
+            "last_active": "2026-08-14T00:07:06.800Z",
             "current": false
           }
         ]
@@ -6128,16 +6128,16 @@
     },
     {
       "id": "u59",
-      "username": "david_balogun",
+      "username": "david_balogun3",
       "display_name": "David Balogun",
-      "email": "david.balogun@example.com",
+      "email": "david.balogun3@example.com",
       "phone": "+234 884 9920 803",
       "avatar_url": null,
       "role": "user",
       "status": "active",
       "is_verified": false,
-      "joined_at": "2025-07-19T03:06:07.073Z",
-      "last_seen_at": "2026-08-25T21:20:07.073Z",
+      "joined_at": "2025-07-19T04:51:06.800Z",
+      "last_seen_at": "2026-08-25T23:05:06.800Z",
       "followers": 2050,
       "following": 82,
       "signals": 28,
@@ -6159,7 +6159,7 @@
         "currency": "USD",
         "landing_company": "vanuatu",
         "last_recorded_balance": 9666.67,
-        "balance_recorded_at": "2026-09-01T11:52:07.073Z",
+        "balance_recorded_at": "2026-09-01T13:37:06.800Z",
         "scopes": [
           "read",
           "trade",
@@ -6172,7 +6172,7 @@
           "name": "Step Room",
           "kind": "market",
           "role": "member",
-          "joined_at": "2026-06-03T20:56:07.073Z"
+          "joined_at": "2026-06-03T22:41:06.800Z"
         }
       ],
       "security": {
@@ -6185,7 +6185,7 @@
         "device_type": "desktop",
         "two_factor": false,
         "failed_logins_30d": 5,
-        "password_changed_at": "2025-09-23T13:51:07.073Z",
+        "password_changed_at": "2025-09-23T15:36:06.800Z",
         "sessions": [
           {
             "ip": "73.30.160.200",
@@ -6194,7 +6194,7 @@
             "os": "Windows 10",
             "browser": "Edge 128",
             "type": "desktop",
-            "last_active": "2026-08-24T03:54:07.073Z",
+            "last_active": "2026-08-24T05:39:06.800Z",
             "current": false
           },
           {
@@ -6204,7 +6204,7 @@
             "os": "Ubuntu 24.04",
             "browser": "Firefox 129",
             "type": "desktop",
-            "last_active": "2026-08-28T05:21:07.073Z",
+            "last_active": "2026-08-28T07:06:06.800Z",
             "current": false
           }
         ]
@@ -6217,16 +6217,16 @@
     },
     {
       "id": "u60",
-      "username": "joy_chukwu",
+      "username": "joy_chukwu3",
       "display_name": "Joy Chukwu",
-      "email": "joy.chukwu@example.com",
+      "email": "joy.chukwu3@example.com",
       "phone": "+234 852 5616 858",
       "avatar_url": null,
       "role": "user",
       "status": "active",
       "is_verified": false,
-      "joined_at": "2024-05-11T09:42:07.073Z",
-      "last_seen_at": "2026-08-25T17:03:07.073Z",
+      "joined_at": "2024-05-11T11:27:06.800Z",
+      "last_seen_at": "2026-08-25T18:48:06.800Z",
       "followers": 319,
       "following": 61,
       "signals": 2,
@@ -6248,7 +6248,7 @@
         "currency": "USD",
         "landing_company": "maltainvest",
         "last_recorded_balance": 2132.79,
-        "balance_recorded_at": "2026-09-01T06:33:07.073Z",
+        "balance_recorded_at": "2026-09-01T08:18:06.800Z",
         "scopes": [
           "read",
           "trade",
@@ -6261,14 +6261,14 @@
           "name": "V10 Room",
           "kind": "market",
           "role": "member",
-          "joined_at": "2026-06-28T22:20:07.073Z"
+          "joined_at": "2026-06-29T00:05:06.800Z"
         },
         {
           "id": "room_JD25",
           "name": "Jump 25 Room",
           "kind": "market",
           "role": "member",
-          "joined_at": "2026-03-23T17:45:07.073Z"
+          "joined_at": "2026-03-23T19:30:06.800Z"
         }
       ],
       "security": {
@@ -6281,7 +6281,7 @@
         "device_type": "desktop",
         "two_factor": true,
         "failed_logins_30d": 0,
-        "password_changed_at": "2025-12-03T10:43:07.073Z",
+        "password_changed_at": "2025-12-03T12:28:06.800Z",
         "sessions": [
           {
             "ip": "116.253.100.140",
@@ -6290,7 +6290,7 @@
             "os": "Android 14",
             "browser": "Chrome 128",
             "type": "mobile",
-            "last_active": "2026-08-26T09:22:07.073Z",
+            "last_active": "2026-08-26T11:07:06.800Z",
             "current": false
           }
         ]
@@ -6303,16 +6303,16 @@
     },
     {
       "id": "u61",
-      "username": "john_david",
+      "username": "john_david4",
       "display_name": "John David",
-      "email": "john.david@example.com",
+      "email": "john.david4@example.com",
       "phone": "+234 857 1643 747",
       "avatar_url": null,
       "role": "signal_provider",
       "status": "active",
       "is_verified": true,
-      "joined_at": "2026-02-21T18:10:07.073Z",
-      "last_seen_at": "2026-08-19T12:47:07.073Z",
+      "joined_at": "2026-02-21T19:55:06.800Z",
+      "last_seen_at": "2026-08-19T14:32:06.800Z",
       "followers": 402,
       "following": 234,
       "signals": 206,
@@ -6334,7 +6334,7 @@
         "currency": "USD",
         "landing_company": "maltainvest",
         "last_recorded_balance": 2060.94,
-        "balance_recorded_at": "2026-09-01T18:53:07.073Z",
+        "balance_recorded_at": "2026-09-01T20:38:06.800Z",
         "scopes": [
           "read",
           "trade",
@@ -6347,28 +6347,28 @@
           "name": "V25 Room",
           "kind": "market",
           "role": "member",
-          "joined_at": "2025-12-28T03:17:07.073Z"
+          "joined_at": "2025-12-28T05:02:06.800Z"
         },
         {
           "id": "room_JD100",
           "name": "Jump 100 Room",
           "kind": "market",
           "role": "member",
-          "joined_at": "2026-01-16T18:25:07.073Z"
+          "joined_at": "2026-01-16T20:10:06.800Z"
         },
         {
           "id": "room_frxGBPJPY",
           "name": "GBP/JPY Room",
           "kind": "market",
           "role": "member",
-          "joined_at": "2025-11-21T04:23:07.073Z"
+          "joined_at": "2025-11-21T06:08:06.800Z"
         },
         {
           "id": "room_frxXPTUSD",
           "name": "XPT/USD Room",
           "kind": "market",
           "role": "member",
-          "joined_at": "2026-03-13T12:21:07.073Z"
+          "joined_at": "2026-03-13T14:06:06.800Z"
         }
       ],
       "security": {
@@ -6381,7 +6381,7 @@
         "device_type": "mobile",
         "two_factor": false,
         "failed_logins_30d": 2,
-        "password_changed_at": "2026-03-15T23:42:07.073Z",
+        "password_changed_at": "2026-03-16T01:27:06.800Z",
         "sessions": [
           {
             "ip": "131.60.111.91",
@@ -6390,7 +6390,7 @@
             "os": "iOS 17.5",
             "browser": "Safari 17",
             "type": "mobile",
-            "last_active": "2026-08-31T21:48:07.073Z",
+            "last_active": "2026-08-31T23:33:06.800Z",
             "current": false
           },
           {
@@ -6400,7 +6400,7 @@
             "os": "Android 14",
             "browser": "Chrome 128",
             "type": "mobile",
-            "last_active": "2026-08-17T00:33:07.073Z",
+            "last_active": "2026-08-17T02:18:06.800Z",
             "current": false
           },
           {
@@ -6410,7 +6410,7 @@
             "os": "macOS 14",
             "browser": "Chrome 127",
             "type": "desktop",
-            "last_active": "2026-08-16T02:54:07.073Z",
+            "last_active": "2026-08-16T04:39:06.800Z",
             "current": false
           },
           {
@@ -6420,7 +6420,7 @@
             "os": "macOS 14",
             "browser": "Chrome 127",
             "type": "desktop",
-            "last_active": "2026-08-23T04:24:07.073Z",
+            "last_active": "2026-08-23T06:09:06.800Z",
             "current": false
           }
         ]
@@ -6433,16 +6433,16 @@
     },
     {
       "id": "u62",
-      "username": "grace_eze",
+      "username": "grace_eze4",
       "display_name": "Grace Eze",
-      "email": "grace.eze@example.com",
+      "email": "grace.eze4@example.com",
       "phone": "+234 849 8066 367",
       "avatar_url": null,
       "role": "signal_provider",
       "status": "banned",
       "is_verified": true,
-      "joined_at": "2025-08-23T00:42:07.073Z",
-      "last_seen_at": "2026-08-24T14:54:07.073Z",
+      "joined_at": "2025-08-23T02:27:06.800Z",
+      "last_seen_at": "2026-08-24T16:39:06.800Z",
       "followers": 997,
       "following": 211,
       "signals": 175,
@@ -6464,7 +6464,7 @@
         "currency": "USD",
         "landing_company": "vanuatu",
         "last_recorded_balance": 2569.99,
-        "balance_recorded_at": "2026-08-30T23:07:07.073Z",
+        "balance_recorded_at": "2026-08-31T00:52:06.800Z",
         "scopes": [
           "read",
           "trade",
@@ -6477,7 +6477,7 @@
           "name": "V50 Room",
           "kind": "market",
           "role": "member",
-          "joined_at": "2026-02-04T06:58:07.073Z"
+          "joined_at": "2026-02-04T08:43:06.816Z"
         }
       ],
       "security": {
@@ -6490,7 +6490,7 @@
         "device_type": "mobile",
         "two_factor": false,
         "failed_logins_30d": 5,
-        "password_changed_at": "2025-10-23T01:02:07.073Z",
+        "password_changed_at": "2025-10-23T02:47:06.816Z",
         "sessions": [
           {
             "ip": "43.91.194.240",
@@ -6499,7 +6499,7 @@
             "os": "Windows 10",
             "browser": "Edge 128",
             "type": "desktop",
-            "last_active": "2026-08-27T09:50:07.073Z",
+            "last_active": "2026-08-27T11:35:06.816Z",
             "current": false
           }
         ]
@@ -6507,21 +6507,21 @@
       "flags": {
         "reports_against": 1,
         "warnings": 1,
-        "suspended_until": "2026-10-02T05:29:07.073Z"
+        "suspended_until": "2026-10-02T07:14:06.816Z"
       }
     },
     {
       "id": "u63",
-      "username": "femi_adamu",
+      "username": "femi_adamu4",
       "display_name": "Femi Adamu",
-      "email": "femi.adamu@example.com",
+      "email": "femi.adamu4@example.com",
       "phone": "+234 869 7937 182",
       "avatar_url": null,
       "role": "moderator",
       "status": "banned",
       "is_verified": false,
-      "joined_at": "2025-06-25T15:27:07.073Z",
-      "last_seen_at": "2026-08-27T04:57:07.073Z",
+      "joined_at": "2025-06-25T17:12:06.816Z",
+      "last_seen_at": "2026-08-27T06:42:06.816Z",
       "followers": 791,
       "following": 169,
       "signals": 30,
@@ -6543,7 +6543,7 @@
         "currency": "USD",
         "landing_company": "svg",
         "last_recorded_balance": 10274.39,
-        "balance_recorded_at": "2026-08-30T07:52:07.073Z",
+        "balance_recorded_at": "2026-08-30T09:37:06.816Z",
         "scopes": [
           "read",
           "trade",
@@ -6556,35 +6556,35 @@
           "name": "V50 (1s) Room",
           "kind": "market",
           "role": "member",
-          "joined_at": "2026-07-02T22:00:07.073Z"
+          "joined_at": "2026-07-02T23:45:06.816Z"
         },
         {
           "id": "room_CRASH300",
           "name": "Crash 300 Room",
           "kind": "market",
           "role": "member",
-          "joined_at": "2026-01-02T15:06:07.073Z"
+          "joined_at": "2026-01-02T16:51:06.816Z"
         },
         {
           "id": "room_frxEURGBP",
           "name": "EUR/GBP Room",
           "kind": "market",
           "role": "member",
-          "joined_at": "2026-05-02T16:00:07.073Z"
+          "joined_at": "2026-05-02T17:45:06.816Z"
         },
         {
           "id": "room_frxXAUUSD",
           "name": "XAU/USD Room",
           "kind": "market",
           "role": "member",
-          "joined_at": "2025-12-27T05:57:07.074Z"
+          "joined_at": "2025-12-27T07:42:06.816Z"
         },
         {
           "id": "room_OTC_AS51",
           "name": "AUS 200 Room",
           "kind": "market",
           "role": "member",
-          "joined_at": "2026-07-02T00:51:07.074Z"
+          "joined_at": "2026-07-02T02:36:06.816Z"
         }
       ],
       "security": {
@@ -6597,7 +6597,7 @@
         "device_type": "desktop",
         "two_factor": false,
         "failed_logins_30d": 1,
-        "password_changed_at": "2025-09-27T01:36:07.074Z",
+        "password_changed_at": "2025-09-27T03:21:06.816Z",
         "sessions": [
           {
             "ip": "117.201.174.89",
@@ -6606,7 +6606,7 @@
             "os": "macOS 14",
             "browser": "Chrome 127",
             "type": "desktop",
-            "last_active": "2026-08-24T20:21:07.074Z",
+            "last_active": "2026-08-24T22:06:06.816Z",
             "current": false
           }
         ]
@@ -6614,21 +6614,21 @@
       "flags": {
         "reports_against": 5,
         "warnings": 1,
-        "suspended_until": "2026-10-02T05:29:07.074Z"
+        "suspended_until": "2026-10-02T07:14:06.816Z"
       }
     },
     {
       "id": "u64",
-      "username": "amara_okafor",
+      "username": "amara_okafor4",
       "display_name": "Amara Okafor",
-      "email": "amara.okafor@example.com",
+      "email": "amara.okafor4@example.com",
       "phone": "+234 868 2999 503",
       "avatar_url": null,
       "role": "user",
       "status": "active",
       "is_verified": true,
-      "joined_at": "2025-02-13T19:09:07.074Z",
-      "last_seen_at": "2026-08-27T04:27:07.074Z",
+      "joined_at": "2025-02-13T20:54:06.816Z",
+      "last_seen_at": "2026-08-27T06:12:06.816Z",
       "followers": 1923,
       "following": 183,
       "signals": 0,
@@ -6650,7 +6650,7 @@
         "currency": "USD",
         "landing_company": "vanuatu",
         "last_recorded_balance": 736.2,
-        "balance_recorded_at": "2026-09-01T12:41:07.075Z",
+        "balance_recorded_at": "2026-09-01T14:26:06.816Z",
         "scopes": [
           "read",
           "trade",
@@ -6663,21 +6663,21 @@
           "name": "V100 Room",
           "kind": "market",
           "role": "member",
-          "joined_at": "2026-04-23T11:36:07.075Z"
+          "joined_at": "2026-04-23T13:21:06.816Z"
         },
         {
           "id": "room_CRASH500",
           "name": "Crash 500 Room",
           "kind": "market",
           "role": "member",
-          "joined_at": "2026-05-19T01:18:07.075Z"
+          "joined_at": "2026-05-19T03:03:06.816Z"
         },
         {
           "id": "room_frxNZDUSD",
           "name": "NZD/USD Room",
           "kind": "market",
           "role": "member",
-          "joined_at": "2026-02-16T10:32:07.075Z"
+          "joined_at": "2026-02-16T12:17:06.816Z"
         }
       ],
       "security": {
@@ -6690,7 +6690,7 @@
         "device_type": "desktop",
         "two_factor": false,
         "failed_logins_30d": 2,
-        "password_changed_at": "2026-08-20T22:25:07.075Z",
+        "password_changed_at": "2026-08-21T00:10:06.816Z",
         "sessions": [
           {
             "ip": "162.100.204.98",
@@ -6699,7 +6699,7 @@
             "os": "macOS 14",
             "browser": "Chrome 127",
             "type": "desktop",
-            "last_active": "2026-08-19T07:54:07.075Z",
+            "last_active": "2026-08-19T09:39:06.816Z",
             "current": false
           },
           {
@@ -6709,7 +6709,7 @@
             "os": "Windows 11",
             "browser": "Chrome 128",
             "type": "desktop",
-            "last_active": "2026-08-31T05:21:07.075Z",
+            "last_active": "2026-08-31T07:06:06.816Z",
             "current": false
           },
           {
@@ -6719,7 +6719,7 @@
             "os": "Windows 11",
             "browser": "Chrome 128",
             "type": "desktop",
-            "last_active": "2026-08-24T01:38:07.075Z",
+            "last_active": "2026-08-24T03:23:06.816Z",
             "current": false
           },
           {
@@ -6729,7 +6729,7 @@
             "os": "macOS 14",
             "browser": "Chrome 127",
             "type": "desktop",
-            "last_active": "2026-09-02T00:46:07.075Z",
+            "last_active": "2026-09-02T02:31:06.816Z",
             "current": false
           }
         ]

@@ -18,7 +18,7 @@
   position: sticky; top: 0; height: 100vh; overflow-y: auto;
   background: var(--mb-surface); border-right: 1px solid var(--mb-border);
   display: flex; flex-direction: column;
-  padding: var(--mb-s5) var(--mb-s3);
+  padding: var(--mb-s6) var(--mb-s4);
 }
 .admin-brand { display: flex; align-items: center; gap: var(--mb-s2); padding: 0 var(--mb-s2) var(--mb-s5); }
 .admin-brand .tag {
@@ -56,20 +56,23 @@
 .admin-topbar {
   position: sticky; top: 0; z-index: 50;
   display: flex; align-items: center; gap: var(--mb-s4);
-  padding: var(--mb-s4) var(--mb-s6);
+  padding: var(--mb-s5) var(--mb-s8);
   background: color-mix(in srgb, var(--mb-bg) 88%, transparent);
   backdrop-filter: saturate(160%) blur(12px);
   -webkit-backdrop-filter: saturate(160%) blur(12px);
   border-bottom: 1px solid var(--mb-border);
 }
 .admin-topbar h1 { font-size: var(--mb-t-h2); font-weight: var(--mb-w-bold); letter-spacing: -.02em; }
-.admin-topbar .sub { font-size: var(--mb-t-xs); color: var(--mb-text-3); margin-top: 1px; }
+.admin-topbar .sub { font-size: var(--mb-t-xs); color: var(--mb-text-3); margin-top: 4px; }
 .admin-search { max-width: 300px; flex: 1; }
 .admin-search .input { height: 38px; font-size: var(--mb-t-sm); }
 .admin-search .input-icon svg { width: 16px; height: 16px; left: var(--mb-s3); }
 .admin-search .input { padding-left: 38px; }
 
-.admin-body { padding: var(--mb-s6); display: flex; flex-direction: column; gap: var(--mb-s6); }
+.admin-body {
+  padding: var(--mb-s7) var(--mb-s8) var(--mb-s12);
+  display: flex; flex-direction: column; gap: var(--mb-s6);
+}
 
 /* Burger for narrow screens */
 .admin-burger { display: none; }
@@ -83,8 +86,8 @@
   }
   .admin-rail.is-open { transform: none; }
   .admin-burger { display: inline-flex; }
-  .admin-body { padding: var(--mb-s4); }
-  .admin-topbar { padding: var(--mb-s3) var(--mb-s4); }
+  .admin-body { padding: var(--mb-s5) var(--mb-s5) var(--mb-s10); }
+  .admin-topbar { padding: var(--mb-s4) var(--mb-s5); }
 }
 .admin-scrim {
   position: fixed; inset: 0; background: var(--mb-overlay); z-index: 110;
@@ -113,10 +116,10 @@
 .panel { background: var(--mb-surface); border: 1px solid var(--mb-border); border-radius: var(--mb-r-md); overflow: hidden; }
 .panel-head {
   display: flex; align-items: center; justify-content: space-between; gap: var(--mb-s3);
-  padding: var(--mb-s4); border-bottom: 1px solid var(--mb-border);
+  padding: var(--mb-s4) var(--mb-s5); border-bottom: 1px solid var(--mb-border);
 }
 .panel-head h2, .panel-head h3 { font-size: var(--mb-t-h3); font-weight: var(--mb-w-bold); }
-.panel-body { padding: var(--mb-s4); }
+.panel-body { padding: var(--mb-s5); }
 .panel-body-flush { padding: 0; }
 
 .admin-cols { display: grid; gap: var(--mb-s4); }
@@ -160,9 +163,19 @@
 .cap-verified.is-stale { color: var(--mb-warn); }
 
 /* Simple bar chart for the admin dashboard */
-.bars { display: flex; align-items: flex-end; gap: 6px; height: 160px; padding-top: var(--mb-s3); }
-.bars .bar { flex: 1; background: var(--mb-green-soft); border-radius: 4px 4px 0 0; position: relative; min-height: 3px; }
-.bars .bar > i { position: absolute; inset: auto 0 0 0; background: var(--mb-green); border-radius: inherit; display: block; }
+.bars { display: flex; align-items: flex-end; gap: 6px; height: 180px; padding-top: var(--mb-s3); }
+.bars .bar {
+  flex: 1; min-width: 0; min-height: 4px;
+  background: var(--mb-green-soft); border-radius: 5px 5px 0 0;
+  display: flex; align-items: flex-end;
+  transition: background var(--mb-fast) var(--mb-ease);
+}
+.bars .bar:hover { background: var(--mb-green-line); }
+.bars .bar > i {
+  display: block; width: 100%; height: 100%;
+  background: linear-gradient(180deg, var(--mb-green), color-mix(in srgb, var(--mb-green) 55%, transparent));
+  border-radius: inherit;
+}
 .bars-axis { display: flex; gap: 6px; margin-top: 6px; }
 .bars-axis span { flex: 1; text-align: center; font-size: 10px; color: var(--mb-text-3); }
 
@@ -224,7 +237,7 @@
    ========================================================================== */
 .detail-hero {
   display: flex; flex-wrap: wrap; align-items: flex-start; gap: var(--mb-s5);
-  padding: var(--mb-s6); border: 1px solid var(--mb-border);
+  padding: var(--mb-s7); border: 1px solid var(--mb-border);
   border-radius: var(--mb-r-md); background: var(--mb-surface);
 }
 .detail-hero .dh-main { flex: 1; min-width: 240px; }
@@ -369,3 +382,9 @@
 /* a link that looks like a table cell but behaves like a row action */
 .cell-link { color: inherit; }
 .cell-link:hover .n { color: var(--mb-green); }
+
+/* Summary tables inside a half-width dashboard panel need tighter cells than
+   a full-page datatable, and must not force horizontal scroll. */
+table.data.is-compact { min-width: 0; }
+table.data.is-compact th { padding: var(--mb-s3) var(--mb-s4); }
+table.data.is-compact td { padding: var(--mb-s3) var(--mb-s4); }

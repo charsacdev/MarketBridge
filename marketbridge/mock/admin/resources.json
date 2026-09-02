@@ -20,8 +20,8 @@
       "author": "ibrahim_mensah",
       "market": null,
       "has_certificate": true,
-      "published_at": "2025-10-29T15:15:07.093Z",
-      "updated_at": "2026-06-18T13:49:07.093Z",
+      "published_at": "2025-10-29T17:00:06.854Z",
+      "updated_at": "2026-06-18T15:34:06.854Z",
       "curriculum": [
         {
           "order": 1,
@@ -126,11 +126,11 @@
       "completions": 1173,
       "rating": 4,
       "revenue": 37191,
-      "author": "chioma_nwosu",
+      "author": "chioma_nwosu2",
       "market": "cryBCHUSD",
       "has_certificate": true,
-      "published_at": "2025-04-24T11:44:07.094Z",
-      "updated_at": "2026-08-14T23:24:07.094Z",
+      "published_at": "2025-04-24T13:29:06.854Z",
+      "updated_at": "2026-08-15T01:09:06.854Z",
       "curriculum": [
         {
           "order": 1,
@@ -249,11 +249,11 @@
       "completions": 283,
       "rating": 3.9,
       "revenue": 32074,
-      "author": "joy_chukwu",
+      "author": "joy_chukwu3",
       "market": "frxXPDUSD",
       "has_certificate": true,
-      "published_at": "2025-12-24T06:41:07.094Z",
-      "updated_at": "2026-06-20T14:48:07.094Z",
+      "published_at": "2025-12-24T08:26:06.854Z",
+      "updated_at": "2026-06-20T16:33:06.854Z",
       "curriculum": [
         {
           "order": 1,
@@ -337,11 +337,11 @@
       "completions": 1574,
       "rating": 4.2,
       "revenue": 52746,
-      "author": "ada_bello",
+      "author": "ada_bello2",
       "market": null,
       "has_certificate": true,
-      "published_at": "2026-08-15T19:46:07.094Z",
-      "updated_at": "2026-07-25T19:25:07.094Z",
+      "published_at": "2026-08-15T21:31:06.854Z",
+      "updated_at": "2026-07-25T21:10:06.854Z",
       "curriculum": [
         {
           "order": 1,
@@ -421,8 +421,8 @@
       "author": "blessing_danjuma",
       "market": null,
       "has_certificate": false,
-      "published_at": "2026-03-16T15:27:07.094Z",
-      "updated_at": "2026-09-01T08:20:07.094Z",
+      "published_at": "2026-03-16T17:12:06.854Z",
+      "updated_at": "2026-09-01T10:05:06.854Z",
       "curriculum": []
     },
     {
@@ -445,8 +445,8 @@
       "author": "grace_eze",
       "market": null,
       "has_certificate": false,
-      "published_at": "2026-08-15T21:50:07.094Z",
-      "updated_at": "2026-07-15T21:34:07.094Z",
+      "published_at": "2026-08-15T23:35:06.854Z",
+      "updated_at": "2026-07-15T23:19:06.854Z",
       "curriculum": []
     },
     {
@@ -466,11 +466,11 @@
       "completions": 1997,
       "rating": 4.3,
       "revenue": 15428,
-      "author": "joy_chukwu",
+      "author": "joy_chukwu3",
       "market": null,
       "has_certificate": false,
-      "published_at": "2026-07-24T00:44:07.094Z",
-      "updated_at": "2026-08-12T03:48:07.094Z",
+      "published_at": "2026-07-24T02:29:06.854Z",
+      "updated_at": "2026-08-12T05:33:06.854Z",
       "curriculum": []
     },
     {
@@ -490,11 +490,11 @@
       "completions": 367,
       "rating": 4.2,
       "revenue": 0,
-      "author": "zainab_lawal",
+      "author": "zainab_lawal2",
       "market": "cryADAUSD",
       "has_certificate": false,
-      "published_at": "2025-09-23T10:26:07.094Z",
-      "updated_at": "2026-07-10T12:26:07.094Z",
+      "published_at": "2025-09-23T12:11:06.854Z",
+      "updated_at": "2026-07-10T14:11:06.854Z",
       "curriculum": []
     },
     {
@@ -514,11 +514,11 @@
       "completions": 1376,
       "rating": 4.7,
       "revenue": 0,
-      "author": "aisha_ibrahim",
+      "author": "aisha_ibrahim2",
       "market": "cryLTCUSD",
       "has_certificate": false,
-      "published_at": "2025-04-20T08:32:07.094Z",
-      "updated_at": "2026-08-17T18:31:07.094Z",
+      "published_at": "2025-04-20T10:17:06.854Z",
+      "updated_at": "2026-08-17T20:16:06.854Z",
       "curriculum": []
     },
     {
@@ -541,8 +541,8 @@
       "author": "samuel_mohammed",
       "market": null,
       "has_certificate": false,
-      "published_at": "2025-07-25T05:25:07.094Z",
-      "updated_at": "2026-08-27T08:48:07.094Z",
+      "published_at": "2025-07-25T07:10:06.854Z",
+      "updated_at": "2026-08-27T10:33:06.854Z",
       "curriculum": []
     },
     {
@@ -562,11 +562,11 @@
       "completions": 78,
       "rating": 4.9,
       "revenue": 0,
-      "author": "daniel_achebe",
+      "author": "daniel_achebe2",
       "market": "frxXPTUSD",
       "has_certificate": false,
-      "published_at": "2026-07-09T21:28:07.094Z",
-      "updated_at": "2026-06-11T15:45:07.094Z",
+      "published_at": "2026-07-09T23:13:06.855Z",
+      "updated_at": "2026-06-11T17:30:06.855Z",
       "curriculum": []
     },
     {
@@ -586,11 +586,11 @@
       "completions": 346,
       "rating": 3.8,
       "revenue": 119002,
-      "author": "fatima_ekene",
+      "author": "fatima_ekene2",
       "market": null,
       "has_certificate": false,
-      "published_at": "2025-07-10T13:53:07.094Z",
-      "updated_at": "2026-08-01T00:16:07.094Z",
+      "published_at": "2025-07-10T15:38:06.856Z",
+      "updated_at": "2026-08-01T02:01:06.856Z",
       "curriculum": []
     },
     {
@@ -613,8 +613,8 @@
       "author": "fatima_ekene",
       "market": "1HZ50V",
       "has_certificate": true,
-      "published_at": "2025-10-07T11:30:07.094Z",
-      "updated_at": "2026-06-15T20:21:07.094Z",
+      "published_at": "2025-10-07T13:15:06.856Z",
+      "updated_at": "2026-06-15T22:06:06.856Z",
       "curriculum": [
         {
           "order": 1,
@@ -705,11 +705,11 @@
       "completions": 1088,
       "rating": 4.8,
       "revenue": 15717,
-      "author": "david_balogun",
+      "author": "david_balogun2",
       "market": null,
       "has_certificate": true,
-      "published_at": "2026-02-27T13:11:07.094Z",
-      "updated_at": "2026-07-31T23:36:07.094Z",
+      "published_at": "2026-02-27T14:56:06.856Z",
+      "updated_at": "2026-08-01T01:21:06.856Z",
       "curriculum": [
         {
           "order": 1,
