@@ -1,0 +1,358 @@
+{
+  "data": [
+    {
+      "id": "usr_fx",
+      "username": "FX_ProTrader",
+      "display_name": "FX_ProTrader",
+      "avatar_url": null,
+      "is_verified": true,
+      "is_pro": true,
+      "win_rate": 78,
+      "signals_count": 156,
+      "followers": 1245,
+      "rank": 1,
+      "bio": "Price action trader focused on SMC and ICT concepts.",
+      "joined_at": "2025-07-03T04:47:20.390Z",
+      "stats": {
+        "window": "30d",
+        "total_signals": 156,
+        "wins": 122,
+        "losses": 34,
+        "win_rate": 78,
+        "avg_risk_reward": 1.76,
+        "total_pl": 3790.59,
+        "best_signal_pl": 411.04,
+        "sample_size": 156,
+        "is_ranked": true
+      },
+      "categories": [
+        "synthetic_indices",
+        "derived",
+        "forex"
+      ],
+      "markets_traded": [
+        "1HZ75V",
+        "R_10",
+        "CRASH500",
+        "frxUSDJPY"
+      ],
+      "room_id": "room_u_FX_ProTrader",
+      "following": false
+    },
+    {
+      "id": "usr_queen",
+      "username": "QueenTrader",
+      "display_name": "QueenTrader",
+      "avatar_url": null,
+      "is_verified": true,
+      "is_pro": true,
+      "win_rate": 74,
+      "signals_count": 132,
+      "followers": 962,
+      "rank": 2,
+      "bio": "Crypto momentum, multiplier contracts only.",
+      "joined_at": "2024-04-25T04:47:20.390Z",
+      "stats": {
+        "window": "30d",
+        "total_signals": 132,
+        "wins": 98,
+        "losses": 34,
+        "win_rate": 74,
+        "avg_risk_reward": 2.02,
+        "total_pl": 2898.73,
+        "best_signal_pl": 247.15,
+        "sample_size": 132,
+        "is_ranked": true
+      },
+      "categories": [
+        "synthetic_indices",
+        "derived",
+        "forex"
+      ],
+      "markets_traded": [
+        "R_25",
+        "CRASH1000",
+        "frxGBPUSD",
+        "frxEURJPY"
+      ],
+      "room_id": "room_u_QueenTrader",
+      "following": false
+    },
+    {
+      "id": "usr_alpha",
+      "username": "AlphaKing",
+      "display_name": "AlphaKing",
+      "avatar_url": null,
+      "is_verified": true,
+      "is_pro": false,
+      "win_rate": 71,
+      "signals_count": 201,
+      "followers": 842,
+      "rank": 3,
+      "bio": "Price action trader focused on SMC and ICT concepts.",
+      "joined_at": "2025-01-22T04:47:20.390Z",
+      "stats": {
+        "window": "30d",
+        "total_signals": 201,
+        "wins": 143,
+        "losses": 58,
+        "win_rate": 71,
+        "avg_risk_reward": 1.65,
+        "total_pl": 2185.7,
+        "best_signal_pl": 478.49,
+        "sample_size": 201,
+        "is_ranked": true
+      },
+      "categories": [
+        "synthetic_indices",
+        "derived",
+        "forex"
+      ],
+      "markets_traded": [
+        "R_50",
+        "BOOM300",
+        "frxEURUSD",
+        "frxEURGBP"
+      ],
+      "room_id": "room_u_AlphaKing",
+      "following": false
+    },
+    {
+      "id": "usr_james",
+      "username": "JamesFX",
+      "display_name": "JamesFX",
+      "avatar_url": null,
+      "is_verified": false,
+      "is_pro": true,
+      "win_rate": 69,
+      "signals_count": 98,
+      "followers": 611,
+      "rank": 4,
+      "bio": "Synthetics scalper. V75 and Boom mostly.",
+      "joined_at": "2024-04-03T04:47:20.390Z",
+      "stats": {
+        "window": "30d",
+        "total_signals": 98,
+        "wins": 68,
+        "losses": 30,
+        "win_rate": 69,
+        "avg_risk_reward": 2.21,
+        "total_pl": 3287.32,
+        "best_signal_pl": 191.09,
+        "sample_size": 98,
+        "is_ranked": true
+      },
+      "categories": [
+        "synthetic_indices",
+        "derived",
+        "forex"
+      ],
+      "markets_traded": [
+        "1HZ50V",
+        "BOOM500",
+        "JD25",
+        "frxNZDUSD"
+      ],
+      "room_id": "room_u_JamesFX",
+      "following": false
+    },
+    {
+      "id": "usr_mm",
+      "username": "Mr_Market",
+      "display_name": "Mr_Market",
+      "avatar_url": null,
+      "is_verified": false,
+      "is_pro": false,
+      "win_rate": 66,
+      "signals_count": 89,
+      "followers": 402,
+      "rank": 5,
+      "bio": "Synthetics scalper. V75 and Boom mostly.",
+      "joined_at": "2025-05-15T04:47:20.390Z",
+      "stats": {
+        "window": "30d",
+        "total_signals": 89,
+        "wins": 59,
+        "losses": 30,
+        "win_rate": 66,
+        "avg_risk_reward": 1.79,
+        "total_pl": 3394.55,
+        "best_signal_pl": 193.1,
+        "sample_size": 89,
+        "is_ranked": true
+      },
+      "categories": [
+        "synthetic_indices",
+        "derived",
+        "forex"
+      ],
+      "markets_traded": [
+        "R_100",
+        "BOOM1000",
+        "JD100",
+        "frxUSDCHF"
+      ],
+      "room_id": "room_u_Mr_Market",
+      "following": false
+    },
+    {
+      "id": "usr_swing",
+      "username": "SwingMaster",
+      "display_name": "SwingMaster",
+      "avatar_url": null,
+      "is_verified": false,
+      "is_pro": false,
+      "win_rate": 63,
+      "signals_count": 77,
+      "followers": 318,
+      "rank": 6,
+      "bio": "Crypto momentum, multiplier contracts only.",
+      "joined_at": "2024-10-12T04:47:20.390Z",
+      "stats": {
+        "window": "30d",
+        "total_signals": 77,
+        "wins": 49,
+        "losses": 28,
+        "win_rate": 63,
+        "avg_risk_reward": 2.07,
+        "total_pl": 4249.5,
+        "best_signal_pl": 445.28,
+        "sample_size": 77,
+        "is_ranked": true
+      },
+      "categories": [
+        "synthetic_indices",
+        "derived",
+        "forex"
+      ],
+      "markets_traded": [
+        "1HZ100V",
+        "RB100",
+        "JD75",
+        "frxUSDCAD"
+      ],
+      "room_id": "room_u_SwingMaster",
+      "following": false
+    },
+    {
+      "id": "usr_pip",
+      "username": "PipHunter",
+      "display_name": "PipHunter",
+      "avatar_url": null,
+      "is_verified": true,
+      "is_pro": true,
+      "win_rate": 72,
+      "signals_count": 143,
+      "followers": 704,
+      "rank": 7,
+      "bio": "Swing trader — forex majors and gold.",
+      "joined_at": "2025-12-23T04:47:20.390Z",
+      "stats": {
+        "window": "30d",
+        "total_signals": 143,
+        "wins": 103,
+        "losses": 40,
+        "win_rate": 72,
+        "avg_risk_reward": 1.73,
+        "total_pl": 2906.01,
+        "best_signal_pl": 367.01,
+        "sample_size": 143,
+        "is_ranked": true
+      },
+      "categories": [
+        "synthetic_indices",
+        "derived",
+        "forex"
+      ],
+      "markets_traded": [
+        "R_75",
+        "stpRNG",
+        "CRASH300",
+        "frxAUDUSD"
+      ],
+      "room_id": "room_u_PipHunter",
+      "following": false
+    },
+    {
+      "id": "usr_chain",
+      "username": "ChainScalp",
+      "display_name": "ChainScalp",
+      "avatar_url": null,
+      "is_verified": false,
+      "is_pro": true,
+      "win_rate": 68,
+      "signals_count": 112,
+      "followers": 529,
+      "rank": 8,
+      "bio": "Price action trader focused on SMC and ICT concepts.",
+      "joined_at": "2025-05-19T04:47:20.390Z",
+      "stats": {
+        "window": "30d",
+        "total_signals": 112,
+        "wins": 76,
+        "losses": 36,
+        "win_rate": 68,
+        "avg_risk_reward": 2.67,
+        "total_pl": 2605.14,
+        "best_signal_pl": 293.37,
+        "sample_size": 112,
+        "is_ranked": true
+      },
+      "categories": [
+        "synthetic_indices",
+        "derived",
+        "forex"
+      ],
+      "markets_traded": [
+        "1HZ75V",
+        "R_10",
+        "CRASH500",
+        "frxUSDJPY"
+      ],
+      "room_id": "room_u_ChainScalp",
+      "following": false
+    },
+    {
+      "id": "usr_gold",
+      "username": "GoldDigger",
+      "display_name": "GoldDigger",
+      "avatar_url": null,
+      "is_verified": true,
+      "is_pro": false,
+      "win_rate": 70,
+      "signals_count": 95,
+      "followers": 466,
+      "rank": 9,
+      "bio": "Synthetics scalper. V75 and Boom mostly.",
+      "joined_at": "2025-09-09T04:47:20.391Z",
+      "stats": {
+        "window": "30d",
+        "total_signals": 95,
+        "wins": 67,
+        "losses": 28,
+        "win_rate": 70,
+        "avg_risk_reward": 2.76,
+        "total_pl": 1174.41,
+        "best_signal_pl": 249.22,
+        "sample_size": 95,
+        "is_ranked": true
+      },
+      "categories": [
+        "synthetic_indices",
+        "derived",
+        "forex"
+      ],
+      "markets_traded": [
+        "R_25",
+        "CRASH1000",
+        "frxGBPUSD",
+        "frxEURJPY"
+      ],
+      "room_id": "room_u_GoldDigger",
+      "following": false
+    }
+  ],
+  "meta": {
+    "total": 9
+  }
+}

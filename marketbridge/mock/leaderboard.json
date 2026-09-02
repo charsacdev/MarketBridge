@@ -1,0 +1,123 @@
+{
+  "data": [
+    {
+      "rank": 1,
+      "user": {
+        "id": "usr_fx",
+        "username": "FX_ProTrader",
+        "display_name": "FX_ProTrader",
+        "avatar_url": null,
+        "is_verified": true,
+        "is_pro": true,
+        "win_rate": 78,
+        "signals_count": 156,
+        "followers": 1245
+      },
+      "win_rate": 78,
+      "signals": 156,
+      "followers": 1245,
+      "total_pl": 3245.6,
+      "min_sample_met": true
+    },
+    {
+      "rank": 2,
+      "user": {
+        "id": "usr_queen",
+        "username": "QueenTrader",
+        "display_name": "QueenTrader",
+        "avatar_url": null,
+        "is_verified": true,
+        "is_pro": true,
+        "win_rate": 74,
+        "signals_count": 132,
+        "followers": 962
+      },
+      "win_rate": 74,
+      "signals": 132,
+      "followers": 962,
+      "total_pl": 2825.6,
+      "min_sample_met": true
+    },
+    {
+      "rank": 3,
+      "user": {
+        "id": "usr_alpha",
+        "username": "AlphaKing",
+        "display_name": "AlphaKing",
+        "avatar_url": null,
+        "is_verified": true,
+        "is_pro": false,
+        "win_rate": 71,
+        "signals_count": 201,
+        "followers": 842
+      },
+      "win_rate": 71,
+      "signals": 201,
+      "followers": 842,
+      "total_pl": 2405.6,
+      "min_sample_met": true
+    },
+    {
+      "rank": 4,
+      "user": {
+        "id": "usr_james",
+        "username": "JamesFX",
+        "display_name": "JamesFX",
+        "avatar_url": null,
+        "is_verified": false,
+        "is_pro": true,
+        "win_rate": 69,
+        "signals_count": 98,
+        "followers": 611
+      },
+      "win_rate": 69,
+      "signals": 98,
+      "followers": 611,
+      "total_pl": 1985.6,
+      "min_sample_met": true
+    },
+    {
+      "rank": 5,
+      "user": {
+        "id": "usr_mm",
+        "username": "Mr_Market",
+        "display_name": "Mr_Market",
+        "avatar_url": null,
+        "is_verified": false,
+        "is_pro": false,
+        "win_rate": 66,
+        "signals_count": 89,
+        "followers": 402
+      },
+      "win_rate": 66,
+      "signals": 89,
+      "followers": 402,
+      "total_pl": 1565.6,
+      "min_sample_met": true
+    },
+    {
+      "rank": 6,
+      "user": {
+        "id": "usr_swing",
+        "username": "SwingMaster",
+        "display_name": "SwingMaster",
+        "avatar_url": null,
+        "is_verified": false,
+        "is_pro": false,
+        "win_rate": 63,
+        "signals_count": 77,
+        "followers": 318
+      },
+      "win_rate": 63,
+      "signals": 77,
+      "followers": 318,
+      "total_pl": 1145.6,
+      "min_sample_met": true
+    }
+  ],
+  "meta": {
+    "board_type": "top_signal_providers",
+    "window": "30d",
+    "total": 6
+  }
+}

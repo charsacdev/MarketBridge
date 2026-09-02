@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>My Profile — MarketBridge</title>
+<meta name="theme-color" content="#0A0E12">
+<link rel="manifest" href="../../manifest.webmanifest">
+<link rel="icon" href="../../assets/icons/favicon-32.png" sizes="32x32">
+<link rel="apple-touch-icon" href="../../assets/icons/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap">
+<link rel="stylesheet" href="../../assets/css/tokens.css">
+<link rel="stylesheet" href="../../assets/css/base.css">
+<link rel="stylesheet" href="../../assets/css/components.css">
+<link rel="stylesheet" href="../../assets/css/app.css">
+<script>(function(){try{var t=localStorage.getItem('mb.theme');if(t){document.documentElement.setAttribute('data-theme',t);}}catch(e){}})();</script>
+</head>
+<body data-shell="app" data-nav="home" data-root="../../" data-title="My Profile" data-back="../index.html" data-unread="3">
+
+<div class="app">
+  <div data-render="topbar"></div>
+  <main class="page">
+
+    <section class="profile-hero">
+      <div id="meAvatar"></div>
+      <div style="text-align:center">
+        <div class="ph-name" id="meName">—</div>
+        <div class="ph-handle" id="meHandle">—</div>
+      </div>
+      <p class="ph-bio" id="meBio">—</p>
+      <div class="row g2">
+        <a class="btn btn-ghost" href="settings.html"><span data-icon="edit"></span> Edit profile</a>
+        <a class="btn btn-ghost none" href="settings.html" aria-label="Settings">
+          <span data-icon="settings"></span></a>
+      </div>
+    </section>
+
+    <div class="stat-grid">
+      <div class="stat-cell"><div class="stat-v" id="meFollowers">—</div><div class="stat-k">Followers</div></div>
+      <div class="stat-cell"><div class="stat-v" id="meFollowing">—</div><div class="stat-k">Following</div></div>
+      <div class="stat-cell"><div class="stat-v" id="meSignals">—</div><div class="stat-k">Signals</div></div>
+      <div class="stat-cell"><div class="stat-v c-up" id="meWin">—</div><div class="stat-k">Win rate</div></div>
+    </div>
+
+    <section class="card">
+      <div class="between"><div class="t-sm w-bold">Performance overview</div>
+        <span class="badge badge-neutral">All time</span></div>
+      <div class="stat-grid cols-3 mt3">
+        <div class="stat-cell"><div class="stat-v c-up" id="meWins">—</div><div class="stat-k">Wins</div></div>
+        <div class="stat-cell"><div class="stat-v c-down" id="meLosses">—</div><div class="stat-k">Losses</div></div>
+        <div class="stat-cell"><div class="stat-v c-up num" id="mePL">—</div><div class="stat-k">Total P/L</div></div>
+      </div>
+      <div data-chart="area" data-seed="meprofile" data-h="130" class="mt4"></div>
+    </section>
+
+    <div class="tabs" data-group id="meTabs">
+      <button class="tab is-active" data-value="signals">Recent Signals</button>
+      <button class="tab" data-value="posts">Posts</button>
+    </div>
+
+    <section id="paneMeSignals" class="stack g4"></section>
+    <section id="paneMePosts" class="stack g4 hide"></section>
+
+    <a class="btn btn-ghost btn-block" href="settings.html">
+      <span data-icon="settings"></span> Settings &amp; more</a>
+  </main>
+  <div data-render="tabbar"></div>
+</div>
+
+<script src="../../assets/js/core/icons.js"></script>
+<script src="../../assets/js/core/util.js"></script>
+<script src="../../assets/js/core/api.js"></script>
+<script src="../../assets/js/core/collection.js"></script>
+<script src="../../assets/js/core/charts.js"></script>
+<script src="../../assets/js/core/ws.js"></script>
+<script src="../../assets/js/components/cards.js"></script>
+<script src="../../assets/js/core/shell.js"></script>
+<script src="../../assets/js/core/pwa.js"></script>
+<script>
+
+MB.ready(function () {
+  MB.api.get('me').then(function (r) {
+    var u = r.data, p = u.performance;
+    document.getElementById('meAvatar').innerHTML = MB.avatar(u, 'avatar-xl');
+    document.getElementById('meName').textContent = u.display_name;
+    document.getElementById('meHandle').textContent = '@' + u.username;
+    document.getElementById('meBio').textContent = u.bio;
+    document.getElementById('meFollowers').textContent = MB.fmt.compact(u.followers);
+    document.getElementById('meFollowing').textContent = MB.fmt.compact(u.following);
+    document.getElementById('meSignals').textContent = u.signals_count;
+    document.getElementById('meWin').textContent = u.win_rate + '%';
+    document.getElementById('meWins').textContent = p.wins;
+    document.getElementById('meLosses').textContent = p.losses;
+    document.getElementById('mePL').textContent = MB.fmt.signed(p.total_pl);
+  });
+  MB.render({ into: '#paneMeSignals', from: 'signals', limit: 3, template: MB.card.signal });
+  MB.render({ into: '#paneMePosts', from: 'posts', limit: 3, template: MB.card.post });
+  document.getElementById('meTabs').addEventListener('mb:change', function (e) {
+    document.getElementById('paneMeSignals').classList.toggle('hide', e.detail.value !== 'signals');
+    document.getElementById('paneMePosts').classList.toggle('hide', e.detail.value !== 'posts');
+  });
+});
+</script>
+</body>
+</html>

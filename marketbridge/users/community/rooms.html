@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Rooms — MarketBridge</title>
+<meta name="theme-color" content="#0A0E12">
+<link rel="manifest" href="../../manifest.webmanifest">
+<link rel="icon" href="../../assets/icons/favicon-32.png" sizes="32x32">
+<link rel="apple-touch-icon" href="../../assets/icons/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap">
+<link rel="stylesheet" href="../../assets/css/tokens.css">
+<link rel="stylesheet" href="../../assets/css/base.css">
+<link rel="stylesheet" href="../../assets/css/components.css">
+<link rel="stylesheet" href="../../assets/css/app.css">
+<script>(function(){try{var t=localStorage.getItem('mb.theme');if(t){document.documentElement.setAttribute('data-theme',t);}}catch(e){}})();</script>
+</head>
+<body data-shell="app" data-nav="community" data-root="../../" data-title="Rooms" data-sub="One per market, plus personal trader rooms" data-back="index.html" data-unread="3">
+
+<div class="app">
+  <div data-render="topbar"></div>
+  <main class="page">
+
+    <div class="input-icon">
+      <span data-icon="search"></span>
+      <input class="input" id="roomSearch" type="search" placeholder="Search rooms…">
+    </div>
+
+    <div class="filter-bar">
+      <div class="chips" data-group id="roomTabs">
+        <button class="chip is-active" data-value="all">All</button>
+        <button class="chip" data-value="market">Market rooms</button>
+        <button class="chip" data-value="trader">Trader rooms</button>
+        <button class="chip" data-value="mine">Joined</button>
+        <button class="chip" data-value="owner">I own</button>
+      </div>
+      <div class="chips" data-group id="catChips"></div>
+      <div class="filter-row">
+        <span class="filter-count"><span id="roomCount">0</span> rooms</span>
+      </div>
+    </div>
+
+    <section class="stack g2" id="roomList"></section>
+  </main>
+  <div data-render="tabbar"></div>
+</div>
+
+<script src="../../assets/js/core/icons.js"></script>
+<script src="../../assets/js/core/util.js"></script>
+<script src="../../assets/js/core/api.js"></script>
+<script src="../../assets/js/core/collection.js"></script>
+<script src="../../assets/js/core/charts.js"></script>
+<script src="../../assets/js/core/ws.js"></script>
+<script src="../../assets/js/components/cards.js"></script>
+<script src="../../assets/js/core/shell.js"></script>
+<script src="../../assets/js/core/pwa.js"></script>
+<script>
+
+  var CATS = [
+    { v:'all', l:'All' }, { v:'synthetic_indices', l:'Synthetics' },
+    { v:'derived', l:'Derived' }, { v:'forex', l:'Forex' },
+    { v:'crypto', l:'Crypto' }, { v:'commodities', l:'Commodities' },
+    { v:'stock_indices', l:'Indices' }
+  ];
+  function catChips(id) {
+    return CATS.map(function (c, i) {
+      return '<button class="chip' + (i === 0 ? ' is-active' : '') + '" data-value="' + c.v + '">' + c.l + '</button>';
+    }).join('');
+  }
+  /* The pair list always reflects the chosen category, so the two filters
+     can never disagree with each other. */
+  function fillPairs(sel, markets, category) {
+    var rows = category === 'all' ? markets
+      : markets.filter(function (m) { return m.category === category; });
+    sel.innerHTML = '<option value="all">All pairs &amp; markets</option>' +
+      rows.map(function (m) {
+        return '<option value="' + m.symbol + '">' + m.short_name + '</option>';
+      }).join('');
+  }
+
+MB.ready(function () {
+  document.getElementById('catChips').innerHTML = catChips();
+
+  var c = MB.collection({
+    from: 'rooms', into: '#roomList', template: MB.card.room,
+    perPage: 12, mode: 'pages', countInto: '#roomCount', skeleton: false,
+    initial: { tab: 'all', category: 'all', q: '' },
+    filters: {
+      tab: function (r, v) {
+        if (v === 'all') { return true; }
+        if (v === 'mine') { return r.is_member; }
+        if (v === 'owner') { return r.is_owner; }
+        return r.kind === v;
+      },
+      category: function (r, v) { return v === 'all' || (r.market && r.market.category === v); },
+      q: function (r, v) { return r.name.toLowerCase().indexOf(v) > -1; }
+    },
+    emptyIcon: 'community', emptyTitle: 'No rooms match',
+    emptyText: 'Try another filter.'
+  });
+  c.bind('#roomTabs', 'tab').bind('#catChips', 'category').bindInput('#roomSearch', 'q');
+});
+</script>
+</body>
+</html>

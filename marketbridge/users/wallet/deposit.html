@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Deposit Funds — MarketBridge</title>
+<meta name="theme-color" content="#0A0E12">
+<link rel="manifest" href="../../manifest.webmanifest">
+<link rel="icon" href="../../assets/icons/favicon-32.png" sizes="32x32">
+<link rel="apple-touch-icon" href="../../assets/icons/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap">
+<link rel="stylesheet" href="../../assets/css/tokens.css">
+<link rel="stylesheet" href="../../assets/css/base.css">
+<link rel="stylesheet" href="../../assets/css/components.css">
+<link rel="stylesheet" href="../../assets/css/app.css">
+<script>(function(){try{var t=localStorage.getItem('mb.theme');if(t){document.documentElement.setAttribute('data-theme',t);}}catch(e){}})();</script>
+</head>
+<body data-shell="app" data-nav="home" data-root="../../" data-title="Deposit Funds" data-sub="Choose how to fund your Deriv account" data-back="../index.html" data-unread="3">
+
+<div class="app">
+  <div data-render="topbar"></div>
+  <main class="page">
+
+    <section class="balance">
+      <div class="balance-label">Deriv Real Account</div>
+      <div class="balance-amount" id="wBal">$2,450.80</div>
+      <div class="balance-stamp">Balance is read from Deriv, not held by MarketBridge</div>
+    </section>
+
+    <h2 class="t-h3">Deposit Funds</h2>
+    <p class="t-sm c-2" style="margin-top:-8px">
+      Choose how you want to deposit into your Deriv trading account.
+    </p>
+
+    <a class="pay-option" href="#" id="optDeriv">
+      <span class="po-num">1</span>
+      <span class="grow">
+        <span class="po-title">Deposit with Deriv</span>
+        <span class="po-desc">Continue to Deriv to choose from the deposit methods
+        available for your account.</span>
+      </span>
+      <span class="none" style="color:#FF444F;font-weight:800;font-size:13px">DERIV</span>
+    </a>
+    <a class="btn btn-ghost btn-block" href="#" id="btnDeriv">Continue to Deriv →</a>
+
+    <a class="pay-option" href="leaving.html?to=kaastro&amp;dir=deposit" id="optKaastro">
+      <span class="po-num">2</span>
+      <span class="grow">
+        <span class="po-title">Deposit with Kaastro</span>
+        <span class="po-desc">Use a Kaastro wallet to fund your Deriv account through
+        an approved payment agent service.</span>
+      </span>
+      <span class="none" style="color:var(--mb-green);font-weight:800;font-size:13px">KAASTRO</span>
+    </a>
+    <a class="btn btn-primary btn-block" href="leaving.html?to=kaastro&amp;dir=deposit">
+      Continue to Kaastro <span data-icon="external"></span></a>
+
+    <div class="alert alert-info">
+      <span data-icon="info"></span>
+      <div class="t-xs">You will be redirected to Kaastro. A Kaastro account and
+      identity verification may be required. Kaastro is a separate service with its
+      own terms and fees.</div>
+    </div>
+
+    <div class="alert alert-green">
+      <span data-icon="shield"></span>
+      <div class="t-xs"><strong>MarketBridge does not hold your funds.</strong> You are
+      always in control of your Deriv account. Deposits and withdrawals are processed
+      securely through Deriv or Kaastro.</div>
+    </div>
+  </main>
+  <div data-render="tabbar"></div>
+</div>
+
+<script src="../../assets/js/core/icons.js"></script>
+<script src="../../assets/js/core/util.js"></script>
+<script src="../../assets/js/core/api.js"></script>
+<script src="../../assets/js/core/collection.js"></script>
+<script src="../../assets/js/core/charts.js"></script>
+<script src="../../assets/js/core/ws.js"></script>
+<script src="../../assets/js/components/cards.js"></script>
+<script src="../../assets/js/core/shell.js"></script>
+<script src="../../assets/js/core/pwa.js"></script>
+<script>
+
+MB.ready(function () {
+  MB.api.get('me').then(function (r) {
+    document.getElementById('wBal').textContent = MB.fmt.money(r.data.deriv.balance);
+  });
+  document.getElementById('btnDeriv').addEventListener('click', function (e) {
+    e.preventDefault();
+    /* Records intent + consent, then hands off. No balance is ever moved here. */
+    MB.api.post('payments/intents', { direction: 'deposit', provider: 'deriv' })
+      .then(function () { MB.toast('Opening Deriv cashier…'); });
+  });
+});
+</script>
+</body>
+</html>

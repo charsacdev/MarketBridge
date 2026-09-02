@@ -1,0 +1,59 @@
+{
+  "data": [
+    {
+      "id": "b1",
+      "signal": "BUY V75 setup",
+      "provider": "FX_ProTrader",
+      "market": "V75 (1s)",
+      "placement": "home_feed",
+      "boosted_at": "2026-08-28",
+      "expires_at": "2026-09-04",
+      "status": "active"
+    },
+    {
+      "id": "b2",
+      "signal": "SELL Boom 1000",
+      "provider": "QueenTrader",
+      "market": "Boom 1000",
+      "placement": "signals_top",
+      "boosted_at": "2026-08-27",
+      "expires_at": "2026-09-03",
+      "status": "active"
+    },
+    {
+      "id": "b3",
+      "signal": "BUY Crash 500",
+      "provider": "AlphaKing",
+      "market": "Crash 500",
+      "placement": "market_page",
+      "boosted_at": "2026-08-26",
+      "expires_at": "2026-09-02",
+      "status": "active"
+    },
+    {
+      "id": "b4",
+      "signal": "BUY V100",
+      "provider": "JamesFX",
+      "market": "V100 (1s)",
+      "placement": "home_feed",
+      "boosted_at": "2026-08-25",
+      "expires_at": "2026-09-01",
+      "status": "expired"
+    },
+    {
+      "id": "b5",
+      "signal": "SELL V75",
+      "provider": "Mr_Market",
+      "market": "V75 (1s)",
+      "placement": "home_feed",
+      "boosted_at": "2026-08-24",
+      "expires_at": "2026-08-31",
+      "status": "expired"
+    }
+  ],
+  "meta": {
+    "page": 1,
+    "per_page": 50,
+    "total": 5
+  }
+}

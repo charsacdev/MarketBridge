@@ -1,0 +1,99 @@
+{
+  "data": [
+    {
+      "id": "c01",
+      "author": {
+        "id": "usr_fx",
+        "username": "FX_ProTrader",
+        "display_name": "FX_ProTrader",
+        "avatar_url": null,
+        "is_verified": true,
+        "is_pro": true,
+        "win_rate": 78,
+        "signals_count": 156,
+        "followers": 1245
+      },
+      "body": "Market looks bullish on the 1H timeframe. Watching for a retest.",
+      "likes": 12,
+      "created_at": "2026-09-01T23:06:35.417Z",
+      "replies": []
+    },
+    {
+      "id": "c02",
+      "author": {
+        "id": "usr_queen",
+        "username": "QueenTrader",
+        "display_name": "QueenTrader",
+        "avatar_url": null,
+        "is_verified": true,
+        "is_pro": true,
+        "win_rate": 74,
+        "signals_count": 132,
+        "followers": 962
+      },
+      "body": "Watching for a decent move above 543k before I commit anything.",
+      "likes": 8,
+      "created_at": "2026-09-01T22:51:35.417Z",
+      "replies": [
+        {
+          "id": "c02r1",
+          "author": {
+            "id": "usr_james",
+            "username": "JamesFX",
+            "display_name": "JamesFX",
+            "avatar_url": null,
+            "is_verified": false,
+            "is_pro": true,
+            "win_rate": 69,
+            "signals_count": 98,
+            "followers": 611
+          },
+          "body": "Same. No point front-running the sweep.",
+          "likes": 3,
+          "created_at": "2026-09-01T22:56:35.417Z"
+        }
+      ]
+    },
+    {
+      "id": "c03",
+      "author": {
+        "id": "usr_alpha",
+        "username": "AlphaKing",
+        "display_name": "AlphaKing",
+        "avatar_url": null,
+        "is_verified": true,
+        "is_pro": false,
+        "win_rate": 71,
+        "signals_count": 201,
+        "followers": 842
+      },
+      "body": "Volume increasing. Possible push soon.",
+      "likes": 5,
+      "created_at": "2026-09-01T22:38:35.417Z",
+      "replies": []
+    },
+    {
+      "id": "c04",
+      "author": {
+        "id": "usr_james",
+        "username": "JamesFX",
+        "display_name": "JamesFX",
+        "avatar_url": null,
+        "is_verified": false,
+        "is_pro": true,
+        "win_rate": 69,
+        "signals_count": 98,
+        "followers": 611
+      },
+      "body": "Let’s see how London opens.",
+      "likes": 2,
+      "created_at": "2026-09-01T22:26:35.417Z",
+      "replies": []
+    }
+  ],
+  "meta": {
+    "page": 1,
+    "per_page": 20,
+    "total": 4
+  }
+}

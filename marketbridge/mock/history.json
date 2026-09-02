@@ -1,0 +1,3602 @@
+{
+  "data": [
+    {
+      "id": "ctr_c1",
+      "deriv_contract_id": "C1240001",
+      "market": {
+        "symbol": "frxAUDUSD",
+        "name": "AUD/USD",
+        "short_name": "AUD/USD",
+        "pair": "AUD/USD",
+        "category": "forex",
+        "decimal_places": 5,
+        "contract_kinds": [
+          "binary",
+          "multiplier",
+          "cfd_mt5"
+        ]
+      },
+      "contract_family": "accumulator",
+      "label": "AUD/USD Accumulator",
+      "direction": "sell",
+      "stake": 150,
+      "buy_price": 150,
+      "profit": -105.95,
+      "status": "lost",
+      "entry_spot": 0.6570914842491001,
+      "exit_spot": 0.65712,
+      "source_signal_id": "sig_007",
+      "purchase_time": "2026-06-16T00:48:20.360Z",
+      "closed_at": "2026-09-01T22:16:20.360Z"
+    },
+    {
+      "id": "ctr_c75",
+      "deriv_contract_id": "C1240075",
+      "market": {
+        "symbol": "frxAUDUSD",
+        "name": "AUD/USD",
+        "short_name": "AUD/USD",
+        "pair": "AUD/USD",
+        "category": "forex",
+        "decimal_places": 5,
+        "contract_kinds": [
+          "binary",
+          "multiplier",
+          "cfd_mt5"
+        ]
+      },
+      "contract_family": "rise_fall",
+      "label": "AUD/USD Rise/Fall",
+      "direction": "buy",
+      "stake": 5,
+      "buy_price": 5,
+      "profit": 8.02,
+      "status": "won",
+      "entry_spot": 0.6566213126190518,
+      "exit_spot": 0.65712,
+      "source_signal_id": null,
+      "purchase_time": "2026-06-28T21:29:20.370Z",
+      "closed_at": "2026-09-01T19:38:20.370Z"
+    },
+    {
+      "id": "ctr_c85",
+      "deriv_contract_id": "C1240085",
+      "market": {
+        "symbol": "JD75",
+        "name": "Jump 75 Index",
+        "short_name": "Jump 75",
+        "pair": null,
+        "category": "derived",
+        "decimal_places": 2,
+        "contract_kinds": [
+          "binary",
+          "multiplier"
+        ]
+      },
+      "contract_family": "rise_fall",
+      "label": "Jump 75 Rise/Fall",
+      "direction": "sell",
+      "stake": 10,
+      "buy_price": 10,
+      "profit": 11.71,
+      "status": "won",
+      "entry_spot": 14051.012245772781,
+      "exit_spot": 14028.33,
+      "source_signal_id": null,
+      "purchase_time": "2026-06-21T22:25:20.370Z",
+      "closed_at": "2026-09-01T09:01:20.370Z"
+    },
+    {
+      "id": "ctr_c62",
+      "deriv_contract_id": "C1240062",
+      "market": {
+        "symbol": "CRASH1000",
+        "name": "Crash 1000 Index",
+        "short_name": "Crash 1000",
+        "pair": null,
+        "category": "derived",
+        "decimal_places": 2,
+        "contract_kinds": [
+          "binary",
+          "multiplier"
+        ]
+      },
+      "contract_family": "accumulator",
+      "label": "Crash 1000 Accumulator",
+      "direction": "buy",
+      "stake": 25,
+      "buy_price": 25,
+      "profit": 39.17,
+      "status": "won",
+      "entry_spot": 4823.95547221287,
+      "exit_spot": 4820.15,
+      "source_signal_id": null,
+      "purchase_time": "2026-06-27T17:29:20.370Z",
+      "closed_at": "2026-09-01T06:53:20.370Z"
+    },
+    {
+      "id": "ctr_c42",
+      "deriv_contract_id": "C1240042",
+      "market": {
+        "symbol": "frxNZDUSD",
+        "name": "NZD/USD",
+        "short_name": "NZD/USD",
+        "pair": "NZD/USD",
+        "category": "forex",
+        "decimal_places": 5,
+        "contract_kinds": [
+          "binary",
+          "cfd_mt5"
+        ]
+      },
+      "contract_family": "digits",
+      "label": "NZD/USD Digits",
+      "direction": "sell",
+      "stake": 100,
+      "buy_price": 100,
+      "profit": -47.65,
+      "status": "lost",
+      "entry_spot": 0.6015038782113725,
+      "exit_spot": 0.60184,
+      "source_signal_id": "sig_015",
+      "purchase_time": "2026-06-18T11:10:20.370Z",
+      "closed_at": "2026-08-30T04:29:20.370Z"
+    },
+    {
+      "id": "ctr_c25",
+      "deriv_contract_id": "C1240025",
+      "market": {
+        "symbol": "crySOLUSD",
+        "name": "Solana / USD",
+        "short_name": "SOL/USD",
+        "pair": "SOL/USD",
+        "category": "crypto",
+        "decimal_places": 3,
+        "contract_kinds": [
+          "multiplier",
+          "cfd_mt5"
+        ]
+      },
+      "contract_family": "multipliers",
+      "label": "SOL/USD Multiplier",
+      "direction": "buy",
+      "stake": 25,
+      "buy_price": 25,
+      "profit": 43.56,
+      "status": "won",
+      "entry_spot": 172.15084522576848,
+      "exit_spot": 172.44,
+      "source_signal_id": "sig_023",
+      "purchase_time": "2026-08-21T04:41:20.361Z",
+      "closed_at": "2026-08-29T19:31:20.361Z"
+    },
+    {
+      "id": "ctr_c9",
+      "deriv_contract_id": "C1240009",
+      "market": {
+        "symbol": "crySOLUSD",
+        "name": "Solana / USD",
+        "short_name": "SOL/USD",
+        "pair": "SOL/USD",
+        "category": "crypto",
+        "decimal_places": 3,
+        "contract_kinds": [
+          "multiplier",
+          "cfd_mt5"
+        ]
+      },
+      "contract_family": "multipliers",
+      "label": "SOL/USD Multiplier",
+      "direction": "buy",
+      "stake": 20,
+      "buy_price": 20,
+      "profit": 12.36,
+      "status": "won",
+      "entry_spot": 172.10329003735274,
+      "exit_spot": 172.44,
+      "source_signal_id": "sig_038",
+      "purchase_time": "2026-08-27T09:37:20.361Z",
+      "closed_at": "2026-08-27T18:40:20.361Z"
+    },
+    {
+      "id": "ctr_c86",
+      "deriv_contract_id": "C1240086",
+      "market": {
+        "symbol": "CRASH500",
+        "name": "Crash 500 Index",
+        "short_name": "Crash 500",
+        "pair": null,
+        "category": "derived",
+        "decimal_places": 2,
+        "contract_kinds": [
+          "binary",
+          "multiplier"
+        ]
+      },
+      "contract_family": "digits",
+      "label": "Crash 500 Digits",
+      "direction": "sell",
+      "stake": 20,
+      "buy_price": 20,
+      "profit": -12.52,
+      "status": "lost",
+      "entry_spot": 4292.251752151778,
+      "exit_spot": 4291.63,
+      "source_signal_id": null,
+      "purchase_time": "2026-07-29T06:48:20.370Z",
+      "closed_at": "2026-08-27T08:19:20.370Z"
+    },
+    {
+      "id": "ctr_c32",
+      "deriv_contract_id": "C1240032",
+      "market": {
+        "symbol": "BOOM300",
+        "name": "Boom 300 Index",
+        "short_name": "Boom 300",
+        "pair": null,
+        "category": "derived",
+        "decimal_places": 2,
+        "contract_kinds": [
+          "multiplier"
+        ]
+      },
+      "contract_family": "multipliers",
+      "label": "Boom 300 Multiplier",
+      "direction": "buy",
+      "stake": 100,
+      "buy_price": 100,
+      "profit": -43.89,
+      "status": "lost",
+      "entry_spot": 7421.679505286072,
+      "exit_spot": 7418.02,
+      "source_signal_id": null,
+      "purchase_time": "2026-06-27T03:38:20.370Z",
+      "closed_at": "2026-08-26T22:22:20.370Z"
+    },
+    {
+      "id": "ctr_c109",
+      "deriv_contract_id": "C1240109",
+      "market": {
+        "symbol": "R_75",
+        "name": "Volatility 75 Index",
+        "short_name": "V75",
+        "pair": null,
+        "category": "synthetic_indices",
+        "decimal_places": 2,
+        "contract_kinds": [
+          "binary",
+          "multiplier"
+        ]
+      },
+      "contract_family": "multipliers",
+      "label": "V75 Multiplier",
+      "direction": "buy",
+      "stake": 20,
+      "buy_price": 20,
+      "profit": -16.23,
+      "status": "lost",
+      "entry_spot": 542557.9351819643,
+      "exit_spot": 542871.21,
+      "source_signal_id": "sig_003",
+      "purchase_time": "2026-08-23T14:02:20.370Z",
+      "closed_at": "2026-08-26T17:45:20.370Z"
+    },
+    {
+      "id": "ctr_c90",
+      "deriv_contract_id": "C1240090",
+      "market": {
+        "symbol": "cryLTCUSD",
+        "name": "Litecoin / USD",
+        "short_name": "LTC/USD",
+        "pair": "LTC/USD",
+        "category": "crypto",
+        "decimal_places": 2,
+        "contract_kinds": [
+          "multiplier",
+          "cfd_mt5"
+        ]
+      },
+      "contract_family": "multipliers",
+      "label": "LTC/USD Multiplier",
+      "direction": "sell",
+      "stake": 25,
+      "buy_price": 25,
+      "profit": -13.48,
+      "status": "lost",
+      "entry_spot": 84.53938662989427,
+      "exit_spot": 84.62,
+      "source_signal_id": "sig_018",
+      "purchase_time": "2026-07-27T01:28:20.370Z",
+      "closed_at": "2026-08-26T08:26:20.370Z"
+    },
+    {
+      "id": "ctr_c74",
+      "deriv_contract_id": "C1240074",
+      "market": {
+        "symbol": "frxUSDCHF",
+        "name": "USD/CHF",
+        "short_name": "USD/CHF",
+        "pair": "USD/CHF",
+        "category": "forex",
+        "decimal_places": 5,
+        "contract_kinds": [
+          "binary",
+          "multiplier",
+          "cfd_mt5"
+        ]
+      },
+      "contract_family": "accumulator",
+      "label": "USD/CHF Accumulator",
+      "direction": "buy",
+      "stake": 200,
+      "buy_price": 200,
+      "profit": -101.88,
+      "status": "lost",
+      "entry_spot": 0.9019397083074562,
+      "exit_spot": 0.90218,
+      "source_signal_id": null,
+      "purchase_time": "2026-06-26T21:28:20.370Z",
+      "closed_at": "2026-08-26T08:06:20.370Z"
+    },
+    {
+      "id": "ctr_c12",
+      "deriv_contract_id": "C1240012",
+      "market": {
+        "symbol": "frxXAUUSD",
+        "name": "Gold / USD",
+        "short_name": "XAU/USD",
+        "pair": "XAU/USD",
+        "category": "commodities",
+        "decimal_places": 2,
+        "contract_kinds": [
+          "binary",
+          "multiplier",
+          "cfd_mt5"
+        ]
+      },
+      "contract_family": "accumulator",
+      "label": "XAU/USD Accumulator",
+      "direction": "sell",
+      "stake": 150,
+      "buy_price": 150,
+      "profit": 143.98,
+      "status": "won",
+      "entry_spot": 2342.1805204445386,
+      "exit_spot": 2342.18,
+      "source_signal_id": null,
+      "purchase_time": "2026-06-14T06:15:20.361Z",
+      "closed_at": "2026-08-26T01:24:20.361Z"
+    },
+    {
+      "id": "ctr_c47",
+      "deriv_contract_id": "C1240047",
+      "market": {
+        "symbol": "R_10",
+        "name": "Volatility 10 Index",
+        "short_name": "V10",
+        "pair": null,
+        "category": "synthetic_indices",
+        "decimal_places": 3,
+        "contract_kinds": [
+          "binary",
+          "multiplier"
+        ]
+      },
+      "contract_family": "rise_fall",
+      "label": "V10 Rise/Fall",
+      "direction": "sell",
+      "stake": 200,
+      "buy_price": 200,
+      "profit": 166.83,
+      "status": "won",
+      "entry_spot": 6840.11215614009,
+      "exit_spot": 6842.3,
+      "source_signal_id": null,
+      "purchase_time": "2026-06-13T09:50:20.370Z",
+      "closed_at": "2026-08-25T02:30:20.370Z"
+    },
+    {
+      "id": "ctr_c59",
+      "deriv_contract_id": "C1240059",
+      "market": {
+        "symbol": "frxNZDUSD",
+        "name": "NZD/USD",
+        "short_name": "NZD/USD",
+        "pair": "NZD/USD",
+        "category": "forex",
+        "decimal_places": 5,
+        "contract_kinds": [
+          "binary",
+          "cfd_mt5"
+        ]
+      },
+      "contract_family": "digits",
+      "label": "NZD/USD Digits",
+      "direction": "sell",
+      "stake": 5,
+      "buy_price": 5,
+      "profit": 8.36,
+      "status": "won",
+      "entry_spot": 0.6013429776037308,
+      "exit_spot": 0.60184,
+      "source_signal_id": null,
+      "purchase_time": "2026-08-27T05:30:20.370Z",
+      "closed_at": "2026-08-24T03:53:20.370Z"
+    },
+    {
+      "id": "ctr_c70",
+      "deriv_contract_id": "C1240070",
+      "market": {
+        "symbol": "WTIUSD",
+        "name": "Crude Oil / USD",
+        "short_name": "WTI/USD",
+        "pair": "WTI/USD",
+        "category": "commodities",
+        "decimal_places": 2,
+        "contract_kinds": [
+          "multiplier",
+          "cfd_mt5"
+        ]
+      },
+      "contract_family": "multipliers",
+      "label": "WTI/USD Multiplier",
+      "direction": "sell",
+      "stake": 50,
+      "buy_price": 50,
+      "profit": -30.04,
+      "status": "lost",
+      "entry_spot": 78.54315647047382,
+      "exit_spot": 78.42,
+      "source_signal_id": "sig_028",
+      "purchase_time": "2026-06-10T12:22:20.370Z",
+      "closed_at": "2026-08-23T21:04:20.370Z"
+    },
+    {
+      "id": "ctr_c79",
+      "deriv_contract_id": "C1240079",
+      "market": {
+        "symbol": "JD75",
+        "name": "Jump 75 Index",
+        "short_name": "Jump 75",
+        "pair": null,
+        "category": "derived",
+        "decimal_places": 2,
+        "contract_kinds": [
+          "binary",
+          "multiplier"
+        ]
+      },
+      "contract_family": "digits",
+      "label": "Jump 75 Digits",
+      "direction": "sell",
+      "stake": 25,
+      "buy_price": 25,
+      "profit": 41.21,
+      "status": "won",
+      "entry_spot": 14041.188196540392,
+      "exit_spot": 14028.33,
+      "source_signal_id": null,
+      "purchase_time": "2026-08-18T07:44:20.370Z",
+      "closed_at": "2026-08-23T16:23:20.370Z"
+    },
+    {
+      "id": "ctr_c29",
+      "deriv_contract_id": "C1240029",
+      "market": {
+        "symbol": "R_75",
+        "name": "Volatility 75 Index",
+        "short_name": "V75",
+        "pair": null,
+        "category": "synthetic_indices",
+        "decimal_places": 2,
+        "contract_kinds": [
+          "binary",
+          "multiplier"
+        ]
+      },
+      "contract_family": "multipliers",
+      "label": "V75 Multiplier",
+      "direction": "sell",
+      "stake": 150,
+      "buy_price": 150,
+      "profit": -69.86,
+      "status": "lost",
+      "entry_spot": 543874.4901249467,
+      "exit_spot": 542871.21,
+      "source_signal_id": null,
+      "purchase_time": "2026-08-02T18:30:20.361Z",
+      "closed_at": "2026-08-23T15:44:20.361Z"
+    },
+    {
+      "id": "ctr_c119",
+      "deriv_contract_id": "C1240119",
+      "market": {
+        "symbol": "frxEURGBP",
+        "name": "EUR/GBP",
+        "short_name": "EUR/GBP",
+        "pair": "EUR/GBP",
+        "category": "forex",
+        "decimal_places": 5,
+        "contract_kinds": [
+          "binary",
+          "cfd_mt5"
+        ]
+      },
+      "contract_family": "multipliers",
+      "label": "EUR/GBP Multiplier",
+      "direction": "buy",
+      "stake": 10,
+      "buy_price": 10,
+      "profit": -6.34,
+      "status": "lost",
+      "entry_spot": 0.8604064606603887,
+      "exit_spot": 0.85922,
+      "source_signal_id": "sig_036",
+      "purchase_time": "2026-08-10T05:43:20.370Z",
+      "closed_at": "2026-08-22T21:53:20.370Z"
+    },
+    {
+      "id": "ctr_c65",
+      "deriv_contract_id": "C1240065",
+      "market": {
+        "symbol": "CRASH500",
+        "name": "Crash 500 Index",
+        "short_name": "Crash 500",
+        "pair": null,
+        "category": "derived",
+        "decimal_places": 2,
+        "contract_kinds": [
+          "binary",
+          "multiplier"
+        ]
+      },
+      "contract_family": "multipliers",
+      "label": "Crash 500 Multiplier",
+      "direction": "sell",
+      "stake": 5,
+      "buy_price": 5,
+      "profit": 7.4,
+      "status": "won",
+      "entry_spot": 4300.146383365181,
+      "exit_spot": 4291.63,
+      "source_signal_id": "sig_031",
+      "purchase_time": "2026-06-26T05:05:20.370Z",
+      "closed_at": "2026-08-22T07:47:20.370Z"
+    },
+    {
+      "id": "ctr_c88",
+      "deriv_contract_id": "C1240088",
+      "market": {
+        "symbol": "crySOLUSD",
+        "name": "Solana / USD",
+        "short_name": "SOL/USD",
+        "pair": "SOL/USD",
+        "category": "crypto",
+        "decimal_places": 3,
+        "contract_kinds": [
+          "multiplier",
+          "cfd_mt5"
+        ]
+      },
+      "contract_family": "multipliers",
+      "label": "SOL/USD Multiplier",
+      "direction": "buy",
+      "stake": 100,
+      "buy_price": 100,
+      "profit": 177.72,
+      "status": "won",
+      "entry_spot": 172.18649718131334,
+      "exit_spot": 172.44,
+      "source_signal_id": "sig_005",
+      "purchase_time": "2026-08-03T01:34:20.370Z",
+      "closed_at": "2026-08-21T19:33:20.370Z"
+    },
+    {
+      "id": "ctr_c30",
+      "deriv_contract_id": "C1240030",
+      "market": {
+        "symbol": "1HZ50V",
+        "name": "Volatility 50 (1s) Index",
+        "short_name": "V50 (1s)",
+        "pair": null,
+        "category": "synthetic_indices",
+        "decimal_places": 3,
+        "contract_kinds": [
+          "binary",
+          "multiplier"
+        ]
+      },
+      "contract_family": "accumulator",
+      "label": "V50 (1s) Accumulator",
+      "direction": "sell",
+      "stake": 5,
+      "buy_price": 5,
+      "profit": 6.66,
+      "status": "won",
+      "entry_spot": 238.98241029381705,
+      "exit_spot": 239.14,
+      "source_signal_id": null,
+      "purchase_time": "2026-06-27T00:54:20.369Z",
+      "closed_at": "2026-08-21T07:58:20.370Z"
+    },
+    {
+      "id": "ctr_c21",
+      "deriv_contract_id": "C1240021",
+      "market": {
+        "symbol": "R_100",
+        "name": "Volatility 100 Index",
+        "short_name": "V100",
+        "pair": null,
+        "category": "synthetic_indices",
+        "decimal_places": 2,
+        "contract_kinds": [
+          "binary",
+          "multiplier"
+        ]
+      },
+      "contract_family": "multipliers",
+      "label": "V100 Multiplier",
+      "direction": "buy",
+      "stake": 5,
+      "buy_price": 5,
+      "profit": -4.15,
+      "status": "lost",
+      "entry_spot": 1246.8171540277694,
+      "exit_spot": 1245.1,
+      "source_signal_id": null,
+      "purchase_time": "2026-07-15T17:28:20.361Z",
+      "closed_at": "2026-08-19T17:57:20.361Z"
+    },
+    {
+      "id": "ctr_c95",
+      "deriv_contract_id": "C1240095",
+      "market": {
+        "symbol": "R_75",
+        "name": "Volatility 75 Index",
+        "short_name": "V75",
+        "pair": null,
+        "category": "synthetic_indices",
+        "decimal_places": 2,
+        "contract_kinds": [
+          "binary",
+          "multiplier"
+        ]
+      },
+      "contract_family": "digits",
+      "label": "V75 Digits",
+      "direction": "sell",
+      "stake": 20,
+      "buy_price": 20,
+      "profit": 29.55,
+      "status": "won",
+      "entry_spot": 541891.6677017491,
+      "exit_spot": 542871.21,
+      "source_signal_id": null,
+      "purchase_time": "2026-08-25T10:36:20.370Z",
+      "closed_at": "2026-08-19T09:23:20.370Z"
+    },
+    {
+      "id": "ctr_c56",
+      "deriv_contract_id": "C1240056",
+      "market": {
+        "symbol": "R_75",
+        "name": "Volatility 75 Index",
+        "short_name": "V75",
+        "pair": null,
+        "category": "synthetic_indices",
+        "decimal_places": 2,
+        "contract_kinds": [
+          "binary",
+          "multiplier"
+        ]
+      },
+      "contract_family": "multipliers",
+      "label": "V75 Multiplier",
+      "direction": "sell",
+      "stake": 25,
+      "buy_price": 25,
+      "profit": -15.27,
+      "status": "lost",
+      "entry_spot": 542704.1720668352,
+      "exit_spot": 542871.21,
+      "source_signal_id": null,
+      "purchase_time": "2026-08-26T23:07:20.370Z",
+      "closed_at": "2026-08-16T19:14:20.370Z"
+    },
+    {
+      "id": "ctr_c45",
+      "deriv_contract_id": "C1240045",
+      "market": {
+        "symbol": "BOOM500",
+        "name": "Boom 500 Index",
+        "short_name": "Boom 500",
+        "pair": null,
+        "category": "derived",
+        "decimal_places": 2,
+        "contract_kinds": [
+          "binary",
+          "multiplier"
+        ]
+      },
+      "contract_family": "rise_fall",
+      "label": "Boom 500 Rise/Fall",
+      "direction": "buy",
+      "stake": 100,
+      "buy_price": 100,
+      "profit": 98.41,
+      "status": "won",
+      "entry_spot": 9119.937031352327,
+      "exit_spot": 9120.44,
+      "source_signal_id": "sig_031",
+      "purchase_time": "2026-08-21T12:01:20.370Z",
+      "closed_at": "2026-08-16T13:33:20.370Z"
+    },
+    {
+      "id": "ctr_c82",
+      "deriv_contract_id": "C1240082",
+      "market": {
+        "symbol": "OTC_NDX",
+        "name": "US Tech 100",
+        "short_name": "US 100",
+        "pair": null,
+        "category": "stock_indices",
+        "decimal_places": 2,
+        "contract_kinds": [
+          "multiplier",
+          "cfd_mt5"
+        ]
+      },
+      "contract_family": "multipliers",
+      "label": "US 100 Multiplier",
+      "direction": "buy",
+      "stake": 20,
+      "buy_price": 20,
+      "profit": 25.51,
+      "status": "won",
+      "entry_spot": 18421.033428035473,
+      "exit_spot": 18420.6,
+      "source_signal_id": null,
+      "purchase_time": "2026-08-26T10:39:20.370Z",
+      "closed_at": "2026-08-15T20:55:20.370Z"
+    },
+    {
+      "id": "ctr_c61",
+      "deriv_contract_id": "C1240061",
+      "market": {
+        "symbol": "CRASH500",
+        "name": "Crash 500 Index",
+        "short_name": "Crash 500",
+        "pair": null,
+        "category": "derived",
+        "decimal_places": 2,
+        "contract_kinds": [
+          "binary",
+          "multiplier"
+        ]
+      },
+      "contract_family": "accumulator",
+      "label": "Crash 500 Accumulator",
+      "direction": "sell",
+      "stake": 150,
+      "buy_price": 150,
+      "profit": -135.42,
+      "status": "lost",
+      "entry_spot": 4298.126469563814,
+      "exit_spot": 4291.63,
+      "source_signal_id": "sig_002",
+      "purchase_time": "2026-08-26T08:55:20.370Z",
+      "closed_at": "2026-08-14T15:26:20.370Z"
+    },
+    {
+      "id": "ctr_c6",
+      "deriv_contract_id": "C1240006",
+      "market": {
+        "symbol": "frxXAGUSD",
+        "name": "Silver / USD",
+        "short_name": "XAG/USD",
+        "pair": "XAG/USD",
+        "category": "commodities",
+        "decimal_places": 3,
+        "contract_kinds": [
+          "binary",
+          "multiplier",
+          "cfd_mt5"
+        ]
+      },
+      "contract_family": "rise_fall",
+      "label": "XAG/USD Rise/Fall",
+      "direction": "buy",
+      "stake": 100,
+      "buy_price": 100,
+      "profit": 134.81,
+      "status": "won",
+      "entry_spot": 27.84593347612117,
+      "exit_spot": 27.842,
+      "source_signal_id": null,
+      "purchase_time": "2026-08-17T06:53:20.360Z",
+      "closed_at": "2026-08-14T15:02:20.360Z"
+    },
+    {
+      "id": "ctr_c118",
+      "deriv_contract_id": "C1240118",
+      "market": {
+        "symbol": "1HZ50V",
+        "name": "Volatility 50 (1s) Index",
+        "short_name": "V50 (1s)",
+        "pair": null,
+        "category": "synthetic_indices",
+        "decimal_places": 3,
+        "contract_kinds": [
+          "binary",
+          "multiplier"
+        ]
+      },
+      "contract_family": "accumulator",
+      "label": "V50 (1s) Accumulator",
+      "direction": "sell",
+      "stake": 25,
+      "buy_price": 25,
+      "profit": 38.12,
+      "status": "won",
+      "entry_spot": 239.5970470018288,
+      "exit_spot": 239.14,
+      "source_signal_id": null,
+      "purchase_time": "2026-08-31T22:01:20.370Z",
+      "closed_at": "2026-08-13T11:32:20.370Z"
+    },
+    {
+      "id": "ctr_c98",
+      "deriv_contract_id": "C1240098",
+      "market": {
+        "symbol": "cryETHUSD",
+        "name": "Ethereum / USD",
+        "short_name": "ETH/USD",
+        "pair": "ETH/USD",
+        "category": "crypto",
+        "decimal_places": 2,
+        "contract_kinds": [
+          "multiplier",
+          "cfd_mt5"
+        ]
+      },
+      "contract_family": "multipliers",
+      "label": "ETH/USD Multiplier",
+      "direction": "buy",
+      "stake": 25,
+      "buy_price": 25,
+      "profit": 42.97,
+      "status": "won",
+      "entry_spot": 3539.239426302941,
+      "exit_spot": 3542.18,
+      "source_signal_id": "sig_012",
+      "purchase_time": "2026-06-30T01:43:20.370Z",
+      "closed_at": "2026-08-13T08:04:20.370Z"
+    },
+    {
+      "id": "ctr_c44",
+      "deriv_contract_id": "C1240044",
+      "market": {
+        "symbol": "frxUSDJPY",
+        "name": "USD/JPY",
+        "short_name": "USD/JPY",
+        "pair": "USD/JPY",
+        "category": "forex",
+        "decimal_places": 3,
+        "contract_kinds": [
+          "binary",
+          "multiplier",
+          "cfd_mt5"
+        ]
+      },
+      "contract_family": "accumulator",
+      "label": "USD/JPY Accumulator",
+      "direction": "sell",
+      "stake": 20,
+      "buy_price": 20,
+      "profit": 17.35,
+      "status": "won",
+      "entry_spot": 151.38034526932077,
+      "exit_spot": 151.284,
+      "source_signal_id": "sig_002",
+      "purchase_time": "2026-06-22T12:03:20.370Z",
+      "closed_at": "2026-08-12T04:11:20.370Z"
+    },
+    {
+      "id": "ctr_c111",
+      "deriv_contract_id": "C1240111",
+      "market": {
+        "symbol": "cryXRPUSD",
+        "name": "XRP / USD",
+        "short_name": "XRP/USD",
+        "pair": "XRP/USD",
+        "category": "crypto",
+        "decimal_places": 4,
+        "contract_kinds": [
+          "multiplier",
+          "cfd_mt5"
+        ]
+      },
+      "contract_family": "multipliers",
+      "label": "XRP/USD Multiplier",
+      "direction": "buy",
+      "stake": 25,
+      "buy_price": 25,
+      "profit": 38.95,
+      "status": "won",
+      "entry_spot": 0.6293660894295292,
+      "exit_spot": 0.6284,
+      "source_signal_id": null,
+      "purchase_time": "2026-07-30T16:29:20.370Z",
+      "closed_at": "2026-08-11T12:20:20.370Z"
+    },
+    {
+      "id": "ctr_c7",
+      "deriv_contract_id": "C1240007",
+      "market": {
+        "symbol": "cryBTCUSD",
+        "name": "Bitcoin / USD",
+        "short_name": "BTC/USD",
+        "pair": "BTC/USD",
+        "category": "crypto",
+        "decimal_places": 2,
+        "contract_kinds": [
+          "multiplier",
+          "cfd_mt5"
+        ]
+      },
+      "contract_family": "multipliers",
+      "label": "BTC/USD Multiplier",
+      "direction": "sell",
+      "stake": 100,
+      "buy_price": 100,
+      "profit": 141.11,
+      "status": "won",
+      "entry_spot": 68382.78483187058,
+      "exit_spot": 68420.5,
+      "source_signal_id": null,
+      "purchase_time": "2026-08-28T21:03:20.360Z",
+      "closed_at": "2026-08-08T22:01:20.360Z"
+    },
+    {
+      "id": "ctr_c38",
+      "deriv_contract_id": "C1240038",
+      "market": {
+        "symbol": "1HZ50V",
+        "name": "Volatility 50 (1s) Index",
+        "short_name": "V50 (1s)",
+        "pair": null,
+        "category": "synthetic_indices",
+        "decimal_places": 3,
+        "contract_kinds": [
+          "binary",
+          "multiplier"
+        ]
+      },
+      "contract_family": "multipliers",
+      "label": "V50 (1s) Multiplier",
+      "direction": "sell",
+      "stake": 20,
+      "buy_price": 20,
+      "profit": 21.86,
+      "status": "won",
+      "entry_spot": 238.94877336317356,
+      "exit_spot": 239.14,
+      "source_signal_id": null,
+      "purchase_time": "2026-08-25T00:22:20.370Z",
+      "closed_at": "2026-08-08T10:06:20.370Z"
+    },
+    {
+      "id": "ctr_c51",
+      "deriv_contract_id": "C1240051",
+      "market": {
+        "symbol": "RB100",
+        "name": "Range Break 100 Index",
+        "short_name": "RB 100",
+        "pair": null,
+        "category": "synthetic_indices",
+        "decimal_places": 3,
+        "contract_kinds": [
+          "binary"
+        ]
+      },
+      "contract_family": "accumulator",
+      "label": "RB 100 Accumulator",
+      "direction": "buy",
+      "stake": 150,
+      "buy_price": 150,
+      "profit": 163.92,
+      "status": "won",
+      "entry_spot": 1287.0769698768574,
+      "exit_spot": 1284.66,
+      "source_signal_id": null,
+      "purchase_time": "2026-07-31T16:52:20.370Z",
+      "closed_at": "2026-08-07T07:13:20.370Z"
+    },
+    {
+      "id": "ctr_c123",
+      "deriv_contract_id": "C1240123",
+      "market": {
+        "symbol": "R_75",
+        "name": "Volatility 75 Index",
+        "short_name": "V75",
+        "pair": null,
+        "category": "synthetic_indices",
+        "decimal_places": 2,
+        "contract_kinds": [
+          "binary",
+          "multiplier"
+        ]
+      },
+      "contract_family": "accumulator",
+      "label": "V75 Accumulator",
+      "direction": "sell",
+      "stake": 50,
+      "buy_price": 50,
+      "profit": -45.39,
+      "status": "lost",
+      "entry_spot": 543182.0057036456,
+      "exit_spot": 542871.21,
+      "source_signal_id": "sig_028",
+      "purchase_time": "2026-08-19T04:55:20.370Z",
+      "closed_at": "2026-08-07T02:18:20.370Z"
+    },
+    {
+      "id": "ctr_c3",
+      "deriv_contract_id": "C1240003",
+      "market": {
+        "symbol": "OTC_DJI",
+        "name": "Wall Street 30",
+        "short_name": "US 30",
+        "pair": null,
+        "category": "stock_indices",
+        "decimal_places": 2,
+        "contract_kinds": [
+          "multiplier",
+          "cfd_mt5"
+        ]
+      },
+      "contract_family": "multipliers",
+      "label": "US 30 Multiplier",
+      "direction": "sell",
+      "stake": 50,
+      "buy_price": 50,
+      "profit": -25.79,
+      "status": "lost",
+      "entry_spot": 39329.51285581814,
+      "exit_spot": 39284.1,
+      "source_signal_id": "sig_034",
+      "purchase_time": "2026-06-15T23:26:20.360Z",
+      "closed_at": "2026-08-06T17:28:20.360Z"
+    },
+    {
+      "id": "ctr_c33",
+      "deriv_contract_id": "C1240033",
+      "market": {
+        "symbol": "cryXRPUSD",
+        "name": "XRP / USD",
+        "short_name": "XRP/USD",
+        "pair": "XRP/USD",
+        "category": "crypto",
+        "decimal_places": 4,
+        "contract_kinds": [
+          "multiplier",
+          "cfd_mt5"
+        ]
+      },
+      "contract_family": "multipliers",
+      "label": "XRP/USD Multiplier",
+      "direction": "buy",
+      "stake": 150,
+      "buy_price": 150,
+      "profit": 259.45,
+      "status": "won",
+      "entry_spot": 0.628370720239994,
+      "exit_spot": 0.6284,
+      "source_signal_id": "sig_035",
+      "purchase_time": "2026-07-30T10:00:20.370Z",
+      "closed_at": "2026-08-06T08:18:20.370Z"
+    },
+    {
+      "id": "ctr_c72",
+      "deriv_contract_id": "C1240072",
+      "market": {
+        "symbol": "frxGBPUSD",
+        "name": "GBP/USD",
+        "short_name": "GBP/USD",
+        "pair": "GBP/USD",
+        "category": "forex",
+        "decimal_places": 5,
+        "contract_kinds": [
+          "binary",
+          "multiplier",
+          "cfd_mt5"
+        ]
+      },
+      "contract_family": "digits",
+      "label": "GBP/USD Digits",
+      "direction": "buy",
+      "stake": 20,
+      "buy_price": 20,
+      "profit": -12.06,
+      "status": "lost",
+      "entry_spot": 1.2664390059455166,
+      "exit_spot": 1.26418,
+      "source_signal_id": null,
+      "purchase_time": "2026-06-13T20:28:20.370Z",
+      "closed_at": "2026-08-05T14:49:20.370Z"
+    },
+    {
+      "id": "ctr_c5",
+      "deriv_contract_id": "C1240005",
+      "market": {
+        "symbol": "R_10",
+        "name": "Volatility 10 Index",
+        "short_name": "V10",
+        "pair": null,
+        "category": "synthetic_indices",
+        "decimal_places": 3,
+        "contract_kinds": [
+          "binary",
+          "multiplier"
+        ]
+      },
+      "contract_family": "rise_fall",
+      "label": "V10 Rise/Fall",
+      "direction": "sell",
+      "stake": 100,
+      "buy_price": 100,
+      "profit": 109.35,
+      "status": "won",
+      "entry_spot": 6836.415761371846,
+      "exit_spot": 6842.3,
+      "source_signal_id": null,
+      "purchase_time": "2026-08-14T03:47:20.360Z",
+      "closed_at": "2026-08-05T04:19:20.360Z"
+    },
+    {
+      "id": "ctr_c121",
+      "deriv_contract_id": "C1240121",
+      "market": {
+        "symbol": "frxEURUSD",
+        "name": "EUR/USD",
+        "short_name": "EUR/USD",
+        "pair": "EUR/USD",
+        "category": "forex",
+        "decimal_places": 5,
+        "contract_kinds": [
+          "binary",
+          "multiplier",
+          "cfd_mt5"
+        ]
+      },
+      "contract_family": "multipliers",
+      "label": "EUR/USD Multiplier",
+      "direction": "sell",
+      "stake": 50,
+      "buy_price": 50,
+      "profit": 82.08,
+      "status": "won",
+      "entry_spot": 1.0854107133360444,
+      "exit_spot": 1.08642,
+      "source_signal_id": null,
+      "purchase_time": "2026-06-22T15:26:20.370Z",
+      "closed_at": "2026-08-04T23:20:20.370Z"
+    },
+    {
+      "id": "ctr_c36",
+      "deriv_contract_id": "C1240036",
+      "market": {
+        "symbol": "frxXAUUSD",
+        "name": "Gold / USD",
+        "short_name": "XAU/USD",
+        "pair": "XAU/USD",
+        "category": "commodities",
+        "decimal_places": 2,
+        "contract_kinds": [
+          "binary",
+          "multiplier",
+          "cfd_mt5"
+        ]
+      },
+      "contract_family": "accumulator",
+      "label": "XAU/USD Accumulator",
+      "direction": "sell",
+      "stake": 5,
+      "buy_price": 5,
+      "profit": 8.35,
+      "status": "won",
+      "entry_spot": 2338.2116674663685,
+      "exit_spot": 2342.18,
+      "source_signal_id": "sig_031",
+      "purchase_time": "2026-08-02T04:10:20.370Z",
+      "closed_at": "2026-08-04T22:38:20.370Z"
+    },
+    {
+      "id": "ctr_c68",
+      "deriv_contract_id": "C1240068",
+      "market": {
+        "symbol": "JD100",
+        "name": "Jump 100 Index",
+        "short_name": "Jump 100",
+        "pair": null,
+        "category": "derived",
+        "decimal_places": 2,
+        "contract_kinds": [
+          "binary",
+          "multiplier"
+        ]
+      },
+      "contract_family": "digits",
+      "label": "Jump 100 Digits",
+      "direction": "sell",
+      "stake": 50,
+      "buy_price": 50,
+      "profit": 52.34,
+      "status": "won",
+      "entry_spot": 6214.947140179358,
+      "exit_spot": 6210.9,
+      "source_signal_id": "sig_007",
+      "purchase_time": "2026-08-02T16:55:20.370Z",
+      "closed_at": "2026-08-04T11:24:20.370Z"
+    },
+    {
+      "id": "ctr_c100",
+      "deriv_contract_id": "C1240100",
+      "market": {
+        "symbol": "cryETHUSD",
+        "name": "Ethereum / USD",
+        "short_name": "ETH/USD",
+        "pair": "ETH/USD",
+        "category": "crypto",
+        "decimal_places": 2,
+        "contract_kinds": [
+          "multiplier",
+          "cfd_mt5"
+        ]
+      },
+      "contract_family": "multipliers",
+      "label": "ETH/USD Multiplier",
+      "direction": "buy",
+      "stake": 100,
+      "buy_price": 100,
+      "profit": -71.09,
+      "status": "lost",
+      "entry_spot": 3537.761536017659,
+      "exit_spot": 3542.18,
+      "source_signal_id": null,
+      "purchase_time": "2026-07-26T12:01:20.370Z",
+      "closed_at": "2026-08-03T00:11:20.370Z"
+    },
+    {
+      "id": "ctr_c83",
+      "deriv_contract_id": "C1240083",
+      "market": {
+        "symbol": "JD25",
+        "name": "Jump 25 Index",
+        "short_name": "Jump 25",
+        "pair": null,
+        "category": "derived",
+        "decimal_places": 2,
+        "contract_kinds": [
+          "multiplier"
+        ]
+      },
+      "contract_family": "multipliers",
+      "label": "Jump 25 Multiplier",
+      "direction": "buy",
+      "stake": 5,
+      "buy_price": 5,
+      "profit": 7.51,
+      "status": "won",
+      "entry_spot": 3183.6947909830697,
+      "exit_spot": 3182.77,
+      "source_signal_id": null,
+      "purchase_time": "2026-08-02T20:19:20.370Z",
+      "closed_at": "2026-08-02T08:47:20.370Z"
+    },
+    {
+      "id": "ctr_c4",
+      "deriv_contract_id": "C1240004",
+      "market": {
+        "symbol": "frxEURGBP",
+        "name": "EUR/GBP",
+        "short_name": "EUR/GBP",
+        "pair": "EUR/GBP",
+        "category": "forex",
+        "decimal_places": 5,
+        "contract_kinds": [
+          "binary",
+          "cfd_mt5"
+        ]
+      },
+      "contract_family": "digits",
+      "label": "EUR/GBP Digits",
+      "direction": "sell",
+      "stake": 100,
+      "buy_price": 100,
+      "profit": 98.36,
+      "status": "won",
+      "entry_spot": 0.8586491103813382,
+      "exit_spot": 0.85922,
+      "source_signal_id": null,
+      "purchase_time": "2026-07-30T10:05:20.360Z",
+      "closed_at": "2026-08-01T20:53:20.360Z"
+    },
+    {
+      "id": "ctr_c99",
+      "deriv_contract_id": "C1240099",
+      "market": {
+        "symbol": "1HZ75V",
+        "name": "Volatility 75 (1s) Index",
+        "short_name": "V75 (1s)",
+        "pair": null,
+        "category": "synthetic_indices",
+        "decimal_places": 2,
+        "contract_kinds": [
+          "binary",
+          "multiplier"
+        ]
+      },
+      "contract_family": "multipliers",
+      "label": "V75 (1s) Multiplier",
+      "direction": "buy",
+      "stake": 150,
+      "buy_price": 150,
+      "profit": 169.48,
+      "status": "won",
+      "entry_spot": 542430.7762410536,
+      "exit_spot": 542893.42,
+      "source_signal_id": null,
+      "purchase_time": "2026-07-14T23:33:20.370Z",
+      "closed_at": "2026-08-01T05:01:20.370Z"
+    },
+    {
+      "id": "ctr_c37",
+      "deriv_contract_id": "C1240037",
+      "market": {
+        "symbol": "cryBTCUSD",
+        "name": "Bitcoin / USD",
+        "short_name": "BTC/USD",
+        "pair": "BTC/USD",
+        "category": "crypto",
+        "decimal_places": 2,
+        "contract_kinds": [
+          "multiplier",
+          "cfd_mt5"
+        ]
+      },
+      "contract_family": "multipliers",
+      "label": "BTC/USD Multiplier",
+      "direction": "sell",
+      "stake": 200,
+      "buy_price": 200,
+      "profit": -174.48,
+      "status": "lost",
+      "entry_spot": 68361.09328820842,
+      "exit_spot": 68420.5,
+      "source_signal_id": null,
+      "purchase_time": "2026-08-26T06:54:20.370Z",
+      "closed_at": "2026-08-01T00:38:20.370Z"
+    },
+    {
+      "id": "ctr_c53",
+      "deriv_contract_id": "C1240053",
+      "market": {
+        "symbol": "frxUSDCHF",
+        "name": "USD/CHF",
+        "short_name": "USD/CHF",
+        "pair": "USD/CHF",
+        "category": "forex",
+        "decimal_places": 5,
+        "contract_kinds": [
+          "binary",
+          "multiplier",
+          "cfd_mt5"
+        ]
+      },
+      "contract_family": "accumulator",
+      "label": "USD/CHF Accumulator",
+      "direction": "sell",
+      "stake": 150,
+      "buy_price": 150,
+      "profit": 233.25,
+      "status": "won",
+      "entry_spot": 0.9022129613828039,
+      "exit_spot": 0.90218,
+      "source_signal_id": null,
+      "purchase_time": "2026-07-07T17:54:20.370Z",
+      "closed_at": "2026-07-30T06:48:20.370Z"
+    },
+    {
+      "id": "ctr_c101",
+      "deriv_contract_id": "C1240101",
+      "market": {
+        "symbol": "R_75",
+        "name": "Volatility 75 Index",
+        "short_name": "V75",
+        "pair": null,
+        "category": "synthetic_indices",
+        "decimal_places": 2,
+        "contract_kinds": [
+          "binary",
+          "multiplier"
+        ]
+      },
+      "contract_family": "multipliers",
+      "label": "V75 Multiplier",
+      "direction": "sell",
+      "stake": 150,
+      "buy_price": 150,
+      "profit": -115.09,
+      "status": "lost",
+      "entry_spot": 542724.0595935716,
+      "exit_spot": 542871.21,
+      "source_signal_id": null,
+      "purchase_time": "2026-06-15T18:39:20.370Z",
+      "closed_at": "2026-07-30T05:34:20.370Z"
+    },
+    {
+      "id": "ctr_c55",
+      "deriv_contract_id": "C1240055",
+      "market": {
+        "symbol": "frxEURGBP",
+        "name": "EUR/GBP",
+        "short_name": "EUR/GBP",
+        "pair": "EUR/GBP",
+        "category": "forex",
+        "decimal_places": 5,
+        "contract_kinds": [
+          "binary",
+          "cfd_mt5"
+        ]
+      },
+      "contract_family": "accumulator",
+      "label": "EUR/GBP Accumulator",
+      "direction": "buy",
+      "stake": 20,
+      "buy_price": 20,
+      "profit": 19.07,
+      "status": "won",
+      "entry_spot": 0.8601431859720127,
+      "exit_spot": 0.85922,
+      "source_signal_id": "sig_007",
+      "purchase_time": "2026-08-21T03:17:20.370Z",
+      "closed_at": "2026-07-29T23:01:20.370Z"
+    },
+    {
+      "id": "ctr_c107",
+      "deriv_contract_id": "C1240107",
+      "market": {
+        "symbol": "crySOLUSD",
+        "name": "Solana / USD",
+        "short_name": "SOL/USD",
+        "pair": "SOL/USD",
+        "category": "crypto",
+        "decimal_places": 3,
+        "contract_kinds": [
+          "multiplier",
+          "cfd_mt5"
+        ]
+      },
+      "contract_family": "multipliers",
+      "label": "SOL/USD Multiplier",
+      "direction": "sell",
+      "stake": 20,
+      "buy_price": 20,
+      "profit": -15.42,
+      "status": "lost",
+      "entry_spot": 172.2396837269533,
+      "exit_spot": 172.44,
+      "source_signal_id": "sig_005",
+      "purchase_time": "2026-07-04T00:30:20.370Z",
+      "closed_at": "2026-07-29T21:57:20.370Z"
+    },
+    {
+      "id": "ctr_c31",
+      "deriv_contract_id": "C1240031",
+      "market": {
+        "symbol": "WTIUSD",
+        "name": "Crude Oil / USD",
+        "short_name": "WTI/USD",
+        "pair": "WTI/USD",
+        "category": "commodities",
+        "decimal_places": 2,
+        "contract_kinds": [
+          "multiplier",
+          "cfd_mt5"
+        ]
+      },
+      "contract_family": "multipliers",
+      "label": "WTI/USD Multiplier",
+      "direction": "buy",
+      "stake": 150,
+      "buy_price": 150,
+      "profit": 248.69,
+      "status": "won",
+      "entry_spot": 78.4414787543334,
+      "exit_spot": 78.42,
+      "source_signal_id": null,
+      "purchase_time": "2026-06-06T11:00:20.370Z",
+      "closed_at": "2026-07-29T09:58:20.370Z"
+    },
+    {
+      "id": "ctr_c57",
+      "deriv_contract_id": "C1240057",
+      "market": {
+        "symbol": "frxUSDCHF",
+        "name": "USD/CHF",
+        "short_name": "USD/CHF",
+        "pair": "USD/CHF",
+        "category": "forex",
+        "decimal_places": 5,
+        "contract_kinds": [
+          "binary",
+          "multiplier",
+          "cfd_mt5"
+        ]
+      },
+      "contract_family": "rise_fall",
+      "label": "USD/CHF Rise/Fall",
+      "direction": "buy",
+      "stake": 25,
+      "buy_price": 25,
+      "profit": -18.01,
+      "status": "lost",
+      "entry_spot": 0.9033234489821123,
+      "exit_spot": 0.90218,
+      "source_signal_id": "sig_034",
+      "purchase_time": "2026-07-05T05:41:20.370Z",
+      "closed_at": "2026-07-27T19:09:20.370Z"
+    },
+    {
+      "id": "ctr_c17",
+      "deriv_contract_id": "C1240017",
+      "market": {
+        "symbol": "cryLTCUSD",
+        "name": "Litecoin / USD",
+        "short_name": "LTC/USD",
+        "pair": "LTC/USD",
+        "category": "crypto",
+        "decimal_places": 2,
+        "contract_kinds": [
+          "multiplier",
+          "cfd_mt5"
+        ]
+      },
+      "contract_family": "multipliers",
+      "label": "LTC/USD Multiplier",
+      "direction": "sell",
+      "stake": 50,
+      "buy_price": 50,
+      "profit": 74.85,
+      "status": "won",
+      "entry_spot": 84.50191826196642,
+      "exit_spot": 84.62,
+      "source_signal_id": null,
+      "purchase_time": "2026-07-16T09:25:20.361Z",
+      "closed_at": "2026-07-25T22:50:20.361Z"
+    },
+    {
+      "id": "ctr_c34",
+      "deriv_contract_id": "C1240034",
+      "market": {
+        "symbol": "OTC_DJI",
+        "name": "Wall Street 30",
+        "short_name": "US 30",
+        "pair": null,
+        "category": "stock_indices",
+        "decimal_places": 2,
+        "contract_kinds": [
+          "multiplier",
+          "cfd_mt5"
+        ]
+      },
+      "contract_family": "multipliers",
+      "label": "US 30 Multiplier",
+      "direction": "buy",
+      "stake": 200,
+      "buy_price": 200,
+      "profit": -108.32,
+      "status": "lost",
+      "entry_spot": 39282.6297628036,
+      "exit_spot": 39284.1,
+      "source_signal_id": null,
+      "purchase_time": "2026-08-12T05:46:20.370Z",
+      "closed_at": "2026-07-25T21:16:20.370Z"
+    },
+    {
+      "id": "ctr_c66",
+      "deriv_contract_id": "C1240066",
+      "market": {
+        "symbol": "frxEURGBP",
+        "name": "EUR/GBP",
+        "short_name": "EUR/GBP",
+        "pair": "EUR/GBP",
+        "category": "forex",
+        "decimal_places": 5,
+        "contract_kinds": [
+          "binary",
+          "cfd_mt5"
+        ]
+      },
+      "contract_family": "accumulator",
+      "label": "EUR/GBP Accumulator",
+      "direction": "sell",
+      "stake": 10,
+      "buy_price": 10,
+      "profit": 8.88,
+      "status": "won",
+      "entry_spot": 0.8599263284371432,
+      "exit_spot": 0.85922,
+      "source_signal_id": null,
+      "purchase_time": "2026-06-13T09:17:20.370Z",
+      "closed_at": "2026-07-25T21:16:20.370Z"
+    },
+    {
+      "id": "ctr_c16",
+      "deriv_contract_id": "C1240016",
+      "market": {
+        "symbol": "cryBTCUSD",
+        "name": "Bitcoin / USD",
+        "short_name": "BTC/USD",
+        "pair": "BTC/USD",
+        "category": "crypto",
+        "decimal_places": 2,
+        "contract_kinds": [
+          "multiplier",
+          "cfd_mt5"
+        ]
+      },
+      "contract_family": "multipliers",
+      "label": "BTC/USD Multiplier",
+      "direction": "sell",
+      "stake": 50,
+      "buy_price": 50,
+      "profit": -31.9,
+      "status": "lost",
+      "entry_spot": 68539.82681726546,
+      "exit_spot": 68420.5,
+      "source_signal_id": null,
+      "purchase_time": "2026-08-05T21:38:20.361Z",
+      "closed_at": "2026-07-25T13:24:20.361Z"
+    },
+    {
+      "id": "ctr_c46",
+      "deriv_contract_id": "C1240046",
+      "market": {
+        "symbol": "JD75",
+        "name": "Jump 75 Index",
+        "short_name": "Jump 75",
+        "pair": null,
+        "category": "derived",
+        "decimal_places": 2,
+        "contract_kinds": [
+          "binary",
+          "multiplier"
+        ]
+      },
+      "contract_family": "rise_fall",
+      "label": "Jump 75 Rise/Fall",
+      "direction": "buy",
+      "stake": 100,
+      "buy_price": 100,
+      "profit": -48.87,
+      "status": "lost",
+      "entry_spot": 14027.879149295963,
+      "exit_spot": 14028.33,
+      "source_signal_id": null,
+      "purchase_time": "2026-06-28T03:56:20.370Z",
+      "closed_at": "2026-07-24T00:57:20.370Z"
+    },
+    {
+      "id": "ctr_c73",
+      "deriv_contract_id": "C1240073",
+      "market": {
+        "symbol": "CRASH1000",
+        "name": "Crash 1000 Index",
+        "short_name": "Crash 1000",
+        "pair": null,
+        "category": "derived",
+        "decimal_places": 2,
+        "contract_kinds": [
+          "binary",
+          "multiplier"
+        ]
+      },
+      "contract_family": "multipliers",
+      "label": "Crash 1000 Multiplier",
+      "direction": "buy",
+      "stake": 10,
+      "buy_price": 10,
+      "profit": 12.46,
+      "status": "won",
+      "entry_spot": 4814.566337949745,
+      "exit_spot": 4820.15,
+      "source_signal_id": null,
+      "purchase_time": "2026-08-18T03:01:20.370Z",
+      "closed_at": "2026-07-23T19:59:20.370Z"
+    },
+    {
+      "id": "ctr_c78",
+      "deriv_contract_id": "C1240078",
+      "market": {
+        "symbol": "R_25",
+        "name": "Volatility 25 Index",
+        "short_name": "V25",
+        "pair": null,
+        "category": "synthetic_indices",
+        "decimal_places": 3,
+        "contract_kinds": [
+          "binary",
+          "multiplier"
+        ]
+      },
+      "contract_family": "rise_fall",
+      "label": "V25 Rise/Fall",
+      "direction": "sell",
+      "stake": 100,
+      "buy_price": 100,
+      "profit": -99.87,
+      "status": "lost",
+      "entry_spot": 95.16390240499449,
+      "exit_spot": 95.21,
+      "source_signal_id": null,
+      "purchase_time": "2026-06-05T16:25:20.370Z",
+      "closed_at": "2026-07-23T18:23:20.370Z"
+    },
+    {
+      "id": "ctr_c84",
+      "deriv_contract_id": "C1240084",
+      "market": {
+        "symbol": "frxEURJPY",
+        "name": "EUR/JPY",
+        "short_name": "EUR/JPY",
+        "pair": "EUR/JPY",
+        "category": "forex",
+        "decimal_places": 3,
+        "contract_kinds": [
+          "binary",
+          "cfd_mt5"
+        ]
+      },
+      "contract_family": "multipliers",
+      "label": "EUR/JPY Multiplier",
+      "direction": "sell",
+      "stake": 50,
+      "buy_price": 50,
+      "profit": 83.94,
+      "status": "won",
+      "entry_spot": 164.22995690928283,
+      "exit_spot": 164.372,
+      "source_signal_id": null,
+      "purchase_time": "2026-08-24T14:53:20.370Z",
+      "closed_at": "2026-07-22T09:53:20.370Z"
+    },
+    {
+      "id": "ctr_c48",
+      "deriv_contract_id": "C1240048",
+      "market": {
+        "symbol": "BOOM1000",
+        "name": "Boom 1000 Index",
+        "short_name": "Boom 1000",
+        "pair": null,
+        "category": "derived",
+        "decimal_places": 2,
+        "contract_kinds": [
+          "binary",
+          "multiplier"
+        ]
+      },
+      "contract_family": "digits",
+      "label": "Boom 1000 Digits",
+      "direction": "sell",
+      "stake": 200,
+      "buy_price": 200,
+      "profit": -113.95,
+      "status": "lost",
+      "entry_spot": 8345.600015035385,
+      "exit_spot": 8342.11,
+      "source_signal_id": null,
+      "purchase_time": "2026-06-12T15:31:20.370Z",
+      "closed_at": "2026-07-21T05:22:20.370Z"
+    },
+    {
+      "id": "ctr_c122",
+      "deriv_contract_id": "C1240122",
+      "market": {
+        "symbol": "frxEURUSD",
+        "name": "EUR/USD",
+        "short_name": "EUR/USD",
+        "pair": "EUR/USD",
+        "category": "forex",
+        "decimal_places": 5,
+        "contract_kinds": [
+          "binary",
+          "multiplier",
+          "cfd_mt5"
+        ]
+      },
+      "contract_family": "multipliers",
+      "label": "EUR/USD Multiplier",
+      "direction": "sell",
+      "stake": 200,
+      "buy_price": 200,
+      "profit": -146.23,
+      "status": "lost",
+      "entry_spot": 1.0848505653225542,
+      "exit_spot": 1.08642,
+      "source_signal_id": "sig_035",
+      "purchase_time": "2026-06-21T15:12:20.370Z",
+      "closed_at": "2026-07-21T01:10:20.370Z"
+    },
+    {
+      "id": "ctr_c28",
+      "deriv_contract_id": "C1240028",
+      "market": {
+        "symbol": "cryBTCUSD",
+        "name": "Bitcoin / USD",
+        "short_name": "BTC/USD",
+        "pair": "BTC/USD",
+        "category": "crypto",
+        "decimal_places": 2,
+        "contract_kinds": [
+          "multiplier",
+          "cfd_mt5"
+        ]
+      },
+      "contract_family": "multipliers",
+      "label": "BTC/USD Multiplier",
+      "direction": "sell",
+      "stake": 50,
+      "buy_price": 50,
+      "profit": -46.65,
+      "status": "lost",
+      "entry_spot": 68540.60385729368,
+      "exit_spot": 68420.5,
+      "source_signal_id": null,
+      "purchase_time": "2026-07-02T20:28:20.361Z",
+      "closed_at": "2026-07-20T21:50:20.361Z"
+    },
+    {
+      "id": "ctr_c8",
+      "deriv_contract_id": "C1240008",
+      "market": {
+        "symbol": "BOOM300",
+        "name": "Boom 300 Index",
+        "short_name": "Boom 300",
+        "pair": null,
+        "category": "derived",
+        "decimal_places": 2,
+        "contract_kinds": [
+          "multiplier"
+        ]
+      },
+      "contract_family": "multipliers",
+      "label": "Boom 300 Multiplier",
+      "direction": "sell",
+      "stake": 150,
+      "buy_price": 150,
+      "profit": -98.52,
+      "status": "lost",
+      "entry_spot": 7430.294323863554,
+      "exit_spot": 7418.02,
+      "source_signal_id": null,
+      "purchase_time": "2026-06-07T22:39:20.361Z",
+      "closed_at": "2026-07-19T22:55:20.361Z"
+    },
+    {
+      "id": "ctr_c116",
+      "deriv_contract_id": "C1240116",
+      "market": {
+        "symbol": "CRASH300",
+        "name": "Crash 300 Index",
+        "short_name": "Crash 300",
+        "pair": null,
+        "category": "derived",
+        "decimal_places": 2,
+        "contract_kinds": [
+          "multiplier"
+        ]
+      },
+      "contract_family": "multipliers",
+      "label": "Crash 300 Multiplier",
+      "direction": "sell",
+      "stake": 200,
+      "buy_price": 200,
+      "profit": -179.89,
+      "status": "lost",
+      "entry_spot": 6097.497228625749,
+      "exit_spot": 6104.88,
+      "source_signal_id": null,
+      "purchase_time": "2026-08-07T00:59:20.370Z",
+      "closed_at": "2026-07-19T13:49:20.370Z"
+    },
+    {
+      "id": "ctr_c41",
+      "deriv_contract_id": "C1240041",
+      "market": {
+        "symbol": "frxAUDUSD",
+        "name": "AUD/USD",
+        "short_name": "AUD/USD",
+        "pair": "AUD/USD",
+        "category": "forex",
+        "decimal_places": 5,
+        "contract_kinds": [
+          "binary",
+          "multiplier",
+          "cfd_mt5"
+        ]
+      },
+      "contract_family": "multipliers",
+      "label": "AUD/USD Multiplier",
+      "direction": "sell",
+      "stake": 100,
+      "buy_price": 100,
+      "profit": -63.57,
+      "status": "lost",
+      "entry_spot": 0.655860885143455,
+      "exit_spot": 0.65712,
+      "source_signal_id": null,
+      "purchase_time": "2026-07-21T03:49:20.370Z",
+      "closed_at": "2026-07-18T17:49:20.370Z"
+    },
+    {
+      "id": "ctr_c76",
+      "deriv_contract_id": "C1240076",
+      "market": {
+        "symbol": "crySOLUSD",
+        "name": "Solana / USD",
+        "short_name": "SOL/USD",
+        "pair": "SOL/USD",
+        "category": "crypto",
+        "decimal_places": 3,
+        "contract_kinds": [
+          "multiplier",
+          "cfd_mt5"
+        ]
+      },
+      "contract_family": "multipliers",
+      "label": "SOL/USD Multiplier",
+      "direction": "sell",
+      "stake": 25,
+      "buy_price": 25,
+      "profit": 35.47,
+      "status": "won",
+      "entry_spot": 172.5602351686576,
+      "exit_spot": 172.44,
+      "source_signal_id": null,
+      "purchase_time": "2026-07-06T19:42:20.370Z",
+      "closed_at": "2026-07-18T13:44:20.370Z"
+    },
+    {
+      "id": "ctr_c19",
+      "deriv_contract_id": "C1240019",
+      "market": {
+        "symbol": "frxXAUUSD",
+        "name": "Gold / USD",
+        "short_name": "XAU/USD",
+        "pair": "XAU/USD",
+        "category": "commodities",
+        "decimal_places": 2,
+        "contract_kinds": [
+          "binary",
+          "multiplier",
+          "cfd_mt5"
+        ]
+      },
+      "contract_family": "rise_fall",
+      "label": "XAU/USD Rise/Fall",
+      "direction": "sell",
+      "stake": 10,
+      "buy_price": 10,
+      "profit": -9.89,
+      "status": "lost",
+      "entry_spot": 2344.645989359595,
+      "exit_spot": 2342.18,
+      "source_signal_id": "sig_030",
+      "purchase_time": "2026-07-20T15:02:20.361Z",
+      "closed_at": "2026-07-18T07:58:20.361Z"
+    },
+    {
+      "id": "ctr_c124",
+      "deriv_contract_id": "C1240124",
+      "market": {
+        "symbol": "cryETHUSD",
+        "name": "Ethereum / USD",
+        "short_name": "ETH/USD",
+        "pair": "ETH/USD",
+        "category": "crypto",
+        "decimal_places": 2,
+        "contract_kinds": [
+          "multiplier",
+          "cfd_mt5"
+        ]
+      },
+      "contract_family": "multipliers",
+      "label": "ETH/USD Multiplier",
+      "direction": "sell",
+      "stake": 5,
+      "buy_price": 5,
+      "profit": -2.77,
+      "status": "lost",
+      "entry_spot": 3536.0107533813743,
+      "exit_spot": 3542.18,
+      "source_signal_id": null,
+      "purchase_time": "2026-08-08T01:13:20.370Z",
+      "closed_at": "2026-07-18T06:08:20.370Z"
+    },
+    {
+      "id": "ctr_c87",
+      "deriv_contract_id": "C1240087",
+      "market": {
+        "symbol": "OTC_DJI",
+        "name": "Wall Street 30",
+        "short_name": "US 30",
+        "pair": null,
+        "category": "stock_indices",
+        "decimal_places": 2,
+        "contract_kinds": [
+          "multiplier",
+          "cfd_mt5"
+        ]
+      },
+      "contract_family": "multipliers",
+      "label": "US 30 Multiplier",
+      "direction": "sell",
+      "stake": 25,
+      "buy_price": 25,
+      "profit": 15.71,
+      "status": "won",
+      "entry_spot": 39259.1708094751,
+      "exit_spot": 39284.1,
+      "source_signal_id": "sig_027",
+      "purchase_time": "2026-07-13T10:56:20.370Z",
+      "closed_at": "2026-07-17T22:32:20.370Z"
+    },
+    {
+      "id": "ctr_c93",
+      "deriv_contract_id": "C1240093",
+      "market": {
+        "symbol": "RB100",
+        "name": "Range Break 100 Index",
+        "short_name": "RB 100",
+        "pair": null,
+        "category": "synthetic_indices",
+        "decimal_places": 3,
+        "contract_kinds": [
+          "binary"
+        ]
+      },
+      "contract_family": "rise_fall",
+      "label": "RB 100 Rise/Fall",
+      "direction": "sell",
+      "stake": 50,
+      "buy_price": 50,
+      "profit": -42.23,
+      "status": "lost",
+      "entry_spot": 1282.5054830019126,
+      "exit_spot": 1284.66,
+      "source_signal_id": "sig_003",
+      "purchase_time": "2026-08-18T21:10:20.370Z",
+      "closed_at": "2026-07-17T21:41:20.370Z"
+    },
+    {
+      "id": "ctr_c105",
+      "deriv_contract_id": "C1240105",
+      "market": {
+        "symbol": "frxEURJPY",
+        "name": "EUR/JPY",
+        "short_name": "EUR/JPY",
+        "pair": "EUR/JPY",
+        "category": "forex",
+        "decimal_places": 3,
+        "contract_kinds": [
+          "binary",
+          "cfd_mt5"
+        ]
+      },
+      "contract_family": "multipliers",
+      "label": "EUR/JPY Multiplier",
+      "direction": "sell",
+      "stake": 100,
+      "buy_price": 100,
+      "profit": -67.55,
+      "status": "lost",
+      "entry_spot": 164.475313129137,
+      "exit_spot": 164.372,
+      "source_signal_id": null,
+      "purchase_time": "2026-06-22T02:43:20.370Z",
+      "closed_at": "2026-07-17T03:00:20.370Z"
+    },
+    {
+      "id": "ctr_c94",
+      "deriv_contract_id": "C1240094",
+      "market": {
+        "symbol": "1HZ100V",
+        "name": "Volatility 100 (1s) Index",
+        "short_name": "V100 (1s)",
+        "pair": null,
+        "category": "synthetic_indices",
+        "decimal_places": 2,
+        "contract_kinds": [
+          "binary",
+          "multiplier"
+        ]
+      },
+      "contract_family": "digits",
+      "label": "V100 (1s) Digits",
+      "direction": "buy",
+      "stake": 20,
+      "buy_price": 20,
+      "profit": 15.94,
+      "status": "won",
+      "entry_spot": 1245.950721820277,
+      "exit_spot": 1247.84,
+      "source_signal_id": "sig_026",
+      "purchase_time": "2026-08-10T08:08:20.370Z",
+      "closed_at": "2026-07-16T19:58:20.370Z"
+    },
+    {
+      "id": "ctr_c50",
+      "deriv_contract_id": "C1240050",
+      "market": {
+        "symbol": "frxNZDUSD",
+        "name": "NZD/USD",
+        "short_name": "NZD/USD",
+        "pair": "NZD/USD",
+        "category": "forex",
+        "decimal_places": 5,
+        "contract_kinds": [
+          "binary",
+          "cfd_mt5"
+        ]
+      },
+      "contract_family": "digits",
+      "label": "NZD/USD Digits",
+      "direction": "sell",
+      "stake": 25,
+      "buy_price": 25,
+      "profit": 34.11,
+      "status": "won",
+      "entry_spot": 0.6015535773515629,
+      "exit_spot": 0.60184,
+      "source_signal_id": null,
+      "purchase_time": "2026-07-31T08:45:20.370Z",
+      "closed_at": "2026-07-15T21:10:20.370Z"
+    },
+    {
+      "id": "ctr_c58",
+      "deriv_contract_id": "C1240058",
+      "market": {
+        "symbol": "1HZ50V",
+        "name": "Volatility 50 (1s) Index",
+        "short_name": "V50 (1s)",
+        "pair": null,
+        "category": "synthetic_indices",
+        "decimal_places": 3,
+        "contract_kinds": [
+          "binary",
+          "multiplier"
+        ]
+      },
+      "contract_family": "multipliers",
+      "label": "V50 (1s) Multiplier",
+      "direction": "buy",
+      "stake": 20,
+      "buy_price": 20,
+      "profit": -8.99,
+      "status": "lost",
+      "entry_spot": 239.09931057538424,
+      "exit_spot": 239.14,
+      "source_signal_id": null,
+      "purchase_time": "2026-08-16T09:42:20.370Z",
+      "closed_at": "2026-07-15T07:50:20.370Z"
+    },
+    {
+      "id": "ctr_c22",
+      "deriv_contract_id": "C1240022",
+      "market": {
+        "symbol": "frxUSDJPY",
+        "name": "USD/JPY",
+        "short_name": "USD/JPY",
+        "pair": "USD/JPY",
+        "category": "forex",
+        "decimal_places": 3,
+        "contract_kinds": [
+          "binary",
+          "multiplier",
+          "cfd_mt5"
+        ]
+      },
+      "contract_family": "accumulator",
+      "label": "USD/JPY Accumulator",
+      "direction": "buy",
+      "stake": 20,
+      "buy_price": 20,
+      "profit": -9.69,
+      "status": "lost",
+      "entry_spot": 151.1891228074302,
+      "exit_spot": 151.284,
+      "source_signal_id": null,
+      "purchase_time": "2026-08-27T20:19:20.361Z",
+      "closed_at": "2026-07-14T14:53:20.361Z"
+    },
+    {
+      "id": "ctr_c15",
+      "deriv_contract_id": "C1240015",
+      "market": {
+        "symbol": "frxUSDCAD",
+        "name": "USD/CAD",
+        "short_name": "USD/CAD",
+        "pair": "USD/CAD",
+        "category": "forex",
+        "decimal_places": 5,
+        "contract_kinds": [
+          "binary",
+          "multiplier",
+          "cfd_mt5"
+        ]
+      },
+      "contract_family": "rise_fall",
+      "label": "USD/CAD Rise/Fall",
+      "direction": "buy",
+      "stake": 150,
+      "buy_price": 150,
+      "profit": -70.76,
+      "status": "lost",
+      "entry_spot": 1.3578679365820832,
+      "exit_spot": 1.35894,
+      "source_signal_id": null,
+      "purchase_time": "2026-07-31T16:04:20.361Z",
+      "closed_at": "2026-07-14T07:27:20.361Z"
+    },
+    {
+      "id": "ctr_c91",
+      "deriv_contract_id": "C1240091",
+      "market": {
+        "symbol": "frxEURJPY",
+        "name": "EUR/JPY",
+        "short_name": "EUR/JPY",
+        "pair": "EUR/JPY",
+        "category": "forex",
+        "decimal_places": 3,
+        "contract_kinds": [
+          "binary",
+          "cfd_mt5"
+        ]
+      },
+      "contract_family": "digits",
+      "label": "EUR/JPY Digits",
+      "direction": "buy",
+      "stake": 50,
+      "buy_price": 50,
+      "profit": 42.2,
+      "status": "won",
+      "entry_spot": 164.460807097443,
+      "exit_spot": 164.372,
+      "source_signal_id": null,
+      "purchase_time": "2026-08-18T12:02:20.370Z",
+      "closed_at": "2026-07-13T12:35:20.370Z"
+    },
+    {
+      "id": "ctr_c80",
+      "deriv_contract_id": "C1240080",
+      "market": {
+        "symbol": "frxEURJPY",
+        "name": "EUR/JPY",
+        "short_name": "EUR/JPY",
+        "pair": "EUR/JPY",
+        "category": "forex",
+        "decimal_places": 3,
+        "contract_kinds": [
+          "binary",
+          "cfd_mt5"
+        ]
+      },
+      "contract_family": "multipliers",
+      "label": "EUR/JPY Multiplier",
+      "direction": "buy",
+      "stake": 100,
+      "buy_price": 100,
+      "profit": 119.58,
+      "status": "won",
+      "entry_spot": 164.36159875746193,
+      "exit_spot": 164.372,
+      "source_signal_id": "sig_039",
+      "purchase_time": "2026-07-02T07:07:20.370Z",
+      "closed_at": "2026-07-13T02:38:20.370Z"
+    },
+    {
+      "id": "ctr_c126",
+      "deriv_contract_id": "C1240126",
+      "market": {
+        "symbol": "R_25",
+        "name": "Volatility 25 Index",
+        "short_name": "V25",
+        "pair": null,
+        "category": "synthetic_indices",
+        "decimal_places": 3,
+        "contract_kinds": [
+          "binary",
+          "multiplier"
+        ]
+      },
+      "contract_family": "multipliers",
+      "label": "V25 Multiplier",
+      "direction": "sell",
+      "stake": 150,
+      "buy_price": 150,
+      "profit": 106.1,
+      "status": "won",
+      "entry_spot": 95.26528952897455,
+      "exit_spot": 95.21,
+      "source_signal_id": null,
+      "purchase_time": "2026-07-29T22:56:20.370Z",
+      "closed_at": "2026-07-12T22:06:20.370Z"
+    },
+    {
+      "id": "ctr_c18",
+      "deriv_contract_id": "C1240018",
+      "market": {
+        "symbol": "frxXAGUSD",
+        "name": "Silver / USD",
+        "short_name": "XAG/USD",
+        "pair": "XAG/USD",
+        "category": "commodities",
+        "decimal_places": 3,
+        "contract_kinds": [
+          "binary",
+          "multiplier",
+          "cfd_mt5"
+        ]
+      },
+      "contract_family": "digits",
+      "label": "XAG/USD Digits",
+      "direction": "buy",
+      "stake": 100,
+      "buy_price": 100,
+      "profit": 167.71,
+      "status": "won",
+      "entry_spot": 27.787268371365418,
+      "exit_spot": 27.842,
+      "source_signal_id": null,
+      "purchase_time": "2026-08-18T15:26:20.361Z",
+      "closed_at": "2026-07-12T15:27:20.361Z"
+    },
+    {
+      "id": "ctr_c60",
+      "deriv_contract_id": "C1240060",
+      "market": {
+        "symbol": "OTC_DJI",
+        "name": "Wall Street 30",
+        "short_name": "US 30",
+        "pair": null,
+        "category": "stock_indices",
+        "decimal_places": 2,
+        "contract_kinds": [
+          "multiplier",
+          "cfd_mt5"
+        ]
+      },
+      "contract_family": "multipliers",
+      "label": "US 30 Multiplier",
+      "direction": "sell",
+      "stake": 10,
+      "buy_price": 10,
+      "profit": -6.16,
+      "status": "lost",
+      "entry_spot": 39246.929238835175,
+      "exit_spot": 39284.1,
+      "source_signal_id": null,
+      "purchase_time": "2026-06-09T14:13:20.370Z",
+      "closed_at": "2026-07-12T10:28:20.370Z"
+    },
+    {
+      "id": "ctr_c97",
+      "deriv_contract_id": "C1240097",
+      "market": {
+        "symbol": "BOOM300",
+        "name": "Boom 300 Index",
+        "short_name": "Boom 300",
+        "pair": null,
+        "category": "derived",
+        "decimal_places": 2,
+        "contract_kinds": [
+          "multiplier"
+        ]
+      },
+      "contract_family": "multipliers",
+      "label": "Boom 300 Multiplier",
+      "direction": "buy",
+      "stake": 100,
+      "buy_price": 100,
+      "profit": -64.88,
+      "status": "lost",
+      "entry_spot": 7417.275452958326,
+      "exit_spot": 7418.02,
+      "source_signal_id": null,
+      "purchase_time": "2026-06-17T20:35:20.370Z",
+      "closed_at": "2026-07-12T02:07:20.370Z"
+    },
+    {
+      "id": "ctr_c63",
+      "deriv_contract_id": "C1240063",
+      "market": {
+        "symbol": "1HZ50V",
+        "name": "Volatility 50 (1s) Index",
+        "short_name": "V50 (1s)",
+        "pair": null,
+        "category": "synthetic_indices",
+        "decimal_places": 3,
+        "contract_kinds": [
+          "binary",
+          "multiplier"
+        ]
+      },
+      "contract_family": "accumulator",
+      "label": "V50 (1s) Accumulator",
+      "direction": "sell",
+      "stake": 25,
+      "buy_price": 25,
+      "profit": 44.84,
+      "status": "won",
+      "entry_spot": 239.43768708113845,
+      "exit_spot": 239.14,
+      "source_signal_id": "sig_029",
+      "purchase_time": "2026-06-23T01:53:20.370Z",
+      "closed_at": "2026-07-12T00:04:20.370Z"
+    },
+    {
+      "id": "ctr_c0",
+      "deriv_contract_id": "C1240000",
+      "market": {
+        "symbol": "R_25",
+        "name": "Volatility 25 Index",
+        "short_name": "V25",
+        "pair": null,
+        "category": "synthetic_indices",
+        "decimal_places": 3,
+        "contract_kinds": [
+          "binary",
+          "multiplier"
+        ]
+      },
+      "contract_family": "accumulator",
+      "label": "V25 Accumulator",
+      "direction": "buy",
+      "stake": 100,
+      "buy_price": 100,
+      "profit": -78.18,
+      "status": "lost",
+      "entry_spot": 95.05630637731264,
+      "exit_spot": 95.21,
+      "source_signal_id": null,
+      "purchase_time": "2026-08-17T09:22:20.360Z",
+      "closed_at": "2026-07-11T17:02:20.360Z"
+    },
+    {
+      "id": "ctr_c81",
+      "deriv_contract_id": "C1240081",
+      "market": {
+        "symbol": "WTIUSD",
+        "name": "Crude Oil / USD",
+        "short_name": "WTI/USD",
+        "pair": "WTI/USD",
+        "category": "commodities",
+        "decimal_places": 2,
+        "contract_kinds": [
+          "multiplier",
+          "cfd_mt5"
+        ]
+      },
+      "contract_family": "multipliers",
+      "label": "WTI/USD Multiplier",
+      "direction": "sell",
+      "stake": 100,
+      "buy_price": 100,
+      "profit": -85.73,
+      "status": "lost",
+      "entry_spot": 78.2918393722733,
+      "exit_spot": 78.42,
+      "source_signal_id": "sig_022",
+      "purchase_time": "2026-08-31T05:05:20.370Z",
+      "closed_at": "2026-07-11T09:23:20.370Z"
+    },
+    {
+      "id": "ctr_c114",
+      "deriv_contract_id": "C1240114",
+      "market": {
+        "symbol": "CRASH300",
+        "name": "Crash 300 Index",
+        "short_name": "Crash 300",
+        "pair": null,
+        "category": "derived",
+        "decimal_places": 2,
+        "contract_kinds": [
+          "multiplier"
+        ]
+      },
+      "contract_family": "multipliers",
+      "label": "Crash 300 Multiplier",
+      "direction": "buy",
+      "stake": 50,
+      "buy_price": 50,
+      "profit": -26.43,
+      "status": "lost",
+      "entry_spot": 6116.942915819482,
+      "exit_spot": 6104.88,
+      "source_signal_id": "sig_002",
+      "purchase_time": "2026-08-09T00:11:20.370Z",
+      "closed_at": "2026-07-11T01:34:20.370Z"
+    },
+    {
+      "id": "ctr_c103",
+      "deriv_contract_id": "C1240103",
+      "market": {
+        "symbol": "frxAUDUSD",
+        "name": "AUD/USD",
+        "short_name": "AUD/USD",
+        "pair": "AUD/USD",
+        "category": "forex",
+        "decimal_places": 5,
+        "contract_kinds": [
+          "binary",
+          "multiplier",
+          "cfd_mt5"
+        ]
+      },
+      "contract_family": "digits",
+      "label": "AUD/USD Digits",
+      "direction": "sell",
+      "stake": 25,
+      "buy_price": 25,
+      "profit": -21.54,
+      "status": "lost",
+      "entry_spot": 0.6568446149205245,
+      "exit_spot": 0.65712,
+      "source_signal_id": "sig_028",
+      "purchase_time": "2026-07-20T10:44:20.370Z",
+      "closed_at": "2026-07-10T01:23:20.370Z"
+    },
+    {
+      "id": "ctr_c54",
+      "deriv_contract_id": "C1240054",
+      "market": {
+        "symbol": "BOOM300",
+        "name": "Boom 300 Index",
+        "short_name": "Boom 300",
+        "pair": null,
+        "category": "derived",
+        "decimal_places": 2,
+        "contract_kinds": [
+          "multiplier"
+        ]
+      },
+      "contract_family": "multipliers",
+      "label": "Boom 300 Multiplier",
+      "direction": "sell",
+      "stake": 200,
+      "buy_price": 200,
+      "profit": -193.83,
+      "status": "lost",
+      "entry_spot": 7429.690497646498,
+      "exit_spot": 7418.02,
+      "source_signal_id": null,
+      "purchase_time": "2026-07-02T12:40:20.370Z",
+      "closed_at": "2026-07-09T07:10:20.370Z"
+    },
+    {
+      "id": "ctr_c23",
+      "deriv_contract_id": "C1240023",
+      "market": {
+        "symbol": "OTC_NDX",
+        "name": "US Tech 100",
+        "short_name": "US 100",
+        "pair": null,
+        "category": "stock_indices",
+        "decimal_places": 2,
+        "contract_kinds": [
+          "multiplier",
+          "cfd_mt5"
+        ]
+      },
+      "contract_family": "multipliers",
+      "label": "US 100 Multiplier",
+      "direction": "buy",
+      "stake": 100,
+      "buy_price": 100,
+      "profit": -51.13,
+      "status": "lost",
+      "entry_spot": 18394.539094165022,
+      "exit_spot": 18420.6,
+      "source_signal_id": null,
+      "purchase_time": "2026-06-13T16:27:20.361Z",
+      "closed_at": "2026-07-09T07:08:20.361Z"
+    },
+    {
+      "id": "ctr_c49",
+      "deriv_contract_id": "C1240049",
+      "market": {
+        "symbol": "R_10",
+        "name": "Volatility 10 Index",
+        "short_name": "V10",
+        "pair": null,
+        "category": "synthetic_indices",
+        "decimal_places": 3,
+        "contract_kinds": [
+          "binary",
+          "multiplier"
+        ]
+      },
+      "contract_family": "rise_fall",
+      "label": "V10 Rise/Fall",
+      "direction": "sell",
+      "stake": 5,
+      "buy_price": 5,
+      "profit": -2.34,
+      "status": "lost",
+      "entry_spot": 6833.289099322623,
+      "exit_spot": 6842.3,
+      "source_signal_id": "sig_028",
+      "purchase_time": "2026-07-19T12:59:20.370Z",
+      "closed_at": "2026-07-09T05:53:20.370Z"
+    },
+    {
+      "id": "ctr_c13",
+      "deriv_contract_id": "C1240013",
+      "market": {
+        "symbol": "CRASH1000",
+        "name": "Crash 1000 Index",
+        "short_name": "Crash 1000",
+        "pair": null,
+        "category": "derived",
+        "decimal_places": 2,
+        "contract_kinds": [
+          "binary",
+          "multiplier"
+        ]
+      },
+      "contract_family": "multipliers",
+      "label": "Crash 1000 Multiplier",
+      "direction": "sell",
+      "stake": 10,
+      "buy_price": 10,
+      "profit": 8.64,
+      "status": "won",
+      "entry_spot": 4814.26083338062,
+      "exit_spot": 4820.15,
+      "source_signal_id": null,
+      "purchase_time": "2026-08-22T07:30:20.361Z",
+      "closed_at": "2026-07-08T00:27:20.361Z"
+    },
+    {
+      "id": "ctr_c69",
+      "deriv_contract_id": "C1240069",
+      "market": {
+        "symbol": "BOOM1000",
+        "name": "Boom 1000 Index",
+        "short_name": "Boom 1000",
+        "pair": null,
+        "category": "derived",
+        "decimal_places": 2,
+        "contract_kinds": [
+          "binary",
+          "multiplier"
+        ]
+      },
+      "contract_family": "multipliers",
+      "label": "Boom 1000 Multiplier",
+      "direction": "buy",
+      "stake": 200,
+      "buy_price": 200,
+      "profit": 155.59,
+      "status": "won",
+      "entry_spot": 8337.629374501863,
+      "exit_spot": 8342.11,
+      "source_signal_id": null,
+      "purchase_time": "2026-06-29T21:30:20.370Z",
+      "closed_at": "2026-07-06T02:58:20.370Z"
+    },
+    {
+      "id": "ctr_c106",
+      "deriv_contract_id": "C1240106",
+      "market": {
+        "symbol": "CRASH500",
+        "name": "Crash 500 Index",
+        "short_name": "Crash 500",
+        "pair": null,
+        "category": "derived",
+        "decimal_places": 2,
+        "contract_kinds": [
+          "binary",
+          "multiplier"
+        ]
+      },
+      "contract_family": "accumulator",
+      "label": "Crash 500 Accumulator",
+      "direction": "sell",
+      "stake": 100,
+      "buy_price": 100,
+      "profit": -76.81,
+      "status": "lost",
+      "entry_spot": 4296.254457901523,
+      "exit_spot": 4291.63,
+      "source_signal_id": "sig_035",
+      "purchase_time": "2026-08-28T23:19:20.370Z",
+      "closed_at": "2026-07-05T13:21:20.370Z"
+    },
+    {
+      "id": "ctr_c27",
+      "deriv_contract_id": "C1240027",
+      "market": {
+        "symbol": "frxXAUUSD",
+        "name": "Gold / USD",
+        "short_name": "XAU/USD",
+        "pair": "XAU/USD",
+        "category": "commodities",
+        "decimal_places": 2,
+        "contract_kinds": [
+          "binary",
+          "multiplier",
+          "cfd_mt5"
+        ]
+      },
+      "contract_family": "multipliers",
+      "label": "XAU/USD Multiplier",
+      "direction": "sell",
+      "stake": 25,
+      "buy_price": 25,
+      "profit": 17.6,
+      "status": "won",
+      "entry_spot": 2341.7677112640204,
+      "exit_spot": 2342.18,
+      "source_signal_id": null,
+      "purchase_time": "2026-06-27T05:49:20.361Z",
+      "closed_at": "2026-07-05T05:14:20.361Z"
+    },
+    {
+      "id": "ctr_c43",
+      "deriv_contract_id": "C1240043",
+      "market": {
+        "symbol": "JD100",
+        "name": "Jump 100 Index",
+        "short_name": "Jump 100",
+        "pair": null,
+        "category": "derived",
+        "decimal_places": 2,
+        "contract_kinds": [
+          "binary",
+          "multiplier"
+        ]
+      },
+      "contract_family": "accumulator",
+      "label": "Jump 100 Accumulator",
+      "direction": "sell",
+      "stake": 5,
+      "buy_price": 5,
+      "profit": 4.09,
+      "status": "won",
+      "entry_spot": 6205.713939717104,
+      "exit_spot": 6210.9,
+      "source_signal_id": null,
+      "purchase_time": "2026-07-15T12:10:20.370Z",
+      "closed_at": "2026-07-03T19:35:20.370Z"
+    },
+    {
+      "id": "ctr_c110",
+      "deriv_contract_id": "C1240110",
+      "market": {
+        "symbol": "BOOM500",
+        "name": "Boom 500 Index",
+        "short_name": "Boom 500",
+        "pair": null,
+        "category": "derived",
+        "decimal_places": 2,
+        "contract_kinds": [
+          "binary",
+          "multiplier"
+        ]
+      },
+      "contract_family": "rise_fall",
+      "label": "Boom 500 Rise/Fall",
+      "direction": "sell",
+      "stake": 50,
+      "buy_price": 50,
+      "profit": 58.61,
+      "status": "won",
+      "entry_spot": 9106.094535497312,
+      "exit_spot": 9120.44,
+      "source_signal_id": "sig_014",
+      "purchase_time": "2026-08-08T11:44:20.370Z",
+      "closed_at": "2026-07-02T06:40:20.370Z"
+    },
+    {
+      "id": "ctr_c2",
+      "deriv_contract_id": "C1240002",
+      "market": {
+        "symbol": "frxXAGUSD",
+        "name": "Silver / USD",
+        "short_name": "XAG/USD",
+        "pair": "XAG/USD",
+        "category": "commodities",
+        "decimal_places": 3,
+        "contract_kinds": [
+          "binary",
+          "multiplier",
+          "cfd_mt5"
+        ]
+      },
+      "contract_family": "accumulator",
+      "label": "XAG/USD Accumulator",
+      "direction": "sell",
+      "stake": 200,
+      "buy_price": 200,
+      "profit": -181.14,
+      "status": "lost",
+      "entry_spot": 27.831437508130694,
+      "exit_spot": 27.842,
+      "source_signal_id": null,
+      "purchase_time": "2026-07-01T01:38:20.360Z",
+      "closed_at": "2026-07-01T11:28:20.360Z"
+    },
+    {
+      "id": "ctr_c40",
+      "deriv_contract_id": "C1240040",
+      "market": {
+        "symbol": "OTC_DJI",
+        "name": "Wall Street 30",
+        "short_name": "US 30",
+        "pair": null,
+        "category": "stock_indices",
+        "decimal_places": 2,
+        "contract_kinds": [
+          "multiplier",
+          "cfd_mt5"
+        ]
+      },
+      "contract_family": "multipliers",
+      "label": "US 30 Multiplier",
+      "direction": "buy",
+      "stake": 10,
+      "buy_price": 10,
+      "profit": -5.43,
+      "status": "lost",
+      "entry_spot": 39222.11387406563,
+      "exit_spot": 39284.1,
+      "source_signal_id": null,
+      "purchase_time": "2026-06-25T02:22:20.370Z",
+      "closed_at": "2026-07-01T06:51:20.370Z"
+    },
+    {
+      "id": "ctr_c89",
+      "deriv_contract_id": "C1240089",
+      "market": {
+        "symbol": "CRASH300",
+        "name": "Crash 300 Index",
+        "short_name": "Crash 300",
+        "pair": null,
+        "category": "derived",
+        "decimal_places": 2,
+        "contract_kinds": [
+          "multiplier"
+        ]
+      },
+      "contract_family": "multipliers",
+      "label": "Crash 300 Multiplier",
+      "direction": "sell",
+      "stake": 10,
+      "buy_price": 10,
+      "profit": 10.23,
+      "status": "won",
+      "entry_spot": 6106.516408440054,
+      "exit_spot": 6104.88,
+      "source_signal_id": null,
+      "purchase_time": "2026-07-19T08:32:20.370Z",
+      "closed_at": "2026-07-01T05:32:20.370Z"
+    },
+    {
+      "id": "ctr_c96",
+      "deriv_contract_id": "C1240096",
+      "market": {
+        "symbol": "frxUSDCAD",
+        "name": "USD/CAD",
+        "short_name": "USD/CAD",
+        "pair": "USD/CAD",
+        "category": "forex",
+        "decimal_places": 5,
+        "contract_kinds": [
+          "binary",
+          "multiplier",
+          "cfd_mt5"
+        ]
+      },
+      "contract_family": "multipliers",
+      "label": "USD/CAD Multiplier",
+      "direction": "sell",
+      "stake": 150,
+      "buy_price": 150,
+      "profit": 158.49,
+      "status": "won",
+      "entry_spot": 1.3611446843780894,
+      "exit_spot": 1.35894,
+      "source_signal_id": null,
+      "purchase_time": "2026-08-22T17:27:20.370Z",
+      "closed_at": "2026-06-30T02:30:20.370Z"
+    },
+    {
+      "id": "ctr_c102",
+      "deriv_contract_id": "C1240102",
+      "market": {
+        "symbol": "frxUSDJPY",
+        "name": "USD/JPY",
+        "short_name": "USD/JPY",
+        "pair": "USD/JPY",
+        "category": "forex",
+        "decimal_places": 3,
+        "contract_kinds": [
+          "binary",
+          "multiplier",
+          "cfd_mt5"
+        ]
+      },
+      "contract_family": "multipliers",
+      "label": "USD/JPY Multiplier",
+      "direction": "sell",
+      "stake": 200,
+      "buy_price": 200,
+      "profit": -177.87,
+      "status": "lost",
+      "entry_spot": 151.23535161612176,
+      "exit_spot": 151.284,
+      "source_signal_id": null,
+      "purchase_time": "2026-08-19T10:39:20.370Z",
+      "closed_at": "2026-06-29T16:41:20.370Z"
+    },
+    {
+      "id": "ctr_c113",
+      "deriv_contract_id": "C1240113",
+      "market": {
+        "symbol": "BOOM300",
+        "name": "Boom 300 Index",
+        "short_name": "Boom 300",
+        "pair": null,
+        "category": "derived",
+        "decimal_places": 2,
+        "contract_kinds": [
+          "multiplier"
+        ]
+      },
+      "contract_family": "multipliers",
+      "label": "Boom 300 Multiplier",
+      "direction": "sell",
+      "stake": 25,
+      "buy_price": 25,
+      "profit": 16.89,
+      "status": "won",
+      "entry_spot": 7420.0868317526965,
+      "exit_spot": 7418.02,
+      "source_signal_id": null,
+      "purchase_time": "2026-06-24T20:54:20.370Z",
+      "closed_at": "2026-06-29T03:04:20.370Z"
+    },
+    {
+      "id": "ctr_c120",
+      "deriv_contract_id": "C1240120",
+      "market": {
+        "symbol": "frxUSDJPY",
+        "name": "USD/JPY",
+        "short_name": "USD/JPY",
+        "pair": "USD/JPY",
+        "category": "forex",
+        "decimal_places": 3,
+        "contract_kinds": [
+          "binary",
+          "multiplier",
+          "cfd_mt5"
+        ]
+      },
+      "contract_family": "accumulator",
+      "label": "USD/JPY Accumulator",
+      "direction": "sell",
+      "stake": 25,
+      "buy_price": 25,
+      "profit": -23.93,
+      "status": "lost",
+      "entry_spot": 151.20487684443248,
+      "exit_spot": 151.284,
+      "source_signal_id": "sig_027",
+      "purchase_time": "2026-08-11T21:19:20.370Z",
+      "closed_at": "2026-06-29T01:39:20.370Z"
+    },
+    {
+      "id": "ctr_c26",
+      "deriv_contract_id": "C1240026",
+      "market": {
+        "symbol": "CRASH300",
+        "name": "Crash 300 Index",
+        "short_name": "Crash 300",
+        "pair": null,
+        "category": "derived",
+        "decimal_places": 2,
+        "contract_kinds": [
+          "multiplier"
+        ]
+      },
+      "contract_family": "multipliers",
+      "label": "Crash 300 Multiplier",
+      "direction": "sell",
+      "stake": 200,
+      "buy_price": 200,
+      "profit": -88.8,
+      "status": "lost",
+      "entry_spot": 6097.948447571767,
+      "exit_spot": 6104.88,
+      "source_signal_id": null,
+      "purchase_time": "2026-08-14T07:22:20.361Z",
+      "closed_at": "2026-06-28T01:50:20.361Z"
+    },
+    {
+      "id": "ctr_c10",
+      "deriv_contract_id": "C1240010",
+      "market": {
+        "symbol": "RB100",
+        "name": "Range Break 100 Index",
+        "short_name": "RB 100",
+        "pair": null,
+        "category": "synthetic_indices",
+        "decimal_places": 3,
+        "contract_kinds": [
+          "binary"
+        ]
+      },
+      "contract_family": "multipliers",
+      "label": "RB 100 Multiplier",
+      "direction": "buy",
+      "stake": 10,
+      "buy_price": 10,
+      "profit": -6.82,
+      "status": "lost",
+      "entry_spot": 1283.856311980222,
+      "exit_spot": 1284.66,
+      "source_signal_id": null,
+      "purchase_time": "2026-07-17T12:44:20.361Z",
+      "closed_at": "2026-06-27T11:47:20.361Z"
+    },
+    {
+      "id": "ctr_c71",
+      "deriv_contract_id": "C1240071",
+      "market": {
+        "symbol": "1HZ75V",
+        "name": "Volatility 75 (1s) Index",
+        "short_name": "V75 (1s)",
+        "pair": null,
+        "category": "synthetic_indices",
+        "decimal_places": 2,
+        "contract_kinds": [
+          "binary",
+          "multiplier"
+        ]
+      },
+      "contract_family": "multipliers",
+      "label": "V75 (1s) Multiplier",
+      "direction": "buy",
+      "stake": 25,
+      "buy_price": 25,
+      "profit": -23.46,
+      "status": "lost",
+      "entry_spot": 542688.2382459104,
+      "exit_spot": 542893.42,
+      "source_signal_id": null,
+      "purchase_time": "2026-08-19T18:40:20.370Z",
+      "closed_at": "2026-06-25T01:39:20.370Z"
+    },
+    {
+      "id": "ctr_c112",
+      "deriv_contract_id": "C1240112",
+      "market": {
+        "symbol": "OTC_DJI",
+        "name": "Wall Street 30",
+        "short_name": "US 30",
+        "pair": null,
+        "category": "stock_indices",
+        "decimal_places": 2,
+        "contract_kinds": [
+          "multiplier",
+          "cfd_mt5"
+        ]
+      },
+      "contract_family": "multipliers",
+      "label": "US 30 Multiplier",
+      "direction": "buy",
+      "stake": 10,
+      "buy_price": 10,
+      "profit": 11.8,
+      "status": "won",
+      "entry_spot": 39277.16651231127,
+      "exit_spot": 39284.1,
+      "source_signal_id": "sig_009",
+      "purchase_time": "2026-08-16T18:04:20.370Z",
+      "closed_at": "2026-06-24T15:23:20.370Z"
+    },
+    {
+      "id": "ctr_c20",
+      "deriv_contract_id": "C1240020",
+      "market": {
+        "symbol": "R_10",
+        "name": "Volatility 10 Index",
+        "short_name": "V10",
+        "pair": null,
+        "category": "synthetic_indices",
+        "decimal_places": 3,
+        "contract_kinds": [
+          "binary",
+          "multiplier"
+        ]
+      },
+      "contract_family": "rise_fall",
+      "label": "V10 Rise/Fall",
+      "direction": "buy",
+      "stake": 25,
+      "buy_price": 25,
+      "profit": -16.36,
+      "status": "lost",
+      "entry_spot": 6839.219016856183,
+      "exit_spot": 6842.3,
+      "source_signal_id": null,
+      "purchase_time": "2026-06-24T19:45:20.361Z",
+      "closed_at": "2026-06-23T17:50:20.361Z"
+    },
+    {
+      "id": "ctr_c125",
+      "deriv_contract_id": "C1240125",
+      "market": {
+        "symbol": "OTC_NDX",
+        "name": "US Tech 100",
+        "short_name": "US 100",
+        "pair": null,
+        "category": "stock_indices",
+        "decimal_places": 2,
+        "contract_kinds": [
+          "multiplier",
+          "cfd_mt5"
+        ]
+      },
+      "contract_family": "multipliers",
+      "label": "US 100 Multiplier",
+      "direction": "sell",
+      "stake": 20,
+      "buy_price": 20,
+      "profit": 31.09,
+      "status": "won",
+      "entry_spot": 18385.43241460327,
+      "exit_spot": 18420.6,
+      "source_signal_id": null,
+      "purchase_time": "2026-06-17T13:49:20.370Z",
+      "closed_at": "2026-06-23T03:04:20.370Z"
+    },
+    {
+      "id": "ctr_c117",
+      "deriv_contract_id": "C1240117",
+      "market": {
+        "symbol": "crySOLUSD",
+        "name": "Solana / USD",
+        "short_name": "SOL/USD",
+        "pair": "SOL/USD",
+        "category": "crypto",
+        "decimal_places": 3,
+        "contract_kinds": [
+          "multiplier",
+          "cfd_mt5"
+        ]
+      },
+      "contract_family": "multipliers",
+      "label": "SOL/USD Multiplier",
+      "direction": "sell",
+      "stake": 25,
+      "buy_price": 25,
+      "profit": 43.73,
+      "status": "won",
+      "entry_spot": 172.7550150962309,
+      "exit_spot": 172.44,
+      "source_signal_id": null,
+      "purchase_time": "2026-08-01T07:07:20.370Z",
+      "closed_at": "2026-06-23T00:05:20.370Z"
+    },
+    {
+      "id": "ctr_c24",
+      "deriv_contract_id": "C1240024",
+      "market": {
+        "symbol": "cryETHUSD",
+        "name": "Ethereum / USD",
+        "short_name": "ETH/USD",
+        "pair": "ETH/USD",
+        "category": "crypto",
+        "decimal_places": 2,
+        "contract_kinds": [
+          "multiplier",
+          "cfd_mt5"
+        ]
+      },
+      "contract_family": "multipliers",
+      "label": "ETH/USD Multiplier",
+      "direction": "buy",
+      "stake": 50,
+      "buy_price": 50,
+      "profit": 67.07,
+      "status": "won",
+      "entry_spot": 3535.1237473587275,
+      "exit_spot": 3542.18,
+      "source_signal_id": null,
+      "purchase_time": "2026-08-12T05:43:20.361Z",
+      "closed_at": "2026-06-22T01:57:20.361Z"
+    },
+    {
+      "id": "ctr_c14",
+      "deriv_contract_id": "C1240014",
+      "market": {
+        "symbol": "frxNZDUSD",
+        "name": "NZD/USD",
+        "short_name": "NZD/USD",
+        "pair": "NZD/USD",
+        "category": "forex",
+        "decimal_places": 5,
+        "contract_kinds": [
+          "binary",
+          "cfd_mt5"
+        ]
+      },
+      "contract_family": "multipliers",
+      "label": "NZD/USD Multiplier",
+      "direction": "sell",
+      "stake": 5,
+      "buy_price": 5,
+      "profit": 6.6,
+      "status": "won",
+      "entry_spot": 0.6024181044847247,
+      "exit_spot": 0.60184,
+      "source_signal_id": "sig_027",
+      "purchase_time": "2026-08-04T18:52:20.361Z",
+      "closed_at": "2026-06-19T07:44:20.361Z"
+    },
+    {
+      "id": "ctr_c35",
+      "deriv_contract_id": "C1240035",
+      "market": {
+        "symbol": "cryLTCUSD",
+        "name": "Litecoin / USD",
+        "short_name": "LTC/USD",
+        "pair": "LTC/USD",
+        "category": "crypto",
+        "decimal_places": 2,
+        "contract_kinds": [
+          "multiplier",
+          "cfd_mt5"
+        ]
+      },
+      "contract_family": "multipliers",
+      "label": "LTC/USD Multiplier",
+      "direction": "sell",
+      "stake": 25,
+      "buy_price": 25,
+      "profit": 37.47,
+      "status": "won",
+      "entry_spot": 84.56326597852676,
+      "exit_spot": 84.62,
+      "source_signal_id": null,
+      "purchase_time": "2026-08-10T19:15:20.370Z",
+      "closed_at": "2026-06-18T20:11:20.370Z"
+    },
+    {
+      "id": "ctr_c11",
+      "deriv_contract_id": "C1240011",
+      "market": {
+        "symbol": "WTIUSD",
+        "name": "Crude Oil / USD",
+        "short_name": "WTI/USD",
+        "pair": "WTI/USD",
+        "category": "commodities",
+        "decimal_places": 2,
+        "contract_kinds": [
+          "multiplier",
+          "cfd_mt5"
+        ]
+      },
+      "contract_family": "multipliers",
+      "label": "WTI/USD Multiplier",
+      "direction": "buy",
+      "stake": 10,
+      "buy_price": 10,
+      "profit": 13.41,
+      "status": "won",
+      "entry_spot": 78.46907023562181,
+      "exit_spot": 78.42,
+      "source_signal_id": null,
+      "purchase_time": "2026-08-27T22:31:20.361Z",
+      "closed_at": "2026-06-17T04:39:20.361Z"
+    },
+    {
+      "id": "ctr_c52",
+      "deriv_contract_id": "C1240052",
+      "market": {
+        "symbol": "OTC_DJI",
+        "name": "Wall Street 30",
+        "short_name": "US 30",
+        "pair": null,
+        "category": "stock_indices",
+        "decimal_places": 2,
+        "contract_kinds": [
+          "multiplier",
+          "cfd_mt5"
+        ]
+      },
+      "contract_family": "multipliers",
+      "label": "US 30 Multiplier",
+      "direction": "buy",
+      "stake": 150,
+      "buy_price": 150,
+      "profit": -115.2,
+      "status": "lost",
+      "entry_spot": 39234.2949680606,
+      "exit_spot": 39284.1,
+      "source_signal_id": null,
+      "purchase_time": "2026-07-13T23:42:20.370Z",
+      "closed_at": "2026-06-16T19:52:20.370Z"
+    },
+    {
+      "id": "ctr_c127",
+      "deriv_contract_id": "C1240127",
+      "market": {
+        "symbol": "RB100",
+        "name": "Range Break 100 Index",
+        "short_name": "RB 100",
+        "pair": null,
+        "category": "synthetic_indices",
+        "decimal_places": 3,
+        "contract_kinds": [
+          "binary"
+        ]
+      },
+      "contract_family": "multipliers",
+      "label": "RB 100 Multiplier",
+      "direction": "sell",
+      "stake": 20,
+      "buy_price": 20,
+      "profit": -10.38,
+      "status": "lost",
+      "entry_spot": 1282.1412644897516,
+      "exit_spot": 1284.66,
+      "source_signal_id": "sig_012",
+      "purchase_time": "2026-08-02T00:22:20.370Z",
+      "closed_at": "2026-06-13T16:38:20.370Z"
+    },
+    {
+      "id": "ctr_c104",
+      "deriv_contract_id": "C1240104",
+      "market": {
+        "symbol": "R_75",
+        "name": "Volatility 75 Index",
+        "short_name": "V75",
+        "pair": null,
+        "category": "synthetic_indices",
+        "decimal_places": 2,
+        "contract_kinds": [
+          "binary",
+          "multiplier"
+        ]
+      },
+      "contract_family": "multipliers",
+      "label": "V75 Multiplier",
+      "direction": "buy",
+      "stake": 25,
+      "buy_price": 25,
+      "profit": -11.03,
+      "status": "lost",
+      "entry_spot": 543526.4028813414,
+      "exit_spot": 542871.21,
+      "source_signal_id": null,
+      "purchase_time": "2026-08-07T04:54:20.370Z",
+      "closed_at": "2026-06-13T09:53:20.370Z"
+    },
+    {
+      "id": "ctr_c108",
+      "deriv_contract_id": "C1240108",
+      "market": {
+        "symbol": "CRASH1000",
+        "name": "Crash 1000 Index",
+        "short_name": "Crash 1000",
+        "pair": null,
+        "category": "derived",
+        "decimal_places": 2,
+        "contract_kinds": [
+          "binary",
+          "multiplier"
+        ]
+      },
+      "contract_family": "rise_fall",
+      "label": "Crash 1000 Rise/Fall",
+      "direction": "buy",
+      "stake": 50,
+      "buy_price": 50,
+      "profit": 32.79,
+      "status": "won",
+      "entry_spot": 4817.9919848237105,
+      "exit_spot": 4820.15,
+      "source_signal_id": "sig_031",
+      "purchase_time": "2026-08-17T23:11:20.370Z",
+      "closed_at": "2026-06-10T15:01:20.370Z"
+    },
+    {
+      "id": "ctr_c77",
+      "deriv_contract_id": "C1240077",
+      "market": {
+        "symbol": "JD25",
+        "name": "Jump 25 Index",
+        "short_name": "Jump 25",
+        "pair": null,
+        "category": "derived",
+        "decimal_places": 2,
+        "contract_kinds": [
+          "multiplier"
+        ]
+      },
+      "contract_family": "multipliers",
+      "label": "Jump 25 Multiplier",
+      "direction": "buy",
+      "stake": 200,
+      "buy_price": 200,
+      "profit": -134.87,
+      "status": "lost",
+      "entry_spot": 3184.6413145238866,
+      "exit_spot": 3182.77,
+      "source_signal_id": null,
+      "purchase_time": "2026-09-01T06:25:20.370Z",
+      "closed_at": "2026-06-10T12:13:20.370Z"
+    },
+    {
+      "id": "ctr_c39",
+      "deriv_contract_id": "C1240039",
+      "market": {
+        "symbol": "frxXAGUSD",
+        "name": "Silver / USD",
+        "short_name": "XAG/USD",
+        "pair": "XAG/USD",
+        "category": "commodities",
+        "decimal_places": 3,
+        "contract_kinds": [
+          "binary",
+          "multiplier",
+          "cfd_mt5"
+        ]
+      },
+      "contract_family": "rise_fall",
+      "label": "XAG/USD Rise/Fall",
+      "direction": "sell",
+      "stake": 25,
+      "buy_price": 25,
+      "profit": 34.25,
+      "status": "won",
+      "entry_spot": 27.791440946342583,
+      "exit_spot": 27.842,
+      "source_signal_id": "sig_026",
+      "purchase_time": "2026-07-03T20:19:20.370Z",
+      "closed_at": "2026-06-09T21:27:20.370Z"
+    },
+    {
+      "id": "ctr_c115",
+      "deriv_contract_id": "C1240115",
+      "market": {
+        "symbol": "OTC_SPC",
+        "name": "US 500",
+        "short_name": "US 500",
+        "pair": null,
+        "category": "stock_indices",
+        "decimal_places": 2,
+        "contract_kinds": [
+          "multiplier",
+          "cfd_mt5"
+        ]
+      },
+      "contract_family": "multipliers",
+      "label": "US 500 Multiplier",
+      "direction": "buy",
+      "stake": 150,
+      "buy_price": 150,
+      "profit": -74.14,
+      "status": "lost",
+      "entry_spot": 5280.757887700797,
+      "exit_spot": 5284.42,
+      "source_signal_id": null,
+      "purchase_time": "2026-08-27T12:23:20.370Z",
+      "closed_at": "2026-06-06T11:45:20.370Z"
+    },
+    {
+      "id": "ctr_c92",
+      "deriv_contract_id": "C1240092",
+      "market": {
+        "symbol": "R_50",
+        "name": "Volatility 50 Index",
+        "short_name": "V50",
+        "pair": null,
+        "category": "synthetic_indices",
+        "decimal_places": 3,
+        "contract_kinds": [
+          "binary",
+          "multiplier"
+        ]
+      },
+      "contract_family": "rise_fall",
+      "label": "V50 Rise/Fall",
+      "direction": "buy",
+      "stake": 150,
+      "buy_price": 150,
+      "profit": -97.45,
+      "status": "lost",
+      "entry_spot": 238.78163182984102,
+      "exit_spot": 238.76,
+      "source_signal_id": "sig_014",
+      "purchase_time": "2026-08-12T15:45:20.370Z",
+      "closed_at": "2026-06-04T14:22:20.370Z"
+    },
+    {
+      "id": "ctr_c67",
+      "deriv_contract_id": "C1240067",
+      "market": {
+        "symbol": "RB100",
+        "name": "Range Break 100 Index",
+        "short_name": "RB 100",
+        "pair": null,
+        "category": "synthetic_indices",
+        "decimal_places": 3,
+        "contract_kinds": [
+          "binary"
+        ]
+      },
+      "contract_family": "rise_fall",
+      "label": "RB 100 Rise/Fall",
+      "direction": "buy",
+      "stake": 20,
+      "buy_price": 20,
+      "profit": -11.26,
+      "status": "lost",
+      "entry_spot": 1286.6312037261562,
+      "exit_spot": 1284.66,
+      "source_signal_id": "sig_010",
+      "purchase_time": "2026-08-18T16:47:20.370Z",
+      "closed_at": "2026-06-04T07:25:20.370Z"
+    },
+    {
+      "id": "ctr_c64",
+      "deriv_contract_id": "C1240064",
+      "market": {
+        "symbol": "frxXAGUSD",
+        "name": "Silver / USD",
+        "short_name": "XAG/USD",
+        "pair": "XAG/USD",
+        "category": "commodities",
+        "decimal_places": 3,
+        "contract_kinds": [
+          "binary",
+          "multiplier",
+          "cfd_mt5"
+        ]
+      },
+      "contract_family": "rise_fall",
+      "label": "XAG/USD Rise/Fall",
+      "direction": "sell",
+      "stake": 150,
+      "buy_price": 150,
+      "profit": -94.3,
+      "status": "lost",
+      "entry_spot": 27.787815429252962,
+      "exit_spot": 27.842,
+      "source_signal_id": null,
+      "purchase_time": "2026-06-09T17:24:20.370Z",
+      "closed_at": "2026-06-04T05:39:20.370Z"
+    }
+  ],
+  "meta": {
+    "page": 1,
+    "per_page": 20,
+    "total": 128
+  }
+}

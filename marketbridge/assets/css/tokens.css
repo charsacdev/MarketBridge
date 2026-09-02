@@ -1,0 +1,190 @@
+/* ==========================================================================
+   MARKETBRIDGE — DESIGN TOKENS
+   The ONLY file in this project permitted to contain a colour value.
+   Read directly off the supplied mockups (_docs/).
+   Dark is the default ground. Light is a full, designed alternative.
+   ========================================================================== */
+
+:root {
+  /* ---- GROUND ---------------------------------------------------------- */
+  --mb-bg:            #0A0E12;   /* page background                          */
+  --mb-bg-2:          #0D1218;   /* alternating band                         */
+  --mb-surface:       #12181F;   /* cards                                    */
+  --mb-surface-2:     #1A222B;   /* raised: inputs, chips, hover             */
+  --mb-surface-3:     #222C36;   /* pressed / active chip                    */
+  --mb-border:        #212A33;   /* hairline                                 */
+  --mb-border-2:      #2C3742;   /* stronger divider, input outline          */
+  --mb-overlay:       rgba(5, 8, 11, .72);
+
+  /* ---- TYPE ------------------------------------------------------------ */
+  --mb-text:          #FFFFFF;
+  --mb-text-2:        #8A97A6;   /* secondary / labels                       */
+  --mb-text-3:        #5C6875;   /* tertiary / timestamps / placeholders     */
+  --mb-text-inv:      #05080B;   /* text on a green button                   */
+
+  /* ---- BRAND — the single action colour -------------------------------- */
+  --mb-green:         #00C853;
+  --mb-green-2:       #16D65F;   /* hover                                    */
+  --mb-green-press:   #00A344;
+  --mb-green-soft:    rgba(0, 200, 83, .12);
+  --mb-green-line:    rgba(0, 200, 83, .32);
+  --mb-green-glow:    rgba(0, 200, 83, .22);
+
+  /* ---- SEMANTIC — never decorative ------------------------------------- */
+  --mb-sell:          #EF4444;   /* sell / loss / stop / destructive / error */
+  --mb-sell-soft:     rgba(239, 68, 68, .12);
+  --mb-sell-line:     rgba(239, 68, 68, .30);
+  --mb-warn:          #F59E0B;
+  --mb-warn-soft:     rgba(245, 158, 11, .12);
+  --mb-info:          #3B82F6;   /* View Market / analysis signals           */
+  --mb-info-soft:     rgba(59, 130, 246, .12);
+  --mb-info-line:     rgba(59, 130, 246, .30);
+  --mb-boost:         #FACC15;   /* boosted placement badge only             */
+  --mb-boost-soft:    rgba(250, 204, 21, .12);
+  --mb-pro:           #A855F7;   /* Pro badge                                */
+  --mb-pro-soft:      rgba(168, 85, 247, .14);
+
+  /* ---- CONTRACT FAMILY ACCENTS ----------------------------------------- */
+  /* Icons and module headers ONLY. Never buttons, never body text.         */
+  --mb-fam-accu:      #22C55E;
+  --mb-fam-rise:      #3B82F6;
+  --mb-fam-digit:     #A855F7;
+  --mb-fam-multi:     #F97316;
+  --mb-fam-bot:       #EF4444;
+
+  /* ---- TYPOGRAPHY ------------------------------------------------------ */
+  --mb-font: "Plus Jakarta Sans", -apple-system, BlinkMacSystemFont, "Segoe UI",
+             Roboto, "Helvetica Neue", Arial, sans-serif;
+  --mb-font-num: "Plus Jakarta Sans", ui-monospace, "SF Mono", Menlo, monospace;
+
+  --mb-t-display: 30px;  --mb-lh-display: 1.18;
+  --mb-t-h1:      23px;  --mb-lh-h1:      1.22;
+  --mb-t-h2:      18px;  --mb-lh-h2:      1.30;
+  --mb-t-h3:      16px;  --mb-lh-h3:      1.35;
+  --mb-t-body:    15px;  --mb-lh-body:    1.52;
+  --mb-t-sm:      13px;  --mb-lh-sm:      1.45;
+  --mb-t-xs:      11px;  --mb-lh-xs:      1.40;
+
+  --mb-w-regular: 400;
+  --mb-w-medium:  500;
+  --mb-w-semi:    600;
+  --mb-w-bold:    700;
+  --mb-w-black:   800;
+
+  /* ---- SPACE — everything is a multiple of 4px ------------------------- */
+  --mb-s1: 4px;   --mb-s2: 8px;   --mb-s3: 12px;  --mb-s4: 16px;
+  --mb-s5: 20px;  --mb-s6: 24px;  --mb-s7: 28px;  --mb-s8: 32px;
+  --mb-s10: 40px; --mb-s12: 48px; --mb-s16: 64px; --mb-s20: 80px;
+
+  /* ---- RADIUS ---------------------------------------------------------- */
+  --mb-r-xs:   6px;
+  --mb-r-sm:   8px;
+  --mb-r-md:  12px;
+  --mb-r-lg:  16px;
+  --mb-r-xl:  20px;
+  --mb-r-pill: 999px;
+
+  /* ---- ELEVATION ------------------------------------------------------- */
+  --mb-shadow-sm: 0 1px 2px rgba(0,0,0,.4);
+  --mb-shadow-md: 0 4px 16px -6px rgba(0,0,0,.6);
+  --mb-shadow-lg: 0 12px 40px -12px rgba(0,0,0,.75);
+
+  /* ---- LAYOUT ---------------------------------------------------------- */
+  --mb-nav-h:      64px;                 /* bottom tab bar                   */
+  --mb-topbar-h:   60px;
+  --mb-safe-b:     env(safe-area-inset-bottom, 0px);
+  --mb-safe-t:     env(safe-area-inset-top, 0px);
+  --mb-app-max:    480px;                /* mobile-first canvas width        */
+  --mb-site-max:  1200px;                /* marketing site                   */
+  --mb-admin-rail: 236px;
+
+  /* ---- MOTION ---------------------------------------------------------- */
+  --mb-ease:      cubic-bezier(.22, .61, .36, 1);
+  --mb-fast:      120ms;
+  --mb-base:      200ms;
+  --mb-slow:      360ms;
+
+  color-scheme: dark;
+}
+
+/* ==========================================================================
+   LIGHT THEME
+   Applied via [data-theme="light"] on <html>, set by core/theme.js.
+   Only tokens are redefined — never component rules.
+   ========================================================================== */
+[data-theme="light"] {
+  --mb-bg:            #FFFFFF;
+  --mb-bg-2:          #F7F8FA;
+  --mb-surface:       #FFFFFF;
+  --mb-surface-2:     #F1F3F6;
+  --mb-surface-3:     #E5E9EE;
+  --mb-border:        #E5E8EC;
+  --mb-border-2:      #D4DAE1;
+  --mb-overlay:       rgba(11, 15, 20, .48);
+
+  --mb-text:          #0B0F14;
+  --mb-text-2:        #5B6674;
+  --mb-text-3:        #8B95A2;
+  --mb-text-inv:      #FFFFFF;
+
+  --mb-green:         #16A34A;
+  --mb-green-2:       #15B450;
+  --mb-green-press:   #12833B;
+  --mb-green-soft:    rgba(22, 163, 74, .10);
+  --mb-green-line:    rgba(22, 163, 74, .26);
+  --mb-green-glow:    rgba(22, 163, 74, .16);
+
+  --mb-sell:          #DC2626;
+  --mb-sell-soft:     rgba(220, 38, 38, .09);
+  --mb-sell-line:     rgba(220, 38, 38, .24);
+  --mb-warn:          #B45309;
+  --mb-warn-soft:     rgba(180, 83, 9, .10);
+  --mb-info:          #2563EB;
+  --mb-info-soft:     rgba(37, 99, 235, .09);
+  --mb-info-line:     rgba(37, 99, 235, .24);
+  --mb-boost:         #B7860B;
+  --mb-boost-soft:    rgba(183, 134, 11, .12);
+  --mb-pro:           #7C3AED;
+  --mb-pro-soft:      rgba(124, 58, 237, .10);
+
+  --mb-fam-accu:      #16A34A;
+  --mb-fam-rise:      #2563EB;
+  --mb-fam-digit:     #7C3AED;
+  --mb-fam-multi:     #EA580C;
+  --mb-fam-bot:       #DC2626;
+
+  --mb-shadow-sm: 0 1px 2px rgba(11,15,20,.06);
+  --mb-shadow-md: 0 4px 16px -6px rgba(11,15,20,.14);
+  --mb-shadow-lg: 0 12px 40px -12px rgba(11,15,20,.20);
+
+  color-scheme: light;
+}
+
+/* Follow the OS only while the user has expressed no preference.
+   theme.js stamps data-theme once they choose, and that always wins. */
+@media (prefers-color-scheme: light) {
+  :root:not([data-theme="dark"]):not([data-theme="light"]) {
+    --mb-bg:#FFFFFF; --mb-bg-2:#F7F8FA; --mb-surface:#FFFFFF;
+    --mb-surface-2:#F1F3F6; --mb-surface-3:#E5E9EE;
+    --mb-border:#E5E8EC; --mb-border-2:#D4DAE1;
+    --mb-overlay:rgba(11,15,20,.48);
+    --mb-text:#0B0F14; --mb-text-2:#5B6674; --mb-text-3:#8B95A2;
+    --mb-text-inv:#FFFFFF;
+    --mb-green:#16A34A; --mb-green-2:#15B450; --mb-green-press:#12833B;
+    --mb-green-soft:rgba(22,163,74,.10); --mb-green-line:rgba(22,163,74,.26);
+    --mb-green-glow:rgba(22,163,74,.16);
+    --mb-sell:#DC2626; --mb-sell-soft:rgba(220,38,38,.09);
+    --mb-sell-line:rgba(220,38,38,.24);
+    --mb-warn:#B45309; --mb-warn-soft:rgba(180,83,9,.10);
+    --mb-info:#2563EB; --mb-info-soft:rgba(37,99,235,.09);
+    --mb-info-line:rgba(37,99,235,.24);
+    --mb-boost:#B7860B; --mb-boost-soft:rgba(183,134,11,.12);
+    --mb-pro:#7C3AED;   --mb-pro-soft:rgba(124,58,237,.10);
+    --mb-fam-accu:#16A34A; --mb-fam-rise:#2563EB; --mb-fam-digit:#7C3AED;
+    --mb-fam-multi:#EA580C; --mb-fam-bot:#DC2626;
+    --mb-shadow-sm:0 1px 2px rgba(11,15,20,.06);
+    --mb-shadow-md:0 4px 16px -6px rgba(11,15,20,.14);
+    --mb-shadow-lg:0 12px 40px -12px rgba(11,15,20,.20);
+    color-scheme: light;
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "data": {
+    "id": "usr_me",
+    "username": "johndavid",
+    "display_name": "John David",
+    "email": "john@example.com",
+    "avatar_url": null,
+    "is_verified": false,
+    "role": "user",
+    "bio": "Synthetic indices trader. V75 and Boom mostly.",
+    "followers": 156,
+    "following": 89,
+    "signals_count": 12,
+    "win_rate": 66.7,
+    "settings": {
+      "theme": "system",
+      "currency_display": "USD"
+    },
+    "deriv": {
+      "connected": true,
+      "deriv_id": "CR1234567",
+      "name": "John David",
+      "account_type": "real",
+      "currency": "USD",
+      "status": "active",
+      "balance": 2450.8,
+      "available": 2310.5,
+      "on_hold": 140.3,
+      "balance_updated_at": "2026-09-01T23:36:35.413Z",
+      "scopes_granted": [
+        "read",
+        "trade",
+        "payments"
+      ]
+    },
+    "performance": {
+      "today_pl": 72.4,
+      "today_pct": 2.88,
+      "total_pl": 1245.8,
+      "win_rate": 71.88,
+      "wins": 92,
+      "losses": 36,
+      "total_signals": 128,
+      "avg_risk_reward": 2.35,
+      "best_signal": 320.5
+    },
+    "unread_notifications": 3
+  }
+}

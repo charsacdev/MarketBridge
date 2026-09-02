@@ -1,0 +1,130 @@
+{
+  "data": {
+    "period": {
+      "start": "2026-08-01",
+      "end": "2026-08-31"
+    },
+    "totals": {
+      "users": 24532,
+      "users_delta": 12.6,
+      "active_users": 8842,
+      "active_delta": 8.3,
+      "signals": 3245,
+      "signals_delta": 15.7,
+      "trades": 18921,
+      "trades_delta": 11.2,
+      "revenue": 24680,
+      "revenue_delta": 13.4
+    },
+    "growth": [
+      8200,
+      9400,
+      11200,
+      12800,
+      14100,
+      16300,
+      18200,
+      19800,
+      21400,
+      22600,
+      23800,
+      24532
+    ],
+    "growth_labels": [
+      "Sep",
+      "Oct",
+      "Nov",
+      "Dec",
+      "Jan",
+      "Feb",
+      "Mar",
+      "Apr",
+      "May",
+      "Jun",
+      "Jul",
+      "Aug"
+    ],
+    "top_signals": [
+      {
+        "rank": 1,
+        "user": {
+          "id": "usr_fx",
+          "username": "FX_ProTrader",
+          "display_name": "FX_ProTrader",
+          "avatar_url": null,
+          "is_verified": true,
+          "is_pro": true,
+          "win_rate": 78,
+          "signals_count": 156,
+          "followers": 1245
+        },
+        "win_rate": 78
+      },
+      {
+        "rank": 2,
+        "user": {
+          "id": "usr_queen",
+          "username": "QueenTrader",
+          "display_name": "QueenTrader",
+          "avatar_url": null,
+          "is_verified": true,
+          "is_pro": true,
+          "win_rate": 74,
+          "signals_count": 132,
+          "followers": 962
+        },
+        "win_rate": 74
+      },
+      {
+        "rank": 3,
+        "user": {
+          "id": "usr_alpha",
+          "username": "AlphaKing",
+          "display_name": "AlphaKing",
+          "avatar_url": null,
+          "is_verified": true,
+          "is_pro": false,
+          "win_rate": 71,
+          "signals_count": 201,
+          "followers": 842
+        },
+        "win_rate": 71
+      },
+      {
+        "rank": 4,
+        "user": {
+          "id": "usr_james",
+          "username": "JamesFX",
+          "display_name": "JamesFX",
+          "avatar_url": null,
+          "is_verified": false,
+          "is_pro": true,
+          "win_rate": 69,
+          "signals_count": 98,
+          "followers": 611
+        },
+        "win_rate": 69
+      },
+      {
+        "rank": 5,
+        "user": {
+          "id": "usr_mm",
+          "username": "Mr_Market",
+          "display_name": "Mr_Market",
+          "avatar_url": null,
+          "is_verified": false,
+          "is_pro": false,
+          "win_rate": 66,
+          "signals_count": 89,
+          "followers": 402
+        },
+        "win_rate": 66
+      }
+    ],
+    "pending": {
+      "reports": 7,
+      "signals_review": 3,
+      "resources_draft": 2
+    }
+  }
+}

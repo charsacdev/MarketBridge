@@ -1,0 +1,773 @@
+{
+  "data": [
+    {
+      "id": "res_1",
+      "slug": "trading-basics-for-beginners",
+      "title": "Trading Basics for Beginners",
+      "type": "course",
+      "level": "beginner",
+      "status": "published",
+      "summary": "A practical walkthrough of trading basics for beginners.",
+      "access": "free",
+      "price": 0,
+      "currency": "USD",
+      "lessons": 12,
+      "duration_seconds": 5040,
+      "enrolled": 5168,
+      "completions": 537,
+      "rating": 4.5,
+      "revenue": 0,
+      "author": "ibrahim_mensah",
+      "market": null,
+      "has_certificate": true,
+      "published_at": "2025-10-29T15:15:07.093Z",
+      "updated_at": "2026-06-18T13:49:07.093Z",
+      "curriculum": [
+        {
+          "order": 1,
+          "title": "Lesson 1 — Risk",
+          "duration_seconds": 397,
+          "is_preview": true,
+          "status": "published"
+        },
+        {
+          "order": 2,
+          "title": "Lesson 2 — Execution",
+          "duration_seconds": 721,
+          "is_preview": false,
+          "status": "published"
+        },
+        {
+          "order": 3,
+          "title": "Lesson 3 — Review",
+          "duration_seconds": 533,
+          "is_preview": false,
+          "status": "published"
+        },
+        {
+          "order": 4,
+          "title": "Lesson 4 — Review",
+          "duration_seconds": 666,
+          "is_preview": false,
+          "status": "published"
+        },
+        {
+          "order": 5,
+          "title": "Lesson 5 — Review",
+          "duration_seconds": 506,
+          "is_preview": false,
+          "status": "published"
+        },
+        {
+          "order": 6,
+          "title": "Lesson 6 — Case study",
+          "duration_seconds": 579,
+          "is_preview": false,
+          "status": "published"
+        },
+        {
+          "order": 7,
+          "title": "Lesson 7 — Entries",
+          "duration_seconds": 395,
+          "is_preview": false,
+          "status": "published"
+        },
+        {
+          "order": 8,
+          "title": "Lesson 8 — Psychology",
+          "duration_seconds": 860,
+          "is_preview": false,
+          "status": "published"
+        },
+        {
+          "order": 9,
+          "title": "Lesson 9 — Foundations",
+          "duration_seconds": 641,
+          "is_preview": false,
+          "status": "published"
+        },
+        {
+          "order": 10,
+          "title": "Lesson 10 — Foundations",
+          "duration_seconds": 265,
+          "is_preview": false,
+          "status": "published"
+        },
+        {
+          "order": 11,
+          "title": "Lesson 11 — Case study",
+          "duration_seconds": 722,
+          "is_preview": false,
+          "status": "draft"
+        },
+        {
+          "order": 12,
+          "title": "Lesson 12 — Foundations",
+          "duration_seconds": 248,
+          "is_preview": false,
+          "status": "draft"
+        }
+      ]
+    },
+    {
+      "id": "res_2",
+      "slug": "smart-money-concepts",
+      "title": "Smart Money Concepts",
+      "type": "course",
+      "level": "intermediate",
+      "status": "published",
+      "summary": "A practical walkthrough of smart money concepts.",
+      "access": "paid",
+      "price": 49,
+      "currency": "USD",
+      "lessons": 14,
+      "duration_seconds": 5880,
+      "enrolled": 1732,
+      "completions": 1173,
+      "rating": 4,
+      "revenue": 37191,
+      "author": "chioma_nwosu",
+      "market": "cryBCHUSD",
+      "has_certificate": true,
+      "published_at": "2025-04-24T11:44:07.094Z",
+      "updated_at": "2026-08-14T23:24:07.094Z",
+      "curriculum": [
+        {
+          "order": 1,
+          "title": "Lesson 1 — Review",
+          "duration_seconds": 532,
+          "is_preview": true,
+          "status": "published"
+        },
+        {
+          "order": 2,
+          "title": "Lesson 2 — Case study",
+          "duration_seconds": 501,
+          "is_preview": false,
+          "status": "published"
+        },
+        {
+          "order": 3,
+          "title": "Lesson 3 — Market structure",
+          "duration_seconds": 613,
+          "is_preview": false,
+          "status": "published"
+        },
+        {
+          "order": 4,
+          "title": "Lesson 4 — Foundations",
+          "duration_seconds": 780,
+          "is_preview": false,
+          "status": "published"
+        },
+        {
+          "order": 5,
+          "title": "Lesson 5 — Review",
+          "duration_seconds": 453,
+          "is_preview": false,
+          "status": "published"
+        },
+        {
+          "order": 6,
+          "title": "Lesson 6 — Foundations",
+          "duration_seconds": 269,
+          "is_preview": false,
+          "status": "published"
+        },
+        {
+          "order": 7,
+          "title": "Lesson 7 — Foundations",
+          "duration_seconds": 641,
+          "is_preview": false,
+          "status": "published"
+        },
+        {
+          "order": 8,
+          "title": "Lesson 8 — Foundations",
+          "duration_seconds": 754,
+          "is_preview": false,
+          "status": "published"
+        },
+        {
+          "order": 9,
+          "title": "Lesson 9 — Case study",
+          "duration_seconds": 766,
+          "is_preview": false,
+          "status": "published"
+        },
+        {
+          "order": 10,
+          "title": "Lesson 10 — Case study",
+          "duration_seconds": 802,
+          "is_preview": false,
+          "status": "published"
+        },
+        {
+          "order": 11,
+          "title": "Lesson 11 — Case study",
+          "duration_seconds": 285,
+          "is_preview": false,
+          "status": "published"
+        },
+        {
+          "order": 12,
+          "title": "Lesson 12 — Psychology",
+          "duration_seconds": 620,
+          "is_preview": false,
+          "status": "published"
+        },
+        {
+          "order": 13,
+          "title": "Lesson 13 — Foundations",
+          "duration_seconds": 633,
+          "is_preview": false,
+          "status": "draft"
+        },
+        {
+          "order": 14,
+          "title": "Lesson 14 — Risk",
+          "duration_seconds": 424,
+          "is_preview": false,
+          "status": "draft"
+        }
+      ]
+    },
+    {
+      "id": "res_3",
+      "slug": "ict-trading-strategy",
+      "title": "ICT Trading Strategy",
+      "type": "course",
+      "level": "advanced",
+      "status": "published",
+      "summary": "A practical walkthrough of ict trading strategy.",
+      "access": "paid",
+      "price": 79,
+      "currency": "USD",
+      "lessons": 9,
+      "duration_seconds": 3780,
+      "enrolled": 6277,
+      "completions": 283,
+      "rating": 3.9,
+      "revenue": 32074,
+      "author": "joy_chukwu",
+      "market": "frxXPDUSD",
+      "has_certificate": true,
+      "published_at": "2025-12-24T06:41:07.094Z",
+      "updated_at": "2026-06-20T14:48:07.094Z",
+      "curriculum": [
+        {
+          "order": 1,
+          "title": "Lesson 1 — Case study",
+          "duration_seconds": 874,
+          "is_preview": true,
+          "status": "published"
+        },
+        {
+          "order": 2,
+          "title": "Lesson 2 — Psychology",
+          "duration_seconds": 784,
+          "is_preview": false,
+          "status": "published"
+        },
+        {
+          "order": 3,
+          "title": "Lesson 3 — Psychology",
+          "duration_seconds": 876,
+          "is_preview": false,
+          "status": "published"
+        },
+        {
+          "order": 4,
+          "title": "Lesson 4 — Foundations",
+          "duration_seconds": 502,
+          "is_preview": false,
+          "status": "published"
+        },
+        {
+          "order": 5,
+          "title": "Lesson 5 — Psychology",
+          "duration_seconds": 458,
+          "is_preview": false,
+          "status": "published"
+        },
+        {
+          "order": 6,
+          "title": "Lesson 6 — Review",
+          "duration_seconds": 294,
+          "is_preview": false,
+          "status": "published"
+        },
+        {
+          "order": 7,
+          "title": "Lesson 7 — Risk",
+          "duration_seconds": 609,
+          "is_preview": false,
+          "status": "published"
+        },
+        {
+          "order": 8,
+          "title": "Lesson 8 — Risk",
+          "duration_seconds": 676,
+          "is_preview": false,
+          "status": "draft"
+        },
+        {
+          "order": 9,
+          "title": "Lesson 9 — Psychology",
+          "duration_seconds": 546,
+          "is_preview": false,
+          "status": "draft"
+        }
+      ]
+    },
+    {
+      "id": "res_4",
+      "slug": "boom-crash-deep-dive",
+      "title": "Boom & Crash Deep Dive",
+      "type": "course",
+      "level": "advanced",
+      "status": "draft",
+      "summary": "A practical walkthrough of boom & crash deep dive.",
+      "access": "paid",
+      "price": 59,
+      "currency": "USD",
+      "lessons": 8,
+      "duration_seconds": 3360,
+      "enrolled": 6297,
+      "completions": 1574,
+      "rating": 4.2,
+      "revenue": 52746,
+      "author": "ada_bello",
+      "market": null,
+      "has_certificate": true,
+      "published_at": "2026-08-15T19:46:07.094Z",
+      "updated_at": "2026-07-25T19:25:07.094Z",
+      "curriculum": [
+        {
+          "order": 1,
+          "title": "Lesson 1 — Psychology",
+          "duration_seconds": 432,
+          "is_preview": true,
+          "status": "published"
+        },
+        {
+          "order": 2,
+          "title": "Lesson 2 — Market structure",
+          "duration_seconds": 394,
+          "is_preview": false,
+          "status": "published"
+        },
+        {
+          "order": 3,
+          "title": "Lesson 3 — Market structure",
+          "duration_seconds": 824,
+          "is_preview": false,
+          "status": "published"
+        },
+        {
+          "order": 4,
+          "title": "Lesson 4 — Risk",
+          "duration_seconds": 468,
+          "is_preview": false,
+          "status": "published"
+        },
+        {
+          "order": 5,
+          "title": "Lesson 5 — Review",
+          "duration_seconds": 855,
+          "is_preview": false,
+          "status": "published"
+        },
+        {
+          "order": 6,
+          "title": "Lesson 6 — Entries",
+          "duration_seconds": 336,
+          "is_preview": false,
+          "status": "published"
+        },
+        {
+          "order": 7,
+          "title": "Lesson 7 — Market structure",
+          "duration_seconds": 740,
+          "is_preview": false,
+          "status": "draft"
+        },
+        {
+          "order": 8,
+          "title": "Lesson 8 — Market structure",
+          "duration_seconds": 773,
+          "is_preview": false,
+          "status": "draft"
+        }
+      ]
+    },
+    {
+      "id": "res_5",
+      "slug": "risk-management-guide",
+      "title": "Risk Management Guide",
+      "type": "pdf",
+      "level": "beginner",
+      "status": "published",
+      "summary": "A practical walkthrough of risk management guide.",
+      "access": "free",
+      "price": 0,
+      "currency": "USD",
+      "lessons": 0,
+      "duration_seconds": 0,
+      "enrolled": 3471,
+      "completions": 689,
+      "rating": 4.3,
+      "revenue": 0,
+      "author": "blessing_danjuma",
+      "market": null,
+      "has_certificate": false,
+      "published_at": "2026-03-16T15:27:07.094Z",
+      "updated_at": "2026-09-01T08:20:07.094Z",
+      "curriculum": []
+    },
+    {
+      "id": "res_6",
+      "slug": "candlestick-patterns-cheat-sheet",
+      "title": "Candlestick Patterns Cheat Sheet",
+      "type": "pdf",
+      "level": "beginner",
+      "status": "published",
+      "summary": "A practical walkthrough of candlestick patterns cheat sheet.",
+      "access": "free",
+      "price": 0,
+      "currency": "USD",
+      "lessons": 0,
+      "duration_seconds": 0,
+      "enrolled": 3907,
+      "completions": 63,
+      "rating": 3.7,
+      "revenue": 0,
+      "author": "grace_eze",
+      "market": null,
+      "has_certificate": false,
+      "published_at": "2026-08-15T21:50:07.094Z",
+      "updated_at": "2026-07-15T21:34:07.094Z",
+      "curriculum": []
+    },
+    {
+      "id": "res_7",
+      "slug": "market-structure-explained",
+      "title": "Market Structure Explained",
+      "type": "pdf",
+      "level": "intermediate",
+      "status": "published",
+      "summary": "A practical walkthrough of market structure explained.",
+      "access": "paid",
+      "price": 19,
+      "currency": "USD",
+      "lessons": 0,
+      "duration_seconds": 0,
+      "enrolled": 1459,
+      "completions": 1997,
+      "rating": 4.3,
+      "revenue": 15428,
+      "author": "joy_chukwu",
+      "market": null,
+      "has_certificate": false,
+      "published_at": "2026-07-24T00:44:07.094Z",
+      "updated_at": "2026-08-12T03:48:07.094Z",
+      "curriculum": []
+    },
+    {
+      "id": "res_8",
+      "slug": "v75-trading-strategy",
+      "title": "V75 Trading Strategy",
+      "type": "video",
+      "level": "intermediate",
+      "status": "published",
+      "summary": "A practical walkthrough of v75 trading strategy.",
+      "access": "free",
+      "price": 0,
+      "currency": "USD",
+      "lessons": 0,
+      "duration_seconds": 2145,
+      "enrolled": 657,
+      "completions": 367,
+      "rating": 4.2,
+      "revenue": 0,
+      "author": "zainab_lawal",
+      "market": "cryADAUSD",
+      "has_certificate": false,
+      "published_at": "2025-09-23T10:26:07.094Z",
+      "updated_at": "2026-07-10T12:26:07.094Z",
+      "curriculum": []
+    },
+    {
+      "id": "res_9",
+      "slug": "how-to-use-indicators-effectively",
+      "title": "How to Use Indicators Effectively",
+      "type": "video",
+      "level": "beginner",
+      "status": "published",
+      "summary": "A practical walkthrough of how to use indicators effectively.",
+      "access": "free",
+      "price": 0,
+      "currency": "USD",
+      "lessons": 0,
+      "duration_seconds": 2071,
+      "enrolled": 5025,
+      "completions": 1376,
+      "rating": 4.7,
+      "revenue": 0,
+      "author": "aisha_ibrahim",
+      "market": "cryLTCUSD",
+      "has_certificate": false,
+      "published_at": "2025-04-20T08:32:07.094Z",
+      "updated_at": "2026-08-17T18:31:07.094Z",
+      "curriculum": []
+    },
+    {
+      "id": "res_10",
+      "slug": "trading-psychology-masterclass",
+      "title": "Trading Psychology Masterclass",
+      "type": "webinar",
+      "level": "beginner",
+      "status": "scheduled",
+      "summary": "A practical walkthrough of trading psychology masterclass.",
+      "access": "free",
+      "price": 0,
+      "currency": "USD",
+      "lessons": 0,
+      "duration_seconds": 3600,
+      "enrolled": 4628,
+      "completions": 444,
+      "rating": 4.8,
+      "revenue": 0,
+      "author": "samuel_mohammed",
+      "market": null,
+      "has_certificate": false,
+      "published_at": "2025-07-25T05:25:07.094Z",
+      "updated_at": "2026-08-27T08:48:07.094Z",
+      "curriculum": []
+    },
+    {
+      "id": "res_11",
+      "slug": "live-market-analysis",
+      "title": "Live Market Analysis",
+      "type": "webinar",
+      "level": "intermediate",
+      "status": "scheduled",
+      "summary": "A practical walkthrough of live market analysis.",
+      "access": "free",
+      "price": 0,
+      "currency": "USD",
+      "lessons": 0,
+      "duration_seconds": 3600,
+      "enrolled": 2324,
+      "completions": 78,
+      "rating": 4.9,
+      "revenue": 0,
+      "author": "daniel_achebe",
+      "market": "frxXPTUSD",
+      "has_certificate": false,
+      "published_at": "2026-07-09T21:28:07.094Z",
+      "updated_at": "2026-06-11T15:45:07.094Z",
+      "curriculum": []
+    },
+    {
+      "id": "res_12",
+      "slug": "1-on-1-mentorship-synthetics",
+      "title": "1-on-1 Mentorship — Synthetics",
+      "type": "mentorship",
+      "level": "advanced",
+      "status": "published",
+      "summary": "A practical walkthrough of 1-on-1 mentorship — synthetics.",
+      "access": "paid",
+      "price": 199,
+      "currency": "USD",
+      "lessons": 0,
+      "duration_seconds": 0,
+      "enrolled": 452,
+      "completions": 346,
+      "rating": 3.8,
+      "revenue": 119002,
+      "author": "fatima_ekene",
+      "market": null,
+      "has_certificate": false,
+      "published_at": "2025-07-10T13:53:07.094Z",
+      "updated_at": "2026-08-01T00:16:07.094Z",
+      "curriculum": []
+    },
+    {
+      "id": "res_13",
+      "slug": "forex-fundamentals",
+      "title": "Forex Fundamentals",
+      "type": "course",
+      "level": "beginner",
+      "status": "published",
+      "summary": "A practical walkthrough of forex fundamentals.",
+      "access": "paid",
+      "price": 29,
+      "currency": "USD",
+      "lessons": 10,
+      "duration_seconds": 4200,
+      "enrolled": 6185,
+      "completions": 2164,
+      "rating": 4.7,
+      "revenue": 25839,
+      "author": "fatima_ekene",
+      "market": "1HZ50V",
+      "has_certificate": true,
+      "published_at": "2025-10-07T11:30:07.094Z",
+      "updated_at": "2026-06-15T20:21:07.094Z",
+      "curriculum": [
+        {
+          "order": 1,
+          "title": "Lesson 1 — Risk",
+          "duration_seconds": 594,
+          "is_preview": true,
+          "status": "published"
+        },
+        {
+          "order": 2,
+          "title": "Lesson 2 — Case study",
+          "duration_seconds": 483,
+          "is_preview": false,
+          "status": "published"
+        },
+        {
+          "order": 3,
+          "title": "Lesson 3 — Foundations",
+          "duration_seconds": 773,
+          "is_preview": false,
+          "status": "published"
+        },
+        {
+          "order": 4,
+          "title": "Lesson 4 — Foundations",
+          "duration_seconds": 373,
+          "is_preview": false,
+          "status": "published"
+        },
+        {
+          "order": 5,
+          "title": "Lesson 5 — Market structure",
+          "duration_seconds": 707,
+          "is_preview": false,
+          "status": "published"
+        },
+        {
+          "order": 6,
+          "title": "Lesson 6 — Review",
+          "duration_seconds": 538,
+          "is_preview": false,
+          "status": "published"
+        },
+        {
+          "order": 7,
+          "title": "Lesson 7 — Execution",
+          "duration_seconds": 479,
+          "is_preview": false,
+          "status": "published"
+        },
+        {
+          "order": 8,
+          "title": "Lesson 8 — Foundations",
+          "duration_seconds": 853,
+          "is_preview": false,
+          "status": "published"
+        },
+        {
+          "order": 9,
+          "title": "Lesson 9 — Market structure",
+          "duration_seconds": 307,
+          "is_preview": false,
+          "status": "draft"
+        },
+        {
+          "order": 10,
+          "title": "Lesson 10 — Risk",
+          "duration_seconds": 849,
+          "is_preview": false,
+          "status": "draft"
+        }
+      ]
+    },
+    {
+      "id": "res_14",
+      "slug": "crypto-multipliers-explained",
+      "title": "Crypto Multipliers Explained",
+      "type": "course",
+      "level": "intermediate",
+      "status": "draft",
+      "summary": "A practical walkthrough of crypto multipliers explained.",
+      "access": "paid",
+      "price": 39,
+      "currency": "USD",
+      "lessons": 7,
+      "duration_seconds": 2940,
+      "enrolled": 6186,
+      "completions": 1088,
+      "rating": 4.8,
+      "revenue": 15717,
+      "author": "david_balogun",
+      "market": null,
+      "has_certificate": true,
+      "published_at": "2026-02-27T13:11:07.094Z",
+      "updated_at": "2026-07-31T23:36:07.094Z",
+      "curriculum": [
+        {
+          "order": 1,
+          "title": "Lesson 1 — Psychology",
+          "duration_seconds": 843,
+          "is_preview": true,
+          "status": "published"
+        },
+        {
+          "order": 2,
+          "title": "Lesson 2 — Entries",
+          "duration_seconds": 788,
+          "is_preview": false,
+          "status": "published"
+        },
+        {
+          "order": 3,
+          "title": "Lesson 3 — Execution",
+          "duration_seconds": 325,
+          "is_preview": false,
+          "status": "published"
+        },
+        {
+          "order": 4,
+          "title": "Lesson 4 — Foundations",
+          "duration_seconds": 358,
+          "is_preview": false,
+          "status": "published"
+        },
+        {
+          "order": 5,
+          "title": "Lesson 5 — Execution",
+          "duration_seconds": 791,
+          "is_preview": false,
+          "status": "published"
+        },
+        {
+          "order": 6,
+          "title": "Lesson 6 — Entries",
+          "duration_seconds": 507,
+          "is_preview": false,
+          "status": "draft"
+        },
+        {
+          "order": 7,
+          "title": "Lesson 7 — Foundations",
+          "duration_seconds": 863,
+          "is_preview": false,
+          "status": "draft"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "total": 14,
+    "paid": 7,
+    "free": 7,
+    "revenue": 297997,
+    "enrolled": 53768
+  }
+}

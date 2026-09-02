@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Leaderboard — MarketBridge</title>
+<meta name="theme-color" content="#0A0E12">
+<link rel="manifest" href="../../manifest.webmanifest">
+<link rel="icon" href="../../assets/icons/favicon-32.png" sizes="32x32">
+<link rel="apple-touch-icon" href="../../assets/icons/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap">
+<link rel="stylesheet" href="../../assets/css/tokens.css">
+<link rel="stylesheet" href="../../assets/css/base.css">
+<link rel="stylesheet" href="../../assets/css/components.css">
+<link rel="stylesheet" href="../../assets/css/app.css">
+<script>(function(){try{var t=localStorage.getItem('mb.theme');if(t){document.documentElement.setAttribute('data-theme',t);}}catch(e){}})();</script>
+</head>
+<body data-shell="app" data-nav="home" data-root="../../" data-title="Leaderboard" data-sub="Minimum sample required to rank" data-back="index.html" data-unread="3">
+
+<div class="app">
+  <div data-render="topbar"></div>
+
+  <main class="page">
+
+    <div class="chips page-bleed" data-group id="lbBoard">
+      <button class="chip is-active" data-value="top_signal_providers">Top Providers</button>
+      <button class="chip" data-value="top_traders">Top Traders</button>
+      <button class="chip" data-value="most_followed">Most Followed</button>
+    </div>
+
+    <div class="segment" data-group id="lbWindow">
+      <button data-value="7d">7 Days</button>
+      <button class="is-active" data-value="30d">30 Days</button>
+      <button data-value="all">All Time</button>
+    </div>
+
+    <div class="alert alert-green">
+      <span data-icon="shield"></span>
+      <div class="t-xs">Providers below the minimum sample do not appear here. One
+      winning signal is 100% — and not a rank.</div>
+    </div>
+
+    <section class="list" id="lbList"></section>
+  </main>
+
+  <div data-render="tabbar"></div>
+</div>
+
+<script src="../../assets/js/core/icons.js"></script>
+<script src="../../assets/js/core/util.js"></script>
+<script src="../../assets/js/core/api.js"></script>
+<script src="../../assets/js/core/collection.js"></script>
+<script src="../../assets/js/core/charts.js"></script>
+<script src="../../assets/js/core/ws.js"></script>
+<script src="../../assets/js/components/cards.js"></script>
+<script src="../../assets/js/core/shell.js"></script>
+<script src="../../assets/js/core/pwa.js"></script>
+<script>
+
+MB.ready(function () {
+  MB.render({ into: '#lbList', from: 'leaderboard',
+    filter: function (r) { return r.min_sample_met; },
+    template: MB.card.leaderRow, skeleton: false,
+    emptyIcon: 'results', emptyTitle: 'Nobody ranked yet',
+    emptyText: 'Providers appear once they meet the minimum sample.' });
+});
+</script>
+</body>
+</html>

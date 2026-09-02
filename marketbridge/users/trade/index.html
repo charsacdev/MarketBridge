@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Trade — MarketBridge</title>
+<meta name="theme-color" content="#0A0E12">
+<link rel="manifest" href="../../manifest.webmanifest">
+<link rel="icon" href="../../assets/icons/favicon-32.png" sizes="32x32">
+<link rel="apple-touch-icon" href="../../assets/icons/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap">
+<link rel="stylesheet" href="../../assets/css/tokens.css">
+<link rel="stylesheet" href="../../assets/css/base.css">
+<link rel="stylesheet" href="../../assets/css/components.css">
+<link rel="stylesheet" href="../../assets/css/app.css">
+<script>(function(){try{var t=localStorage.getItem('mb.theme');if(t){document.documentElement.setAttribute('data-theme',t);}}catch(e){}})();</script>
+</head>
+<body data-shell="app" data-nav="trade" data-root="../../" data-title="Trade" data-sub="Trade synthetic markets with real execution" data-unread="3">
+
+<div class="app">
+  <div data-render="topbar"></div>
+
+  <main class="page">
+
+    <section class="balance">
+      <div class="between">
+        <div>
+          <div class="balance-label">Real Account</div>
+          <div class="balance-amount" id="tBal">$2,450.80</div>
+          <div class="t-xs c-2">Available <span class="num" id="tAvail">$2,310.50</span></div>
+        </div>
+        <div style="text-align:right">
+          <div class="label">Today's P/L</div>
+          <div class="t-h3 w-bold c-up num" id="tPL">+$72.40</div>
+          <div class="t-xs c-up num" id="tPLPct">+2.88%</div>
+        </div>
+      </div>
+    </section>
+
+    <div class="row g2">
+      <a class="btn btn-ghost grow" href="open-contracts.html">
+        <span data-icon="layers"></span> Open (3)</a>
+      <a class="btn btn-ghost grow" href="history.html">
+        <span data-icon="clock"></span> History</a>
+    </div>
+
+    <div class="chips page-bleed" data-group>
+      <button class="chip is-active" data-value="popular">Popular</button>
+      <button class="chip" data-value="synthetic">Synthetic Indices</button>
+      <button class="chip" data-value="derived">Derived</button>
+    </div>
+
+    <section class="page-section">
+      <div class="sec-head"><h2>Trade Markets</h2>
+        <a href="../markets/index.html">View all</a></div>
+      <div class="stack g3" id="tradeList"></div>
+    </section>
+
+    <div class="alert alert-info">
+      <span data-icon="info"></span>
+      <div class="t-xs">Only contracts Deriv can actually execute from MarketBridge
+      are shown here. Anything unsupported appears as analysis instead.</div>
+    </div>
+  </main>
+
+  <div data-render="tabbar"></div>
+</div>
+
+<script src="../../assets/js/core/icons.js"></script>
+<script src="../../assets/js/core/util.js"></script>
+<script src="../../assets/js/core/api.js"></script>
+<script src="../../assets/js/core/collection.js"></script>
+<script src="../../assets/js/core/charts.js"></script>
+<script src="../../assets/js/core/ws.js"></script>
+<script src="../../assets/js/components/cards.js"></script>
+<script src="../../assets/js/core/shell.js"></script>
+<script src="../../assets/js/core/pwa.js"></script>
+<script>
+
+MB.ready(function () {
+  MB.api.get('me').then(function (r) {
+    var d = r.data.deriv, p = r.data.performance;
+    document.getElementById('tBal').textContent = MB.fmt.money(d.balance);
+    document.getElementById('tAvail').textContent = MB.fmt.money(d.available);
+    document.getElementById('tPL').textContent = MB.fmt.signed(p.today_pl);
+    document.getElementById('tPLPct').textContent = MB.fmt.pct(p.today_pct);
+  });
+
+  var ICON = { accumulator:'accumulator', rise_fall:'risefall', digits:'digits',
+               multipliers:'multipliers', higher_lower:'trendup',
+               touch_no_touch:'activity', vanilla:'layers', turbos:'flame', bot:'bot' };
+  var CLS = { accumulator:'fam-accu', rise_fall:'fam-rise', digits:'fam-digit', multipliers:'fam-multi' };
+  var ROUTE = { accumulator:'accumulators.html', rise_fall:'rise-fall.html',
+                digits:'digits.html', multipliers:'multipliers.html' };
+
+  MB.render({
+    into: '#tradeList', from: 'capabilities', skeleton: false,
+    template: function (c) {
+      var native = c.execution_mode === 'native' && c.is_enabled && ROUTE[c.contract_family];
+      var tag = native ? '' :
+        '<span class="badge ' + (c.execution_mode === 'analysis_only' ? 'badge-sell' : 'badge-warn') + '">' +
+        (c.execution_mode === 'analysis_only' ? 'Analysis only' : 'Coming soon') + '</span>';
+      var inner =
+        '<span class="tl-icon fam-head ' + (CLS[c.contract_family] || '') + '">' +
+          MB.icon(ICON[c.contract_family] || 'trade', 24) + '</span>' +
+        '<span class="grow" style="min-width:0">' +
+          '<span class="row g2"><span class="tl-name">' + c.label + '</span>' + tag + '</span>' +
+          '<span class="tl-desc">' + c.description + '</span></span>' +
+        (native ? '<span class="btn btn-green-soft btn-sm none">Trade ' + MB.icon('chevright', 14) + '</span>'
+                : '<span class="none c-3">' + MB.icon('lock', 18) + '</span>');
+      return native
+        ? '<a class="trade-launch" href="' + ROUTE[c.contract_family] + '">' + inner + '</a>'
+        : '<div class="trade-launch" style="opacity:.55">' + inner + '</div>';
+    }
+  });
+});
+</script>
+</body>
+</html>

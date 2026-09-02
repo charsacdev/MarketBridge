@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Room — MarketBridge</title>
+<meta name="theme-color" content="#0A0E12">
+<link rel="manifest" href="../../manifest.webmanifest">
+<link rel="icon" href="../../assets/icons/favicon-32.png" sizes="32x32">
+<link rel="apple-touch-icon" href="../../assets/icons/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap">
+<link rel="stylesheet" href="../../assets/css/tokens.css">
+<link rel="stylesheet" href="../../assets/css/base.css">
+<link rel="stylesheet" href="../../assets/css/components.css">
+<link rel="stylesheet" href="../../assets/css/app.css">
+<script>(function(){try{var t=localStorage.getItem('mb.theme');if(t){document.documentElement.setAttribute('data-theme',t);}}catch(e){}})();</script>
+</head>
+<body data-shell="app" data-nav="community" data-root="../../" data-title="Room" data-back="index.html" data-unread="3">
+
+<div class="app">
+  <div data-render="topbar"></div>
+  <main class="page">
+
+    <!-- Room header -->
+    <section class="card" style="padding:0;overflow:hidden">
+      <div class="pad">
+        <div class="between">
+          <div class="row g3" style="min-width:0">
+            <span id="roomAvatar" class="none"></span>
+            <div style="min-width:0">
+              <div class="t-h3 w-bold truncate" id="rName">—</div>
+              <div class="t-xs c-3" id="rMeta">—</div>
+            </div>
+          </div>
+          <div class="row g2 none">
+            <button class="icon-btn" id="btnMembers" aria-label="Members">
+              <span data-icon="users"></span></button>
+            <button class="btn btn-green-soft btn-sm" id="btnJoin">Join</button>
+          </div>
+        </div>
+        <p class="t-sm c-2 mt3" id="rDesc"></p>
+        <div class="row g2 mt3" id="rLinks"></div>
+      </div>
+      <div class="chart-frame hide" id="rChartWrap" style="border-radius:0">
+        <div id="rChart" data-chart="candle" data-h="120"></div>
+      </div>
+    </section>
+
+    <div class="tabs" data-group id="rTabs">
+      <button class="tab is-active" data-value="chat">Chat</button>
+      <button class="tab" data-value="posts">Posts</button>
+      <button class="tab" data-value="signals">Signals</button>
+      <button class="tab" data-value="members">Members</button>
+    </div>
+
+    <!-- CHAT -->
+    <section id="paneChat">
+      <div class="chat" id="chatList"></div>
+
+      <div class="composer mt4" id="chatComposer">
+        <div class="composer-previews" id="chatPreviews"></div>
+        <div class="composer-row">
+          <button class="composer-btn" type="button" data-pick="chatFile" aria-label="Attach image">
+            <span data-icon="image"></span></button>
+          <button class="composer-btn" type="button" data-pick="chatFile" aria-label="Attach file">
+            <span data-icon="file"></span></button>
+          <textarea class="composer-input" id="chatInput" rows="1"
+                    placeholder="Message the room…" aria-label="Message"></textarea>
+          <button class="composer-btn is-send" id="chatSend" aria-label="Send">
+            <span data-icon="send"></span></button>
+        </div>
+        <div class="composer-hint">
+          Images and files up to 12&nbsp;MB &middot; drag, paste or browse &middot; 6 per message
+        </div>
+      </div>
+      <input type="file" id="chatFile" multiple hidden
+             accept="image/*,.pdf,.csv,.txt,.md,.xlsx,.xls,.docx,.doc,.zip">
+    </section>
+
+    <!-- POSTS -->
+    <section id="panePosts" class="stack g3 hide"></section>
+
+    <!-- SIGNALS -->
+    <section id="paneSignals" class="stack g3 hide"></section>
+
+    <!-- MEMBERS -->
+    <section id="paneMembers" class="hide">
+      <div class="alert alert-info" id="memberNote" style="margin-bottom:16px">
+        <span data-icon="info"></span>
+        <div class="t-xs" id="memberNoteText"></div>
+      </div>
+      <div class="input-icon" style="margin-bottom:12px">
+        <span data-icon="search"></span>
+        <input class="input" id="memberSearch" type="search" placeholder="Search members…">
+      </div>
+      <div class="list" id="memberList"></div>
+    </section>
+  </main>
+  <div data-render="tabbar"></div>
+</div>
+
+<script src="../../assets/js/core/icons.js"></script>
+<script src="../../assets/js/core/util.js"></script>
+<script src="../../assets/js/core/api.js"></script>
+<script src="../../assets/js/core/collection.js"></script>
+<script src="../../assets/js/core/uploads.js"></script>
+<script src="../../assets/js/core/charts.js"></script>
+<script src="../../assets/js/core/ws.js"></script>
+<script src="../../assets/js/components/cards.js"></script>
+<script src="../../assets/js/core/shell.js"></script>
+<script src="../../assets/js/core/pwa.js"></script>
+<script>
+
+MB.ready(function () {
+  var roomId = new URLSearchParams(location.search).get('room');
+  var symbol = new URLSearchParams(location.search).get('symbol');
+  var room = null;
+  var CHAT_KEY = '#chatComposer';
+
+  /* ---------------------------------------------------------------- room */
+  MB.api.list('rooms').then(function (rooms) {
+    room = rooms.filter(function (r) {
+      return roomId ? r.id === roomId : symbol ? r.slug === symbol : false;
+    })[0] || rooms[0];
+
+    var isTrader = room.kind === 'trader';
+    MB.$('.topbar-title').textContent = room.name;
+    document.getElementById('rName').textContent = room.name;
+    document.getElementById('rDesc').textContent = room.description;
+    document.getElementById('rMeta').textContent =
+      MB.fmt.compact(room.member_count) + ' members · ' + room.online_count + ' online' +
+      (room.market ? ' · ' + MB.catLabel(room.market.category) : ' · Trader room');
+
+    document.getElementById('roomAvatar').innerHTML = isTrader
+      ? MB.avatar(room.owner, 'avatar-lg')
+      : '<span class="rc-ic" style="width:48px;height:48px;font-size:12px">' +
+        MB.esc((room.market ? room.market.short_name : room.name).slice(0, 4)) + '</span>';
+
+    var join = document.getElementById('btnJoin');
+    if (room.is_owner) { join.textContent = 'Manage'; join.className = 'btn btn-ghost btn-sm'; }
+    else if (room.is_member) { join.textContent = 'Joined'; join.className = 'btn btn-ghost btn-sm'; }
+    join.addEventListener('click', function () {
+      if (room.is_owner) { showTab('members'); return; }
+      room.is_member = !room.is_member;
+      join.textContent = room.is_member ? 'Joined' : 'Join';
+      join.className = 'btn btn-sm ' + (room.is_member ? 'btn-ghost' : 'btn-green-soft');
+      MB.api.post('rooms/' + room.id + (room.is_member ? '/join' : '/leave'));
+      MB.toast(room.is_member ? 'Joined ' + room.name : 'Left ' + room.name);
+    });
+
+    if (room.market) {
+      document.getElementById('rChartWrap').classList.remove('hide');
+      document.getElementById('rChart').setAttribute('data-seed', room.market.symbol);
+      document.getElementById('rLinks').innerHTML =
+        '<a class="chip-market" href="../markets/detail.html?symbol=' + room.market.symbol + '">' +
+          MB.esc(room.market.name) + '</a>' +
+        '<a class="chip-tag" href="../signals/index.html">Signals</a>';
+      MB.mountCharts();
+    } else if (isTrader) {
+      document.getElementById('rLinks').innerHTML =
+        '<a class="chip-market" href="../signals/provider.html?u=' + room.owner.username + '">' +
+          MB.esc(room.owner.username) + "'s profile</a>";
+    }
+
+    renderChat();
+    renderMembers();
+    MB.mountIcons();
+
+    /* Posts and signals scoped to this room's market */
+    if (room.market) {
+      MB.render({ into: '#panePosts', from: 'posts', limit: 8,
+        filter: function (p) { return p.market && p.market.symbol === room.market.symbol; },
+        template: MB.card.post, emptyIcon:'community', emptyTitle:'No posts yet',
+        emptyText:'Start the conversation about this market.' });
+      MB.render({ into: '#paneSignals', from: 'signals', limit: 8,
+        filter: function (s) { return s.market.symbol === room.market.symbol; },
+        template: MB.card.sig, emptyIcon:'signals', emptyTitle:'No signals yet',
+        emptyText:'Nobody has posted for this market yet.' });
+    } else {
+      MB.render({ into: '#panePosts', from: 'posts', limit: 6,
+        filter: function (p) { return p.author.username === room.owner.username; },
+        template: MB.card.post, emptyIcon:'community', emptyTitle:'No posts yet', emptyText:'' });
+      MB.render({ into: '#paneSignals', from: 'signals', limit: 6,
+        filter: function (s) { return s.author.username === room.owner.username; },
+        template: MB.card.sig, emptyIcon:'signals', emptyTitle:'No signals yet', emptyText:'' });
+    }
+  });
+
+  /* ---------------------------------------------------------------- chat */
+  var ME = { id:'usr_me', username:'johndavid', display_name:'John David', is_pro:false };
+  var messages = [];
+
+  function seedChat() {
+    var who = [
+      { username:'FX_ProTrader', is_pro:true }, { username:'QueenTrader', is_pro:true },
+      { username:'AlphaKing', is_pro:false }, { username:'JamesFX', is_pro:true }
+    ];
+    var lines = [
+      'Market looks bullish on the 1H. Watching for the retest.',
+      'Anyone else seeing that liquidity pocket below?',
+      'Took partials here, stop at break even now.',
+      'Careful around the session open, spread widens.',
+      'Chart attached — this is the level I am watching.',
+      'Agreed. Structure is clean.',
+      'Let us see how London opens.'
+    ];
+    messages = lines.map(function (t, i) {
+      return {
+        id: 'm' + i, author: who[i % who.length], body: t,
+        attachments: i === 4 ? [{ type:'file', name:'v75-4h-structure.pdf', size:'482 KB' }] : [],
+        created_at: new Date(Date.now() - (lines.length - i) * 7 * 60000).toISOString(),
+        is_own: false
+      };
+    });
+  }
+
+  function renderChat() {
+    if (!messages.length) { seedChat(); }
+    var host = document.getElementById('chatList');
+    host.innerHTML = messages.map(MB.card.message).join('');
+    MB.mountIcons(host);
+  }
+
+  MB.uploads.attach({ drop: CHAT_KEY, input: '#chatFile', previews: '#chatPreviews', accept: 'any' });
+
+  var input = document.getElementById('chatInput');
+  input.addEventListener('input', function () {
+    this.style.height = 'auto';
+    this.style.height = Math.min(140, this.scrollHeight) + 'px';
+  });
+  input.addEventListener('keydown', function (e) {
+    if (e.key === 'Enter' && !e.shiftKey) { e.preventDefault(); send(); }
+  });
+  document.getElementById('chatSend').addEventListener('click', send);
+
+  function send() {
+    var text = input.value.trim();
+    var files = MB.uploads.list(CHAT_KEY);
+    if (!text && !files.length) { return; }
+
+    messages.push({
+      id: 'm' + Date.now(), author: ME, body: text,
+      attachments: files, created_at: new Date().toISOString(), is_own: true
+    });
+    input.value = '';
+    input.style.height = 'auto';
+    MB.uploads.clear(CHAT_KEY);
+    renderChat();
+    document.getElementById('chatList').lastElementChild.scrollIntoView({ behavior:'smooth', block:'nearest' });
+
+    /* Stage 2: multipart POST to /rooms/{id}/messages, storage keys returned */
+    MB.api.post('rooms/messages', { room: room && room.id, body: text, attachments: files.length });
+  }
+
+  /* ------------------------------------------------------------- members */
+  var memberQuery = '';
+
+  function renderMembers() {
+    var host = document.getElementById('memberList');
+    var note = document.getElementById('memberNoteText');
+
+    if (!room.members) {
+      note.textContent = 'Market rooms are open to everyone — there is no member list to manage.';
+      host.innerHTML = '<div class="empty" style="padding:40px 20px">' + MB.icon('users', 40) +
+        '<h3>Open room</h3><p>Anyone on MarketBridge can read and post here.</p></div>';
+      MB.mountIcons(host);
+      return;
+    }
+
+    note.textContent = room.can_manage_members
+      ? 'You own this room. You can remove any member except yourself.'
+      : 'Only the room owner can manage members.';
+
+    var rows = room.members.filter(function (m) {
+      return !memberQuery || m.user.username.toLowerCase().indexOf(memberQuery) > -1;
+    });
+
+    host.innerHTML = rows.length
+      ? rows.map(function (m) { return MB.card.member(m, room.can_manage_members); }).join('')
+      : '<div class="empty" style="padding:40px 20px">' + MB.icon('search', 40) +
+        '<h3>No members match</h3><p>Try another name.</p></div>';
+    MB.mountIcons(host);
+
+    MB.$$('[data-remove]', host).forEach(function (b) {
+      b.addEventListener('click', function () {
+        var name = b.getAttribute('data-remove');
+        if (!confirm('Remove ' + name + ' from ' + room.name + '?')) { return; }
+        room.members = room.members.filter(function (m) { return m.user.username !== name; });
+        room.member_count = Math.max(0, room.member_count - 1);
+        document.getElementById('rMeta').textContent =
+          MB.fmt.compact(room.member_count) + ' members · ' + room.online_count + ' online · Trader room';
+        renderMembers();
+        MB.api.del('rooms/' + room.id + '/members/' + name);
+        MB.toast(name + ' removed from the room');
+      });
+    });
+  }
+
+  document.getElementById('memberSearch').addEventListener('input', function () {
+    memberQuery = this.value.trim().toLowerCase();
+    renderMembers();
+  });
+  document.getElementById('btnMembers').addEventListener('click', function () { showTab('members'); });
+
+  /* ---------------------------------------------------------------- tabs */
+  function showTab(v) {
+    ['chat','posts','signals','members'].forEach(function (k) {
+      document.getElementById('pane' + k.charAt(0).toUpperCase() + k.slice(1))
+        .classList.toggle('hide', k !== v);
+    });
+    MB.$$('#rTabs .tab').forEach(function (t) {
+      t.classList.toggle('is-active', t.getAttribute('data-value') === v);
+    });
+  }
+  document.getElementById('rTabs').addEventListener('mb:change', function (e) { showTab(e.detail.value); });
+});
+</script>
+</body>
+</html>

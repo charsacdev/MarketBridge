@@ -1,0 +1,1570 @@
+{
+  "data": [
+    {
+      "id": "mkt_1",
+      "symbol": "1HZ75V",
+      "deriv_symbol": "1HZ75V",
+      "name": "Volatility 75 (1s) Index",
+      "short_name": "V75 (1s)",
+      "pair": null,
+      "category": "synthetic_indices",
+      "icon_key": "V75",
+      "decimal_places": 2,
+      "contract_kinds": [
+        "binary",
+        "multiplier"
+      ],
+      "is_binary": true,
+      "is_multiplier": true,
+      "is_cfd": false,
+      "is_active": true,
+      "is_24_7": true,
+      "is_favorite": true,
+      "stats": {
+        "last_price": 542893.42,
+        "change_pct_24h": 1.28,
+        "updated_at": "2026-09-02T04:45:11.000Z"
+      },
+      "community": {
+        "room_slug": "1hz75v",
+        "member_count": 400,
+        "post_count": 60,
+        "online_count": 4
+      }
+    },
+    {
+      "id": "mkt_2",
+      "symbol": "R_75",
+      "deriv_symbol": "R_75",
+      "name": "Volatility 75 Index",
+      "short_name": "V75",
+      "pair": null,
+      "category": "synthetic_indices",
+      "icon_key": "V75",
+      "decimal_places": 2,
+      "contract_kinds": [
+        "binary",
+        "multiplier"
+      ],
+      "is_binary": true,
+      "is_multiplier": true,
+      "is_cfd": false,
+      "is_active": true,
+      "is_24_7": true,
+      "is_favorite": false,
+      "stats": {
+        "last_price": 542871.21,
+        "change_pct_24h": 1.17,
+        "updated_at": "2026-09-02T04:45:11.011Z"
+      },
+      "community": {
+        "room_slug": "r_75",
+        "member_count": 737,
+        "post_count": 151,
+        "online_count": 21
+      }
+    },
+    {
+      "id": "mkt_3",
+      "symbol": "1HZ100V",
+      "deriv_symbol": "1HZ100V",
+      "name": "Volatility 100 (1s) Index",
+      "short_name": "V100 (1s)",
+      "pair": null,
+      "category": "synthetic_indices",
+      "icon_key": "V100",
+      "decimal_places": 2,
+      "contract_kinds": [
+        "binary",
+        "multiplier"
+      ],
+      "is_binary": true,
+      "is_multiplier": true,
+      "is_cfd": false,
+      "is_active": true,
+      "is_24_7": true,
+      "is_favorite": true,
+      "stats": {
+        "last_price": 1247.84,
+        "change_pct_24h": 0.82,
+        "updated_at": "2026-09-02T04:45:11.011Z"
+      },
+      "community": {
+        "room_slug": "1hz100v",
+        "member_count": 1074,
+        "post_count": 242,
+        "online_count": 38
+      }
+    },
+    {
+      "id": "mkt_4",
+      "symbol": "R_100",
+      "deriv_symbol": "R_100",
+      "name": "Volatility 100 Index",
+      "short_name": "V100",
+      "pair": null,
+      "category": "synthetic_indices",
+      "icon_key": "V100",
+      "decimal_places": 2,
+      "contract_kinds": [
+        "binary",
+        "multiplier"
+      ],
+      "is_binary": true,
+      "is_multiplier": true,
+      "is_cfd": false,
+      "is_active": true,
+      "is_24_7": true,
+      "is_favorite": false,
+      "stats": {
+        "last_price": 1245.1,
+        "change_pct_24h": 0.64,
+        "updated_at": "2026-09-02T04:45:11.011Z"
+      },
+      "community": {
+        "room_slug": "r_100",
+        "member_count": 1411,
+        "post_count": 333,
+        "online_count": 55
+      }
+    },
+    {
+      "id": "mkt_5",
+      "symbol": "1HZ50V",
+      "deriv_symbol": "1HZ50V",
+      "name": "Volatility 50 (1s) Index",
+      "short_name": "V50 (1s)",
+      "pair": null,
+      "category": "synthetic_indices",
+      "icon_key": "V50",
+      "decimal_places": 3,
+      "contract_kinds": [
+        "binary",
+        "multiplier"
+      ],
+      "is_binary": true,
+      "is_multiplier": true,
+      "is_cfd": false,
+      "is_active": true,
+      "is_24_7": true,
+      "is_favorite": false,
+      "stats": {
+        "last_price": 239.14,
+        "change_pct_24h": 0.71,
+        "updated_at": "2026-09-02T04:45:11.011Z"
+      },
+      "community": {
+        "room_slug": "1hz50v",
+        "member_count": 1748,
+        "post_count": 424,
+        "online_count": 72
+      }
+    },
+    {
+      "id": "mkt_6",
+      "symbol": "R_50",
+      "deriv_symbol": "R_50",
+      "name": "Volatility 50 Index",
+      "short_name": "V50",
+      "pair": null,
+      "category": "synthetic_indices",
+      "icon_key": "V50",
+      "decimal_places": 3,
+      "contract_kinds": [
+        "binary",
+        "multiplier"
+      ],
+      "is_binary": true,
+      "is_multiplier": true,
+      "is_cfd": false,
+      "is_active": true,
+      "is_24_7": true,
+      "is_favorite": false,
+      "stats": {
+        "last_price": 238.76,
+        "change_pct_24h": 0.68,
+        "updated_at": "2026-09-02T04:45:11.011Z"
+      },
+      "community": {
+        "room_slug": "r_50",
+        "member_count": 2085,
+        "post_count": 515,
+        "online_count": 89
+      }
+    },
+    {
+      "id": "mkt_7",
+      "symbol": "R_25",
+      "deriv_symbol": "R_25",
+      "name": "Volatility 25 Index",
+      "short_name": "V25",
+      "pair": null,
+      "category": "synthetic_indices",
+      "icon_key": "V25",
+      "decimal_places": 3,
+      "contract_kinds": [
+        "binary",
+        "multiplier"
+      ],
+      "is_binary": true,
+      "is_multiplier": true,
+      "is_cfd": false,
+      "is_active": true,
+      "is_24_7": true,
+      "is_favorite": false,
+      "stats": {
+        "last_price": 95.21,
+        "change_pct_24h": 0.35,
+        "updated_at": "2026-09-02T04:45:11.011Z"
+      },
+      "community": {
+        "room_slug": "r_25",
+        "member_count": 2422,
+        "post_count": 606,
+        "online_count": 16
+      }
+    },
+    {
+      "id": "mkt_8",
+      "symbol": "R_10",
+      "deriv_symbol": "R_10",
+      "name": "Volatility 10 Index",
+      "short_name": "V10",
+      "pair": null,
+      "category": "synthetic_indices",
+      "icon_key": "V10",
+      "decimal_places": 3,
+      "contract_kinds": [
+        "binary",
+        "multiplier"
+      ],
+      "is_binary": true,
+      "is_multiplier": true,
+      "is_cfd": false,
+      "is_active": true,
+      "is_24_7": true,
+      "is_favorite": false,
+      "stats": {
+        "last_price": 6842.3,
+        "change_pct_24h": -0.22,
+        "updated_at": "2026-09-02T04:45:11.011Z"
+      },
+      "community": {
+        "room_slug": "r_10",
+        "member_count": 2759,
+        "post_count": 697,
+        "online_count": 33
+      }
+    },
+    {
+      "id": "mkt_9",
+      "symbol": "stpRNG",
+      "deriv_symbol": "stpRNG",
+      "name": "Step Index",
+      "short_name": "Step",
+      "pair": null,
+      "category": "synthetic_indices",
+      "icon_key": "STP",
+      "decimal_places": 2,
+      "contract_kinds": [
+        "binary"
+      ],
+      "is_binary": true,
+      "is_multiplier": false,
+      "is_cfd": false,
+      "is_active": true,
+      "is_24_7": true,
+      "is_favorite": true,
+      "stats": {
+        "last_price": 1602.45,
+        "change_pct_24h": 0.91,
+        "updated_at": "2026-09-02T04:45:11.011Z"
+      },
+      "community": {
+        "room_slug": "stprng",
+        "member_count": 496,
+        "post_count": 788,
+        "online_count": 50
+      }
+    },
+    {
+      "id": "mkt_10",
+      "symbol": "RB100",
+      "deriv_symbol": "RB100",
+      "name": "Range Break 100 Index",
+      "short_name": "RB 100",
+      "pair": null,
+      "category": "synthetic_indices",
+      "icon_key": "RB",
+      "decimal_places": 3,
+      "contract_kinds": [
+        "binary"
+      ],
+      "is_binary": true,
+      "is_multiplier": false,
+      "is_cfd": false,
+      "is_active": true,
+      "is_24_7": true,
+      "is_favorite": false,
+      "stats": {
+        "last_price": 1284.66,
+        "change_pct_24h": 0.44,
+        "updated_at": "2026-09-02T04:45:11.011Z"
+      },
+      "community": {
+        "room_slug": "rb100",
+        "member_count": 833,
+        "post_count": 879,
+        "online_count": 67
+      }
+    },
+    {
+      "id": "mkt_11",
+      "symbol": "BOOM1000",
+      "deriv_symbol": "BOOM1000",
+      "name": "Boom 1000 Index",
+      "short_name": "Boom 1000",
+      "pair": null,
+      "category": "derived",
+      "icon_key": "B1K",
+      "decimal_places": 2,
+      "contract_kinds": [
+        "binary",
+        "multiplier"
+      ],
+      "is_binary": true,
+      "is_multiplier": true,
+      "is_cfd": false,
+      "is_active": true,
+      "is_24_7": true,
+      "is_favorite": true,
+      "stats": {
+        "last_price": 8342.11,
+        "change_pct_24h": 1.12,
+        "updated_at": "2026-09-02T04:45:11.011Z"
+      },
+      "community": {
+        "room_slug": "boom1000",
+        "member_count": 1170,
+        "post_count": 150,
+        "online_count": 84
+      }
+    },
+    {
+      "id": "mkt_12",
+      "symbol": "BOOM500",
+      "deriv_symbol": "BOOM500",
+      "name": "Boom 500 Index",
+      "short_name": "Boom 500",
+      "pair": null,
+      "category": "derived",
+      "icon_key": "B500",
+      "decimal_places": 2,
+      "contract_kinds": [
+        "binary",
+        "multiplier"
+      ],
+      "is_binary": true,
+      "is_multiplier": true,
+      "is_cfd": false,
+      "is_active": true,
+      "is_24_7": true,
+      "is_favorite": false,
+      "stats": {
+        "last_price": 9120.44,
+        "change_pct_24h": 0.74,
+        "updated_at": "2026-09-02T04:45:11.011Z"
+      },
+      "community": {
+        "room_slug": "boom500",
+        "member_count": 1507,
+        "post_count": 241,
+        "online_count": 11
+      }
+    },
+    {
+      "id": "mkt_13",
+      "symbol": "BOOM300",
+      "deriv_symbol": "BOOM300",
+      "name": "Boom 300 Index",
+      "short_name": "Boom 300",
+      "pair": null,
+      "category": "derived",
+      "icon_key": "B300",
+      "decimal_places": 2,
+      "contract_kinds": [
+        "multiplier"
+      ],
+      "is_binary": false,
+      "is_multiplier": true,
+      "is_cfd": false,
+      "is_active": true,
+      "is_24_7": true,
+      "is_favorite": false,
+      "stats": {
+        "last_price": 7418.02,
+        "change_pct_24h": -0.31,
+        "updated_at": "2026-09-02T04:45:11.011Z"
+      },
+      "community": {
+        "room_slug": "boom300",
+        "member_count": 1844,
+        "post_count": 332,
+        "online_count": 28
+      }
+    },
+    {
+      "id": "mkt_14",
+      "symbol": "CRASH1000",
+      "deriv_symbol": "CRASH1000",
+      "name": "Crash 1000 Index",
+      "short_name": "Crash 1000",
+      "pair": null,
+      "category": "derived",
+      "icon_key": "C1K",
+      "decimal_places": 2,
+      "contract_kinds": [
+        "binary",
+        "multiplier"
+      ],
+      "is_binary": true,
+      "is_multiplier": true,
+      "is_cfd": false,
+      "is_active": true,
+      "is_24_7": true,
+      "is_favorite": false,
+      "stats": {
+        "last_price": 4820.15,
+        "change_pct_24h": -0.58,
+        "updated_at": "2026-09-02T04:45:11.011Z"
+      },
+      "community": {
+        "room_slug": "crash1000",
+        "member_count": 2181,
+        "post_count": 423,
+        "online_count": 45
+      }
+    },
+    {
+      "id": "mkt_15",
+      "symbol": "CRASH500",
+      "deriv_symbol": "CRASH500",
+      "name": "Crash 500 Index",
+      "short_name": "Crash 500",
+      "pair": null,
+      "category": "derived",
+      "icon_key": "C500",
+      "decimal_places": 2,
+      "contract_kinds": [
+        "binary",
+        "multiplier"
+      ],
+      "is_binary": true,
+      "is_multiplier": true,
+      "is_cfd": false,
+      "is_active": true,
+      "is_24_7": true,
+      "is_favorite": true,
+      "stats": {
+        "last_price": 4291.63,
+        "change_pct_24h": 0.42,
+        "updated_at": "2026-09-02T04:45:11.011Z"
+      },
+      "community": {
+        "room_slug": "crash500",
+        "member_count": 2518,
+        "post_count": 514,
+        "online_count": 62
+      }
+    },
+    {
+      "id": "mkt_16",
+      "symbol": "CRASH300",
+      "deriv_symbol": "CRASH300",
+      "name": "Crash 300 Index",
+      "short_name": "Crash 300",
+      "pair": null,
+      "category": "derived",
+      "icon_key": "C300",
+      "decimal_places": 2,
+      "contract_kinds": [
+        "multiplier"
+      ],
+      "is_binary": false,
+      "is_multiplier": true,
+      "is_cfd": false,
+      "is_active": true,
+      "is_24_7": true,
+      "is_favorite": false,
+      "stats": {
+        "last_price": 6104.88,
+        "change_pct_24h": 0.19,
+        "updated_at": "2026-09-02T04:45:11.011Z"
+      },
+      "community": {
+        "room_slug": "crash300",
+        "member_count": 2855,
+        "post_count": 605,
+        "online_count": 79
+      }
+    },
+    {
+      "id": "mkt_17",
+      "symbol": "JD75",
+      "deriv_symbol": "JD75",
+      "name": "Jump 75 Index",
+      "short_name": "Jump 75",
+      "pair": null,
+      "category": "derived",
+      "icon_key": "J75",
+      "decimal_places": 2,
+      "contract_kinds": [
+        "binary",
+        "multiplier"
+      ],
+      "is_binary": true,
+      "is_multiplier": true,
+      "is_cfd": false,
+      "is_active": true,
+      "is_24_7": true,
+      "is_favorite": false,
+      "stats": {
+        "last_price": 14028.33,
+        "change_pct_24h": -0.32,
+        "updated_at": "2026-09-02T04:45:11.011Z"
+      },
+      "community": {
+        "room_slug": "jd75",
+        "member_count": 592,
+        "post_count": 696,
+        "online_count": 6
+      }
+    },
+    {
+      "id": "mkt_18",
+      "symbol": "JD100",
+      "deriv_symbol": "JD100",
+      "name": "Jump 100 Index",
+      "short_name": "Jump 100",
+      "pair": null,
+      "category": "derived",
+      "icon_key": "J100",
+      "decimal_places": 2,
+      "contract_kinds": [
+        "binary",
+        "multiplier"
+      ],
+      "is_binary": true,
+      "is_multiplier": true,
+      "is_cfd": false,
+      "is_active": true,
+      "is_24_7": true,
+      "is_favorite": false,
+      "stats": {
+        "last_price": 6210.9,
+        "change_pct_24h": 0.55,
+        "updated_at": "2026-09-02T04:45:11.011Z"
+      },
+      "community": {
+        "room_slug": "jd100",
+        "member_count": 929,
+        "post_count": 787,
+        "online_count": 23
+      }
+    },
+    {
+      "id": "mkt_19",
+      "symbol": "JD25",
+      "deriv_symbol": "JD25",
+      "name": "Jump 25 Index",
+      "short_name": "Jump 25",
+      "pair": null,
+      "category": "derived",
+      "icon_key": "J25",
+      "decimal_places": 2,
+      "contract_kinds": [
+        "multiplier"
+      ],
+      "is_binary": false,
+      "is_multiplier": true,
+      "is_cfd": false,
+      "is_active": true,
+      "is_24_7": true,
+      "is_favorite": false,
+      "stats": {
+        "last_price": 3182.77,
+        "change_pct_24h": 0.27,
+        "updated_at": "2026-09-02T04:45:11.011Z"
+      },
+      "community": {
+        "room_slug": "jd25",
+        "member_count": 1266,
+        "post_count": 878,
+        "online_count": 40
+      }
+    },
+    {
+      "id": "mkt_20",
+      "symbol": "frxEURUSD",
+      "deriv_symbol": "frxEURUSD",
+      "name": "EUR/USD",
+      "short_name": "EUR/USD",
+      "pair": "EUR/USD",
+      "category": "forex",
+      "icon_key": "EU",
+      "decimal_places": 5,
+      "contract_kinds": [
+        "binary",
+        "multiplier",
+        "cfd_mt5"
+      ],
+      "is_binary": true,
+      "is_multiplier": true,
+      "is_cfd": true,
+      "is_active": true,
+      "is_24_7": false,
+      "is_favorite": true,
+      "stats": {
+        "last_price": 1.08642,
+        "change_pct_24h": 0.21,
+        "updated_at": "2026-09-02T04:45:11.011Z"
+      },
+      "community": {
+        "room_slug": "frxeurusd",
+        "member_count": 1603,
+        "post_count": 149,
+        "online_count": 57
+      }
+    },
+    {
+      "id": "mkt_21",
+      "symbol": "frxGBPUSD",
+      "deriv_symbol": "frxGBPUSD",
+      "name": "GBP/USD",
+      "short_name": "GBP/USD",
+      "pair": "GBP/USD",
+      "category": "forex",
+      "icon_key": "GU",
+      "decimal_places": 5,
+      "contract_kinds": [
+        "binary",
+        "multiplier",
+        "cfd_mt5"
+      ],
+      "is_binary": true,
+      "is_multiplier": true,
+      "is_cfd": true,
+      "is_active": true,
+      "is_24_7": false,
+      "is_favorite": false,
+      "stats": {
+        "last_price": 1.26418,
+        "change_pct_24h": -0.14,
+        "updated_at": "2026-09-02T04:45:11.011Z"
+      },
+      "community": {
+        "room_slug": "frxgbpusd",
+        "member_count": 1940,
+        "post_count": 240,
+        "online_count": 74
+      }
+    },
+    {
+      "id": "mkt_22",
+      "symbol": "frxUSDJPY",
+      "deriv_symbol": "frxUSDJPY",
+      "name": "USD/JPY",
+      "short_name": "USD/JPY",
+      "pair": "USD/JPY",
+      "category": "forex",
+      "icon_key": "UJ",
+      "decimal_places": 3,
+      "contract_kinds": [
+        "binary",
+        "multiplier",
+        "cfd_mt5"
+      ],
+      "is_binary": true,
+      "is_multiplier": true,
+      "is_cfd": true,
+      "is_active": true,
+      "is_24_7": false,
+      "is_favorite": false,
+      "stats": {
+        "last_price": 151.284,
+        "change_pct_24h": 0.38,
+        "updated_at": "2026-09-02T04:45:11.011Z"
+      },
+      "community": {
+        "room_slug": "frxusdjpy",
+        "member_count": 2277,
+        "post_count": 331,
+        "online_count": 91
+      }
+    },
+    {
+      "id": "mkt_23",
+      "symbol": "frxAUDUSD",
+      "deriv_symbol": "frxAUDUSD",
+      "name": "AUD/USD",
+      "short_name": "AUD/USD",
+      "pair": "AUD/USD",
+      "category": "forex",
+      "icon_key": "AU",
+      "decimal_places": 5,
+      "contract_kinds": [
+        "binary",
+        "multiplier",
+        "cfd_mt5"
+      ],
+      "is_binary": true,
+      "is_multiplier": true,
+      "is_cfd": true,
+      "is_active": true,
+      "is_24_7": false,
+      "is_favorite": false,
+      "stats": {
+        "last_price": 0.65712,
+        "change_pct_24h": -0.26,
+        "updated_at": "2026-09-02T04:45:11.011Z"
+      },
+      "community": {
+        "room_slug": "frxaudusd",
+        "member_count": 2614,
+        "post_count": 422,
+        "online_count": 18
+      }
+    },
+    {
+      "id": "mkt_24",
+      "symbol": "frxUSDCAD",
+      "deriv_symbol": "frxUSDCAD",
+      "name": "USD/CAD",
+      "short_name": "USD/CAD",
+      "pair": "USD/CAD",
+      "category": "forex",
+      "icon_key": "UC",
+      "decimal_places": 5,
+      "contract_kinds": [
+        "binary",
+        "multiplier",
+        "cfd_mt5"
+      ],
+      "is_binary": true,
+      "is_multiplier": true,
+      "is_cfd": true,
+      "is_active": true,
+      "is_24_7": false,
+      "is_favorite": false,
+      "stats": {
+        "last_price": 1.35894,
+        "change_pct_24h": 0.11,
+        "updated_at": "2026-09-02T04:45:11.011Z"
+      },
+      "community": {
+        "room_slug": "frxusdcad",
+        "member_count": 2951,
+        "post_count": 513,
+        "online_count": 35
+      }
+    },
+    {
+      "id": "mkt_25",
+      "symbol": "frxUSDCHF",
+      "deriv_symbol": "frxUSDCHF",
+      "name": "USD/CHF",
+      "short_name": "USD/CHF",
+      "pair": "USD/CHF",
+      "category": "forex",
+      "icon_key": "UF",
+      "decimal_places": 5,
+      "contract_kinds": [
+        "binary",
+        "multiplier",
+        "cfd_mt5"
+      ],
+      "is_binary": true,
+      "is_multiplier": true,
+      "is_cfd": true,
+      "is_active": true,
+      "is_24_7": false,
+      "is_favorite": false,
+      "stats": {
+        "last_price": 0.90218,
+        "change_pct_24h": 0.07,
+        "updated_at": "2026-09-02T04:45:11.011Z"
+      },
+      "community": {
+        "room_slug": "frxusdchf",
+        "member_count": 688,
+        "post_count": 604,
+        "online_count": 52
+      }
+    },
+    {
+      "id": "mkt_26",
+      "symbol": "frxNZDUSD",
+      "deriv_symbol": "frxNZDUSD",
+      "name": "NZD/USD",
+      "short_name": "NZD/USD",
+      "pair": "NZD/USD",
+      "category": "forex",
+      "icon_key": "NU",
+      "decimal_places": 5,
+      "contract_kinds": [
+        "binary",
+        "cfd_mt5"
+      ],
+      "is_binary": true,
+      "is_multiplier": false,
+      "is_cfd": true,
+      "is_active": true,
+      "is_24_7": false,
+      "is_favorite": false,
+      "stats": {
+        "last_price": 0.60184,
+        "change_pct_24h": -0.19,
+        "updated_at": "2026-09-02T04:45:11.011Z"
+      },
+      "community": {
+        "room_slug": "frxnzdusd",
+        "member_count": 1025,
+        "post_count": 695,
+        "online_count": 69
+      }
+    },
+    {
+      "id": "mkt_27",
+      "symbol": "frxEURGBP",
+      "deriv_symbol": "frxEURGBP",
+      "name": "EUR/GBP",
+      "short_name": "EUR/GBP",
+      "pair": "EUR/GBP",
+      "category": "forex",
+      "icon_key": "EG",
+      "decimal_places": 5,
+      "contract_kinds": [
+        "binary",
+        "cfd_mt5"
+      ],
+      "is_binary": true,
+      "is_multiplier": false,
+      "is_cfd": true,
+      "is_active": true,
+      "is_24_7": false,
+      "is_favorite": false,
+      "stats": {
+        "last_price": 0.85922,
+        "change_pct_24h": 0.09,
+        "updated_at": "2026-09-02T04:45:11.011Z"
+      },
+      "community": {
+        "room_slug": "frxeurgbp",
+        "member_count": 1362,
+        "post_count": 786,
+        "online_count": 86
+      }
+    },
+    {
+      "id": "mkt_28",
+      "symbol": "frxEURJPY",
+      "deriv_symbol": "frxEURJPY",
+      "name": "EUR/JPY",
+      "short_name": "EUR/JPY",
+      "pair": "EUR/JPY",
+      "category": "forex",
+      "icon_key": "EJ",
+      "decimal_places": 3,
+      "contract_kinds": [
+        "binary",
+        "cfd_mt5"
+      ],
+      "is_binary": true,
+      "is_multiplier": false,
+      "is_cfd": true,
+      "is_active": true,
+      "is_24_7": false,
+      "is_favorite": false,
+      "stats": {
+        "last_price": 164.372,
+        "change_pct_24h": 0.44,
+        "updated_at": "2026-09-02T04:45:11.011Z"
+      },
+      "community": {
+        "room_slug": "frxeurjpy",
+        "member_count": 1699,
+        "post_count": 877,
+        "online_count": 13
+      }
+    },
+    {
+      "id": "mkt_29",
+      "symbol": "frxGBPJPY",
+      "deriv_symbol": "frxGBPJPY",
+      "name": "GBP/JPY",
+      "short_name": "GBP/JPY",
+      "pair": "GBP/JPY",
+      "category": "forex",
+      "icon_key": "GJ",
+      "decimal_places": 3,
+      "contract_kinds": [
+        "cfd_mt5"
+      ],
+      "is_binary": false,
+      "is_multiplier": false,
+      "is_cfd": true,
+      "is_active": true,
+      "is_24_7": false,
+      "is_favorite": false,
+      "stats": {
+        "last_price": 191.246,
+        "change_pct_24h": 0.52,
+        "updated_at": "2026-09-02T04:45:11.011Z"
+      },
+      "community": {
+        "room_slug": "frxgbpjpy",
+        "member_count": 2036,
+        "post_count": 148,
+        "online_count": 30
+      }
+    },
+    {
+      "id": "mkt_30",
+      "symbol": "cryBTCUSD",
+      "deriv_symbol": "cryBTCUSD",
+      "name": "Bitcoin / USD",
+      "short_name": "BTC/USD",
+      "pair": "BTC/USD",
+      "category": "crypto",
+      "icon_key": "BTC",
+      "decimal_places": 2,
+      "contract_kinds": [
+        "multiplier",
+        "cfd_mt5"
+      ],
+      "is_binary": false,
+      "is_multiplier": true,
+      "is_cfd": true,
+      "is_active": true,
+      "is_24_7": true,
+      "is_favorite": true,
+      "stats": {
+        "last_price": 68420.5,
+        "change_pct_24h": 2.14,
+        "updated_at": "2026-09-02T04:45:11.011Z"
+      },
+      "community": {
+        "room_slug": "crybtcusd",
+        "member_count": 2373,
+        "post_count": 239,
+        "online_count": 47
+      }
+    },
+    {
+      "id": "mkt_31",
+      "symbol": "cryETHUSD",
+      "deriv_symbol": "cryETHUSD",
+      "name": "Ethereum / USD",
+      "short_name": "ETH/USD",
+      "pair": "ETH/USD",
+      "category": "crypto",
+      "icon_key": "ETH",
+      "decimal_places": 2,
+      "contract_kinds": [
+        "multiplier",
+        "cfd_mt5"
+      ],
+      "is_binary": false,
+      "is_multiplier": true,
+      "is_cfd": true,
+      "is_active": true,
+      "is_24_7": true,
+      "is_favorite": false,
+      "stats": {
+        "last_price": 3542.18,
+        "change_pct_24h": 1.68,
+        "updated_at": "2026-09-02T04:45:11.011Z"
+      },
+      "community": {
+        "room_slug": "cryethusd",
+        "member_count": 2710,
+        "post_count": 330,
+        "online_count": 64
+      }
+    },
+    {
+      "id": "mkt_32",
+      "symbol": "crySOLUSD",
+      "deriv_symbol": "crySOLUSD",
+      "name": "Solana / USD",
+      "short_name": "SOL/USD",
+      "pair": "SOL/USD",
+      "category": "crypto",
+      "icon_key": "SOL",
+      "decimal_places": 3,
+      "contract_kinds": [
+        "multiplier",
+        "cfd_mt5"
+      ],
+      "is_binary": false,
+      "is_multiplier": true,
+      "is_cfd": true,
+      "is_active": true,
+      "is_24_7": true,
+      "is_favorite": false,
+      "stats": {
+        "last_price": 172.44,
+        "change_pct_24h": 3.42,
+        "updated_at": "2026-09-02T04:45:11.011Z"
+      },
+      "community": {
+        "room_slug": "crysolusd",
+        "member_count": 447,
+        "post_count": 421,
+        "online_count": 81
+      }
+    },
+    {
+      "id": "mkt_33",
+      "symbol": "cryXRPUSD",
+      "deriv_symbol": "cryXRPUSD",
+      "name": "XRP / USD",
+      "short_name": "XRP/USD",
+      "pair": "XRP/USD",
+      "category": "crypto",
+      "icon_key": "XRP",
+      "decimal_places": 4,
+      "contract_kinds": [
+        "multiplier",
+        "cfd_mt5"
+      ],
+      "is_binary": false,
+      "is_multiplier": true,
+      "is_cfd": true,
+      "is_active": true,
+      "is_24_7": true,
+      "is_favorite": false,
+      "stats": {
+        "last_price": 0.6284,
+        "change_pct_24h": -1.12,
+        "updated_at": "2026-09-02T04:45:11.011Z"
+      },
+      "community": {
+        "room_slug": "cryxrpusd",
+        "member_count": 784,
+        "post_count": 512,
+        "online_count": 8
+      }
+    },
+    {
+      "id": "mkt_34",
+      "symbol": "cryLTCUSD",
+      "deriv_symbol": "cryLTCUSD",
+      "name": "Litecoin / USD",
+      "short_name": "LTC/USD",
+      "pair": "LTC/USD",
+      "category": "crypto",
+      "icon_key": "LTC",
+      "decimal_places": 2,
+      "contract_kinds": [
+        "multiplier",
+        "cfd_mt5"
+      ],
+      "is_binary": false,
+      "is_multiplier": true,
+      "is_cfd": true,
+      "is_active": true,
+      "is_24_7": true,
+      "is_favorite": false,
+      "stats": {
+        "last_price": 84.62,
+        "change_pct_24h": 0.94,
+        "updated_at": "2026-09-02T04:45:11.011Z"
+      },
+      "community": {
+        "room_slug": "cryltcusd",
+        "member_count": 1121,
+        "post_count": 603,
+        "online_count": 25
+      }
+    },
+    {
+      "id": "mkt_35",
+      "symbol": "cryBCHUSD",
+      "deriv_symbol": "cryBCHUSD",
+      "name": "Bitcoin Cash / USD",
+      "short_name": "BCH/USD",
+      "pair": "BCH/USD",
+      "category": "crypto",
+      "icon_key": "BCH",
+      "decimal_places": 2,
+      "contract_kinds": [
+        "cfd_mt5"
+      ],
+      "is_binary": false,
+      "is_multiplier": false,
+      "is_cfd": true,
+      "is_active": true,
+      "is_24_7": true,
+      "is_favorite": false,
+      "stats": {
+        "last_price": 452.18,
+        "change_pct_24h": -0.63,
+        "updated_at": "2026-09-02T04:45:11.011Z"
+      },
+      "community": {
+        "room_slug": "crybchusd",
+        "member_count": 1458,
+        "post_count": 694,
+        "online_count": 42
+      }
+    },
+    {
+      "id": "mkt_36",
+      "symbol": "cryADAUSD",
+      "deriv_symbol": "cryADAUSD",
+      "name": "Cardano / USD",
+      "short_name": "ADA/USD",
+      "pair": "ADA/USD",
+      "category": "crypto",
+      "icon_key": "ADA",
+      "decimal_places": 4,
+      "contract_kinds": [
+        "cfd_mt5"
+      ],
+      "is_binary": false,
+      "is_multiplier": false,
+      "is_cfd": true,
+      "is_active": true,
+      "is_24_7": true,
+      "is_favorite": false,
+      "stats": {
+        "last_price": 0.4482,
+        "change_pct_24h": 1.24,
+        "updated_at": "2026-09-02T04:45:11.011Z"
+      },
+      "community": {
+        "room_slug": "cryadausd",
+        "member_count": 1795,
+        "post_count": 785,
+        "online_count": 59
+      }
+    },
+    {
+      "id": "mkt_37",
+      "symbol": "cryDOGUSD",
+      "deriv_symbol": "cryDOGUSD",
+      "name": "Dogecoin / USD",
+      "short_name": "DOGE/USD",
+      "pair": "DOGE/USD",
+      "category": "crypto",
+      "icon_key": "DOG",
+      "decimal_places": 4,
+      "contract_kinds": [
+        "cfd_mt5"
+      ],
+      "is_binary": false,
+      "is_multiplier": false,
+      "is_cfd": true,
+      "is_active": true,
+      "is_24_7": true,
+      "is_favorite": false,
+      "stats": {
+        "last_price": 0.1642,
+        "change_pct_24h": 4.18,
+        "updated_at": "2026-09-02T04:45:11.011Z"
+      },
+      "community": {
+        "room_slug": "crydogusd",
+        "member_count": 2132,
+        "post_count": 876,
+        "online_count": 76
+      }
+    },
+    {
+      "id": "mkt_38",
+      "symbol": "frxXAUUSD",
+      "deriv_symbol": "frxXAUUSD",
+      "name": "Gold / USD",
+      "short_name": "XAU/USD",
+      "pair": "XAU/USD",
+      "category": "commodities",
+      "icon_key": "XAU",
+      "decimal_places": 2,
+      "contract_kinds": [
+        "binary",
+        "multiplier",
+        "cfd_mt5"
+      ],
+      "is_binary": true,
+      "is_multiplier": true,
+      "is_cfd": true,
+      "is_active": true,
+      "is_24_7": false,
+      "is_favorite": true,
+      "stats": {
+        "last_price": 2342.18,
+        "change_pct_24h": 0.68,
+        "updated_at": "2026-09-02T04:45:11.011Z"
+      },
+      "community": {
+        "room_slug": "frxxauusd",
+        "member_count": 2469,
+        "post_count": 147,
+        "online_count": 93
+      }
+    },
+    {
+      "id": "mkt_39",
+      "symbol": "frxXAGUSD",
+      "deriv_symbol": "frxXAGUSD",
+      "name": "Silver / USD",
+      "short_name": "XAG/USD",
+      "pair": "XAG/USD",
+      "category": "commodities",
+      "icon_key": "XAG",
+      "decimal_places": 3,
+      "contract_kinds": [
+        "binary",
+        "multiplier",
+        "cfd_mt5"
+      ],
+      "is_binary": true,
+      "is_multiplier": true,
+      "is_cfd": true,
+      "is_active": true,
+      "is_24_7": false,
+      "is_favorite": false,
+      "stats": {
+        "last_price": 27.842,
+        "change_pct_24h": 1.14,
+        "updated_at": "2026-09-02T04:45:11.011Z"
+      },
+      "community": {
+        "room_slug": "frxxagusd",
+        "member_count": 2806,
+        "post_count": 238,
+        "online_count": 20
+      }
+    },
+    {
+      "id": "mkt_40",
+      "symbol": "frxXPTUSD",
+      "deriv_symbol": "frxXPTUSD",
+      "name": "Platinum / USD",
+      "short_name": "XPT/USD",
+      "pair": "XPT/USD",
+      "category": "commodities",
+      "icon_key": "XPT",
+      "decimal_places": 2,
+      "contract_kinds": [
+        "cfd_mt5"
+      ],
+      "is_binary": false,
+      "is_multiplier": false,
+      "is_cfd": true,
+      "is_active": true,
+      "is_24_7": false,
+      "is_favorite": false,
+      "stats": {
+        "last_price": 962.4,
+        "change_pct_24h": -0.42,
+        "updated_at": "2026-09-02T04:45:11.011Z"
+      },
+      "community": {
+        "room_slug": "frxxptusd",
+        "member_count": 543,
+        "post_count": 329,
+        "online_count": 37
+      }
+    },
+    {
+      "id": "mkt_41",
+      "symbol": "frxXPDUSD",
+      "deriv_symbol": "frxXPDUSD",
+      "name": "Palladium / USD",
+      "short_name": "XPD/USD",
+      "pair": "XPD/USD",
+      "category": "commodities",
+      "icon_key": "XPD",
+      "decimal_places": 2,
+      "contract_kinds": [
+        "cfd_mt5"
+      ],
+      "is_binary": false,
+      "is_multiplier": false,
+      "is_cfd": true,
+      "is_active": true,
+      "is_24_7": false,
+      "is_favorite": false,
+      "stats": {
+        "last_price": 1024.6,
+        "change_pct_24h": 0.31,
+        "updated_at": "2026-09-02T04:45:11.011Z"
+      },
+      "community": {
+        "room_slug": "frxxpdusd",
+        "member_count": 880,
+        "post_count": 420,
+        "online_count": 54
+      }
+    },
+    {
+      "id": "mkt_42",
+      "symbol": "WTIUSD",
+      "deriv_symbol": "WTI_USD",
+      "name": "Crude Oil / USD",
+      "short_name": "WTI/USD",
+      "pair": "WTI/USD",
+      "category": "commodities",
+      "icon_key": "OIL",
+      "decimal_places": 2,
+      "contract_kinds": [
+        "multiplier",
+        "cfd_mt5"
+      ],
+      "is_binary": false,
+      "is_multiplier": true,
+      "is_cfd": true,
+      "is_active": true,
+      "is_24_7": false,
+      "is_favorite": false,
+      "stats": {
+        "last_price": 78.42,
+        "change_pct_24h": -0.88,
+        "updated_at": "2026-09-02T04:45:11.011Z"
+      },
+      "community": {
+        "room_slug": "wtiusd",
+        "member_count": 1217,
+        "post_count": 511,
+        "online_count": 71
+      }
+    },
+    {
+      "id": "mkt_43",
+      "symbol": "OTC_SPC",
+      "deriv_symbol": "OTC_SPC",
+      "name": "US 500",
+      "short_name": "US 500",
+      "pair": null,
+      "category": "stock_indices",
+      "icon_key": "SPX",
+      "decimal_places": 2,
+      "contract_kinds": [
+        "multiplier",
+        "cfd_mt5"
+      ],
+      "is_binary": false,
+      "is_multiplier": true,
+      "is_cfd": true,
+      "is_active": true,
+      "is_24_7": false,
+      "is_favorite": false,
+      "stats": {
+        "last_price": 5284.42,
+        "change_pct_24h": 0.42,
+        "updated_at": "2026-09-02T04:45:11.011Z"
+      },
+      "community": {
+        "room_slug": "otc_spc",
+        "member_count": 1554,
+        "post_count": 602,
+        "online_count": 88
+      }
+    },
+    {
+      "id": "mkt_44",
+      "symbol": "OTC_NDX",
+      "deriv_symbol": "OTC_NDX",
+      "name": "US Tech 100",
+      "short_name": "US 100",
+      "pair": null,
+      "category": "stock_indices",
+      "icon_key": "NDX",
+      "decimal_places": 2,
+      "contract_kinds": [
+        "multiplier",
+        "cfd_mt5"
+      ],
+      "is_binary": false,
+      "is_multiplier": true,
+      "is_cfd": true,
+      "is_active": true,
+      "is_24_7": false,
+      "is_favorite": false,
+      "stats": {
+        "last_price": 18420.6,
+        "change_pct_24h": 0.88,
+        "updated_at": "2026-09-02T04:45:11.011Z"
+      },
+      "community": {
+        "room_slug": "otc_ndx",
+        "member_count": 1891,
+        "post_count": 693,
+        "online_count": 15
+      }
+    },
+    {
+      "id": "mkt_45",
+      "symbol": "OTC_DJI",
+      "deriv_symbol": "OTC_DJI",
+      "name": "Wall Street 30",
+      "short_name": "US 30",
+      "pair": null,
+      "category": "stock_indices",
+      "icon_key": "DJI",
+      "decimal_places": 2,
+      "contract_kinds": [
+        "multiplier",
+        "cfd_mt5"
+      ],
+      "is_binary": false,
+      "is_multiplier": true,
+      "is_cfd": true,
+      "is_active": true,
+      "is_24_7": false,
+      "is_favorite": false,
+      "stats": {
+        "last_price": 39284.1,
+        "change_pct_24h": -0.24,
+        "updated_at": "2026-09-02T04:45:11.011Z"
+      },
+      "community": {
+        "room_slug": "otc_dji",
+        "member_count": 2228,
+        "post_count": 784,
+        "online_count": 32
+      }
+    },
+    {
+      "id": "mkt_46",
+      "symbol": "OTC_FTSE",
+      "deriv_symbol": "OTC_FTSE",
+      "name": "UK 100",
+      "short_name": "UK 100",
+      "pair": null,
+      "category": "stock_indices",
+      "icon_key": "UK",
+      "decimal_places": 2,
+      "contract_kinds": [
+        "cfd_mt5"
+      ],
+      "is_binary": false,
+      "is_multiplier": false,
+      "is_cfd": true,
+      "is_active": true,
+      "is_24_7": false,
+      "is_favorite": false,
+      "stats": {
+        "last_price": 8142.3,
+        "change_pct_24h": 0.18,
+        "updated_at": "2026-09-02T04:45:11.011Z"
+      },
+      "community": {
+        "room_slug": "otc_ftse",
+        "member_count": 2565,
+        "post_count": 875,
+        "online_count": 49
+      }
+    },
+    {
+      "id": "mkt_47",
+      "symbol": "OTC_GDAXI",
+      "deriv_symbol": "OTC_GDAXI",
+      "name": "Germany 40",
+      "short_name": "GER 40",
+      "pair": null,
+      "category": "stock_indices",
+      "icon_key": "GER",
+      "decimal_places": 2,
+      "contract_kinds": [
+        "cfd_mt5"
+      ],
+      "is_binary": false,
+      "is_multiplier": false,
+      "is_cfd": true,
+      "is_active": true,
+      "is_24_7": false,
+      "is_favorite": false,
+      "stats": {
+        "last_price": 18642.8,
+        "change_pct_24h": 0.62,
+        "updated_at": "2026-09-02T04:45:11.011Z"
+      },
+      "community": {
+        "room_slug": "otc_gdaxi",
+        "member_count": 2902,
+        "post_count": 146,
+        "online_count": 66
+      }
+    },
+    {
+      "id": "mkt_48",
+      "symbol": "OTC_N225",
+      "deriv_symbol": "OTC_N225",
+      "name": "Japan 225",
+      "short_name": "JP 225",
+      "pair": null,
+      "category": "stock_indices",
+      "icon_key": "JP",
+      "decimal_places": 2,
+      "contract_kinds": [
+        "cfd_mt5"
+      ],
+      "is_binary": false,
+      "is_multiplier": false,
+      "is_cfd": true,
+      "is_active": true,
+      "is_24_7": false,
+      "is_favorite": false,
+      "stats": {
+        "last_price": 38420.5,
+        "change_pct_24h": -0.36,
+        "updated_at": "2026-09-02T04:45:11.011Z"
+      },
+      "community": {
+        "room_slug": "otc_n225",
+        "member_count": 639,
+        "post_count": 237,
+        "online_count": 83
+      }
+    },
+    {
+      "id": "mkt_49",
+      "symbol": "OTC_AS51",
+      "deriv_symbol": "OTC_AS51",
+      "name": "Australia 200",
+      "short_name": "AUS 200",
+      "pair": null,
+      "category": "stock_indices",
+      "icon_key": "AUS",
+      "decimal_places": 2,
+      "contract_kinds": [
+        "cfd_mt5"
+      ],
+      "is_binary": false,
+      "is_multiplier": false,
+      "is_cfd": true,
+      "is_active": true,
+      "is_24_7": false,
+      "is_favorite": false,
+      "stats": {
+        "last_price": 7842.1,
+        "change_pct_24h": 0.29,
+        "updated_at": "2026-09-02T04:45:11.011Z"
+      },
+      "community": {
+        "room_slug": "otc_as51",
+        "member_count": 976,
+        "post_count": 328,
+        "online_count": 10
+      }
+    }
+  ],
+  "meta": {
+    "page": 1,
+    "per_page": 100,
+    "total": 49
+  }
+}

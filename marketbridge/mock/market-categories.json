@@ -1,0 +1,43 @@
+{
+  "data": [
+    {
+      "slug": "synthetic_indices",
+      "name": "Synthetics",
+      "short": "Synthetics",
+      "icon": "activity"
+    },
+    {
+      "slug": "derived",
+      "name": "Derived",
+      "short": "Derived",
+      "icon": "flame"
+    },
+    {
+      "slug": "forex",
+      "name": "Forex",
+      "short": "Forex",
+      "icon": "globe"
+    },
+    {
+      "slug": "crypto",
+      "name": "Crypto",
+      "short": "Crypto",
+      "icon": "layers"
+    },
+    {
+      "slug": "commodities",
+      "name": "Commodities",
+      "short": "Commodities",
+      "icon": "briefcase"
+    },
+    {
+      "slug": "stock_indices",
+      "name": "Stock Indices",
+      "short": "Indices",
+      "icon": "chart"
+    }
+  ],
+  "meta": {
+    "total": 6
+  }
+}

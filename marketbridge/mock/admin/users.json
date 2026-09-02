@@ -1,0 +1,6749 @@
+{
+  "data": [
+    {
+      "id": "u1",
+      "username": "john_david",
+      "display_name": "John David",
+      "email": "john.david@example.com",
+      "phone": "+234 821 7116 487",
+      "avatar_url": null,
+      "role": "signal_provider",
+      "status": "banned",
+      "is_verified": true,
+      "joined_at": "2024-10-10T05:56:07.063Z",
+      "last_seen_at": "2026-09-01T20:03:07.071Z",
+      "followers": 1174,
+      "following": 295,
+      "signals": 40,
+      "posts": 44,
+      "trading": {
+        "total_trades": 474,
+        "wins": 270,
+        "losses": 204,
+        "win_rate": 57,
+        "total_volume": 67632.2,
+        "net_pl": 6738.65,
+        "open_positions": 2,
+        "favourite_market": "V75"
+      },
+      "deriv": {
+        "connected": false,
+        "deriv_id": "CR2526642",
+        "account_type": "real",
+        "currency": "USD",
+        "landing_company": "svg",
+        "last_recorded_balance": 3301.28,
+        "balance_recorded_at": "2026-09-01T11:41:07.071Z",
+        "scopes": [
+          "read",
+          "trade",
+          "payments"
+        ]
+      },
+      "rooms": [
+        {
+          "id": "room_1HZ75V",
+          "name": "V75 (1s) Room",
+          "kind": "market",
+          "role": "member",
+          "joined_at": "2026-01-11T13:43:07.071Z"
+        },
+        {
+          "id": "room_BOOM500",
+          "name": "Boom 500 Room",
+          "kind": "market",
+          "role": "member",
+          "joined_at": "2026-07-06T08:16:07.071Z"
+        },
+        {
+          "id": "room_frxAUDUSD",
+          "name": "AUD/USD Room",
+          "kind": "market",
+          "role": "member",
+          "joined_at": "2025-12-22T19:55:07.071Z"
+        },
+        {
+          "id": "room_cryLTCUSD",
+          "name": "LTC/USD Room",
+          "kind": "market",
+          "role": "member",
+          "joined_at": "2026-05-22T18:06:07.071Z"
+        }
+      ],
+      "security": {
+        "last_ip": "125.242.172.68",
+        "last_location": "Mumbai, India",
+        "country_code": "IN",
+        "last_device": "Desktop",
+        "last_os": "Windows 10",
+        "last_browser": "Edge 128",
+        "device_type": "desktop",
+        "two_factor": true,
+        "failed_logins_30d": 4,
+        "password_changed_at": "2026-01-29T07:22:07.071Z",
+        "sessions": [
+          {
+            "ip": "49.10.173.194",
+            "location": "Abuja, Nigeria",
+            "device": "MacBook Pro",
+            "os": "macOS 14",
+            "browser": "Chrome 127",
+            "type": "desktop",
+            "last_active": "2026-08-16T19:37:07.071Z",
+            "current": true
+          },
+          {
+            "ip": "63.192.65.60",
+            "location": "Lagos, Nigeria",
+            "device": "iPhone 14 Pro",
+            "os": "iOS 17.5",
+            "browser": "Safari 17",
+            "type": "mobile",
+            "last_active": "2026-08-25T18:49:07.071Z",
+            "current": false
+          }
+        ]
+      },
+      "flags": {
+        "reports_against": 5,
+        "warnings": 2,
+        "suspended_until": "2026-10-02T05:29:07.071Z"
+      }
+    },
+    {
+      "id": "u2",
+      "username": "grace_eze",
+      "display_name": "Grace Eze",
+      "email": "grace.eze@example.com",
+      "phone": "+234 877 8598 345",
+      "avatar_url": null,
+      "role": "signal_provider",
+      "status": "active",
+      "is_verified": true,
+      "joined_at": "2025-09-20T06:08:07.071Z",
+      "last_seen_at": "2026-08-21T12:57:07.071Z",
+      "followers": 1680,
+      "following": 119,
+      "signals": 104,
+      "posts": 159,
+      "trading": {
+        "total_trades": 593,
+        "wins": 342,
+        "losses": 251,
+        "win_rate": 57.7,
+        "total_volume": 44692.44,
+        "net_pl": -318.46,
+        "open_positions": 6,
+        "favourite_market": "Crash 300"
+      },
+      "deriv": {
+        "connected": true,
+        "deriv_id": "CR5298630",
+        "account_type": "real",
+        "currency": "USD",
+        "landing_company": "svg",
+        "last_recorded_balance": 11762.09,
+        "balance_recorded_at": "2026-09-01T14:32:07.071Z",
+        "scopes": [
+          "read",
+          "trade",
+          "payments"
+        ]
+      },
+      "rooms": [
+        {
+          "id": "room_BOOM1000",
+          "name": "Boom 1000 Room",
+          "kind": "market",
+          "role": "member",
+          "joined_at": "2025-12-26T22:56:07.071Z"
+        },
+        {
+          "id": "room_frxUSDJPY",
+          "name": "USD/JPY Room",
+          "kind": "market",
+          "role": "member",
+          "joined_at": "2026-01-30T12:55:07.071Z"
+        },
+        {
+          "id": "room_cryXRPUSD",
+          "name": "XRP/USD Room",
+          "kind": "market",
+          "role": "member",
+          "joined_at": "2026-08-16T16:26:07.071Z"
+        }
+      ],
+      "security": {
+        "last_ip": "182.38.18.193",
+        "last_location": "Mumbai, India",
+        "country_code": "IN",
+        "last_device": "MacBook Pro",
+        "last_os": "macOS 14",
+        "last_browser": "Chrome 127",
+        "device_type": "desktop",
+        "two_factor": true,
+        "failed_logins_30d": 3,
+        "password_changed_at": "2026-04-26T17:55:07.071Z",
+        "sessions": [
+          {
+            "ip": "124.253.130.158",
+            "location": "Johannesburg, South Africa",
+            "device": "Desktop",
+            "os": "Windows 10",
+            "browser": "Edge 128",
+            "type": "desktop",
+            "last_active": "2026-08-14T08:26:07.071Z",
+            "current": false
+          },
+          {
+            "ip": "173.144.87.48",
+            "location": "Jakarta, Indonesia",
+            "device": "Desktop",
+            "os": "Windows 11",
+            "browser": "Chrome 128",
+            "type": "desktop",
+            "last_active": "2026-08-30T11:36:07.071Z",
+            "current": false
+          },
+          {
+            "ip": "180.183.227.243",
+            "location": "Nairobi, Kenya",
+            "device": "Samsung Galaxy S23",
+            "os": "Android 14",
+            "browser": "Chrome 128",
+            "type": "mobile",
+            "last_active": "2026-08-20T18:18:07.071Z",
+            "current": false
+          }
+        ]
+      },
+      "flags": {
+        "reports_against": 0,
+        "warnings": 0,
+        "suspended_until": null
+      }
+    },
+    {
+      "id": "u3",
+      "username": "femi_adamu",
+      "display_name": "Femi Adamu",
+      "email": "femi.adamu@example.com",
+      "phone": "+234 846 5856 918",
+      "avatar_url": null,
+      "role": "signal_provider",
+      "status": "banned",
+      "is_verified": false,
+      "joined_at": "2026-07-06T21:13:07.071Z",
+      "last_seen_at": "2026-08-24T21:43:07.071Z",
+      "followers": 2091,
+      "following": 137,
+      "signals": 93,
+      "posts": 303,
+      "trading": {
+        "total_trades": 208,
+        "wins": 140,
+        "losses": 68,
+        "win_rate": 67.3,
+        "total_volume": 35355.49,
+        "net_pl": 2803.55,
+        "open_positions": 4,
+        "favourite_market": "USD/CAD"
+      },
+      "deriv": {
+        "connected": false,
+        "deriv_id": "CR2111243",
+        "account_type": "virtual",
+        "currency": "USD",
+        "landing_company": "svg",
+        "last_recorded_balance": 894.83,
+        "balance_recorded_at": "2026-08-31T04:26:07.071Z",
+        "scopes": [
+          "read",
+          "trade",
+          "payments"
+        ]
+      },
+      "rooms": [
+        {
+          "id": "room_RB100",
+          "name": "RB 100 Room",
+          "kind": "market",
+          "role": "member",
+          "joined_at": "2026-03-10T01:19:07.071Z"
+        }
+      ],
+      "security": {
+        "last_ip": "180.206.224.14",
+        "last_location": "Lagos, Nigeria",
+        "country_code": "NG",
+        "last_device": "iPhone 14 Pro",
+        "last_os": "iOS 17.5",
+        "last_browser": "Safari 17",
+        "device_type": "mobile",
+        "two_factor": true,
+        "failed_logins_30d": 9,
+        "password_changed_at": "2026-06-30T11:27:07.071Z",
+        "sessions": [
+          {
+            "ip": "133.110.191.190",
+            "location": "Kampala, Uganda",
+            "device": "Desktop",
+            "os": "Windows 11",
+            "browser": "Chrome 128",
+            "type": "desktop",
+            "last_active": "2026-08-14T15:38:07.071Z",
+            "current": false
+          },
+          {
+            "ip": "118.199.225.175",
+            "location": "Johannesburg, South Africa",
+            "device": "Desktop",
+            "os": "Windows 11",
+            "browser": "Chrome 128",
+            "type": "desktop",
+            "last_active": "2026-08-16T04:24:07.071Z",
+            "current": false
+          }
+        ]
+      },
+      "flags": {
+        "reports_against": 1,
+        "warnings": 0,
+        "suspended_until": "2026-10-02T05:29:07.071Z"
+      }
+    },
+    {
+      "id": "u4",
+      "username": "amara_okafor",
+      "display_name": "Amara Okafor",
+      "email": "amara.okafor@example.com",
+      "phone": "+234 834 4408 526",
+      "avatar_url": null,
+      "role": "signal_provider",
+      "status": "active",
+      "is_verified": true,
+      "joined_at": "2026-07-16T14:50:07.071Z",
+      "last_seen_at": "2026-08-28T12:52:07.071Z",
+      "followers": 1125,
+      "following": 318,
+      "signals": 102,
+      "posts": 142,
+      "trading": {
+        "total_trades": 357,
+        "wins": 249,
+        "losses": 108,
+        "win_rate": 69.7,
+        "total_volume": 55435.63,
+        "net_pl": 1653.56,
+        "open_positions": 2,
+        "favourite_market": "BCH/USD"
+      },
+      "deriv": {
+        "connected": true,
+        "deriv_id": "CR9535597",
+        "account_type": "real",
+        "currency": "USD",
+        "landing_company": "vanuatu",
+        "last_recorded_balance": 6843.14,
+        "balance_recorded_at": "2026-08-31T04:56:07.071Z",
+        "scopes": [
+          "read",
+          "trade",
+          "payments"
+        ]
+      },
+      "rooms": [
+        {
+          "id": "room_stpRNG",
+          "name": "Step Room",
+          "kind": "market",
+          "role": "member",
+          "joined_at": "2026-08-16T07:42:07.071Z"
+        },
+        {
+          "id": "room_frxEURUSD",
+          "name": "EUR/USD Room",
+          "kind": "market",
+          "role": "member",
+          "joined_at": "2025-12-05T12:21:07.071Z"
+        },
+        {
+          "id": "room_cryETHUSD",
+          "name": "ETH/USD Room",
+          "kind": "market",
+          "role": "member",
+          "joined_at": "2025-12-02T00:25:07.071Z"
+        },
+        {
+          "id": "room_WTIUSD",
+          "name": "WTI/USD Room",
+          "kind": "market",
+          "role": "member",
+          "joined_at": "2026-07-28T00:18:07.071Z"
+        },
+        {
+          "id": "room_u_JamesFX",
+          "name": "JamesFX's Room",
+          "kind": "trader",
+          "role": "member",
+          "joined_at": "2026-04-29T10:16:07.071Z"
+        }
+      ],
+      "security": {
+        "last_ip": "192.27.79.230",
+        "last_location": "Manchester, United Kingdom",
+        "country_code": "GB",
+        "last_device": "Desktop",
+        "last_os": "Ubuntu 24.04",
+        "last_browser": "Firefox 129",
+        "device_type": "desktop",
+        "two_factor": false,
+        "failed_logins_30d": 8,
+        "password_changed_at": "2026-05-04T09:39:07.071Z",
+        "sessions": [
+          {
+            "ip": "75.5.231.24",
+            "location": "Cairo, Egypt",
+            "device": "iPhone 14 Pro",
+            "os": "iOS 17.5",
+            "browser": "Safari 17",
+            "type": "mobile",
+            "last_active": "2026-08-28T23:32:07.071Z",
+            "current": false
+          },
+          {
+            "ip": "100.93.242.86",
+            "location": "Dar es Salaam, Tanzania",
+            "device": "Desktop",
+            "os": "Windows 11",
+            "browser": "Chrome 128",
+            "type": "desktop",
+            "last_active": "2026-08-31T22:28:07.071Z",
+            "current": false
+          },
+          {
+            "ip": "188.162.215.86",
+            "location": "Dubai, UAE",
+            "device": "Desktop",
+            "os": "Windows 11",
+            "browser": "Chrome 128",
+            "type": "desktop",
+            "last_active": "2026-08-21T12:49:07.071Z",
+            "current": false
+          },
+          {
+            "ip": "140.102.152.162",
+            "location": "Mumbai, India",
+            "device": "MacBook Pro",
+            "os": "macOS 14",
+            "browser": "Chrome 127",
+            "type": "desktop",
+            "last_active": "2026-08-14T05:32:07.071Z",
+            "current": false
+          }
+        ]
+      },
+      "flags": {
+        "reports_against": 5,
+        "warnings": 3,
+        "suspended_until": null
+      }
+    },
+    {
+      "id": "u5",
+      "username": "kwame_yusuf",
+      "display_name": "Kwame Yusuf",
+      "email": "kwame.yusuf@example.com",
+      "phone": "+234 820 2569 644",
+      "avatar_url": null,
+      "role": "signal_provider",
+      "status": "banned",
+      "is_verified": true,
+      "joined_at": "2025-05-19T02:39:07.071Z",
+      "last_seen_at": "2026-08-19T18:28:07.071Z",
+      "followers": 489,
+      "following": 104,
+      "signals": 57,
+      "posts": 210,
+      "trading": {
+        "total_trades": 291,
+        "wins": 156,
+        "losses": 135,
+        "win_rate": 53.6,
+        "total_volume": 39019.91,
+        "net_pl": 2952.17,
+        "open_positions": 1,
+        "favourite_market": "V50 (1s)"
+      },
+      "deriv": {
+        "connected": true,
+        "deriv_id": "CR3368090",
+        "account_type": "real",
+        "currency": "USD",
+        "landing_company": "svg",
+        "last_recorded_balance": 7852.72,
+        "balance_recorded_at": "2026-09-01T14:54:07.071Z",
+        "scopes": [
+          "read",
+          "trade",
+          "payments"
+        ]
+      },
+      "rooms": [
+        {
+          "id": "room_R_10",
+          "name": "V10 Room",
+          "kind": "market",
+          "role": "member",
+          "joined_at": "2026-08-11T16:18:07.071Z"
+        },
+        {
+          "id": "room_JD25",
+          "name": "Jump 25 Room",
+          "kind": "market",
+          "role": "member",
+          "joined_at": "2026-05-30T08:40:07.071Z"
+        },
+        {
+          "id": "room_cryBTCUSD",
+          "name": "BTC/USD Room",
+          "kind": "market",
+          "role": "member",
+          "joined_at": "2026-02-02T05:16:07.071Z"
+        },
+        {
+          "id": "room_frxXPDUSD",
+          "name": "XPD/USD Room",
+          "kind": "market",
+          "role": "member",
+          "joined_at": "2026-05-07T14:12:07.071Z"
+        },
+        {
+          "id": "room_u_AlphaKing",
+          "name": "AlphaKing's Room",
+          "kind": "trader",
+          "role": "member",
+          "joined_at": "2026-08-21T09:28:07.071Z"
+        }
+      ],
+      "security": {
+        "last_ip": "105.216.120.96",
+        "last_location": "Lagos, Nigeria",
+        "country_code": "NG",
+        "last_device": "Samsung Galaxy S23",
+        "last_os": "Android 14",
+        "last_browser": "Chrome 128",
+        "device_type": "mobile",
+        "two_factor": false,
+        "failed_logins_30d": 0,
+        "password_changed_at": "2026-08-19T01:04:07.071Z",
+        "sessions": [
+          {
+            "ip": "82.56.16.203",
+            "location": "Dar es Salaam, Tanzania",
+            "device": "iPhone 14 Pro",
+            "os": "iOS 17.5",
+            "browser": "Safari 17",
+            "type": "mobile",
+            "last_active": "2026-08-31T21:19:07.071Z",
+            "current": false
+          }
+        ]
+      },
+      "flags": {
+        "reports_against": 5,
+        "warnings": 2,
+        "suspended_until": "2026-10-02T05:29:07.071Z"
+      }
+    },
+    {
+      "id": "u6",
+      "username": "zainab_lawal",
+      "display_name": "Zainab Lawal",
+      "email": "zainab.lawal@example.com",
+      "phone": "+234 869 8109 620",
+      "avatar_url": null,
+      "role": "signal_provider",
+      "status": "banned",
+      "is_verified": true,
+      "joined_at": "2025-08-09T17:43:07.071Z",
+      "last_seen_at": "2026-08-30T20:15:07.071Z",
+      "followers": 1896,
+      "following": 249,
+      "signals": 203,
+      "posts": 194,
+      "trading": {
+        "total_trades": 55,
+        "wins": 36,
+        "losses": 19,
+        "win_rate": 65.5,
+        "total_volume": 50826.98,
+        "net_pl": -1776.97,
+        "open_positions": 2,
+        "favourite_market": "V75 (1s)"
+      },
+      "deriv": {
+        "connected": true,
+        "deriv_id": "CR4703581",
+        "account_type": "real",
+        "currency": "USD",
+        "landing_company": "maltainvest",
+        "last_recorded_balance": 5329.89,
+        "balance_recorded_at": "2026-08-30T20:31:07.071Z",
+        "scopes": [
+          "read",
+          "trade",
+          "payments"
+        ]
+      },
+      "rooms": [
+        {
+          "id": "room_R_25",
+          "name": "V25 Room",
+          "kind": "market",
+          "role": "member",
+          "joined_at": "2026-08-26T09:21:07.071Z"
+        },
+        {
+          "id": "room_JD100",
+          "name": "Jump 100 Room",
+          "kind": "market",
+          "role": "member",
+          "joined_at": "2026-06-30T15:51:07.071Z"
+        },
+        {
+          "id": "room_frxGBPJPY",
+          "name": "GBP/JPY Room",
+          "kind": "market",
+          "role": "member",
+          "joined_at": "2025-12-15T08:15:07.071Z"
+        },
+        {
+          "id": "room_frxXPTUSD",
+          "name": "XPT/USD Room",
+          "kind": "market",
+          "role": "member",
+          "joined_at": "2026-06-23T01:37:07.071Z"
+        }
+      ],
+      "security": {
+        "last_ip": "187.231.96.178",
+        "last_location": "Kampala, Uganda",
+        "country_code": "UG",
+        "last_device": "iPhone 14 Pro",
+        "last_os": "iOS 17.5",
+        "last_browser": "Safari 17",
+        "device_type": "mobile",
+        "two_factor": true,
+        "failed_logins_30d": 5,
+        "password_changed_at": "2026-06-08T09:18:07.071Z",
+        "sessions": [
+          {
+            "ip": "105.46.19.249",
+            "location": "Manila, Philippines",
+            "device": "iPhone 14 Pro",
+            "os": "iOS 17.5",
+            "browser": "Safari 17",
+            "type": "mobile",
+            "last_active": "2026-08-20T01:24:07.071Z",
+            "current": false
+          }
+        ]
+      },
+      "flags": {
+        "reports_against": 1,
+        "warnings": 0,
+        "suspended_until": "2026-10-02T05:29:07.071Z"
+      }
+    },
+    {
+      "id": "u7",
+      "username": "tunde_adeyemi",
+      "display_name": "Tunde Adeyemi",
+      "email": "tunde.adeyemi@example.com",
+      "phone": "+234 860 6166 542",
+      "avatar_url": null,
+      "role": "user",
+      "status": "active",
+      "is_verified": true,
+      "joined_at": "2025-07-30T07:01:07.071Z",
+      "last_seen_at": "2026-08-20T12:32:07.071Z",
+      "followers": 1502,
+      "following": 206,
+      "signals": 27,
+      "posts": 113,
+      "trading": {
+        "total_trades": 520,
+        "wins": 294,
+        "losses": 226,
+        "win_rate": 56.5,
+        "total_volume": 23714.13,
+        "net_pl": 5544.04,
+        "open_positions": 1,
+        "favourite_market": "US 100"
+      },
+      "deriv": {
+        "connected": false,
+        "deriv_id": "CR9341197",
+        "account_type": "virtual",
+        "currency": "USD",
+        "landing_company": "svg",
+        "last_recorded_balance": 10767.05,
+        "balance_recorded_at": "2026-08-30T15:23:07.071Z",
+        "scopes": [
+          "read",
+          "trade",
+          "payments"
+        ]
+      },
+      "rooms": [
+        {
+          "id": "room_R_50",
+          "name": "V50 Room",
+          "kind": "market",
+          "role": "member",
+          "joined_at": "2025-11-10T04:06:07.071Z"
+        },
+        {
+          "id": "room_JD75",
+          "name": "Jump 75 Room",
+          "kind": "market",
+          "role": "member",
+          "joined_at": "2025-12-16T01:46:07.071Z"
+        },
+        {
+          "id": "room_frxEURJPY",
+          "name": "EUR/JPY Room",
+          "kind": "market",
+          "role": "member",
+          "joined_at": "2026-08-14T00:21:07.071Z"
+        },
+        {
+          "id": "room_frxXAGUSD",
+          "name": "XAG/USD Room",
+          "kind": "market",
+          "role": "member",
+          "joined_at": "2026-03-31T18:14:07.071Z"
+        },
+        {
+          "id": "room_u_FX_ProTrader",
+          "name": "FX_ProTrader's Room",
+          "kind": "trader",
+          "role": "member",
+          "joined_at": "2025-11-30T02:20:07.071Z"
+        }
+      ],
+      "security": {
+        "last_ip": "171.151.48.244",
+        "last_location": "Abuja, Nigeria",
+        "country_code": "NG",
+        "last_device": "iPhone 14 Pro",
+        "last_os": "iOS 17.5",
+        "last_browser": "Safari 17",
+        "device_type": "mobile",
+        "two_factor": false,
+        "failed_logins_30d": 0,
+        "password_changed_at": "2026-04-14T03:43:07.071Z",
+        "sessions": [
+          {
+            "ip": "164.137.233.152",
+            "location": "Nairobi, Kenya",
+            "device": "iPhone 14 Pro",
+            "os": "iOS 17.5",
+            "browser": "Safari 17",
+            "type": "mobile",
+            "last_active": "2026-08-20T11:12:07.071Z",
+            "current": false
+          },
+          {
+            "ip": "59.49.249.108",
+            "location": "Dar es Salaam, Tanzania",
+            "device": "iPhone 14 Pro",
+            "os": "iOS 17.5",
+            "browser": "Safari 17",
+            "type": "mobile",
+            "last_active": "2026-09-01T19:37:07.071Z",
+            "current": false
+          }
+        ]
+      },
+      "flags": {
+        "reports_against": 1,
+        "warnings": 2,
+        "suspended_until": null
+      }
+    },
+    {
+      "id": "u8",
+      "username": "chioma_nwosu",
+      "display_name": "Chioma Nwosu",
+      "email": "chioma.nwosu@example.com",
+      "phone": "+234 854 3936 510",
+      "avatar_url": null,
+      "role": "user",
+      "status": "banned",
+      "is_verified": false,
+      "joined_at": "2025-04-17T20:48:07.071Z",
+      "last_seen_at": "2026-08-21T06:31:07.071Z",
+      "followers": 867,
+      "following": 373,
+      "signals": 17,
+      "posts": 246,
+      "trading": {
+        "total_trades": 278,
+        "wins": 187,
+        "losses": 91,
+        "win_rate": 67.3,
+        "total_volume": 39362.74,
+        "net_pl": 6744.89,
+        "open_positions": 4,
+        "favourite_market": "XPD/USD"
+      },
+      "deriv": {
+        "connected": true,
+        "deriv_id": "CR3353760",
+        "account_type": "real",
+        "currency": "USD",
+        "landing_company": "maltainvest",
+        "last_recorded_balance": 9298.07,
+        "balance_recorded_at": "2026-08-31T12:10:07.071Z",
+        "scopes": [
+          "read",
+          "trade",
+          "payments"
+        ]
+      },
+      "rooms": [
+        {
+          "id": "room_1HZ50V",
+          "name": "V50 (1s) Room",
+          "kind": "market",
+          "role": "member",
+          "joined_at": "2025-12-13T22:02:07.071Z"
+        },
+        {
+          "id": "room_CRASH300",
+          "name": "Crash 300 Room",
+          "kind": "market",
+          "role": "member",
+          "joined_at": "2025-12-30T01:57:07.071Z"
+        },
+        {
+          "id": "room_frxEURGBP",
+          "name": "EUR/GBP Room",
+          "kind": "market",
+          "role": "member",
+          "joined_at": "2025-11-27T17:36:07.071Z"
+        }
+      ],
+      "security": {
+        "last_ip": "81.52.89.106",
+        "last_location": "Karachi, Pakistan",
+        "country_code": "PK",
+        "last_device": "Tecno Camon 20",
+        "last_os": "Android 13",
+        "last_browser": "Chrome 128",
+        "device_type": "mobile",
+        "two_factor": false,
+        "failed_logins_30d": 8,
+        "password_changed_at": "2025-09-25T02:29:07.071Z",
+        "sessions": [
+          {
+            "ip": "143.234.133.32",
+            "location": "Johannesburg, South Africa",
+            "device": "Tecno Camon 20",
+            "os": "Android 13",
+            "browser": "Chrome 128",
+            "type": "mobile",
+            "last_active": "2026-08-27T06:44:07.071Z",
+            "current": false
+          },
+          {
+            "ip": "141.238.233.102",
+            "location": "Mumbai, India",
+            "device": "MacBook Pro",
+            "os": "macOS 14",
+            "browser": "Chrome 127",
+            "type": "desktop",
+            "last_active": "2026-08-31T19:48:07.071Z",
+            "current": false
+          }
+        ]
+      },
+      "flags": {
+        "reports_against": 3,
+        "warnings": 1,
+        "suspended_until": "2026-10-02T05:29:07.071Z"
+      }
+    },
+    {
+      "id": "u9",
+      "username": "musa_okoro",
+      "display_name": "Musa Okoro",
+      "email": "musa.okoro@example.com",
+      "phone": "+234 886 2856 938",
+      "avatar_url": null,
+      "role": "user",
+      "status": "banned",
+      "is_verified": true,
+      "joined_at": "2024-09-02T05:39:07.071Z",
+      "last_seen_at": "2026-08-27T03:35:07.071Z",
+      "followers": 507,
+      "following": 88,
+      "signals": 11,
+      "posts": 228,
+      "trading": {
+        "total_trades": 617,
+        "wins": 286,
+        "losses": 331,
+        "win_rate": 46.4,
+        "total_volume": 69117.08,
+        "net_pl": 5748.81,
+        "open_positions": 1,
+        "favourite_market": "BTC/USD"
+      },
+      "deriv": {
+        "connected": false,
+        "deriv_id": "CR8170009",
+        "account_type": "real",
+        "currency": "USD",
+        "landing_company": "vanuatu",
+        "last_recorded_balance": 3982.08,
+        "balance_recorded_at": "2026-08-30T21:17:07.071Z",
+        "scopes": [
+          "read",
+          "trade",
+          "payments"
+        ]
+      },
+      "rooms": [
+        {
+          "id": "room_R_100",
+          "name": "V100 Room",
+          "kind": "market",
+          "role": "member",
+          "joined_at": "2026-05-14T16:31:07.071Z"
+        }
+      ],
+      "security": {
+        "last_ip": "81.143.255.80",
+        "last_location": "Dar es Salaam, Tanzania",
+        "country_code": "TZ",
+        "last_device": "MacBook Pro",
+        "last_os": "macOS 14",
+        "last_browser": "Chrome 127",
+        "device_type": "desktop",
+        "two_factor": true,
+        "failed_logins_30d": 6,
+        "password_changed_at": "2026-06-30T19:50:07.071Z",
+        "sessions": [
+          {
+            "ip": "96.68.81.25",
+            "location": "Kampala, Uganda",
+            "device": "Desktop",
+            "os": "Windows 11",
+            "browser": "Chrome 128",
+            "type": "desktop",
+            "last_active": "2026-08-18T23:36:07.071Z",
+            "current": false
+          },
+          {
+            "ip": "186.159.103.197",
+            "location": "Mumbai, India",
+            "device": "Desktop",
+            "os": "Windows 10",
+            "browser": "Edge 128",
+            "type": "desktop",
+            "last_active": "2026-08-26T13:33:07.071Z",
+            "current": false
+          },
+          {
+            "ip": "99.3.246.228",
+            "location": "Kampala, Uganda",
+            "device": "MacBook Pro",
+            "os": "macOS 14",
+            "browser": "Chrome 127",
+            "type": "desktop",
+            "last_active": "2026-08-29T23:05:07.071Z",
+            "current": false
+          },
+          {
+            "ip": "167.213.187.241",
+            "location": "Kampala, Uganda",
+            "device": "Desktop",
+            "os": "Windows 10",
+            "browser": "Edge 128",
+            "type": "desktop",
+            "last_active": "2026-08-29T16:39:07.071Z",
+            "current": false
+          }
+        ]
+      },
+      "flags": {
+        "reports_against": 2,
+        "warnings": 0,
+        "suspended_until": "2026-10-02T05:29:07.071Z"
+      }
+    },
+    {
+      "id": "u10",
+      "username": "ada_bello",
+      "display_name": "Ada Bello",
+      "email": "ada.bello@example.com",
+      "phone": "+234 838 4430 530",
+      "avatar_url": null,
+      "role": "signal_provider",
+      "status": "inactive",
+      "is_verified": true,
+      "joined_at": "2024-07-04T08:01:07.071Z",
+      "last_seen_at": "2026-09-01T12:29:07.072Z",
+      "followers": 2160,
+      "following": 148,
+      "signals": 143,
+      "posts": 114,
+      "trading": {
+        "total_trades": 294,
+        "wins": 140,
+        "losses": 154,
+        "win_rate": 47.6,
+        "total_volume": 56847.35,
+        "net_pl": -184.97,
+        "open_positions": 3,
+        "favourite_market": "Crash 1000"
+      },
+      "deriv": {
+        "connected": true,
+        "deriv_id": "CR1704944",
+        "account_type": "real",
+        "currency": "USD",
+        "landing_company": "vanuatu",
+        "last_recorded_balance": 8795.79,
+        "balance_recorded_at": "2026-09-01T12:31:07.072Z",
+        "scopes": [
+          "read",
+          "trade",
+          "payments"
+        ]
+      },
+      "rooms": [
+        {
+          "id": "room_1HZ100V",
+          "name": "V100 (1s) Room",
+          "kind": "market",
+          "role": "member",
+          "joined_at": "2026-03-13T05:36:07.072Z"
+        },
+        {
+          "id": "room_CRASH1000",
+          "name": "Crash 1000 Room",
+          "kind": "market",
+          "role": "member",
+          "joined_at": "2026-02-27T14:34:07.072Z"
+        },
+        {
+          "id": "room_frxUSDCHF",
+          "name": "USD/CHF Room",
+          "kind": "market",
+          "role": "member",
+          "joined_at": "2026-07-11T03:17:07.072Z"
+        },
+        {
+          "id": "room_cryADAUSD",
+          "name": "ADA/USD Room",
+          "kind": "market",
+          "role": "member",
+          "joined_at": "2026-04-03T22:32:07.072Z"
+        }
+      ],
+      "security": {
+        "last_ip": "132.247.167.29",
+        "last_location": "Abuja, Nigeria",
+        "country_code": "NG",
+        "last_device": "Desktop",
+        "last_os": "Ubuntu 24.04",
+        "last_browser": "Firefox 129",
+        "device_type": "desktop",
+        "two_factor": false,
+        "failed_logins_30d": 3,
+        "password_changed_at": "2026-01-23T02:08:07.072Z",
+        "sessions": [
+          {
+            "ip": "182.222.72.25",
+            "location": "Manila, Philippines",
+            "device": "Samsung Galaxy S23",
+            "os": "Android 14",
+            "browser": "Chrome 128",
+            "type": "mobile",
+            "last_active": "2026-08-21T07:37:07.072Z",
+            "current": false
+          },
+          {
+            "ip": "50.152.155.121",
+            "location": "Dubai, UAE",
+            "device": "Tecno Camon 20",
+            "os": "Android 13",
+            "browser": "Chrome 128",
+            "type": "mobile",
+            "last_active": "2026-08-31T22:54:07.072Z",
+            "current": false
+          },
+          {
+            "ip": "179.157.20.104",
+            "location": "Manchester, United Kingdom",
+            "device": "Samsung Galaxy S23",
+            "os": "Android 14",
+            "browser": "Chrome 128",
+            "type": "mobile",
+            "last_active": "2026-08-20T02:56:07.072Z",
+            "current": false
+          }
+        ]
+      },
+      "flags": {
+        "reports_against": 5,
+        "warnings": 3,
+        "suspended_until": null
+      }
+    },
+    {
+      "id": "u11",
+      "username": "daniel_achebe",
+      "display_name": "Daniel Achebe",
+      "email": "daniel.achebe@example.com",
+      "phone": "+234 887 6899 538",
+      "avatar_url": null,
+      "role": "user",
+      "status": "active",
+      "is_verified": false,
+      "joined_at": "2024-09-21T07:57:07.072Z",
+      "last_seen_at": "2026-08-25T07:49:07.072Z",
+      "followers": 1095,
+      "following": 111,
+      "signals": 26,
+      "posts": 80,
+      "trading": {
+        "total_trades": 419,
+        "wins": 274,
+        "losses": 145,
+        "win_rate": 65.4,
+        "total_volume": 38353.35,
+        "net_pl": 2338.43,
+        "open_positions": 1,
+        "favourite_market": "US 500"
+      },
+      "deriv": {
+        "connected": true,
+        "deriv_id": "CR5089537",
+        "account_type": "virtual",
+        "currency": "USD",
+        "landing_company": "maltainvest",
+        "last_recorded_balance": 3865.43,
+        "balance_recorded_at": "2026-09-02T01:39:07.072Z",
+        "scopes": [
+          "read",
+          "trade",
+          "payments"
+        ]
+      },
+      "rooms": [
+        {
+          "id": "room_R_75",
+          "name": "V75 Room",
+          "kind": "market",
+          "role": "member",
+          "joined_at": "2026-05-14T01:22:07.072Z"
+        },
+        {
+          "id": "room_BOOM300",
+          "name": "Boom 300 Room",
+          "kind": "market",
+          "role": "member",
+          "joined_at": "2026-08-25T09:50:07.072Z"
+        },
+        {
+          "id": "room_frxUSDCAD",
+          "name": "USD/CAD Room",
+          "kind": "market",
+          "role": "member",
+          "joined_at": "2026-08-13T06:09:07.072Z"
+        },
+        {
+          "id": "room_cryBCHUSD",
+          "name": "BCH/USD Room",
+          "kind": "market",
+          "role": "member",
+          "joined_at": "2026-03-15T13:16:07.072Z"
+        }
+      ],
+      "security": {
+        "last_ip": "91.114.16.176",
+        "last_location": "London, United Kingdom",
+        "country_code": "GB",
+        "last_device": "MacBook Pro",
+        "last_os": "macOS 14",
+        "last_browser": "Chrome 127",
+        "device_type": "desktop",
+        "two_factor": false,
+        "failed_logins_30d": 5,
+        "password_changed_at": "2026-06-29T10:26:07.072Z",
+        "sessions": [
+          {
+            "ip": "139.55.96.166",
+            "location": "Manila, Philippines",
+            "device": "Desktop",
+            "os": "Ubuntu 24.04",
+            "browser": "Firefox 129",
+            "type": "desktop",
+            "last_active": "2026-08-26T19:36:07.072Z",
+            "current": false
+          },
+          {
+            "ip": "105.231.254.84",
+            "location": "Lagos, Nigeria",
+            "device": "Desktop",
+            "os": "Windows 10",
+            "browser": "Edge 128",
+            "type": "desktop",
+            "last_active": "2026-08-22T22:57:07.072Z",
+            "current": false
+          }
+        ]
+      },
+      "flags": {
+        "reports_against": 5,
+        "warnings": 0,
+        "suspended_until": null
+      }
+    },
+    {
+      "id": "u12",
+      "username": "blessing_danjuma",
+      "display_name": "Blessing Danjuma",
+      "email": "blessing.danjuma@example.com",
+      "phone": "+234 865 7478 942",
+      "avatar_url": null,
+      "role": "signal_provider",
+      "status": "active",
+      "is_verified": false,
+      "joined_at": "2024-08-16T22:58:07.072Z",
+      "last_seen_at": "2026-08-23T09:36:07.072Z",
+      "followers": 145,
+      "following": 370,
+      "signals": 210,
+      "posts": 103,
+      "trading": {
+        "total_trades": 334,
+        "wins": 159,
+        "losses": 175,
+        "win_rate": 47.6,
+        "total_volume": 37966.53,
+        "net_pl": -646.97,
+        "open_positions": 0,
+        "favourite_market": "LTC/USD"
+      },
+      "deriv": {
+        "connected": false,
+        "deriv_id": "CR9133931",
+        "account_type": "virtual",
+        "currency": "USD",
+        "landing_company": "vanuatu",
+        "last_recorded_balance": 1536.81,
+        "balance_recorded_at": "2026-09-01T19:23:07.072Z",
+        "scopes": [
+          "read",
+          "trade",
+          "payments"
+        ]
+      },
+      "rooms": [
+        {
+          "id": "room_1HZ75V",
+          "name": "V75 (1s) Room",
+          "kind": "market",
+          "role": "member",
+          "joined_at": "2026-06-27T08:38:07.072Z"
+        },
+        {
+          "id": "room_BOOM500",
+          "name": "Boom 500 Room",
+          "kind": "market",
+          "role": "member",
+          "joined_at": "2025-11-10T12:19:07.072Z"
+        },
+        {
+          "id": "room_frxAUDUSD",
+          "name": "AUD/USD Room",
+          "kind": "market",
+          "role": "member",
+          "joined_at": "2025-11-09T13:18:07.072Z"
+        },
+        {
+          "id": "room_cryLTCUSD",
+          "name": "LTC/USD Room",
+          "kind": "market",
+          "role": "member",
+          "joined_at": "2026-06-18T01:33:07.072Z"
+        },
+        {
+          "id": "room_OTC_DJI",
+          "name": "US 30 Room",
+          "kind": "market",
+          "role": "member",
+          "joined_at": "2026-02-10T22:01:07.072Z"
+        }
+      ],
+      "security": {
+        "last_ip": "156.172.47.112",
+        "last_location": "Dubai, UAE",
+        "country_code": "AE",
+        "last_device": "Desktop",
+        "last_os": "Windows 11",
+        "last_browser": "Chrome 128",
+        "device_type": "desktop",
+        "two_factor": false,
+        "failed_logins_30d": 1,
+        "password_changed_at": "2026-01-18T06:48:07.072Z",
+        "sessions": [
+          {
+            "ip": "108.148.119.49",
+            "location": "Dubai, UAE",
+            "device": "Samsung Galaxy S23",
+            "os": "Android 14",
+            "browser": "Chrome 128",
+            "type": "mobile",
+            "last_active": "2026-08-13T12:47:07.072Z",
+            "current": false
+          }
+        ]
+      },
+      "flags": {
+        "reports_against": 4,
+        "warnings": 3,
+        "suspended_until": null
+      }
+    },
+    {
+      "id": "u13",
+      "username": "ibrahim_mensah",
+      "display_name": "Ibrahim Mensah",
+      "email": "ibrahim.mensah@example.com",
+      "phone": "+234 855 6760 398",
+      "avatar_url": null,
+      "role": "moderator",
+      "status": "inactive",
+      "is_verified": false,
+      "joined_at": "2026-04-20T02:09:07.072Z",
+      "last_seen_at": "2026-08-30T15:45:07.072Z",
+      "followers": 1577,
+      "following": 52,
+      "signals": 24,
+      "posts": 74,
+      "trading": {
+        "total_trades": 467,
+        "wins": 197,
+        "losses": 270,
+        "win_rate": 42.2,
+        "total_volume": 4117.24,
+        "net_pl": 5643.9,
+        "open_positions": 0,
+        "favourite_market": "Boom 1000"
+      },
+      "deriv": {
+        "connected": true,
+        "deriv_id": "CR9342912",
+        "account_type": "real",
+        "currency": "USD",
+        "landing_company": "svg",
+        "last_recorded_balance": 7636.65,
+        "balance_recorded_at": "2026-08-30T07:58:07.072Z",
+        "scopes": [
+          "read",
+          "trade",
+          "payments"
+        ]
+      },
+      "rooms": [
+        {
+          "id": "room_BOOM1000",
+          "name": "Boom 1000 Room",
+          "kind": "market",
+          "role": "member",
+          "joined_at": "2026-04-06T23:35:07.072Z"
+        },
+        {
+          "id": "room_frxUSDJPY",
+          "name": "USD/JPY Room",
+          "kind": "market",
+          "role": "member",
+          "joined_at": "2026-01-29T06:23:07.072Z"
+        },
+        {
+          "id": "room_cryXRPUSD",
+          "name": "XRP/USD Room",
+          "kind": "market",
+          "role": "member",
+          "joined_at": "2026-01-09T21:29:07.072Z"
+        },
+        {
+          "id": "room_OTC_NDX",
+          "name": "US 100 Room",
+          "kind": "market",
+          "role": "member",
+          "joined_at": "2026-04-22T06:58:07.072Z"
+        },
+        {
+          "id": "room_u_SwingMaster",
+          "name": "SwingMaster's Room",
+          "kind": "trader",
+          "role": "member",
+          "joined_at": "2026-02-15T08:32:07.072Z"
+        }
+      ],
+      "security": {
+        "last_ip": "111.224.125.230",
+        "last_location": "Manchester, United Kingdom",
+        "country_code": "GB",
+        "last_device": "Desktop",
+        "last_os": "Windows 10",
+        "last_browser": "Edge 128",
+        "device_type": "desktop",
+        "two_factor": true,
+        "failed_logins_30d": 7,
+        "password_changed_at": "2025-10-20T23:54:07.072Z",
+        "sessions": [
+          {
+            "ip": "167.135.134.111",
+            "location": "Karachi, Pakistan",
+            "device": "Samsung Galaxy S23",
+            "os": "Android 14",
+            "browser": "Chrome 128",
+            "type": "mobile",
+            "last_active": "2026-08-19T21:42:07.072Z",
+            "current": false
+          },
+          {
+            "ip": "107.190.135.192",
+            "location": "Manila, Philippines",
+            "device": "Desktop",
+            "os": "Ubuntu 24.04",
+            "browser": "Firefox 129",
+            "type": "desktop",
+            "last_active": "2026-08-23T23:44:07.072Z",
+            "current": false
+          }
+        ]
+      },
+      "flags": {
+        "reports_against": 0,
+        "warnings": 0,
+        "suspended_until": null
+      }
+    },
+    {
+      "id": "u14",
+      "username": "ngozi_obi",
+      "display_name": "Ngozi Obi",
+      "email": "ngozi.obi@example.com",
+      "phone": "+234 880 8846 132",
+      "avatar_url": null,
+      "role": "user",
+      "status": "inactive",
+      "is_verified": true,
+      "joined_at": "2025-02-25T14:09:07.072Z",
+      "last_seen_at": "2026-08-28T05:18:07.072Z",
+      "followers": 1909,
+      "following": 321,
+      "signals": 22,
+      "posts": 26,
+      "trading": {
+        "total_trades": 431,
+        "wins": 233,
+        "losses": 198,
+        "win_rate": 54.1,
+        "total_volume": 56432.46,
+        "net_pl": 459.57,
+        "open_positions": 0,
+        "favourite_market": "XAG/USD"
+      },
+      "deriv": {
+        "connected": false,
+        "deriv_id": "CR1873037",
+        "account_type": "real",
+        "currency": "USD",
+        "landing_company": "vanuatu",
+        "last_recorded_balance": 11547.49,
+        "balance_recorded_at": "2026-08-30T14:37:07.072Z",
+        "scopes": [
+          "read",
+          "trade",
+          "payments"
+        ]
+      },
+      "rooms": [
+        {
+          "id": "room_RB100",
+          "name": "RB 100 Room",
+          "kind": "market",
+          "role": "member",
+          "joined_at": "2026-04-09T10:27:07.072Z"
+        },
+        {
+          "id": "room_frxGBPUSD",
+          "name": "GBP/USD Room",
+          "kind": "market",
+          "role": "member",
+          "joined_at": "2026-01-06T04:05:07.072Z"
+        },
+        {
+          "id": "room_crySOLUSD",
+          "name": "SOL/USD Room",
+          "kind": "market",
+          "role": "member",
+          "joined_at": "2026-03-31T03:12:07.072Z"
+        },
+        {
+          "id": "room_OTC_SPC",
+          "name": "US 500 Room",
+          "kind": "market",
+          "role": "member",
+          "joined_at": "2025-12-12T19:20:07.072Z"
+        },
+        {
+          "id": "room_u_Mr_Market",
+          "name": "Mr_Market's Room",
+          "kind": "trader",
+          "role": "member",
+          "joined_at": "2026-07-11T20:57:07.072Z"
+        }
+      ],
+      "security": {
+        "last_ip": "42.198.121.64",
+        "last_location": "Cairo, Egypt",
+        "country_code": "EG",
+        "last_device": "Desktop",
+        "last_os": "Ubuntu 24.04",
+        "last_browser": "Firefox 129",
+        "device_type": "desktop",
+        "two_factor": false,
+        "failed_logins_30d": 0,
+        "password_changed_at": "2025-10-21T16:29:07.072Z",
+        "sessions": [
+          {
+            "ip": "46.6.106.117",
+            "location": "Manchester, United Kingdom",
+            "device": "Desktop",
+            "os": "Windows 10",
+            "browser": "Edge 128",
+            "type": "desktop",
+            "last_active": "2026-09-01T23:36:07.072Z",
+            "current": false
+          },
+          {
+            "ip": "193.1.215.233",
+            "location": "Dar es Salaam, Tanzania",
+            "device": "Desktop",
+            "os": "Windows 10",
+            "browser": "Edge 128",
+            "type": "desktop",
+            "last_active": "2026-08-23T02:32:07.072Z",
+            "current": false
+          },
+          {
+            "ip": "70.28.232.95",
+            "location": "London, United Kingdom",
+            "device": "MacBook Pro",
+            "os": "macOS 14",
+            "browser": "Chrome 127",
+            "type": "desktop",
+            "last_active": "2026-08-14T15:20:07.072Z",
+            "current": false
+          },
+          {
+            "ip": "164.117.165.215",
+            "location": "Jakarta, Indonesia",
+            "device": "Desktop",
+            "os": "Windows 10",
+            "browser": "Edge 128",
+            "type": "desktop",
+            "last_active": "2026-08-26T14:29:07.072Z",
+            "current": false
+          }
+        ]
+      },
+      "flags": {
+        "reports_against": 1,
+        "warnings": 1,
+        "suspended_until": null
+      }
+    },
+    {
+      "id": "u15",
+      "username": "samuel_mohammed",
+      "display_name": "Samuel Mohammed",
+      "email": "samuel.mohammed@example.com",
+      "phone": "+234 816 7020 627",
+      "avatar_url": null,
+      "role": "moderator",
+      "status": "active",
+      "is_verified": true,
+      "joined_at": "2024-11-25T12:59:07.072Z",
+      "last_seen_at": "2026-08-28T22:21:07.072Z",
+      "followers": 2074,
+      "following": 201,
+      "signals": 4,
+      "posts": 249,
+      "trading": {
+        "total_trades": 628,
+        "wins": 403,
+        "losses": 225,
+        "win_rate": 64.2,
+        "total_volume": 500.43,
+        "net_pl": 5450.43,
+        "open_positions": 1,
+        "favourite_market": "EUR/JPY"
+      },
+      "deriv": {
+        "connected": false,
+        "deriv_id": "CR6126996",
+        "account_type": "real",
+        "currency": "USD",
+        "landing_company": "vanuatu",
+        "last_recorded_balance": 5042.84,
+        "balance_recorded_at": "2026-09-02T01:20:07.072Z",
+        "scopes": [
+          "read",
+          "trade",
+          "payments"
+        ]
+      },
+      "rooms": [
+        {
+          "id": "room_stpRNG",
+          "name": "Step Room",
+          "kind": "market",
+          "role": "member",
+          "joined_at": "2026-07-14T14:14:07.072Z"
+        },
+        {
+          "id": "room_frxEURUSD",
+          "name": "EUR/USD Room",
+          "kind": "market",
+          "role": "member",
+          "joined_at": "2026-05-03T02:28:07.072Z"
+        },
+        {
+          "id": "room_cryETHUSD",
+          "name": "ETH/USD Room",
+          "kind": "market",
+          "role": "member",
+          "joined_at": "2026-01-26T22:44:07.072Z"
+        }
+      ],
+      "security": {
+        "last_ip": "168.193.217.182",
+        "last_location": "Karachi, Pakistan",
+        "country_code": "PK",
+        "last_device": "MacBook Pro",
+        "last_os": "macOS 14",
+        "last_browser": "Chrome 127",
+        "device_type": "desktop",
+        "two_factor": true,
+        "failed_logins_30d": 0,
+        "password_changed_at": "2025-12-17T22:47:07.072Z",
+        "sessions": [
+          {
+            "ip": "163.153.68.148",
+            "location": "Karachi, Pakistan",
+            "device": "Desktop",
+            "os": "Windows 11",
+            "browser": "Chrome 128",
+            "type": "desktop",
+            "last_active": "2026-08-29T04:03:07.072Z",
+            "current": false
+          },
+          {
+            "ip": "62.69.201.182",
+            "location": "Abuja, Nigeria",
+            "device": "Desktop",
+            "os": "Ubuntu 24.04",
+            "browser": "Firefox 129",
+            "type": "desktop",
+            "last_active": "2026-08-24T18:59:07.072Z",
+            "current": false
+          },
+          {
+            "ip": "115.246.117.170",
+            "location": "Dubai, UAE",
+            "device": "MacBook Pro",
+            "os": "macOS 14",
+            "browser": "Chrome 127",
+            "type": "desktop",
+            "last_active": "2026-08-19T21:26:07.072Z",
+            "current": false
+          },
+          {
+            "ip": "192.229.87.160",
+            "location": "Accra, Ghana",
+            "device": "Tecno Camon 20",
+            "os": "Android 13",
+            "browser": "Chrome 128",
+            "type": "mobile",
+            "last_active": "2026-08-27T23:23:07.072Z",
+            "current": false
+          }
+        ]
+      },
+      "flags": {
+        "reports_against": 3,
+        "warnings": 3,
+        "suspended_until": null
+      }
+    },
+    {
+      "id": "u16",
+      "username": "aisha_ibrahim",
+      "display_name": "Aisha Ibrahim",
+      "email": "aisha.ibrahim@example.com",
+      "phone": "+234 816 4516 522",
+      "avatar_url": null,
+      "role": "moderator",
+      "status": "active",
+      "is_verified": false,
+      "joined_at": "2026-05-03T08:34:07.072Z",
+      "last_seen_at": "2026-08-21T04:03:07.072Z",
+      "followers": 2207,
+      "following": 47,
+      "signals": 8,
+      "posts": 87,
+      "trading": {
+        "total_trades": 113,
+        "wins": 54,
+        "losses": 59,
+        "win_rate": 47.8,
+        "total_volume": 29233.48,
+        "net_pl": 5959.58,
+        "open_positions": 1,
+        "favourite_market": "LTC/USD"
+      },
+      "deriv": {
+        "connected": true,
+        "deriv_id": "CR3225739",
+        "account_type": "real",
+        "currency": "USD",
+        "landing_company": "vanuatu",
+        "last_recorded_balance": 3570.86,
+        "balance_recorded_at": "2026-08-30T17:10:07.072Z",
+        "scopes": [
+          "read",
+          "trade",
+          "payments"
+        ]
+      },
+      "rooms": [
+        {
+          "id": "room_R_10",
+          "name": "V10 Room",
+          "kind": "market",
+          "role": "member",
+          "joined_at": "2026-06-29T11:47:07.072Z"
+        }
+      ],
+      "security": {
+        "last_ip": "193.92.78.18",
+        "last_location": "Kampala, Uganda",
+        "country_code": "UG",
+        "last_device": "Desktop",
+        "last_os": "Ubuntu 24.04",
+        "last_browser": "Firefox 129",
+        "device_type": "desktop",
+        "two_factor": false,
+        "failed_logins_30d": 1,
+        "password_changed_at": "2025-07-31T07:11:07.072Z",
+        "sessions": [
+          {
+            "ip": "86.114.160.164",
+            "location": "Kampala, Uganda",
+            "device": "MacBook Pro",
+            "os": "macOS 14",
+            "browser": "Chrome 127",
+            "type": "desktop",
+            "last_active": "2026-08-31T12:37:07.072Z",
+            "current": false
+          }
+        ]
+      },
+      "flags": {
+        "reports_against": 1,
+        "warnings": 0,
+        "suspended_until": null
+      }
+    },
+    {
+      "id": "u17",
+      "username": "peter_suleiman",
+      "display_name": "Peter Suleiman",
+      "email": "peter.suleiman@example.com",
+      "phone": "+234 855 2857 493",
+      "avatar_url": null,
+      "role": "user",
+      "status": "active",
+      "is_verified": false,
+      "joined_at": "2025-02-24T08:06:07.072Z",
+      "last_seen_at": "2026-08-25T12:06:07.072Z",
+      "followers": 1416,
+      "following": 280,
+      "signals": 20,
+      "posts": 79,
+      "trading": {
+        "total_trades": 56,
+        "wins": 37,
+        "losses": 19,
+        "win_rate": 66.1,
+        "total_volume": 5019.36,
+        "net_pl": 3279.64,
+        "open_positions": 0,
+        "favourite_market": "Crash 1000"
+      },
+      "deriv": {
+        "connected": true,
+        "deriv_id": "CR9694769",
+        "account_type": "virtual",
+        "currency": "USD",
+        "landing_company": "vanuatu",
+        "last_recorded_balance": 10245.31,
+        "balance_recorded_at": "2026-08-31T11:15:07.072Z",
+        "scopes": [
+          "read",
+          "trade",
+          "payments"
+        ]
+      },
+      "rooms": [
+        {
+          "id": "room_R_25",
+          "name": "V25 Room",
+          "kind": "market",
+          "role": "member",
+          "joined_at": "2026-05-10T17:29:07.072Z"
+        },
+        {
+          "id": "room_JD100",
+          "name": "Jump 100 Room",
+          "kind": "market",
+          "role": "member",
+          "joined_at": "2025-12-23T22:32:07.072Z"
+        },
+        {
+          "id": "room_frxGBPJPY",
+          "name": "GBP/JPY Room",
+          "kind": "market",
+          "role": "member",
+          "joined_at": "2026-03-23T02:49:07.072Z"
+        }
+      ],
+      "security": {
+        "last_ip": "105.68.246.208",
+        "last_location": "Accra, Ghana",
+        "country_code": "GH",
+        "last_device": "iPhone 14 Pro",
+        "last_os": "iOS 17.5",
+        "last_browser": "Safari 17",
+        "device_type": "mobile",
+        "two_factor": false,
+        "failed_logins_30d": 3,
+        "password_changed_at": "2026-07-21T06:50:07.072Z",
+        "sessions": [
+          {
+            "ip": "178.47.148.30",
+            "location": "Nairobi, Kenya",
+            "device": "Desktop",
+            "os": "Windows 10",
+            "browser": "Edge 128",
+            "type": "desktop",
+            "last_active": "2026-08-25T01:35:07.072Z",
+            "current": false
+          },
+          {
+            "ip": "185.245.238.27",
+            "location": "Dar es Salaam, Tanzania",
+            "device": "Desktop",
+            "os": "Windows 11",
+            "browser": "Chrome 128",
+            "type": "desktop",
+            "last_active": "2026-08-23T06:04:07.072Z",
+            "current": false
+          },
+          {
+            "ip": "141.104.7.86",
+            "location": "Dar es Salaam, Tanzania",
+            "device": "Desktop",
+            "os": "Windows 11",
+            "browser": "Chrome 128",
+            "type": "desktop",
+            "last_active": "2026-08-16T18:48:07.072Z",
+            "current": false
+          },
+          {
+            "ip": "170.29.89.207",
+            "location": "Abuja, Nigeria",
+            "device": "Samsung Galaxy S23",
+            "os": "Android 14",
+            "browser": "Chrome 128",
+            "type": "mobile",
+            "last_active": "2026-08-24T07:47:07.072Z",
+            "current": false
+          }
+        ]
+      },
+      "flags": {
+        "reports_against": 5,
+        "warnings": 3,
+        "suspended_until": null
+      }
+    },
+    {
+      "id": "u18",
+      "username": "fatima_ekene",
+      "display_name": "Fatima Ekene",
+      "email": "fatima.ekene@example.com",
+      "phone": "+234 846 2396 482",
+      "avatar_url": null,
+      "role": "signal_provider",
+      "status": "active",
+      "is_verified": false,
+      "joined_at": "2024-03-19T09:09:07.072Z",
+      "last_seen_at": "2026-08-29T04:30:07.072Z",
+      "followers": 1560,
+      "following": 262,
+      "signals": 184,
+      "posts": 54,
+      "trading": {
+        "total_trades": 363,
+        "wins": 154,
+        "losses": 209,
+        "win_rate": 42.4,
+        "total_volume": 31633.64,
+        "net_pl": 553.8,
+        "open_positions": 0,
+        "favourite_market": "Boom 1000"
+      },
+      "deriv": {
+        "connected": false,
+        "deriv_id": "CR9984080",
+        "account_type": "virtual",
+        "currency": "USD",
+        "landing_company": "svg",
+        "last_recorded_balance": 8205.18,
+        "balance_recorded_at": "2026-09-01T07:06:07.072Z",
+        "scopes": [
+          "read",
+          "trade",
+          "payments"
+        ]
+      },
+      "rooms": [
+        {
+          "id": "room_R_50",
+          "name": "V50 Room",
+          "kind": "market",
+          "role": "member",
+          "joined_at": "2026-06-26T08:48:07.072Z"
+        },
+        {
+          "id": "room_JD75",
+          "name": "Jump 75 Room",
+          "kind": "market",
+          "role": "member",
+          "joined_at": "2026-02-07T11:03:07.072Z"
+        },
+        {
+          "id": "room_frxEURJPY",
+          "name": "EUR/JPY Room",
+          "kind": "market",
+          "role": "member",
+          "joined_at": "2026-06-22T01:18:07.072Z"
+        },
+        {
+          "id": "room_frxXAGUSD",
+          "name": "XAG/USD Room",
+          "kind": "market",
+          "role": "member",
+          "joined_at": "2026-04-06T10:11:07.072Z"
+        },
+        {
+          "id": "room_u_FX_ProTrader",
+          "name": "FX_ProTrader's Room",
+          "kind": "trader",
+          "role": "member",
+          "joined_at": "2026-06-16T04:03:07.072Z"
+        }
+      ],
+      "security": {
+        "last_ip": "93.190.95.12",
+        "last_location": "Dar es Salaam, Tanzania",
+        "country_code": "TZ",
+        "last_device": "iPhone 14 Pro",
+        "last_os": "iOS 17.5",
+        "last_browser": "Safari 17",
+        "device_type": "mobile",
+        "two_factor": true,
+        "failed_logins_30d": 5,
+        "password_changed_at": "2025-12-13T20:26:07.072Z",
+        "sessions": [
+          {
+            "ip": "71.30.50.132",
+            "location": "Dar es Salaam, Tanzania",
+            "device": "iPhone 14 Pro",
+            "os": "iOS 17.5",
+            "browser": "Safari 17",
+            "type": "mobile",
+            "last_active": "2026-08-15T15:30:07.072Z",
+            "current": false
+          }
+        ]
+      },
+      "flags": {
+        "reports_against": 1,
+        "warnings": 1,
+        "suspended_until": null
+      }
+    },
+    {
+      "id": "u19",
+      "username": "david_balogun",
+      "display_name": "David Balogun",
+      "email": "david.balogun@example.com",
+      "phone": "+234 851 4063 905",
+      "avatar_url": null,
+      "role": "user",
+      "status": "banned",
+      "is_verified": false,
+      "joined_at": "2025-03-21T05:21:07.072Z",
+      "last_seen_at": "2026-08-31T16:27:07.072Z",
+      "followers": 464,
+      "following": 123,
+      "signals": 19,
+      "posts": 283,
+      "trading": {
+        "total_trades": 51,
+        "wins": 33,
+        "losses": 18,
+        "win_rate": 64.7,
+        "total_volume": 32029.94,
+        "net_pl": 18.21,
+        "open_positions": 3,
+        "favourite_market": "ETH/USD"
+      },
+      "deriv": {
+        "connected": true,
+        "deriv_id": "CR4827570",
+        "account_type": "real",
+        "currency": "USD",
+        "landing_company": "svg",
+        "last_recorded_balance": 11439.7,
+        "balance_recorded_at": "2026-08-31T19:06:07.072Z",
+        "scopes": [
+          "read",
+          "trade",
+          "payments"
+        ]
+      },
+      "rooms": [
+        {
+          "id": "room_1HZ50V",
+          "name": "V50 (1s) Room",
+          "kind": "market",
+          "role": "member",
+          "joined_at": "2026-04-17T20:01:07.072Z"
+        },
+        {
+          "id": "room_CRASH300",
+          "name": "Crash 300 Room",
+          "kind": "market",
+          "role": "member",
+          "joined_at": "2026-01-22T16:07:07.072Z"
+        }
+      ],
+      "security": {
+        "last_ip": "80.50.23.199",
+        "last_location": "Cairo, Egypt",
+        "country_code": "EG",
+        "last_device": "Samsung Galaxy S23",
+        "last_os": "Android 14",
+        "last_browser": "Chrome 128",
+        "device_type": "mobile",
+        "two_factor": true,
+        "failed_logins_30d": 9,
+        "password_changed_at": "2026-05-25T12:51:07.072Z",
+        "sessions": [
+          {
+            "ip": "43.153.40.59",
+            "location": "Dar es Salaam, Tanzania",
+            "device": "Desktop",
+            "os": "Ubuntu 24.04",
+            "browser": "Firefox 129",
+            "type": "desktop",
+            "last_active": "2026-08-19T11:13:07.072Z",
+            "current": false
+          },
+          {
+            "ip": "197.93.106.115",
+            "location": "Kampala, Uganda",
+            "device": "Desktop",
+            "os": "Windows 11",
+            "browser": "Chrome 128",
+            "type": "desktop",
+            "last_active": "2026-08-23T13:19:07.072Z",
+            "current": false
+          },
+          {
+            "ip": "45.160.140.194",
+            "location": "Dar es Salaam, Tanzania",
+            "device": "Desktop",
+            "os": "Ubuntu 24.04",
+            "browser": "Firefox 129",
+            "type": "desktop",
+            "last_active": "2026-08-31T07:04:07.072Z",
+            "current": false
+          }
+        ]
+      },
+      "flags": {
+        "reports_against": 2,
+        "warnings": 1,
+        "suspended_until": "2026-10-02T05:29:07.072Z"
+      }
+    },
+    {
+      "id": "u20",
+      "username": "joy_chukwu",
+      "display_name": "Joy Chukwu",
+      "email": "joy.chukwu@example.com",
+      "phone": "+234 820 7953 204",
+      "avatar_url": null,
+      "role": "user",
+      "status": "inactive",
+      "is_verified": false,
+      "joined_at": "2024-04-11T23:08:07.072Z",
+      "last_seen_at": "2026-08-28T02:30:07.072Z",
+      "followers": 1631,
+      "following": 380,
+      "signals": 19,
+      "posts": 174,
+      "trading": {
+        "total_trades": 411,
+        "wins": 214,
+        "losses": 197,
+        "win_rate": 52.1,
+        "total_volume": 39181.72,
+        "net_pl": -1741.22,
+        "open_positions": 3,
+        "favourite_market": "Crash 500"
+      },
+      "deriv": {
+        "connected": true,
+        "deriv_id": "CR6413707",
+        "account_type": "virtual",
+        "currency": "USD",
+        "landing_company": "svg",
+        "last_recorded_balance": 943.87,
+        "balance_recorded_at": "2026-08-30T19:21:07.072Z",
+        "scopes": [
+          "read",
+          "trade",
+          "payments"
+        ]
+      },
+      "rooms": [
+        {
+          "id": "room_R_100",
+          "name": "V100 Room",
+          "kind": "market",
+          "role": "member",
+          "joined_at": "2026-01-16T06:09:07.072Z"
+        },
+        {
+          "id": "room_CRASH500",
+          "name": "Crash 500 Room",
+          "kind": "market",
+          "role": "member",
+          "joined_at": "2026-07-06T13:10:07.072Z"
+        },
+        {
+          "id": "room_frxNZDUSD",
+          "name": "NZD/USD Room",
+          "kind": "market",
+          "role": "member",
+          "joined_at": "2026-01-12T10:31:07.072Z"
+        },
+        {
+          "id": "room_cryDOGUSD",
+          "name": "DOGE/USD Room",
+          "kind": "market",
+          "role": "member",
+          "joined_at": "2026-05-15T22:13:07.072Z"
+        }
+      ],
+      "security": {
+        "last_ip": "130.228.173.68",
+        "last_location": "Jakarta, Indonesia",
+        "country_code": "ID",
+        "last_device": "Desktop",
+        "last_os": "Windows 10",
+        "last_browser": "Edge 128",
+        "device_type": "desktop",
+        "two_factor": true,
+        "failed_logins_30d": 2,
+        "password_changed_at": "2025-09-01T01:23:07.072Z",
+        "sessions": [
+          {
+            "ip": "56.76.99.210",
+            "location": "Abuja, Nigeria",
+            "device": "Desktop",
+            "os": "Ubuntu 24.04",
+            "browser": "Firefox 129",
+            "type": "desktop",
+            "last_active": "2026-08-15T07:27:07.072Z",
+            "current": false
+          },
+          {
+            "ip": "100.130.63.175",
+            "location": "Dubai, UAE",
+            "device": "Desktop",
+            "os": "Windows 10",
+            "browser": "Edge 128",
+            "type": "desktop",
+            "last_active": "2026-08-22T07:24:07.072Z",
+            "current": false
+          }
+        ]
+      },
+      "flags": {
+        "reports_against": 0,
+        "warnings": 0,
+        "suspended_until": null
+      }
+    },
+    {
+      "id": "u21",
+      "username": "john_david",
+      "display_name": "John David",
+      "email": "john.david@example.com",
+      "phone": "+234 853 2649 945",
+      "avatar_url": null,
+      "role": "user",
+      "status": "inactive",
+      "is_verified": true,
+      "joined_at": "2026-03-22T18:57:07.072Z",
+      "last_seen_at": "2026-08-24T03:34:07.072Z",
+      "followers": 1386,
+      "following": 229,
+      "signals": 5,
+      "posts": 12,
+      "trading": {
+        "total_trades": 618,
+        "wins": 424,
+        "losses": 194,
+        "win_rate": 68.6,
+        "total_volume": 11840,
+        "net_pl": 3180.36,
+        "open_positions": 4,
+        "favourite_market": "GBP/JPY"
+      },
+      "deriv": {
+        "connected": true,
+        "deriv_id": "CR8491560",
+        "account_type": "real",
+        "currency": "USD",
+        "landing_company": "svg",
+        "last_recorded_balance": 9102.32,
+        "balance_recorded_at": "2026-08-30T10:10:07.072Z",
+        "scopes": [
+          "read",
+          "trade",
+          "payments"
+        ]
+      },
+      "rooms": [
+        {
+          "id": "room_1HZ100V",
+          "name": "V100 (1s) Room",
+          "kind": "market",
+          "role": "member",
+          "joined_at": "2026-08-25T17:07:07.072Z"
+        },
+        {
+          "id": "room_CRASH1000",
+          "name": "Crash 1000 Room",
+          "kind": "market",
+          "role": "member",
+          "joined_at": "2026-07-12T13:00:07.072Z"
+        }
+      ],
+      "security": {
+        "last_ip": "130.212.249.127",
+        "last_location": "Accra, Ghana",
+        "country_code": "GH",
+        "last_device": "iPhone 14 Pro",
+        "last_os": "iOS 17.5",
+        "last_browser": "Safari 17",
+        "device_type": "mobile",
+        "two_factor": false,
+        "failed_logins_30d": 1,
+        "password_changed_at": "2025-07-30T13:26:07.072Z",
+        "sessions": [
+          {
+            "ip": "114.221.241.62",
+            "location": "Dar es Salaam, Tanzania",
+            "device": "Desktop",
+            "os": "Windows 10",
+            "browser": "Edge 128",
+            "type": "desktop",
+            "last_active": "2026-08-17T20:20:07.072Z",
+            "current": false
+          },
+          {
+            "ip": "85.222.161.217",
+            "location": "Abuja, Nigeria",
+            "device": "Desktop",
+            "os": "Windows 11",
+            "browser": "Chrome 128",
+            "type": "desktop",
+            "last_active": "2026-08-24T08:41:07.072Z",
+            "current": false
+          },
+          {
+            "ip": "52.44.60.8",
+            "location": "Abuja, Nigeria",
+            "device": "Samsung Galaxy S23",
+            "os": "Android 14",
+            "browser": "Chrome 128",
+            "type": "mobile",
+            "last_active": "2026-08-16T19:05:07.072Z",
+            "current": false
+          }
+        ]
+      },
+      "flags": {
+        "reports_against": 0,
+        "warnings": 0,
+        "suspended_until": null
+      }
+    },
+    {
+      "id": "u22",
+      "username": "grace_eze",
+      "display_name": "Grace Eze",
+      "email": "grace.eze@example.com",
+      "phone": "+234 847 4590 789",
+      "avatar_url": null,
+      "role": "user",
+      "status": "inactive",
+      "is_verified": true,
+      "joined_at": "2024-03-27T05:20:07.072Z",
+      "last_seen_at": "2026-09-01T20:12:07.072Z",
+      "followers": 1593,
+      "following": 248,
+      "signals": 5,
+      "posts": 56,
+      "trading": {
+        "total_trades": 389,
+        "wins": 208,
+        "losses": 181,
+        "win_rate": 53.5,
+        "total_volume": 29457.39,
+        "net_pl": 6932.61,
+        "open_positions": 4,
+        "favourite_market": "Crash 500"
+      },
+      "deriv": {
+        "connected": false,
+        "deriv_id": "CR3615341",
+        "account_type": "virtual",
+        "currency": "USD",
+        "landing_company": "maltainvest",
+        "last_recorded_balance": 7686.12,
+        "balance_recorded_at": "2026-09-01T13:18:07.072Z",
+        "scopes": [
+          "read",
+          "trade",
+          "payments"
+        ]
+      },
+      "rooms": [
+        {
+          "id": "room_R_75",
+          "name": "V75 Room",
+          "kind": "market",
+          "role": "member",
+          "joined_at": "2025-11-18T03:35:07.072Z"
+        },
+        {
+          "id": "room_BOOM300",
+          "name": "Boom 300 Room",
+          "kind": "market",
+          "role": "member",
+          "joined_at": "2026-02-16T09:53:07.072Z"
+        },
+        {
+          "id": "room_frxUSDCAD",
+          "name": "USD/CAD Room",
+          "kind": "market",
+          "role": "member",
+          "joined_at": "2026-06-17T02:07:07.072Z"
+        }
+      ],
+      "security": {
+        "last_ip": "71.165.194.171",
+        "last_location": "Johannesburg, South Africa",
+        "country_code": "ZA",
+        "last_device": "Desktop",
+        "last_os": "Windows 10",
+        "last_browser": "Edge 128",
+        "device_type": "desktop",
+        "two_factor": false,
+        "failed_logins_30d": 0,
+        "password_changed_at": "2025-11-02T07:51:07.072Z",
+        "sessions": [
+          {
+            "ip": "127.175.157.67",
+            "location": "Karachi, Pakistan",
+            "device": "Tecno Camon 20",
+            "os": "Android 13",
+            "browser": "Chrome 128",
+            "type": "mobile",
+            "last_active": "2026-08-17T08:09:07.072Z",
+            "current": false
+          }
+        ]
+      },
+      "flags": {
+        "reports_against": 1,
+        "warnings": 2,
+        "suspended_until": null
+      }
+    },
+    {
+      "id": "u23",
+      "username": "femi_adamu",
+      "display_name": "Femi Adamu",
+      "email": "femi.adamu@example.com",
+      "phone": "+234 898 3031 536",
+      "avatar_url": null,
+      "role": "user",
+      "status": "active",
+      "is_verified": false,
+      "joined_at": "2025-03-07T03:09:07.072Z",
+      "last_seen_at": "2026-08-28T14:43:07.072Z",
+      "followers": 1423,
+      "following": 261,
+      "signals": 8,
+      "posts": 95,
+      "trading": {
+        "total_trades": 550,
+        "wins": 307,
+        "losses": 243,
+        "win_rate": 55.8,
+        "total_volume": 76169.27,
+        "net_pl": -1981.62,
+        "open_positions": 4,
+        "favourite_market": "V50"
+      },
+      "deriv": {
+        "connected": true,
+        "deriv_id": "CR6044663",
+        "account_type": "real",
+        "currency": "USD",
+        "landing_company": "svg",
+        "last_recorded_balance": 757.57,
+        "balance_recorded_at": "2026-09-01T16:39:07.072Z",
+        "scopes": [
+          "read",
+          "trade",
+          "payments"
+        ]
+      },
+      "rooms": [
+        {
+          "id": "room_1HZ75V",
+          "name": "V75 (1s) Room",
+          "kind": "market",
+          "role": "member",
+          "joined_at": "2026-02-15T09:04:07.072Z"
+        }
+      ],
+      "security": {
+        "last_ip": "52.103.145.164",
+        "last_location": "Kampala, Uganda",
+        "country_code": "UG",
+        "last_device": "Desktop",
+        "last_os": "Windows 10",
+        "last_browser": "Edge 128",
+        "device_type": "desktop",
+        "two_factor": false,
+        "failed_logins_30d": 6,
+        "password_changed_at": "2025-08-01T06:46:07.072Z",
+        "sessions": [
+          {
+            "ip": "45.228.20.239",
+            "location": "Abuja, Nigeria",
+            "device": "Desktop",
+            "os": "Windows 11",
+            "browser": "Chrome 128",
+            "type": "desktop",
+            "last_active": "2026-08-18T17:01:07.072Z",
+            "current": false
+          },
+          {
+            "ip": "50.189.150.161",
+            "location": "Abuja, Nigeria",
+            "device": "iPhone 14 Pro",
+            "os": "iOS 17.5",
+            "browser": "Safari 17",
+            "type": "mobile",
+            "last_active": "2026-08-25T03:17:07.072Z",
+            "current": false
+          }
+        ]
+      },
+      "flags": {
+        "reports_against": 5,
+        "warnings": 1,
+        "suspended_until": null
+      }
+    },
+    {
+      "id": "u24",
+      "username": "amara_okafor",
+      "display_name": "Amara Okafor",
+      "email": "amara.okafor@example.com",
+      "phone": "+234 863 4263 893",
+      "avatar_url": null,
+      "role": "user",
+      "status": "inactive",
+      "is_verified": false,
+      "joined_at": "2026-03-06T16:00:07.072Z",
+      "last_seen_at": "2026-08-26T17:34:07.072Z",
+      "followers": 477,
+      "following": 53,
+      "signals": 29,
+      "posts": 184,
+      "trading": {
+        "total_trades": 427,
+        "wins": 263,
+        "losses": 164,
+        "win_rate": 61.6,
+        "total_volume": 48296.44,
+        "net_pl": 8835.21,
+        "open_positions": 1,
+        "favourite_market": "BCH/USD"
+      },
+      "deriv": {
+        "connected": true,
+        "deriv_id": "CR9746573",
+        "account_type": "virtual",
+        "currency": "USD",
+        "landing_company": "vanuatu",
+        "last_recorded_balance": 2815.15,
+        "balance_recorded_at": "2026-09-01T19:54:07.072Z",
+        "scopes": [
+          "read",
+          "trade",
+          "payments"
+        ]
+      },
+      "rooms": [
+        {
+          "id": "room_BOOM1000",
+          "name": "Boom 1000 Room",
+          "kind": "market",
+          "role": "member",
+          "joined_at": "2025-11-26T18:23:07.072Z"
+        },
+        {
+          "id": "room_frxUSDJPY",
+          "name": "USD/JPY Room",
+          "kind": "market",
+          "role": "member",
+          "joined_at": "2026-01-05T08:53:07.072Z"
+        },
+        {
+          "id": "room_cryXRPUSD",
+          "name": "XRP/USD Room",
+          "kind": "market",
+          "role": "member",
+          "joined_at": "2026-06-17T08:53:07.072Z"
+        },
+        {
+          "id": "room_OTC_NDX",
+          "name": "US 100 Room",
+          "kind": "market",
+          "role": "member",
+          "joined_at": "2026-07-16T11:24:07.072Z"
+        }
+      ],
+      "security": {
+        "last_ip": "114.254.241.251",
+        "last_location": "Dar es Salaam, Tanzania",
+        "country_code": "TZ",
+        "last_device": "Samsung Galaxy S23",
+        "last_os": "Android 14",
+        "last_browser": "Chrome 128",
+        "device_type": "mobile",
+        "two_factor": false,
+        "failed_logins_30d": 6,
+        "password_changed_at": "2026-08-11T16:25:07.072Z",
+        "sessions": [
+          {
+            "ip": "98.106.213.251",
+            "location": "Karachi, Pakistan",
+            "device": "MacBook Pro",
+            "os": "macOS 14",
+            "browser": "Chrome 127",
+            "type": "desktop",
+            "last_active": "2026-08-24T22:51:07.072Z",
+            "current": false
+          },
+          {
+            "ip": "73.77.192.76",
+            "location": "Dar es Salaam, Tanzania",
+            "device": "Desktop",
+            "os": "Windows 10",
+            "browser": "Edge 128",
+            "type": "desktop",
+            "last_active": "2026-08-22T09:36:07.072Z",
+            "current": false
+          },
+          {
+            "ip": "154.70.183.209",
+            "location": "Abuja, Nigeria",
+            "device": "Desktop",
+            "os": "Ubuntu 24.04",
+            "browser": "Firefox 129",
+            "type": "desktop",
+            "last_active": "2026-09-01T14:44:07.072Z",
+            "current": false
+          },
+          {
+            "ip": "143.137.173.111",
+            "location": "Dubai, UAE",
+            "device": "Desktop",
+            "os": "Windows 11",
+            "browser": "Chrome 128",
+            "type": "desktop",
+            "last_active": "2026-08-16T17:29:07.072Z",
+            "current": false
+          }
+        ]
+      },
+      "flags": {
+        "reports_against": 1,
+        "warnings": 3,
+        "suspended_until": null
+      }
+    },
+    {
+      "id": "u25",
+      "username": "kwame_yusuf",
+      "display_name": "Kwame Yusuf",
+      "email": "kwame.yusuf@example.com",
+      "phone": "+234 833 5090 886",
+      "avatar_url": null,
+      "role": "signal_provider",
+      "status": "active",
+      "is_verified": false,
+      "joined_at": "2026-08-04T04:21:07.072Z",
+      "last_seen_at": "2026-08-22T17:55:07.072Z",
+      "followers": 2198,
+      "following": 128,
+      "signals": 33,
+      "posts": 258,
+      "trading": {
+        "total_trades": 484,
+        "wins": 274,
+        "losses": 210,
+        "win_rate": 56.6,
+        "total_volume": 76242.31,
+        "net_pl": 2597.9,
+        "open_positions": 3,
+        "favourite_market": "Crash 1000"
+      },
+      "deriv": {
+        "connected": true,
+        "deriv_id": "CR3785282",
+        "account_type": "real",
+        "currency": "USD",
+        "landing_company": "vanuatu",
+        "last_recorded_balance": 4905.56,
+        "balance_recorded_at": "2026-08-30T19:20:07.072Z",
+        "scopes": [
+          "read",
+          "trade",
+          "payments"
+        ]
+      },
+      "rooms": [
+        {
+          "id": "room_RB100",
+          "name": "RB 100 Room",
+          "kind": "market",
+          "role": "member",
+          "joined_at": "2025-12-09T10:47:07.072Z"
+        },
+        {
+          "id": "room_frxGBPUSD",
+          "name": "GBP/USD Room",
+          "kind": "market",
+          "role": "member",
+          "joined_at": "2026-07-26T01:50:07.072Z"
+        },
+        {
+          "id": "room_crySOLUSD",
+          "name": "SOL/USD Room",
+          "kind": "market",
+          "role": "member",
+          "joined_at": "2026-08-25T07:31:07.072Z"
+        },
+        {
+          "id": "room_OTC_SPC",
+          "name": "US 500 Room",
+          "kind": "market",
+          "role": "member",
+          "joined_at": "2026-03-10T22:49:07.072Z"
+        }
+      ],
+      "security": {
+        "last_ip": "140.165.199.127",
+        "last_location": "Karachi, Pakistan",
+        "country_code": "PK",
+        "last_device": "Desktop",
+        "last_os": "Windows 10",
+        "last_browser": "Edge 128",
+        "device_type": "desktop",
+        "two_factor": false,
+        "failed_logins_30d": 9,
+        "password_changed_at": "2025-11-27T05:29:07.072Z",
+        "sessions": [
+          {
+            "ip": "172.213.249.110",
+            "location": "Accra, Ghana",
+            "device": "Desktop",
+            "os": "Ubuntu 24.04",
+            "browser": "Firefox 129",
+            "type": "desktop",
+            "last_active": "2026-08-26T16:42:07.072Z",
+            "current": false
+          },
+          {
+            "ip": "180.174.94.234",
+            "location": "Mumbai, India",
+            "device": "iPhone 14 Pro",
+            "os": "iOS 17.5",
+            "browser": "Safari 17",
+            "type": "mobile",
+            "last_active": "2026-08-14T23:55:07.072Z",
+            "current": false
+          },
+          {
+            "ip": "75.47.97.233",
+            "location": "Manchester, United Kingdom",
+            "device": "MacBook Pro",
+            "os": "macOS 14",
+            "browser": "Chrome 127",
+            "type": "desktop",
+            "last_active": "2026-08-20T10:34:07.072Z",
+            "current": false
+          }
+        ]
+      },
+      "flags": {
+        "reports_against": 4,
+        "warnings": 1,
+        "suspended_until": null
+      }
+    },
+    {
+      "id": "u26",
+      "username": "zainab_lawal",
+      "display_name": "Zainab Lawal",
+      "email": "zainab.lawal@example.com",
+      "phone": "+234 824 4183 302",
+      "avatar_url": null,
+      "role": "signal_provider",
+      "status": "active",
+      "is_verified": false,
+      "joined_at": "2026-01-25T01:52:07.072Z",
+      "last_seen_at": "2026-08-27T02:51:07.072Z",
+      "followers": 1547,
+      "following": 32,
+      "signals": 22,
+      "posts": 156,
+      "trading": {
+        "total_trades": 169,
+        "wins": 79,
+        "losses": 90,
+        "win_rate": 46.7,
+        "total_volume": 59583.52,
+        "net_pl": 4648.86,
+        "open_positions": 0,
+        "favourite_market": "XAU/USD"
+      },
+      "deriv": {
+        "connected": true,
+        "deriv_id": "CR2763977",
+        "account_type": "real",
+        "currency": "USD",
+        "landing_company": "maltainvest",
+        "last_recorded_balance": 8430.75,
+        "balance_recorded_at": "2026-08-31T03:19:07.072Z",
+        "scopes": [
+          "read",
+          "trade",
+          "payments"
+        ]
+      },
+      "rooms": [
+        {
+          "id": "room_stpRNG",
+          "name": "Step Room",
+          "kind": "market",
+          "role": "member",
+          "joined_at": "2026-04-04T07:58:07.072Z"
+        },
+        {
+          "id": "room_frxEURUSD",
+          "name": "EUR/USD Room",
+          "kind": "market",
+          "role": "member",
+          "joined_at": "2026-01-09T05:22:07.072Z"
+        },
+        {
+          "id": "room_cryETHUSD",
+          "name": "ETH/USD Room",
+          "kind": "market",
+          "role": "member",
+          "joined_at": "2026-01-04T18:38:07.072Z"
+        }
+      ],
+      "security": {
+        "last_ip": "197.159.175.132",
+        "last_location": "Lagos, Nigeria",
+        "country_code": "NG",
+        "last_device": "Tecno Camon 20",
+        "last_os": "Android 13",
+        "last_browser": "Chrome 128",
+        "device_type": "mobile",
+        "two_factor": false,
+        "failed_logins_30d": 4,
+        "password_changed_at": "2026-05-06T11:33:07.072Z",
+        "sessions": [
+          {
+            "ip": "178.98.164.11",
+            "location": "Johannesburg, South Africa",
+            "device": "MacBook Pro",
+            "os": "macOS 14",
+            "browser": "Chrome 127",
+            "type": "desktop",
+            "last_active": "2026-08-13T13:25:07.072Z",
+            "current": false
+          }
+        ]
+      },
+      "flags": {
+        "reports_against": 0,
+        "warnings": 0,
+        "suspended_until": null
+      }
+    },
+    {
+      "id": "u27",
+      "username": "tunde_adeyemi",
+      "display_name": "Tunde Adeyemi",
+      "email": "tunde.adeyemi@example.com",
+      "phone": "+234 835 7982 354",
+      "avatar_url": null,
+      "role": "user",
+      "status": "active",
+      "is_verified": false,
+      "joined_at": "2024-04-02T20:12:07.072Z",
+      "last_seen_at": "2026-08-29T03:16:07.072Z",
+      "followers": 57,
+      "following": 348,
+      "signals": 1,
+      "posts": 260,
+      "trading": {
+        "total_trades": 86,
+        "wins": 39,
+        "losses": 47,
+        "win_rate": 45.3,
+        "total_volume": 47564.99,
+        "net_pl": -1962.78,
+        "open_positions": 1,
+        "favourite_market": "GER 40"
+      },
+      "deriv": {
+        "connected": true,
+        "deriv_id": "CR7073737",
+        "account_type": "virtual",
+        "currency": "USD",
+        "landing_company": "maltainvest",
+        "last_recorded_balance": 3915.01,
+        "balance_recorded_at": "2026-08-31T05:48:07.072Z",
+        "scopes": [
+          "read",
+          "trade",
+          "payments"
+        ]
+      },
+      "rooms": [
+        {
+          "id": "room_R_10",
+          "name": "V10 Room",
+          "kind": "market",
+          "role": "member",
+          "joined_at": "2026-06-28T07:40:07.072Z"
+        },
+        {
+          "id": "room_JD25",
+          "name": "Jump 25 Room",
+          "kind": "market",
+          "role": "member",
+          "joined_at": "2025-11-09T15:09:07.072Z"
+        },
+        {
+          "id": "room_cryBTCUSD",
+          "name": "BTC/USD Room",
+          "kind": "market",
+          "role": "member",
+          "joined_at": "2026-08-28T01:51:07.072Z"
+        },
+        {
+          "id": "room_frxXPDUSD",
+          "name": "XPD/USD Room",
+          "kind": "market",
+          "role": "member",
+          "joined_at": "2026-05-19T22:58:07.072Z"
+        },
+        {
+          "id": "room_u_AlphaKing",
+          "name": "AlphaKing's Room",
+          "kind": "trader",
+          "role": "member",
+          "joined_at": "2026-01-02T10:12:07.072Z"
+        }
+      ],
+      "security": {
+        "last_ip": "197.34.117.253",
+        "last_location": "Dar es Salaam, Tanzania",
+        "country_code": "TZ",
+        "last_device": "Desktop",
+        "last_os": "Windows 10",
+        "last_browser": "Edge 128",
+        "device_type": "desktop",
+        "two_factor": false,
+        "failed_logins_30d": 3,
+        "password_changed_at": "2025-12-15T23:42:07.072Z",
+        "sessions": [
+          {
+            "ip": "116.172.231.166",
+            "location": "Cairo, Egypt",
+            "device": "iPhone 14 Pro",
+            "os": "iOS 17.5",
+            "browser": "Safari 17",
+            "type": "mobile",
+            "last_active": "2026-08-16T14:15:07.072Z",
+            "current": false
+          }
+        ]
+      },
+      "flags": {
+        "reports_against": 4,
+        "warnings": 2,
+        "suspended_until": null
+      }
+    },
+    {
+      "id": "u28",
+      "username": "chioma_nwosu",
+      "display_name": "Chioma Nwosu",
+      "email": "chioma.nwosu@example.com",
+      "phone": "+234 842 4472 320",
+      "avatar_url": null,
+      "role": "moderator",
+      "status": "active",
+      "is_verified": true,
+      "joined_at": "2026-06-14T04:22:07.072Z",
+      "last_seen_at": "2026-09-02T00:25:07.072Z",
+      "followers": 475,
+      "following": 106,
+      "signals": 2,
+      "posts": 39,
+      "trading": {
+        "total_trades": 460,
+        "wins": 279,
+        "losses": 181,
+        "win_rate": 60.7,
+        "total_volume": 67578.98,
+        "net_pl": 2185.52,
+        "open_positions": 3,
+        "favourite_market": "AUS 200"
+      },
+      "deriv": {
+        "connected": true,
+        "deriv_id": "CR3625805",
+        "account_type": "real",
+        "currency": "USD",
+        "landing_company": "vanuatu",
+        "last_recorded_balance": 1541.51,
+        "balance_recorded_at": "2026-08-30T06:42:07.072Z",
+        "scopes": [
+          "read",
+          "trade",
+          "payments"
+        ]
+      },
+      "rooms": [
+        {
+          "id": "room_R_25",
+          "name": "V25 Room",
+          "kind": "market",
+          "role": "member",
+          "joined_at": "2026-03-07T09:29:07.072Z"
+        }
+      ],
+      "security": {
+        "last_ip": "114.125.240.11",
+        "last_location": "Karachi, Pakistan",
+        "country_code": "PK",
+        "last_device": "iPhone 14 Pro",
+        "last_os": "iOS 17.5",
+        "last_browser": "Safari 17",
+        "device_type": "mobile",
+        "two_factor": false,
+        "failed_logins_30d": 2,
+        "password_changed_at": "2026-01-16T01:29:07.072Z",
+        "sessions": [
+          {
+            "ip": "42.10.3.206",
+            "location": "Abuja, Nigeria",
+            "device": "Samsung Galaxy S23",
+            "os": "Android 14",
+            "browser": "Chrome 128",
+            "type": "mobile",
+            "last_active": "2026-08-13T12:29:07.072Z",
+            "current": false
+          },
+          {
+            "ip": "75.145.179.3",
+            "location": "Nairobi, Kenya",
+            "device": "iPhone 14 Pro",
+            "os": "iOS 17.5",
+            "browser": "Safari 17",
+            "type": "mobile",
+            "last_active": "2026-08-24T10:30:07.072Z",
+            "current": false
+          },
+          {
+            "ip": "158.23.39.247",
+            "location": "Cairo, Egypt",
+            "device": "Desktop",
+            "os": "Ubuntu 24.04",
+            "browser": "Firefox 129",
+            "type": "desktop",
+            "last_active": "2026-08-27T22:46:07.072Z",
+            "current": false
+          }
+        ]
+      },
+      "flags": {
+        "reports_against": 5,
+        "warnings": 3,
+        "suspended_until": null
+      }
+    },
+    {
+      "id": "u29",
+      "username": "musa_okoro",
+      "display_name": "Musa Okoro",
+      "email": "musa.okoro@example.com",
+      "phone": "+234 819 3751 829",
+      "avatar_url": null,
+      "role": "user",
+      "status": "active",
+      "is_verified": true,
+      "joined_at": "2025-07-05T06:19:07.072Z",
+      "last_seen_at": "2026-08-20T09:58:07.072Z",
+      "followers": 1366,
+      "following": 164,
+      "signals": 27,
+      "posts": 167,
+      "trading": {
+        "total_trades": 230,
+        "wins": 144,
+        "losses": 86,
+        "win_rate": 62.6,
+        "total_volume": 8091.11,
+        "net_pl": 3460.45,
+        "open_positions": 3,
+        "favourite_market": "RB 100"
+      },
+      "deriv": {
+        "connected": true,
+        "deriv_id": "CR9905577",
+        "account_type": "virtual",
+        "currency": "USD",
+        "landing_company": "maltainvest",
+        "last_recorded_balance": 2511.56,
+        "balance_recorded_at": "2026-08-30T16:43:07.072Z",
+        "scopes": [
+          "read",
+          "trade",
+          "payments"
+        ]
+      },
+      "rooms": [
+        {
+          "id": "room_R_50",
+          "name": "V50 Room",
+          "kind": "market",
+          "role": "member",
+          "joined_at": "2026-06-23T05:46:07.072Z"
+        },
+        {
+          "id": "room_JD75",
+          "name": "Jump 75 Room",
+          "kind": "market",
+          "role": "member",
+          "joined_at": "2026-01-01T03:45:07.072Z"
+        },
+        {
+          "id": "room_frxEURJPY",
+          "name": "EUR/JPY Room",
+          "kind": "market",
+          "role": "member",
+          "joined_at": "2026-08-12T18:49:07.072Z"
+        }
+      ],
+      "security": {
+        "last_ip": "141.206.171.8",
+        "last_location": "Nairobi, Kenya",
+        "country_code": "KE",
+        "last_device": "Tecno Camon 20",
+        "last_os": "Android 13",
+        "last_browser": "Chrome 128",
+        "device_type": "mobile",
+        "two_factor": false,
+        "failed_logins_30d": 7,
+        "password_changed_at": "2025-10-19T08:07:07.072Z",
+        "sessions": [
+          {
+            "ip": "105.152.111.153",
+            "location": "Karachi, Pakistan",
+            "device": "Desktop",
+            "os": "Windows 11",
+            "browser": "Chrome 128",
+            "type": "desktop",
+            "last_active": "2026-08-31T19:33:07.072Z",
+            "current": false
+          },
+          {
+            "ip": "72.40.142.33",
+            "location": "Nairobi, Kenya",
+            "device": "iPhone 14 Pro",
+            "os": "iOS 17.5",
+            "browser": "Safari 17",
+            "type": "mobile",
+            "last_active": "2026-08-31T01:13:07.072Z",
+            "current": false
+          }
+        ]
+      },
+      "flags": {
+        "reports_against": 5,
+        "warnings": 3,
+        "suspended_until": null
+      }
+    },
+    {
+      "id": "u30",
+      "username": "ada_bello",
+      "display_name": "Ada Bello",
+      "email": "ada.bello@example.com",
+      "phone": "+234 894 6290 789",
+      "avatar_url": null,
+      "role": "user",
+      "status": "active",
+      "is_verified": true,
+      "joined_at": "2026-05-06T16:07:07.072Z",
+      "last_seen_at": "2026-08-22T10:49:07.072Z",
+      "followers": 96,
+      "following": 62,
+      "signals": 28,
+      "posts": 310,
+      "trading": {
+        "total_trades": 84,
+        "wins": 49,
+        "losses": 35,
+        "win_rate": 58.3,
+        "total_volume": 14835.26,
+        "net_pl": 6531.88,
+        "open_positions": 4,
+        "favourite_market": "SOL/USD"
+      },
+      "deriv": {
+        "connected": true,
+        "deriv_id": "CR6191873",
+        "account_type": "virtual",
+        "currency": "USD",
+        "landing_company": "svg",
+        "last_recorded_balance": 4717.13,
+        "balance_recorded_at": "2026-08-30T08:05:07.072Z",
+        "scopes": [
+          "read",
+          "trade",
+          "payments"
+        ]
+      },
+      "rooms": [
+        {
+          "id": "room_1HZ50V",
+          "name": "V50 (1s) Room",
+          "kind": "market",
+          "role": "member",
+          "joined_at": "2025-12-28T11:09:07.072Z"
+        },
+        {
+          "id": "room_CRASH300",
+          "name": "Crash 300 Room",
+          "kind": "market",
+          "role": "member",
+          "joined_at": "2026-03-04T18:56:07.072Z"
+        },
+        {
+          "id": "room_frxEURGBP",
+          "name": "EUR/GBP Room",
+          "kind": "market",
+          "role": "member",
+          "joined_at": "2025-12-20T06:09:07.072Z"
+        }
+      ],
+      "security": {
+        "last_ip": "48.161.124.69",
+        "last_location": "Jakarta, Indonesia",
+        "country_code": "ID",
+        "last_device": "Desktop",
+        "last_os": "Windows 10",
+        "last_browser": "Edge 128",
+        "device_type": "desktop",
+        "two_factor": true,
+        "failed_logins_30d": 9,
+        "password_changed_at": "2026-08-30T18:06:07.072Z",
+        "sessions": [
+          {
+            "ip": "54.144.94.181",
+            "location": "Accra, Ghana",
+            "device": "MacBook Pro",
+            "os": "macOS 14",
+            "browser": "Chrome 127",
+            "type": "desktop",
+            "last_active": "2026-08-31T06:29:07.072Z",
+            "current": false
+          },
+          {
+            "ip": "114.228.6.154",
+            "location": "London, United Kingdom",
+            "device": "iPhone 14 Pro",
+            "os": "iOS 17.5",
+            "browser": "Safari 17",
+            "type": "mobile",
+            "last_active": "2026-09-01T09:58:07.072Z",
+            "current": false
+          }
+        ]
+      },
+      "flags": {
+        "reports_against": 1,
+        "warnings": 3,
+        "suspended_until": null
+      }
+    },
+    {
+      "id": "u31",
+      "username": "daniel_achebe",
+      "display_name": "Daniel Achebe",
+      "email": "daniel.achebe@example.com",
+      "phone": "+234 871 8078 897",
+      "avatar_url": null,
+      "role": "signal_provider",
+      "status": "active",
+      "is_verified": false,
+      "joined_at": "2026-07-06T18:01:07.072Z",
+      "last_seen_at": "2026-08-19T16:09:07.072Z",
+      "followers": 282,
+      "following": 385,
+      "signals": 151,
+      "posts": 27,
+      "trading": {
+        "total_trades": 470,
+        "wins": 205,
+        "losses": 265,
+        "win_rate": 43.6,
+        "total_volume": 2749.76,
+        "net_pl": 4714.45,
+        "open_positions": 6,
+        "favourite_market": "NZD/USD"
+      },
+      "deriv": {
+        "connected": false,
+        "deriv_id": "CR7513150",
+        "account_type": "real",
+        "currency": "USD",
+        "landing_company": "maltainvest",
+        "last_recorded_balance": 10285.99,
+        "balance_recorded_at": "2026-09-02T00:53:07.072Z",
+        "scopes": [
+          "read",
+          "trade",
+          "payments"
+        ]
+      },
+      "rooms": [
+        {
+          "id": "room_R_100",
+          "name": "V100 Room",
+          "kind": "market",
+          "role": "member",
+          "joined_at": "2026-05-29T23:06:07.072Z"
+        },
+        {
+          "id": "room_CRASH500",
+          "name": "Crash 500 Room",
+          "kind": "market",
+          "role": "member",
+          "joined_at": "2026-07-28T07:05:07.072Z"
+        }
+      ],
+      "security": {
+        "last_ip": "115.110.233.89",
+        "last_location": "Abuja, Nigeria",
+        "country_code": "NG",
+        "last_device": "Desktop",
+        "last_os": "Windows 10",
+        "last_browser": "Edge 128",
+        "device_type": "desktop",
+        "two_factor": true,
+        "failed_logins_30d": 1,
+        "password_changed_at": "2025-08-09T23:45:07.072Z",
+        "sessions": [
+          {
+            "ip": "140.172.28.132",
+            "location": "Dubai, UAE",
+            "device": "Tecno Camon 20",
+            "os": "Android 13",
+            "browser": "Chrome 128",
+            "type": "mobile",
+            "last_active": "2026-08-23T02:40:07.072Z",
+            "current": false
+          }
+        ]
+      },
+      "flags": {
+        "reports_against": 2,
+        "warnings": 0,
+        "suspended_until": null
+      }
+    },
+    {
+      "id": "u32",
+      "username": "blessing_danjuma",
+      "display_name": "Blessing Danjuma",
+      "email": "blessing.danjuma@example.com",
+      "phone": "+234 838 6389 954",
+      "avatar_url": null,
+      "role": "user",
+      "status": "active",
+      "is_verified": false,
+      "joined_at": "2026-06-12T23:15:07.072Z",
+      "last_seen_at": "2026-08-21T06:54:07.072Z",
+      "followers": 2204,
+      "following": 52,
+      "signals": 4,
+      "posts": 33,
+      "trading": {
+        "total_trades": 487,
+        "wins": 261,
+        "losses": 226,
+        "win_rate": 53.6,
+        "total_volume": 54788.75,
+        "net_pl": 7814.87,
+        "open_positions": 1,
+        "favourite_market": "ETH/USD"
+      },
+      "deriv": {
+        "connected": true,
+        "deriv_id": "CR6603998",
+        "account_type": "real",
+        "currency": "USD",
+        "landing_company": "svg",
+        "last_recorded_balance": 5154.34,
+        "balance_recorded_at": "2026-08-30T17:12:07.072Z",
+        "scopes": [
+          "read",
+          "trade",
+          "payments"
+        ]
+      },
+      "rooms": [
+        {
+          "id": "room_1HZ100V",
+          "name": "V100 (1s) Room",
+          "kind": "market",
+          "role": "member",
+          "joined_at": "2026-01-10T05:34:07.072Z"
+        }
+      ],
+      "security": {
+        "last_ip": "109.124.40.117",
+        "last_location": "Jakarta, Indonesia",
+        "country_code": "ID",
+        "last_device": "Tecno Camon 20",
+        "last_os": "Android 13",
+        "last_browser": "Chrome 128",
+        "device_type": "mobile",
+        "two_factor": false,
+        "failed_logins_30d": 4,
+        "password_changed_at": "2026-04-22T07:16:07.072Z",
+        "sessions": [
+          {
+            "ip": "100.244.7.75",
+            "location": "Accra, Ghana",
+            "device": "Desktop",
+            "os": "Ubuntu 24.04",
+            "browser": "Firefox 129",
+            "type": "desktop",
+            "last_active": "2026-08-23T17:50:07.072Z",
+            "current": false
+          },
+          {
+            "ip": "149.200.90.149",
+            "location": "Lagos, Nigeria",
+            "device": "Tecno Camon 20",
+            "os": "Android 13",
+            "browser": "Chrome 128",
+            "type": "mobile",
+            "last_active": "2026-09-02T00:47:07.072Z",
+            "current": false
+          },
+          {
+            "ip": "102.113.71.203",
+            "location": "Accra, Ghana",
+            "device": "Samsung Galaxy S23",
+            "os": "Android 14",
+            "browser": "Chrome 128",
+            "type": "mobile",
+            "last_active": "2026-08-28T21:30:07.073Z",
+            "current": false
+          },
+          {
+            "ip": "109.105.122.130",
+            "location": "Accra, Ghana",
+            "device": "iPhone 14 Pro",
+            "os": "iOS 17.5",
+            "browser": "Safari 17",
+            "type": "mobile",
+            "last_active": "2026-08-23T21:01:07.073Z",
+            "current": false
+          }
+        ]
+      },
+      "flags": {
+        "reports_against": 0,
+        "warnings": 0,
+        "suspended_until": null
+      }
+    },
+    {
+      "id": "u33",
+      "username": "ibrahim_mensah",
+      "display_name": "Ibrahim Mensah",
+      "email": "ibrahim.mensah@example.com",
+      "phone": "+234 869 1237 280",
+      "avatar_url": null,
+      "role": "user",
+      "status": "banned",
+      "is_verified": true,
+      "joined_at": "2024-08-09T22:01:07.073Z",
+      "last_seen_at": "2026-08-23T12:24:07.073Z",
+      "followers": 479,
+      "following": 219,
+      "signals": 8,
+      "posts": 257,
+      "trading": {
+        "total_trades": 213,
+        "wins": 137,
+        "losses": 76,
+        "win_rate": 64.3,
+        "total_volume": 36756.36,
+        "net_pl": 2758.76,
+        "open_positions": 6,
+        "favourite_market": "Crash 500"
+      },
+      "deriv": {
+        "connected": true,
+        "deriv_id": "CR7542563",
+        "account_type": "real",
+        "currency": "USD",
+        "landing_company": "svg",
+        "last_recorded_balance": 1144.38,
+        "balance_recorded_at": "2026-09-01T21:54:07.073Z",
+        "scopes": [
+          "read",
+          "trade",
+          "payments"
+        ]
+      },
+      "rooms": [
+        {
+          "id": "room_R_75",
+          "name": "V75 Room",
+          "kind": "market",
+          "role": "member",
+          "joined_at": "2026-02-06T16:32:07.073Z"
+        },
+        {
+          "id": "room_BOOM300",
+          "name": "Boom 300 Room",
+          "kind": "market",
+          "role": "member",
+          "joined_at": "2025-11-26T23:32:07.073Z"
+        }
+      ],
+      "security": {
+        "last_ip": "66.185.44.26",
+        "last_location": "Mumbai, India",
+        "country_code": "IN",
+        "last_device": "Desktop",
+        "last_os": "Windows 11",
+        "last_browser": "Chrome 128",
+        "device_type": "desktop",
+        "two_factor": false,
+        "failed_logins_30d": 2,
+        "password_changed_at": "2025-09-03T17:24:07.073Z",
+        "sessions": [
+          {
+            "ip": "131.97.103.43",
+            "location": "Nairobi, Kenya",
+            "device": "Tecno Camon 20",
+            "os": "Android 13",
+            "browser": "Chrome 128",
+            "type": "mobile",
+            "last_active": "2026-08-22T03:41:07.073Z",
+            "current": false
+          }
+        ]
+      },
+      "flags": {
+        "reports_against": 2,
+        "warnings": 1,
+        "suspended_until": "2026-10-02T05:29:07.073Z"
+      }
+    },
+    {
+      "id": "u34",
+      "username": "ngozi_obi",
+      "display_name": "Ngozi Obi",
+      "email": "ngozi.obi@example.com",
+      "phone": "+234 893 6889 264",
+      "avatar_url": null,
+      "role": "user",
+      "status": "active",
+      "is_verified": true,
+      "joined_at": "2024-04-17T06:01:07.073Z",
+      "last_seen_at": "2026-08-23T22:45:07.073Z",
+      "followers": 2170,
+      "following": 9,
+      "signals": 22,
+      "posts": 87,
+      "trading": {
+        "total_trades": 209,
+        "wins": 144,
+        "losses": 65,
+        "win_rate": 68.9,
+        "total_volume": 68846.65,
+        "net_pl": -1073.62,
+        "open_positions": 3,
+        "favourite_market": "UK 100"
+      },
+      "deriv": {
+        "connected": true,
+        "deriv_id": "CR3468562",
+        "account_type": "real",
+        "currency": "USD",
+        "landing_company": "maltainvest",
+        "last_recorded_balance": 2391.5,
+        "balance_recorded_at": "2026-08-30T16:56:07.073Z",
+        "scopes": [
+          "read",
+          "trade",
+          "payments"
+        ]
+      },
+      "rooms": [
+        {
+          "id": "room_1HZ75V",
+          "name": "V75 (1s) Room",
+          "kind": "market",
+          "role": "member",
+          "joined_at": "2026-04-24T04:31:07.073Z"
+        }
+      ],
+      "security": {
+        "last_ip": "66.20.201.235",
+        "last_location": "Accra, Ghana",
+        "country_code": "GH",
+        "last_device": "Desktop",
+        "last_os": "Windows 11",
+        "last_browser": "Chrome 128",
+        "device_type": "desktop",
+        "two_factor": true,
+        "failed_logins_30d": 1,
+        "password_changed_at": "2025-11-15T12:02:07.073Z",
+        "sessions": [
+          {
+            "ip": "196.118.69.147",
+            "location": "Mumbai, India",
+            "device": "Desktop",
+            "os": "Windows 11",
+            "browser": "Chrome 128",
+            "type": "desktop",
+            "last_active": "2026-08-24T22:46:07.073Z",
+            "current": false
+          },
+          {
+            "ip": "118.218.128.233",
+            "location": "Jakarta, Indonesia",
+            "device": "iPhone 14 Pro",
+            "os": "iOS 17.5",
+            "browser": "Safari 17",
+            "type": "mobile",
+            "last_active": "2026-08-23T20:46:07.073Z",
+            "current": false
+          }
+        ]
+      },
+      "flags": {
+        "reports_against": 4,
+        "warnings": 3,
+        "suspended_until": null
+      }
+    },
+    {
+      "id": "u35",
+      "username": "samuel_mohammed",
+      "display_name": "Samuel Mohammed",
+      "email": "samuel.mohammed@example.com",
+      "phone": "+234 853 2547 815",
+      "avatar_url": null,
+      "role": "signal_provider",
+      "status": "inactive",
+      "is_verified": false,
+      "joined_at": "2025-07-31T04:15:07.073Z",
+      "last_seen_at": "2026-08-23T10:11:07.073Z",
+      "followers": 1044,
+      "following": 217,
+      "signals": 132,
+      "posts": 37,
+      "trading": {
+        "total_trades": 107,
+        "wins": 55,
+        "losses": 52,
+        "win_rate": 51.4,
+        "total_volume": 29197.81,
+        "net_pl": -1683.56,
+        "open_positions": 5,
+        "favourite_market": "USD/CAD"
+      },
+      "deriv": {
+        "connected": true,
+        "deriv_id": "CR8172363",
+        "account_type": "virtual",
+        "currency": "USD",
+        "landing_company": "svg",
+        "last_recorded_balance": 6645.97,
+        "balance_recorded_at": "2026-09-02T04:04:07.073Z",
+        "scopes": [
+          "read",
+          "trade",
+          "payments"
+        ]
+      },
+      "rooms": [
+        {
+          "id": "room_BOOM1000",
+          "name": "Boom 1000 Room",
+          "kind": "market",
+          "role": "member",
+          "joined_at": "2026-06-11T09:22:07.073Z"
+        }
+      ],
+      "security": {
+        "last_ip": "164.12.219.196",
+        "last_location": "London, United Kingdom",
+        "country_code": "GB",
+        "last_device": "Samsung Galaxy S23",
+        "last_os": "Android 14",
+        "last_browser": "Chrome 128",
+        "device_type": "mobile",
+        "two_factor": false,
+        "failed_logins_30d": 7,
+        "password_changed_at": "2026-01-11T22:06:07.073Z",
+        "sessions": [
+          {
+            "ip": "112.196.83.131",
+            "location": "Abuja, Nigeria",
+            "device": "MacBook Pro",
+            "os": "macOS 14",
+            "browser": "Chrome 127",
+            "type": "desktop",
+            "last_active": "2026-08-15T19:13:07.073Z",
+            "current": false
+          },
+          {
+            "ip": "103.37.241.207",
+            "location": "Accra, Ghana",
+            "device": "Desktop",
+            "os": "Windows 10",
+            "browser": "Edge 128",
+            "type": "desktop",
+            "last_active": "2026-08-19T19:57:07.073Z",
+            "current": false
+          },
+          {
+            "ip": "72.49.73.138",
+            "location": "Manila, Philippines",
+            "device": "Desktop",
+            "os": "Windows 11",
+            "browser": "Chrome 128",
+            "type": "desktop",
+            "last_active": "2026-08-24T20:47:07.073Z",
+            "current": false
+          }
+        ]
+      },
+      "flags": {
+        "reports_against": 1,
+        "warnings": 2,
+        "suspended_until": null
+      }
+    },
+    {
+      "id": "u36",
+      "username": "aisha_ibrahim",
+      "display_name": "Aisha Ibrahim",
+      "email": "aisha.ibrahim@example.com",
+      "phone": "+234 835 6687 981",
+      "avatar_url": null,
+      "role": "user",
+      "status": "active",
+      "is_verified": false,
+      "joined_at": "2024-09-22T10:27:07.073Z",
+      "last_seen_at": "2026-08-30T22:47:07.073Z",
+      "followers": 2323,
+      "following": 72,
+      "signals": 17,
+      "posts": 211,
+      "trading": {
+        "total_trades": 53,
+        "wins": 34,
+        "losses": 19,
+        "win_rate": 64.2,
+        "total_volume": 31301.19,
+        "net_pl": 5631.2,
+        "open_positions": 3,
+        "favourite_market": "Boom 1000"
+      },
+      "deriv": {
+        "connected": true,
+        "deriv_id": "CR3814205",
+        "account_type": "real",
+        "currency": "USD",
+        "landing_company": "maltainvest",
+        "last_recorded_balance": 975.55,
+        "balance_recorded_at": "2026-09-01T21:24:07.073Z",
+        "scopes": [
+          "read",
+          "trade",
+          "payments"
+        ]
+      },
+      "rooms": [
+        {
+          "id": "room_RB100",
+          "name": "RB 100 Room",
+          "kind": "market",
+          "role": "member",
+          "joined_at": "2026-07-14T04:29:07.073Z"
+        },
+        {
+          "id": "room_frxGBPUSD",
+          "name": "GBP/USD Room",
+          "kind": "market",
+          "role": "member",
+          "joined_at": "2026-02-12T09:41:07.073Z"
+        },
+        {
+          "id": "room_crySOLUSD",
+          "name": "SOL/USD Room",
+          "kind": "market",
+          "role": "member",
+          "joined_at": "2025-12-18T00:02:07.073Z"
+        },
+        {
+          "id": "room_OTC_SPC",
+          "name": "US 500 Room",
+          "kind": "market",
+          "role": "member",
+          "joined_at": "2025-12-16T11:02:07.073Z"
+        }
+      ],
+      "security": {
+        "last_ip": "59.250.162.111",
+        "last_location": "Jakarta, Indonesia",
+        "country_code": "ID",
+        "last_device": "Desktop",
+        "last_os": "Windows 11",
+        "last_browser": "Chrome 128",
+        "device_type": "desktop",
+        "two_factor": false,
+        "failed_logins_30d": 0,
+        "password_changed_at": "2026-08-17T15:23:07.073Z",
+        "sessions": [
+          {
+            "ip": "71.147.172.95",
+            "location": "Manila, Philippines",
+            "device": "Tecno Camon 20",
+            "os": "Android 13",
+            "browser": "Chrome 128",
+            "type": "mobile",
+            "last_active": "2026-08-26T08:06:07.073Z",
+            "current": false
+          },
+          {
+            "ip": "118.241.147.27",
+            "location": "Abuja, Nigeria",
+            "device": "iPhone 14 Pro",
+            "os": "iOS 17.5",
+            "browser": "Safari 17",
+            "type": "mobile",
+            "last_active": "2026-08-26T16:43:07.073Z",
+            "current": false
+          }
+        ]
+      },
+      "flags": {
+        "reports_against": 5,
+        "warnings": 0,
+        "suspended_until": null
+      }
+    },
+    {
+      "id": "u37",
+      "username": "peter_suleiman",
+      "display_name": "Peter Suleiman",
+      "email": "peter.suleiman@example.com",
+      "phone": "+234 867 3462 324",
+      "avatar_url": null,
+      "role": "user",
+      "status": "active",
+      "is_verified": false,
+      "joined_at": "2024-04-16T04:41:07.073Z",
+      "last_seen_at": "2026-08-20T07:39:07.073Z",
+      "followers": 598,
+      "following": 364,
+      "signals": 8,
+      "posts": 235,
+      "trading": {
+        "total_trades": 22,
+        "wins": 14,
+        "losses": 8,
+        "win_rate": 63.6,
+        "total_volume": 20105.24,
+        "net_pl": 1528.27,
+        "open_positions": 3,
+        "favourite_market": "BCH/USD"
+      },
+      "deriv": {
+        "connected": true,
+        "deriv_id": "CR2110280",
+        "account_type": "real",
+        "currency": "USD",
+        "landing_company": "maltainvest",
+        "last_recorded_balance": 11837.33,
+        "balance_recorded_at": "2026-09-01T13:47:07.073Z",
+        "scopes": [
+          "read",
+          "trade",
+          "payments"
+        ]
+      },
+      "rooms": [
+        {
+          "id": "room_stpRNG",
+          "name": "Step Room",
+          "kind": "market",
+          "role": "member",
+          "joined_at": "2025-12-10T03:03:07.073Z"
+        },
+        {
+          "id": "room_frxEURUSD",
+          "name": "EUR/USD Room",
+          "kind": "market",
+          "role": "member",
+          "joined_at": "2026-07-22T05:51:07.073Z"
+        }
+      ],
+      "security": {
+        "last_ip": "121.201.54.23",
+        "last_location": "Manchester, United Kingdom",
+        "country_code": "GB",
+        "last_device": "Desktop",
+        "last_os": "Windows 10",
+        "last_browser": "Edge 128",
+        "device_type": "desktop",
+        "two_factor": false,
+        "failed_logins_30d": 5,
+        "password_changed_at": "2026-05-11T05:02:07.073Z",
+        "sessions": [
+          {
+            "ip": "46.23.77.160",
+            "location": "Mumbai, India",
+            "device": "Desktop",
+            "os": "Windows 10",
+            "browser": "Edge 128",
+            "type": "desktop",
+            "last_active": "2026-08-20T00:21:07.073Z",
+            "current": false
+          },
+          {
+            "ip": "189.171.143.159",
+            "location": "Kampala, Uganda",
+            "device": "Samsung Galaxy S23",
+            "os": "Android 14",
+            "browser": "Chrome 128",
+            "type": "mobile",
+            "last_active": "2026-08-19T18:52:07.073Z",
+            "current": false
+          }
+        ]
+      },
+      "flags": {
+        "reports_against": 1,
+        "warnings": 2,
+        "suspended_until": null
+      }
+    },
+    {
+      "id": "u38",
+      "username": "fatima_ekene",
+      "display_name": "Fatima Ekene",
+      "email": "fatima.ekene@example.com",
+      "phone": "+234 839 4692 967",
+      "avatar_url": null,
+      "role": "user",
+      "status": "banned",
+      "is_verified": false,
+      "joined_at": "2025-09-21T22:35:07.073Z",
+      "last_seen_at": "2026-08-21T11:42:07.073Z",
+      "followers": 1758,
+      "following": 122,
+      "signals": 4,
+      "posts": 49,
+      "trading": {
+        "total_trades": 553,
+        "wins": 329,
+        "losses": 224,
+        "win_rate": 59.5,
+        "total_volume": 30101.17,
+        "net_pl": 168.68,
+        "open_positions": 4,
+        "favourite_market": "DOGE/USD"
+      },
+      "deriv": {
+        "connected": true,
+        "deriv_id": "CR8073346",
+        "account_type": "virtual",
+        "currency": "USD",
+        "landing_company": "maltainvest",
+        "last_recorded_balance": 1142.16,
+        "balance_recorded_at": "2026-09-01T17:57:07.073Z",
+        "scopes": [
+          "read",
+          "trade",
+          "payments"
+        ]
+      },
+      "rooms": [
+        {
+          "id": "room_R_10",
+          "name": "V10 Room",
+          "kind": "market",
+          "role": "member",
+          "joined_at": "2026-01-17T00:14:07.073Z"
+        }
+      ],
+      "security": {
+        "last_ip": "53.182.163.241",
+        "last_location": "London, United Kingdom",
+        "country_code": "GB",
+        "last_device": "MacBook Pro",
+        "last_os": "macOS 14",
+        "last_browser": "Chrome 127",
+        "device_type": "desktop",
+        "two_factor": false,
+        "failed_logins_30d": 1,
+        "password_changed_at": "2026-08-10T22:16:07.073Z",
+        "sessions": [
+          {
+            "ip": "52.89.159.53",
+            "location": "London, United Kingdom",
+            "device": "Desktop",
+            "os": "Windows 11",
+            "browser": "Chrome 128",
+            "type": "desktop",
+            "last_active": "2026-08-23T07:00:07.073Z",
+            "current": false
+          }
+        ]
+      },
+      "flags": {
+        "reports_against": 3,
+        "warnings": 1,
+        "suspended_until": "2026-10-02T05:29:07.073Z"
+      }
+    },
+    {
+      "id": "u39",
+      "username": "david_balogun",
+      "display_name": "David Balogun",
+      "email": "david.balogun@example.com",
+      "phone": "+234 882 9026 402",
+      "avatar_url": null,
+      "role": "signal_provider",
+      "status": "banned",
+      "is_verified": true,
+      "joined_at": "2024-05-10T13:34:07.073Z",
+      "last_seen_at": "2026-08-29T08:52:07.073Z",
+      "followers": 1534,
+      "following": 303,
+      "signals": 154,
+      "posts": 41,
+      "trading": {
+        "total_trades": 57,
+        "wins": 36,
+        "losses": 21,
+        "win_rate": 63.2,
+        "total_volume": 40631.45,
+        "net_pl": 7886.63,
+        "open_positions": 2,
+        "favourite_market": "US 30"
+      },
+      "deriv": {
+        "connected": true,
+        "deriv_id": "CR7322036",
+        "account_type": "real",
+        "currency": "USD",
+        "landing_company": "svg",
+        "last_recorded_balance": 11660.73,
+        "balance_recorded_at": "2026-09-01T15:02:07.073Z",
+        "scopes": [
+          "read",
+          "trade",
+          "payments"
+        ]
+      },
+      "rooms": [
+        {
+          "id": "room_R_25",
+          "name": "V25 Room",
+          "kind": "market",
+          "role": "member",
+          "joined_at": "2025-11-27T05:11:07.073Z"
+        },
+        {
+          "id": "room_JD100",
+          "name": "Jump 100 Room",
+          "kind": "market",
+          "role": "member",
+          "joined_at": "2026-06-12T19:36:07.073Z"
+        },
+        {
+          "id": "room_frxGBPJPY",
+          "name": "GBP/JPY Room",
+          "kind": "market",
+          "role": "member",
+          "joined_at": "2026-08-05T20:02:07.073Z"
+        }
+      ],
+      "security": {
+        "last_ip": "159.195.230.160",
+        "last_location": "Karachi, Pakistan",
+        "country_code": "PK",
+        "last_device": "Samsung Galaxy S23",
+        "last_os": "Android 14",
+        "last_browser": "Chrome 128",
+        "device_type": "mobile",
+        "two_factor": true,
+        "failed_logins_30d": 8,
+        "password_changed_at": "2025-08-31T05:50:07.073Z",
+        "sessions": [
+          {
+            "ip": "69.158.240.197",
+            "location": "Lagos, Nigeria",
+            "device": "Tecno Camon 20",
+            "os": "Android 13",
+            "browser": "Chrome 128",
+            "type": "mobile",
+            "last_active": "2026-08-13T18:23:07.073Z",
+            "current": false
+          }
+        ]
+      },
+      "flags": {
+        "reports_against": 3,
+        "warnings": 0,
+        "suspended_until": "2026-10-02T05:29:07.073Z"
+      }
+    },
+    {
+      "id": "u40",
+      "username": "joy_chukwu",
+      "display_name": "Joy Chukwu",
+      "email": "joy.chukwu@example.com",
+      "phone": "+234 872 2162 849",
+      "avatar_url": null,
+      "role": "user",
+      "status": "active",
+      "is_verified": false,
+      "joined_at": "2026-01-08T07:22:07.073Z",
+      "last_seen_at": "2026-09-01T06:29:07.073Z",
+      "followers": 263,
+      "following": 89,
+      "signals": 7,
+      "posts": 227,
+      "trading": {
+        "total_trades": 79,
+        "wins": 38,
+        "losses": 41,
+        "win_rate": 48.1,
+        "total_volume": 79731.65,
+        "net_pl": -2395.44,
+        "open_positions": 3,
+        "favourite_market": "WTI/USD"
+      },
+      "deriv": {
+        "connected": true,
+        "deriv_id": "CR1309045",
+        "account_type": "real",
+        "currency": "USD",
+        "landing_company": "svg",
+        "last_recorded_balance": 5345.29,
+        "balance_recorded_at": "2026-08-31T03:44:07.073Z",
+        "scopes": [
+          "read",
+          "trade",
+          "payments"
+        ]
+      },
+      "rooms": [
+        {
+          "id": "room_R_50",
+          "name": "V50 Room",
+          "kind": "market",
+          "role": "member",
+          "joined_at": "2026-06-06T02:32:07.073Z"
+        },
+        {
+          "id": "room_JD75",
+          "name": "Jump 75 Room",
+          "kind": "market",
+          "role": "member",
+          "joined_at": "2026-07-25T03:51:07.073Z"
+        },
+        {
+          "id": "room_frxEURJPY",
+          "name": "EUR/JPY Room",
+          "kind": "market",
+          "role": "member",
+          "joined_at": "2025-12-26T21:55:07.073Z"
+        },
+        {
+          "id": "room_frxXAGUSD",
+          "name": "XAG/USD Room",
+          "kind": "market",
+          "role": "member",
+          "joined_at": "2025-12-07T23:00:07.073Z"
+        },
+        {
+          "id": "room_u_FX_ProTrader",
+          "name": "FX_ProTrader's Room",
+          "kind": "trader",
+          "role": "owner",
+          "joined_at": "2025-12-22T21:20:07.073Z"
+        }
+      ],
+      "security": {
+        "last_ip": "117.7.53.72",
+        "last_location": "Lagos, Nigeria",
+        "country_code": "NG",
+        "last_device": "iPhone 14 Pro",
+        "last_os": "iOS 17.5",
+        "last_browser": "Safari 17",
+        "device_type": "mobile",
+        "two_factor": false,
+        "failed_logins_30d": 6,
+        "password_changed_at": "2026-05-26T03:42:07.073Z",
+        "sessions": [
+          {
+            "ip": "188.49.185.44",
+            "location": "Lagos, Nigeria",
+            "device": "Desktop",
+            "os": "Windows 11",
+            "browser": "Chrome 128",
+            "type": "desktop",
+            "last_active": "2026-08-13T19:08:07.073Z",
+            "current": false
+          }
+        ]
+      },
+      "flags": {
+        "reports_against": 3,
+        "warnings": 0,
+        "suspended_until": null
+      }
+    },
+    {
+      "id": "u41",
+      "username": "john_david",
+      "display_name": "John David",
+      "email": "john.david@example.com",
+      "phone": "+234 899 5659 958",
+      "avatar_url": null,
+      "role": "moderator",
+      "status": "inactive",
+      "is_verified": true,
+      "joined_at": "2025-10-06T06:30:07.073Z",
+      "last_seen_at": "2026-08-28T00:35:07.073Z",
+      "followers": 1142,
+      "following": 95,
+      "signals": 28,
+      "posts": 253,
+      "trading": {
+        "total_trades": 22,
+        "wins": 15,
+        "losses": 7,
+        "win_rate": 68.2,
+        "total_volume": 13487.91,
+        "net_pl": 4553.24,
+        "open_positions": 1,
+        "favourite_market": "Jump 75"
+      },
+      "deriv": {
+        "connected": true,
+        "deriv_id": "CR2752542",
+        "account_type": "real",
+        "currency": "USD",
+        "landing_company": "vanuatu",
+        "last_recorded_balance": 12003.47,
+        "balance_recorded_at": "2026-08-31T21:33:07.073Z",
+        "scopes": [
+          "read",
+          "trade",
+          "payments"
+        ]
+      },
+      "rooms": [
+        {
+          "id": "room_1HZ50V",
+          "name": "V50 (1s) Room",
+          "kind": "market",
+          "role": "member",
+          "joined_at": "2026-05-03T08:52:07.073Z"
+        }
+      ],
+      "security": {
+        "last_ip": "65.207.184.135",
+        "last_location": "Dubai, UAE",
+        "country_code": "AE",
+        "last_device": "Tecno Camon 20",
+        "last_os": "Android 13",
+        "last_browser": "Chrome 128",
+        "device_type": "mobile",
+        "two_factor": true,
+        "failed_logins_30d": 8,
+        "password_changed_at": "2026-03-16T17:59:07.073Z",
+        "sessions": [
+          {
+            "ip": "137.198.190.37",
+            "location": "Johannesburg, South Africa",
+            "device": "Desktop",
+            "os": "Windows 10",
+            "browser": "Edge 128",
+            "type": "desktop",
+            "last_active": "2026-08-29T04:12:07.073Z",
+            "current": false
+          }
+        ]
+      },
+      "flags": {
+        "reports_against": 1,
+        "warnings": 2,
+        "suspended_until": null
+      }
+    },
+    {
+      "id": "u42",
+      "username": "grace_eze",
+      "display_name": "Grace Eze",
+      "email": "grace.eze@example.com",
+      "phone": "+234 872 2117 280",
+      "avatar_url": null,
+      "role": "signal_provider",
+      "status": "active",
+      "is_verified": false,
+      "joined_at": "2024-10-12T03:22:07.073Z",
+      "last_seen_at": "2026-08-23T13:06:07.073Z",
+      "followers": 874,
+      "following": 3,
+      "signals": 186,
+      "posts": 299,
+      "trading": {
+        "total_trades": 75,
+        "wins": 32,
+        "losses": 43,
+        "win_rate": 42.7,
+        "total_volume": 21290.05,
+        "net_pl": 1304.04,
+        "open_positions": 1,
+        "favourite_market": "NZD/USD"
+      },
+      "deriv": {
+        "connected": true,
+        "deriv_id": "CR3361645",
+        "account_type": "real",
+        "currency": "USD",
+        "landing_company": "svg",
+        "last_recorded_balance": 11704.52,
+        "balance_recorded_at": "2026-09-02T04:32:07.073Z",
+        "scopes": [
+          "read",
+          "trade",
+          "payments"
+        ]
+      },
+      "rooms": [
+        {
+          "id": "room_R_100",
+          "name": "V100 Room",
+          "kind": "market",
+          "role": "member",
+          "joined_at": "2026-06-21T15:34:07.073Z"
+        },
+        {
+          "id": "room_CRASH500",
+          "name": "Crash 500 Room",
+          "kind": "market",
+          "role": "member",
+          "joined_at": "2026-03-11T18:34:07.073Z"
+        },
+        {
+          "id": "room_frxNZDUSD",
+          "name": "NZD/USD Room",
+          "kind": "market",
+          "role": "member",
+          "joined_at": "2026-07-14T16:54:07.073Z"
+        },
+        {
+          "id": "room_cryDOGUSD",
+          "name": "DOGE/USD Room",
+          "kind": "market",
+          "role": "member",
+          "joined_at": "2026-03-25T23:31:07.073Z"
+        }
+      ],
+      "security": {
+        "last_ip": "153.100.30.171",
+        "last_location": "Lagos, Nigeria",
+        "country_code": "NG",
+        "last_device": "Tecno Camon 20",
+        "last_os": "Android 13",
+        "last_browser": "Chrome 128",
+        "device_type": "mobile",
+        "two_factor": true,
+        "failed_logins_30d": 8,
+        "password_changed_at": "2025-08-21T00:07:07.073Z",
+        "sessions": [
+          {
+            "ip": "43.30.84.154",
+            "location": "Jakarta, Indonesia",
+            "device": "iPhone 14 Pro",
+            "os": "iOS 17.5",
+            "browser": "Safari 17",
+            "type": "mobile",
+            "last_active": "2026-08-30T23:54:07.073Z",
+            "current": false
+          },
+          {
+            "ip": "63.108.247.46",
+            "location": "Abuja, Nigeria",
+            "device": "Desktop",
+            "os": "Ubuntu 24.04",
+            "browser": "Firefox 129",
+            "type": "desktop",
+            "last_active": "2026-08-15T12:59:07.073Z",
+            "current": false
+          }
+        ]
+      },
+      "flags": {
+        "reports_against": 1,
+        "warnings": 1,
+        "suspended_until": null
+      }
+    },
+    {
+      "id": "u43",
+      "username": "femi_adamu",
+      "display_name": "Femi Adamu",
+      "email": "femi.adamu@example.com",
+      "phone": "+234 833 9889 621",
+      "avatar_url": null,
+      "role": "user",
+      "status": "inactive",
+      "is_verified": false,
+      "joined_at": "2024-08-04T15:03:07.073Z",
+      "last_seen_at": "2026-08-19T19:10:07.073Z",
+      "followers": 350,
+      "following": 27,
+      "signals": 11,
+      "posts": 175,
+      "trading": {
+        "total_trades": 596,
+        "wins": 358,
+        "losses": 238,
+        "win_rate": 60.1,
+        "total_volume": 27644.95,
+        "net_pl": 2360.98,
+        "open_positions": 5,
+        "favourite_market": "Step"
+      },
+      "deriv": {
+        "connected": false,
+        "deriv_id": "CR8306746",
+        "account_type": "virtual",
+        "currency": "USD",
+        "landing_company": "vanuatu",
+        "last_recorded_balance": 2675.06,
+        "balance_recorded_at": "2026-09-01T20:57:07.073Z",
+        "scopes": [
+          "read",
+          "trade",
+          "payments"
+        ]
+      },
+      "rooms": [
+        {
+          "id": "room_1HZ100V",
+          "name": "V100 (1s) Room",
+          "kind": "market",
+          "role": "member",
+          "joined_at": "2025-12-04T02:25:07.073Z"
+        },
+        {
+          "id": "room_CRASH1000",
+          "name": "Crash 1000 Room",
+          "kind": "market",
+          "role": "member",
+          "joined_at": "2025-12-14T11:26:07.073Z"
+        },
+        {
+          "id": "room_frxUSDCHF",
+          "name": "USD/CHF Room",
+          "kind": "market",
+          "role": "member",
+          "joined_at": "2026-02-08T19:18:07.073Z"
+        }
+      ],
+      "security": {
+        "last_ip": "103.16.105.181",
+        "last_location": "Kampala, Uganda",
+        "country_code": "UG",
+        "last_device": "Desktop",
+        "last_os": "Ubuntu 24.04",
+        "last_browser": "Firefox 129",
+        "device_type": "desktop",
+        "two_factor": false,
+        "failed_logins_30d": 9,
+        "password_changed_at": "2026-03-26T00:11:07.073Z",
+        "sessions": [
+          {
+            "ip": "187.174.232.170",
+            "location": "Manchester, United Kingdom",
+            "device": "MacBook Pro",
+            "os": "macOS 14",
+            "browser": "Chrome 127",
+            "type": "desktop",
+            "last_active": "2026-08-17T14:30:07.073Z",
+            "current": false
+          },
+          {
+            "ip": "45.205.182.115",
+            "location": "Jakarta, Indonesia",
+            "device": "Samsung Galaxy S23",
+            "os": "Android 14",
+            "browser": "Chrome 128",
+            "type": "mobile",
+            "last_active": "2026-08-30T07:04:07.073Z",
+            "current": false
+          }
+        ]
+      },
+      "flags": {
+        "reports_against": 3,
+        "warnings": 3,
+        "suspended_until": null
+      }
+    },
+    {
+      "id": "u44",
+      "username": "amara_okafor",
+      "display_name": "Amara Okafor",
+      "email": "amara.okafor@example.com",
+      "phone": "+234 863 5187 125",
+      "avatar_url": null,
+      "role": "signal_provider",
+      "status": "active",
+      "is_verified": false,
+      "joined_at": "2024-07-30T01:55:07.073Z",
+      "last_seen_at": "2026-08-24T12:17:07.073Z",
+      "followers": 1842,
+      "following": 110,
+      "signals": 157,
+      "posts": 100,
+      "trading": {
+        "total_trades": 528,
+        "wins": 240,
+        "losses": 288,
+        "win_rate": 45.5,
+        "total_volume": 3787.67,
+        "net_pl": 1926.14,
+        "open_positions": 0,
+        "favourite_market": "XAG/USD"
+      },
+      "deriv": {
+        "connected": true,
+        "deriv_id": "CR4154070",
+        "account_type": "virtual",
+        "currency": "USD",
+        "landing_company": "maltainvest",
+        "last_recorded_balance": 2051.6,
+        "balance_recorded_at": "2026-09-01T23:46:07.073Z",
+        "scopes": [
+          "read",
+          "trade",
+          "payments"
+        ]
+      },
+      "rooms": [
+        {
+          "id": "room_R_75",
+          "name": "V75 Room",
+          "kind": "market",
+          "role": "member",
+          "joined_at": "2026-02-02T17:48:07.073Z"
+        },
+        {
+          "id": "room_BOOM300",
+          "name": "Boom 300 Room",
+          "kind": "market",
+          "role": "member",
+          "joined_at": "2026-04-10T09:36:07.073Z"
+        },
+        {
+          "id": "room_frxUSDCAD",
+          "name": "USD/CAD Room",
+          "kind": "market",
+          "role": "member",
+          "joined_at": "2026-02-23T17:57:07.073Z"
+        }
+      ],
+      "security": {
+        "last_ip": "97.207.151.111",
+        "last_location": "Dubai, UAE",
+        "country_code": "AE",
+        "last_device": "Samsung Galaxy S23",
+        "last_os": "Android 14",
+        "last_browser": "Chrome 128",
+        "device_type": "mobile",
+        "two_factor": true,
+        "failed_logins_30d": 9,
+        "password_changed_at": "2026-04-09T15:52:07.073Z",
+        "sessions": [
+          {
+            "ip": "116.248.203.129",
+            "location": "Jakarta, Indonesia",
+            "device": "MacBook Pro",
+            "os": "macOS 14",
+            "browser": "Chrome 127",
+            "type": "desktop",
+            "last_active": "2026-08-29T14:40:07.073Z",
+            "current": false
+          },
+          {
+            "ip": "127.233.132.13",
+            "location": "Cairo, Egypt",
+            "device": "Desktop",
+            "os": "Windows 11",
+            "browser": "Chrome 128",
+            "type": "desktop",
+            "last_active": "2026-08-23T23:58:07.073Z",
+            "current": false
+          },
+          {
+            "ip": "59.244.33.250",
+            "location": "Johannesburg, South Africa",
+            "device": "Desktop",
+            "os": "Windows 10",
+            "browser": "Edge 128",
+            "type": "desktop",
+            "last_active": "2026-08-22T16:53:07.073Z",
+            "current": false
+          },
+          {
+            "ip": "152.35.114.190",
+            "location": "Accra, Ghana",
+            "device": "Desktop",
+            "os": "Windows 11",
+            "browser": "Chrome 128",
+            "type": "desktop",
+            "last_active": "2026-08-25T18:41:07.073Z",
+            "current": false
+          }
+        ]
+      },
+      "flags": {
+        "reports_against": 4,
+        "warnings": 0,
+        "suspended_until": null
+      }
+    },
+    {
+      "id": "u45",
+      "username": "kwame_yusuf",
+      "display_name": "Kwame Yusuf",
+      "email": "kwame.yusuf@example.com",
+      "phone": "+234 859 1588 243",
+      "avatar_url": null,
+      "role": "user",
+      "status": "active",
+      "is_verified": false,
+      "joined_at": "2024-12-18T17:36:07.073Z",
+      "last_seen_at": "2026-08-28T21:10:07.073Z",
+      "followers": 861,
+      "following": 392,
+      "signals": 20,
+      "posts": 32,
+      "trading": {
+        "total_trades": 609,
+        "wins": 424,
+        "losses": 185,
+        "win_rate": 69.6,
+        "total_volume": 11696.65,
+        "net_pl": -926.13,
+        "open_positions": 3,
+        "favourite_market": "XAG/USD"
+      },
+      "deriv": {
+        "connected": true,
+        "deriv_id": "CR5504430",
+        "account_type": "real",
+        "currency": "USD",
+        "landing_company": "maltainvest",
+        "last_recorded_balance": 9675.68,
+        "balance_recorded_at": "2026-09-01T06:34:07.073Z",
+        "scopes": [
+          "read",
+          "trade",
+          "payments"
+        ]
+      },
+      "rooms": [
+        {
+          "id": "room_1HZ75V",
+          "name": "V75 (1s) Room",
+          "kind": "market",
+          "role": "member",
+          "joined_at": "2025-12-23T19:59:07.073Z"
+        },
+        {
+          "id": "room_BOOM500",
+          "name": "Boom 500 Room",
+          "kind": "market",
+          "role": "member",
+          "joined_at": "2025-12-27T14:26:07.073Z"
+        }
+      ],
+      "security": {
+        "last_ip": "93.244.36.53",
+        "last_location": "Lagos, Nigeria",
+        "country_code": "NG",
+        "last_device": "Tecno Camon 20",
+        "last_os": "Android 13",
+        "last_browser": "Chrome 128",
+        "device_type": "mobile",
+        "two_factor": false,
+        "failed_logins_30d": 2,
+        "password_changed_at": "2025-11-19T16:52:07.073Z",
+        "sessions": [
+          {
+            "ip": "71.37.22.31",
+            "location": "Johannesburg, South Africa",
+            "device": "Samsung Galaxy S23",
+            "os": "Android 14",
+            "browser": "Chrome 128",
+            "type": "mobile",
+            "last_active": "2026-08-26T14:31:07.073Z",
+            "current": false
+          },
+          {
+            "ip": "148.89.208.40",
+            "location": "Accra, Ghana",
+            "device": "Desktop",
+            "os": "Windows 11",
+            "browser": "Chrome 128",
+            "type": "desktop",
+            "last_active": "2026-08-15T10:35:07.073Z",
+            "current": false
+          },
+          {
+            "ip": "42.3.147.62",
+            "location": "London, United Kingdom",
+            "device": "Desktop",
+            "os": "Windows 11",
+            "browser": "Chrome 128",
+            "type": "desktop",
+            "last_active": "2026-08-14T06:39:07.073Z",
+            "current": false
+          },
+          {
+            "ip": "112.93.67.64",
+            "location": "Abuja, Nigeria",
+            "device": "Desktop",
+            "os": "Windows 11",
+            "browser": "Chrome 128",
+            "type": "desktop",
+            "last_active": "2026-08-18T19:13:07.073Z",
+            "current": false
+          }
+        ]
+      },
+      "flags": {
+        "reports_against": 3,
+        "warnings": 1,
+        "suspended_until": null
+      }
+    },
+    {
+      "id": "u46",
+      "username": "zainab_lawal",
+      "display_name": "Zainab Lawal",
+      "email": "zainab.lawal@example.com",
+      "phone": "+234 851 4146 679",
+      "avatar_url": null,
+      "role": "signal_provider",
+      "status": "inactive",
+      "is_verified": false,
+      "joined_at": "2025-05-26T10:38:07.073Z",
+      "last_seen_at": "2026-08-27T15:40:07.073Z",
+      "followers": 609,
+      "following": 357,
+      "signals": 36,
+      "posts": 146,
+      "trading": {
+        "total_trades": 125,
+        "wins": 75,
+        "losses": 50,
+        "win_rate": 60,
+        "total_volume": 33889.3,
+        "net_pl": 4391.28,
+        "open_positions": 5,
+        "favourite_market": "AUS 200"
+      },
+      "deriv": {
+        "connected": true,
+        "deriv_id": "CR4859709",
+        "account_type": "real",
+        "currency": "USD",
+        "landing_company": "svg",
+        "last_recorded_balance": 4181.02,
+        "balance_recorded_at": "2026-08-30T09:57:07.073Z",
+        "scopes": [
+          "read",
+          "trade",
+          "payments"
+        ]
+      },
+      "rooms": [
+        {
+          "id": "room_BOOM1000",
+          "name": "Boom 1000 Room",
+          "kind": "market",
+          "role": "member",
+          "joined_at": "2026-06-18T20:55:07.073Z"
+        },
+        {
+          "id": "room_frxUSDJPY",
+          "name": "USD/JPY Room",
+          "kind": "market",
+          "role": "member",
+          "joined_at": "2025-11-27T07:39:07.073Z"
+        },
+        {
+          "id": "room_cryXRPUSD",
+          "name": "XRP/USD Room",
+          "kind": "market",
+          "role": "member",
+          "joined_at": "2026-06-10T09:23:07.073Z"
+        }
+      ],
+      "security": {
+        "last_ip": "106.116.193.249",
+        "last_location": "Jakarta, Indonesia",
+        "country_code": "ID",
+        "last_device": "Desktop",
+        "last_os": "Windows 11",
+        "last_browser": "Chrome 128",
+        "device_type": "desktop",
+        "two_factor": false,
+        "failed_logins_30d": 8,
+        "password_changed_at": "2026-08-14T10:10:07.073Z",
+        "sessions": [
+          {
+            "ip": "181.135.67.201",
+            "location": "Lagos, Nigeria",
+            "device": "iPhone 14 Pro",
+            "os": "iOS 17.5",
+            "browser": "Safari 17",
+            "type": "mobile",
+            "last_active": "2026-09-01T03:32:07.073Z",
+            "current": false
+          },
+          {
+            "ip": "151.19.189.192",
+            "location": "Lagos, Nigeria",
+            "device": "Tecno Camon 20",
+            "os": "Android 13",
+            "browser": "Chrome 128",
+            "type": "mobile",
+            "last_active": "2026-08-27T05:13:07.073Z",
+            "current": false
+          },
+          {
+            "ip": "170.166.86.65",
+            "location": "Manchester, United Kingdom",
+            "device": "MacBook Pro",
+            "os": "macOS 14",
+            "browser": "Chrome 127",
+            "type": "desktop",
+            "last_active": "2026-08-14T04:26:07.073Z",
+            "current": false
+          },
+          {
+            "ip": "74.36.122.211",
+            "location": "Johannesburg, South Africa",
+            "device": "Tecno Camon 20",
+            "os": "Android 13",
+            "browser": "Chrome 128",
+            "type": "mobile",
+            "last_active": "2026-08-29T10:24:07.073Z",
+            "current": false
+          }
+        ]
+      },
+      "flags": {
+        "reports_against": 0,
+        "warnings": 0,
+        "suspended_until": null
+      }
+    },
+    {
+      "id": "u47",
+      "username": "tunde_adeyemi",
+      "display_name": "Tunde Adeyemi",
+      "email": "tunde.adeyemi@example.com",
+      "phone": "+234 897 5623 773",
+      "avatar_url": null,
+      "role": "moderator",
+      "status": "active",
+      "is_verified": false,
+      "joined_at": "2025-01-28T23:11:07.073Z",
+      "last_seen_at": "2026-08-27T21:55:07.073Z",
+      "followers": 751,
+      "following": 224,
+      "signals": 29,
+      "posts": 234,
+      "trading": {
+        "total_trades": 441,
+        "wins": 266,
+        "losses": 175,
+        "win_rate": 60.3,
+        "total_volume": 37186.71,
+        "net_pl": 1580.89,
+        "open_positions": 1,
+        "favourite_market": "NZD/USD"
+      },
+      "deriv": {
+        "connected": true,
+        "deriv_id": "CR5312507",
+        "account_type": "real",
+        "currency": "USD",
+        "landing_company": "vanuatu",
+        "last_recorded_balance": 3571.46,
+        "balance_recorded_at": "2026-08-31T07:09:07.073Z",
+        "scopes": [
+          "read",
+          "trade",
+          "payments"
+        ]
+      },
+      "rooms": [
+        {
+          "id": "room_RB100",
+          "name": "RB 100 Room",
+          "kind": "market",
+          "role": "member",
+          "joined_at": "2025-12-08T20:24:07.073Z"
+        },
+        {
+          "id": "room_frxGBPUSD",
+          "name": "GBP/USD Room",
+          "kind": "market",
+          "role": "member",
+          "joined_at": "2025-12-16T18:26:07.073Z"
+        },
+        {
+          "id": "room_crySOLUSD",
+          "name": "SOL/USD Room",
+          "kind": "market",
+          "role": "member",
+          "joined_at": "2025-12-12T18:52:07.073Z"
+        },
+        {
+          "id": "room_OTC_SPC",
+          "name": "US 500 Room",
+          "kind": "market",
+          "role": "member",
+          "joined_at": "2026-05-04T05:34:07.073Z"
+        },
+        {
+          "id": "room_u_Mr_Market",
+          "name": "Mr_Market's Room",
+          "kind": "trader",
+          "role": "owner",
+          "joined_at": "2026-04-15T12:56:07.073Z"
+        }
+      ],
+      "security": {
+        "last_ip": "69.56.147.221",
+        "last_location": "Mumbai, India",
+        "country_code": "IN",
+        "last_device": "Samsung Galaxy S23",
+        "last_os": "Android 14",
+        "last_browser": "Chrome 128",
+        "device_type": "mobile",
+        "two_factor": false,
+        "failed_logins_30d": 0,
+        "password_changed_at": "2025-12-28T22:32:07.073Z",
+        "sessions": [
+          {
+            "ip": "94.60.204.144",
+            "location": "Accra, Ghana",
+            "device": "Samsung Galaxy S23",
+            "os": "Android 14",
+            "browser": "Chrome 128",
+            "type": "mobile",
+            "last_active": "2026-08-18T18:31:07.073Z",
+            "current": false
+          },
+          {
+            "ip": "167.168.169.146",
+            "location": "Abuja, Nigeria",
+            "device": "Desktop",
+            "os": "Ubuntu 24.04",
+            "browser": "Firefox 129",
+            "type": "desktop",
+            "last_active": "2026-08-26T17:13:07.073Z",
+            "current": false
+          },
+          {
+            "ip": "79.213.253.189",
+            "location": "Cairo, Egypt",
+            "device": "Desktop",
+            "os": "Ubuntu 24.04",
+            "browser": "Firefox 129",
+            "type": "desktop",
+            "last_active": "2026-08-25T21:09:07.073Z",
+            "current": false
+          },
+          {
+            "ip": "155.30.178.154",
+            "location": "Nairobi, Kenya",
+            "device": "Desktop",
+            "os": "Ubuntu 24.04",
+            "browser": "Firefox 129",
+            "type": "desktop",
+            "last_active": "2026-08-20T03:29:07.073Z",
+            "current": false
+          }
+        ]
+      },
+      "flags": {
+        "reports_against": 0,
+        "warnings": 2,
+        "suspended_until": null
+      }
+    },
+    {
+      "id": "u48",
+      "username": "chioma_nwosu",
+      "display_name": "Chioma Nwosu",
+      "email": "chioma.nwosu@example.com",
+      "phone": "+234 821 7094 121",
+      "avatar_url": null,
+      "role": "moderator",
+      "status": "inactive",
+      "is_verified": true,
+      "joined_at": "2026-01-05T07:16:07.073Z",
+      "last_seen_at": "2026-08-29T13:18:07.073Z",
+      "followers": 386,
+      "following": 236,
+      "signals": 30,
+      "posts": 9,
+      "trading": {
+        "total_trades": 244,
+        "wins": 162,
+        "losses": 82,
+        "win_rate": 66.4,
+        "total_volume": 36339.47,
+        "net_pl": 3849.5,
+        "open_positions": 5,
+        "favourite_market": "Jump 100"
+      },
+      "deriv": {
+        "connected": true,
+        "deriv_id": "CR9178233",
+        "account_type": "real",
+        "currency": "USD",
+        "landing_company": "vanuatu",
+        "last_recorded_balance": 1717.9,
+        "balance_recorded_at": "2026-08-30T18:14:07.073Z",
+        "scopes": [
+          "read",
+          "trade",
+          "payments"
+        ]
+      },
+      "rooms": [
+        {
+          "id": "room_stpRNG",
+          "name": "Step Room",
+          "kind": "market",
+          "role": "member",
+          "joined_at": "2025-12-22T08:00:07.073Z"
+        },
+        {
+          "id": "room_frxEURUSD",
+          "name": "EUR/USD Room",
+          "kind": "market",
+          "role": "member",
+          "joined_at": "2026-02-06T05:57:07.073Z"
+        },
+        {
+          "id": "room_cryETHUSD",
+          "name": "ETH/USD Room",
+          "kind": "market",
+          "role": "member",
+          "joined_at": "2026-03-20T23:46:07.073Z"
+        },
+        {
+          "id": "room_WTIUSD",
+          "name": "WTI/USD Room",
+          "kind": "market",
+          "role": "member",
+          "joined_at": "2026-04-05T22:29:07.073Z"
+        }
+      ],
+      "security": {
+        "last_ip": "160.148.47.127",
+        "last_location": "Mumbai, India",
+        "country_code": "IN",
+        "last_device": "iPhone 14 Pro",
+        "last_os": "iOS 17.5",
+        "last_browser": "Safari 17",
+        "device_type": "mobile",
+        "two_factor": false,
+        "failed_logins_30d": 3,
+        "password_changed_at": "2025-08-02T15:33:07.073Z",
+        "sessions": [
+          {
+            "ip": "126.8.32.191",
+            "location": "Lagos, Nigeria",
+            "device": "MacBook Pro",
+            "os": "macOS 14",
+            "browser": "Chrome 127",
+            "type": "desktop",
+            "last_active": "2026-08-31T08:12:07.073Z",
+            "current": false
+          },
+          {
+            "ip": "90.39.217.185",
+            "location": "Johannesburg, South Africa",
+            "device": "Desktop",
+            "os": "Ubuntu 24.04",
+            "browser": "Firefox 129",
+            "type": "desktop",
+            "last_active": "2026-08-31T18:31:07.073Z",
+            "current": false
+          },
+          {
+            "ip": "90.192.137.234",
+            "location": "London, United Kingdom",
+            "device": "Tecno Camon 20",
+            "os": "Android 13",
+            "browser": "Chrome 128",
+            "type": "mobile",
+            "last_active": "2026-08-29T02:55:07.073Z",
+            "current": false
+          },
+          {
+            "ip": "81.18.78.21",
+            "location": "Johannesburg, South Africa",
+            "device": "iPhone 14 Pro",
+            "os": "iOS 17.5",
+            "browser": "Safari 17",
+            "type": "mobile",
+            "last_active": "2026-08-30T12:53:07.073Z",
+            "current": false
+          }
+        ]
+      },
+      "flags": {
+        "reports_against": 3,
+        "warnings": 1,
+        "suspended_until": null
+      }
+    },
+    {
+      "id": "u49",
+      "username": "musa_okoro",
+      "display_name": "Musa Okoro",
+      "email": "musa.okoro@example.com",
+      "phone": "+234 892 6910 777",
+      "avatar_url": null,
+      "role": "signal_provider",
+      "status": "active",
+      "is_verified": true,
+      "joined_at": "2026-02-19T07:46:07.073Z",
+      "last_seen_at": "2026-08-20T13:08:07.073Z",
+      "followers": 1082,
+      "following": 190,
+      "signals": 181,
+      "posts": 235,
+      "trading": {
+        "total_trades": 424,
+        "wins": 259,
+        "losses": 165,
+        "win_rate": 61.1,
+        "total_volume": 16961.96,
+        "net_pl": 2926.71,
+        "open_positions": 2,
+        "favourite_market": "V75"
+      },
+      "deriv": {
+        "connected": true,
+        "deriv_id": "CR3625413",
+        "account_type": "real",
+        "currency": "USD",
+        "landing_company": "maltainvest",
+        "last_recorded_balance": 8100.25,
+        "balance_recorded_at": "2026-08-31T03:42:07.073Z",
+        "scopes": [
+          "read",
+          "trade",
+          "payments"
+        ]
+      },
+      "rooms": [
+        {
+          "id": "room_R_10",
+          "name": "V10 Room",
+          "kind": "market",
+          "role": "member",
+          "joined_at": "2026-09-02T03:02:07.073Z"
+        },
+        {
+          "id": "room_JD25",
+          "name": "Jump 25 Room",
+          "kind": "market",
+          "role": "member",
+          "joined_at": "2026-03-05T21:08:07.073Z"
+        }
+      ],
+      "security": {
+        "last_ip": "59.97.80.239",
+        "last_location": "Dar es Salaam, Tanzania",
+        "country_code": "TZ",
+        "last_device": "Desktop",
+        "last_os": "Windows 11",
+        "last_browser": "Chrome 128",
+        "device_type": "desktop",
+        "two_factor": false,
+        "failed_logins_30d": 2,
+        "password_changed_at": "2025-12-30T15:09:07.073Z",
+        "sessions": [
+          {
+            "ip": "49.104.23.90",
+            "location": "Abuja, Nigeria",
+            "device": "Samsung Galaxy S23",
+            "os": "Android 14",
+            "browser": "Chrome 128",
+            "type": "mobile",
+            "last_active": "2026-08-19T01:32:07.073Z",
+            "current": false
+          }
+        ]
+      },
+      "flags": {
+        "reports_against": 0,
+        "warnings": 1,
+        "suspended_until": null
+      }
+    },
+    {
+      "id": "u50",
+      "username": "ada_bello",
+      "display_name": "Ada Bello",
+      "email": "ada.bello@example.com",
+      "phone": "+234 891 4123 472",
+      "avatar_url": null,
+      "role": "user",
+      "status": "active",
+      "is_verified": false,
+      "joined_at": "2026-04-07T16:07:07.073Z",
+      "last_seen_at": "2026-08-27T23:15:07.073Z",
+      "followers": 231,
+      "following": 253,
+      "signals": 0,
+      "posts": 198,
+      "trading": {
+        "total_trades": 78,
+        "wins": 36,
+        "losses": 42,
+        "win_rate": 46.2,
+        "total_volume": 20366.12,
+        "net_pl": 2646.03,
+        "open_positions": 4,
+        "favourite_market": "V50"
+      },
+      "deriv": {
+        "connected": false,
+        "deriv_id": "CR3111010",
+        "account_type": "real",
+        "currency": "USD",
+        "landing_company": "vanuatu",
+        "last_recorded_balance": 3137.52,
+        "balance_recorded_at": "2026-08-30T23:19:07.073Z",
+        "scopes": [
+          "read",
+          "trade",
+          "payments"
+        ]
+      },
+      "rooms": [
+        {
+          "id": "room_R_25",
+          "name": "V25 Room",
+          "kind": "market",
+          "role": "member",
+          "joined_at": "2026-06-16T14:58:07.073Z"
+        },
+        {
+          "id": "room_JD100",
+          "name": "Jump 100 Room",
+          "kind": "market",
+          "role": "member",
+          "joined_at": "2026-08-21T21:30:07.073Z"
+        },
+        {
+          "id": "room_frxGBPJPY",
+          "name": "GBP/JPY Room",
+          "kind": "market",
+          "role": "member",
+          "joined_at": "2026-06-28T19:35:07.073Z"
+        }
+      ],
+      "security": {
+        "last_ip": "196.20.187.82",
+        "last_location": "Johannesburg, South Africa",
+        "country_code": "ZA",
+        "last_device": "Samsung Galaxy S23",
+        "last_os": "Android 14",
+        "last_browser": "Chrome 128",
+        "device_type": "mobile",
+        "two_factor": true,
+        "failed_logins_30d": 3,
+        "password_changed_at": "2026-07-26T22:08:07.073Z",
+        "sessions": [
+          {
+            "ip": "95.184.168.241",
+            "location": "Accra, Ghana",
+            "device": "Desktop",
+            "os": "Windows 10",
+            "browser": "Edge 128",
+            "type": "desktop",
+            "last_active": "2026-08-16T14:37:07.073Z",
+            "current": false
+          }
+        ]
+      },
+      "flags": {
+        "reports_against": 5,
+        "warnings": 3,
+        "suspended_until": null
+      }
+    },
+    {
+      "id": "u51",
+      "username": "daniel_achebe",
+      "display_name": "Daniel Achebe",
+      "email": "daniel.achebe@example.com",
+      "phone": "+234 870 5922 399",
+      "avatar_url": null,
+      "role": "user",
+      "status": "active",
+      "is_verified": false,
+      "joined_at": "2026-03-12T08:10:07.073Z",
+      "last_seen_at": "2026-08-29T05:52:07.073Z",
+      "followers": 23,
+      "following": 112,
+      "signals": 13,
+      "posts": 160,
+      "trading": {
+        "total_trades": 187,
+        "wins": 111,
+        "losses": 76,
+        "win_rate": 59.4,
+        "total_volume": 4708.07,
+        "net_pl": 1948.32,
+        "open_positions": 1,
+        "favourite_market": "WTI/USD"
+      },
+      "deriv": {
+        "connected": true,
+        "deriv_id": "CR8347997",
+        "account_type": "real",
+        "currency": "USD",
+        "landing_company": "svg",
+        "last_recorded_balance": 6110.06,
+        "balance_recorded_at": "2026-09-01T00:48:07.073Z",
+        "scopes": [
+          "read",
+          "trade",
+          "payments"
+        ]
+      },
+      "rooms": [
+        {
+          "id": "room_R_50",
+          "name": "V50 Room",
+          "kind": "market",
+          "role": "member",
+          "joined_at": "2025-12-22T16:37:07.073Z"
+        }
+      ],
+      "security": {
+        "last_ip": "47.93.224.162",
+        "last_location": "Accra, Ghana",
+        "country_code": "GH",
+        "last_device": "MacBook Pro",
+        "last_os": "macOS 14",
+        "last_browser": "Chrome 127",
+        "device_type": "desktop",
+        "two_factor": false,
+        "failed_logins_30d": 7,
+        "password_changed_at": "2025-12-05T03:08:07.073Z",
+        "sessions": [
+          {
+            "ip": "85.52.6.55",
+            "location": "Nairobi, Kenya",
+            "device": "MacBook Pro",
+            "os": "macOS 14",
+            "browser": "Chrome 127",
+            "type": "desktop",
+            "last_active": "2026-08-15T03:39:07.073Z",
+            "current": false
+          },
+          {
+            "ip": "167.90.40.132",
+            "location": "Dubai, UAE",
+            "device": "Desktop",
+            "os": "Windows 10",
+            "browser": "Edge 128",
+            "type": "desktop",
+            "last_active": "2026-09-02T01:59:07.073Z",
+            "current": false
+          },
+          {
+            "ip": "182.96.8.34",
+            "location": "Dar es Salaam, Tanzania",
+            "device": "iPhone 14 Pro",
+            "os": "iOS 17.5",
+            "browser": "Safari 17",
+            "type": "mobile",
+            "last_active": "2026-08-15T15:22:07.073Z",
+            "current": false
+          }
+        ]
+      },
+      "flags": {
+        "reports_against": 1,
+        "warnings": 3,
+        "suspended_until": null
+      }
+    },
+    {
+      "id": "u52",
+      "username": "blessing_danjuma",
+      "display_name": "Blessing Danjuma",
+      "email": "blessing.danjuma@example.com",
+      "phone": "+234 870 5725 624",
+      "avatar_url": null,
+      "role": "user",
+      "status": "active",
+      "is_verified": true,
+      "joined_at": "2026-04-26T09:06:07.073Z",
+      "last_seen_at": "2026-08-20T05:51:07.073Z",
+      "followers": 1435,
+      "following": 376,
+      "signals": 27,
+      "posts": 47,
+      "trading": {
+        "total_trades": 535,
+        "wins": 296,
+        "losses": 239,
+        "win_rate": 55.3,
+        "total_volume": 53574.48,
+        "net_pl": 4440.82,
+        "open_positions": 1,
+        "favourite_market": "USD/JPY"
+      },
+      "deriv": {
+        "connected": true,
+        "deriv_id": "CR6709259",
+        "account_type": "real",
+        "currency": "USD",
+        "landing_company": "svg",
+        "last_recorded_balance": 726.21,
+        "balance_recorded_at": "2026-08-30T10:59:07.073Z",
+        "scopes": [
+          "read",
+          "trade",
+          "payments"
+        ]
+      },
+      "rooms": [
+        {
+          "id": "room_1HZ50V",
+          "name": "V50 (1s) Room",
+          "kind": "market",
+          "role": "member",
+          "joined_at": "2025-11-19T06:02:07.073Z"
+        },
+        {
+          "id": "room_CRASH300",
+          "name": "Crash 300 Room",
+          "kind": "market",
+          "role": "member",
+          "joined_at": "2025-11-15T13:55:07.073Z"
+        },
+        {
+          "id": "room_frxEURGBP",
+          "name": "EUR/GBP Room",
+          "kind": "market",
+          "role": "member",
+          "joined_at": "2025-12-22T20:42:07.073Z"
+        },
+        {
+          "id": "room_frxXAUUSD",
+          "name": "XAU/USD Room",
+          "kind": "market",
+          "role": "member",
+          "joined_at": "2026-08-11T23:34:07.073Z"
+        }
+      ],
+      "security": {
+        "last_ip": "171.2.26.75",
+        "last_location": "Kampala, Uganda",
+        "country_code": "UG",
+        "last_device": "iPhone 14 Pro",
+        "last_os": "iOS 17.5",
+        "last_browser": "Safari 17",
+        "device_type": "mobile",
+        "two_factor": false,
+        "failed_logins_30d": 3,
+        "password_changed_at": "2026-03-15T09:55:07.073Z",
+        "sessions": [
+          {
+            "ip": "167.234.41.239",
+            "location": "Mumbai, India",
+            "device": "MacBook Pro",
+            "os": "macOS 14",
+            "browser": "Chrome 127",
+            "type": "desktop",
+            "last_active": "2026-08-16T06:05:07.073Z",
+            "current": false
+          },
+          {
+            "ip": "69.12.178.19",
+            "location": "Dubai, UAE",
+            "device": "MacBook Pro",
+            "os": "macOS 14",
+            "browser": "Chrome 127",
+            "type": "desktop",
+            "last_active": "2026-08-19T16:10:07.073Z",
+            "current": false
+          },
+          {
+            "ip": "117.191.86.237",
+            "location": "Lagos, Nigeria",
+            "device": "MacBook Pro",
+            "os": "macOS 14",
+            "browser": "Chrome 127",
+            "type": "desktop",
+            "last_active": "2026-08-15T05:13:07.073Z",
+            "current": false
+          }
+        ]
+      },
+      "flags": {
+        "reports_against": 0,
+        "warnings": 2,
+        "suspended_until": null
+      }
+    },
+    {
+      "id": "u53",
+      "username": "ibrahim_mensah",
+      "display_name": "Ibrahim Mensah",
+      "email": "ibrahim.mensah@example.com",
+      "phone": "+234 898 7259 545",
+      "avatar_url": null,
+      "role": "signal_provider",
+      "status": "active",
+      "is_verified": false,
+      "joined_at": "2024-10-26T06:08:07.073Z",
+      "last_seen_at": "2026-08-29T21:11:07.073Z",
+      "followers": 787,
+      "following": 279,
+      "signals": 62,
+      "posts": 55,
+      "trading": {
+        "total_trades": 326,
+        "wins": 208,
+        "losses": 118,
+        "win_rate": 63.8,
+        "total_volume": 2732.46,
+        "net_pl": 3004.2,
+        "open_positions": 5,
+        "favourite_market": "V100"
+      },
+      "deriv": {
+        "connected": true,
+        "deriv_id": "CR3714038",
+        "account_type": "real",
+        "currency": "USD",
+        "landing_company": "maltainvest",
+        "last_recorded_balance": 2634.25,
+        "balance_recorded_at": "2026-08-31T17:17:07.073Z",
+        "scopes": [
+          "read",
+          "trade",
+          "payments"
+        ]
+      },
+      "rooms": [
+        {
+          "id": "room_R_100",
+          "name": "V100 Room",
+          "kind": "market",
+          "role": "member",
+          "joined_at": "2026-06-15T08:04:07.073Z"
+        },
+        {
+          "id": "room_CRASH500",
+          "name": "Crash 500 Room",
+          "kind": "market",
+          "role": "member",
+          "joined_at": "2026-07-06T18:09:07.073Z"
+        },
+        {
+          "id": "room_frxNZDUSD",
+          "name": "NZD/USD Room",
+          "kind": "market",
+          "role": "member",
+          "joined_at": "2026-08-14T18:41:07.073Z"
+        },
+        {
+          "id": "room_cryDOGUSD",
+          "name": "DOGE/USD Room",
+          "kind": "market",
+          "role": "member",
+          "joined_at": "2026-05-10T14:00:07.073Z"
+        }
+      ],
+      "security": {
+        "last_ip": "148.184.39.70",
+        "last_location": "Cairo, Egypt",
+        "country_code": "EG",
+        "last_device": "Samsung Galaxy S23",
+        "last_os": "Android 14",
+        "last_browser": "Chrome 128",
+        "device_type": "mobile",
+        "two_factor": false,
+        "failed_logins_30d": 0,
+        "password_changed_at": "2026-05-30T15:02:07.073Z",
+        "sessions": [
+          {
+            "ip": "106.136.199.230",
+            "location": "Kampala, Uganda",
+            "device": "Tecno Camon 20",
+            "os": "Android 13",
+            "browser": "Chrome 128",
+            "type": "mobile",
+            "last_active": "2026-08-24T05:43:07.073Z",
+            "current": false
+          },
+          {
+            "ip": "47.249.24.218",
+            "location": "Manila, Philippines",
+            "device": "Desktop",
+            "os": "Windows 10",
+            "browser": "Edge 128",
+            "type": "desktop",
+            "last_active": "2026-08-28T21:51:07.073Z",
+            "current": false
+          },
+          {
+            "ip": "68.88.146.119",
+            "location": "Kampala, Uganda",
+            "device": "Desktop",
+            "os": "Ubuntu 24.04",
+            "browser": "Firefox 129",
+            "type": "desktop",
+            "last_active": "2026-08-30T07:18:07.073Z",
+            "current": false
+          }
+        ]
+      },
+      "flags": {
+        "reports_against": 0,
+        "warnings": 0,
+        "suspended_until": null
+      }
+    },
+    {
+      "id": "u54",
+      "username": "ngozi_obi",
+      "display_name": "Ngozi Obi",
+      "email": "ngozi.obi@example.com",
+      "phone": "+234 823 4452 311",
+      "avatar_url": null,
+      "role": "signal_provider",
+      "status": "active",
+      "is_verified": false,
+      "joined_at": "2024-04-04T19:32:07.073Z",
+      "last_seen_at": "2026-09-01T13:40:07.073Z",
+      "followers": 1642,
+      "following": 45,
+      "signals": 62,
+      "posts": 100,
+      "trading": {
+        "total_trades": 455,
+        "wins": 253,
+        "losses": 202,
+        "win_rate": 55.6,
+        "total_volume": 29719.24,
+        "net_pl": 385.97,
+        "open_positions": 4,
+        "favourite_market": "V100"
+      },
+      "deriv": {
+        "connected": true,
+        "deriv_id": "CR8390100",
+        "account_type": "real",
+        "currency": "USD",
+        "landing_company": "vanuatu",
+        "last_recorded_balance": 9084.77,
+        "balance_recorded_at": "2026-09-01T14:57:07.073Z",
+        "scopes": [
+          "read",
+          "trade",
+          "payments"
+        ]
+      },
+      "rooms": [
+        {
+          "id": "room_1HZ100V",
+          "name": "V100 (1s) Room",
+          "kind": "market",
+          "role": "member",
+          "joined_at": "2026-06-15T04:03:07.073Z"
+        }
+      ],
+      "security": {
+        "last_ip": "81.129.212.94",
+        "last_location": "Johannesburg, South Africa",
+        "country_code": "ZA",
+        "last_device": "Desktop",
+        "last_os": "Windows 10",
+        "last_browser": "Edge 128",
+        "device_type": "desktop",
+        "two_factor": false,
+        "failed_logins_30d": 3,
+        "password_changed_at": "2026-07-27T05:08:07.073Z",
+        "sessions": [
+          {
+            "ip": "106.202.33.101",
+            "location": "London, United Kingdom",
+            "device": "iPhone 14 Pro",
+            "os": "iOS 17.5",
+            "browser": "Safari 17",
+            "type": "mobile",
+            "last_active": "2026-08-26T11:30:07.073Z",
+            "current": false
+          }
+        ]
+      },
+      "flags": {
+        "reports_against": 5,
+        "warnings": 0,
+        "suspended_until": null
+      }
+    },
+    {
+      "id": "u55",
+      "username": "samuel_mohammed",
+      "display_name": "Samuel Mohammed",
+      "email": "samuel.mohammed@example.com",
+      "phone": "+234 899 5472 340",
+      "avatar_url": null,
+      "role": "signal_provider",
+      "status": "inactive",
+      "is_verified": false,
+      "joined_at": "2026-04-10T15:21:07.073Z",
+      "last_seen_at": "2026-08-29T08:04:07.073Z",
+      "followers": 1522,
+      "following": 347,
+      "signals": 180,
+      "posts": 202,
+      "trading": {
+        "total_trades": 348,
+        "wins": 153,
+        "losses": 195,
+        "win_rate": 44,
+        "total_volume": 31088.11,
+        "net_pl": 7123.84,
+        "open_positions": 6,
+        "favourite_market": "EUR/USD"
+      },
+      "deriv": {
+        "connected": true,
+        "deriv_id": "CR5705503",
+        "account_type": "real",
+        "currency": "USD",
+        "landing_company": "svg",
+        "last_recorded_balance": 5023.33,
+        "balance_recorded_at": "2026-08-31T18:57:07.073Z",
+        "scopes": [
+          "read",
+          "trade",
+          "payments"
+        ]
+      },
+      "rooms": [
+        {
+          "id": "room_R_75",
+          "name": "V75 Room",
+          "kind": "market",
+          "role": "member",
+          "joined_at": "2026-07-26T12:47:07.073Z"
+        }
+      ],
+      "security": {
+        "last_ip": "108.86.181.221",
+        "last_location": "Lagos, Nigeria",
+        "country_code": "NG",
+        "last_device": "Desktop",
+        "last_os": "Ubuntu 24.04",
+        "last_browser": "Firefox 129",
+        "device_type": "desktop",
+        "two_factor": false,
+        "failed_logins_30d": 1,
+        "password_changed_at": "2026-07-09T09:07:07.073Z",
+        "sessions": [
+          {
+            "ip": "151.65.74.194",
+            "location": "Johannesburg, South Africa",
+            "device": "Desktop",
+            "os": "Windows 11",
+            "browser": "Chrome 128",
+            "type": "desktop",
+            "last_active": "2026-08-16T08:49:07.073Z",
+            "current": false
+          },
+          {
+            "ip": "156.143.98.53",
+            "location": "Accra, Ghana",
+            "device": "iPhone 14 Pro",
+            "os": "iOS 17.5",
+            "browser": "Safari 17",
+            "type": "mobile",
+            "last_active": "2026-08-30T06:08:07.073Z",
+            "current": false
+          },
+          {
+            "ip": "77.53.149.168",
+            "location": "Mumbai, India",
+            "device": "Desktop",
+            "os": "Windows 11",
+            "browser": "Chrome 128",
+            "type": "desktop",
+            "last_active": "2026-08-17T11:31:07.073Z",
+            "current": false
+          }
+        ]
+      },
+      "flags": {
+        "reports_against": 4,
+        "warnings": 1,
+        "suspended_until": null
+      }
+    },
+    {
+      "id": "u56",
+      "username": "aisha_ibrahim",
+      "display_name": "Aisha Ibrahim",
+      "email": "aisha.ibrahim@example.com",
+      "phone": "+234 834 7408 431",
+      "avatar_url": null,
+      "role": "signal_provider",
+      "status": "active",
+      "is_verified": false,
+      "joined_at": "2026-05-29T08:57:07.073Z",
+      "last_seen_at": "2026-08-28T22:21:07.073Z",
+      "followers": 691,
+      "following": 166,
+      "signals": 77,
+      "posts": 188,
+      "trading": {
+        "total_trades": 148,
+        "wins": 77,
+        "losses": 71,
+        "win_rate": 52,
+        "total_volume": 19775.9,
+        "net_pl": 2948.88,
+        "open_positions": 2,
+        "favourite_market": "V25"
+      },
+      "deriv": {
+        "connected": true,
+        "deriv_id": "CR3793048",
+        "account_type": "virtual",
+        "currency": "USD",
+        "landing_company": "vanuatu",
+        "last_recorded_balance": 5211.58,
+        "balance_recorded_at": "2026-08-31T06:08:07.073Z",
+        "scopes": [
+          "read",
+          "trade",
+          "payments"
+        ]
+      },
+      "rooms": [
+        {
+          "id": "room_1HZ75V",
+          "name": "V75 (1s) Room",
+          "kind": "market",
+          "role": "member",
+          "joined_at": "2025-12-11T13:12:07.073Z"
+        },
+        {
+          "id": "room_BOOM500",
+          "name": "Boom 500 Room",
+          "kind": "market",
+          "role": "member",
+          "joined_at": "2026-03-03T00:40:07.073Z"
+        }
+      ],
+      "security": {
+        "last_ip": "153.80.208.148",
+        "last_location": "Lagos, Nigeria",
+        "country_code": "NG",
+        "last_device": "Samsung Galaxy S23",
+        "last_os": "Android 14",
+        "last_browser": "Chrome 128",
+        "device_type": "mobile",
+        "two_factor": false,
+        "failed_logins_30d": 6,
+        "password_changed_at": "2025-09-26T16:34:07.073Z",
+        "sessions": [
+          {
+            "ip": "125.163.228.104",
+            "location": "Lagos, Nigeria",
+            "device": "Desktop",
+            "os": "Windows 10",
+            "browser": "Edge 128",
+            "type": "desktop",
+            "last_active": "2026-08-17T15:21:07.073Z",
+            "current": false
+          },
+          {
+            "ip": "193.252.39.166",
+            "location": "Mumbai, India",
+            "device": "Samsung Galaxy S23",
+            "os": "Android 14",
+            "browser": "Chrome 128",
+            "type": "mobile",
+            "last_active": "2026-08-17T08:41:07.073Z",
+            "current": false
+          },
+          {
+            "ip": "123.130.112.79",
+            "location": "Nairobi, Kenya",
+            "device": "Desktop",
+            "os": "Windows 10",
+            "browser": "Edge 128",
+            "type": "desktop",
+            "last_active": "2026-08-23T10:20:07.073Z",
+            "current": false
+          }
+        ]
+      },
+      "flags": {
+        "reports_against": 5,
+        "warnings": 0,
+        "suspended_until": null
+      }
+    },
+    {
+      "id": "u57",
+      "username": "peter_suleiman",
+      "display_name": "Peter Suleiman",
+      "email": "peter.suleiman@example.com",
+      "phone": "+234 847 6230 177",
+      "avatar_url": null,
+      "role": "user",
+      "status": "active",
+      "is_verified": false,
+      "joined_at": "2025-04-20T23:09:07.073Z",
+      "last_seen_at": "2026-08-30T05:56:07.073Z",
+      "followers": 2284,
+      "following": 383,
+      "signals": 1,
+      "posts": 69,
+      "trading": {
+        "total_trades": 613,
+        "wins": 364,
+        "losses": 249,
+        "win_rate": 59.4,
+        "total_volume": 66645.67,
+        "net_pl": 7755.33,
+        "open_positions": 5,
+        "favourite_market": "ADA/USD"
+      },
+      "deriv": {
+        "connected": true,
+        "deriv_id": "CR4634074",
+        "account_type": "real",
+        "currency": "USD",
+        "landing_company": "maltainvest",
+        "last_recorded_balance": 3396.1,
+        "balance_recorded_at": "2026-09-01T01:23:07.073Z",
+        "scopes": [
+          "read",
+          "trade",
+          "payments"
+        ]
+      },
+      "rooms": [
+        {
+          "id": "room_BOOM1000",
+          "name": "Boom 1000 Room",
+          "kind": "market",
+          "role": "member",
+          "joined_at": "2026-04-29T21:12:07.073Z"
+        }
+      ],
+      "security": {
+        "last_ip": "77.114.68.80",
+        "last_location": "Jakarta, Indonesia",
+        "country_code": "ID",
+        "last_device": "Tecno Camon 20",
+        "last_os": "Android 13",
+        "last_browser": "Chrome 128",
+        "device_type": "mobile",
+        "two_factor": false,
+        "failed_logins_30d": 0,
+        "password_changed_at": "2025-12-15T10:04:07.073Z",
+        "sessions": [
+          {
+            "ip": "165.26.141.43",
+            "location": "Dar es Salaam, Tanzania",
+            "device": "Samsung Galaxy S23",
+            "os": "Android 14",
+            "browser": "Chrome 128",
+            "type": "mobile",
+            "last_active": "2026-08-29T03:09:07.073Z",
+            "current": false
+          },
+          {
+            "ip": "43.205.85.75",
+            "location": "Accra, Ghana",
+            "device": "MacBook Pro",
+            "os": "macOS 14",
+            "browser": "Chrome 127",
+            "type": "desktop",
+            "last_active": "2026-08-14T23:59:07.073Z",
+            "current": false
+          }
+        ]
+      },
+      "flags": {
+        "reports_against": 5,
+        "warnings": 1,
+        "suspended_until": null
+      }
+    },
+    {
+      "id": "u58",
+      "username": "fatima_ekene",
+      "display_name": "Fatima Ekene",
+      "email": "fatima.ekene@example.com",
+      "phone": "+234 849 9098 705",
+      "avatar_url": null,
+      "role": "user",
+      "status": "active",
+      "is_verified": false,
+      "joined_at": "2026-07-15T02:48:07.073Z",
+      "last_seen_at": "2026-08-26T17:35:07.073Z",
+      "followers": 1285,
+      "following": 311,
+      "signals": 23,
+      "posts": 262,
+      "trading": {
+        "total_trades": 600,
+        "wins": 256,
+        "losses": 344,
+        "win_rate": 42.7,
+        "total_volume": 1998.12,
+        "net_pl": 3840.97,
+        "open_positions": 3,
+        "favourite_market": "USD/JPY"
+      },
+      "deriv": {
+        "connected": true,
+        "deriv_id": "CR3500927",
+        "account_type": "real",
+        "currency": "USD",
+        "landing_company": "maltainvest",
+        "last_recorded_balance": 11226.46,
+        "balance_recorded_at": "2026-08-30T16:23:07.073Z",
+        "scopes": [
+          "read",
+          "trade",
+          "payments"
+        ]
+      },
+      "rooms": [
+        {
+          "id": "room_RB100",
+          "name": "RB 100 Room",
+          "kind": "market",
+          "role": "member",
+          "joined_at": "2026-06-27T04:33:07.073Z"
+        },
+        {
+          "id": "room_frxGBPUSD",
+          "name": "GBP/USD Room",
+          "kind": "market",
+          "role": "member",
+          "joined_at": "2026-03-26T18:46:07.073Z"
+        },
+        {
+          "id": "room_crySOLUSD",
+          "name": "SOL/USD Room",
+          "kind": "market",
+          "role": "member",
+          "joined_at": "2026-08-09T21:59:07.073Z"
+        }
+      ],
+      "security": {
+        "last_ip": "112.142.170.232",
+        "last_location": "Lagos, Nigeria",
+        "country_code": "NG",
+        "last_device": "MacBook Pro",
+        "last_os": "macOS 14",
+        "last_browser": "Chrome 127",
+        "device_type": "desktop",
+        "two_factor": false,
+        "failed_logins_30d": 1,
+        "password_changed_at": "2026-01-31T08:32:07.073Z",
+        "sessions": [
+          {
+            "ip": "128.207.89.85",
+            "location": "Nairobi, Kenya",
+            "device": "Samsung Galaxy S23",
+            "os": "Android 14",
+            "browser": "Chrome 128",
+            "type": "mobile",
+            "last_active": "2026-08-13T22:22:07.073Z",
+            "current": false
+          }
+        ]
+      },
+      "flags": {
+        "reports_against": 5,
+        "warnings": 0,
+        "suspended_until": null
+      }
+    },
+    {
+      "id": "u59",
+      "username": "david_balogun",
+      "display_name": "David Balogun",
+      "email": "david.balogun@example.com",
+      "phone": "+234 884 9920 803",
+      "avatar_url": null,
+      "role": "user",
+      "status": "active",
+      "is_verified": false,
+      "joined_at": "2025-07-19T03:06:07.073Z",
+      "last_seen_at": "2026-08-25T21:20:07.073Z",
+      "followers": 2050,
+      "following": 82,
+      "signals": 28,
+      "posts": 295,
+      "trading": {
+        "total_trades": 397,
+        "wins": 197,
+        "losses": 200,
+        "win_rate": 49.6,
+        "total_volume": 34574.68,
+        "net_pl": 274.05,
+        "open_positions": 0,
+        "favourite_market": "JP 225"
+      },
+      "deriv": {
+        "connected": true,
+        "deriv_id": "CR7527232",
+        "account_type": "virtual",
+        "currency": "USD",
+        "landing_company": "vanuatu",
+        "last_recorded_balance": 9666.67,
+        "balance_recorded_at": "2026-09-01T11:52:07.073Z",
+        "scopes": [
+          "read",
+          "trade",
+          "payments"
+        ]
+      },
+      "rooms": [
+        {
+          "id": "room_stpRNG",
+          "name": "Step Room",
+          "kind": "market",
+          "role": "member",
+          "joined_at": "2026-06-03T20:56:07.073Z"
+        }
+      ],
+      "security": {
+        "last_ip": "164.72.218.118",
+        "last_location": "Manila, Philippines",
+        "country_code": "PH",
+        "last_device": "Desktop",
+        "last_os": "Windows 10",
+        "last_browser": "Edge 128",
+        "device_type": "desktop",
+        "two_factor": false,
+        "failed_logins_30d": 5,
+        "password_changed_at": "2025-09-23T13:51:07.073Z",
+        "sessions": [
+          {
+            "ip": "73.30.160.200",
+            "location": "Lagos, Nigeria",
+            "device": "Desktop",
+            "os": "Windows 10",
+            "browser": "Edge 128",
+            "type": "desktop",
+            "last_active": "2026-08-24T03:54:07.073Z",
+            "current": false
+          },
+          {
+            "ip": "117.250.53.27",
+            "location": "Kampala, Uganda",
+            "device": "Desktop",
+            "os": "Ubuntu 24.04",
+            "browser": "Firefox 129",
+            "type": "desktop",
+            "last_active": "2026-08-28T05:21:07.073Z",
+            "current": false
+          }
+        ]
+      },
+      "flags": {
+        "reports_against": 2,
+        "warnings": 0,
+        "suspended_until": null
+      }
+    },
+    {
+      "id": "u60",
+      "username": "joy_chukwu",
+      "display_name": "Joy Chukwu",
+      "email": "joy.chukwu@example.com",
+      "phone": "+234 852 5616 858",
+      "avatar_url": null,
+      "role": "user",
+      "status": "active",
+      "is_verified": false,
+      "joined_at": "2024-05-11T09:42:07.073Z",
+      "last_seen_at": "2026-08-25T17:03:07.073Z",
+      "followers": 319,
+      "following": 61,
+      "signals": 2,
+      "posts": 170,
+      "trading": {
+        "total_trades": 611,
+        "wins": 417,
+        "losses": 194,
+        "win_rate": 68.2,
+        "total_volume": 26048.07,
+        "net_pl": 3309.9,
+        "open_positions": 3,
+        "favourite_market": "GBP/USD"
+      },
+      "deriv": {
+        "connected": true,
+        "deriv_id": "CR5388010",
+        "account_type": "virtual",
+        "currency": "USD",
+        "landing_company": "maltainvest",
+        "last_recorded_balance": 2132.79,
+        "balance_recorded_at": "2026-09-01T06:33:07.073Z",
+        "scopes": [
+          "read",
+          "trade",
+          "payments"
+        ]
+      },
+      "rooms": [
+        {
+          "id": "room_R_10",
+          "name": "V10 Room",
+          "kind": "market",
+          "role": "member",
+          "joined_at": "2026-06-28T22:20:07.073Z"
+        },
+        {
+          "id": "room_JD25",
+          "name": "Jump 25 Room",
+          "kind": "market",
+          "role": "member",
+          "joined_at": "2026-03-23T17:45:07.073Z"
+        }
+      ],
+      "security": {
+        "last_ip": "76.233.81.31",
+        "last_location": "Accra, Ghana",
+        "country_code": "GH",
+        "last_device": "Desktop",
+        "last_os": "Windows 10",
+        "last_browser": "Edge 128",
+        "device_type": "desktop",
+        "two_factor": true,
+        "failed_logins_30d": 0,
+        "password_changed_at": "2025-12-03T10:43:07.073Z",
+        "sessions": [
+          {
+            "ip": "116.253.100.140",
+            "location": "Abuja, Nigeria",
+            "device": "Samsung Galaxy S23",
+            "os": "Android 14",
+            "browser": "Chrome 128",
+            "type": "mobile",
+            "last_active": "2026-08-26T09:22:07.073Z",
+            "current": false
+          }
+        ]
+      },
+      "flags": {
+        "reports_against": 5,
+        "warnings": 1,
+        "suspended_until": null
+      }
+    },
+    {
+      "id": "u61",
+      "username": "john_david",
+      "display_name": "John David",
+      "email": "john.david@example.com",
+      "phone": "+234 857 1643 747",
+      "avatar_url": null,
+      "role": "signal_provider",
+      "status": "active",
+      "is_verified": true,
+      "joined_at": "2026-02-21T18:10:07.073Z",
+      "last_seen_at": "2026-08-19T12:47:07.073Z",
+      "followers": 402,
+      "following": 234,
+      "signals": 206,
+      "posts": 83,
+      "trading": {
+        "total_trades": 274,
+        "wins": 137,
+        "losses": 137,
+        "win_rate": 50,
+        "total_volume": 63584.8,
+        "net_pl": 4004.49,
+        "open_positions": 0,
+        "favourite_market": "SOL/USD"
+      },
+      "deriv": {
+        "connected": true,
+        "deriv_id": "CR4275106",
+        "account_type": "real",
+        "currency": "USD",
+        "landing_company": "maltainvest",
+        "last_recorded_balance": 2060.94,
+        "balance_recorded_at": "2026-09-01T18:53:07.073Z",
+        "scopes": [
+          "read",
+          "trade",
+          "payments"
+        ]
+      },
+      "rooms": [
+        {
+          "id": "room_R_25",
+          "name": "V25 Room",
+          "kind": "market",
+          "role": "member",
+          "joined_at": "2025-12-28T03:17:07.073Z"
+        },
+        {
+          "id": "room_JD100",
+          "name": "Jump 100 Room",
+          "kind": "market",
+          "role": "member",
+          "joined_at": "2026-01-16T18:25:07.073Z"
+        },
+        {
+          "id": "room_frxGBPJPY",
+          "name": "GBP/JPY Room",
+          "kind": "market",
+          "role": "member",
+          "joined_at": "2025-11-21T04:23:07.073Z"
+        },
+        {
+          "id": "room_frxXPTUSD",
+          "name": "XPT/USD Room",
+          "kind": "market",
+          "role": "member",
+          "joined_at": "2026-03-13T12:21:07.073Z"
+        }
+      ],
+      "security": {
+        "last_ip": "68.174.43.40",
+        "last_location": "Kampala, Uganda",
+        "country_code": "UG",
+        "last_device": "iPhone 14 Pro",
+        "last_os": "iOS 17.5",
+        "last_browser": "Safari 17",
+        "device_type": "mobile",
+        "two_factor": false,
+        "failed_logins_30d": 2,
+        "password_changed_at": "2026-03-15T23:42:07.073Z",
+        "sessions": [
+          {
+            "ip": "131.60.111.91",
+            "location": "London, United Kingdom",
+            "device": "iPhone 14 Pro",
+            "os": "iOS 17.5",
+            "browser": "Safari 17",
+            "type": "mobile",
+            "last_active": "2026-08-31T21:48:07.073Z",
+            "current": false
+          },
+          {
+            "ip": "50.76.178.229",
+            "location": "Abuja, Nigeria",
+            "device": "Samsung Galaxy S23",
+            "os": "Android 14",
+            "browser": "Chrome 128",
+            "type": "mobile",
+            "last_active": "2026-08-17T00:33:07.073Z",
+            "current": false
+          },
+          {
+            "ip": "97.177.242.178",
+            "location": "London, United Kingdom",
+            "device": "MacBook Pro",
+            "os": "macOS 14",
+            "browser": "Chrome 127",
+            "type": "desktop",
+            "last_active": "2026-08-16T02:54:07.073Z",
+            "current": false
+          },
+          {
+            "ip": "41.127.1.219",
+            "location": "Accra, Ghana",
+            "device": "MacBook Pro",
+            "os": "macOS 14",
+            "browser": "Chrome 127",
+            "type": "desktop",
+            "last_active": "2026-08-23T04:24:07.073Z",
+            "current": false
+          }
+        ]
+      },
+      "flags": {
+        "reports_against": 5,
+        "warnings": 2,
+        "suspended_until": null
+      }
+    },
+    {
+      "id": "u62",
+      "username": "grace_eze",
+      "display_name": "Grace Eze",
+      "email": "grace.eze@example.com",
+      "phone": "+234 849 8066 367",
+      "avatar_url": null,
+      "role": "signal_provider",
+      "status": "banned",
+      "is_verified": true,
+      "joined_at": "2025-08-23T00:42:07.073Z",
+      "last_seen_at": "2026-08-24T14:54:07.073Z",
+      "followers": 997,
+      "following": 211,
+      "signals": 175,
+      "posts": 18,
+      "trading": {
+        "total_trades": 203,
+        "wins": 118,
+        "losses": 85,
+        "win_rate": 58.1,
+        "total_volume": 68756.92,
+        "net_pl": -2415.53,
+        "open_positions": 2,
+        "favourite_market": "Crash 1000"
+      },
+      "deriv": {
+        "connected": true,
+        "deriv_id": "CR1575358",
+        "account_type": "virtual",
+        "currency": "USD",
+        "landing_company": "vanuatu",
+        "last_recorded_balance": 2569.99,
+        "balance_recorded_at": "2026-08-30T23:07:07.073Z",
+        "scopes": [
+          "read",
+          "trade",
+          "payments"
+        ]
+      },
+      "rooms": [
+        {
+          "id": "room_R_50",
+          "name": "V50 Room",
+          "kind": "market",
+          "role": "member",
+          "joined_at": "2026-02-04T06:58:07.073Z"
+        }
+      ],
+      "security": {
+        "last_ip": "135.76.255.226",
+        "last_location": "Cairo, Egypt",
+        "country_code": "EG",
+        "last_device": "iPhone 14 Pro",
+        "last_os": "iOS 17.5",
+        "last_browser": "Safari 17",
+        "device_type": "mobile",
+        "two_factor": false,
+        "failed_logins_30d": 5,
+        "password_changed_at": "2025-10-23T01:02:07.073Z",
+        "sessions": [
+          {
+            "ip": "43.91.194.240",
+            "location": "London, United Kingdom",
+            "device": "Desktop",
+            "os": "Windows 10",
+            "browser": "Edge 128",
+            "type": "desktop",
+            "last_active": "2026-08-27T09:50:07.073Z",
+            "current": false
+          }
+        ]
+      },
+      "flags": {
+        "reports_against": 1,
+        "warnings": 1,
+        "suspended_until": "2026-10-02T05:29:07.073Z"
+      }
+    },
+    {
+      "id": "u63",
+      "username": "femi_adamu",
+      "display_name": "Femi Adamu",
+      "email": "femi.adamu@example.com",
+      "phone": "+234 869 7937 182",
+      "avatar_url": null,
+      "role": "moderator",
+      "status": "banned",
+      "is_verified": false,
+      "joined_at": "2025-06-25T15:27:07.073Z",
+      "last_seen_at": "2026-08-27T04:57:07.073Z",
+      "followers": 791,
+      "following": 169,
+      "signals": 30,
+      "posts": 45,
+      "trading": {
+        "total_trades": 150,
+        "wins": 76,
+        "losses": 74,
+        "win_rate": 50.7,
+        "total_volume": 48595.29,
+        "net_pl": -584.56,
+        "open_positions": 4,
+        "favourite_market": "US 30"
+      },
+      "deriv": {
+        "connected": true,
+        "deriv_id": "CR2983152",
+        "account_type": "real",
+        "currency": "USD",
+        "landing_company": "svg",
+        "last_recorded_balance": 10274.39,
+        "balance_recorded_at": "2026-08-30T07:52:07.073Z",
+        "scopes": [
+          "read",
+          "trade",
+          "payments"
+        ]
+      },
+      "rooms": [
+        {
+          "id": "room_1HZ50V",
+          "name": "V50 (1s) Room",
+          "kind": "market",
+          "role": "member",
+          "joined_at": "2026-07-02T22:00:07.073Z"
+        },
+        {
+          "id": "room_CRASH300",
+          "name": "Crash 300 Room",
+          "kind": "market",
+          "role": "member",
+          "joined_at": "2026-01-02T15:06:07.073Z"
+        },
+        {
+          "id": "room_frxEURGBP",
+          "name": "EUR/GBP Room",
+          "kind": "market",
+          "role": "member",
+          "joined_at": "2026-05-02T16:00:07.073Z"
+        },
+        {
+          "id": "room_frxXAUUSD",
+          "name": "XAU/USD Room",
+          "kind": "market",
+          "role": "member",
+          "joined_at": "2025-12-27T05:57:07.074Z"
+        },
+        {
+          "id": "room_OTC_AS51",
+          "name": "AUS 200 Room",
+          "kind": "market",
+          "role": "member",
+          "joined_at": "2026-07-02T00:51:07.074Z"
+        }
+      ],
+      "security": {
+        "last_ip": "108.84.44.231",
+        "last_location": "Mumbai, India",
+        "country_code": "IN",
+        "last_device": "MacBook Pro",
+        "last_os": "macOS 14",
+        "last_browser": "Chrome 127",
+        "device_type": "desktop",
+        "two_factor": false,
+        "failed_logins_30d": 1,
+        "password_changed_at": "2025-09-27T01:36:07.074Z",
+        "sessions": [
+          {
+            "ip": "117.201.174.89",
+            "location": "Manchester, United Kingdom",
+            "device": "MacBook Pro",
+            "os": "macOS 14",
+            "browser": "Chrome 127",
+            "type": "desktop",
+            "last_active": "2026-08-24T20:21:07.074Z",
+            "current": false
+          }
+        ]
+      },
+      "flags": {
+        "reports_against": 5,
+        "warnings": 1,
+        "suspended_until": "2026-10-02T05:29:07.074Z"
+      }
+    },
+    {
+      "id": "u64",
+      "username": "amara_okafor",
+      "display_name": "Amara Okafor",
+      "email": "amara.okafor@example.com",
+      "phone": "+234 868 2999 503",
+      "avatar_url": null,
+      "role": "user",
+      "status": "active",
+      "is_verified": true,
+      "joined_at": "2025-02-13T19:09:07.074Z",
+      "last_seen_at": "2026-08-27T04:27:07.074Z",
+      "followers": 1923,
+      "following": 183,
+      "signals": 0,
+      "posts": 46,
+      "trading": {
+        "total_trades": 487,
+        "wins": 299,
+        "losses": 188,
+        "win_rate": 61.4,
+        "total_volume": 65000.64,
+        "net_pl": -2412.7,
+        "open_positions": 5,
+        "favourite_market": "US 500"
+      },
+      "deriv": {
+        "connected": true,
+        "deriv_id": "CR7595914",
+        "account_type": "virtual",
+        "currency": "USD",
+        "landing_company": "vanuatu",
+        "last_recorded_balance": 736.2,
+        "balance_recorded_at": "2026-09-01T12:41:07.075Z",
+        "scopes": [
+          "read",
+          "trade",
+          "payments"
+        ]
+      },
+      "rooms": [
+        {
+          "id": "room_R_100",
+          "name": "V100 Room",
+          "kind": "market",
+          "role": "member",
+          "joined_at": "2026-04-23T11:36:07.075Z"
+        },
+        {
+          "id": "room_CRASH500",
+          "name": "Crash 500 Room",
+          "kind": "market",
+          "role": "member",
+          "joined_at": "2026-05-19T01:18:07.075Z"
+        },
+        {
+          "id": "room_frxNZDUSD",
+          "name": "NZD/USD Room",
+          "kind": "market",
+          "role": "member",
+          "joined_at": "2026-02-16T10:32:07.075Z"
+        }
+      ],
+      "security": {
+        "last_ip": "142.183.93.92",
+        "last_location": "Kampala, Uganda",
+        "country_code": "UG",
+        "last_device": "Desktop",
+        "last_os": "Ubuntu 24.04",
+        "last_browser": "Firefox 129",
+        "device_type": "desktop",
+        "two_factor": false,
+        "failed_logins_30d": 2,
+        "password_changed_at": "2026-08-20T22:25:07.075Z",
+        "sessions": [
+          {
+            "ip": "162.100.204.98",
+            "location": "Cairo, Egypt",
+            "device": "MacBook Pro",
+            "os": "macOS 14",
+            "browser": "Chrome 127",
+            "type": "desktop",
+            "last_active": "2026-08-19T07:54:07.075Z",
+            "current": false
+          },
+          {
+            "ip": "134.36.225.97",
+            "location": "Nairobi, Kenya",
+            "device": "Desktop",
+            "os": "Windows 11",
+            "browser": "Chrome 128",
+            "type": "desktop",
+            "last_active": "2026-08-31T05:21:07.075Z",
+            "current": false
+          },
+          {
+            "ip": "130.167.230.183",
+            "location": "Cairo, Egypt",
+            "device": "Desktop",
+            "os": "Windows 11",
+            "browser": "Chrome 128",
+            "type": "desktop",
+            "last_active": "2026-08-24T01:38:07.075Z",
+            "current": false
+          },
+          {
+            "ip": "187.107.134.108",
+            "location": "Dar es Salaam, Tanzania",
+            "device": "MacBook Pro",
+            "os": "macOS 14",
+            "browser": "Chrome 127",
+            "type": "desktop",
+            "last_active": "2026-09-02T00:46:07.075Z",
+            "current": false
+          }
+        ]
+      },
+      "flags": {
+        "reports_against": 3,
+        "warnings": 1,
+        "suspended_until": null
+      }
+    }
+  ],
+  "meta": {
+    "page": 1,
+    "per_page": 25,
+    "total": 64
+  }
+}

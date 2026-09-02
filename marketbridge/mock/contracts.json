@@ -1,0 +1,470 @@
+{
+  "data": [
+    {
+      "id": "ctr_o0",
+      "deriv_contract_id": "C1256780",
+      "market": {
+        "symbol": "WTIUSD",
+        "name": "Crude Oil / USD",
+        "short_name": "WTI/USD",
+        "pair": "WTI/USD",
+        "category": "commodities",
+        "decimal_places": 2,
+        "contract_kinds": [
+          "multiplier",
+          "cfd_mt5"
+        ]
+      },
+      "contract_family": "multipliers",
+      "contract_type": "MULTUP",
+      "label": "WTI/USD Multiplier",
+      "status": "open",
+      "buy_price": 5,
+      "stake": 5,
+      "payout": 5,
+      "entry_spot": 78.4653581105293,
+      "current_spot": 78.42,
+      "profit": -1.8,
+      "params": {
+        "duration": 6,
+        "duration_unit": "t"
+      },
+      "source_signal_id": "sig_013",
+      "purchase_time": "2026-09-02T04:11:20.360Z",
+      "expiry_time": "2026-09-02T05:41:20.360Z"
+    },
+    {
+      "id": "ctr_o1",
+      "deriv_contract_id": "C1256781",
+      "market": {
+        "symbol": "frxEURJPY",
+        "name": "EUR/JPY",
+        "short_name": "EUR/JPY",
+        "pair": "EUR/JPY",
+        "category": "forex",
+        "decimal_places": 3,
+        "contract_kinds": [
+          "binary",
+          "cfd_mt5"
+        ]
+      },
+      "contract_family": "rise_fall",
+      "contract_type": "CALL",
+      "label": "EUR/JPY Rise",
+      "status": "open",
+      "buy_price": 50,
+      "stake": 50,
+      "payout": 76.5,
+      "entry_spot": 164.33016267679434,
+      "current_spot": 164.372,
+      "profit": 26.5,
+      "params": {
+        "duration": 6,
+        "duration_unit": "t"
+      },
+      "source_signal_id": null,
+      "purchase_time": "2026-09-02T01:59:20.360Z",
+      "expiry_time": "2026-09-02T04:51:20.360Z"
+    },
+    {
+      "id": "ctr_o2",
+      "deriv_contract_id": "C1256782",
+      "market": {
+        "symbol": "frxUSDJPY",
+        "name": "USD/JPY",
+        "short_name": "USD/JPY",
+        "pair": "USD/JPY",
+        "category": "forex",
+        "decimal_places": 3,
+        "contract_kinds": [
+          "binary",
+          "multiplier",
+          "cfd_mt5"
+        ]
+      },
+      "contract_family": "rise_fall",
+      "contract_type": "CALL",
+      "label": "USD/JPY Rise",
+      "status": "open",
+      "buy_price": 5,
+      "stake": 5,
+      "payout": 5.07,
+      "entry_spot": 151.3857840111135,
+      "current_spot": 151.284,
+      "profit": 0.07,
+      "params": {
+        "duration": 5,
+        "duration_unit": "t"
+      },
+      "source_signal_id": "sig_008",
+      "purchase_time": "2026-09-02T02:14:20.360Z",
+      "expiry_time": "2026-09-02T05:08:20.360Z"
+    },
+    {
+      "id": "ctr_o3",
+      "deriv_contract_id": "C1256783",
+      "market": {
+        "symbol": "cryLTCUSD",
+        "name": "Litecoin / USD",
+        "short_name": "LTC/USD",
+        "pair": "LTC/USD",
+        "category": "crypto",
+        "decimal_places": 2,
+        "contract_kinds": [
+          "multiplier",
+          "cfd_mt5"
+        ]
+      },
+      "contract_family": "multipliers",
+      "contract_type": "MULTUP",
+      "label": "LTC/USD Multiplier",
+      "status": "open",
+      "buy_price": 25,
+      "stake": 25,
+      "payout": 25,
+      "entry_spot": 84.65761287622767,
+      "current_spot": 84.62,
+      "profit": -8.19,
+      "params": {
+        "duration": 4,
+        "duration_unit": "t"
+      },
+      "source_signal_id": null,
+      "purchase_time": "2026-09-02T02:22:20.360Z",
+      "expiry_time": "2026-09-02T05:30:20.360Z"
+    },
+    {
+      "id": "ctr_o4",
+      "deriv_contract_id": "C1256784",
+      "market": {
+        "symbol": "frxXAGUSD",
+        "name": "Silver / USD",
+        "short_name": "XAG/USD",
+        "pair": "XAG/USD",
+        "category": "commodities",
+        "decimal_places": 3,
+        "contract_kinds": [
+          "binary",
+          "multiplier",
+          "cfd_mt5"
+        ]
+      },
+      "contract_family": "digits",
+      "contract_type": "DIGITMATCH",
+      "label": "XAG/USD Digit Match",
+      "status": "open",
+      "buy_price": 20,
+      "stake": 20,
+      "payout": 24.63,
+      "entry_spot": 27.864936839443786,
+      "current_spot": 27.842,
+      "profit": 4.63,
+      "params": {
+        "digit": 6
+      },
+      "source_signal_id": null,
+      "purchase_time": "2026-09-02T03:52:20.360Z",
+      "expiry_time": "2026-09-02T05:46:20.360Z"
+    },
+    {
+      "id": "ctr_o5",
+      "deriv_contract_id": "C1256785",
+      "market": {
+        "symbol": "R_50",
+        "name": "Volatility 50 Index",
+        "short_name": "V50",
+        "pair": null,
+        "category": "synthetic_indices",
+        "decimal_places": 3,
+        "contract_kinds": [
+          "binary",
+          "multiplier"
+        ]
+      },
+      "contract_family": "multipliers",
+      "contract_type": "MULTUP",
+      "label": "V50 Multiplier",
+      "status": "open",
+      "buy_price": 100,
+      "stake": 100,
+      "payout": 100,
+      "entry_spot": 238.70731680479545,
+      "current_spot": 238.76,
+      "profit": -59.2,
+      "params": {
+        "duration": 3,
+        "duration_unit": "t"
+      },
+      "source_signal_id": null,
+      "purchase_time": "2026-09-02T03:29:20.360Z",
+      "expiry_time": "2026-09-02T05:00:20.360Z"
+    },
+    {
+      "id": "ctr_o6",
+      "deriv_contract_id": "C1256786",
+      "market": {
+        "symbol": "frxUSDJPY",
+        "name": "USD/JPY",
+        "short_name": "USD/JPY",
+        "pair": "USD/JPY",
+        "category": "forex",
+        "decimal_places": 3,
+        "contract_kinds": [
+          "binary",
+          "multiplier",
+          "cfd_mt5"
+        ]
+      },
+      "contract_family": "rise_fall",
+      "contract_type": "CALL",
+      "label": "USD/JPY Rise",
+      "status": "open",
+      "buy_price": 50,
+      "stake": 50,
+      "payout": 101.17,
+      "entry_spot": 151.26934249405284,
+      "current_spot": 151.284,
+      "profit": 51.17,
+      "params": {
+        "duration": 6,
+        "duration_unit": "t"
+      },
+      "source_signal_id": "sig_014",
+      "purchase_time": "2026-09-02T02:39:20.360Z",
+      "expiry_time": "2026-09-02T05:04:20.360Z"
+    },
+    {
+      "id": "ctr_o7",
+      "deriv_contract_id": "C1256787",
+      "market": {
+        "symbol": "frxXAUUSD",
+        "name": "Gold / USD",
+        "short_name": "XAU/USD",
+        "pair": "XAU/USD",
+        "category": "commodities",
+        "decimal_places": 2,
+        "contract_kinds": [
+          "binary",
+          "multiplier",
+          "cfd_mt5"
+        ]
+      },
+      "contract_family": "accumulator",
+      "contract_type": "ACCU",
+      "label": "XAU/USD Accumulator",
+      "status": "open",
+      "buy_price": 10,
+      "stake": 10,
+      "payout": 15.55,
+      "entry_spot": 2344.057288174937,
+      "current_spot": 2342.18,
+      "profit": 5.55,
+      "params": {
+        "growth_rate": 2
+      },
+      "source_signal_id": null,
+      "purchase_time": "2026-09-02T04:29:20.360Z",
+      "expiry_time": "2026-09-02T05:36:20.360Z"
+    },
+    {
+      "id": "ctr_o8",
+      "deriv_contract_id": "C1256788",
+      "market": {
+        "symbol": "CRASH300",
+        "name": "Crash 300 Index",
+        "short_name": "Crash 300",
+        "pair": null,
+        "category": "derived",
+        "decimal_places": 2,
+        "contract_kinds": [
+          "multiplier"
+        ]
+      },
+      "contract_family": "multipliers",
+      "contract_type": "MULTUP",
+      "label": "Crash 300 Multiplier",
+      "status": "open",
+      "buy_price": 5,
+      "stake": 5,
+      "payout": 5,
+      "entry_spot": 6102.454399417481,
+      "current_spot": 6104.88,
+      "profit": -2.7,
+      "params": {
+        "duration": 9,
+        "duration_unit": "t"
+      },
+      "source_signal_id": null,
+      "purchase_time": "2026-09-02T01:39:20.360Z",
+      "expiry_time": "2026-09-02T05:07:20.360Z"
+    },
+    {
+      "id": "ctr_o9",
+      "deriv_contract_id": "C1256789",
+      "market": {
+        "symbol": "R_100",
+        "name": "Volatility 100 Index",
+        "short_name": "V100",
+        "pair": null,
+        "category": "synthetic_indices",
+        "decimal_places": 2,
+        "contract_kinds": [
+          "binary",
+          "multiplier"
+        ]
+      },
+      "contract_family": "multipliers",
+      "contract_type": "MULTUP",
+      "label": "V100 Multiplier",
+      "status": "open",
+      "buy_price": 20,
+      "stake": 20,
+      "payout": 32.03,
+      "entry_spot": 1245.4239171622994,
+      "current_spot": 1245.1,
+      "profit": 12.03,
+      "params": {
+        "duration": 4,
+        "duration_unit": "t"
+      },
+      "source_signal_id": null,
+      "purchase_time": "2026-09-02T00:51:20.360Z",
+      "expiry_time": "2026-09-02T05:41:20.360Z"
+    },
+    {
+      "id": "ctr_o10",
+      "deriv_contract_id": "C1256790",
+      "market": {
+        "symbol": "CRASH300",
+        "name": "Crash 300 Index",
+        "short_name": "Crash 300",
+        "pair": null,
+        "category": "derived",
+        "decimal_places": 2,
+        "contract_kinds": [
+          "multiplier"
+        ]
+      },
+      "contract_family": "multipliers",
+      "contract_type": "MULTUP",
+      "label": "Crash 300 Multiplier",
+      "status": "open",
+      "buy_price": 50,
+      "stake": 50,
+      "payout": 50,
+      "entry_spot": 6105.879456454193,
+      "current_spot": 6104.88,
+      "profit": -26.06,
+      "params": {
+        "duration": 6,
+        "duration_unit": "t"
+      },
+      "source_signal_id": null,
+      "purchase_time": "2026-09-02T04:20:20.360Z",
+      "expiry_time": "2026-09-02T05:15:20.360Z"
+    },
+    {
+      "id": "ctr_o11",
+      "deriv_contract_id": "C1256791",
+      "market": {
+        "symbol": "cryBTCUSD",
+        "name": "Bitcoin / USD",
+        "short_name": "BTC/USD",
+        "pair": "BTC/USD",
+        "category": "crypto",
+        "decimal_places": 2,
+        "contract_kinds": [
+          "multiplier",
+          "cfd_mt5"
+        ]
+      },
+      "contract_family": "multipliers",
+      "contract_type": "MULTUP",
+      "label": "BTC/USD Multiplier",
+      "status": "open",
+      "buy_price": 10,
+      "stake": 10,
+      "payout": 21.2,
+      "entry_spot": 68400.37007283831,
+      "current_spot": 68420.5,
+      "profit": 11.2,
+      "params": {
+        "duration": 9,
+        "duration_unit": "t"
+      },
+      "source_signal_id": null,
+      "purchase_time": "2026-09-02T03:13:20.360Z",
+      "expiry_time": "2026-09-02T05:47:20.360Z"
+    },
+    {
+      "id": "ctr_o12",
+      "deriv_contract_id": "C1256792",
+      "market": {
+        "symbol": "OTC_NDX",
+        "name": "US Tech 100",
+        "short_name": "US 100",
+        "pair": null,
+        "category": "stock_indices",
+        "decimal_places": 2,
+        "contract_kinds": [
+          "multiplier",
+          "cfd_mt5"
+        ]
+      },
+      "contract_family": "multipliers",
+      "contract_type": "MULTUP",
+      "label": "US 100 Multiplier",
+      "status": "open",
+      "buy_price": 50,
+      "stake": 50,
+      "payout": 100.34,
+      "entry_spot": 18406.9947158177,
+      "current_spot": 18420.6,
+      "profit": 50.34,
+      "params": {
+        "duration": 8,
+        "duration_unit": "t"
+      },
+      "source_signal_id": null,
+      "purchase_time": "2026-09-02T01:56:20.360Z",
+      "expiry_time": "2026-09-02T05:26:20.360Z"
+    },
+    {
+      "id": "ctr_o13",
+      "deriv_contract_id": "C1256793",
+      "market": {
+        "symbol": "JD100",
+        "name": "Jump 100 Index",
+        "short_name": "Jump 100",
+        "pair": null,
+        "category": "derived",
+        "decimal_places": 2,
+        "contract_kinds": [
+          "binary",
+          "multiplier"
+        ]
+      },
+      "contract_family": "accumulator",
+      "contract_type": "ACCU",
+      "label": "Jump 100 Accumulator",
+      "status": "open",
+      "buy_price": 25,
+      "stake": 25,
+      "payout": 25,
+      "entry_spot": 6207.32198385104,
+      "current_spot": 6210.9,
+      "profit": -13.34,
+      "params": {
+        "growth_rate": 2
+      },
+      "source_signal_id": "sig_005",
+      "purchase_time": "2026-09-02T01:49:20.360Z",
+      "expiry_time": "2026-09-02T05:24:20.360Z"
+    }
+  ],
+  "meta": {
+    "page": 1,
+    "per_page": 10,
+    "total": 14
+  }
+}

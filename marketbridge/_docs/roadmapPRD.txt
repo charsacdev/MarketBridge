@@ -1,0 +1,393 @@
+MARKETBRIDGE — EXECUTIVE PROJECT SUMMARY
+
+1. Project Overview
+MarketBridge is a mobile-first web trading platform designed primarily for Deriv traders, especially users of Deriv Synthetic Indices such as Volatility Indices, Boom & Crash, Step Index and other supported markets.
+The objective is to create a Deriv-friendly alternative interface where users can connect their Deriv accounts and perform supported trading activities through the Deriv API while gaining access to functionality that goes beyond a traditional trading terminal.
+MarketBridge combines:
+Trading + Markets + Signals + Analysis + Community + Trader Profiles + Results + Education/Resources
+into one ecosystem.
+MarketBridge does not intend to hold customer trading funds. Where trading functionality is available through Deriv's APIs, transactions should ultimately be executed against the user's connected Deriv account.
+The major differentiator is the social/community layer built around individual markets and traders.
+For example, someone who trades Volatility 75 should be able to discover other V75 traders, discuss V75, follow experienced V75 traders, see analysis and signals relating to V75, and—where the signal corresponds to a contract supported by the MarketBridge/Deriv integration—execute the trade from MarketBridge.
+
+2. Core Product Concept
+Think of MarketBridge as three products combined:
+A. Deriv Trading Interface
+Users connect/authenticate their Deriv account.
+MarketBridge then provides its own simplified interface for supported Deriv trading functionality.
+Examples include:
+Accumulators
+Rise/Fall
+Digits
+Multipliers
+other contract types that the applicable Deriv APIs support
+The developer should not assume that every MT5 instrument/order type can be recreated through the same API workflow.
+The trading engine must therefore be API-capability driven.
+If Deriv's API supports execution of a particular contract from MarketBridge:
+Market → Contract configuration → Proposal/price → User confirmation → Purchase → Open contract → Result/history
+If MarketBridge cannot execute a particular trading idea through the available API, it should be treated as analysis, rather than presenting a false "Trade This Signal" workflow.
+
+3. The Most Important Product Rule
+MarketBridge must clearly distinguish between:
+EXECUTABLE SIGNAL
+A signal associated with a Deriv contract that MarketBridge can actually configure and execute.
+It can display:
+Trade This Signal
+The user is then taken to the appropriate trading interface with relevant parameters pre-populated where technically supported.
+ANALYSIS / TRADE IDEA
+For trading ideas that cannot be directly executed through the MarketBridge integration.
+For example, an analysis may contain:
+Volatility 75
+BUY
+Entry: X
+Stop Loss: X
+TP1: X
+TP2: X
+Instead of misleading the user with Trade This Signal, MarketBridge should display:
+View Market / View Analysis
+The trader can then use that information on the appropriate Deriv/MT5 trading environment.
+This distinction needs to exist at the database, backend and UI level, not merely as different button text.
+
+4. Community Is the Main Differentiator
+The community should not function like one generic chat room.
+It should become a market-based social network for traders.
+Every important market should effectively have its own community ecosystem.
+Example:
+Volatility 75 (1s)
+Inside that market the user should find:
+Market Chart | Trade | Signals | Analysis | Community
+The Community section can contain discussions specifically about V75.
+Likewise:
+Boom 1000 → Boom 1000 Community
+Crash 500 → Crash 500 Community
+Volatility 100 → V100 Community
+This makes market discovery the bridge between trading and social interaction.
+
+5. User Journey
+The preferred user journey is:
+Visit MarketBridge
+↓
+Register / Sign in
+↓
+Connect Deriv account
+↓
+Authorize appropriate permissions
+↓
+MarketBridge account linked with Deriv
+↓
+Dashboard
+From the dashboard the user can move into five principal areas:
+Trade | Signals | Community | Results | Resources
+The user should never feel like these are five unrelated products.
+Everything should connect through the concept of a market.
+For example:
+V75 Market Detail
+→ Trade V75
+→ V75 signals
+→ V75 analysis
+→ V75 traders
+→ V75 discussions
+→ V75 results/content.
+
+6. Trading Architecture
+The developer should build trading as individual contract modules, rather than creating one generic BUY/SELL screen.
+For example:
+Accumulator Module
+The interface should contain appropriate fields such as:
+Growth Rate
+Stake
+Duration/contract parameters
+Take-profit or supported exit parameters
+Proposal/Potential payout
+Purchase confirmation
+Running contract
+Sell/close where supported
+Result
+Rise/Fall Module
+Market
+Rise / Fall
+Duration
+Stake
+Proposal/Payout
+Purchase
+Contract status
+Result
+Digits Module
+The UI changes according to contract type:
+Matches/Differs
+Even/Odd
+Over/Under
+Then:
+Digit selection where required
+Duration
+Stake
+Payout/proposal
+Purchase
+Multipliers Module
+Market
+Direction
+Stake
+Multiplier
+Take Profit
+Stop Loss
+Deal cancellation where supported
+Proposal
+Purchase
+Position monitoring
+Close position
+The actual available controls must ultimately follow the Deriv API specification rather than simply copying the mock-up.
+The UI mock-ups define the desired experience; the API defines what can actually be executed.
+
+7. Signals Architecture
+Signals are primarily user-generated content.
+MarketBridge itself does not need to be presented as the author of all trading signals.
+Any eligible user can:
+Post New Signal
+A signal provider profile should show useful performance information such as:
+username
+profile
+followers
+signals posted
+wins
+losses
+win rate
+historical signals
+recent results
+markets traded
+strategy/tags
+posts
+follower/following relationship
+MarketBridge administrators can boost selected signals.
+A boosted signal means MarketBridge is giving the post greater visibility; it should not automatically imply that MarketBridge guarantees or endorses the trade outcome.
+
+8. Signal Lifecycle
+The backend should track a signal throughout its life.
+For example:
+Draft → Published → Active → Result Pending → Won/Lost/Expired/Cancelled
+Where possible, executable signals can derive outcomes from actual contract information.
+For analysis-type signals, the platform will need a separate result/verification mechanism.
+This distinction is important because the platform's win-rate system must not be easily manipulated by users.
+A user should not simply be able to post losing signals and later delete them to create an artificial 90% win rate.
+Historical signal integrity should therefore be designed into the system.
+
+9. Community System
+Community functionality should support:
+Create Post
+Comments
+Replies
+Likes/reactions
+Follow users
+Market tagging
+Images/charts
+Share
+Save/bookmark
+Report
+Search
+Posts can be classified by market.
+Example:
+JamesFX
+Volatility 75 (1s)
+"V75 just swept liquidity. Watching the 543k area."
+Clicking Volatility 75 (1s) can take the user directly into the corresponding market ecosystem.
+This creates a loop:
+Community → Market → Analysis → Signal → Trade → Result → Community
+That loop is central to MarketBridge.
+
+10. Trader Discovery
+Another major feature should be discovering traders by their specialty.
+For example:
+Top V75 Traders
+Top Boom & Crash Traders
+Top Digit Traders
+Top Accumulator Traders
+Users should be able to follow traders whose strategies and markets match their interests.
+Leaderboards can therefore include:
+Top Signal Providers
+Top Traders
+Highest Win Rate
+Most Followed
+Trending Traders
+with filters such as:
+7 Days | 30 Days | All Time
+However, rankings should have minimum sample requirements so someone with one winning signal does not automatically become the "#1 trader."
+
+
+11. Results System
+Results should serve two purposes.
+First, users can understand their own performance.
+Second, users can evaluate signal providers.
+Possible metrics include:
+Total Signals
+Wins
+Losses
+Win Rate
+Average Risk/Reward
+Recent Results
+Performance history
+Where financial P/L is shown, the developer must distinguish carefully between verified Deriv trade data and user-entered/community signal results.
+
+12. Resources / Mentorship
+MarketBridge is also an education platform.
+Resources can include:
+Courses
+Trading Guides
+Strategies
+Videos
+Webinars
+Mentorship Sessions
+PDF resources
+Examples:
+Trading Basics
+Smart Money Concepts
+ICT
+Price Action
+Risk Management
+Trading Psychology
+Synthetic Indices tutorials
+Users should be able to track course progress.
+
+13. Deposit & Withdrawal
+The existing two-option design should be maintained.
+MarketBridge should provide the user with choices rather than forcing a particular payment route.
+Deposit
+Option 1 — Deriv
+Continue to the appropriate Deriv-supported deposit flow.
+Option 2 — Kaastro
+Clearly inform the user:
+You are leaving MarketBridge.
+The customer is redirected to Kaastro and completes the applicable onboarding/verification and payment process there.
+Withdrawal
+Similarly:
+Withdraw with Deriv
+or
+Withdraw with Kaastro
+MarketBridge should clearly communicate that Kaastro is a separate service and that the user is being redirected.
+The developer should retain the existing deposit/withdrawal flow rather than redesigning it unnecessarily.
+
+14. Monetisation / IB Logic
+MarketBridge's primary commercial model is Deriv referral/IB commissions, rather than charging traders to access basic platform functionality.
+Therefore account acquisition is important.
+Conceptually:
+MarketBridge visitor
+→ Create/Connect Deriv account
+→ eligible referral/IB relationship
+→ user trades
+→ MarketBridge earns applicable partner commission under Deriv's rules.
+The developer must not hard-code assumptions about commission eligibility or account tagging. The implementation should follow whatever referral/affiliate attribution mechanisms Deriv officially permits.
+
+15. Main User Pages
+The existing UI direction should be preserved.
+The major customer-facing pages are:
+Home / Dashboard
+Login / Registration
+Connect Deriv Account
+Markets
+Market Detail
+Trade
+Accumulator Trading
+Rise/Fall Trading
+Digits Trading
+Multipliers Trading
+Open Contracts
+Contract Detail
+Trade History
+Signals
+Post Signal
+Signal Detail
+Analysis
+Post Analysis
+Signal Provider Profile
+Community
+Create Community Post
+Community Post Detail
+Market Discussion Room
+Results
+Leaderboards
+Resources
+Resource Detail
+Search
+Notifications
+Profile
+Deposit
+Withdrawal
+Settings / More
+Help & Support
+Report Content
+Signal Disclaimer
+Risk Disclosure
+Terms/Privacy.
+
+16. Admin System
+The administration platform should remain separate from the mobile-first customer UI.
+Admin functionality should cover:
+Dashboard
+Platform statistics and operational overview.
+Users
+Search, review, suspend/ban and manage accounts.
+Signals
+View signals, status, provider, market and reported content.
+Boosted Signals
+Select which high-quality community signals receive additional visibility.
+Community
+Moderate posts/comments.
+Reports & Moderation
+Handle reported signals, posts, comments and accounts.
+Resources
+Create/manage courses, guides, videos and mentorship material.
+IB/Partner Analytics
+Where data is legitimately available, monitor referral-related performance.
+Audit Logs
+Important administrative actions should be logged.
+
+17. Recommended Technical Logic
+The developer should avoid building MarketBridge as one huge application module.
+A cleaner architecture would separate:
+Authentication Service
+MarketBridge users + Deriv authorization.
+Deriv Integration Layer
+OAuth/authentication, accounts, markets, ticks, proposals, contract purchases, open contracts, history and other supported API functions.
+Trading Engine/UI Layer
+Accumulator, Rise/Fall, Digits, Multipliers, etc.
+Market Service
+Market catalogue, market pages and market-specific content.
+Social/Community Service
+Posts, comments, follows, reactions, market rooms.
+Signal Service
+Signals, analysis, results, boosting and provider statistics.
+Education Service
+Resources, courses, lessons and progress.
+Notification Service
+Moderation Service
+Admin Service
+This separation is important because Deriv may change or expand its API while the MarketBridge community system remains independent.
+
+18. Critical Development Principle
+There should be one source of truth for Deriv capabilities.
+The developer should never implement functionality simply because it exists in the UI mock-up.
+For every trading feature, determine:
+Is this supported by the current Deriv API?
+If YES:
+Implement native MarketBridge execution.
+If PARTIALLY:
+Implement only the supported portion.
+If NO:
+Treat it as analysis/information and redirect the user to the appropriate external Deriv trading environment where appropriate.
+This prevents MarketBridge from promising functionality that cannot actually be executed.
+
+19. Mobile-First Design Requirement
+The customer product should remain mobile-first, even though it is a web application.
+The supplied designs should remain the primary visual direction:
+Dark background + MarketBridge green + white/grey typography.
+Avoid unnecessary additional colours.
+Red should primarily communicate:
+Sell / Loss / Stop / Warning / Error
+Green should remain the main MarketBridge action colour.
+The developer should build reusable components so that the Home, Markets, Trade, Signals and Community pages look like parts of the same product.
+
+20. MarketBridge in One Sentence
+MarketBridge is a Deriv-connected social trading web application that combines supported Deriv trading functionality with market-specific communities, user-generated signals and analysis, trader discovery, performance tracking and trading education in one mobile-first ecosystem.
+The simplest way for the developer to understand the product is:
+Deriv provides the underlying trading infrastructure.
+MarketBridge provides the trading experience + community + signals + discovery + education layer around it.
+And the product loop should ultimately become:
+DISCOVER MARKET → LEARN → DISCUSS → FOLLOW TRADER → SEE SIGNAL/ANALYSIS → TRADE WHEN EXECUTABLE → TRACK RESULT → SHARE/DISCUSS → REPEAT.

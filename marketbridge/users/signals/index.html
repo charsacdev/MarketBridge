@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Signals — MarketBridge</title>
+<meta name="theme-color" content="#0A0E12">
+<link rel="manifest" href="../../manifest.webmanifest">
+<link rel="icon" href="../../assets/icons/favicon-32.png" sizes="32x32">
+<link rel="apple-touch-icon" href="../../assets/icons/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap">
+<link rel="stylesheet" href="../../assets/css/tokens.css">
+<link rel="stylesheet" href="../../assets/css/base.css">
+<link rel="stylesheet" href="../../assets/css/components.css">
+<link rel="stylesheet" href="../../assets/css/app.css">
+<script>(function(){try{var t=localStorage.getItem('mb.theme');if(t){document.documentElement.setAttribute('data-theme',t);}}catch(e){}})();</script>
+</head>
+<body data-shell="app" data-nav="signals" data-root="../../" data-title="Signals" data-sub="Follow top traders and trade quality signals" data-unread="3">
+
+<div class="app">
+  <div data-render="topbar"></div>
+  <main class="page">
+
+    <a class="btn btn-primary btn-block" href="compose.html">
+      <span data-icon="plus"></span> Post New Signal</a>
+
+    <div class="input-icon">
+      <span data-icon="search"></span>
+      <input class="input" id="sigSearch" type="search" placeholder="Search traders, markets or setups…">
+    </div>
+
+    <div class="filter-bar">
+      <div class="chips" data-group id="kindChips">
+        <button class="chip is-active" data-value="all">All</button>
+        <button class="chip" data-value="executable">Executable</button>
+        <button class="chip" data-value="analysis">Analysis</button>
+        <button class="chip" data-value="boosted">Boosted</button>
+        <button class="chip" data-value="active">Active now</button>
+      </div>
+
+      <div class="chips" data-group id="catChips"></div>
+
+      <div class="filter-row">
+        <select class="select grow" id="pairSel" aria-label="Filter by pair or market">
+          <option value="all">All pairs &amp; markets</option>
+        </select>
+        <span class="filter-count"><span id="sigCount">0</span> signals</span>
+      </div>
+    </div>
+
+    <section class="page-section">
+      <div class="sec-head"><h2>Top Signal Providers</h2>
+        <a href="../results/leaderboard.html">View all</a></div>
+      <div class="hscroll" id="topProviders"></div>
+    </section>
+
+    <section class="stack g3" id="signalFeed"></section>
+  </main>
+  <div data-render="tabbar"></div>
+</div>
+
+<script src="../../assets/js/core/icons.js"></script>
+<script src="../../assets/js/core/util.js"></script>
+<script src="../../assets/js/core/api.js"></script>
+<script src="../../assets/js/core/collection.js"></script>
+<script src="../../assets/js/core/charts.js"></script>
+<script src="../../assets/js/core/ws.js"></script>
+<script src="../../assets/js/components/cards.js"></script>
+<script src="../../assets/js/core/shell.js"></script>
+<script src="../../assets/js/core/pwa.js"></script>
+<script>
+
+  var CATS = [
+    { v:'all', l:'All' }, { v:'synthetic_indices', l:'Synthetics' },
+    { v:'derived', l:'Derived' }, { v:'forex', l:'Forex' },
+    { v:'crypto', l:'Crypto' }, { v:'commodities', l:'Commodities' },
+    { v:'stock_indices', l:'Indices' }
+  ];
+  function catChips(id) {
+    return CATS.map(function (c, i) {
+      return '<button class="chip' + (i === 0 ? ' is-active' : '') + '" data-value="' + c.v + '">' + c.l + '</button>';
+    }).join('');
+  }
+  /* The pair list always reflects the chosen category, so the two filters
+     can never disagree with each other. */
+  function fillPairs(sel, markets, category) {
+    var rows = category === 'all' ? markets
+      : markets.filter(function (m) { return m.category === category; });
+    sel.innerHTML = '<option value="all">All pairs &amp; markets</option>' +
+      rows.map(function (m) {
+        return '<option value="' + m.symbol + '">' + m.short_name + '</option>';
+      }).join('');
+  }
+
+MB.ready(function () {
+  document.getElementById('catChips').innerHTML = catChips();
+
+  MB.render({ into: '#topProviders', from: 'providers', limit: 8,
+    template: MB.card.provider, skeleton: false });
+
+  var pairSel = document.getElementById('pairSel');
+  var markets = [];
+
+  var c = MB.collection({
+    from: 'signals', into: '#signalFeed', template: MB.card.sig,
+    perPage: 8, mode: 'pages', countInto: '#sigCount', skeletonCount: 4,
+    initial: { kind: 'all', category: 'all', pair: 'all', q: '' },
+    filters: {
+      kind: function (s, v) {
+        if (v === 'all') { return true; }
+        if (v === 'boosted') { return s.boost && s.boost.is_boosted; }
+        if (v === 'active') { return s.status === 'active'; }
+        return s.kind === v;
+      },
+      category: function (s, v) { return v === 'all' || s.market.category === v; },
+      pair: function (s, v) { return v === 'all' || s.market.symbol === v; },
+      q: function (s, v) {
+        return (s.author.username + ' ' + s.market.name + ' ' + s.market.symbol + ' ' +
+                (s.market.pair || '') + ' ' + s.body).toLowerCase().indexOf(v) > -1;
+      }
+    },
+    emptyIcon: 'signals', emptyTitle: 'No signals match',
+    emptyText: 'Try a different market, pair or filter.'
+  });
+
+  c.bind('#kindChips', 'kind').bindSelect('#pairSel', 'pair').bindInput('#sigSearch', 'q');
+
+  /* Changing category also rebuilds the pair list and clears the pair. */
+  document.getElementById('catChips').addEventListener('mb:change', function (e) {
+    var cat = e.detail.value;
+    fillPairs(pairSel, markets, cat);
+    c.set('pair', 'all');
+    c.set('category', cat);
+  });
+
+  MB.api.list('markets').then(function (rows) {
+    markets = rows;
+    fillPairs(pairSel, markets, 'all');
+  });
+});
+</script>
+</body>
+</html>

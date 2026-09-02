@@ -1,0 +1,220 @@
+/* ==========================================================================
+   MARKETBRIDGE — USER APP SHELL
+   Mobile-first canvas, sticky top bar, fixed bottom tab bar.
+   On desktop the canvas centres and sits on a subtle backdrop.
+   ========================================================================== */
+
+.app {
+  max-width: var(--mb-app-max);
+  margin: 0 auto;
+  min-height: 100vh;
+  min-height: 100dvh;
+  background: var(--mb-bg);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 900px) {
+  body.has-app { background: var(--mb-bg-2); }
+  .app {
+    box-shadow: 0 0 0 1px var(--mb-border);
+    min-height: 100vh;
+  }
+}
+
+/* ==========================================================================
+   TOP BAR
+   ========================================================================== */
+.topbar {
+  position: sticky; top: 0; z-index: 60;
+  display: flex; align-items: center; gap: var(--mb-s3);
+  height: var(--mb-topbar-h);
+  padding: 0 var(--mb-s5);
+  padding-top: var(--mb-safe-t);
+  background: color-mix(in srgb, var(--mb-bg) 88%, transparent);
+  backdrop-filter: saturate(160%) blur(14px);
+  -webkit-backdrop-filter: saturate(160%) blur(14px);
+  border-bottom: 1px solid var(--mb-border);
+}
+.topbar-title { font-size: var(--mb-t-h1); font-weight: var(--mb-w-black); letter-spacing: -.03em; }
+.topbar-sub { font-size: var(--mb-t-xs); color: var(--mb-text-2); margin-top: 1px; }
+.topbar-back {
+  width: 34px; height: 34px; margin-left: -6px; flex: none;
+  display: flex; align-items: center; justify-content: center;
+  border-radius: var(--mb-r-pill); color: var(--mb-text);
+}
+.topbar-back:hover { background: var(--mb-surface-2); }
+.topbar-back svg { width: 22px; height: 22px; }
+
+/* Notification bell with unread count */
+.bell { position: relative; }
+.bell .count {
+  position: absolute; top: 3px; right: 3px;
+  min-width: 17px; height: 17px; padding: 0 4px;
+  border-radius: var(--mb-r-pill); background: var(--mb-sell); color: #fff;
+  font-size: 10px; font-weight: var(--mb-w-bold);
+  display: flex; align-items: center; justify-content: center;
+  border: 2px solid var(--mb-bg);
+}
+
+/* ==========================================================================
+   PAGE BODY
+   ========================================================================== */
+.page {
+  flex: 1;
+  padding: var(--mb-s5);
+  padding-bottom: calc(var(--mb-nav-h) + var(--mb-safe-b) + var(--mb-s10));
+  display: flex; flex-direction: column; gap: var(--mb-s6);
+}
+.page-flush { padding-left: 0; padding-right: 0; }
+.page-flush > .page-section { padding-left: var(--mb-s5); padding-right: var(--mb-s5); }
+.page-section { display: flex; flex-direction: column; gap: var(--mb-s3); }
+
+/* Horizontal scrollers stay inside the page gutter. Nothing sits flush
+   against the screen edge; the row simply clips at the same margin as
+   everything else on the page. */
+.page-bleed { margin-left: 0; margin-right: 0; padding-left: 0; padding-right: 0; }
+
+/* Pages with no bottom nav (auth, legal gates) */
+.page-full { padding-bottom: calc(var(--mb-safe-b) + var(--mb-s6)); }
+
+/* ==========================================================================
+   BOTTOM TAB BAR — five items, fixed, never changes
+   ========================================================================== */
+.tabbar {
+  position: fixed; bottom: 0; left: 50%; transform: translateX(-50%);
+  width: 100%; max-width: var(--mb-app-max); z-index: 70;
+  display: grid; grid-template-columns: repeat(5, minmax(0, 1fr));
+  height: calc(var(--mb-nav-h) + var(--mb-safe-b));
+  padding-bottom: var(--mb-safe-b);
+  background: color-mix(in srgb, var(--mb-bg) 92%, transparent);
+  backdrop-filter: saturate(160%) blur(16px);
+  -webkit-backdrop-filter: saturate(160%) blur(16px);
+  border-top: 1px solid var(--mb-border);
+}
+.tabbar a {
+  display: flex; flex-direction: column; align-items: center; justify-content: center;
+  gap: 4px; color: var(--mb-text-3); position: relative;
+  transition: color var(--mb-fast) var(--mb-ease);
+}
+.tabbar a svg { width: 22px; height: 22px; }
+.tabbar a span { font-size: 10px; font-weight: var(--mb-w-semi); }
+.tabbar a:hover { color: var(--mb-text-2); }
+.tabbar a.is-active { color: var(--mb-green); }
+.tabbar a .dot {
+  position: absolute; top: 9px; right: calc(50% - 15px);
+  width: 7px; height: 7px; border-radius: 50%;
+  background: var(--mb-sell); border: 1.5px solid var(--mb-bg);
+}
+
+/* ==========================================================================
+   AUTH SCREENS
+   ========================================================================== */
+.auth-wrap {
+  min-height: 100vh; min-height: 100dvh;
+  max-width: var(--mb-app-max); margin: 0 auto;
+  display: flex; flex-direction: column;
+  padding: var(--mb-s6) var(--mb-s5) calc(var(--mb-s6) + var(--mb-safe-b));
+  background: var(--mb-bg);
+}
+@media (min-width: 900px) {
+  body.has-auth { background: var(--mb-bg-2); }
+  .auth-wrap { box-shadow: 0 0 0 1px var(--mb-border); }
+}
+.auth-head { margin: var(--mb-s10) 0 var(--mb-s6); }
+.auth-head h1 { font-size: var(--mb-t-display); font-weight: var(--mb-w-black); letter-spacing: -.03em; }
+.auth-head p { font-size: var(--mb-t-sm); color: var(--mb-text-2); margin-top: 6px; }
+.auth-form { display: flex; flex-direction: column; gap: var(--mb-s4); }
+.auth-divider { display: flex; align-items: center; gap: var(--mb-s3); margin: var(--mb-s5) 0; }
+.auth-divider::before, .auth-divider::after { content: ""; flex: 1; height: 1px; background: var(--mb-border); }
+.auth-divider span { font-size: var(--mb-t-xs); color: var(--mb-text-3); }
+.auth-foot { margin-top: auto; padding-top: var(--mb-s6); text-align: center; font-size: var(--mb-t-sm); color: var(--mb-text-2); }
+
+/* Deriv OAuth button — Deriv red, deliberately not the MarketBridge green */
+.btn-deriv {
+  background: var(--mb-surface); border: 1px solid var(--mb-border-2); color: var(--mb-text);
+}
+.btn-deriv:hover { border-color: #FF444F; }
+.btn-deriv .deriv-mark { width: 20px; height: 20px; color: #FF444F; }
+
+/* Splash */
+.splash {
+  min-height: 100vh; min-height: 100dvh;
+  display: flex; flex-direction: column; align-items: center; justify-content: center;
+  gap: var(--mb-s6); padding: var(--mb-s8);
+  max-width: var(--mb-app-max); margin: 0 auto; text-align: center;
+}
+.splash-dots { display: flex; gap: 6px; }
+.splash-dots i { width: 6px; height: 6px; border-radius: 50%; background: var(--mb-border-2); }
+.splash-dots i.on { background: var(--mb-green); width: 18px; border-radius: var(--mb-r-pill); }
+
+/* ==========================================================================
+   MARKET DETAIL HEADER
+   ========================================================================== */
+.market-hero { padding: var(--mb-s5); border-bottom: 1px solid var(--mb-border); }
+.market-hero .mh-name { font-size: var(--mb-t-h2); font-weight: var(--mb-w-bold); }
+.market-hero .mh-price { font-size: 30px; font-weight: var(--mb-w-black); letter-spacing: -.03em; font-variant-numeric: tabular-nums; margin-top: 2px; }
+.market-hero .mh-change { font-size: var(--mb-t-sm); font-weight: var(--mb-w-bold); font-variant-numeric: tabular-nums; }
+
+/* ==========================================================================
+   PROFILE HEADER
+   ========================================================================== */
+.profile-hero { display: flex; flex-direction: column; align-items: center; gap: var(--mb-s3); padding: var(--mb-s5) var(--mb-s4); }
+.profile-hero .ph-name { font-size: var(--mb-t-h1); font-weight: var(--mb-w-black); letter-spacing: -.02em; }
+.profile-hero .ph-handle { font-size: var(--mb-t-sm); color: var(--mb-text-3); }
+.profile-hero .ph-bio { font-size: var(--mb-t-sm); color: var(--mb-text-2); text-align: center; max-width: 34ch; }
+
+/* ==========================================================================
+   DEPOSIT / WITHDRAW — the two-option flow the PRD says to preserve
+   ========================================================================== */
+.pay-option {
+  display: flex; align-items: center; gap: var(--mb-s3);
+  padding: var(--mb-s4); border-radius: var(--mb-r-lg);
+  background: var(--mb-surface); border: 1px solid var(--mb-border);
+}
+.pay-option .po-num {
+  width: 26px; height: 26px; flex: none; border-radius: 50%;
+  background: var(--mb-green-soft); color: var(--mb-green);
+  display: flex; align-items: center; justify-content: center;
+  font-size: var(--mb-t-xs); font-weight: var(--mb-w-black);
+}
+.pay-option .po-title { font-size: var(--mb-t-body); font-weight: var(--mb-w-bold); }
+.pay-option .po-desc { font-size: var(--mb-t-xs); color: var(--mb-text-2); margin-top: 3px; }
+.pay-option .po-logo { height: 22px; flex: none; }
+
+/* Full-screen "You are leaving MarketBridge" interstitial */
+.leaving {
+  min-height: 100vh; min-height: 100dvh; max-width: var(--mb-app-max); margin: 0 auto;
+  display: flex; flex-direction: column; padding: var(--mb-s6) var(--mb-s5) calc(var(--mb-s6) + var(--mb-safe-b));
+  text-align: center; background: var(--mb-bg);
+}
+.leaving h1 { font-size: var(--mb-t-h1); font-weight: var(--mb-w-black); margin-top: var(--mb-s10); }
+.leaving h1 .brand-green { color: var(--mb-green); }
+.leaving-hop { display: flex; align-items: center; justify-content: center; gap: var(--mb-s4); margin: var(--mb-s8) 0; }
+.leaving-hop .hop-node {
+  width: 62px; height: 62px; border-radius: var(--mb-r-md);
+  background: var(--mb-surface); border: 1px solid var(--mb-border);
+  display: flex; align-items: center; justify-content: center;
+}
+.leaving-hop .hop-arrow { color: var(--mb-green); }
+.leaving-points { display: flex; flex-direction: column; gap: var(--mb-s4); text-align: left; margin: var(--mb-s6) 0; }
+.leaving-point { display: flex; gap: var(--mb-s3); font-size: var(--mb-t-sm); color: var(--mb-text-2); }
+.leaving-point svg { width: 18px; height: 18px; color: var(--mb-green); flex: none; margin-top: 1px; }
+
+/* ==========================================================================
+   INSTALL PROMPT — the "downloadable web app" affordance
+   ========================================================================== */
+.install-bar {
+  position: fixed; left: 50%; transform: translateX(-50%);
+  bottom: calc(var(--mb-nav-h) + var(--mb-safe-b) + var(--mb-s3));
+  width: calc(100% - var(--mb-s8)); max-width: 420px; z-index: 150;
+  display: none; align-items: center; gap: var(--mb-s3);
+  padding: var(--mb-s3); border-radius: var(--mb-r-md);
+  background: var(--mb-surface-3); border: 1px solid var(--mb-border-2);
+  box-shadow: var(--mb-shadow-lg);
+}
+.install-bar.is-shown { display: flex; }
+.install-bar .ib-icon { width: 36px; height: 36px; border-radius: var(--mb-r-sm); background: var(--mb-green-soft); color: var(--mb-green); display: flex; align-items: center; justify-content: center; flex: none; }
+.install-bar .ib-title { font-size: var(--mb-t-sm); font-weight: var(--mb-w-bold); }
+.install-bar .ib-sub { font-size: var(--mb-t-xs); color: var(--mb-text-2); }
