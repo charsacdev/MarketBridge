@@ -1,5 +1,5 @@
 /* ==========================================================================
-   MARKETBRIDGE — SERVICE WORKER
+   VYBE — SERVICE WORKER
    Makes the web app installable and usable offline. This is what "downloadable"
    means for a web app: the browser installs it to the home screen / desktop,
    and this worker keeps the shell available without a network.
@@ -13,7 +13,7 @@
    carrying an Authorization header. Stale money is worse than no money.
    ========================================================================== */
 
-const VERSION = 'mb-v1.0.0';
+const VERSION = 'vybe-v2.0.0';
 const SHELL_CACHE = VERSION + '-shell';
 const DATA_CACHE  = VERSION + '-data';
 const ASSET_CACHE = VERSION + '-asset';
@@ -152,7 +152,7 @@ self.addEventListener('push', (event) => {
   try { payload = event.data.json(); } catch (e) { payload = { title: event.data.text() }; }
 
   event.waitUntil(
-    self.registration.showNotification(payload.title || 'MarketBridge', {
+    self.registration.showNotification(payload.title || 'VYBE', {
       body: payload.body || '',
       icon: 'assets/icons/icon-192.png',
       badge: 'assets/icons/icon-192.png',

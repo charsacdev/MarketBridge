@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Provider — MarketBridge</title>
-<meta name="theme-color" content="#0A0E12">
+<title>Provider — VYBE</title>
+<meta name="theme-color" content="#080B0F">
 <link rel="manifest" href="../../manifest.webmanifest">
 <link rel="icon" href="../../assets/icons/favicon-32.png" sizes="32x32">
 <link rel="apple-touch-icon" href="../../assets/icons/apple-touch-icon.png">
@@ -15,7 +15,7 @@
 <link rel="stylesheet" href="../../assets/css/base.css">
 <link rel="stylesheet" href="../../assets/css/components.css">
 <link rel="stylesheet" href="../../assets/css/app.css">
-<script>(function(){try{var t=localStorage.getItem('mb.theme');if(t){document.documentElement.setAttribute('data-theme',t);}}catch(e){}})();</script>
+<script>(function(){var t='dark';try{t=localStorage.getItem('mb.theme')||'dark';}catch(e){}var m=/[?&]theme=(dark|light|system)/.exec(location.search);if(m){t=m[1];}if(t!=='system'){document.documentElement.setAttribute('data-theme',t);}})();</script>
 </head>
 <body data-shell="app" data-nav="signals" data-root="../../" data-title="Provider" data-back="index.html" data-unread="3">
 
@@ -135,9 +135,15 @@ MB.ready(function () {
     MB.mountIcons(); MB.mountCharts();
   });
 
-  MB.render({ into: '#pSignalList', from: 'signals', limit: 4, template: MB.card.signal });
-  MB.render({ into: '#pResults', from: 'signals', skeleton: false,
-    filter: function (s) { return s.result; },
+  MB.collection({
+    from: 'signals', into: '#pSignalList', template: MB.card.signal,
+    perPage: 5, mode: 'more', countInto: '#pSigCount', skeletonCount: 3,
+    emptyIcon: 'signals', emptyTitle: 'No signals yet',
+    emptyText: 'This provider has not published anything.'
+  });
+  MB.collection({ into: '#pResults', from: 'signals', skeleton: false,
+    perPage: 10, mode: 'more', countInto: '#pResCount',
+    prepare: function (rows) { return rows.filter(function (s) { return s.result; }); },
     template: function (s) {
       var won = s.result.outcome === 'won';
       return '<div class="list-row"><span class="none" style="color:var(--mb-' +

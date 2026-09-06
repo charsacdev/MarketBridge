@@ -1,5 +1,5 @@
 /* ==========================================================================
-   MARKETBRIDGE — CARD TEMPLATES
+   VYBE — CARD TEMPLATES
 
    One function per reusable card. Each maps 1:1 to a Blade component at
    port time, and the parameters here become the component's props:
@@ -32,10 +32,18 @@
     return out;
   }
 
+  /* The chip carries the market's 24h direction where the payload has it, so
+     a feed shows at a glance which way the thing being discussed is going.
+     Stage 2 replaces the denormalised figure with the live feed. */
   function marketChip(m, href) {
     if (!m) { return ''; }
     var url = href || (R() + 'users/markets/detail.html?symbol=' + m.symbol);
-    return '<a class="chip-market" href="' + url + '">' + MB.esc(m.short_name || m.name) + '</a>';
+    var ch = m.change_pct_24h;
+    var move = (ch === undefined || ch === null) ? '' :
+      '<span class="cm-move ' + (ch >= 0 ? 'c-up' : 'c-down') + '">' +
+        MB.fmt.pct(ch) + '</span>';
+    return '<a class="chip-market" href="' + url + '">' +
+      MB.esc(m.short_name || m.name) + move + '</a>';
   }
 
   /* ======================================================================
@@ -130,12 +138,12 @@
           (x.trade_route ? R() + 'users/' + x.trade_route.replace('../', '') : R() + 'users/trade/index.html') +
           '">' + MB.icon('trade', 18) + ' Trade This Signal</a>' +
       '</div>' +
-      '<div class="signal-disclaimer">Signal not from MarketBridge. Trade at your own risk.</div>' +
+      '<div class="signal-disclaimer">Signal not from VYBE. Trade at your own risk.</div>' +
       signalFoot(s) +
     '</article>';
   };
 
-  /* ---------- ANALYSIS: blue, View Market ------------------------------- */
+  /* ---------- ANALYSIS: red, View Market -------------------------------- */
   C.signalAnalysis = function (s) {
     var a = s.analysis || {};
     var dirLabel = (s.direction || 'neutral').toUpperCase();
@@ -173,10 +181,10 @@
           '" data-h="120" data-direction="' + (isSell ? 'down' : 'up') +
           '" data-levels=\'{"entry":1,"sl":1' + (tps[0] ? ',"tp1":1' : '') + (tps[1] ? ',"tp2":1' : '') + '}\'></div></div>' +
         /* Analysis can never produce a trade button — different route, different colour. */
-        '<a class="btn btn-info btn-block mt3" href="' + R() + 'users/markets/detail.html?symbol=' +
+        '<a class="btn btn-analysis btn-block mt3" href="' + R() + 'users/markets/detail.html?symbol=' +
           s.market.symbol + '">' + MB.icon('markets', 18) + ' View Market</a>' +
       '</div>' +
-      '<div class="signal-disclaimer">Analysis only &mdash; not executable from MarketBridge.</div>' +
+      '<div class="signal-disclaimer">Analysis only &mdash; not executable from VYBE.</div>' +
       signalFoot(s) +
     '</article>';
   };
@@ -186,7 +194,7 @@
     var exec = s.kind === 'executable';
     var isSell = s.direction === 'sell';
     return '<a class="card card-hover" style="border-color:color-mix(in srgb,var(--mb-' +
-      (exec ? 'green' : 'info') + ') 26%,var(--mb-border));padding:12px" href="' + R() + 'users/signals/detail-' +
+      (exec ? 'green' : 'analysis') + ') 26%,var(--mb-border));padding:12px" href="' + R() + 'users/signals/detail-' +
       (exec ? 'executable' : 'analysis') + '.html?id=' + s.id + '">' +
       '<div class="row g2">' + MB.avatar(s.author, 'avatar-xs') +
         '<span class="t-sm w-semi grow truncate">' + MB.esc(s.author.username) + '</span>' +
@@ -355,15 +363,35 @@
      ====================================================================== */
   C.leaderRow = function (row) {
     var r = row.rank;
+    var ch = row.rank_change || 0;
+    var pl = row.total_pl || 0;
+
+    /* Rank movement: up the board is green, down is red, level is neutral.
+       A leaderboard where every number is green tells the reader nothing. */
+    var move = ch === 0
+      ? '<span class="lb-move is-flat">&ndash;</span>'
+      : '<span class="lb-move ' + (ch > 0 ? 'c-up' : 'c-down') + '">' +
+          MB.icon(ch > 0 ? 'up' : 'down', 11) + Math.abs(ch) + '</span>';
+
+    /* Win rate is only green when it actually beats breakeven. */
+    var wrClass = row.win_rate >= 50 ? 'c-up' : 'c-down';
+
     return '<a class="lb-row" href="' + R() + 'users/signals/provider.html?u=' + row.user.username + '">' +
       '<span class="lb-rank' + (r <= 3 ? ' r' + r : '') + '">' + r + '</span>' +
+      move +
       MB.avatar(row.user, 'avatar-sm') +
       '<span class="grow" style="min-width:0">' +
         '<span class="lb-name truncate" style="display:block">' + MB.esc(row.user.username) + '</span>' +
-        '<span class="t-xs c-3">' + row.signals + ' signals' +
+        '<span class="t-xs c-3">' + row.signals + ' signals &middot; ' +
+          '<span class="c-up">' + (row.wins || 0) + 'W</span> / ' +
+          '<span class="c-down">' + (row.losses || 0) + 'L</span>' +
           (row.min_sample_met ? '' : ' &middot; sample too small to rank') + '</span>' +
       '</span>' +
-      '<span class="lb-metric c-up none">' + row.win_rate + '%</span>' +
+      '<span class="lb-figures">' +
+        '<span class="lb-metric ' + wrClass + '">' + row.win_rate + '%</span>' +
+        '<span class="lb-pl num ' + (pl >= 0 ? 'c-up' : 'c-down') + '">' +
+          MB.fmt.signed(pl) + '</span>' +
+      '</span>' +
     '</a>';
   };
 
@@ -523,7 +551,7 @@
         (exec
           ? '<a class="btn btn-primary btn-xs" href="' + R() + 'users/' +
             ((s.execution && s.execution.trade_route) || 'trade/index.html') + '">Trade</a>'
-          : '<a class="btn btn-info btn-xs" href="' + R() + 'users/markets/detail.html?symbol=' +
+          : '<a class="btn btn-analysis btn-xs" href="' + R() + 'users/markets/detail.html?symbol=' +
             m.symbol + '">View Market</a>') +
       '</div>' +
 
@@ -606,5 +634,103 @@
         ? '<button class="btn-remove none" data-remove="' + MB.esc(m.user.username) + '">Remove</button>'
         : '') +
     '</div>';
+  };
+})(window);
+
+/* ==========================================================================
+   MARKET ROW — the Markets screen and the dashboard's Trade Now list.
+   Carries the coloured market chip and the capability tags from the designs.
+   ========================================================================== */
+(function (global) {
+  'use strict';
+  var MB = global.MB;
+  var C = MB.card;
+
+  /* Which coloured chip a market wears. Derived from the catalogue rather
+     than hard-coded per symbol, so a new market inherits the right hue. */
+  var CHIP = [
+    [/^BOOM/,     'mk-boom'],
+    [/^CRASH/,    'mk-crash'],
+    [/^JD/,       'mk-jump'],
+    [/^stpRNG/i,  'mk-step'],
+    [/^RB/,       'mk-range'],
+    [/^cry/,      'mk-crypto'],
+    [/^frxXA|^WTI/, 'mk-metal'],
+    [/^frx/,      'mk-forex'],
+    [/^OTC_/,     'mk-index'],
+    [/^R_|^1HZ/,  'mk-vol']
+  ];
+  MB.mktChipClass = function (symbol) {
+    for (var i = 0; i < CHIP.length; i++) {
+      if (CHIP[i][0].test(symbol)) { return CHIP[i][1]; }
+    }
+    return 'mk-step';
+  };
+  /* Short label for the chip — "V75", "BOOM1000", "XAUUSD". */
+  MB.mktChipText = function (m) {
+    return (m.icon_key || m.short_name || m.symbol).toUpperCase().slice(0, 8);
+  };
+
+  var KIND_LABEL = { binary: 'Binary', multiplier: 'Multipliers', cfd_mt5: 'CFD' };
+
+  C.mktRow = function (m) {
+    var up = m.stats.change_pct_24h >= 0;
+    var tags = (m.contract_kinds || []).map(function (k) {
+      return '<span class="kind-tag">' + (KIND_LABEL[k] || k) + '</span>';
+    }).join('');
+
+    return '<a class="mkt-row" href="' + MB.root() + 'users/markets/detail.html?symbol=' +
+      m.symbol + '">' +
+      '<span class="mk-chip ' + MB.mktChipClass(m.symbol) + '">' + MB.esc(MB.mktChipText(m)) + '</span>' +
+      '<span class="grow" style="min-width:0">' +
+        '<span class="mr-name truncate" style="display:block">' + MB.esc(m.short_name) + '</span>' +
+        '<span class="mr-sym">' + MB.esc(m.symbol.toUpperCase()) + '</span>' +
+        '<span class="mr-tags">' + tags + '</span>' +
+      '</span>' +
+      '<span class="mr-spark"><span data-spark="' + (up ? 'up' : 'down') +
+        '" data-seed="mr' + m.symbol + '" data-h="30" data-sw="2" data-fill="false"></span></span>' +
+      '<span class="none" style="min-width:88px">' +
+        '<span class="mr-price" style="display:block" data-tick="' + m.symbol +
+          '" data-tick-dp="' + m.decimal_places + '">' +
+          MB.fmt.price(m.stats.last_price, m.decimal_places) + '</span>' +
+        '<span class="mr-chg ' + (up ? 'c-up' : 'c-down') + '" style="display:block">' +
+          MB.fmt.pct(m.stats.change_pct_24h) + '</span>' +
+      '</span>' +
+      '<span class="mr-star' + (m.is_favorite ? ' is-on' : '') + '">' +
+        MB.icon(m.is_favorite ? 'starfill' : 'star', 18) + '</span>' +
+    '</a>';
+  };
+
+  /* Room row with the LIVE indicator from the designs. */
+  C.roomRow = function (r) {
+    var live = r.online_count > 30;
+    return '<a class="room-row" href="' + MB.root() + 'users/community/room.html?room=' + r.id + '">' +
+      (r.kind === 'trader'
+        ? MB.avatar(r.owner, 'avatar-sm')
+        : '<span class="mk-chip ' + MB.mktChipClass(r.market ? r.market.symbol : '') + '">' +
+          MB.esc((r.market ? (r.market.short_name || r.market.symbol) : r.name).toUpperCase().slice(0, 6)) +
+          '</span>') +
+      '<span class="grow" style="min-width:0">' +
+        '<span class="row g2"><span class="rr-n truncate">' + MB.esc(r.name) + '</span>' +
+          (live ? '<span class="live-badge"><i></i>LIVE</span>' : '') + '</span>' +
+        '<span class="rr-m">' + MB.fmt.compact(r.member_count) + ' members' +
+          (r.market ? ' · ' + MB.catLabel(r.market.category) : ' · Trader room') +
+          /* A market room shows where its pair is going right now. */
+          (r.market && r.market.change_pct_24h !== undefined
+            ? ' · <span class="' + (r.market.change_pct_24h >= 0 ? 'c-up' : 'c-down') +
+              '">' + MB.fmt.pct(r.market.change_pct_24h) + '</span>'
+            : '') + '</span>' +
+        '<span class="rr-stats">' +
+          '<span class="online-dot"><i></i>Active now</span>' +
+          '<span>' + MB.icon('comment', 12) + (r.online_count || 0) + '</span>' +
+          '<span>' + MB.icon('community', 12) + MB.fmt.compact(r.post_count || 0) + '</span>' +
+        '</span>' +
+      '</span>' +
+      '<span class="none">' +
+        (r.is_member
+          ? '<span class="btn btn-ghost btn-xs">Joined</span>'
+          : '<span class="btn btn-primary btn-xs">Join</span>') +
+      '</span>' +
+    '</a>';
   };
 })(window);

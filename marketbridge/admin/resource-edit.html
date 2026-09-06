@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Resource — MarketBridge Admin</title>
-<meta name="theme-color" content="#0A0E12">
+<title>Resource — VYBE Admin</title>
+<meta name="theme-color" content="#080B0F">
 <meta name="robots" content="noindex, nofollow">
 <link rel="icon" href="../assets/icons/favicon-32.png" sizes="32x32">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,9 +14,9 @@
 <link rel="stylesheet" href="../assets/css/base.css">
 <link rel="stylesheet" href="../assets/css/components.css">
 <link rel="stylesheet" href="../assets/css/admin.css">
-<script>(function(){try{var t=localStorage.getItem('mb.theme');if(t){document.documentElement.setAttribute('data-theme',t);}}catch(e){}})();</script>
+<script>(function(){var t='dark';try{t=localStorage.getItem('mb.theme')||'dark';}catch(e){}var m=/[?&]theme=(dark|light|system)/.exec(location.search);if(m){t=m[1];}if(t!=='system'){document.documentElement.setAttribute('data-theme',t);}})();</script>
 </head>
-<body data-shell="admin" data-nav="resources" data-root="../">
+<body data-shell="admin" data-role="admin" data-nav="resources" data-root="../">
 
 <div class="admin">
   <div data-render="admin-rail"></div>
@@ -70,6 +70,7 @@
 <script src="../assets/js/core/ws.js"></script>
 <script src="../assets/js/components/cards.js"></script>
 <script src="../assets/js/components/datatable.js"></script>
+<script src="../assets/js/core/roles.js"></script>
 <script src="../assets/js/core/shell.js"></script>
 <script>
 
@@ -98,37 +99,6 @@
   function row(k, v, sub) {
     return '<div class="info-row"><span class="ir-k">' + MB.esc(k) + '</span>' +
       '<span class="ir-v">' + v + (sub ? '<span class="sub">' + MB.esc(sub) + '</span>' : '') + '</span></div>';
-  }
-  function statSlider(host, title, cards) {
-    var el = MB.$(host); if (!el) { return; }
-    el.innerHTML =
-      '<div class="statslider"><div class="statslider-head"><h2>' + MB.esc(title) + '</h2>' +
-        '<div class="statslider-nav">' +
-          '<button data-sl="prev" aria-label="Scroll left">' + MB.icon('chevleft', 15) + '</button>' +
-          '<button data-sl="next" aria-label="Scroll right">' + MB.icon('chevright', 15) + '</button>' +
-        '</div></div><div class="statslider-track">' + cards.map(function (c) {
-          return '<div class="stat-card' + (c.tone ? ' is-' + c.tone : '') + '">' +
-            '<div class="sc-k">' + MB.esc(c.k) + '</div><div class="sc-v">' + c.v + '</div>' +
-            (c.d !== undefined ? '<div class="sc-d ' + (c.d >= 0 ? 'c-up' : 'c-down') + '">' +
-              MB.icon(c.d >= 0 ? 'trendup' : 'trenddown', 13) + MB.fmt.pct(c.d) + '</div>'
-              : c.note ? '<div class="sc-d c-3">' + MB.esc(c.note) + '</div>' : '') +
-            (c.spark === false ? '' : '<div class="sc-spark"><span data-spark="' +
-              (c.d >= 0 || c.d === undefined ? 'up' : 'down') + '" data-seed="' + MB.esc(c.k) +
-              '" data-h="30" data-sw="2"></span></div>') + '</div>';
-        }).join('') + '</div></div>';
-    MB.mountIcons(el); MB.mountCharts(el);
-    var track = MB.$('.statslider-track', el);
-    MB.$$('[data-sl]', el).forEach(function (b) {
-      b.addEventListener('click', function () {
-        track.scrollBy({ left: b.getAttribute('data-sl') === 'next' ? 460 : -460, behavior: 'smooth' });
-      });
-    });
-    var sync = function () {
-      var max = track.scrollWidth - track.clientWidth - 2;
-      MB.$('[data-sl=prev]', el).disabled = track.scrollLeft <= 2;
-      MB.$('[data-sl=next]', el).disabled = track.scrollLeft >= max;
-    };
-    track.addEventListener('scroll', sync); setTimeout(sync, 60);
   }
   function openSO(title, html) {
     document.getElementById('soTitle').textContent = title;
@@ -166,7 +136,7 @@ MB.ready(function () {
       : 'Create a course, guide, video, webinar or mentorship session';
 
     if (id) {
-      statSlider('#stats', 'Performance', [
+      MB.statSlider('#stats', 'Performance', [
         { k:'Enrolled', v: MB.fmt.compact(r.enrolled), d: 11.4 },
         { k:'Completions', v: MB.fmt.compact(r.completions), d: 7.2 },
         { k:'Completion rate', v: r.enrolled ? Math.round(r.completions / r.enrolled * 100) + '%' : '—', d: 2.1 },
@@ -268,7 +238,7 @@ MB.ready(function () {
               '</div>' +
               '<div class="alert alert-info" style="margin-top:16px"><span data-icon="info"></span>' +
                 '<div class="t-xs">Payments for paid resources are handled by the same ' +
-                'external providers as deposits. MarketBridge records the entitlement, ' +
+                'external providers as deposits. VYBE records the entitlement, ' +
                 'never the money.</div></div>' +
             '</div>' +
           '</div></section>' +

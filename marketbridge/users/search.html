@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Search — MarketBridge</title>
-<meta name="theme-color" content="#0A0E12">
+<title>Search — VYBE</title>
+<meta name="theme-color" content="#080B0F">
 <link rel="manifest" href="../manifest.webmanifest">
 <link rel="icon" href="../assets/icons/favicon-32.png" sizes="32x32">
 <link rel="apple-touch-icon" href="../assets/icons/apple-touch-icon.png">
@@ -15,7 +15,7 @@
 <link rel="stylesheet" href="../assets/css/base.css">
 <link rel="stylesheet" href="../assets/css/components.css">
 <link rel="stylesheet" href="../assets/css/app.css">
-<script>(function(){try{var t=localStorage.getItem('mb.theme');if(t){document.documentElement.setAttribute('data-theme',t);}}catch(e){}})();</script>
+<script>(function(){var t='dark';try{t=localStorage.getItem('mb.theme')||'dark';}catch(e){}var m=/[?&]theme=(dark|light|system)/.exec(location.search);if(m){t=m[1];}if(t!=='system'){document.documentElement.setAttribute('data-theme',t);}})();</script>
 </head>
 <body data-shell="app" data-nav="home" data-root="../" data-title="Search" data-back="index.html" data-bare data-unread="3">
 
@@ -76,7 +76,7 @@ MB.ready(function () {
     var host = document.getElementById('results');
     if (!q) {
       host.innerHTML = '<div class="empty">' + MB.icon('search', 46) +
-        '<h3>Search MarketBridge</h3><p>Find a market, a trader, a signal, ' +
+        '<h3>Search VYBE</h3><p>Find a market, a trader, a signal, ' +
         'a discussion or a course.</p></div>';
       MB.mountIcons(host); return;
     }

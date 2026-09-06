@@ -15,9 +15,11 @@
         "contract_kinds": [
           "binary",
           "multiplier"
-        ]
+        ],
+        "last_price": 542893.42,
+        "change_pct_24h": 1.28
       },
-      "description": "Everything about Volatility 75 (1s) Index — setups, levels and live discussion.",
+      "description": "Everything about Volatility 75 (1s) Index \u2014 setups, levels and live discussion.",
       "member_count": 400,
       "online_count": 4,
       "post_count": 60,
@@ -42,9 +44,11 @@
         "contract_kinds": [
           "binary",
           "multiplier"
-        ]
+        ],
+        "last_price": 542871.21,
+        "change_pct_24h": -1.17
       },
-      "description": "Everything about Volatility 75 Index — setups, levels and live discussion.",
+      "description": "Everything about Volatility 75 Index \u2014 setups, levels and live discussion.",
       "member_count": 737,
       "online_count": 21,
       "post_count": 151,
@@ -69,9 +73,11 @@
         "contract_kinds": [
           "binary",
           "multiplier"
-        ]
+        ],
+        "last_price": 1247.84,
+        "change_pct_24h": -0.82
       },
-      "description": "Everything about Volatility 100 (1s) Index — setups, levels and live discussion.",
+      "description": "Everything about Volatility 100 (1s) Index \u2014 setups, levels and live discussion.",
       "member_count": 1074,
       "online_count": 38,
       "post_count": 242,
@@ -96,9 +102,11 @@
         "contract_kinds": [
           "binary",
           "multiplier"
-        ]
+        ],
+        "last_price": 1245.1,
+        "change_pct_24h": 0.64
       },
-      "description": "Everything about Volatility 100 Index — setups, levels and live discussion.",
+      "description": "Everything about Volatility 100 Index \u2014 setups, levels and live discussion.",
       "member_count": 1411,
       "online_count": 55,
       "post_count": 333,
@@ -123,9 +131,11 @@
         "contract_kinds": [
           "binary",
           "multiplier"
-        ]
+        ],
+        "last_price": 239.14,
+        "change_pct_24h": -0.71
       },
-      "description": "Everything about Volatility 50 (1s) Index — setups, levels and live discussion.",
+      "description": "Everything about Volatility 50 (1s) Index \u2014 setups, levels and live discussion.",
       "member_count": 1748,
       "online_count": 72,
       "post_count": 424,
@@ -150,9 +160,11 @@
         "contract_kinds": [
           "binary",
           "multiplier"
-        ]
+        ],
+        "last_price": 238.76,
+        "change_pct_24h": 0.68
       },
-      "description": "Everything about Volatility 50 Index — setups, levels and live discussion.",
+      "description": "Everything about Volatility 50 Index \u2014 setups, levels and live discussion.",
       "member_count": 2085,
       "online_count": 89,
       "post_count": 515,
@@ -177,9 +189,11 @@
         "contract_kinds": [
           "binary",
           "multiplier"
-        ]
+        ],
+        "last_price": 95.21,
+        "change_pct_24h": 0.35
       },
-      "description": "Everything about Volatility 25 Index — setups, levels and live discussion.",
+      "description": "Everything about Volatility 25 Index \u2014 setups, levels and live discussion.",
       "member_count": 2422,
       "online_count": 16,
       "post_count": 606,
@@ -204,9 +218,11 @@
         "contract_kinds": [
           "binary",
           "multiplier"
-        ]
+        ],
+        "last_price": 6842.3,
+        "change_pct_24h": 0.22
       },
-      "description": "Everything about Volatility 10 Index — setups, levels and live discussion.",
+      "description": "Everything about Volatility 10 Index \u2014 setups, levels and live discussion.",
       "member_count": 2759,
       "online_count": 33,
       "post_count": 697,
@@ -230,9 +246,11 @@
         "decimal_places": 2,
         "contract_kinds": [
           "binary"
-        ]
+        ],
+        "last_price": 1602.45,
+        "change_pct_24h": -0.91
       },
-      "description": "Everything about Step Index — setups, levels and live discussion.",
+      "description": "Everything about Step Index \u2014 setups, levels and live discussion.",
       "member_count": 496,
       "online_count": 50,
       "post_count": 788,
@@ -256,9 +274,11 @@
         "decimal_places": 3,
         "contract_kinds": [
           "binary"
-        ]
+        ],
+        "last_price": 1284.66,
+        "change_pct_24h": 0.44
       },
-      "description": "Everything about Range Break 100 Index — setups, levels and live discussion.",
+      "description": "Everything about Range Break 100 Index \u2014 setups, levels and live discussion.",
       "member_count": 833,
       "online_count": 67,
       "post_count": 879,
@@ -283,9 +303,11 @@
         "contract_kinds": [
           "binary",
           "multiplier"
-        ]
+        ],
+        "last_price": 8342.11,
+        "change_pct_24h": -1.12
       },
-      "description": "Everything about Boom 1000 Index — setups, levels and live discussion.",
+      "description": "Everything about Boom 1000 Index \u2014 setups, levels and live discussion.",
       "member_count": 1170,
       "online_count": 84,
       "post_count": 150,
@@ -310,9 +332,11 @@
         "contract_kinds": [
           "binary",
           "multiplier"
-        ]
+        ],
+        "last_price": 9120.44,
+        "change_pct_24h": -0.74
       },
-      "description": "Everything about Boom 500 Index — setups, levels and live discussion.",
+      "description": "Everything about Boom 500 Index \u2014 setups, levels and live discussion.",
       "member_count": 1507,
       "online_count": 11,
       "post_count": 241,
@@ -336,9 +360,11 @@
         "decimal_places": 2,
         "contract_kinds": [
           "multiplier"
-        ]
+        ],
+        "last_price": 7418.02,
+        "change_pct_24h": -0.31
       },
-      "description": "Everything about Boom 300 Index — setups, levels and live discussion.",
+      "description": "Everything about Boom 300 Index \u2014 setups, levels and live discussion.",
       "member_count": 1844,
       "online_count": 28,
       "post_count": 332,
@@ -363,9 +389,11 @@
         "contract_kinds": [
           "binary",
           "multiplier"
-        ]
+        ],
+        "last_price": 4820.15,
+        "change_pct_24h": -0.58
       },
-      "description": "Everything about Crash 1000 Index — setups, levels and live discussion.",
+      "description": "Everything about Crash 1000 Index \u2014 setups, levels and live discussion.",
       "member_count": 2181,
       "online_count": 45,
       "post_count": 423,
@@ -390,9 +418,11 @@
         "contract_kinds": [
           "binary",
           "multiplier"
-        ]
+        ],
+        "last_price": 4291.63,
+        "change_pct_24h": 0.42
       },
-      "description": "Everything about Crash 500 Index — setups, levels and live discussion.",
+      "description": "Everything about Crash 500 Index \u2014 setups, levels and live discussion.",
       "member_count": 2518,
       "online_count": 62,
       "post_count": 514,
@@ -416,9 +446,11 @@
         "decimal_places": 2,
         "contract_kinds": [
           "multiplier"
-        ]
+        ],
+        "last_price": 6104.88,
+        "change_pct_24h": 0.19
       },
-      "description": "Everything about Crash 300 Index — setups, levels and live discussion.",
+      "description": "Everything about Crash 300 Index \u2014 setups, levels and live discussion.",
       "member_count": 2855,
       "online_count": 79,
       "post_count": 605,
@@ -443,9 +475,11 @@
         "contract_kinds": [
           "binary",
           "multiplier"
-        ]
+        ],
+        "last_price": 14028.33,
+        "change_pct_24h": -0.32
       },
-      "description": "Everything about Jump 75 Index — setups, levels and live discussion.",
+      "description": "Everything about Jump 75 Index \u2014 setups, levels and live discussion.",
       "member_count": 592,
       "online_count": 6,
       "post_count": 696,
@@ -470,9 +504,11 @@
         "contract_kinds": [
           "binary",
           "multiplier"
-        ]
+        ],
+        "last_price": 6210.9,
+        "change_pct_24h": -0.55
       },
-      "description": "Everything about Jump 100 Index — setups, levels and live discussion.",
+      "description": "Everything about Jump 100 Index \u2014 setups, levels and live discussion.",
       "member_count": 929,
       "online_count": 23,
       "post_count": 787,
@@ -496,9 +532,11 @@
         "decimal_places": 2,
         "contract_kinds": [
           "multiplier"
-        ]
+        ],
+        "last_price": 3182.77,
+        "change_pct_24h": -0.27
       },
-      "description": "Everything about Jump 25 Index — setups, levels and live discussion.",
+      "description": "Everything about Jump 25 Index \u2014 setups, levels and live discussion.",
       "member_count": 1266,
       "online_count": 40,
       "post_count": 878,
@@ -524,9 +562,11 @@
           "binary",
           "multiplier",
           "cfd_mt5"
-        ]
+        ],
+        "last_price": 1.08642,
+        "change_pct_24h": -0.21
       },
-      "description": "Everything about EUR/USD — setups, levels and live discussion.",
+      "description": "Everything about EUR/USD \u2014 setups, levels and live discussion.",
       "member_count": 1603,
       "online_count": 57,
       "post_count": 149,
@@ -552,9 +592,11 @@
           "binary",
           "multiplier",
           "cfd_mt5"
-        ]
+        ],
+        "last_price": 1.26418,
+        "change_pct_24h": 0.14
       },
-      "description": "Everything about GBP/USD — setups, levels and live discussion.",
+      "description": "Everything about GBP/USD \u2014 setups, levels and live discussion.",
       "member_count": 1940,
       "online_count": 74,
       "post_count": 240,
@@ -580,9 +622,11 @@
           "binary",
           "multiplier",
           "cfd_mt5"
-        ]
+        ],
+        "last_price": 151.284,
+        "change_pct_24h": 0.38
       },
-      "description": "Everything about USD/JPY — setups, levels and live discussion.",
+      "description": "Everything about USD/JPY \u2014 setups, levels and live discussion.",
       "member_count": 2277,
       "online_count": 91,
       "post_count": 331,
@@ -608,9 +652,11 @@
           "binary",
           "multiplier",
           "cfd_mt5"
-        ]
+        ],
+        "last_price": 0.65712,
+        "change_pct_24h": -0.26
       },
-      "description": "Everything about AUD/USD — setups, levels and live discussion.",
+      "description": "Everything about AUD/USD \u2014 setups, levels and live discussion.",
       "member_count": 2614,
       "online_count": 18,
       "post_count": 422,
@@ -636,9 +682,11 @@
           "binary",
           "multiplier",
           "cfd_mt5"
-        ]
+        ],
+        "last_price": 1.35894,
+        "change_pct_24h": -0.11
       },
-      "description": "Everything about USD/CAD — setups, levels and live discussion.",
+      "description": "Everything about USD/CAD \u2014 setups, levels and live discussion.",
       "member_count": 2951,
       "online_count": 35,
       "post_count": 513,
@@ -664,9 +712,11 @@
           "binary",
           "multiplier",
           "cfd_mt5"
-        ]
+        ],
+        "last_price": 0.90218,
+        "change_pct_24h": 0.07
       },
-      "description": "Everything about USD/CHF — setups, levels and live discussion.",
+      "description": "Everything about USD/CHF \u2014 setups, levels and live discussion.",
       "member_count": 688,
       "online_count": 52,
       "post_count": 604,
@@ -691,9 +741,11 @@
         "contract_kinds": [
           "binary",
           "cfd_mt5"
-        ]
+        ],
+        "last_price": 0.60184,
+        "change_pct_24h": -0.19
       },
-      "description": "Everything about NZD/USD — setups, levels and live discussion.",
+      "description": "Everything about NZD/USD \u2014 setups, levels and live discussion.",
       "member_count": 1025,
       "online_count": 69,
       "post_count": 695,
@@ -718,9 +770,11 @@
         "contract_kinds": [
           "binary",
           "cfd_mt5"
-        ]
+        ],
+        "last_price": 0.85922,
+        "change_pct_24h": 0.09
       },
-      "description": "Everything about EUR/GBP — setups, levels and live discussion.",
+      "description": "Everything about EUR/GBP \u2014 setups, levels and live discussion.",
       "member_count": 1362,
       "online_count": 86,
       "post_count": 786,
@@ -745,9 +799,11 @@
         "contract_kinds": [
           "binary",
           "cfd_mt5"
-        ]
+        ],
+        "last_price": 164.372,
+        "change_pct_24h": -0.44
       },
-      "description": "Everything about EUR/JPY — setups, levels and live discussion.",
+      "description": "Everything about EUR/JPY \u2014 setups, levels and live discussion.",
       "member_count": 1699,
       "online_count": 13,
       "post_count": 877,
@@ -771,9 +827,11 @@
         "decimal_places": 3,
         "contract_kinds": [
           "cfd_mt5"
-        ]
+        ],
+        "last_price": 191.246,
+        "change_pct_24h": 0.52
       },
-      "description": "Everything about GBP/JPY — setups, levels and live discussion.",
+      "description": "Everything about GBP/JPY \u2014 setups, levels and live discussion.",
       "member_count": 2036,
       "online_count": 30,
       "post_count": 148,
@@ -798,9 +856,11 @@
         "contract_kinds": [
           "multiplier",
           "cfd_mt5"
-        ]
+        ],
+        "last_price": 68420.5,
+        "change_pct_24h": -2.14
       },
-      "description": "Everything about Bitcoin / USD — setups, levels and live discussion.",
+      "description": "Everything about Bitcoin / USD \u2014 setups, levels and live discussion.",
       "member_count": 2373,
       "online_count": 47,
       "post_count": 239,
@@ -825,9 +885,11 @@
         "contract_kinds": [
           "multiplier",
           "cfd_mt5"
-        ]
+        ],
+        "last_price": 3542.18,
+        "change_pct_24h": 1.68
       },
-      "description": "Everything about Ethereum / USD — setups, levels and live discussion.",
+      "description": "Everything about Ethereum / USD \u2014 setups, levels and live discussion.",
       "member_count": 2710,
       "online_count": 64,
       "post_count": 330,
@@ -852,9 +914,11 @@
         "contract_kinds": [
           "multiplier",
           "cfd_mt5"
-        ]
+        ],
+        "last_price": 172.44,
+        "change_pct_24h": 3.42
       },
-      "description": "Everything about Solana / USD — setups, levels and live discussion.",
+      "description": "Everything about Solana / USD \u2014 setups, levels and live discussion.",
       "member_count": 447,
       "online_count": 81,
       "post_count": 421,
@@ -879,9 +943,11 @@
         "contract_kinds": [
           "multiplier",
           "cfd_mt5"
-        ]
+        ],
+        "last_price": 0.6284,
+        "change_pct_24h": 1.12
       },
-      "description": "Everything about XRP / USD — setups, levels and live discussion.",
+      "description": "Everything about XRP / USD \u2014 setups, levels and live discussion.",
       "member_count": 784,
       "online_count": 8,
       "post_count": 512,
@@ -906,9 +972,11 @@
         "contract_kinds": [
           "multiplier",
           "cfd_mt5"
-        ]
+        ],
+        "last_price": 84.62,
+        "change_pct_24h": 0.94
       },
-      "description": "Everything about Litecoin / USD — setups, levels and live discussion.",
+      "description": "Everything about Litecoin / USD \u2014 setups, levels and live discussion.",
       "member_count": 1121,
       "online_count": 25,
       "post_count": 603,
@@ -932,9 +1000,11 @@
         "decimal_places": 2,
         "contract_kinds": [
           "cfd_mt5"
-        ]
+        ],
+        "last_price": 452.18,
+        "change_pct_24h": -0.63
       },
-      "description": "Everything about Bitcoin Cash / USD — setups, levels and live discussion.",
+      "description": "Everything about Bitcoin Cash / USD \u2014 setups, levels and live discussion.",
       "member_count": 1458,
       "online_count": 42,
       "post_count": 694,
@@ -958,9 +1028,11 @@
         "decimal_places": 4,
         "contract_kinds": [
           "cfd_mt5"
-        ]
+        ],
+        "last_price": 0.4482,
+        "change_pct_24h": 1.24
       },
-      "description": "Everything about Cardano / USD — setups, levels and live discussion.",
+      "description": "Everything about Cardano / USD \u2014 setups, levels and live discussion.",
       "member_count": 1795,
       "online_count": 59,
       "post_count": 785,
@@ -984,9 +1056,11 @@
         "decimal_places": 4,
         "contract_kinds": [
           "cfd_mt5"
-        ]
+        ],
+        "last_price": 0.1642,
+        "change_pct_24h": 4.18
       },
-      "description": "Everything about Dogecoin / USD — setups, levels and live discussion.",
+      "description": "Everything about Dogecoin / USD \u2014 setups, levels and live discussion.",
       "member_count": 2132,
       "online_count": 76,
       "post_count": 876,
@@ -1012,9 +1086,11 @@
           "binary",
           "multiplier",
           "cfd_mt5"
-        ]
+        ],
+        "last_price": 2342.18,
+        "change_pct_24h": -0.68
       },
-      "description": "Everything about Gold / USD — setups, levels and live discussion.",
+      "description": "Everything about Gold / USD \u2014 setups, levels and live discussion.",
       "member_count": 2469,
       "online_count": 93,
       "post_count": 147,
@@ -1040,9 +1116,11 @@
           "binary",
           "multiplier",
           "cfd_mt5"
-        ]
+        ],
+        "last_price": 27.842,
+        "change_pct_24h": 1.14
       },
-      "description": "Everything about Silver / USD — setups, levels and live discussion.",
+      "description": "Everything about Silver / USD \u2014 setups, levels and live discussion.",
       "member_count": 2806,
       "online_count": 20,
       "post_count": 238,
@@ -1066,9 +1144,11 @@
         "decimal_places": 2,
         "contract_kinds": [
           "cfd_mt5"
-        ]
+        ],
+        "last_price": 962.4,
+        "change_pct_24h": 0.42
       },
-      "description": "Everything about Platinum / USD — setups, levels and live discussion.",
+      "description": "Everything about Platinum / USD \u2014 setups, levels and live discussion.",
       "member_count": 543,
       "online_count": 37,
       "post_count": 329,
@@ -1092,9 +1172,11 @@
         "decimal_places": 2,
         "contract_kinds": [
           "cfd_mt5"
-        ]
+        ],
+        "last_price": 1024.6,
+        "change_pct_24h": 0.31
       },
-      "description": "Everything about Palladium / USD — setups, levels and live discussion.",
+      "description": "Everything about Palladium / USD \u2014 setups, levels and live discussion.",
       "member_count": 880,
       "online_count": 54,
       "post_count": 420,
@@ -1119,9 +1201,11 @@
         "contract_kinds": [
           "multiplier",
           "cfd_mt5"
-        ]
+        ],
+        "last_price": 78.42,
+        "change_pct_24h": 0.88
       },
-      "description": "Everything about Crude Oil / USD — setups, levels and live discussion.",
+      "description": "Everything about Crude Oil / USD \u2014 setups, levels and live discussion.",
       "member_count": 1217,
       "online_count": 71,
       "post_count": 511,
@@ -1146,9 +1230,11 @@
         "contract_kinds": [
           "multiplier",
           "cfd_mt5"
-        ]
+        ],
+        "last_price": 5284.42,
+        "change_pct_24h": 0.42
       },
-      "description": "Everything about US 500 — setups, levels and live discussion.",
+      "description": "Everything about US 500 \u2014 setups, levels and live discussion.",
       "member_count": 1554,
       "online_count": 88,
       "post_count": 602,
@@ -1173,9 +1259,11 @@
         "contract_kinds": [
           "multiplier",
           "cfd_mt5"
-        ]
+        ],
+        "last_price": 18420.6,
+        "change_pct_24h": -0.88
       },
-      "description": "Everything about US Tech 100 — setups, levels and live discussion.",
+      "description": "Everything about US Tech 100 \u2014 setups, levels and live discussion.",
       "member_count": 1891,
       "online_count": 15,
       "post_count": 693,
@@ -1200,9 +1288,11 @@
         "contract_kinds": [
           "multiplier",
           "cfd_mt5"
-        ]
+        ],
+        "last_price": 39284.1,
+        "change_pct_24h": 0.24
       },
-      "description": "Everything about Wall Street 30 — setups, levels and live discussion.",
+      "description": "Everything about Wall Street 30 \u2014 setups, levels and live discussion.",
       "member_count": 2228,
       "online_count": 32,
       "post_count": 784,
@@ -1226,9 +1316,11 @@
         "decimal_places": 2,
         "contract_kinds": [
           "cfd_mt5"
-        ]
+        ],
+        "last_price": 8142.3,
+        "change_pct_24h": 0.18
       },
-      "description": "Everything about UK 100 — setups, levels and live discussion.",
+      "description": "Everything about UK 100 \u2014 setups, levels and live discussion.",
       "member_count": 2565,
       "online_count": 49,
       "post_count": 875,
@@ -1252,9 +1344,11 @@
         "decimal_places": 2,
         "contract_kinds": [
           "cfd_mt5"
-        ]
+        ],
+        "last_price": 18642.8,
+        "change_pct_24h": 0.62
       },
-      "description": "Everything about Germany 40 — setups, levels and live discussion.",
+      "description": "Everything about Germany 40 \u2014 setups, levels and live discussion.",
       "member_count": 2902,
       "online_count": 66,
       "post_count": 146,
@@ -1278,9 +1372,11 @@
         "decimal_places": 2,
         "contract_kinds": [
           "cfd_mt5"
-        ]
+        ],
+        "last_price": 38420.5,
+        "change_pct_24h": -0.36
       },
-      "description": "Everything about Japan 225 — setups, levels and live discussion.",
+      "description": "Everything about Japan 225 \u2014 setups, levels and live discussion.",
       "member_count": 639,
       "online_count": 83,
       "post_count": 237,
@@ -1304,9 +1400,11 @@
         "decimal_places": 2,
         "contract_kinds": [
           "cfd_mt5"
-        ]
+        ],
+        "last_price": 7842.1,
+        "change_pct_24h": -0.29
       },
-      "description": "Everything about Australia 200 — setups, levels and live discussion.",
+      "description": "Everything about Australia 200 \u2014 setups, levels and live discussion.",
       "member_count": 976,
       "online_count": 10,
       "post_count": 328,

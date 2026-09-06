@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Dashboard — MarketBridge</title>
-<meta name="theme-color" content="#0A0E12">
+<title>VYBE — VYBE</title>
+<meta name="theme-color" content="#080B0F">
 <link rel="manifest" href="../manifest.webmanifest">
 <link rel="icon" href="../assets/icons/favicon-32.png" sizes="32x32">
 <link rel="apple-touch-icon" href="../assets/icons/apple-touch-icon.png">
@@ -15,48 +15,36 @@
 <link rel="stylesheet" href="../assets/css/base.css">
 <link rel="stylesheet" href="../assets/css/components.css">
 <link rel="stylesheet" href="../assets/css/app.css">
-<script>(function(){try{var t=localStorage.getItem('mb.theme');if(t){document.documentElement.setAttribute('data-theme',t);}}catch(e){}})();</script>
+<script>(function(){var t='dark';try{t=localStorage.getItem('mb.theme')||'dark';}catch(e){}var m=/[?&]theme=(dark|light|system)/.exec(location.search);if(m){t=m[1];}if(t!=='system'){document.documentElement.setAttribute('data-theme',t);}})();</script>
 </head>
 <body data-shell="app" data-nav="home" data-root="../" data-unread="3">
 
 <div class="app">
-
   <div data-render="topbar"></div>
-
   <main class="page">
 
-    <!-- ==============================================================
-         BALANCE — a cached read of Deriv, with its timestamp
-         =============================================================== -->
-    <section class="balance">
-      <div class="between">
-        <div>
-          <div class="balance-head">
-            <span class="balance-label">Deriv Real Account</span>
-            <button class="icon-btn" id="btnHide" aria-label="Hide balance"
-                    style="width:22px;height:22px"><span data-icon="eye" data-icon-size="15"></span></button>
-          </div>
-          <div class="balance-amount" id="balanceAmount">$2,450.80</div>
-          <div class="balance-stamp" id="balanceStamp">Updated just now</div>
-        </div>
-        <select class="select none" style="width:auto;height:36px;padding:0 34px 0 12px;font-size:13px">
-          <option>USD</option>
-        </select>
+    <!-- Total balance across every connected Deriv account -->
+    <section class="total-balance">
+      <div class="tb-head">
+        <span class="tb-label">Total Balance</span>
+        <button class="icon-btn" id="btnHide" aria-label="Hide balance"
+                style="width:24px;height:24px"><span data-icon="eye" data-icon-size="15"></span></button>
+        <a class="tb-all" href="wallet/accounts.html">All balances <span data-icon="chevright"></span></a>
       </div>
+      <div class="tb-amount" id="tbAmount">$0.00<span class="cur">USD</span></div>
+      <div class="tb-stamp" id="tbStamp"><span data-icon="clock"></span> <span>Updating…</span></div>
+      <span class="tb-spark"><span data-spark="up" data-seed="totalbal" data-h="52" data-sw="2"></span></span>
 
-      <div class="balance-actions">
+      <div class="tb-actions">
         <a class="btn btn-primary" href="wallet/deposit.html">
-          <span data-icon="download"></span> Deposit
-        </a>
-        <a class="btn btn-ghost" href="wallet/withdraw.html">
-          <span data-icon="upload"></span> Withdraw
-        </a>
+          <span data-icon="download"></span> Deposit</a>
+        <a class="btn btn-sell" href="wallet/withdraw.html">
+          <span data-icon="upload"></span> Withdraw</a>
+        <a class="btn btn-ghost" href="wallet/transfer.html">
+          <span data-icon="refresh"></span> Transfer</a>
       </div>
     </section>
 
-    <!-- ==============================================================
-         QUICK ACTIONS
-         =============================================================== -->
     <nav class="quick" aria-label="Quick actions">
       <a class="quick-item q-trade" href="trade/index.html">
         <span data-icon="markets"></span><span>Trade</span></a>
@@ -70,24 +58,15 @@
         <span data-icon="resources"></span><span>Resources</span></a>
     </nav>
 
-    <!-- ==============================================================
-         POPULAR MARKETS
-         =============================================================== -->
     <section class="page-section">
-      <div class="sec-head">
-        <h2>Popular Markets</h2>
-        <a href="markets/index.html">View all</a>
-      </div>
+      <div class="sec-head"><h2>Popular Markets</h2>
+        <a href="markets/index.html">View all</a></div>
       <div class="hscroll" id="popularMarkets"></div>
     </section>
 
-    <!-- ==============================================================
-         TRADE NOW — modules gated by the capability registry
-         =============================================================== -->
     <section class="page-section">
       <div class="sec-head"><h2>Trade Now</h2>
-        <a href="trade/index.html">Contract types</a></div>
-
+        <a href="trade/index.html">View all contracts</a></div>
       <div class="chips" data-group id="famChips">
         <button class="chip is-active" data-value="popular">Popular</button>
         <button class="chip" data-value="synthetic_indices">Synthetics</button>
@@ -95,52 +74,42 @@
         <button class="chip" data-value="forex">Forex</button>
         <button class="chip" data-value="crypto">Crypto</button>
         <button class="chip" data-value="commodities">Commodities</button>
-        <button class="chip" data-value="stock_indices">Indices</button>
       </div>
-
       <div class="stack g2" id="tradeMarkets"></div>
-      <a class="btn btn-ghost btn-block btn-sm" id="tradeMore" href="markets/index.html">
-        <span data-icon="markets"></span> Browse all markets</a>
     </section>
 
-    <!-- ==============================================================
-         LIVE SIGNALS
-         =============================================================== -->
+    <!-- Brand CTA: red, and it never buys anything -->
+    <a class="install-card" href="signals/index.html">
+      <span class="ic-mark" style="color:var(--mb-green)"><span data-icon="flame" data-icon-size="22"></span></span>
+      <span class="grow">
+        <span class="ic-t">Trade Executable Signals</span>
+        <span class="ic-d">Open pre-filled tickets with one tap.</span>
+      </span>
+      <span class="btn btn-brand btn-sm none">View live signals</span>
+    </a>
+
     <section class="page-section">
-      <div class="sec-head">
-        <h2><span style="color:var(--mb-warn)">&#128293;</span> Live Signals</h2>
-        <a href="signals/index.html">View all</a>
-      </div>
+      <div class="sec-head"><h2>Live Signals</h2>
+        <a href="signals/index.html">View all</a></div>
       <div class="stack g3" id="liveSignals"></div>
     </section>
 
-    <!-- ==============================================================
-         COMMUNITY FEED
-         =============================================================== -->
     <section class="page-section">
-      <div class="sec-head">
-        <h2>Community Feed</h2>
-        <a href="community/index.html">View all</a>
-      </div>
+      <div class="sec-head"><h2>Community Feed</h2>
+        <a href="community/index.html">View all</a></div>
       <div class="stack g3" id="communityFeed"></div>
     </section>
 
-    <!-- ==============================================================
-         INSTALL PROMPT (hidden once installed)
-         =============================================================== -->
-    <section class="card" data-install-block style="border-color:var(--mb-green-line)">
-      <div class="row g3">
-        <span class="none" style="color:var(--mb-green)" data-icon="phone" data-icon-size="24"></span>
-        <div class="grow">
-          <div class="t-sm w-bold">Install MarketBridge</div>
-          <div class="t-xs c-2">Full screen, offline-ready, straight from your home screen.</div>
-        </div>
-        <button class="btn btn-green-soft btn-sm none" data-install>Install</button>
-      </div>
+    <section class="install-card" data-install-block>
+      <span class="ic-mark" id="installMark"></span>
+      <span class="grow">
+        <span class="ic-t">Install VYBE</span>
+        <span class="ic-d">Full screen. Offline-ready. Straight from your home screen.</span>
+      </span>
+      <button class="btn btn-brand btn-sm none" data-install>
+        <span data-icon="download"></span> Install Now</button>
     </section>
-
   </main>
-
   <div data-render="tabbar"></div>
 </div>
 
@@ -154,93 +123,82 @@
 <script src="../assets/js/core/shell.js"></script>
 <script src="../assets/js/core/pwa.js"></script>
 <script>
-MB.ready(function () {
 
-  /* ---- Balance ------------------------------------------------------ */
-  MB.api.get('me').then(function (r) {
-    var d = r.data.deriv;
-    document.getElementById('balanceAmount').textContent = MB.fmt.money(d.balance, d.currency);
-    var stamp = document.getElementById('balanceStamp');
+MB.ready(function () {
+  document.getElementById('installMark').innerHTML = MB.brandMark(26);
+  MB.mountIcons();
+
+  /* ---- total balance — a cached read across every real account -------- */
+  MB.api.get('accounts').then(function (r) {
+    var m = r.meta;
+    document.getElementById('tbAmount').innerHTML =
+      MB.fmt.money(m.total_balance) + '<span class="cur">' + m.currency + '</span>';
+    var stamp = document.getElementById('tbStamp');
     var paint = function () {
-      var age = Date.now() - new Date(d.balance_updated_at).getTime();
-      stamp.textContent = 'Updated ' + (age < 60000 ? 'just now' : MB.fmt.ago(d.balance_updated_at));
-      /* Deriv is the source of truth — say so when our copy is old. */
-      stamp.classList.toggle('is-stale', age > 120000);
+      var age = Date.now() - new Date(m.recorded_at).getTime();
+      stamp.querySelector('span:last-child').textContent =
+        'Updated ' + (age < 60000 ? 'just now' : MB.fmt.ago(m.recorded_at));
+      /* Deriv is authoritative — say so when our copy is old. */
+      stamp.classList.toggle('is-stale', age > 6 * 3600 * 1000);
     };
     paint();
-    setInterval(paint, 30000);
+    setInterval(paint, 60000);
   });
 
   var hidden = false;
   document.getElementById('btnHide').addEventListener('click', function () {
     hidden = !hidden;
-    var el = document.getElementById('balanceAmount');
-    el.style.filter = hidden ? 'blur(9px)' : '';
+    document.getElementById('tbAmount').style.filter = hidden ? 'blur(10px)' : '';
     this.innerHTML = MB.icon(hidden ? 'eyeoff' : 'eye', 15);
   });
 
-  /* ---- Popular markets ---------------------------------------------- */
-  MB.render({
-    into: '#popularMarkets', from: 'markets', limit: 8,
-    template: MB.card.market, skeleton: false
+  /* ---- popular markets ------------------------------------------------ */
+  /* One market from each category before repeating, so the rail shows the
+     whole board — forex and crypto chips alongside the synthetics, and
+     whatever is actually down today in red. Taking the first 8 rows gave a
+     wall of green volatility indices. */
+  MB.api.list('markets').then(function (rows) {
+    var byCat = {}, order = [];
+    rows.forEach(function (m) {
+      if (!byCat[m.category]) { byCat[m.category] = []; order.push(m.category); }
+      byCat[m.category].push(m);
+    });
+    var picked = [], i = 0;
+    while (picked.length < 10) {
+      var added = false;
+      order.forEach(function (c) {
+        if (picked.length < 10 && byCat[c][i]) { picked.push(byCat[c][i]); added = true; }
+      });
+      if (!added) { break; }
+      i++;
+    }
+    var host = MB.$('#popularMarkets');
+    host.innerHTML = picked.map(MB.card.market).join('');
+    MB.mountIcons(host); MB.mountCharts(host); MB.mountTicks(host);
   });
 
-  /* ---- Trade Now — browse markets by category -----------------------
-     Each row shows what can actually be executed on that market, and
-     leads to the market page where trading, signals, analysis and the
-     room all live together. */
-  var KIND_LABEL = { binary: 'Binary', multiplier: 'Multipliers', cfd_mt5: 'CFD' };
-
-  function marketRow(m) {
-    var up = m.stats.change_pct_24h >= 0;
-    var kinds = (m.contract_kinds || []).map(function (k) {
-      return '<span class="chip-tag" style="font-size:9px;padding:2px 6px">' +
-             (KIND_LABEL[k] || k) + '</span>';
-    }).join('');
-    return '<a class="room-card" href="markets/detail.html?symbol=' + m.symbol + '">' +
-      '<span class="rc-ic" style="color:var(--mb-' + (up ? 'green' : 'sell') + ')">' +
-        MB.esc(m.icon_key) + '</span>' +
-      '<span class="grow" style="min-width:0">' +
-        '<span class="rc-n truncate" style="display:block">' + MB.esc(m.short_name) + '</span>' +
-        '<span class="row g1" style="margin-top:3px">' + kinds + '</span>' +
-      '</span>' +
-      '<span class="none" style="text-align:right">' +
-        '<span class="t-sm w-bold num" style="display:block" data-tick="' + m.symbol +
-          '" data-tick-dp="' + m.decimal_places + '">' +
-          MB.fmt.price(m.stats.last_price, m.decimal_places) + '</span>' +
-        '<span class="t-xs w-bold num ' + (up ? 'c-up' : 'c-down') + '">' +
-          MB.fmt.pct(m.stats.change_pct_24h) + '</span>' +
-      '</span></a>';
-  }
-
+  /* ---- trade now — browse markets by category ------------------------- */
   var tradeCol = MB.collection({
-    from: 'markets', into: '#tradeMarkets', template: marketRow,
-    perPage: 5, mode: 'more', skeleton: false,
+    from: 'markets', into: '#tradeMarkets', template: MB.card.mktRow,
+    perPage: 4, mode: 'more', skeleton: false,
     initial: { category: 'popular' },
-    filters: {
-      category: function (m, v) { return v === 'popular' ? m.is_favorite : m.category === v; }
-    },
+    filters: { category: function (m, v) {
+      return v === 'popular' ? m.is_favorite : m.category === v; } },
     emptyIcon: 'markets', emptyTitle: 'Nothing here',
     emptyText: 'No markets in this category yet.'
   });
   tradeCol.bind('#famChips', 'category');
 
-  /* ---- Live signals — compact cards, both species -------------------- */
-  MB.render({
-    into: '#liveSignals', from: 'signals', limit: 4, skeletonCount: 3,
+  MB.render({ into: '#liveSignals', from: 'signals', limit: 3, skeletonCount: 3,
     filter: function (s) { return s.status === 'active'; },
     template: MB.card.sig,
     emptyIcon: 'signals', emptyTitle: 'No live signals',
-    emptyText: 'When traders you follow post, their signals appear here.'
-  });
+    emptyText: 'When traders you follow post, their signals appear here.' });
 
-  /* ---- Community feed ------------------------------------------------ */
-  MB.render({
-    into: '#communityFeed', from: 'posts', limit: 3, skeletonCount: 2,
+  MB.render({ into: '#communityFeed', from: 'posts', limit: 3, skeletonCount: 2,
     template: MB.card.post,
     emptyIcon: 'community', emptyTitle: 'Quiet in here',
-    emptyText: 'Follow some traders or join a market room to fill your feed.'
-  });
+    emptyText: 'Follow some traders or join a market room.' });
 });
 </script>
 </body>

@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Leaderboard — MarketBridge</title>
-<meta name="theme-color" content="#0A0E12">
+<title>Leaderboard — VYBE</title>
+<meta name="theme-color" content="#080B0F">
 <link rel="manifest" href="../../manifest.webmanifest">
 <link rel="icon" href="../../assets/icons/favicon-32.png" sizes="32x32">
 <link rel="apple-touch-icon" href="../../assets/icons/apple-touch-icon.png">
@@ -15,7 +15,7 @@
 <link rel="stylesheet" href="../../assets/css/base.css">
 <link rel="stylesheet" href="../../assets/css/components.css">
 <link rel="stylesheet" href="../../assets/css/app.css">
-<script>(function(){try{var t=localStorage.getItem('mb.theme');if(t){document.documentElement.setAttribute('data-theme',t);}}catch(e){}})();</script>
+<script>(function(){var t='dark';try{t=localStorage.getItem('mb.theme')||'dark';}catch(e){}var m=/[?&]theme=(dark|light|system)/.exec(location.search);if(m){t=m[1];}if(t!=='system'){document.documentElement.setAttribute('data-theme',t);}})();</script>
 </head>
 <body data-shell="app" data-nav="home" data-root="../../" data-title="Leaderboard" data-sub="Minimum sample required to rank" data-back="index.html" data-unread="3">
 
@@ -42,6 +42,10 @@
       winning signal is 100% — and not a rank.</div>
     </div>
 
+    <div class="filter-row">
+      <span class="filter-count"><span id="lbCount">0</span> ranked</span>
+    </div>
+
     <section class="list" id="lbList"></section>
   </main>
 
@@ -60,11 +64,32 @@
 <script>
 
 MB.ready(function () {
-  MB.render({ into: '#lbList', from: 'leaderboard',
-    filter: function (r) { return r.min_sample_met; },
-    template: MB.card.leaderRow, skeleton: false,
+  /* The board chips and the period segment were rendered but wired to
+     nothing, and 24 ranked providers were rendered in one unbroken list. */
+  var lb = MB.collection({
+    from: 'leaderboard', into: '#lbList', template: MB.card.leaderRow,
+    perPage: 10, mode: 'pages', countInto: '#lbCount', skeleton: false,
+    initial: { board: 'top_signal_providers', window: '30d' },
+    prepare: function (rows) {
+      return rows.filter(function (r) { return r.min_sample_met; });
+    },
+    filters: {
+      /* Each board ranks the same people by a different measure, so the
+         filter passes everything and the sort below does the work. */
+      board: function () { return true; },
+      window: function () { return true; }
+    },
+    sort: function (a, b) {
+      var board = lb ? lb.get('board') : 'top_signal_providers';
+      if (board === 'top_traders')   { return b.total_pl - a.total_pl; }
+      if (board === 'most_followed') { return b.followers - a.followers; }
+      return b.win_rate - a.win_rate;
+    },
     emptyIcon: 'results', emptyTitle: 'Nobody ranked yet',
-    emptyText: 'Providers appear once they meet the minimum sample.' });
+    emptyText: 'Providers appear once they meet the minimum sample.'
+  });
+  lb.bind('#lbBoard', 'board');
+  lb.bind('#lbWindow', 'window');
 });
 </script>
 </body>

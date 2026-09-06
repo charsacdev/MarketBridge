@@ -1,0 +1,24 @@
+{
+  "data": {
+    "connected": true,
+    "deriv_id": "CR1234567",
+    "name": "John David",
+    "email_masked": "j***@example.com",
+    "country": "NG",
+    "currency": "USD",
+    "account_type": "real",
+    "status": "active",
+    "scopes_granted": [
+      "read",
+      "trade",
+      "payments"
+    ],
+    "scopes_denied": [
+      "admin"
+    ],
+    "accounts_found": 4,
+    "token_stored": true,
+    "token_expires_at": "2027-09-06T08:30:00.000Z",
+    "connected_at": "2026-09-06T08:30:00.000Z"
+  }
+}

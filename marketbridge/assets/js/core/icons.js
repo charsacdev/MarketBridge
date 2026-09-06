@@ -1,5 +1,5 @@
 /* ==========================================================================
-   MARKETBRIDGE — ICONS
+   VYBE — ICONS
    Inline SVG strings. Inlined rather than sprited so the app renders
    correctly from file://, from the network, and from the service-worker
    cache with no extra request.

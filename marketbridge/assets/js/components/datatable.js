@@ -1,5 +1,5 @@
 /* ==========================================================================
-   MARKETBRIDGE — DATATABLE (admin)
+   VYBE — DATATABLE (admin)
    Sortable columns, live search, per-page control, status filters and real
    pagination. Everything happens client-side here; in Stage 2 the same
    surface is driven by a Livewire component with server-side paging, and the
@@ -193,6 +193,7 @@
         '<div class="dt-scroll"><table class="data">' + head() + body() + '</table></div>' +
         pager() + '</div>';
       MB.mountIcons(host);
+      if (MB.applyPermissions) { MB.applyPermissions(host); }
       wire();
       if (o.done) { o.done(view, host); }
     }
@@ -284,6 +285,7 @@
       host.innerHTML = '<div class="empty">' + MB.icon('warning', 46) +
         '<h3>Could not load</h3><p>Serve this folder over HTTP so the data can load.</p></div>';
       MB.mountIcons(host);
+      if (MB.applyPermissions) { MB.applyPermissions(host); }
     });
 
     return {
@@ -292,4 +294,56 @@
       selected: function () { return Object.keys(selected).filter(function (k) { return selected[k]; }); }
     };
   };
+
+  /* ==========================================================================
+     STAT SLIDER
+     A horizontally scrollable band of stat cards with arrow controls, used
+     wherever a page has more numbers than fit across. Hoisted out of the
+     individual staff pages so all three portals render it identically.
+
+       MB.statSlider('#stats', 'Overview', [
+         { k: 'Users', v: '24,500', d: 4.2 },          // d = delta %
+         { k: 'Pending', v: 32, tone: 'warn', note: 'awaiting approval' },
+         { k: 'Markets', v: 49, spark: false }
+       ]);
+     ========================================================================== */
+  MB.statSlider = function (host, title, cards) {
+    var el = typeof host === 'string' ? MB.$(host) : host;
+    if (!el) { return; }
+
+    el.innerHTML =
+      '<div class="statslider">' +
+        '<div class="statslider-head"><h2>' + MB.esc(title) + '</h2>' +
+          '<div class="statslider-nav">' +
+            '<button data-sl="prev" aria-label="Scroll left">' + MB.icon('chevleft', 15) + '</button>' +
+            '<button data-sl="next" aria-label="Scroll right">' + MB.icon('chevright', 15) + '</button>' +
+          '</div></div>' +
+        '<div class="statslider-track">' + cards.map(function (c) {
+          return '<div class="stat-card' + (c.tone ? ' is-' + c.tone : '') + '">' +
+            '<div class="sc-k">' + MB.esc(c.k) + '</div>' +
+            '<div class="sc-v">' + c.v + '</div>' +
+            (c.d !== undefined
+              ? '<div class="sc-d ' + (c.d >= 0 ? 'c-up' : 'c-down') + '">' +
+                MB.icon(c.d >= 0 ? 'trendup' : 'trenddown', 13) + MB.fmt.pct(c.d) + '</div>'
+              : c.note ? '<div class="sc-d c-3">' + MB.esc(c.note) + '</div>' : '') +
+            (c.spark === false ? '' :
+              '<div class="sc-spark"><span data-spark="' +
+              (c.d >= 0 || c.d === undefined ? 'up' : 'down') +
+              '" data-seed="' + MB.esc(c.k) + '" data-h="30" data-sw="2"></span></div>') +
+          '</div>';
+        }).join('') + '</div>' +
+      '</div>';
+
+    MB.mountIcons(el);
+    if (MB.mountCharts) { MB.mountCharts(el); }
+
+    var track = el.querySelector('.statslider-track');
+    MB.$$('[data-sl]', el).forEach(function (b) {
+      b.addEventListener('click', function () {
+        var dir = b.getAttribute('data-sl') === 'next' ? 1 : -1;
+        track.scrollBy({ left: dir * (track.clientWidth * 0.8), behavior: 'smooth' });
+      });
+    });
+  };
+
 })(window);

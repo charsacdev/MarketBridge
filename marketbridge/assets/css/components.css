@@ -4,24 +4,38 @@
    ========================================================================== */
 
 /* ==========================================================================
-   BRAND MARK
+   VYBE WORDMARK
+   Set in type rather than an image: re-themes, stays crisp, selectable.
+   V teal · Y white · B red · E white, with the lockup line beneath.
    ========================================================================== */
-.brand { display: inline-flex; align-items: center; gap: 10px; }
-.brand-mark { width: 32px; height: auto; flex: none; color: var(--mb-green); }
-.brand-text { display: flex; flex-direction: column; line-height: 1; }
-.brand-name {
-  font-size: 17px; font-weight: var(--mb-w-black); letter-spacing: -.03em;
-  white-space: nowrap;
+.vybe-lockup { display: flex; flex-direction: column; line-height: 1; }
+.vybe-word {
+  font-size: 26px; font-weight: var(--mb-w-black);
+  letter-spacing: .06em; line-height: 1; white-space: nowrap;
+  display: inline-flex;
 }
-.brand-name .a { color: var(--mb-green); }
-.brand-name .b { color: var(--mb-text); }
-.brand-tag {
-  font-size: 9px; color: var(--mb-text-2); letter-spacing: .06em;
-  margin-top: 3px; font-weight: var(--mb-w-medium);
+.vybe-word .l-v { color: var(--vy-teal); }
+.vybe-word .l-y { color: var(--mb-text); }
+.vybe-word .l-b { color: var(--vy-brand); }
+.vybe-word .l-e { color: var(--mb-text); }
+.vybe-sub {
+  font-size: 8px; letter-spacing: .22em; font-weight: var(--mb-w-bold);
+  color: var(--mb-text-3); margin-top: 4px; white-space: nowrap;
 }
-.brand-lg .brand-mark { width: 42px; height: 42px; }
-.brand-lg .brand-name { font-size: 24px; }
-.brand-lg .brand-tag { font-size: 11px; }
+
+.brand-lg .vybe-word { font-size: 40px; }
+.brand-lg .vybe-sub  { font-size: 10px; margin-top: 6px; }
+.brand-sm .vybe-word { font-size: 20px; }
+.brand-sm .vybe-sub  { font-size: 7px; letter-spacing: .18em; margin-top: 3px; }
+
+.brand-mark { width: 30px; height: auto; flex: none; color: var(--vy-brand); }
+
+/* The supplied logo.png is 1967x800. Sizing it by HEIGHT keeps that ratio
+   and stops it filling whatever container it lands in — base.css gives every
+   image max-width:100%, which is not a size, only a ceiling. */
+.brand-img { height: 30px; width: auto; max-width: 60%; display: block; }
+.brand-lg .brand-img, .brand-img.brand-lg { height: 42px; }
+.brand-sm .brand-img, .brand-img.brand-sm { height: 22px; }
 
 /* ==========================================================================
    BUTTONS
@@ -45,14 +59,35 @@
 .btn[disabled], .btn.is-disabled { opacity: .45; pointer-events: none; }
 .btn svg { width: 18px; height: 18px; flex: none; }
 
+/* GREEN — trade actions only. A green button buys, confirms or opens a
+   position. Never use it for account or marketing calls to action. */
 .btn-primary { background: var(--mb-green); color: var(--mb-text-inv); }
 .btn-primary:hover { background: var(--mb-green-2); }
+.btn-trade { background: var(--mb-green); color: var(--mb-text-inv); }
+.btn-trade:hover { background: var(--mb-green-2); }
 
-.btn-sell { background: var(--mb-sell); color: #fff; }
+/* RED, brand — marketing and account calls to action. Create account,
+   install, view live signals. A brand button never buys. */
+.btn-brand { background: var(--vy-brand); color: var(--mb-text-on-red); }
+.btn-brand:hover { background: var(--vy-brand-2); }
+
+/* RED, semantic — sell, withdraw, destructive. */
+.btn-sell { background: var(--mb-sell); color: var(--mb-text-on-red); }
 .btn-sell:hover { filter: brightness(1.08); }
 
-.btn-info { background: var(--mb-info); color: #fff; }
+/* RED, analysis — View Market on an analysis signal. */
+.btn-analysis { background: var(--mb-analysis); color: var(--mb-text-on-red); }
+.btn-analysis:hover { filter: brightness(1.08); }
+
+/* Kept for informational links only; not an action colour in this identity. */
+.btn-info { background: var(--mb-analysis); color: var(--mb-text-on-red); }
 .btn-info:hover { filter: brightness(1.08); }
+
+.btn-brand-soft {
+  background: var(--vy-brand-soft); color: var(--vy-brand);
+  border-color: var(--vy-brand-line);
+}
+.btn-brand-soft:hover { background: var(--vy-brand); color: var(--mb-text-on-red); }
 
 .btn-ghost {
   background: var(--mb-surface-2); color: var(--mb-text);
@@ -404,7 +439,7 @@ a.chip-market:hover { border-color: var(--mb-green-line); color: var(--mb-green)
 /* The two species read apart through the whole perimeter and the action
    colour — not through an accent bar stuck on one edge. */
 .signal-card.is-executable { border-color: color-mix(in srgb, var(--mb-green) 26%, var(--mb-border)); }
-.signal-card.is-analysis   { border-color: color-mix(in srgb, var(--mb-info) 26%, var(--mb-border)); }
+.signal-card.is-analysis   { border-color: color-mix(in srgb, var(--mb-analysis) 26%, var(--mb-border)); }
 .signal-card.is-boosted    { box-shadow: 0 0 0 1px color-mix(in srgb, var(--mb-boost) 22%, transparent); }
 
 .signal-head {
@@ -419,7 +454,7 @@ a.chip-market:hover { border-color: var(--mb-green-line); color: var(--mb-green)
   text-transform: uppercase; padding: 3px 8px; border-radius: var(--mb-r-xs);
 }
 .signal-kind.k-exec { background: var(--mb-green-soft); color: var(--mb-green); }
-.signal-kind.k-anal { background: var(--mb-info-soft);  color: var(--mb-info); }
+.signal-kind.k-anal { background: var(--mb-analysis-soft); color: var(--mb-analysis); }
 
 .signal-body { padding: 0 var(--mb-s4) var(--mb-s4); }
 
@@ -639,8 +674,8 @@ a.chip-market:hover { border-color: var(--mb-green-line); color: var(--mb-green)
   background: var(--mb-surface-2);
 }
 .trade-launch .tl-icon svg { width: 24px; height: 24px; }
-.trade-launch .tl-name { font-size: var(--mb-t-body); font-weight: var(--mb-w-bold); }
-.trade-launch .tl-desc { font-size: var(--mb-t-xs); color: var(--mb-text-2); margin-top: 2px; }
+.trade-launch .tl-name { display: block; font-size: var(--mb-t-body); font-weight: var(--mb-w-bold); }
+.trade-launch .tl-desc { display: block; font-size: var(--mb-t-xs); color: var(--mb-text-2); margin-top: 2px; }
 
 /* ==========================================================================
    CONTRACT ROW — open positions and history
@@ -822,22 +857,6 @@ table.data td.num { text-align: right; font-variant-numeric: tabular-nums; }
 }
 
 /* ==========================================================================
-   BRAND LOCKUP — the supplied logo.png / icon.png artwork
-   ========================================================================== */
-.brand-img { display: block; height: 34px; width: auto; flex: none; }
-.brand-icon { display: block; height: 30px; width: auto; flex: none; }
-.brand-lg .brand-img { height: 48px; }
-.brand-lg .brand-icon { height: 42px; }
-.brand-sm .brand-img { height: 26px; }
-.brand-sm .brand-icon { height: 22px; }
-/* The wordmark artwork is drawn for a dark ground; on light the grey half
-   needs a little more weight to stay legible. */
-[data-theme="light"] .brand-img { filter: brightness(.78) saturate(1.15); }
-@media (prefers-color-scheme: light) {
-  :root:not([data-theme="dark"]) .brand-img { filter: brightness(.78) saturate(1.15); }
-}
-
-/* ==========================================================================
    PAGINATION — shared by every paginated list
    ========================================================================== */
 .pager-wrap, .load-more-wrap { margin-top: var(--mb-s5); }
@@ -878,7 +897,7 @@ table.data td.num { text-align: right; font-variant-numeric: tabular-nums; }
 .sig:hover { border-color: var(--mb-border-2); }
 .sig:active { transform: scale(.995); }
 .sig.is-exec { border-color: color-mix(in srgb, var(--mb-green) 24%, var(--mb-border)); }
-.sig.is-anal { border-color: color-mix(in srgb, var(--mb-info) 24%, var(--mb-border)); }
+.sig.is-anal { border-color: color-mix(in srgb, var(--mb-analysis) 24%, var(--mb-border)); }
 
 .sig-top { display: flex; align-items: center; gap: var(--mb-s2); }
 .sig-who { font-size: var(--mb-t-sm); font-weight: var(--mb-w-bold); }
@@ -888,7 +907,7 @@ table.data td.num { text-align: right; font-variant-numeric: tabular-nums; }
   text-transform: uppercase; padding: 2px 6px; border-radius: 4px; white-space: nowrap;
 }
 .sig-kind.k-exec { background: var(--mb-green-soft); color: var(--mb-green); }
-.sig-kind.k-anal { background: var(--mb-info-soft);  color: var(--mb-info); }
+.sig-kind.k-anal { background: var(--mb-analysis-soft); color: var(--mb-analysis); }
 
 .sig-mid { display: flex; align-items: center; gap: var(--mb-s2); margin-top: var(--mb-s3); min-width: 0; }
 .sig-mid > .sig-dir { flex: none; }
@@ -1095,3 +1114,371 @@ table.data tr.is-selected { background: var(--mb-green-soft); }
   .dt-foot .pager { justify-content: center; }
   .dt-search { max-width: none; }
 }
+
+/* ==========================================================================
+   TOTAL BALANCE — aggregates every connected Deriv account
+   ========================================================================== */
+.total-balance {
+  background: var(--mb-surface); border: 1px solid var(--mb-border);
+  border-radius: var(--mb-r-lg); padding: var(--mb-s5); position: relative; overflow: hidden;
+}
+.total-balance .tb-head { display: flex; align-items: center; gap: var(--mb-s2); }
+.total-balance .tb-label { font-size: var(--mb-t-sm); color: var(--mb-text-2); font-weight: var(--mb-w-medium); }
+.total-balance .tb-all {
+  margin-left: auto; display: inline-flex; align-items: center; gap: 4px;
+  font-size: var(--mb-t-xs); font-weight: var(--mb-w-semi); color: var(--mb-text-2);
+  padding: 5px 10px; border-radius: var(--mb-r-pill);
+  background: var(--mb-surface-2); border: 1px solid var(--mb-border);
+}
+.total-balance .tb-all:hover { color: var(--mb-text); border-color: var(--mb-border-2); }
+.total-balance .tb-all svg { width: 13px; height: 13px; }
+.total-balance .tb-amount {
+  font-size: 34px; font-weight: var(--mb-w-black); letter-spacing: -.035em;
+  font-variant-numeric: tabular-nums; line-height: 1.1; margin-top: var(--mb-s2);
+}
+.total-balance .tb-amount .cur {
+  font-size: var(--mb-t-h3); font-weight: var(--mb-w-bold);
+  color: var(--mb-text-2); letter-spacing: 0; margin-left: 6px;
+}
+.total-balance .tb-stamp {
+  display: inline-flex; align-items: center; gap: 5px;
+  font-size: var(--mb-t-xs); color: var(--mb-text-3); margin-top: 6px;
+}
+.total-balance .tb-stamp svg { width: 12px; height: 12px; }
+.total-balance .tb-stamp.is-stale { color: var(--mb-warn); }
+.total-balance .tb-spark { position: absolute; right: 0; top: 44px; width: 46%; opacity: .9; pointer-events: none; }
+
+/* Deposit · Withdraw · Transfer */
+.tb-actions { display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: var(--mb-s2); margin-top: var(--mb-s5); }
+.tb-actions .btn { padding: 0 var(--mb-s2); font-size: var(--mb-t-sm); }
+.tb-actions .btn svg { width: 16px; height: 16px; }
+
+/* ==========================================================================
+   ACCOUNT ROWS — wallet, MT5 synthetic, MT5 financial, demo
+   ========================================================================== */
+.acct-row {
+  display: flex; align-items: center; gap: var(--mb-s3);
+  padding: var(--mb-s4); border-bottom: 1px solid var(--mb-border);
+  transition: background var(--mb-fast) var(--mb-ease);
+}
+.acct-row:last-child { border-bottom: 0; }
+.acct-row:hover { background: var(--mb-surface-2); }
+.acct-badge {
+  width: 40px; height: 40px; flex: none; border-radius: var(--mb-r-sm);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 10px; font-weight: var(--mb-w-black); letter-spacing: .02em;
+}
+.acct-badge.a-wallet { background: var(--vy-brand-soft); color: var(--vy-brand); }
+.acct-badge.a-mt5    { background: var(--mb-info-soft);  color: var(--mb-info); }
+.acct-badge.a-demo   { background: var(--mb-warn-soft);  color: var(--mb-warn); }
+.acct-row .ar-n { font-size: var(--mb-t-sm); font-weight: var(--mb-w-semi); }
+.acct-row .ar-s { font-size: var(--mb-t-xs); color: var(--mb-text-3); margin-top: 1px; }
+.acct-row .ar-v { font-size: var(--mb-t-sm); font-weight: var(--mb-w-bold); font-variant-numeric: tabular-nums; }
+.acct-row .ar-chev { width: 17px; height: 17px; color: var(--mb-text-3); flex: none; }
+.acct-row .badge-primary {
+  background: var(--vy-brand-soft); color: var(--vy-brand);
+  font-size: 9px; padding: 1px 6px; border-radius: 4px; font-weight: var(--mb-w-bold);
+}
+.acct-total {
+  display: flex; align-items: center; justify-content: space-between;
+  padding: var(--mb-s4); background: var(--mb-surface-2);
+  border-top: 1px solid var(--mb-border);
+  font-size: var(--mb-t-sm); font-weight: var(--mb-w-semi);
+}
+.acct-total .v { color: var(--mb-green); font-weight: var(--mb-w-black); font-variant-numeric: tabular-nums; }
+
+/* MT5 account detail figures */
+.acct-figures {
+  display: grid; grid-template-columns: repeat(3, minmax(0,1fr));
+  gap: 1px; background: var(--mb-border);
+}
+.acct-figures > div { background: var(--mb-surface); padding: var(--mb-s4); text-align: center; }
+.acct-figures .v { font-size: var(--mb-t-h3); font-weight: var(--mb-w-black); font-variant-numeric: tabular-nums; }
+.acct-figures .k { font-size: 10px; color: var(--mb-text-3); text-transform: uppercase; letter-spacing: .07em; margin-top: 3px; font-weight: var(--mb-w-semi); }
+
+/* ==========================================================================
+   MARKET BADGE CHIP — every market carries a coloured tag
+   ========================================================================== */
+.mk-chip {
+  display: inline-flex; align-items: center; justify-content: center;
+  min-width: 44px; height: 28px; padding: 0 7px; flex: none;
+  border-radius: var(--mb-r-xs); font-size: 9px; font-weight: var(--mb-w-black);
+  letter-spacing: .02em; white-space: nowrap;
+  border: 1px solid currentColor;
+}
+.mk-vol    { color: var(--mb-mk-vol);    background: color-mix(in srgb, var(--mb-mk-vol) 13%, transparent); }
+.mk-crash  { color: var(--mb-mk-crash);  background: color-mix(in srgb, var(--mb-mk-crash) 13%, transparent); }
+.mk-boom   { color: var(--mb-mk-boom);   background: color-mix(in srgb, var(--mb-mk-boom) 13%, transparent); }
+.mk-step   { color: var(--mb-mk-step);   background: color-mix(in srgb, var(--mb-mk-step) 15%, transparent); }
+.mk-range  { color: var(--mb-mk-range);  background: color-mix(in srgb, var(--mb-mk-range) 13%, transparent); }
+.mk-jump   { color: var(--mb-mk-jump);   background: color-mix(in srgb, var(--mb-mk-jump) 13%, transparent); }
+.mk-forex  { color: var(--mb-mk-forex);  background: color-mix(in srgb, var(--mb-mk-forex) 13%, transparent); }
+.mk-crypto { color: var(--mb-mk-crypto); background: color-mix(in srgb, var(--mb-mk-crypto) 13%, transparent); }
+.mk-metal  { color: var(--mb-mk-metal);  background: color-mix(in srgb, var(--mb-mk-metal) 15%, transparent); }
+.mk-index  { color: var(--mb-mk-index);  background: color-mix(in srgb, var(--mb-mk-index) 13%, transparent); }
+
+/* Small "Binary" / "Multipliers" capability tags under a market name */
+.kind-tag {
+  display: inline-flex; align-items: center; padding: 2px 7px;
+  border-radius: 5px; font-size: 9px; font-weight: var(--mb-w-bold);
+  background: var(--mb-surface-2); border: 1px solid var(--mb-border);
+  color: var(--mb-text-2); white-space: nowrap;
+}
+
+/* ==========================================================================
+   MARKET TABLE ROW — the Markets screen
+   ========================================================================== */
+.mkt-row {
+  display: flex; align-items: center; gap: var(--mb-s3);
+  padding: var(--mb-s3) var(--mb-s4); background: var(--mb-surface);
+  border: 1px solid var(--mb-border); border-radius: var(--mb-r-md);
+  transition: border-color var(--mb-fast) var(--mb-ease);
+}
+.mkt-row:hover { border-color: var(--mb-border-2); }
+.mkt-row .mr-name { font-size: var(--mb-t-sm); font-weight: var(--mb-w-bold); }
+.mkt-row .mr-sym { font-size: 10px; color: var(--mb-text-3); letter-spacing: .04em; }
+.mkt-row .mr-tags { display: flex; gap: 4px; margin-top: 5px; flex-wrap: wrap; }
+.mkt-row .mr-spark { width: 72px; flex: none; }
+.mkt-row .mr-price { font-size: var(--mb-t-sm); font-weight: var(--mb-w-bold); font-variant-numeric: tabular-nums; text-align: right; }
+.mkt-row .mr-chg { font-size: var(--mb-t-xs); font-weight: var(--mb-w-bold); font-variant-numeric: tabular-nums; text-align: right; }
+.mkt-row .mr-star { color: var(--mb-text-3); flex: none; }
+.mkt-row .mr-star.is-on { color: var(--mb-green); }
+@media (max-width: 420px) { .mkt-row .mr-spark { display: none; } }
+
+/* ==========================================================================
+   LIVE indicator + room list
+   ========================================================================== */
+.live-badge {
+  display: inline-flex; align-items: center; gap: 4px;
+  font-size: 9px; font-weight: var(--mb-w-black); letter-spacing: .08em;
+  padding: 2px 6px; border-radius: 4px;
+  background: var(--mb-sell-soft); color: var(--mb-sell);
+}
+.live-badge i {
+  width: 5px; height: 5px; border-radius: 50%; background: currentColor;
+  animation: livepulse 1.8s ease-in-out infinite;
+}
+@keyframes livepulse { 0%,100% { opacity: 1; } 50% { opacity: .35; } }
+@media (prefers-reduced-motion: reduce) { .live-badge i { animation: none; } }
+
+.online-dot {
+  display: inline-flex; align-items: center; gap: 5px;
+  font-size: var(--mb-t-xs); color: var(--mb-green); font-weight: var(--mb-w-semi);
+}
+.online-dot i { width: 6px; height: 6px; border-radius: 50%; background: currentColor; }
+
+.room-row {
+  display: flex; align-items: center; gap: var(--mb-s3);
+  padding: var(--mb-s3) var(--mb-s4); background: var(--mb-surface);
+  border: 1px solid var(--mb-border); border-radius: var(--mb-r-md);
+  transition: border-color var(--mb-fast) var(--mb-ease);
+}
+.room-row:hover { border-color: var(--mb-border-2); }
+.room-row .rr-n { font-size: var(--mb-t-sm); font-weight: var(--mb-w-bold); }
+.room-row .rr-m { font-size: var(--mb-t-xs); color: var(--mb-text-3); margin-top: 1px; }
+.room-row .rr-stats { display: flex; gap: var(--mb-s3); margin-top: 5px; font-size: var(--mb-t-xs); color: var(--mb-text-3); }
+.room-row .rr-stats span { display: inline-flex; align-items: center; gap: 4px; }
+.room-row .rr-stats svg { width: 12px; height: 12px; }
+
+/* ==========================================================================
+   FILTER PANEL — the Signals slide-over
+   ========================================================================== */
+.filter-panel-scrim {
+  position: fixed; inset: 0; z-index: 190; background: var(--mb-overlay);
+  opacity: 0; pointer-events: none; transition: opacity var(--mb-base) var(--mb-ease);
+}
+.filter-panel-scrim.is-open { opacity: 1; pointer-events: auto; }
+.filter-panel {
+  position: fixed; top: 0; right: 0; bottom: 0; z-index: 200;
+  width: min(420px, 92vw); background: var(--mb-bg);
+  border-left: 1px solid var(--mb-border);
+  box-shadow: -24px 0 60px -30px rgba(0,0,0,.85);
+  transform: translateX(102%); transition: transform var(--mb-slow) var(--mb-ease);
+  display: flex; flex-direction: column;
+}
+.filter-panel.is-open { transform: translateX(0); }
+.filter-panel-head {
+  display: flex; align-items: center; gap: var(--mb-s3);
+  padding: var(--mb-s5); border-bottom: 1px solid var(--mb-border);
+}
+.filter-panel-head h2 { font-size: var(--mb-t-h2); font-weight: var(--mb-w-bold); }
+.filter-panel-head .reset { margin-left: auto; font-size: var(--mb-t-sm); color: var(--mb-green); font-weight: var(--mb-w-semi); }
+.filter-panel-body { flex: 1; overflow-y: auto; padding: var(--mb-s5); display: flex; flex-direction: column; gap: var(--mb-s6); }
+.filter-panel-foot {
+  padding: var(--mb-s4) var(--mb-s5) calc(var(--mb-s5) + var(--mb-safe-b));
+  border-top: 1px solid var(--mb-border); background: var(--mb-bg);
+}
+.filter-panel-foot .count { text-align: center; font-size: var(--mb-t-sm); color: var(--mb-green); font-weight: var(--mb-w-semi); margin-top: var(--mb-s3); }
+
+.filter-group .fg-label {
+  font-size: var(--mb-t-sm); font-weight: var(--mb-w-bold);
+  margin-bottom: var(--mb-s3); display: block;
+}
+.filter-list { border: 1px solid var(--mb-border); border-radius: var(--mb-r-md); overflow: hidden; background: var(--mb-surface); }
+.filter-opt {
+  display: flex; align-items: center; gap: var(--mb-s3);
+  padding: var(--mb-s3) var(--mb-s4); border-bottom: 1px solid var(--mb-border);
+  cursor: pointer; width: 100%; text-align: left;
+}
+.filter-opt:last-child { border-bottom: 0; }
+.filter-opt:hover { background: var(--mb-surface-2); }
+.filter-opt .fo-t { font-size: var(--mb-t-sm); font-weight: var(--mb-w-semi); }
+.filter-opt .fo-d { font-size: var(--mb-t-xs); color: var(--mb-text-3); margin-top: 1px; }
+.filter-opt .fo-box {
+  width: 20px; height: 20px; flex: none; border-radius: 5px;
+  border: 1.5px solid var(--mb-border-2); background: var(--mb-surface-2);
+  display: flex; align-items: center; justify-content: center;
+  transition: all var(--mb-fast) var(--mb-ease);
+}
+.filter-opt .fo-box svg { width: 12px; height: 12px; color: var(--mb-text-inv); opacity: 0; }
+.filter-opt.is-on .fo-box { background: var(--mb-green); border-color: var(--mb-green); }
+.filter-opt.is-on .fo-box svg { opacity: 1; }
+.filter-chips { display: flex; flex-wrap: wrap; gap: var(--mb-s2); }
+.filter-chips .chip { flex: none; }
+
+/* ==========================================================================
+   ACCOUNT DRAWER — the profile slide-over
+   ========================================================================== */
+.acct-drawer-scrim {
+  position: fixed; inset: 0; z-index: 190; background: var(--mb-overlay);
+  opacity: 0; pointer-events: none; transition: opacity var(--mb-base) var(--mb-ease);
+}
+.acct-drawer-scrim.is-open { opacity: 1; pointer-events: auto; }
+.acct-drawer {
+  position: fixed; left: 50%; transform: translateX(-50%) translateY(-102%);
+  top: 0; z-index: 200; width: 100%; max-width: var(--mb-app-max);
+  max-height: 92vh; overflow-y: auto;
+  background: var(--mb-bg); border: 1px solid var(--mb-border); border-top: 0;
+  border-radius: 0 0 var(--mb-r-xl) var(--mb-r-xl);
+  transition: transform var(--mb-slow) var(--mb-ease);
+  padding-top: var(--mb-safe-t);
+}
+.acct-drawer.is-open { transform: translateX(-50%) translateY(0); }
+.acct-drawer-grip { width: 38px; height: 4px; border-radius: 2px; background: var(--mb-border-2); margin: var(--mb-s3) auto 0; }
+.acct-drawer-head { display: flex; align-items: center; gap: var(--mb-s3); padding: var(--mb-s4) var(--mb-s5); }
+.acct-drawer-close {
+  width: 34px; height: 34px; border-radius: var(--mb-r-pill); flex: none;
+  display: flex; align-items: center; justify-content: center; color: var(--mb-text-2);
+}
+.acct-drawer-close:hover { background: var(--mb-surface-2); color: var(--mb-text); }
+.acct-drawer-bal {
+  margin: 0 var(--mb-s5) var(--mb-s4); padding: var(--mb-s4);
+  border: 1px solid var(--mb-border); border-radius: var(--mb-r-md);
+  background: var(--mb-surface); display: flex; align-items: center; gap: var(--mb-s3);
+}
+.acct-drawer-bal .k { font-size: var(--mb-t-xs); color: var(--mb-text-3); }
+.acct-drawer-bal .v { font-size: var(--mb-t-h2); font-weight: var(--mb-w-black); font-variant-numeric: tabular-nums; }
+.acct-drawer-group { padding: 0 var(--mb-s5) var(--mb-s3); }
+.acct-drawer-group + .acct-drawer-group { border-top: 1px solid var(--mb-border); padding-top: var(--mb-s3); }
+.acct-drawer-label {
+  font-size: 10px; text-transform: uppercase; letter-spacing: .13em;
+  color: var(--mb-text-3); font-weight: var(--mb-w-bold);
+  padding: var(--mb-s3) 0 var(--mb-s2);
+}
+.acct-drawer-item {
+  display: flex; align-items: center; gap: var(--mb-s3); width: 100%;
+  padding: var(--mb-s3) var(--mb-s2); border-radius: var(--mb-r-sm);
+  font-size: var(--mb-t-sm); font-weight: var(--mb-w-semi); color: var(--mb-text);
+}
+.acct-drawer-item:hover { background: var(--mb-surface-2); }
+.acct-drawer-item svg { width: 18px; height: 18px; flex: none; color: var(--mb-text-2); }
+.acct-drawer-item .chev { margin-left: auto; color: var(--mb-text-3); }
+.acct-drawer-item .count {
+  margin-left: auto; min-width: 20px; height: 19px; padding: 0 6px;
+  border-radius: var(--mb-r-pill); background: var(--vy-brand); color: var(--mb-text-on-red);
+  font-size: 10px; font-weight: var(--mb-w-bold);
+  display: flex; align-items: center; justify-content: center;
+}
+.acct-drawer-item.is-danger, .acct-drawer-item.is-danger svg { color: var(--mb-sell); }
+.acct-drawer-foot { padding: var(--mb-s4) var(--mb-s5) calc(var(--mb-s6) + var(--mb-safe-b)); text-align: center; }
+
+/* ==========================================================================
+   PROVIDER RANK BADGES — Hot / Pro / Top
+   ========================================================================== */
+.badge-hot { background: var(--mb-hot-soft); color: var(--mb-hot); }
+.badge-top { background: var(--vy-brand-soft); color: var(--vy-brand); }
+
+/* ==========================================================================
+   LOCKED CONTRACT ROW — "Coming soon" and "Analysis only"
+   ========================================================================== */
+.contract-row-lock {
+  display: flex; align-items: center; gap: var(--mb-s3);
+  padding: var(--mb-s4); border-bottom: 1px solid var(--mb-border);
+  opacity: .72;
+}
+.contract-row-lock:last-child { border-bottom: 0; }
+.contract-row-lock .crl-ic { width: 30px; height: 30px; flex: none; display: flex; align-items: center; justify-content: center; color: var(--mb-text-2); }
+.contract-row-lock .crl-n { font-size: var(--mb-t-body); font-weight: var(--mb-w-bold); }
+.contract-row-lock .crl-d { display: block; font-size: var(--mb-t-xs); color: var(--mb-text-2); margin-top: 2px; }
+.contract-row-lock .crl-lock { color: var(--mb-text-3); flex: none; }
+.tag-soon     { font-size: 10px; font-weight: var(--mb-w-bold); color: var(--mb-warn); }
+.tag-analysis { font-size: 10px; font-weight: var(--mb-w-bold); color: var(--mb-analysis); }
+
+/* ==========================================================================
+   QUICK ACTION TILES — Transfer / History / Statement / Support
+   ========================================================================== */
+.qa-grid { display: grid; grid-template-columns: repeat(4, minmax(0,1fr)); gap: var(--mb-s2); }
+.qa-tile {
+  display: flex; flex-direction: column; align-items: center; gap: 7px;
+  padding: var(--mb-s4) var(--mb-s2); border-radius: var(--mb-r-md);
+  background: var(--mb-surface); border: 1px solid var(--mb-border);
+  transition: border-color var(--mb-fast) var(--mb-ease);
+}
+.qa-tile:hover { border-color: var(--mb-border-2); }
+.qa-tile svg { width: 22px; height: 22px; color: var(--mb-text-2); }
+.qa-tile span { font-size: 10px; font-weight: var(--mb-w-semi); color: var(--mb-text-2); text-align: center; line-height: 1.3; }
+
+/* ==========================================================================
+   PROFILE HEADER CARD — dashboard8
+   ========================================================================== */
+.profile-card {
+  display: flex; align-items: center; gap: var(--mb-s3);
+  padding: var(--mb-s4); background: var(--mb-surface);
+  border: 1px solid var(--mb-border); border-radius: var(--mb-r-lg);
+}
+.profile-card .pc-n { font-size: var(--mb-t-h3); font-weight: var(--mb-w-bold); }
+.profile-card .pc-h { font-size: var(--mb-t-xs); color: var(--mb-text-3); }
+.profile-card .pc-meta { display: flex; gap: var(--mb-s2); margin-top: var(--mb-s3); flex-wrap: wrap; }
+.profile-card .pc-meta span {
+  display: inline-flex; align-items: center; gap: 5px;
+  font-size: var(--mb-t-xs); color: var(--mb-text-2);
+  padding: 4px 9px; border-radius: var(--mb-r-pill);
+  background: var(--mb-surface-2); border: 1px solid var(--mb-border);
+}
+.profile-card .pc-meta svg { width: 12px; height: 12px; }
+
+/* ==========================================================================
+   INSTALL BANNER — the VYBE prompt from the designs
+   ========================================================================== */
+.install-card {
+  display: flex; align-items: center; gap: var(--mb-s3);
+  padding: var(--mb-s4); border-radius: var(--mb-r-lg);
+  background: var(--mb-surface); border: 1px solid var(--mb-border);
+  position: relative; overflow: hidden;
+}
+.install-card::before {
+  content: ""; position: absolute; inset: 0; pointer-events: none;
+  background: radial-gradient(120% 100% at 0% 50%, var(--vy-brand-glow) 0%, transparent 62%);
+  opacity: .55;
+}
+.install-card > * { position: relative; }
+.install-card .ic-mark {
+  width: 46px; height: 46px; flex: none; border-radius: var(--mb-r-sm);
+  background: var(--mb-bg-2); border: 1px solid var(--mb-border);
+  display: flex; align-items: center; justify-content: center;
+}
+.install-card .ic-t { font-size: var(--mb-t-sm); font-weight: var(--mb-w-bold); display: block; }
+.install-card .ic-d { font-size: var(--mb-t-xs); color: var(--mb-text-2); margin-top: 2px; display: block; }
+
+/* Leaderboard rows carry movement and P/L, so both colours appear */
+.lb-move {
+  display: inline-flex; align-items: center; gap: 1px; flex: none;
+  font-size: 10px; font-weight: var(--mb-w-bold); width: 26px;
+}
+.lb-move svg { width: 11px; height: 11px; }
+.lb-move.is-flat { color: var(--mb-text-3); justify-content: center; }
+.lb-figures { display: flex; flex-direction: column; align-items: flex-end; flex: none; }
+.lb-pl { font-size: var(--mb-t-xs); font-weight: var(--mb-w-semi); margin-top: 1px; }
+
+/* The 24h move riding on a market chip */
+.chip-market .cm-move { margin-left: 5px; font-weight: var(--mb-w-bold); font-variant-numeric: tabular-nums; }

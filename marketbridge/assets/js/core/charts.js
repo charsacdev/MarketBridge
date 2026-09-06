@@ -1,5 +1,5 @@
 /* ==========================================================================
-   MARKETBRIDGE — CHARTS
+   VYBE — CHARTS
    Sparklines, area charts and candlesticks as inline SVG. No library.
 
    Two things matter for legibility, and both are handled here:

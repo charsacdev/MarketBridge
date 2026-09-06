@@ -1,5 +1,5 @@
 /* ==========================================================================
-   MARKETBRIDGE — DERIV SOCKET
+   VYBE — DERIV SOCKET
 
    Architecture §09: price data goes browser-direct to Deriv, purchases go
    through the server. This module owns the browser-direct half.

@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Signal — MarketBridge Admin</title>
-<meta name="theme-color" content="#0A0E12">
+<title>Signal — VYBE Admin</title>
+<meta name="theme-color" content="#080B0F">
 <meta name="robots" content="noindex, nofollow">
 <link rel="icon" href="../assets/icons/favicon-32.png" sizes="32x32">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,9 +14,9 @@
 <link rel="stylesheet" href="../assets/css/base.css">
 <link rel="stylesheet" href="../assets/css/components.css">
 <link rel="stylesheet" href="../assets/css/admin.css">
-<script>(function(){try{var t=localStorage.getItem('mb.theme');if(t){document.documentElement.setAttribute('data-theme',t);}}catch(e){}})();</script>
+<script>(function(){var t='dark';try{t=localStorage.getItem('mb.theme')||'dark';}catch(e){}var m=/[?&]theme=(dark|light|system)/.exec(location.search);if(m){t=m[1];}if(t!=='system'){document.documentElement.setAttribute('data-theme',t);}})();</script>
 </head>
-<body data-shell="admin" data-nav="signals" data-root="../">
+<body data-shell="admin" data-role="admin" data-nav="signals" data-root="../">
 
 <div class="admin">
   <div data-render="admin-rail"></div>
@@ -59,6 +59,7 @@
 <script src="../assets/js/core/ws.js"></script>
 <script src="../assets/js/components/cards.js"></script>
 <script src="../assets/js/components/datatable.js"></script>
+<script src="../assets/js/core/roles.js"></script>
 <script src="../assets/js/core/shell.js"></script>
 <script>
 
@@ -87,37 +88,6 @@
   function row(k, v, sub) {
     return '<div class="info-row"><span class="ir-k">' + MB.esc(k) + '</span>' +
       '<span class="ir-v">' + v + (sub ? '<span class="sub">' + MB.esc(sub) + '</span>' : '') + '</span></div>';
-  }
-  function statSlider(host, title, cards) {
-    var el = MB.$(host); if (!el) { return; }
-    el.innerHTML =
-      '<div class="statslider"><div class="statslider-head"><h2>' + MB.esc(title) + '</h2>' +
-        '<div class="statslider-nav">' +
-          '<button data-sl="prev" aria-label="Scroll left">' + MB.icon('chevleft', 15) + '</button>' +
-          '<button data-sl="next" aria-label="Scroll right">' + MB.icon('chevright', 15) + '</button>' +
-        '</div></div><div class="statslider-track">' + cards.map(function (c) {
-          return '<div class="stat-card' + (c.tone ? ' is-' + c.tone : '') + '">' +
-            '<div class="sc-k">' + MB.esc(c.k) + '</div><div class="sc-v">' + c.v + '</div>' +
-            (c.d !== undefined ? '<div class="sc-d ' + (c.d >= 0 ? 'c-up' : 'c-down') + '">' +
-              MB.icon(c.d >= 0 ? 'trendup' : 'trenddown', 13) + MB.fmt.pct(c.d) + '</div>'
-              : c.note ? '<div class="sc-d c-3">' + MB.esc(c.note) + '</div>' : '') +
-            (c.spark === false ? '' : '<div class="sc-spark"><span data-spark="' +
-              (c.d >= 0 || c.d === undefined ? 'up' : 'down') + '" data-seed="' + MB.esc(c.k) +
-              '" data-h="30" data-sw="2"></span></div>') + '</div>';
-        }).join('') + '</div></div>';
-    MB.mountIcons(el); MB.mountCharts(el);
-    var track = MB.$('.statslider-track', el);
-    MB.$$('[data-sl]', el).forEach(function (b) {
-      b.addEventListener('click', function () {
-        track.scrollBy({ left: b.getAttribute('data-sl') === 'next' ? 460 : -460, behavior: 'smooth' });
-      });
-    });
-    var sync = function () {
-      var max = track.scrollWidth - track.clientWidth - 2;
-      MB.$('[data-sl=prev]', el).disabled = track.scrollLeft <= 2;
-      MB.$('[data-sl=next]', el).disabled = track.scrollLeft >= max;
-    };
-    track.addEventListener('scroll', sync); setTimeout(sync, 60);
   }
   function openSO(title, html) {
     document.getElementById('soTitle').textContent = title;
@@ -169,14 +139,22 @@ MB.ready(function () {
         '</div>' +
       '</div>' +
       '<div class="dh-actions">' +
-        '<button class="btn btn-ghost btn-sm" id="btnBoost"><span data-icon="megaphone"></span> ' +
+        /* Boosting is paid placement — an operator power, not a moderator one. */
+        '<button class="btn btn-ghost btn-sm" id="btnBoost" data-can="boost.create boost.cancel">' +
+          '<span data-icon="megaphone"></span> ' +
           (s.boost && s.boost.is_boosted ? 'Remove boost' : 'Boost') + '</button>' +
-        '<button class="btn btn-ghost btn-sm"><span data-icon="flag"></span> Flag</button>' +
-        '<button class="btn btn-sell btn-sm" id="btnHide"><span data-icon="eyeoff"></span> Hide</button>' +
+        '<button class="btn btn-ghost btn-sm" data-can="report.escalate">' +
+          '<span data-icon="flag"></span> Flag</button>' +
+        '<button class="btn btn-sell btn-sm" id="btnHide" data-can="signal.unlist">' +
+          '<span data-icon="eyeoff"></span> Hide</button>' +
+        '<button class="btn btn-sell btn-sm" id="btnDelete" data-can="signal.delete">' +
+          '<span data-icon="trash"></span> Delete</button>' +
       '</div>';
 
+    if (MB.applyPermissions) { MB.applyPermissions(document); }
+
     var e = s.engagement;
-    statSlider('#stats', 'Reach and outcome', [
+    MB.statSlider('#stats', 'Reach and outcome', [
       { k:'Views', v: MB.fmt.compact(e.views), d: 12.4 },
       { k:'Likes', v: e.likes, d: 6.1 },
       { k:'Comments', v: e.comments, d: 3.8 },
@@ -253,11 +231,11 @@ MB.ready(function () {
       '</div>';
 
     MB.mountIcons(); MB.mountCharts();
-    document.getElementById('btnBoost').addEventListener('click', function () {
+    MB.on('#btnBoost', 'click', function () {
       MB.api.post('admin/signals/' + s.id + '/boost');
       MB.toast('Boost updated');
     });
-    document.getElementById('btnHide').addEventListener('click', function () {
+    MB.on('#btnHide', 'click', function () {
       if (!confirm('Hide this signal from all feeds?')) { return; }
       MB.api.patch('admin/signals/' + s.id, { status: 'hidden' });
       MB.toast('Signal hidden');

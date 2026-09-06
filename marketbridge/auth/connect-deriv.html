@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Connect Deriv — MarketBridge</title>
-<meta name="theme-color" content="#0A0E12">
+<title>Connect Deriv — VYBE</title>
+<meta name="theme-color" content="#080B0F">
 <link rel="manifest" href="../manifest.webmanifest">
 <link rel="icon" href="../assets/icons/favicon-32.png" sizes="32x32">
 <link rel="apple-touch-icon" href="../assets/icons/apple-touch-icon.png">
@@ -15,7 +15,7 @@
 <link rel="stylesheet" href="../assets/css/base.css">
 <link rel="stylesheet" href="../assets/css/components.css">
 <link rel="stylesheet" href="../assets/css/app.css">
-<script>(function(){try{var t=localStorage.getItem('mb.theme');if(t){document.documentElement.setAttribute('data-theme',t);}}catch(e){}})();</script>
+<script>(function(){var t='dark';try{t=localStorage.getItem('mb.theme')||'dark';}catch(e){}var m=/[?&]theme=(dark|light|system)/.exec(location.search);if(m){t=m[1];}if(t!=='system'){document.documentElement.setAttribute('data-theme',t);}})();</script>
 </head>
 <body data-shell="auth" data-root="../">
 
@@ -30,12 +30,12 @@
 
   <div class="auth-head">
     <h1>Connect your Deriv account</h1>
-    <p>Trading requires a linked Deriv account. Everything else on MarketBridge works without one.</p>
+    <p>Trading requires a linked Deriv account. Everything else on VYBE works without one.</p>
   </div>
 
   <!-- What we ask for, stated before they authorise -->
   <div class="card">
-    <div class="label">MarketBridge will ask Deriv for</div>
+    <div class="label">VYBE will ask Deriv for</div>
 
     <div class="stack g4 mt4">
       <div class="row g3" style="align-items:flex-start">
@@ -93,6 +93,29 @@
 <!-- ======================================================================
      SUCCESS STATE — mirrors screen 13 "Connected Deriv Account"
      ====================================================================== -->
+<div class="auth-wrap hide" id="stepFail" style="text-align:center;align-items:center">
+
+  <div style="margin-top:60px;color:var(--mb-sell)" data-icon="warning" data-icon-size="64"></div>
+
+  <h1 class="t-h1 mt5">Could not connect</h1>
+  <p class="t-sm c-2 mt2">
+    We could not reach Deriv to finish authorising your account. Nothing was
+    changed, and no permission was granted.
+  </p>
+
+  <div class="stack g2 mt8" style="width:100%">
+    <button class="btn btn-brand btn-block" onclick="location.reload()">
+      <span data-icon="refresh"></span> Try again</button>
+    <a class="btn btn-ghost btn-block" href="../users/index.html">
+      Continue without connecting</a>
+  </div>
+
+  <p class="t-xs c-3 mt4">
+    You can browse markets, read signals and use the community without a
+    connected account. Trading needs one.
+  </p>
+</div>
+
 <div class="auth-wrap hide" id="stepDone" style="text-align:center;align-items:center">
 
   <div style="margin-top:60px;color:var(--mb-green)" data-icon="check" data-icon-size="64"></div>
@@ -101,12 +124,13 @@
   <p class="t-sm c-2 mt2">You are ready to trade.</p>
 
   <div class="list mt8" style="width:100%;text-align:left">
-    <div class="list-row"><span class="grow lr-title">Deriv ID</span><span class="lr-value num">CR1234567</span></div>
-    <div class="list-row"><span class="grow lr-title">Name</span><span class="lr-value">John David</span></div>
-    <div class="list-row"><span class="grow lr-title">Account type</span><span class="lr-value">Real</span></div>
-    <div class="list-row"><span class="grow lr-title">Currency</span><span class="lr-value">USD</span></div>
-    <div class="list-row"><span class="grow lr-title">Balance</span><span class="lr-value num">$2,458.75</span></div>
-    <div class="list-row"><span class="grow lr-title">Status</span><span class="badge badge-active">Active</span></div>
+    <div class="list-row"><span class="grow lr-title">Deriv ID</span><span class="lr-value num" id="dcId">&mdash;</span></div>
+    <div class="list-row"><span class="grow lr-title">Name</span><span class="lr-value" id="dcName">&mdash;</span></div>
+    <div class="list-row"><span class="grow lr-title">Account type</span><span class="lr-value" id="dcType">&mdash;</span></div>
+    <div class="list-row"><span class="grow lr-title">Currency</span><span class="lr-value" id="dcCur">&mdash;</span></div>
+    <div class="list-row"><span class="grow lr-title">Accounts found</span><span class="lr-value num" id="dcAccounts">&mdash;</span></div>
+    <div class="list-row"><span class="grow lr-title">Permissions</span><span class="lr-value" id="dcScopes">&mdash;</span></div>
+    <div class="list-row"><span class="grow lr-title">Status</span><span class="badge badge-active" id="dcStatus">&mdash;</span></div>
   </div>
 
   <p class="t-xs c-3 mt4">
@@ -142,13 +166,30 @@ MB.ready(function () {
          POST /api/v1/deriv/callback      -> exchange, store encrypted token,
                                              enumerate accounts
        The prototype jumps straight to the success state. */
-    MB.api.get('deriv/connection').then(function () {
+    MB.api.get('deriv/connection').then(function (r) {
+      var d = r.data;
       setTimeout(function () {
+        document.getElementById('dcId').textContent = d.deriv_id;
+        document.getElementById('dcName').textContent = d.name;
+        document.getElementById('dcType').textContent =
+          d.account_type === 'real' ? 'Real' : 'Demo';
+        document.getElementById('dcCur').textContent = d.currency;
+        document.getElementById('dcAccounts').textContent = d.accounts_found;
+        document.getElementById('dcScopes').textContent = d.scopes_granted.join(', ');
+        document.getElementById('dcStatus').textContent = d.status;
+
         document.getElementById('stepConnect').classList.add('hide');
         document.getElementById('stepDone').classList.remove('hide');
         MB.mountIcons();
         MB.toast('Deriv account connected');
       }, 700);
+    }).catch(function () {
+      /* Never strand the user on the spinner — say what happened and let
+         them retry. Stage 2 surfaces Deriv's own error here. */
+      document.getElementById('stepConnect').classList.add('hide');
+      var fail = document.getElementById('stepFail');
+      if (fail) { fail.classList.remove('hide'); }
+      MB.toast('Could not reach Deriv. Please try again.', 'err', 4000);
     });
   });
 });

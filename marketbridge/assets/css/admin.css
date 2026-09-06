@@ -77,7 +77,10 @@
 /* Burger for narrow screens */
 .admin-burger { display: none; }
 @media (max-width: 1020px) {
-  .admin { grid-template-columns: 1fr; }
+  /* minmax(0,1fr), not 1fr: a plain 1fr track cannot shrink below its
+     content's min-content width, so one wide table forced the entire
+     console wider than the phone and everything clipped at the edge. */
+  .admin { grid-template-columns: minmax(0, 1fr); }
   .admin-rail {
     position: fixed; left: 0; top: 0; bottom: 0; z-index: 120;
     width: var(--mb-admin-rail); transform: translateX(-100%);
@@ -388,3 +391,121 @@
 table.data.is-compact { min-width: 0; }
 table.data.is-compact th { padding: var(--mb-s3) var(--mb-s4); }
 table.data.is-compact td { padding: var(--mb-s3) var(--mb-s4); }
+
+/* ==========================================================================
+   ROLES — badges, the manifest comparison, and the portal each one owns
+   Tone follows the ladder: moderator informational, admin green (operates),
+   superadmin brand red (owns). Red here means authority, not danger.
+   ========================================================================== */
+.role-tag {
+  display: inline-flex; align-items: center; padding: 3px var(--mb-s2);
+  border-radius: var(--mb-r-pill); font-size: 10px; font-weight: var(--mb-w-bold);
+  letter-spacing: .05em; text-transform: uppercase; white-space: nowrap;
+  border: 1px solid transparent;
+}
+.role-tag.role-moderator  { background: var(--mb-info-soft);  color: var(--mb-info);  border-color: var(--mb-info-line); }
+.role-tag.role-admin      { background: var(--mb-green-soft); color: var(--mb-green); border-color: var(--mb-green-line); }
+.role-tag.role-superadmin { background: var(--vy-brand-soft); color: var(--vy-brand); border-color: var(--vy-brand-line); }
+
+.admin-brand .role-tag { margin-left: auto; }
+
+.role-grid {
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: var(--mb-s3);
+}
+.role-card {
+  padding: var(--mb-s4); border-radius: var(--mb-r-md);
+  border: 1px solid var(--mb-border); background: var(--mb-surface-2);
+}
+.role-card.role-moderator  { border-color: var(--mb-info-line); }
+.role-card.role-admin      { border-color: var(--mb-green-line); }
+.role-card.role-superadmin { border-color: var(--vy-brand-line); }
+.role-pages { display: flex; flex-wrap: wrap; gap: 4px; margin-top: 6px; }
+.role-pill {
+  font-size: 10px; padding: 2px 7px; border-radius: var(--mb-r-pill);
+  background: var(--mb-surface-3); color: var(--mb-text-2);
+}
+
+/* A high-severity audit row reads red at the icon */
+.lr-icon.is-danger { color: var(--mb-sell); background: var(--mb-sell-soft); }
+
+/* ==========================================================================
+   RESPONSIVE STAFF SHELL
+
+   The rail already collapses to a drawer at 1020px. Below that the console
+   still wore desktop chrome: full-size page padding, an h2 title, and a
+   header row that squeezed its actions instead of moving them. These rules
+   scale the shell down the rest of the way.
+   ========================================================================== */
+
+/* ---- Tablet and below ------------------------------------------------- */
+@media (max-width: 900px) {
+  .admin-topbar { padding: var(--mb-s4) var(--mb-s5); gap: var(--mb-s3); }
+  .admin-topbar h1 { font-size: var(--mb-t-h3); }
+  .admin-body { padding: var(--mb-s5) var(--mb-s5) var(--mb-s10); gap: var(--mb-s5); }
+  .admin-card, .panel { border-radius: var(--mb-r-sm); }
+  .detail-hero { padding: var(--mb-s5); gap: var(--mb-s4); }
+}
+
+/* ---- Phone ------------------------------------------------------------ */
+@media (max-width: 620px) {
+  /* The title keeps the first row; actions drop to their own row so labels
+     stay readable instead of being crushed. */
+  .admin-topbar {
+    flex-wrap: wrap;
+    padding: var(--mb-s3) var(--mb-s4);
+    gap: var(--mb-s2) var(--mb-s3);
+  }
+  .admin-topbar > .grow { flex: 1 1 100%; order: 1; min-width: 0; }
+  .admin-topbar .admin-burger,
+  .admin-topbar > a.icon-btn { order: 0; }
+  .admin-topbar .theme-toggle,
+  .admin-topbar > .btn { order: 2; }
+  /* Sits on the second row at its natural width, pushed right — a primary
+     action that spans the whole screen reads as the page's subject. */
+  .admin-topbar > .btn { flex: 0 1 auto; margin-left: auto; }
+
+  .admin-topbar h1 {
+    font-size: var(--mb-t-body); font-weight: var(--mb-w-bold);
+    white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+  }
+  /* The subtitle repeats what the nav already said — drop it, don't wrap it. */
+  .admin-topbar .sub { display: none; }
+  .admin-search { display: none; }
+
+  .admin-body { padding: var(--mb-s4) var(--mb-s3) var(--mb-s10); gap: var(--mb-s4); }
+
+  /* Filters and bulk actions stack rather than overflow */
+  .dt-toolbar { padding: var(--mb-s3); gap: var(--mb-s2); }
+  .dt-toolbar .dt-search { flex: 1 1 100%; max-width: none; min-width: 0; }
+  .dt-toolbar .select { flex: 1 1 45%; min-width: 0; }
+  .dt-per { flex: 1 1 100%; justify-content: flex-end; }
+  .dt-per .select { flex: 0 0 auto; width: auto; min-width: 74px; }
+  .dt-foot { padding: var(--mb-s3); }
+
+  .bulk-bar { flex-wrap: wrap; gap: var(--mb-s2); padding: var(--mb-s3); }
+  .bulk-bar .bb-t { flex: 1 1 100%; }
+  .bulk-bar .btn { flex: 1 1 auto; justify-content: center; }
+
+  .detail-hero { padding: var(--mb-s4); }
+  .detail-hero .dh-actions { flex: 1 1 100%; }
+  .detail-hero .dh-actions .btn { flex: 1 1 auto; justify-content: center; }
+
+  .statslider-head h2 { font-size: var(--mb-t-body); }
+  .stat-card { width: 168px; padding: var(--mb-s3); }
+
+  /* The rail drawer should not span a whole phone screen */
+  .admin-rail { width: min(86vw, var(--mb-admin-rail)); }
+}
+
+/* A table is wider than a phone by nature. It scrolls inside its own box —
+   the hint tells the reader that, since a clipped column looks like a bug. */
+@media (max-width: 900px) {
+  .dt-scroll { -webkit-overflow-scrolling: touch; }
+  .dt-scroll::after {
+    content: "Swipe the table sideways for more columns";
+    display: block; padding: var(--mb-s2) var(--mb-s3);
+    font-size: 10px; color: var(--mb-text-3); border-top: 1px dashed var(--mb-border);
+    position: sticky; left: 0;
+  }
+}

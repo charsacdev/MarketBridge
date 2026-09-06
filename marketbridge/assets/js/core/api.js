@@ -1,5 +1,5 @@
 /* ==========================================================================
-   MARKETBRIDGE — API CLIENT
+   VYBE — API CLIENT
 
    STAGE 1 (now):   BASE = '/mock'    — static JSON fixtures
    STAGE 2 (later): BASE = '/api/v1'  — Laravel routes

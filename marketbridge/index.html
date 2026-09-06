@@ -3,11 +3,11 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>MarketBridge — Trade, Signals, Community</title>
+<title>VYBE — Trade Deriv. Connect. Learn. Win together.</title>
 <meta name="description" content="A Deriv-connected social trading platform. Trade supported synthetic index contracts, follow traders who specialise in your markets, share signals and analysis, and learn — in one installable web app.">
-<meta name="theme-color" content="#0A0E12">
-<meta property="og:title" content="MarketBridge — Trade, Signals, Community">
-<meta property="og:description" content="Deriv provides the trading infrastructure. MarketBridge provides the experience, the community and the education around it.">
+<meta name="theme-color" content="#080B0F">
+<meta property="og:title" content="VYBE — Trade Deriv. Connect. Learn. Win together.">
+<meta property="og:description" content="Deriv provides the trading infrastructure. VYBE by MarketBridge provides the experience, the community and the education around it.">
 <meta property="og:type" content="website">
 <link rel="manifest" href="manifest.webmanifest">
 <link rel="icon" href="assets/icons/favicon-32.png" sizes="32x32">
@@ -21,7 +21,7 @@
 <link rel="stylesheet" href="assets/css/components.css">
 <link rel="stylesheet" href="assets/css/public.css">
 <script>/* Applied before first paint so the theme never flashes. */
-(function(){try{var t=localStorage.getItem('mb.theme');if(t){document.documentElement.setAttribute('data-theme',t);}}catch(e){}})();</script>
+(function(){var t='dark';try{t=localStorage.getItem('mb.theme')||'dark';}catch(e){}var m=/[?&]theme=(dark|light|system)/.exec(location.search);if(m){t=m[1];}if(t!=='system'){document.documentElement.setAttribute('data-theme',t);}})();</script>
 </head>
 <body class="site" data-shell="site" data-nav="home" data-root="">
 
@@ -35,27 +35,31 @@
   <section class="hero">
     <div class="container inner">
       <div>
-        <span class="hero-eyebrow"><b>NEW</b> Install it — no app store needed</span>
+        <span class="hero-eyebrow"><b>&#9679;</b> Built for Deriv traders</span>
 
-        <h1>Trade Deriv synthetics. <em>With the traders who actually trade them.</em></h1>
+        <h1>Trade Deriv. Connect. Learn.<br><em>Win</em> together.</h1>
 
         <p class="hero-lede">
-          MarketBridge connects to your Deriv account and gives every market its own
-          world — a chart, a trading desk, live signals, real analysis and a community
-          of people trading the same index as you.
+          VYBE by MarketBridge is the social trading platform for Deriv traders.
+          Trade supported contracts, follow verified traders, get real signals and
+          join market rooms that matter.
         </p>
 
         <div class="hero-cta">
-          <a class="btn btn-primary btn-lg" href="auth/register.html">
+          <a class="btn btn-brand btn-lg" href="auth/register.html">
             <span data-icon="userplus"></span> Create free account
           </a>
-          <button class="btn btn-outline btn-lg" data-install>
-            <span data-icon="download"></span> Install the app
-          </button>
+          <a class="btn btn-outline btn-lg" href="auth/connect-deriv.html">
+            <span data-icon="link"></span> Connect Deriv
+          </a>
         </div>
 
-        <p class="hero-note">
-          Free to join &middot; MarketBridge never holds your funds &middot; Trades execute on your own Deriv account
+        <p class="hero-note hero-assure">
+          <span class="ha-ic" data-icon="shield"></span>
+          <span>
+            <b>We never hold your funds.</b><br>
+            Trades execute on your <span class="hl">Deriv</span> account.
+          </span>
         </p>
       </div>
 
@@ -65,66 +69,52 @@
           <div class="phone-notch"><i></i></div>
           <div class="phone-body">
 
-            <div class="row g2" style="padding:8px 0 4px">
-              <span style="color:var(--mb-green);display:flex" id="phoneMark"></span>
-              <span class="brand-name" style="font-size:13px"><span class="a">MARKET</span><span class="b">BRIDGE</span></span>
+            <div class="row g2 between" style="padding:6px 0 10px">
+              <span id="phoneBrand"></span>
+              <span class="row g2" style="color:var(--mb-text-3)">
+                <span data-icon="bell" data-icon-size="14"></span>
+                <span class="avatar avatar-xs" style="background:hsl(210 14% 26%)">A</span>
+              </span>
             </div>
 
             <div class="balance" style="padding:12px">
               <div class="balance-label t-xs">Deriv Real Account</div>
-              <div class="balance-amount" style="font-size:22px">$2,450.80</div>
+              <div class="balance-amount" style="font-size:23px">2,450.80 <small style="font-size:11px;color:var(--mb-text-3)">USD</small></div>
+              <div class="t-xs c-up" style="margin-top:3px">P&amp;L today +$8.40 (+0.35%)</div>
               <div class="balance-actions" style="margin-top:10px">
-                <span class="btn btn-primary btn-sm" style="flex:1">Deposit</span>
+                <span class="btn btn-trade btn-sm" style="flex:1">Deposit</span>
                 <span class="btn btn-ghost btn-sm" style="flex:1">Withdraw</span>
               </div>
             </div>
 
-            <div class="hscroll" style="gap:8px">
-              <div class="market-card" style="width:112px;padding:9px">
-                <div class="m-name" style="font-size:9px">Volatility 75 (1s)</div>
-                <div class="m-price" style="font-size:13px" data-tick="1HZ75V" data-tick-flash>542,893.42</div>
-                <div class="m-change c-up" style="font-size:9px">+1.28%</div>
-                <svg data-spark="up" data-seed="v75p" data-h="26"></svg>
+            <div class="card" style="padding:10px;margin-top:10px">
+              <div class="row g2 between">
+                <span class="t-xs c-2">Volatility 75 (1s) Index</span>
+                <span class="t-xs c-up">+1.28%</span>
               </div>
-              <div class="market-card" style="width:112px;padding:9px">
-                <div class="m-name" style="font-size:9px">Boom 1000</div>
-                <div class="m-price" style="font-size:13px" data-tick="BOOM1000" data-tick-flash>8,342.11</div>
-                <div class="m-change c-up" style="font-size:9px">+1.12%</div>
-                <svg data-spark="up" data-seed="b1kp" data-h="26"></svg>
+              <div class="m-price" style="font-size:16px;margin-top:2px"
+                   data-tick="1HZ75V" data-tick-flash>542,415.29</div>
+              <div style="margin-top:8px">
+                <span data-chart="candle" data-seed="heroPhone" data-h="86"></span>
               </div>
-            </div>
-
-            <div class="signal-card is-executable" style="border-radius:12px">
-              <div class="signal-head" style="padding:10px 10px 6px">
-                <span class="avatar avatar-xs" style="background:hsl(28 58% 42%)">FX</span>
-                <div class="grow" style="min-width:0">
-                  <div class="signal-author" style="font-size:11px">FX_ProTrader</div>
-                  <div class="signal-meta" style="font-size:9px">Volatility 75 (1s) &middot; 3m</div>
-                </div>
-                <span class="signal-kind k-exec" style="font-size:7px">EXECUTABLE</span>
-              </div>
-              <div class="signal-body" style="padding:0 10px 10px">
-                <div class="signal-dir d-buy" style="font-size:14px">
-                  <span data-icon="up" data-icon-size="12"></span> RISE
-                </div>
-                <div class="signal-params" style="padding:8px;margin-top:8px">
-                  <div><div class="lk" style="font-size:8px">Duration</div><div class="lv" style="font-size:10px">5 ticks</div></div>
-                  <div><div class="lk" style="font-size:8px">Stake</div><div class="lv" style="font-size:10px">10&ndash;100</div></div>
-                  <div><div class="lk" style="font-size:8px">Win rate</div><div class="lv" style="font-size:10px">78%</div></div>
-                </div>
-                <span class="btn btn-primary btn-sm btn-block" style="margin-top:8px;font-size:11px">Trade This Signal</span>
+              <div class="row g1" style="margin-top:8px;flex-wrap:wrap">
+                <span class="chip is-active" style="font-size:9px;padding:3px 8px">1s</span>
+                <span class="chip" style="font-size:9px;padding:3px 8px">1m</span>
+                <span class="chip" style="font-size:9px;padding:3px 8px">5m</span>
+                <span class="chip" style="font-size:9px;padding:3px 8px">15m</span>
+                <span class="chip" style="font-size:9px;padding:3px 8px">1h</span>
               </div>
             </div>
 
-            <div class="post-card" style="padding:10px;border-radius:12px">
-              <div class="row g2">
-                <span class="avatar avatar-xs" style="background:hsl(268 58% 42%)">JF</span>
-                <div class="post-author" style="font-size:11px">JamesFX</div>
-                <span class="badge badge-pro" style="font-size:8px">Pro</span>
-              </div>
-              <div class="post-body" style="font-size:10px;margin-top:6px">
-                V75 just swept liquidity. Watching 543k closely.
-              </div>
+            <div class="row g2" style="margin-top:10px">
+              <span class="btn btn-trade btn-sm" style="flex:1;flex-direction:column;gap:0;padding:9px">
+                <span style="font-size:11px;font-weight:700">Up</span>
+                <span style="font-size:10px;opacity:.85">10.00 USD</span>
+              </span>
+              <span class="btn btn-sell btn-sm" style="flex:1;flex-direction:column;gap:0;padding:9px">
+                <span style="font-size:11px;font-weight:700">Down</span>
+                <span style="font-size:10px;opacity:.85">10.00 USD</span>
+              </span>
             </div>
 
           </div>
@@ -143,12 +133,26 @@
   <!-- ==================================================================
        TRUST STRIP
        =================================================================== -->
-  <section class="trust">
-    <div class="container inner">
-      <div class="trust-cell"><div class="v">24,500+</div><div class="k">Traders</div></div>
-      <div class="trust-cell"><div class="v">40+</div><div class="k">Markets</div></div>
-      <div class="trust-cell"><div class="v">3,200+</div><div class="k">Signals posted</div></div>
-      <div class="trust-cell"><div class="v">$0</div><div class="k">Funds we hold</div></div>
+  <section class="section" style="padding-top:var(--mb-s10);padding-bottom:0">
+    <div class="container">
+      <div class="stat-strip">
+        <div>
+          <span class="si" style="color:var(--vy-teal)" data-icon="users" data-icon-size="30"></span>
+          <div class="v">24,500+</div><div class="k">Traders</div>
+        </div>
+        <div>
+          <span class="si" style="color:var(--vy-brand)" data-icon="markets" data-icon-size="30"></span>
+          <div class="v">49+</div><div class="k">Markets</div>
+        </div>
+        <div>
+          <span class="si" style="color:var(--mb-green)" data-icon="activity" data-icon-size="30"></span>
+          <div class="v">3,200+</div><div class="k">Signals Posted</div>
+        </div>
+        <div>
+          <span class="si" style="color:var(--vy-brand)" data-icon="shield" data-icon-size="30"></span>
+          <div class="v">$0</div><div class="k">Funds We Hold</div>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -178,87 +182,125 @@
     </div>
   </section>
 
-  <!-- Full-bleed heat texture between sections -->
-  <div class="heat-band" aria-hidden="true">
-    <div class="container inner">
-      <span class="lab">24h movement</span>
-      <span class="grid"><span data-chart="heat" data-seed="band" data-cols="26" data-rows="3"></span></span>
+  <!-- ==================================================================
+       ONE ECOSYSTEM — the six connected surfaces
+       =================================================================== -->
+  <section class="section" id="ecosystem">
+    <div class="container">
+      <div class="eco">
+        <div class="eco-head">
+          <div class="section-eyebrow">One ecosystem</div>
+          <h2>Everything about a market, in one place</h2>
+          <p>Chart, trading, signals, analysis, community and top traders &mdash; all connected.</p>
+        </div>
+
+        <div class="eco-row">
+          <a class="eco-node n-green" href="users/markets/index.html">
+            <span class="en-ring" data-icon="chart" data-icon-size="24"></span>
+            <span class="en-t">Chart</span>
+          </a>
+          <span class="eco-link" aria-hidden="true"></span>
+          <a class="eco-node n-red" href="users/trade/index.html">
+            <span class="en-ring" data-icon="trade" data-icon-size="24"></span>
+            <span class="en-t">Trade</span>
+          </a>
+          <span class="eco-link" aria-hidden="true"></span>
+          <a class="eco-node n-green" href="users/signals/index.html">
+            <span class="en-ring" data-icon="signals" data-icon-size="24"></span>
+            <span class="en-t">Signals</span>
+          </a>
+          <span class="eco-link" aria-hidden="true"></span>
+          <a class="eco-node n-red" href="users/signals/index.html?kind=analysis">
+            <span class="en-ring" data-icon="search" data-icon-size="24"></span>
+            <span class="en-t">Analysis</span>
+          </a>
+          <span class="eco-link" aria-hidden="true"></span>
+          <a class="eco-node n-green" href="users/community/index.html">
+            <span class="en-ring" data-icon="users" data-icon-size="24"></span>
+            <span class="en-t">Community</span>
+          </a>
+          <span class="eco-link" aria-hidden="true"></span>
+          <a class="eco-node n-red" href="users/results/leaderboard.html">
+            <span class="en-ring" data-icon="star" data-icon-size="24"></span>
+            <span class="en-t">Top Traders</span>
+          </a>
+        </div>
+      </div>
     </div>
-  </div>
+  </section>
 
   <!-- ==================================================================
-       FEATURES
+       POWERFUL FEATURES
        =================================================================== -->
   <section class="section" id="features">
     <div class="container">
-      <div class="section-head">
-        <div class="section-eyebrow">One ecosystem</div>
-        <h2>Everything about a market, in one place</h2>
+      <div class="section-head is-centered">
+        <div class="section-eyebrow">Powerful features</div>
+        <h2>Built for serious Deriv traders</h2>
         <p>
-          Most platforms give you a chart and a buy button. MarketBridge gives every
-          market a chart, a trading desk, its signals, its analysis, its traders and
-          its conversation — all reachable from one another.
+          Six things every one of them asks for, and none of them bolted on
+          afterwards.
         </p>
       </div>
 
       <div class="feature-grid">
-        <article class="feature">
+        <article class="feature f-green">
           <div class="feature-icon"><span data-icon="trade"></span></div>
           <h3>Real Deriv execution</h3>
           <p>
-            Connect your Deriv account and trade Accumulators, Rise/Fall, Digits and
-            Multipliers through a purpose-built interface. Positions open on your own
-            account — we never take custody.
+            Trade Accumulators, Rise/Fall, Digits and Multipliers directly on your
+            own connected Deriv account. VYBE never takes custody &mdash; the
+            position opens where your money already is.
           </p>
         </article>
 
-        <article class="feature">
-          <div class="feature-icon"><span data-icon="signals"></span></div>
-          <h3>Signals you can actually take</h3>
+        <article class="feature f-red">
+          <div class="feature-icon"><span data-icon="results"></span></div>
+          <h3>Verified signal history</h3>
           <p>
-            Every signal is labelled by what you can do with it. Executable signals
-            open a pre-filled trade ticket. Analysis signals take you to the market
-            with the levels laid out. Never a fake button.
+            Signals lock the moment they publish. Results resolve from the real
+            contract or the price feed, never from a claim, so nobody quietly
+            deletes a loss to inflate a win rate.
           </p>
         </article>
 
-        <article class="feature">
-          <div class="feature-icon"><span data-icon="community"></span></div>
-          <h3>A community per market</h3>
+        <article class="feature f-green">
+          <div class="feature-icon"><span data-icon="chat"></span></div>
+          <h3>Market rooms</h3>
           <p>
-            V75 has its own room. So do Boom 1000, Crash 500 and every other index.
-            Discuss the market you trade with the people trading it, not one giant
+            V75, Boom 1000, EUR/USD, BTC/USD &mdash; every pair has its own room.
+            Discuss with the traders in the same market instead of one giant
             undifferentiated chat.
           </p>
         </article>
 
-        <article class="feature">
-          <div class="feature-icon"><span data-icon="users"></span></div>
-          <h3>Find your specialists</h3>
+        <article class="feature f-red">
+          <div class="feature-icon"><span data-icon="star"></span></div>
+          <h3>Top traders</h3>
           <p>
-            Top V75 traders. Top Boom &amp; Crash traders. Top digit traders.
-            Discover people by the markets and strategies they actually trade, then
-            follow the ones worth following.
+            Discover specialists by the markets and strategies they actually trade,
+            check the record behind the badge, and follow the ones that hold up
+            over more than a good week.
           </p>
         </article>
 
-        <article class="feature">
-          <div class="feature-icon"><span data-icon="results"></span></div>
-          <h3>Records that hold up</h3>
-          <p>
-            Signals lock the moment they publish and results resolve from evidence,
-            not from a claim. Nobody deletes their losses to manufacture a win rate
-            on this platform.
-          </p>
-        </article>
-
-        <article class="feature">
+        <article class="feature f-green">
           <div class="feature-icon"><span data-icon="resources"></span></div>
-          <h3>Learn while you trade</h3>
+          <h3>Learning hub</h3>
           <p>
             Courses, guides and webinars on Smart Money Concepts, ICT, price action,
-            risk and trading psychology — attached to the markets they apply to,
-            with your progress tracked.
+            risk and psychology &mdash; attached to the markets they apply to, with
+            your progress tracked.
+          </p>
+        </article>
+
+        <article class="feature f-red">
+          <div class="feature-icon"><span data-icon="lock"></span></div>
+          <h3>Secure &amp; private</h3>
+          <p>
+            Connecting uses Deriv&rsquo;s own OAuth flow. We never see your Deriv
+            password, we store an encrypted token with only the permissions you
+            grant, and you can revoke it at any time.
           </p>
         </article>
       </div>
@@ -445,8 +487,8 @@
   <section class="section section-alt" id="compare">
     <div class="container">
       <div class="section-head is-centered">
-        <div class="section-eyebrow">The rule that matters most</div>
-        <h2>Two kinds of signal. Never confused.</h2>
+        <div class="section-eyebrow">Two kinds of signal</div>
+        <h2>Clear. Honest. Actionable.<br>Never confused.</h2>
         <p>
           Some trading ideas can be executed on Deriv. Some cannot. Platforms that
           blur the two waste your time and cost you money.
@@ -498,7 +540,7 @@
           </ul>
 
           <div class="compare-foot">
-            <span class="btn btn-info btn-block">View Market</span>
+            <span class="btn btn-analysis btn-block">View Market</span>
             <div class="cap">What you see on an analysis signal</div>
           </div>
         </article>
@@ -507,134 +549,60 @@
     </div>
   </section>
   <!-- ==================================================================
-       THE LOOP
+       THE LOOP — 01 to 06, discovery to execution
        =================================================================== -->
   <section class="section" id="loop">
     <div class="container">
       <div class="section-head is-centered">
-        <div class="section-eyebrow">How it compounds</div>
-        <h2>The loop that makes it work</h2>
+        <div class="section-eyebrow">The loop that makes it work</div>
+        <h2>From discovery to execution</h2>
         <p>Each stage feeds the next, and the last one feeds the first. That circuit
         is the whole product.</p>
       </div>
 
-      <div class="loop">
-
-        <!-- ring: desktop -->
-        <div class="loop-ring">
-          <svg viewBox="0 0 100 100" aria-hidden="true">
-            <circle cx="50" cy="50" r="43" fill="none" stroke="var(--mb-border)"
-                    stroke-width="0.4" stroke-dasharray="1.6 2.2"/>
-            <circle cx="50" cy="50" r="43" fill="none" stroke="var(--mb-green)"
-                    stroke-width="0.7" stroke-linecap="round"
-                    stroke-dasharray="46 224" transform="rotate(-96 50 50)" opacity=".9"/>
-          </svg>
-
-          <div class="loop-ring-core">
-            <span class="lc-mark" id="loopMark"></span>
-            <span class="lc-t">Eight stages</span>
-            <span class="lc-d">Every screen leads to the next</span>
-          </div>
-
-          <div class="loop-node" style="left:50.0%;top:7.0%">
-            <span class="ln-dot"><span data-icon="search"></span></span>
-            <span class="ln-n">01</span>
-            <span class="ln-t">Discover</span>
-          </div>
-          <div class="loop-node" style="left:80.4%;top:19.6%">
-            <span class="ln-dot"><span data-icon="resources"></span></span>
-            <span class="ln-n">02</span>
-            <span class="ln-t">Learn</span>
-          </div>
-          <div class="loop-node" style="left:93.0%;top:50.0%">
-            <span class="ln-dot"><span data-icon="chat"></span></span>
-            <span class="ln-n">03</span>
-            <span class="ln-t">Discuss</span>
-          </div>
-          <div class="loop-node" style="left:80.4%;top:80.4%">
-            <span class="ln-dot"><span data-icon="userplus"></span></span>
-            <span class="ln-n">04</span>
-            <span class="ln-t">Follow</span>
-          </div>
-          <div class="loop-node" style="left:50.0%;top:93.0%">
-            <span class="ln-dot"><span data-icon="signals"></span></span>
-            <span class="ln-n">05</span>
-            <span class="ln-t">Signal</span>
-          </div>
-          <div class="loop-node" style="left:19.6%;top:80.4%">
-            <span class="ln-dot"><span data-icon="trade"></span></span>
-            <span class="ln-n">06</span>
-            <span class="ln-t">Trade</span>
-          </div>
-          <div class="loop-node" style="left:7.0%;top:50.0%">
-            <span class="ln-dot"><span data-icon="results"></span></span>
-            <span class="ln-n">07</span>
-            <span class="ln-t">Result</span>
-          </div>
-          <div class="loop-node" style="left:19.6%;top:19.6%">
-            <span class="ln-dot"><span data-icon="share"></span></span>
-            <span class="ln-n">08</span>
-            <span class="ln-t">Share</span>
-          </div>
-        </div>
-
-        <!-- track: mobile -->
-        <div class="loop-track">
-        <div class="loop-item">
-          <span class="li-ic"><span data-icon="search"></span></span>
-          <div class="li-n">01</div>
-          <div class="li-t">Discover</div>
-          <div class="li-d">Find a market</div>
-        </div>
-        <div class="loop-item">
-          <span class="li-ic"><span data-icon="resources"></span></span>
-          <div class="li-n">02</div>
-          <div class="li-t">Learn</div>
-          <div class="li-d">Study how it moves</div>
-        </div>
-        <div class="loop-item">
-          <span class="li-ic"><span data-icon="chat"></span></span>
-          <div class="li-n">03</div>
-          <div class="li-t">Discuss</div>
-          <div class="li-d">Join its room</div>
-        </div>
-        <div class="loop-item">
-          <span class="li-ic"><span data-icon="userplus"></span></span>
-          <div class="li-n">04</div>
-          <div class="li-t">Follow</div>
-          <div class="li-d">Back a specialist</div>
-        </div>
-        <div class="loop-item">
-          <span class="li-ic"><span data-icon="signals"></span></span>
-          <div class="li-n">05</div>
-          <div class="li-t">Signal</div>
-          <div class="li-d">See their call</div>
-        </div>
-        <div class="loop-item">
-          <span class="li-ic"><span data-icon="trade"></span></span>
-          <div class="li-n">06</div>
-          <div class="li-t">Trade</div>
-          <div class="li-d">Take it, if executable</div>
-        </div>
-        <div class="loop-item">
-          <span class="li-ic"><span data-icon="results"></span></span>
-          <div class="li-n">07</div>
-          <div class="li-t">Result</div>
-          <div class="li-d">Tracked honestly</div>
-        </div>
-        <div class="loop-item">
-          <span class="li-ic"><span data-icon="share"></span></span>
-          <div class="li-n">08</div>
-          <div class="li-t">Share</div>
-          <div class="li-d">Back to the market</div>
-        </div>
-          <div class="loop-restart">
-            <span data-icon="refresh"></span>
-            <span>&hellip; and the share feeds the next trader's discovery.</span>
-          </div>
-        </div>
-
+      <div class="loop6">
+        <article class="loop6-step n-green">
+          <span class="ls-ring" data-icon="search" data-icon-size="20"></span>
+          <div class="ls-n">01</div>
+          <div class="ls-t">Discover</div>
+          <div class="ls-d">Find a market</div>
+        </article>
+        <article class="loop6-step n-red">
+          <span class="ls-ring" data-icon="resources" data-icon-size="20"></span>
+          <div class="ls-n">02</div>
+          <div class="ls-t">Learn</div>
+          <div class="ls-d">Study how it moves</div>
+        </article>
+        <article class="loop6-step n-green">
+          <span class="ls-ring" data-icon="chat" data-icon-size="20"></span>
+          <div class="ls-n">03</div>
+          <div class="ls-t">Discuss</div>
+          <div class="ls-d">Join its room</div>
+        </article>
+        <article class="loop6-step n-red">
+          <span class="ls-ring" data-icon="userplus" data-icon-size="20"></span>
+          <div class="ls-n">04</div>
+          <div class="ls-t">Follow</div>
+          <div class="ls-d">Back a specialist</div>
+        </article>
+        <article class="loop6-step n-green">
+          <span class="ls-ring" data-icon="signals" data-icon-size="20"></span>
+          <div class="ls-n">05</div>
+          <div class="ls-t">Signal</div>
+          <div class="ls-d">See their call</div>
+        </article>
+        <article class="loop6-step n-red">
+          <span class="ls-ring" data-icon="trade" data-icon-size="20"></span>
+          <div class="ls-n">06</div>
+          <div class="ls-t">Trade</div>
+          <div class="ls-d">Take it, if executable</div>
+        </article>
       </div>
+
+      <p class="t-sm c-3" style="display:flex;align-items:center;justify-content:center;gap:7px;margin-top:var(--mb-s6)">
+        <span data-icon="refresh" data-icon-size="13"></span>
+        <span>The result you share becomes the next trader&rsquo;s discovery.</span>
+      </p>
     </div>
   </section>
   <!-- ==================================================================
@@ -689,7 +657,7 @@
   <section class="section">
     <div class="container">
       <div class="download" data-install-block>
-        <h2>Install MarketBridge on your phone</h2>
+        <h2>Install VYBE on your phone</h2>
         <p>
           It is a web app, so there is no app store, no review queue and no waiting
           for updates. Install it once and it opens full screen from your home
@@ -697,7 +665,7 @@
         </p>
 
         <div class="hero-cta" style="justify-content:center;margin-top:28px">
-          <button class="btn btn-primary btn-lg" data-install>
+          <button class="btn btn-brand btn-lg" data-install>
             <span data-icon="download"></span> Install now
           </button>
           <a class="btn btn-outline btn-lg" href="users/index.html">
@@ -705,23 +673,6 @@
           </a>
         </div>
 
-        <div class="download-steps">
-          <div class="download-step">
-            <div class="ds-k">Android &middot; Chrome</div>
-            <div class="ds-t">Tap Install</div>
-            <div class="ds-d">Use the button above, or Chrome's menu &rarr; Install app. It lands on your home screen like any other app.</div>
-          </div>
-          <div class="download-step">
-            <div class="ds-k">iPhone &middot; Safari</div>
-            <div class="ds-t">Share &rarr; Add to Home Screen</div>
-            <div class="ds-d">Safari installs web apps from the Share menu. Tap Share, scroll to Add to Home Screen, then Add.</div>
-          </div>
-          <div class="download-step">
-            <div class="ds-k">Desktop</div>
-            <div class="ds-t">Install from the address bar</div>
-            <div class="ds-d">Chrome and Edge show an install icon in the address bar. MarketBridge then runs in its own window.</div>
-          </div>
-        </div>
       </div>
     </div>
   </section>
@@ -739,16 +690,16 @@
 
       <div class="faq">
         <details open>
-          <summary><span class="q-mark"></span><span class="q-text">Does MarketBridge hold my money?</span></summary>
+          <summary><span class="q-mark"></span><span class="q-text">Does VYBE hold my money?</span></summary>
           <div class="faq-body">No, and it is built so that it cannot. There is no wallet and no balance in our system. Your funds stay in your Deriv account, trades execute there, and the balance you see here is a timestamped read of Deriv &mdash; not a number we maintain. Deposits and withdrawals hand you off to Deriv or to Kaastro, and we tell you clearly when you are leaving.</div>
         </details>
         <details>
           <summary><span class="q-mark"></span><span class="q-text">Is it free?</span></summary>
-          <div class="faq-body">Yes. Creating an account, following traders, reading signals, joining market rooms and taking the courses all cost nothing. MarketBridge earns through Deriv's official partner programme rather than by charging traders for access.</div>
+          <div class="faq-body">Yes. Creating an account, following traders, reading signals, joining market rooms and taking the courses all cost nothing. VYBE earns through Deriv's official partner programme rather than by charging traders for access.</div>
         </details>
         <details>
           <summary><span class="q-mark"></span><span class="q-text">Do you guarantee the signals?</span></summary>
-          <div class="faq-body">No. Signals and analysis are written by other users, not by MarketBridge. We do not verify that any trade will work, and a boosted signal means we gave a post more visibility &mdash; never that we endorse the outcome. What we <strong>do</strong> guarantee is that the track record you see is honest: signals lock on publish, results resolve from evidence, and retracted signals still count against the author.</div>
+          <div class="faq-body">No. Signals and analysis are written by other users, not by VYBE. We do not verify that any trade will work, and a boosted signal means we gave a post more visibility &mdash; never that we endorse the outcome. What we <strong>do</strong> guarantee is that the track record you see is honest: signals lock on publish, results resolve from evidence, and retracted signals still count against the author.</div>
         </details>
         <details>
           <summary><span class="q-mark"></span><span class="q-text">Which contracts can I actually trade here?</span></summary>
@@ -774,16 +725,18 @@
        CLOSING CTA
        =================================================================== -->
   <section class="section">
-    <div class="container container-narrow" style="text-align:center">
-      <h2 style="font-size:clamp(26px,4vw,40px);font-weight:800;letter-spacing:-.03em">
-        Start with the market you already trade
-      </h2>
-      <p class="t-h3 c-2 mt4" style="max-width:52ch;margin-left:auto;margin-right:auto">
-        Find its room, see who trades it well, and take it from there.
-      </p>
-      <div class="hero-cta" style="justify-content:center;margin-top:28px">
-        <a class="btn btn-primary btn-lg" href="auth/register.html">Create free account</a>
-        <a class="btn btn-outline btn-lg" href="about.html">Read about us</a>
+    <div class="container">
+      <div class="cta-band">
+        <h2>Start with the market you already trade</h2>
+        <p>Find its room, see who trades it well, and take it from there.</p>
+        <div class="hero-cta" style="justify-content:center;margin-top:var(--mb-s7)">
+          <a class="btn btn-brand btn-lg" href="auth/register.html">
+            <span data-icon="userplus"></span> Create free account
+          </a>
+          <a class="btn btn-outline btn-lg" href="users/markets/index.html">
+            Explore markets <span data-icon="chevright"></span>
+          </a>
+        </div>
       </div>
     </div>
   </section>
@@ -825,11 +778,8 @@ MB.ready(function () {
     MB.mountTicks(document.getElementById('marketWall'));
   });
 
-  var pm = document.getElementById('phoneMark');
-  if (pm) { pm.innerHTML = MB.brandMark(22); }
-
-  var lm = document.getElementById('loopMark');
-  if (lm) { lm.innerHTML = MB.brandMark(44); }
+  var pb = document.getElementById('phoneBrand');
+  if (pb) { pb.innerHTML = MB.brand({ href: null, small: true }); }
 
   var track = document.getElementById('marqueeTrack');
   if (!track) { return; }

@@ -1,5 +1,5 @@
 /* ==========================================================================
-   MARKETBRIDGE — UPLOADS
+   VYBE — UPLOADS
    Image and file attachments for chat, posts and signal charts.
 
    Everything here is client-side: files are read as object URLs for preview

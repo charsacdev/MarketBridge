@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Settings — MarketBridge</title>
-<meta name="theme-color" content="#0A0E12">
+<title>Settings — VYBE</title>
+<meta name="theme-color" content="#080B0F">
 <link rel="manifest" href="../../manifest.webmanifest">
 <link rel="icon" href="../../assets/icons/favicon-32.png" sizes="32x32">
 <link rel="apple-touch-icon" href="../../assets/icons/apple-touch-icon.png">
@@ -15,7 +15,7 @@
 <link rel="stylesheet" href="../../assets/css/base.css">
 <link rel="stylesheet" href="../../assets/css/components.css">
 <link rel="stylesheet" href="../../assets/css/app.css">
-<script>(function(){try{var t=localStorage.getItem('mb.theme');if(t){document.documentElement.setAttribute('data-theme',t);}}catch(e){}})();</script>
+<script>(function(){var t='dark';try{t=localStorage.getItem('mb.theme')||'dark';}catch(e){}var m=/[?&]theme=(dark|light|system)/.exec(location.search);if(m){t=m[1];}if(t!=='system'){document.documentElement.setAttribute('data-theme',t);}})();</script>
 </head>
 <body data-shell="app" data-nav="home" data-root="../../" data-title="Settings" data-back="index.html" data-unread="3">
 
@@ -82,11 +82,8 @@
       <div class="label">App</div>
       <div class="list">
         <button class="list-row" data-install><span class="lr-icon" data-icon="download"></span>
-          <span class="grow lr-title" style="text-align:left">Install MarketBridge</span>
+          <span class="grow lr-title" style="text-align:left">Install VYBE</span>
           <span class="lr-chev" data-icon="chevright"></span></button>
-        <a class="list-row" href="../../admin/index.html"><span class="lr-icon" data-icon="grid"></span>
-          <span class="grow lr-title">Admin console</span>
-          <span class="lr-value">Staff</span></a>
       </div>
     </section>
 

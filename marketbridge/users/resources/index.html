@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Resources — MarketBridge</title>
-<meta name="theme-color" content="#0A0E12">
+<title>Resources — VYBE</title>
+<meta name="theme-color" content="#080B0F">
 <link rel="manifest" href="../../manifest.webmanifest">
 <link rel="icon" href="../../assets/icons/favicon-32.png" sizes="32x32">
 <link rel="apple-touch-icon" href="../../assets/icons/apple-touch-icon.png">
@@ -15,7 +15,7 @@
 <link rel="stylesheet" href="../../assets/css/base.css">
 <link rel="stylesheet" href="../../assets/css/components.css">
 <link rel="stylesheet" href="../../assets/css/app.css">
-<script>(function(){try{var t=localStorage.getItem('mb.theme');if(t){document.documentElement.setAttribute('data-theme',t);}}catch(e){}})();</script>
+<script>(function(){var t='dark';try{t=localStorage.getItem('mb.theme')||'dark';}catch(e){}var m=/[?&]theme=(dark|light|system)/.exec(location.search);if(m){t=m[1];}if(t!=='system'){document.documentElement.setAttribute('data-theme',t);}})();</script>
 </head>
 <body data-shell="app" data-nav="home" data-root="../../" data-title="Resources" data-sub="Learn, grow and improve your trading" data-unread="3">
 
@@ -44,6 +44,9 @@
 
     <section class="page-section">
       <div class="sec-head"><h2 id="listTitle">All resources</h2></div>
+      <div class="filter-row">
+        <span class="filter-count"><span id="resCount">0</span> resources</span>
+      </div>
       <div class="stack g3" id="resList"></div>
     </section>
   </main>
@@ -67,47 +70,46 @@ MB.ready(function () {
     filter: function (r) { return r.progress_percent > 0; },
     template: MB.card.resource });
 
-  var all = [], cat = 'all', q = '';
-  function paint() {
-    var rows = all.filter(function (r) {
-      var okC = cat === 'all' || r.category === cat;
-      var okQ = !q || (r.title + ' ' + r.summary).toLowerCase().indexOf(q) > -1;
-      return okC && okQ;
-    });
-    var host = document.getElementById('resList');
-    if (!rows.length) {
-      host.innerHTML = '<div class="empty">' + MB.icon('book', 46) +
-        '<h3>Nothing found</h3><p>Try another category.</p></div>';
-      MB.mountIcons(host); return;
-    }
-    host.innerHTML = rows.map(function (r) {
-      var isLive = r.is_live;
-      return '<a class="list-row" style="border-radius:12px;border:1px solid var(--mb-border);' +
-        'background:var(--mb-surface);margin-bottom:0" href="detail.html?slug=' + r.slug + '">' +
-        '<span class="none" style="width:44px;height:44px;border-radius:8px;overflow:hidden;' +
-        'background:var(--mb-surface-2)"><span data-chart="candle" data-seed="' + r.id +
-        '" data-h="44" style="display:block"></span></span>' +
-        '<span class="grow" style="min-width:0">' +
-          '<span class="row g2"><span class="lr-title truncate">' + r.title + '</span>' +
-          (isLive ? '<span class="badge badge-lost">Live</span>' : '') + '</span>' +
-          '<span class="lr-sub truncate">' + r.summary + '</span>' +
-          (r.progress_percent ? '<span class="progress mt2" style="display:block"><i style="width:' +
-            r.progress_percent + '%"></i></span>' : '') +
-        '</span>' +
-        '<span class="none" style="text-align:right">' +
-          '<span class="badge badge-neutral">' + r.level + '</span></span></a>';
-    }).join('');
-    MB.mountIcons(host); MB.mountCharts(host);
+  /* Was a hand-rolled filter + full-list render. Moved onto the shared
+     collection so it paginates like every other list, and so the chips,
+     the search box and the count stay in step automatically. */
+  function resourceRow(r) {
+    return '<a class="list-row" style="border-radius:12px;border:1px solid var(--mb-border);' +
+      'background:var(--mb-surface);margin-bottom:0" href="detail.html?slug=' + r.slug + '">' +
+      '<span class="none" style="width:44px;height:44px;border-radius:8px;overflow:hidden;' +
+      'background:var(--mb-surface-2)"><span data-chart="candle" data-seed="' + r.id +
+      '" data-h="44" style="display:block"></span></span>' +
+      '<span class="grow" style="min-width:0">' +
+        '<span class="row g2"><span class="lr-title truncate">' + MB.esc(r.title) + '</span>' +
+        (r.is_live ? '<span class="badge badge-lost">Live</span>' : '') + '</span>' +
+        '<span class="lr-sub truncate">' + MB.esc(r.summary) + '</span>' +
+        (r.progress_percent ? '<span class="progress mt2" style="display:block"><i style="width:' +
+          r.progress_percent + '%"></i></span>' : '') +
+      '</span>' +
+      '<span class="none" style="text-align:right">' +
+        '<span class="badge badge-neutral">' + MB.esc(r.level) + '</span></span></a>';
   }
-  MB.api.list('resources').then(function (rows) { all = rows; paint(); });
-  document.getElementById('resCat').addEventListener('mb:change', function (e) {
-    cat = e.detail.value;
-    document.getElementById('listTitle').textContent =
-      cat === 'all' ? 'All resources' : cat.charAt(0).toUpperCase() + cat.slice(1);
-    paint();
+
+  var res = MB.collection({
+    from: 'resources', into: '#resList', template: resourceRow,
+    perPage: 8, mode: 'pages', countInto: '#resCount', skeletonCount: 3,
+    initial: { category: 'all', q: '' },
+    filters: {
+      category: function (r, v) { return v === 'all' || r.category === v; },
+      q: function (r, v) {
+        return !v || (r.title + ' ' + r.summary).toLowerCase().indexOf(v) > -1;
+      }
+    },
+    emptyIcon: 'book', emptyTitle: 'Nothing found',
+    emptyText: 'Try another category or a different search.'
   });
-  document.getElementById('resSearch').addEventListener('input', function () {
-    q = this.value.trim().toLowerCase(); paint();
+  res.bind('#resCat', 'category');
+  res.bindInput('#resSearch', 'q');
+
+  MB.$('#resCat').addEventListener('mb:change', function (e) {
+    var cat = e.detail.value;
+    MB.$('#listTitle').textContent =
+      cat === 'all' ? 'All resources' : cat.charAt(0).toUpperCase() + cat.slice(1);
   });
 });
 </script>

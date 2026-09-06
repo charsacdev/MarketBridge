@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Staff &amp; Roles — VYBE Admin</title>
+<meta name="theme-color" content="#080B0F">
+<link rel="icon" href="../assets/icons/favicon-32.png" sizes="32x32">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap">
+<link rel="stylesheet" href="../assets/css/tokens.css">
+<link rel="stylesheet" href="../assets/css/base.css">
+<link rel="stylesheet" href="../assets/css/components.css">
+<link rel="stylesheet" href="../assets/css/admin.css">
+<script>(function(){var t='dark';try{t=localStorage.getItem('mb.theme')||'dark';}catch(e){}var m=/[?&]theme=(dark|light|system)/.exec(location.search);if(m){t=m[1];}if(t!=='system'){document.documentElement.setAttribute('data-theme',t);}})();</script>
+</head>
+<body data-shell="admin" data-role="superadmin" data-nav="staff" data-root="../">
+
+<div class="admin">
+  <div data-render="admin-rail"></div>
+
+  <div class="admin-main">
+    <header class="admin-topbar">
+      <button class="icon-btn admin-burger" id="adminBurger" aria-label="Menu">
+        <span data-icon="menu"></span></button>
+
+      <div class="grow">
+        <h1>Staff &amp; Roles</h1>
+        <div class="sub">Who has access to the staff portals, and what they can do</div>
+      </div>
+      <button class="theme-toggle none" data-theme-toggle aria-label="Switch theme"></button>
+      <button class="btn btn-brand btn-sm" id="btnInvite" data-can="staff.invite">
+        <span data-icon="plus"></span> Invite staff</button>
+    </header>
+
+    <main class="admin-body">
+
+      <!-- Only the owner role can reach this page at all. -->
+      <div class="alert alert-warn">
+        <span data-icon="warning"></span>
+        <div class="t-xs"><strong>Super Admin only.</strong> Everything on this page
+        grants or removes another person&rsquo;s access. Changes take effect on their
+        next request and are written to the staff audit.</div>
+      </div>
+
+      <div id="stats"></div>
+
+      <!-- ================================================================
+           WHAT EACH ROLE CAN DO — read straight from the manifest, so this
+           can never describe a permission the code does not actually grant.
+           ================================================================ -->
+      <section class="admin-card">
+        <div class="admin-card-head">
+          <h2>What each role can do</h2>
+          <span class="t-xs c-3">From the role manifest</span>
+        </div>
+        <div class="role-grid" id="roleGrid"></div>
+      </section>
+
+      <div id="table"></div>
+    </main>
+  </div>
+</div>
+
+<script src="../assets/js/core/icons.js"></script>
+<script src="../assets/js/core/util.js"></script>
+<script src="../assets/js/core/api.js"></script>
+<script src="../assets/js/core/collection.js"></script>
+<script src="../assets/js/core/charts.js"></script>
+<script src="../assets/js/core/ws.js"></script>
+<script src="../assets/js/components/cards.js"></script>
+<script src="../assets/js/components/datatable.js"></script>
+<script src="../assets/js/core/roles.js"></script>
+<script src="../assets/js/core/shell.js"></script>
+<script>
+MB.ready(function () {
+
+  var ROLE_TONE = { superadmin: 'brand', admin: 'green', moderator: 'info' };
+
+  function roleBadge(r) {
+    return '<span class="role-tag role-' + r + '">' +
+      MB.esc(MB.roles.get(r) ? MB.roles.get(r).label : r) + '</span>';
+  }
+  function statusBadge(s) {
+    var cls = { active: 'badge-active', suspended: 'badge-warn',
+                disabled: 'badge-lost', invited: 'badge-neutral' }[s] || 'badge-neutral';
+    return '<span class="badge ' + cls + '">' + s + '</span>';
+  }
+
+  /* ---- the manifest, rendered as a comparison ------------------------- */
+  MB.$('#roleGrid').innerHTML = MB.roles.list().map(function (id) {
+    var role = MB.roles.get(id);
+    var pages = MB.roles.pages(id).filter(function (p) { return !p.group; });
+    return '<article class="role-card role-' + id + '">' +
+      '<div class="between">' +
+        roleBadge(id) +
+        '<span class="t-xs c-3">' + role.actions.length + ' permissions</span>' +
+      '</div>' +
+      '<p class="t-xs c-2 mt3">' + MB.esc(role.blurb) + '</p>' +
+      '<div class="t-xs c-3 mt4">Portal</div>' +
+      '<div class="t-xs num">/' + MB.esc(role.home) + '</div>' +
+      '<div class="t-xs c-3 mt3">Pages (' + pages.length + ')</div>' +
+      '<div class="role-pages">' + pages.map(function (p) {
+        return '<span class="role-pill">' + MB.esc(p.label) + '</span>';
+      }).join('') + '</div>' +
+    '</article>';
+  }).join('');
+
+  /* ---- staff table ---------------------------------------------------- */
+  MB.api.get('admin/staff').then(function (r) {
+    var rows = r.data, meta = r.meta;
+
+    MB.statSlider('#stats', 'Staff overview', [
+      { k: 'Total staff',  v: meta.total,               spark: false },
+      { k: 'Active now',   v: meta.active,              tone: 'accent', spark: false },
+      { k: 'Super Admins', v: meta.by_role.superadmin,  note: 'full control', spark: false },
+      { k: 'Admins',       v: meta.by_role.admin,       note: 'platform operations', spark: false },
+      { k: 'Moderators',   v: meta.by_role.moderator,   note: 'content only', spark: false },
+      { k: 'Without 2FA',  v: rows.filter(function (x) { return !x.two_factor; }).length,
+        tone: 'danger', note: 'should be zero', spark: false }
+    ]);
+
+    MB.datatable({
+      data: rows, into: '#table', perPage: 12, sortKey: 'name', selectable: true,
+      searchPlaceholder: 'Search staff by name, username or email…',
+      search: ['name', 'username', 'email'],
+      columns: [
+        { key: 'name', label: 'Person', sortable: true,
+          render: function (s) {
+            return '<div class="cell-user">' +
+              '<span class="avatar avatar-sm">' + MB.fmt.initials(s.name) + '</span>' +
+              '<div><div class="n">' + MB.esc(s.name) + '</div>' +
+              '<div class="h c-3">' + MB.esc(s.email) + '</div></div></div>';
+          } },
+        { key: 'role', label: 'Role', sortable: true,
+          filter: ['superadmin', 'admin', 'moderator'],
+          render: function (s) { return roleBadge(s.role); } },
+        { key: 'status', label: 'Status', sortable: true,
+          filter: ['active', 'invited', 'suspended', 'disabled'],
+          render: function (s) { return statusBadge(s.status); } },
+        { key: 'two_factor', label: '2FA', sortable: true,
+          render: function (s) {
+            return s.two_factor
+              ? '<span class="c-up t-xs w-bold">on</span>'
+              : '<span class="c-down t-xs w-bold">off</span>';
+          } },
+        { key: 'actions_30d', label: 'Actions 30d', sortable: true, numeric: true,
+          render: function (s) { return s.actions_30d || '<span class="c-3">&mdash;</span>'; } },
+        { key: 'location', label: 'Location', sortable: true,
+          render: function (s) {
+            return '<span class="c-2">' + MB.esc(s.location) + '</span>' +
+              '<div class="h c-3 num">' + MB.esc(s.last_ip) + '</div>';
+          } },
+        { key: 'last_active', label: 'Last active', sortable: true,
+          sortValue: function (s) { return s.last_active ? new Date(s.last_active).getTime() : 0; },
+          render: function (s) {
+            return s.last_active
+              ? '<span class="c-3">' + MB.fmt.ago(s.last_active) + '</span>'
+              : '<span class="c-3">never</span>';
+          } },
+        { key: '', label: 'Actions', align: 'right',
+          render: function (s) {
+            /* The owner account cannot be demoted or removed from here —
+               that is the one door this page must not be able to lock. */
+            var isOwner = s.role === 'superadmin';
+            return '<div class="row-actions">' +
+              '<button class="row-action" data-can="staff.edit_role" data-edit="' + s.id +
+                '" aria-label="Change role"' + (isOwner ? ' disabled' : '') + '>' +
+                MB.icon('edit', 15) + '</button>' +
+              '<button class="row-action is-reject" data-can="staff.disable" data-disable="' + s.id +
+                '" aria-label="Disable"' + (isOwner ? ' disabled' : '') + '>' +
+                MB.icon('ban', 15) + '</button>' +
+            '</div>';
+          } }
+      ],
+      done: function () { wireRowActions(rows); }
+    });
+
+    function wireRowActions(all) {
+      MB.$$('[data-edit]').forEach(function (b) {
+        b.addEventListener('click', function () {
+          var s = all.filter(function (x) { return x.id === b.getAttribute('data-edit'); })[0];
+          if (!s) { return; }
+          MB.toast('Role editor for ' + s.name + ' — wired to PATCH /staff/' + s.id, 'ok');
+        });
+      });
+      MB.$$('[data-disable]').forEach(function (b) {
+        b.addEventListener('click', function () {
+          var s = all.filter(function (x) { return x.id === b.getAttribute('data-disable'); })[0];
+          if (!s) { return; }
+          MB.confirm({
+            title: 'Disable ' + s.name + '?',
+            body: 'They lose access to the ' + s.role + ' portal immediately. ' +
+                  'Their past actions stay in the audit.',
+            confirm: 'Disable', danger: true
+          }).then(function (ok) {
+            if (ok) { MB.toast(s.name + ' disabled', 'ok'); }
+          });
+        });
+      });
+    }
+
+    var invite = MB.$('#btnInvite');
+    if (invite) {
+      invite.addEventListener('click', function () {
+        MB.toast('Invite flow — wired to POST /staff/invite', 'ok');
+      });
+    }
+  });
+});
+</script>
+</body>
+</html>

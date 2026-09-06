@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Resource — MarketBridge</title>
-<meta name="theme-color" content="#0A0E12">
+<title>Resource — VYBE</title>
+<meta name="theme-color" content="#080B0F">
 <link rel="manifest" href="../../manifest.webmanifest">
 <link rel="icon" href="../../assets/icons/favicon-32.png" sizes="32x32">
 <link rel="apple-touch-icon" href="../../assets/icons/apple-touch-icon.png">
@@ -15,7 +15,7 @@
 <link rel="stylesheet" href="../../assets/css/base.css">
 <link rel="stylesheet" href="../../assets/css/components.css">
 <link rel="stylesheet" href="../../assets/css/app.css">
-<script>(function(){try{var t=localStorage.getItem('mb.theme');if(t){document.documentElement.setAttribute('data-theme',t);}}catch(e){}})();</script>
+<script>(function(){var t='dark';try{t=localStorage.getItem('mb.theme')||'dark';}catch(e){}var m=/[?&]theme=(dark|light|system)/.exec(location.search);if(m){t=m[1];}if(t!=='system'){document.documentElement.setAttribute('data-theme',t);}})();</script>
 </head>
 <body data-shell="app" data-nav="home" data-root="../../" data-title="Resource" data-back="index.html" data-unread="3">
 
@@ -114,7 +114,12 @@ MB.ready(function () {
     MB.mountIcons(); MB.mountCharts();
   });
 
-  MB.render({ into: '#rComments', from: 'comments', template: MB.card.comment, skeleton: false });
+  MB.collection({
+    from: 'comments', into: '#rComments', template: MB.card.comment,
+    perPage: 10, mode: 'more', skeleton: false,
+    emptyIcon: 'comment', emptyTitle: 'No replies yet',
+    emptyText: 'Be the first to reply.'
+  });
   document.getElementById('rdTabs').addEventListener('mb:change', function (e) {
     document.getElementById('paneAbout').classList.toggle('hide', e.detail.value !== 'about');
     document.getElementById('paneLessons').classList.toggle('hide', e.detail.value !== 'lessons');

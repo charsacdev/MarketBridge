@@ -1,5 +1,5 @@
 /* ==========================================================================
-   MARKETBRIDGE — SHELL
+   VYBE — SHELL
    Renders the chrome so every page file stays thin and no nav markup is
    ever duplicated. Each renderer here maps to one Blade layout later:
 
@@ -21,31 +21,39 @@
   /* ======================================================================
      BRAND
      ====================================================================== */
-  /* The supplied brand artwork. icon.png is the mark on its own; logo.png is
-     the full lockup with the wordmark and tagline already set. Both are used
-     directly so the platform always carries the real logo files. */
+  /* The VYBE infinity mark. Vector, so it stays crisp at every size and
+     inherits currentColor where a single-colour mark is wanted. */
+  var MARK_PATH = 'M50,44 C40,19 13,21 13,44 C13,67 40,69 50,44 ' +
+                  'C60,19 87,21 87,44 C87,67 60,69 50,44';
+
   MB.brandMark = function (size) {
-    var h = size ? 'style="height:' + Math.round(size * 0.88) + 'px"' : '';
-    return '<img class="brand-icon" ' + h + ' src="' + MB.url('assets/icons/icon.png') +
-           '" alt="" aria-hidden="true">';
+    var s = size || 30;
+    return '<svg class="brand-mark" width="' + s + '" height="' + Math.round(s * 0.88) +
+      '" viewBox="0 0 100 88" aria-hidden="true">' +
+      '<path d="' + MARK_PATH + '" fill="none" stroke="currentColor" stroke-width="13.5" ' +
+      'stroke-linecap="round" stroke-linejoin="round"/></svg>';
   };
 
-  /* Full lockup: logo.png. Falls back to mark + text only if the file is
-     missing, so the header never renders empty. */
+  /* VYBE wordmark. Built from type rather than an image so it re-themes,
+     stays crisp, and remains selectable text for accessibility.
+     Letter colours follow the identity: V teal · Y white · B red · E white. */
   MB.brand = function (opts) {
     var o = opts || {};
     var href = o.href !== undefined ? o.href : MB.url('index.html');
     var cls = 'brand' + (o.large ? ' brand-lg' : o.small ? ' brand-sm' : '');
+    var sub = o.tagline === false ? '' :
+      '<span class="vybe-sub">BY MARKET BRIDGE</span>';
 
-    var inner = '<img class="brand-img" src="' + MB.url('assets/icons/logo.png') +
-      '" alt="MarketBridge" ' +
-      'onerror="this.outerHTML=MB.brandMark()+' +
-      '\'&lt;span class=\\\'brand-text\\\'&gt;&lt;span class=\\\'brand-name\\\'&gt;' +
-      '&lt;span class=\\\'a\\\'&gt;MARKET&lt;/span&gt;&lt;span class=\\\'b\\\'&gt;BRIDGE&lt;/span&gt;' +
-      '&lt;/span&gt;&lt;/span&gt;\'">';
+    var inner =
+      '<span class="vybe-lockup">' +
+        '<span class="vybe-word" aria-label="VYBE">' +
+          '<span class="l-v">V</span><span class="l-y">Y</span>' +
+          '<span class="l-b">B</span><span class="l-e">E</span>' +
+        '</span>' + sub +
+      '</span>';
 
     return href
-      ? '<a class="' + cls + '" href="' + href + '" aria-label="MarketBridge home">' + inner + '</a>'
+      ? '<a class="' + cls + '" href="' + href + '" aria-label="VYBE home">' + inner + '</a>'
       : '<span class="' + cls + '">' + inner + '</span>';
   };
 
@@ -64,15 +72,17 @@
     var unread = body.getAttribute('data-unread') || '3';
     var r = MB.root();
 
+    /* The avatar opens the account drawer rather than navigating — every
+       account destination lives in one place. */
     var right =
       '<button class="icon-btn" data-theme-toggle aria-label="Switch between light and dark"></button>' +
       '<a class="icon-btn bell" href="' + r + 'users/notifications.html" aria-label="Notifications">' +
         MB.icon('bell', 21) +
         (unread !== '0' ? '<span class="count">' + unread + '</span>' : '') +
       '</a>' +
-      '<a href="' + r + 'users/profile/index.html" aria-label="Your profile">' +
-        '<span class="avatar avatar-sm avatar-ring" style="background:' + MB.avatarColor('johndavid') + '">JD</span>' +
-      '</a>';
+      '<button id="acctOpen" aria-label="Account menu" aria-expanded="false" aria-controls="acctDrawer">' +
+        '<span class="avatar avatar-sm avatar-ring" style="background:' + MB.avatarColor('johntrader') + '">JT</span>' +
+      '</button>';
 
     if (back !== null && back !== undefined) {
       host.outerHTML =
@@ -103,6 +113,107 @@
   }
 
   /* ======================================================================
+     ACCOUNT DRAWER
+     One home for every account destination, opened from the avatar. Slides
+     down from the top so it reads as part of the header it came from.
+     ====================================================================== */
+  var ACCT_NAV = [
+    { group: null },
+    { label: 'My Dashboard',              icon: 'grid',      href: 'users/index.html' },
+    { label: 'Deriv Accounts & Balances', icon: 'wallet',    href: 'users/wallet/accounts.html' },
+    { label: 'Transfer Money',            icon: 'refresh',   href: 'users/wallet/transfer.html' },
+    { label: 'Transaction History',       icon: 'clock',     href: 'users/wallet/history.html' },
+    { label: 'Account Statement',         icon: 'file',      href: 'users/wallet/statement.html' },
+    { group: null },
+    { label: 'IB / Partner Status',       icon: 'briefcase', href: 'users/profile/partner.html' },
+    { label: 'My Signals',                icon: 'signals',   href: 'users/signals/index.html' },
+    { label: 'Saved',                     icon: 'bookmark',  href: 'users/profile/saved.html' },
+    { label: 'Leaderboard',               icon: 'results',   href: 'users/results/leaderboard.html' },
+    { label: 'Rewards',                   icon: 'star',      href: 'users/profile/rewards.html' },
+    { label: 'My Community Activity',     icon: 'community', href: 'users/community/index.html' },
+    { group: 'More' },
+    { label: 'Notifications',             icon: 'bell',      href: 'users/notifications.html', count: 3 },
+    { label: 'Help & Support',            icon: 'info',      href: 'faq.html' },
+    { label: 'Settings',                  icon: 'settings',  href: 'users/profile/settings.html' }
+  ];
+
+  function renderAcctDrawer() {
+    if (document.getElementById('acctDrawer')) { return; }
+    var r = MB.root();
+
+    var items = ACCT_NAV.map(function (n) {
+      if (n.group === null) { return '</div><div class="acct-drawer-group">'; }
+      if (n.group) { return '<div class="acct-drawer-label">' + n.group + '</div>'; }
+      return '<a class="acct-drawer-item" href="' + r + n.href + '">' +
+        MB.icon(n.icon, 18) + '<span>' + n.label + '</span>' +
+        (n.count ? '<span class="count">' + n.count + '</span>'
+                 : '<span class="chev">' + MB.icon('chevright', 16) + '</span>') +
+      '</a>';
+    }).join('');
+
+    var html =
+      '<div class="acct-drawer-scrim" id="acctScrim"></div>' +
+      '<aside class="acct-drawer" id="acctDrawer" role="dialog" aria-modal="true" aria-label="Account menu">' +
+        '<div class="acct-drawer-grip"></div>' +
+        '<div class="acct-drawer-head">' +
+          '<span class="avatar avatar-lg avatar-ring" style="background:' +
+            MB.avatarColor('johntrader') + '">JT</span>' +
+          '<div class="grow">' +
+            '<div class="t-h3 w-bold" id="acctName">John Trader</div>' +
+            '<div class="t-xs c-up w-semi">' + MB.icon('check', 11) + ' Verified Trader</div>' +
+          '</div>' +
+          '<button class="acct-drawer-close" id="acctClose" aria-label="Close">' +
+            MB.icon('close', 19) + '</button>' +
+        '</div>' +
+        '<a class="acct-drawer-bal" href="' + r + 'users/wallet/accounts.html">' +
+          '<div class="grow"><div class="k">Total Deriv Balance</div>' +
+            '<div class="v" id="acctBal">—</div></div>' +
+          '<span style="width:110px"><span data-spark="up" data-seed="acctbal" data-h="34" data-sw="2"></span></span>' +
+        '</a>' +
+        '<div class="acct-drawer-group">' + items + '</div>' +
+        '<div class="acct-drawer-group">' +
+          '<a class="acct-drawer-item is-danger" href="' + r + 'auth/login.html">' +
+            MB.icon('logout', 18) + '<span>Log out</span></a>' +
+        '</div>' +
+        '<div class="acct-drawer-foot">' + MB.brand({ href: null, small: true }) + '</div>' +
+      '</aside>';
+
+    document.body.insertAdjacentHTML('beforeend', html);
+
+    var drawer = document.getElementById('acctDrawer');
+    var scrim = document.getElementById('acctScrim');
+    var open = document.getElementById('acctOpen');
+
+    function show() {
+      drawer.classList.add('is-open'); scrim.classList.add('is-open');
+      if (open) { open.setAttribute('aria-expanded', 'true'); }
+      document.body.style.overflow = 'hidden';
+    }
+    function hide() {
+      drawer.classList.remove('is-open'); scrim.classList.remove('is-open');
+      if (open) { open.setAttribute('aria-expanded', 'false'); }
+      document.body.style.overflow = '';
+    }
+    if (open) { open.addEventListener('click', show); }
+    document.getElementById('acctClose').addEventListener('click', hide);
+    scrim.addEventListener('click', hide);
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape' && drawer.classList.contains('is-open')) { hide(); }
+    });
+
+    MB.mountIcons(drawer);
+    if (MB.mountCharts) { MB.mountCharts(drawer); }
+
+    /* The headline figure is a cached read, same as everywhere else. */
+    if (MB.api) {
+      MB.api.get('accounts').then(function (r2) {
+        document.getElementById('acctBal').textContent =
+          MB.fmt.money(r2.meta.total_balance, r2.meta.currency);
+      }).catch(function () {});
+    }
+  }
+
+  /* ======================================================================
      BOTTOM TAB BAR — five items, fixed, identical on every customer screen
      ====================================================================== */
   var TABS = [
@@ -129,32 +240,18 @@
   /* ======================================================================
      ADMIN SIDEBAR
      ====================================================================== */
-  var ADMIN_NAV = [
-    { group: 'Overview' },
-    { id: 'dashboard',    label: 'Dashboard',    icon: 'grid',      href: 'admin/index.html' },
-    { id: 'analytics',    label: 'Analytics',    icon: 'activity',  href: 'admin/analytics.html' },
-    { group: 'People' },
-    { id: 'users',        label: 'Users',        icon: 'users',     href: 'admin/users.html' },
-    { group: 'Content' },
-    { id: 'signals',      label: 'Signals',      icon: 'signals',   href: 'admin/signals.html' },
-    { id: 'boosted',      label: 'Boosted',      icon: 'megaphone', href: 'admin/boosted.html' },
-    { id: 'community',    label: 'Community',    icon: 'community', href: 'admin/community.html' },
-    { id: 'resources',    label: 'Resources',    icon: 'book',      href: 'admin/resources.html' },
-    { group: 'Operations' },
-    { id: 'reports',      label: 'Reports',      icon: 'flag',      href: 'admin/reports.html', count: 7 },
-    { id: 'capabilities', label: 'Capabilities', icon: 'layers',    href: 'admin/capabilities.html' },
-    { id: 'markets',      label: 'Markets',      icon: 'markets',   href: 'admin/markets.html' },
-    { id: 'transactions', label: 'Transactions', icon: 'wallet',    href: 'admin/transactions.html' },
-    { id: 'settings',     label: 'Settings',     icon: 'settings',  href: 'admin/settings.html' }
-  ];
-
+  /* The nav is no longer declared here — MB.roles owns it, so moderator,
+     admin and superadmin cannot drift apart. See assets/js/core/roles.js. */
   function renderAdminRail(body) {
     var host = MB.$('[data-render="admin-rail"]');
     if (!host) { return; }
     var active = body.getAttribute('data-nav');
+    var roleId = MB.roles ? MB.roles.current() : 'admin';
+    var role = MB.roles ? MB.roles.get(roleId) : null;
     var r = MB.root();
 
-    var items = ADMIN_NAV.map(function (n) {
+    var pages = MB.roles ? MB.roles.pages(roleId) : [];
+    var items = pages.map(function (n) {
       if (n.group) { return '<div class="admin-nav-group">' + n.group + '</div>'; }
       return '<a href="' + r + n.href + '"' +
         (n.id === active ? ' class="is-active" aria-current="page"' : '') + '>' +
@@ -165,12 +262,12 @@
     host.outerHTML =
       '<aside class="admin-rail" id="adminRail">' +
         '<div class="admin-brand">' +
-          MB.brandMark(26) +
-          '<div><div class="brand-name" style="font-size:14px">' +
-            '<span class="a">MARKET</span><span class="b">BRIDGE</span></div>' +
-            '<div class="tag">Admin Console</div></div>' +
+          MB.brand({ href: r + 'index.html', small: true }) +
+          '<span class="role-tag role-' + roleId + '">' +
+            (role ? MB.esc(role.label) : 'Staff') + '</span>' +
         '</div>' +
-        '<nav class="admin-nav" aria-label="Admin">' + items + '</nav>' +
+        '<nav class="admin-nav" aria-label="' + (role ? MB.esc(role.label) : 'Staff') + '">' +
+          items + '</nav>' +
         '<div class="admin-rail-foot">' +
           '<a class="admin-nav" href="' + r + 'users/index.html" style="display:block">' +
             '<span style="display:flex;align-items:center;gap:12px;padding:10px 12px;' +
@@ -297,6 +394,33 @@
     });
   }
 
+  /* ======================================================================
+     PERMISSIONS IN MARKUP
+
+     Any element carrying data-can="<action>" is removed when the portal's
+     role does not hold that action. This is what lets moderator/, admin/
+     and superadmin/ share the same page markup: the role on <body> decides
+     which controls survive, so there is no per-portal copy of the logic.
+
+     Multiple actions may be listed space-separated; the element survives if
+     the role holds ANY of them.
+
+     Removing, not hiding: a control that is merely hidden still exists in
+     the DOM and still reads as an offer. Stage 2 enforces the same manifest
+     server side — this pass is presentation, never protection.
+     ====================================================================== */
+  function applyPermissions(scope) {
+    if (!MB.roles) { return; }
+    var role = MB.roles.current();
+    MB.$$('[data-can]', scope || document).forEach(function (el) {
+      var ok = el.getAttribute('data-can').split(/\s+/).some(function (a) {
+        return a && MB.roles.can(a, role);
+      });
+      if (!ok) { el.remove(); }
+    });
+  }
+  MB.applyPermissions = applyPermissions;
+
   function renderSiteFooter() {
     var host = MB.$('[data-render="site-footer"]');
     if (!host) { return; }
@@ -344,14 +468,14 @@
             '<div class="rt">' + MB.icon('warning', 17) + 'Trading involves substantial risk</div>' +
             '<p>Trading synthetic indices and other leveraged products carries a high level of risk ' +
             'and may not be suitable for all investors. You could lose more than your initial ' +
-            'investment. MarketBridge does not hold client funds and does not provide investment ' +
+            'investment. VYBE does not hold client funds and does not provide investment ' +
             'advice. Signals and analysis are user-generated and are not recommendations by ' +
-            'MarketBridge. Past performance does not guarantee future results. Please read our ' +
+            'VYBE. Past performance does not guarantee future results. Please read our ' +
             '<a href="' + r + 'risk-disclosure.html">Risk Disclosure</a> before trading.</p>' +
           '</div>' +
 
           '<div class="footer-bottom">' +
-            '<span>&copy; ' + y + ' MarketBridge. All rights reserved.</span>' +
+            '<span>&copy; ' + y + ' VYBE. All rights reserved.</span>' +
             '<span class="links">' +
               '<a href="' + r + 'terms.html">Terms</a>' +
               '<a href="' + r + 'privacy.html">Privacy</a>' +
@@ -370,9 +494,9 @@
     var body = document.body;
     var shell = body.getAttribute('data-shell');
 
-    if (shell === 'app')   { renderTopbar(body); renderTabbar(body); body.classList.add('has-app'); }
+    if (shell === 'app')   { renderTopbar(body); renderTabbar(body); renderAcctDrawer(); body.classList.add('has-app'); }
     if (shell === 'auth')  { body.classList.add('has-auth'); }
-    if (shell === 'admin') { renderAdminRail(body); }
+    if (shell === 'admin') { renderAdminRail(body); applyPermissions(); }
     if (shell === 'site')  { renderSiteHeader(body); renderSiteFooter(); }
 
     MB.mountIcons();

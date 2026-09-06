@@ -218,3 +218,152 @@
 .install-bar .ib-icon { width: 36px; height: 36px; border-radius: var(--mb-r-sm); background: var(--mb-green-soft); color: var(--mb-green); display: flex; align-items: center; justify-content: center; flex: none; }
 .install-bar .ib-title { font-size: var(--mb-t-sm); font-weight: var(--mb-w-bold); }
 .install-bar .ib-sub { font-size: var(--mb-t-xs); color: var(--mb-text-2); }
+
+/* ==========================================================================
+   PROFILE — identity card, quick actions, performance
+   ========================================================================== */
+.pf-card {
+  display: flex; align-items: center; gap: var(--mb-s4);
+  padding: var(--mb-s4); border-radius: var(--mb-r-lg);
+  border: 1px solid var(--mb-border); background: var(--mb-surface);
+  transition: border-color var(--mb-base) var(--mb-ease);
+}
+.pf-card:hover { border-color: var(--mb-border-2); }
+.pf-av { flex: none; position: relative; }
+.pf-id { display: flex; flex-direction: column; gap: 2px; min-width: 0; flex: 1; }
+.pf-name {
+  display: flex; align-items: center; gap: var(--mb-s2);
+  font-size: var(--mb-t-h3); font-weight: var(--mb-w-bold); color: var(--mb-text);
+}
+.pf-tick {
+  width: 17px; height: 17px; border-radius: 50%; flex: none;
+  background: var(--mb-green); color: var(--mb-text-inv);
+  display: flex; align-items: center; justify-content: center;
+}
+.pf-handle { font-size: var(--mb-t-sm); color: var(--mb-text-3); }
+.pf-verified {
+  display: inline-flex; align-items: center; gap: 5px; margin-top: 3px;
+  font-size: var(--mb-t-xs); font-weight: var(--mb-w-semi); color: var(--mb-green);
+}
+.pf-chev { color: var(--mb-text-3); flex: none; }
+
+.pf-meta { display: flex; gap: var(--mb-s2); margin-top: var(--mb-s3); }
+.pf-chip {
+  flex: 1; display: inline-flex; align-items: center; justify-content: center;
+  gap: 6px; padding: var(--mb-s3); border-radius: var(--mb-r-md);
+  border: 1px solid var(--mb-border); background: var(--mb-surface);
+  font-size: var(--mb-t-xs); font-weight: var(--mb-w-semi); color: var(--mb-text-2);
+}
+.pf-chip svg { width: 13px; height: 13px; color: var(--mb-text-3); }
+.pf-chip .dot-live {
+  width: 7px; height: 7px; border-radius: 50%; flex: none;
+  background: var(--mb-green); box-shadow: 0 0 0 3px var(--mb-green-soft);
+}
+
+/* The balance delta line, and masking it */
+.tb-delta {
+  font-size: var(--mb-t-sm); font-weight: var(--mb-w-semi);
+  font-variant-numeric: tabular-nums; margin-top: 4px;
+}
+.is-masked { filter: blur(9px); user-select: none; }
+
+/* Quick-action tiles keep the colour set on .qa-ic */
+.qa-tile .qa-ic { display: flex; align-items: center; justify-content: center; }
+.qa-tile .qa-ic svg { color: inherit; }
+.qa-tile .qa-t { font-size: 10px; }
+
+/* Performance overview: four figures across */
+.perf-grid { display: grid; grid-template-columns: repeat(4, minmax(0,1fr)); gap: var(--mb-s2); }
+.perf-grid > div { text-align: center; }
+.pg-v {
+  font-size: var(--mb-t-h2); font-weight: var(--mb-w-black);
+  letter-spacing: -.02em; font-variant-numeric: tabular-nums;
+}
+.pg-v.num { font-size: var(--mb-t-h3); }
+.pg-k { font-size: 10px; color: var(--mb-text-3); margin-top: 2px; }
+
+/* Month labels under a chart */
+.axis-x {
+  display: flex; justify-content: space-between; margin-top: var(--mb-s2);
+  font-size: 10px; color: var(--mb-text-3);
+}
+
+/* Compact select for card headers */
+.select-sm {
+  padding: 5px var(--mb-s7) 5px var(--mb-s3);
+  font-size: var(--mb-t-xs); border-radius: var(--mb-r-sm);
+  background-position: right var(--mb-s2) center; background-size: 13px;
+  width: auto;
+}
+
+/* ==========================================================================
+   INLINE FILTER BLOCK — used where filters belong on the page rather than
+   in the slide-in .filter-panel drawer
+   ========================================================================== */
+.stmt-filters {
+  border: 1px solid var(--mb-border); border-radius: var(--mb-r-lg);
+  background: var(--mb-surface); padding: var(--mb-s4);
+  display: flex; flex-direction: column; gap: var(--mb-s3);
+}
+.fp-row { display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: var(--mb-s3); }
+.fp-field { display: flex; flex-direction: column; gap: 5px; min-width: 0; }
+.fp-label {
+  font-size: 10px; font-weight: var(--mb-w-bold); letter-spacing: .08em;
+  text-transform: uppercase; color: var(--mb-text-3);
+}
+.fp-field .select, .fp-field .input { width: 100%; }
+@media (max-width: 460px) { .fp-row { grid-template-columns: minmax(0,1fr); } }
+
+/* Account rows stack their name over their subtitle */
+.acct-row .ar-n, .acct-row .ar-s { display: block; }
+
+/* Profile balance card: the period select sits above the sparkline, and the
+   spark clears the head row instead of running under it. */
+.total-balance .tb-head .select-sm { position: relative; z-index: 2; }
+.total-balance.tb-compact .tb-spark { top: 64px; width: 42%; }
+
+/* .tb-stamp is scoped to .total-balance; this is the standalone form */
+.tb-stamp {
+  display: inline-flex; align-items: center; gap: 5px;
+  font-size: var(--mb-t-xs); color: var(--mb-text-3);
+}
+.tb-stamp svg { width: 12px; height: 12px; }
+
+/* ==========================================================================
+   PARTNER / REWARDS — tiers, progress bars, copy fields, redeem cards
+   ========================================================================== */
+.tier-row { display: flex; align-items: center; gap: var(--mb-s4); }
+.tier-badge {
+  display: inline-flex; align-items: center; padding: 5px var(--mb-s3);
+  border-radius: var(--mb-r-pill); font-size: var(--mb-t-xs);
+  font-weight: var(--mb-w-bold); letter-spacing: .04em; text-transform: uppercase;
+  background: var(--vy-brand-soft); color: var(--vy-brand);
+  border: 1px solid var(--vy-brand-line); flex: none;
+}
+
+/* Progress bar — the user app needs its own; .bar lives in admin.css */
+.bar {
+  height: 6px; border-radius: 3px; background: var(--mb-surface-2);
+  overflow: hidden; display: block;
+}
+.bar > span {
+  display: block; height: 100%; border-radius: 3px;
+  background: var(--mb-green); transition: width var(--mb-slow) var(--mb-ease);
+}
+
+.copy-field { display: flex; gap: var(--mb-s2); align-items: center; }
+.copy-field .input { flex: 1; min-width: 0; font-size: var(--mb-t-xs); }
+.copy-field .btn { flex: none; }
+
+/* A completed earn row reads green at a glance */
+.list-row .lr-icon.is-done { color: var(--mb-green); background: var(--mb-green-soft); }
+
+.reward-card .reward-cost {
+  font-size: var(--mb-t-h3); font-weight: var(--mb-w-black);
+  color: var(--mb-green); flex: none; margin-left: var(--mb-s4);
+}
+.reward-card .reward-cost.is-short { color: var(--mb-text-3); }
+.reward-card .reward-cost small {
+  font-size: 10px; font-weight: var(--mb-w-semi); margin-left: 3px;
+  color: var(--mb-text-3);
+}

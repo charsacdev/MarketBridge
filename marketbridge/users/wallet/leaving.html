@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Leaving MarketBridge — MarketBridge</title>
-<meta name="theme-color" content="#0A0E12">
+<title>Leaving VYBE — VYBE</title>
+<meta name="theme-color" content="#080B0F">
 <link rel="manifest" href="../../manifest.webmanifest">
 <link rel="icon" href="../../assets/icons/favicon-32.png" sizes="32x32">
 <link rel="apple-touch-icon" href="../../assets/icons/apple-touch-icon.png">
@@ -15,16 +15,16 @@
 <link rel="stylesheet" href="../../assets/css/base.css">
 <link rel="stylesheet" href="../../assets/css/components.css">
 <link rel="stylesheet" href="../../assets/css/app.css">
-<script>(function(){try{var t=localStorage.getItem('mb.theme');if(t){document.documentElement.setAttribute('data-theme',t);}}catch(e){}})();</script>
+<script>(function(){var t='dark';try{t=localStorage.getItem('mb.theme')||'dark';}catch(e){}var m=/[?&]theme=(dark|light|system)/.exec(location.search);if(m){t=m[1];}if(t!=='system'){document.documentElement.setAttribute('data-theme',t);}})();</script>
 </head>
-<body data-shell="app" data-root="../../" data-title="Leaving MarketBridge" data-back="deposit.html" data-bare data-unread="3">
+<body data-shell="app" data-root="../../" data-title="Leaving VYBE" data-back="deposit.html" data-bare data-unread="3">
 
 <div class="app">
   <div data-render="topbar"></div>
   <main class="page page-full">
 
     <div style="text-align:center;padding-top:24px">
-      <h1 class="t-h1">You are leaving<br><span class="c-up">MarketBridge</span></h1>
+      <h1 class="t-h1">You are leaving<br><span class="c-up">VYBE</span></h1>
 
       <div class="leaving-hop">
         <span class="hop-node" style="color:var(--mb-green)" data-icon="markets" data-icon-size="28"></span>
@@ -46,7 +46,7 @@
       <div class="leaving-point"><span data-icon="users"></span>
         <span>You may need to create an account or verify your identity with them.</span></div>
       <div class="leaving-point"><span data-icon="lock"></span>
-        <span>Your funds move between Kaastro and Deriv. MarketBridge never holds them.</span></div>
+        <span>Your funds move between Kaastro and Deriv. VYBE never holds them.</span></div>
       <div class="leaving-point"><span data-icon="info"></span>
         <span>Kaastro's own terms, fees and processing times apply to this transaction.</span></div>
     </div>
@@ -78,7 +78,7 @@ MB.ready(function () {
   var dir = q.get('dir') === 'withdrawal' ? 'withdrawal' : 'deposit';
   document.getElementById('leadText').textContent =
     'You are about to be redirected to Kaastro to complete your ' + dir + ' securely.';
-  MB.$('.topbar-title').textContent = 'Leaving MarketBridge';
+  MB.$('.topbar-title').textContent = 'Leaving VYBE';
 
   document.getElementById('btnGo').addEventListener('click', function () {
     this.disabled = true;

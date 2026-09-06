@@ -1,8 +1,14 @@
-# MarketBridge
+# VYBE by MarketBridge
+
+*Trade Deriv. Connect. Learn. Win together.*
 
 A Deriv-connected social trading platform, built as an **installable web app (PWA)**.
 Stage 1 is this static HTML/CSS/JS build; every folder, partial and mock payload is
 pre-shaped so Stage 2 (Laravel + Livewire) is a port, not a rewrite.
+
+**VYBE** is the product name; **MarketBridge** is the company behind it. The
+lockup reads `VYBE` over `BY MARKET BRIDGE`, and copy says "VYBE" wherever the
+product is meant.
 
 ---
 
@@ -24,8 +30,18 @@ Then open `http://localhost:8000`.
 | `/users/index.html` | Customer app (the PWA `start_url`) |
 | `/admin/index.html` | Admin console |
 
-Add `?theme=dark` or `?theme=light` to any URL to force a theme — useful for QA
-and screenshots. It is not persisted.
+**Dark is the default.** With nothing stored the app renders dark whatever the
+OS prefers; Settings offers Light and Auto, and that choice is remembered. Each
+page carries a pre-paint snippet so the theme never flashes.
+
+Add `?theme=dark`, `?theme=light` or `?theme=system` to any URL to force a theme
+for one load — useful for QA and screenshots. It is not persisted.
+
+> **Checking narrow layouts:** headless Chrome on this setup clamps its layout
+> viewport to 548px, so `--window-size=390` renders at 548 and the PNG simply
+> crops — which reads as overflow that is not there. Measure narrow layouts by
+> loading the page in a sized `<iframe>` and reading `scrollWidth` against
+> `clientWidth`; screenshot at 548 or wider.
 
 ---
 
@@ -40,7 +56,7 @@ marketbridge/
 │
 ├── auth/           login · register · forgot-password · connect-deriv
 │
-├── users/          THE CUSTOMER APP — 35 screens
+├── users/          THE CUSTOMER APP
 │   ├── index.html                 Dashboard
 │   ├── markets/    index · detail · watchlist
 │   ├── trade/      index · accumulators · rise-fall · digits ·
@@ -50,27 +66,35 @@ marketbridge/
 │   ├── community/  index · rooms · room · post-detail · compose
 │   ├── results/    index · leaderboard
 │   ├── resources/  index · detail
-│   ├── wallet/     deposit · withdraw · leaving · transfer
-│   ├── profile/    index · settings
+│   ├── wallet/     accounts · account-detail · deposit · withdraw ·
+│   │               transfer · history · statement · leaving
+│   ├── profile/    index · settings · partner · saved · rewards
 │   ├── legal/      signal-disclaimer · risk-disclosure · report
 │   └── notifications.html · search.html
 │
-├── admin/          THE ADMIN CONSOLE — 16 screens
-│   index · analytics · settings · capabilities
-│   users        → user-detail        (profile, trading, transactions,
-│                                      rooms, security)
-│   signals      → signal-detail      (params, provenance, chart)
-│   boosted        community → community-detail
-│   resources    → resource-edit      (course editor)
-│   markets        reports            transactions
+├── moderator/      CONTENT POLICING — 6 screens
+│   index · reports · community → community-detail
+│   signals → signal-detail
+│
+├── admin/          PLATFORM OPERATIONS — 14 screens
+│   everything above, plus
+│   analytics    users → user-detail   boosted
+│   resources → resource-edit          markets   transactions
+│
+├── superadmin/     OWNS THE PLATFORM — 18 screens
+│   everything above, plus
+│   staff        (who has access, and the manifest as a comparison)
+│   staff-audit  (append-only record of every staff action)
+│   capabilities settings
 │
 ├── assets/
 │   ├── css/    tokens · base · components · app · public · admin
 │   ├── js/core/     icons · util · api · collection · uploads ·
-│   │                ws · charts · shell · pwa
+│   │                ws · charts · roles · shell · pwa
 │   ├── js/components/  cards.js · datatable.js
 │   └── icons/  logo.png + icon.png (brand) and generated PWA icons
 │
+├── tools/          sync-portals.js · check-links.js
 ├── mock/           API fixtures in the EXACT shape Laravel will return
 └── _docs/          Original PRD + design mockups
 ```
@@ -144,7 +168,7 @@ the public surface (`subscribe` / `request` / `on`) does not change.
 Purchases always go through `MB.api.post('trade/purchase', …)` so they can be guarded,
 audited and attributed to a signal. They are never sent browser-direct.
 
-### MarketBridge holds no funds
+### VYBE holds no funds
 
 There is no wallet and no balance anywhere in this codebase. The dashboard figure is a
 cached read with a visible timestamp that turns amber when stale
@@ -194,34 +218,40 @@ Stale money is worse than no money — trading endpoints are excluded by rule, a
 
 ## Lists, filters and pagination
 
-Two controllers cover every list in the platform. Neither is a library — both
-port straight onto Livewire.
+**Every list that can grow is paged.** A list rendered in full is a bug waiting
+for the fixture to get bigger, so the rule is: if the row count is not bounded
+by the design, it goes through `MB.collection()` (customer app) or
+`MB.datatable()` (staff portals).
 
-### `MB.collection()` — customer app
+The exceptions are deliberate and all look the same: a fixed-`limit` teaser
+that sits under a heading with a **View all** link — the dashboard's Live
+Signals and Community strips, `results/index`'s Recent Results, the profile's
+last three signals, the Top Providers rail. Those are previews of a paged page,
+not lists in their own right.
+
+Two paging modes, chosen by how the list is read:
+
+- `mode: 'pages'` — numbered pager, for lists you scan and return to
+  (trade history, markets, the leaderboard, resources, transaction history)
+- `mode: 'more'` — a Load more button, for feeds you read downward
+  (signals, community, rooms, comments, a market's tabs, statements)
+
+Filters, search boxes and chip rows bind to the same controller, so the count,
+the rows and the pager can never disagree:
 
 ```js
-var c = MB.collection({
-  from: 'signals', into: '#feed', template: MB.card.sig,
-  perPage: 8, mode: 'pages',          // or 'more' for a Load more button
-  filters: {
-    category: function (s, v) { return v === 'all' || s.market.category === v; },
-    pair:     function (s, v) { return v === 'all' || s.market.symbol === v; }
-  }
-});
-c.bind('#catChips', 'category').bindSelect('#pairSel', 'pair');
+var c = MB.collection({ from: 'history', into: '#histList', perPage: 12,
+                        mode: 'pages', countInto: '#hCount', ... });
+c.bind('#hRange', 'range');        // chip / tab row
+c.bindSelect('#mktSort', 'sort');  // <select>
+c.bindInput('#resSearch', 'q');    // debounced text input
 ```
 
-Filters compose, pagination resets on every change, and the three list states
-(skeleton / empty / error) are built in. In Stage 2 the filter keys become
-Livewire public properties and `page` becomes the paginator — the markup does
-not change.
+`done(shownRows, filteredRows)` fires on **every** render, empty included, so a
+header that summarises the list stays in step with it — `trade/history.html`
+computes its Staked / Net P/L / Win rate from the filtered set rather than the
+whole fixture, and therefore can never contradict the rows underneath.
 
-### `MB.datatable()` — admin
-
-Sortable columns, live search, per-column filters, rows-per-page, row
-selection, export and real pagination. All 10 admin tables run on it.
-
----
 
 ## Market catalogue
 
@@ -257,18 +287,103 @@ composer, the community feed and the room directory.
 
 ## Brand
 
-`assets/icons/logo.png` is the full lockup and `assets/icons/icon.png` is the
-mark. Both are used directly, everywhere — `MB.brand()` and `MB.brandMark()`
-are the only places that reference them. The PWA icons are generated from the
-same mark geometry.
+`MB.brand()` renders the wordmark and `MB.brandMark()` the infinity mark; they
+are the only places that reference the artwork, so the lockup changes in one
+edit. `assets/icons/logo.png` is the supplied full lockup and
+`assets/icons/icon.png` the supplied mark; the PWA icons are generated from the
+same geometry.
+
+### The four jobs of red
+
+The palette carries one green and several reds, and they are **not**
+interchangeable. `tokens.css` names each job separately so a future edit cannot
+collapse them:
+
+| Token | Colour | Job |
+|---|---|---|
+| `--vy-trade` / `--mb-green` | green | Executable · Buy · Rise · Up · **confirming a trade** |
+| `--mb-sell` | red | Sell · Fall · Down · loss · destructive |
+| `--vy-brand` | red | Brand CTA · account actions · install · marketing |
+| `--mb-analysis` | red | Analysis signals · View Market |
+
+The rule the buttons enforce: **a trade-confirming button is always green, and a
+red button never buys.** `btn-trade`, `btn-brand`, `btn-sell` and `btn-analysis`
+exist so the intent is visible in the markup rather than inferred from a colour.
+
+`--vy-teal` is the accent in the `V` of the wordmark and is used sparingly for
+neutral emphasis — never for a trading direction.
+
+`tokens.css` is the only file in the project that contains a colour value.
+
+### Both colours have to be visible
+
+A trading dashboard where everything is green is not reassuring, it is useless —
+the reader learns nothing from a colour that never changes. So the fixtures carry
+a realistic spread (about 45% of markets down on the day, signals split roughly
+evenly between buy and sell), and the surfaces that summarise them show it:
+
+- market cards, rows and sparklines take their colour from the actual 24h move
+- the leaderboard shows rank movement, W/L and P/L, and win rate is only green
+  when it beats breakeven
+- market chips on posts and room rows carry their pair's direction
+- Popular Markets picks one market per category before repeating, rather than
+  the first eight rows — which were all volatility indices, and all green
 
 
 ---
 
-## Admin
+## Staff portals
 
-Sixteen screens. The list pages drill through to detail pages rather than
-cramming everything into a row.
+Three portals, cumulative in power. `assets/js/core/roles.js` is the single
+manifest: it declares each role's nav and its permission list, and nothing
+else states them.
+
+| Portal | Who it is for | Adds over the one before |
+|---|---|---|
+| `moderator/` | Content policing | Reports, community rooms, signals. No people, money or settings. |
+| `admin/` | Day-to-day operations | Users, boosted, resources, markets, transactions, analytics. |
+| `superadmin/` | Owns the platform | Staff & Roles, Staff Audit, the capability registry, platform settings. |
+
+### One markup, three portals
+
+The pages are shared. `superadmin/` is the source of truth and
+`tools/sync-portals.js` projects the pages each lesser role may open into
+`admin/` and `moderator/`, changing only `data-role` on `<body>` and the title.
+Behaviour diverges at runtime instead of in the source:
+
+```html
+<button data-can="user.suspend">Suspend</button>
+```
+
+`applyPermissions()` in `shell.js` **removes** every element whose `data-can`
+the current role does not hold, and re-runs after each datatable or collection
+render. Removing rather than hiding matters: a hidden control still exists in
+the DOM and still reads as an offer.
+
+```bash
+node tools/sync-portals.js           # after editing any superadmin/ page
+node tools/sync-portals.js --check   # CI: fail if the portals drifted
+```
+
+None of this is a security control — it decides what the UI *offers*. Stage 2
+enforces the same manifest in Laravel middleware and policies, and the
+permission names here are deliberately the names those policies will use.
+
+### Responsive
+
+The rail collapses to a drawer at 1020px. Below that the topbar puts the page
+title on its own row and drops its actions to a second one, the subtitle and
+the header search are hidden, and filter rows stack. Tables stay tables — they
+scroll inside `.dt-scroll`, with a one-line hint underneath, because a clipped
+column otherwise reads as a bug.
+
+One thing worth knowing if you touch the grid: the `max-width: 1020px` rule
+must use `grid-template-columns: minmax(0, 1fr)`, not `1fr`. A plain `1fr`
+track cannot shrink below its content's min-content width, so a single wide
+table pushed the whole console past the viewport and everything clipped at the
+right edge.
+
+### Screens
 
 | Screen | What it does |
 |---|---|
@@ -280,18 +395,26 @@ cramming everything into a row.
 | `markets` | Add and edit markets, including which contract kinds are executable |
 | `transactions` | Approval queue for withdrawals, with per-row and bulk approve/reject |
 | `reports` | Slide-over review with remove / warn / suspend / ban / dismiss |
+| `capabilities` | The Deriv capability registry — what is genuinely executable |
+| `staff` *(owner)* | Who holds access, their role and 2FA state, and the manifest rendered as a comparison |
+| `staff-audit` *(owner)* | Append-only record of every staff action, with severity and IP |
 
 Every table is a `MB.datatable()` — sortable columns, live search, per-column
 filters, rows-per-page, row selection, export and working pagination.
+`MB.statSlider()` renders the scrollable stat bands; it lives in
+`components/datatable.js` rather than being pasted into each page.
 
-**Stat sliders.** Pages that have more numbers than fit use a horizontally
-scrollable band of stat cards with arrow controls (`statSlider()`), rather than
-a grid that truncates.
+The owner account cannot be demoted or disabled from `staff` — that is the one
+door the page must not be able to lock behind itself.
 
 ### Removed deliberately
 
 `admin/partners.html` and `admin/audit-logs.html` were removed at the client's
-request, along with their nav entries and fixtures.
+request, along with their nav entries and fixtures. The staff audit is a
+different thing: it records *staff* actions, not user activity.
+
+Users can never reach a staff portal from the customer app. There is no link,
+and Settings does not offer one.
 
 ---
 
@@ -305,6 +428,35 @@ What a visitor sees before signing up is what they get.
 Charts scale properly at every width: candle count is derived from the rendered
 pixel width (~13px per candle), strokes use `vector-effect="non-scaling-stroke"`
 so they never stretch thin, and charts re-render on resize.
+
+## The account area
+
+`users/profile/index.html` is the account home: identity with the verified-trader
+state, **Total Deriv Balance** summed from the connected accounts (never a stored
+number), the account list, quick actions, a performance overview and the user's
+own signals and posts. `users/wallet/statement.html` is the full statement behind
+it — filter by account, period, entry type or reference, with a running balance
+that reconciles to the closing figure at the top.
+
+The design set shows a total of `$4,486.35` above accounts that sum to
+`$4,024.95`. This build computes the honest total from the accounts rather than
+copying the inconsistent figure.
+
+Three more pages hang off the account drawer:
+
+| Page | What it is |
+|---|---|
+| `profile/partner.html` | Deriv Partner (IB) status — referral link, funnel, tier progress, payouts. **Deriv pays the commission, not VYBE**, and the page says so |
+| `profile/saved.html` | Bookmarked signals, posts, resources and markets. Stores *references* only, so a bookmark can never show a stale copy |
+| `profile/rewards.html` | Contribution points and what they redeem for. **Points are not money** — not withdrawable, not transferable, no cash value |
+
+These were linked from the account drawer but never built. They stayed missing
+because the old link checker only read `href=` in markup, and the drawer builds
+its hrefs in JS. `tools/check-links.js` now reads three kinds of reference —
+markup, JS nav manifests, and `MB.api` fixture paths — which is how they, plus a
+missing `mock/deriv/connection.json`, were found.
+
+---
 
 ## Not yet built
 

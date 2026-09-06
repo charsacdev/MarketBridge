@@ -1,0 +1,48 @@
+{
+  "data": {
+    "signals": [
+      "sig_004",
+      "sig_003",
+      "sig_058",
+      "sig_085",
+      "sig_124",
+      "sig_065",
+      "sig_061",
+      "sig_092",
+      "sig_067",
+      "sig_090",
+      "sig_035"
+    ],
+    "posts": [
+      "pst_frxXAUUSD_1",
+      "pst_frxEURJPY_1",
+      "pst_frxXPTUSD_0",
+      "pst_R_75_0",
+      "pst_frxEURGBP_0",
+      "pst_R_10_1",
+      "pst_JD75_0",
+      "pst_frxUSDCAD_1"
+    ],
+    "resources": [
+      "res_01",
+      "res_02",
+      "res_03",
+      "res_04",
+      "res_05"
+    ],
+    "markets": [
+      "1HZ75V",
+      "BOOM1000",
+      "frxEURUSD",
+      "cryBTCUSD",
+      "frxXAUUSD",
+      "CRASH500"
+    ],
+    "counts": {
+      "signals": 11,
+      "posts": 8,
+      "resources": 5,
+      "markets": 6
+    }
+  }
+}

@@ -1,5 +1,5 @@
 /* ==========================================================================
-   MARKETBRIDGE — UTILITIES
+   VYBE — UTILITIES
    theme · formatting · dom helpers · toasts · tiny store
    Ports to Laravel as: theme stays client-side, format becomes Blade
    helpers / Carbon, store is absorbed by Livewire public properties.
@@ -23,7 +23,9 @@
 
   /* ======================================================================
      THEME
-     Dark is the default ground. A stored choice always wins over the OS.
+     Dark is the default ground: with nothing stored we render dark, whatever
+     the OS prefers. A stored choice always wins, and 'system' is available as
+     an explicit opt-in from Settings.
      ====================================================================== */
   var THEME_KEY = 'mb.theme';
 
@@ -37,13 +39,14 @@
   MB.theme = {
     get: function () {
       if (urlTheme) { return urlTheme; }
-      try { return localStorage.getItem(THEME_KEY) || 'system'; }
-      catch (e) { return 'system'; }
+      try { return localStorage.getItem(THEME_KEY) || 'dark'; }
+      catch (e) { return 'dark'; }
     },
     set: function (mode) {
       try {
-        if (mode === 'system') { localStorage.removeItem(THEME_KEY); }
-        else { localStorage.setItem(THEME_KEY, mode); }
+        /* 'system' is a real stored choice now, because the unstored
+           default is dark rather than "follow the OS". */
+        localStorage.setItem(THEME_KEY, mode);
       } catch (e) { /* private mode — apply for this page only */ }
       MB.theme.apply();
     },
@@ -242,6 +245,68 @@
       if (s) { s.classList.remove('is-open'); document.body.style.overflow = ''; }
     }
   };
+  /* ----------------------------------------------------------------------
+     CONFIRM — a promise-returning sheet for destructive actions.
+     Resolves true on confirm, false on cancel, backdrop click or Escape.
+     Never use window.confirm: it cannot be styled and blocks the thread.
+     ---------------------------------------------------------------------- */
+  /**
+   * Bind a handler to an element that may legitimately not exist — a control
+   * removed by the permission pass, or a page that omits it. Returns whether
+   * the binding happened, so callers can branch if they need to.
+   *
+   *   MB.on('#btnBoost', 'click', boost);
+   */
+  MB.on = function (target, event, handler) {
+    var el = typeof target === 'string'
+      ? (target.charAt(0) === '#' ? document.getElementById(target.slice(1)) : MB.$(target))
+      : target;
+    if (!el) { return false; }
+    el.addEventListener(event, handler);
+    return true;
+  };
+
+  MB.confirm = function (opts) {
+    var o = opts || {};
+    return new Promise(function (resolve) {
+      var wrap = document.createElement('div');
+      wrap.className = 'sheet-backdrop';
+      wrap.innerHTML =
+        '<div class="sheet" role="dialog" aria-modal="true">' +
+          '<div class="sheet-grip"></div>' +
+          '<h3 class="t-h2 w-bold">' + MB.esc(o.title || 'Are you sure?') + '</h3>' +
+          (o.body ? '<p class="t-sm c-2 mt2">' + MB.esc(o.body) + '</p>' : '') +
+          '<div class="row g2 mt5">' +
+            '<button class="btn btn-ghost grow" data-no>' +
+              MB.esc(o.cancel || 'Cancel') + '</button>' +
+            '<button class="btn ' + (o.danger ? 'btn-sell' : 'btn-trade') +
+              ' grow" data-yes>' + MB.esc(o.confirm || 'Confirm') + '</button>' +
+          '</div>' +
+        '</div>';
+      document.body.appendChild(wrap);
+      document.body.style.overflow = 'hidden';
+
+      function done(answer) {
+        document.removeEventListener('keydown', onKey);
+        document.body.style.overflow = '';
+        wrap.classList.remove('is-open');
+        setTimeout(function () { wrap.remove(); }, 220);
+        resolve(answer);
+      }
+      function onKey(e) { if (e.key === 'Escape') { done(false); } }
+
+      wrap.querySelector('[data-yes]').addEventListener('click', function () { done(true); });
+      wrap.querySelector('[data-no]').addEventListener('click', function () { done(false); });
+      wrap.addEventListener('click', function (e) { if (e.target === wrap) { done(false); } });
+      document.addEventListener('keydown', onKey);
+
+      requestAnimationFrame(function () {
+        wrap.classList.add('is-open');
+        wrap.querySelector('[data-yes]').focus();
+      });
+    });
+  };
+
   document.addEventListener('click', function (e) {
     var b = e.target.closest('[data-sheet-open]');
     if (b) { MB.sheet.open(b.getAttribute('data-sheet-open')); return; }
@@ -282,11 +347,17 @@
       }
     }
 
-    /* Copy to clipboard */
+    /* Copy to clipboard. The value is literal text, or "#id" to copy what
+       that element currently holds — needed when the text arrives at runtime. */
     var cp = e.target.closest('[data-copy]');
     if (cp) {
-      var text = cp.getAttribute('data-copy');
-      if (navigator.clipboard) {
+      var raw = cp.getAttribute('data-copy');
+      var text = raw;
+      if (raw.charAt(0) === '#') {
+        var src = document.getElementById(raw.slice(1));
+        if (src) { text = src.value !== undefined ? src.value : src.textContent; }
+      }
+      if (navigator.clipboard && text) {
         navigator.clipboard.writeText(text).then(function () { MB.toast('Copied'); });
       }
     }

@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Deposit Funds — MarketBridge</title>
-<meta name="theme-color" content="#0A0E12">
+<title>Deposit Funds — VYBE</title>
+<meta name="theme-color" content="#080B0F">
 <link rel="manifest" href="../../manifest.webmanifest">
 <link rel="icon" href="../../assets/icons/favicon-32.png" sizes="32x32">
 <link rel="apple-touch-icon" href="../../assets/icons/apple-touch-icon.png">
@@ -15,7 +15,7 @@
 <link rel="stylesheet" href="../../assets/css/base.css">
 <link rel="stylesheet" href="../../assets/css/components.css">
 <link rel="stylesheet" href="../../assets/css/app.css">
-<script>(function(){try{var t=localStorage.getItem('mb.theme');if(t){document.documentElement.setAttribute('data-theme',t);}}catch(e){}})();</script>
+<script>(function(){var t='dark';try{t=localStorage.getItem('mb.theme')||'dark';}catch(e){}var m=/[?&]theme=(dark|light|system)/.exec(location.search);if(m){t=m[1];}if(t!=='system'){document.documentElement.setAttribute('data-theme',t);}})();</script>
 </head>
 <body data-shell="app" data-nav="home" data-root="../../" data-title="Deposit Funds" data-sub="Choose how to fund your Deriv account" data-back="../index.html" data-unread="3">
 
@@ -26,7 +26,7 @@
     <section class="balance">
       <div class="balance-label">Deriv Real Account</div>
       <div class="balance-amount" id="wBal">$2,450.80</div>
-      <div class="balance-stamp">Balance is read from Deriv, not held by MarketBridge</div>
+      <div class="balance-stamp">Balance is read from Deriv, not held by VYBE</div>
     </section>
 
     <h2 class="t-h3">Deposit Funds</h2>
@@ -66,7 +66,7 @@
 
     <div class="alert alert-green">
       <span data-icon="shield"></span>
-      <div class="t-xs"><strong>MarketBridge does not hold your funds.</strong> You are
+      <div class="t-xs"><strong>VYBE does not hold your funds.</strong> You are
       always in control of your Deriv account. Deposits and withdrawals are processed
       securely through Deriv or Kaastro.</div>
     </div>

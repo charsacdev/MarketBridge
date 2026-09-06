@@ -1,5 +1,5 @@
 /* ==========================================================================
-   MARKETBRIDGE — PWA
+   VYBE — PWA
    Registers the service worker, captures the install prompt, and drives
    every [data-install] button on the site.
 
@@ -37,7 +37,7 @@
           deferredPrompt = null;
           hideBar();
           if (choice.outcome === 'accepted') {
-            MB.toast('Installing MarketBridge…');
+            MB.toast('Installing VYBE…');
           }
           return choice.outcome;
         });
@@ -104,7 +104,7 @@
     if (!bar) {
       bar = MB.el('div', { class: 'install-bar', id: 'mbInstallBar' },
         '<span class="ib-icon">' + MB.icon('download', 20) + '</span>' +
-        '<span class="grow"><span class="ib-title">Install MarketBridge</span>' +
+        '<span class="grow"><span class="ib-title">Install VYBE</span>' +
         '<span class="ib-sub" style="display:block">Full screen, works offline</span></span>' +
         '<button class="btn btn-primary btn-sm" data-install>Install</button>' +
         '<button class="icon-btn" id="mbInstallX" aria-label="Dismiss" ' +
@@ -125,14 +125,14 @@
         '<div class="sheet-grip"></div>' +
         '<h2 class="t-h2">Add to Home Screen</h2>' +
         '<p class="t-sm c-2 mt2">Safari installs web apps from the Share menu. ' +
-        'Three taps and MarketBridge behaves like any other app on your phone.</p>' +
+        'Three taps and VYBE behaves like any other app on your phone.</p>' +
         '<div class="stack g3 mt6">' +
           '<div class="row g3"><span class="po-num">1</span>' +
           '<span class="t-sm">Tap the <b>Share</b> button in the Safari toolbar</span></div>' +
           '<div class="row g3"><span class="po-num">2</span>' +
           '<span class="t-sm">Scroll and choose <b>Add to Home Screen</b></span></div>' +
           '<div class="row g3"><span class="po-num">3</span>' +
-          '<span class="t-sm">Tap <b>Add</b> — MarketBridge appears on your home screen</span></div>' +
+          '<span class="t-sm">Tap <b>Add</b> — VYBE appears on your home screen</span></div>' +
         '</div>' +
         '<button class="btn btn-primary btn-block mt6" data-sheet-close>Got it</button>' +
       '</div>');
@@ -154,7 +154,7 @@
     deferredPrompt = null;
     isStandalone = true;
     hideBar();
-    MB.toast('MarketBridge installed');
+    MB.toast('VYBE installed');
   });
 
   document.addEventListener('click', function (e) {

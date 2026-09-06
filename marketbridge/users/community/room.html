@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Room — MarketBridge</title>
-<meta name="theme-color" content="#0A0E12">
+<title>Room — VYBE</title>
+<meta name="theme-color" content="#080B0F">
 <link rel="manifest" href="../../manifest.webmanifest">
 <link rel="icon" href="../../assets/icons/favicon-32.png" sizes="32x32">
 <link rel="apple-touch-icon" href="../../assets/icons/apple-touch-icon.png">
@@ -15,7 +15,7 @@
 <link rel="stylesheet" href="../../assets/css/base.css">
 <link rel="stylesheet" href="../../assets/css/components.css">
 <link rel="stylesheet" href="../../assets/css/app.css">
-<script>(function(){try{var t=localStorage.getItem('mb.theme');if(t){document.documentElement.setAttribute('data-theme',t);}}catch(e){}})();</script>
+<script>(function(){var t='dark';try{t=localStorage.getItem('mb.theme')||'dark';}catch(e){}var m=/[?&]theme=(dark|light|system)/.exec(location.search);if(m){t=m[1];}if(t!=='system'){document.documentElement.setAttribute('data-theme',t);}})();</script>
 </head>
 <body data-shell="app" data-nav="community" data-root="../../" data-title="Room" data-back="index.html" data-unread="3">
 
@@ -169,23 +169,30 @@ MB.ready(function () {
     MB.mountIcons();
 
     /* Posts and signals scoped to this room's market */
-    if (room.market) {
-      MB.render({ into: '#panePosts', from: 'posts', limit: 8,
-        filter: function (p) { return p.market && p.market.symbol === room.market.symbol; },
-        template: MB.card.post, emptyIcon:'community', emptyTitle:'No posts yet',
-        emptyText:'Start the conversation about this market.' });
-      MB.render({ into: '#paneSignals', from: 'signals', limit: 8,
-        filter: function (s) { return s.market.symbol === room.market.symbol; },
-        template: MB.card.sig, emptyIcon:'signals', emptyTitle:'No signals yet',
-        emptyText:'Nobody has posted for this market yet.' });
-    } else {
-      MB.render({ into: '#panePosts', from: 'posts', limit: 6,
-        filter: function (p) { return p.author.username === room.owner.username; },
-        template: MB.card.post, emptyIcon:'community', emptyTitle:'No posts yet', emptyText:'' });
-      MB.render({ into: '#paneSignals', from: 'signals', limit: 6,
-        filter: function (s) { return s.author.username === room.owner.username; },
-        template: MB.card.sig, emptyIcon:'signals', emptyTitle:'No signals yet', emptyText:'' });
-    }
+    /* A market room scopes to its pair; a trader room scopes to its owner.
+       Either way the lists page rather than dumping everything at once. */
+    var isMarket = !!room.market;
+    var postFilter = isMarket
+      ? function (p) { return p.market && p.market.symbol === room.market.symbol; }
+      : function (p) { return p.author.username === room.owner.username; };
+    var sigFilter = isMarket
+      ? function (s) { return s.market.symbol === room.market.symbol; }
+      : function (s) { return s.author.username === room.owner.username; };
+
+    MB.collection({
+      from: 'posts', into: '#panePosts', template: MB.card.post,
+      perPage: 6, mode: 'more', skeletonCount: 2,
+      prepare: function (rows) { return rows.filter(postFilter); },
+      emptyIcon: 'community', emptyTitle: 'No posts yet',
+      emptyText: isMarket ? 'Start the conversation about this market.' : ''
+    });
+    MB.collection({
+      from: 'signals', into: '#paneSignals', template: MB.card.sig,
+      perPage: 6, mode: 'more', skeletonCount: 2,
+      prepare: function (rows) { return rows.filter(sigFilter); },
+      emptyIcon: 'signals', emptyTitle: 'No signals yet',
+      emptyText: isMarket ? 'Nobody has posted for this market yet.' : ''
+    });
   });
 
   /* ---------------------------------------------------------------- chat */
@@ -264,7 +271,7 @@ MB.ready(function () {
     if (!room.members) {
       note.textContent = 'Market rooms are open to everyone — there is no member list to manage.';
       host.innerHTML = '<div class="empty" style="padding:40px 20px">' + MB.icon('users', 40) +
-        '<h3>Open room</h3><p>Anyone on MarketBridge can read and post here.</p></div>';
+        '<h3>Open room</h3><p>Anyone on VYBE can read and post here.</p></div>';
       MB.mountIcons(host);
       return;
     }

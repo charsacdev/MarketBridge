@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Market — MarketBridge</title>
-<meta name="theme-color" content="#0A0E12">
+<title>Market — VYBE</title>
+<meta name="theme-color" content="#080B0F">
 <link rel="manifest" href="../../manifest.webmanifest">
 <link rel="icon" href="../../assets/icons/favicon-32.png" sizes="32x32">
 <link rel="apple-touch-icon" href="../../assets/icons/apple-touch-icon.png">
@@ -15,7 +15,7 @@
 <link rel="stylesheet" href="../../assets/css/base.css">
 <link rel="stylesheet" href="../../assets/css/components.css">
 <link rel="stylesheet" href="../../assets/css/app.css">
-<script>(function(){try{var t=localStorage.getItem('mb.theme');if(t){document.documentElement.setAttribute('data-theme',t);}}catch(e){}})();</script>
+<script>(function(){var t='dark';try{t=localStorage.getItem('mb.theme')||'dark';}catch(e){}var m=/[?&]theme=(dark|light|system)/.exec(location.search);if(m){t=m[1];}if(t!=='system'){document.documentElement.setAttribute('data-theme',t);}})();</script>
 </head>
 <body data-shell="app" data-nav="markets" data-root="../../" data-title="Market" data-back="index.html" data-unread="3">
 
@@ -97,7 +97,7 @@ MB.ready(function () {
   MB.api.list('markets').then(function (rows) {
     var m = rows.filter(function (x) { return x.symbol === symbol; })[0] || rows[0];
     symbol = m.symbol;
-    document.title = m.name + ' — MarketBridge';
+    document.title = m.name + ' — VYBE';
     MB.$('.topbar-title').textContent = m.short_name;
     document.getElementById('mName').textContent = m.name;
     document.getElementById('mPrice').setAttribute('data-tick', m.symbol);
@@ -126,7 +126,7 @@ MB.ready(function () {
       var host = document.getElementById('tradeOptions');
       if (!usable.length) {
         host.innerHTML = '<div class="alert alert-info">' + MB.icon('info', 18) +
-          '<div>No contracts are executable on this market from MarketBridge right now. ' +
+          '<div>No contracts are executable on this market from VYBE right now. ' +
           'Signals for it will appear as analysis.</div></div>';
         MB.mountIcons(host); return;
       }
@@ -147,18 +147,33 @@ MB.ready(function () {
     return function (s) { return s.market.symbol === symbol && s.kind === kind; };
   };
 
-  MB.render({ into: '#mktSignals', from: 'signals', filter: byKind('executable'),
-    template: MB.card.signal, emptyIcon: 'signals', emptyTitle: 'No executable signals',
-    emptyText: 'Nobody has posted a tradeable signal for this market yet.' });
+  /* Each tab is its own paged collection — a busy market can carry dozens of
+     signals and hundreds of posts. */
+  MB.collection({
+    from: 'signals', into: '#mktSignals', template: MB.card.signal,
+    perPage: 5, mode: 'more', skeletonCount: 2,
+    prepare: function (rows) { return rows.filter(byKind('executable')); },
+    emptyIcon: 'signals', emptyTitle: 'No executable signals',
+    emptyText: 'Nobody has posted a tradeable signal for this market yet.'
+  });
 
-  MB.render({ into: '#mktAnalysis', from: 'signals', filter: byKind('analysis'),
-    template: MB.card.signal, emptyIcon: 'chart', emptyTitle: 'No analysis yet',
-    emptyText: 'Be the first to share your read on this market.' });
+  MB.collection({
+    from: 'signals', into: '#mktAnalysis', template: MB.card.signal,
+    perPage: 5, mode: 'more', skeletonCount: 2,
+    prepare: function (rows) { return rows.filter(byKind('analysis')); },
+    emptyIcon: 'chart', emptyTitle: 'No analysis yet',
+    emptyText: 'Be the first to share your read on this market.'
+  });
 
-  MB.render({ into: '#mktPosts', from: 'posts',
-    filter: function (p) { return p.market && p.market.symbol === symbol; },
-    template: MB.card.post, emptyIcon: 'community', emptyTitle: 'Quiet in here',
-    emptyText: 'Start the conversation about this market.' });
+  MB.collection({
+    from: 'posts', into: '#mktPosts', template: MB.card.post,
+    perPage: 6, mode: 'more', skeletonCount: 2,
+    prepare: function (rows) {
+      return rows.filter(function (p) { return p.market && p.market.symbol === symbol; });
+    },
+    emptyIcon: 'community', emptyTitle: 'Quiet in here',
+    emptyText: 'Start the conversation about this market.'
+  });
 
   MB.render({ into: '#mktTraders', from: 'providers', limit: 5,
     template: function (u) {

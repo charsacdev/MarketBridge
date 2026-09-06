@@ -4,8 +4,8 @@
       "id": "pst_official",
       "author": {
         "id": "usr_mb",
-        "username": "MarketBridge",
-        "display_name": "MarketBridge Official",
+        "username": "VYBE",
+        "display_name": "VYBE Official",
         "avatar_url": null,
         "is_verified": true,
         "is_pro": false,
@@ -16,7 +16,7 @@
       "market": null,
       "room_id": null,
       "kind": "announcement",
-      "body": "New mentorship session today at 8PM GMT+1. Don’t miss it! 🎯",
+      "body": "New mentorship session today at 8PM GMT+1. Don\u2019t miss it! \ud83c\udfaf",
       "tags": [
         "Announcement"
       ],
@@ -54,7 +54,9 @@
           "binary",
           "multiplier",
           "cfd_mt5"
-        ]
+        ],
+        "last_price": 1.26418,
+        "change_pct_24h": 0.14
       },
       "room_id": "room_frxGBPUSD",
       "kind": "post",
@@ -101,7 +103,9 @@
           "binary",
           "multiplier",
           "cfd_mt5"
-        ]
+        ],
+        "last_price": 2342.18,
+        "change_pct_24h": -0.68
       },
       "room_id": "room_frxXAUUSD",
       "kind": "post",
@@ -142,7 +146,9 @@
         "contract_kinds": [
           "binary",
           "multiplier"
-        ]
+        ],
+        "last_price": 1247.84,
+        "change_pct_24h": -0.82
       },
       "room_id": "room_1HZ100V",
       "kind": "market_talk",
@@ -183,11 +189,13 @@
         "contract_kinds": [
           "binary",
           "cfd_mt5"
-        ]
+        ],
+        "last_price": 164.372,
+        "change_pct_24h": -0.44
       },
       "room_id": "room_frxEURJPY",
       "kind": "post",
-      "body": "V75 just swept liquidity 🔥 Watching the 543k area closely.",
+      "body": "V75 just swept liquidity \ud83d\udd25 Watching the 543k area closely.",
       "tags": [
         "Swing"
       ],
@@ -228,7 +236,9 @@
         "decimal_places": 2,
         "contract_kinds": [
           "multiplier"
-        ]
+        ],
+        "last_price": 7418.02,
+        "change_pct_24h": -0.31
       },
       "room_id": "room_BOOM300",
       "kind": "post",
@@ -273,7 +283,9 @@
         "decimal_places": 2,
         "contract_kinds": [
           "cfd_mt5"
-        ]
+        ],
+        "last_price": 962.4,
+        "change_pct_24h": 0.42
       },
       "room_id": "room_frxXPTUSD",
       "kind": "market_talk",
@@ -314,7 +326,9 @@
         "contract_kinds": [
           "binary",
           "multiplier"
-        ]
+        ],
+        "last_price": 1245.1,
+        "change_pct_24h": 0.64
       },
       "room_id": "room_R_100",
       "kind": "discussion",
@@ -360,7 +374,9 @@
         "contract_kinds": [
           "binary",
           "multiplier"
-        ]
+        ],
+        "last_price": 542871.21,
+        "change_pct_24h": -1.17
       },
       "room_id": "room_R_75",
       "kind": "post",
@@ -401,7 +417,9 @@
         "contract_kinds": [
           "binary",
           "multiplier"
-        ]
+        ],
+        "last_price": 238.76,
+        "change_pct_24h": 0.68
       },
       "room_id": "room_R_50",
       "kind": "post",
@@ -442,7 +460,9 @@
         "contract_kinds": [
           "binary",
           "cfd_mt5"
-        ]
+        ],
+        "last_price": 0.85922,
+        "change_pct_24h": 0.09
       },
       "room_id": "room_frxEURGBP",
       "kind": "discussion",
@@ -483,7 +503,9 @@
         "contract_kinds": [
           "binary",
           "multiplier"
-        ]
+        ],
+        "last_price": 1247.84,
+        "change_pct_24h": -0.82
       },
       "room_id": "room_1HZ100V",
       "kind": "post",
@@ -524,11 +546,13 @@
         "contract_kinds": [
           "binary",
           "multiplier"
-        ]
+        ],
+        "last_price": 6842.3,
+        "change_pct_24h": 0.22
       },
       "room_id": "room_R_10",
       "kind": "discussion",
-      "body": "Careful with the spread around the session open — got clipped last week.",
+      "body": "Careful with the spread around the session open \u2014 got clipped last week.",
       "tags": [
         "Supply & Demand"
       ],
@@ -565,7 +589,9 @@
         "contract_kinds": [
           "binary",
           "cfd_mt5"
-        ]
+        ],
+        "last_price": 0.60184,
+        "change_pct_24h": -0.19
       },
       "room_id": "room_frxNZDUSD",
       "kind": "discussion",
@@ -606,11 +632,13 @@
         "contract_kinds": [
           "binary",
           "multiplier"
-        ]
+        ],
+        "last_price": 14028.33,
+        "change_pct_24h": -0.32
       },
       "room_id": "room_JD75",
       "kind": "discussion",
-      "body": "Careful with the spread around the session open — got clipped last week.",
+      "body": "Careful with the spread around the session open \u2014 got clipped last week.",
       "tags": [
         "Breakout"
       ],
@@ -647,7 +675,9 @@
         "contract_kinds": [
           "multiplier",
           "cfd_mt5"
-        ]
+        ],
+        "last_price": 78.42,
+        "change_pct_24h": 0.88
       },
       "room_id": "room_WTIUSD",
       "kind": "market_talk",
@@ -689,7 +719,9 @@
           "binary",
           "multiplier",
           "cfd_mt5"
-        ]
+        ],
+        "last_price": 1.35894,
+        "change_pct_24h": -0.11
       },
       "room_id": "room_frxUSDCAD",
       "kind": "discussion",
@@ -730,7 +762,9 @@
         "contract_kinds": [
           "multiplier",
           "cfd_mt5"
-        ]
+        ],
+        "last_price": 84.62,
+        "change_pct_24h": 0.94
       },
       "room_id": "room_cryLTCUSD",
       "kind": "post",
@@ -771,7 +805,9 @@
         "contract_kinds": [
           "multiplier",
           "cfd_mt5"
-        ]
+        ],
+        "last_price": 5284.42,
+        "change_pct_24h": 0.42
       },
       "room_id": "room_OTC_SPC",
       "kind": "post",
@@ -813,7 +849,9 @@
           "binary",
           "multiplier",
           "cfd_mt5"
-        ]
+        ],
+        "last_price": 1.08642,
+        "change_pct_24h": -0.21
       },
       "room_id": "room_frxEURUSD",
       "kind": "discussion",
@@ -859,11 +897,13 @@
         "contract_kinds": [
           "multiplier",
           "cfd_mt5"
-        ]
+        ],
+        "last_price": 172.44,
+        "change_pct_24h": 3.42
       },
       "room_id": "room_crySOLUSD",
       "kind": "post",
-      "body": "V75 just swept liquidity 🔥 Watching the 543k area closely.",
+      "body": "V75 just swept liquidity \ud83d\udd25 Watching the 543k area closely.",
       "tags": [
         "ICT"
       ],
@@ -905,7 +945,9 @@
         "contract_kinds": [
           "binary",
           "multiplier"
-        ]
+        ],
+        "last_price": 239.14,
+        "change_pct_24h": -0.71
       },
       "room_id": "room_1HZ50V",
       "kind": "discussion",
@@ -946,7 +988,9 @@
         "contract_kinds": [
           "binary",
           "multiplier"
-        ]
+        ],
+        "last_price": 1247.84,
+        "change_pct_24h": -0.82
       },
       "room_id": "room_1HZ100V",
       "kind": "post",
@@ -987,7 +1031,9 @@
         "contract_kinds": [
           "binary",
           "multiplier"
-        ]
+        ],
+        "last_price": 4291.63,
+        "change_pct_24h": 0.42
       },
       "room_id": "room_CRASH500",
       "kind": "post",
@@ -1029,7 +1075,9 @@
           "binary",
           "multiplier",
           "cfd_mt5"
-        ]
+        ],
+        "last_price": 1.08642,
+        "change_pct_24h": -0.21
       },
       "room_id": "room_frxEURUSD",
       "kind": "post",
@@ -1075,7 +1123,9 @@
         "contract_kinds": [
           "multiplier",
           "cfd_mt5"
-        ]
+        ],
+        "last_price": 78.42,
+        "change_pct_24h": 0.88
       },
       "room_id": "room_WTIUSD",
       "kind": "discussion",
@@ -1121,7 +1171,9 @@
         "contract_kinds": [
           "multiplier",
           "cfd_mt5"
-        ]
+        ],
+        "last_price": 84.62,
+        "change_pct_24h": 0.94
       },
       "room_id": "room_cryLTCUSD",
       "kind": "post",
@@ -1168,7 +1220,9 @@
           "binary",
           "multiplier",
           "cfd_mt5"
-        ]
+        ],
+        "last_price": 151.284,
+        "change_pct_24h": 0.38
       },
       "room_id": "room_frxUSDJPY",
       "kind": "market_talk",
@@ -1209,7 +1263,9 @@
         "contract_kinds": [
           "binary",
           "multiplier"
-        ]
+        ],
+        "last_price": 6842.3,
+        "change_pct_24h": 0.22
       },
       "room_id": "room_R_10",
       "kind": "market_talk",
@@ -1250,7 +1306,9 @@
         "contract_kinds": [
           "binary",
           "multiplier"
-        ]
+        ],
+        "last_price": 6210.9,
+        "change_pct_24h": -0.55
       },
       "room_id": "room_JD100",
       "kind": "market_talk",
@@ -1291,7 +1349,9 @@
         "contract_kinds": [
           "binary",
           "multiplier"
-        ]
+        ],
+        "last_price": 542893.42,
+        "change_pct_24h": 1.28
       },
       "room_id": "room_1HZ75V",
       "kind": "post",
@@ -1336,7 +1396,9 @@
         "decimal_places": 2,
         "contract_kinds": [
           "binary"
-        ]
+        ],
+        "last_price": 1602.45,
+        "change_pct_24h": -0.91
       },
       "room_id": "room_stpRNG",
       "kind": "discussion",
@@ -1376,7 +1438,9 @@
         "decimal_places": 2,
         "contract_kinds": [
           "cfd_mt5"
-        ]
+        ],
+        "last_price": 38420.5,
+        "change_pct_24h": -0.36
       },
       "room_id": "room_OTC_N225",
       "kind": "post",
@@ -1418,7 +1482,9 @@
           "binary",
           "multiplier",
           "cfd_mt5"
-        ]
+        ],
+        "last_price": 1.35894,
+        "change_pct_24h": -0.11
       },
       "room_id": "room_frxUSDCAD",
       "kind": "post",
@@ -1458,7 +1524,9 @@
         "decimal_places": 2,
         "contract_kinds": [
           "multiplier"
-        ]
+        ],
+        "last_price": 7418.02,
+        "change_pct_24h": -0.31
       },
       "room_id": "room_BOOM300",
       "kind": "post",
@@ -1500,7 +1568,9 @@
           "binary",
           "multiplier",
           "cfd_mt5"
-        ]
+        ],
+        "last_price": 1.08642,
+        "change_pct_24h": -0.21
       },
       "room_id": "room_frxEURUSD",
       "kind": "market_talk",
@@ -1541,7 +1611,9 @@
         "contract_kinds": [
           "multiplier",
           "cfd_mt5"
-        ]
+        ],
+        "last_price": 68420.5,
+        "change_pct_24h": -2.14
       },
       "room_id": "room_cryBTCUSD",
       "kind": "market_talk",
@@ -1583,7 +1655,9 @@
           "binary",
           "multiplier",
           "cfd_mt5"
-        ]
+        ],
+        "last_price": 1.08642,
+        "change_pct_24h": -0.21
       },
       "room_id": "room_frxEURUSD",
       "kind": "market_talk",
@@ -1624,7 +1698,9 @@
         "contract_kinds": [
           "multiplier",
           "cfd_mt5"
-        ]
+        ],
+        "last_price": 0.6284,
+        "change_pct_24h": 1.12
       },
       "room_id": "room_cryXRPUSD",
       "kind": "discussion",
@@ -1665,7 +1741,9 @@
         "contract_kinds": [
           "binary",
           "multiplier"
-        ]
+        ],
+        "last_price": 4820.15,
+        "change_pct_24h": -0.58
       },
       "room_id": "room_CRASH1000",
       "kind": "post",
@@ -1706,7 +1784,9 @@
         "contract_kinds": [
           "binary",
           "multiplier"
-        ]
+        ],
+        "last_price": 4291.63,
+        "change_pct_24h": 0.42
       },
       "room_id": "room_CRASH500",
       "kind": "post",
@@ -1748,7 +1828,9 @@
           "binary",
           "multiplier",
           "cfd_mt5"
-        ]
+        ],
+        "last_price": 0.65712,
+        "change_pct_24h": -0.26
       },
       "room_id": "room_frxAUDUSD",
       "kind": "post",
@@ -1793,7 +1875,9 @@
         "decimal_places": 2,
         "contract_kinds": [
           "binary"
-        ]
+        ],
+        "last_price": 1602.45,
+        "change_pct_24h": -0.91
       },
       "room_id": "room_stpRNG",
       "kind": "market_talk",
@@ -1839,7 +1923,9 @@
         "contract_kinds": [
           "binary",
           "multiplier"
-        ]
+        ],
+        "last_price": 4291.63,
+        "change_pct_24h": 0.42
       },
       "room_id": "room_CRASH500",
       "kind": "discussion",
@@ -1881,7 +1967,9 @@
           "binary",
           "multiplier",
           "cfd_mt5"
-        ]
+        ],
+        "last_price": 27.842,
+        "change_pct_24h": 1.14
       },
       "room_id": "room_frxXAGUSD",
       "kind": "post",
@@ -1927,7 +2015,9 @@
         "contract_kinds": [
           "binary",
           "multiplier"
-        ]
+        ],
+        "last_price": 9120.44,
+        "change_pct_24h": -0.74
       },
       "room_id": "room_BOOM500",
       "kind": "post",
@@ -1972,11 +2062,13 @@
         "decimal_places": 2,
         "contract_kinds": [
           "multiplier"
-        ]
+        ],
+        "last_price": 3182.77,
+        "change_pct_24h": -0.27
       },
       "room_id": "room_JD25",
       "kind": "post",
-      "body": "V75 just swept liquidity 🔥 Watching the 543k area closely.",
+      "body": "V75 just swept liquidity \ud83d\udd25 Watching the 543k area closely.",
       "tags": [
         "Liquidity Sweep"
       ],
@@ -2012,7 +2104,9 @@
         "decimal_places": 2,
         "contract_kinds": [
           "cfd_mt5"
-        ]
+        ],
+        "last_price": 8142.3,
+        "change_pct_24h": 0.18
       },
       "room_id": "room_OTC_FTSE",
       "kind": "post",
@@ -2057,7 +2151,9 @@
         "decimal_places": 4,
         "contract_kinds": [
           "cfd_mt5"
-        ]
+        ],
+        "last_price": 0.4482,
+        "change_pct_24h": 1.24
       },
       "room_id": "room_cryADAUSD",
       "kind": "discussion",
@@ -2098,7 +2194,9 @@
         "contract_kinds": [
           "binary",
           "multiplier"
-        ]
+        ],
+        "last_price": 14028.33,
+        "change_pct_24h": -0.32
       },
       "room_id": "room_JD75",
       "kind": "discussion",
@@ -2138,7 +2236,9 @@
         "decimal_places": 2,
         "contract_kinds": [
           "multiplier"
-        ]
+        ],
+        "last_price": 3182.77,
+        "change_pct_24h": -0.27
       },
       "room_id": "room_JD25",
       "kind": "post",
@@ -2179,11 +2279,13 @@
         "contract_kinds": [
           "multiplier",
           "cfd_mt5"
-        ]
+        ],
+        "last_price": 3542.18,
+        "change_pct_24h": 1.68
       },
       "room_id": "room_cryETHUSD",
       "kind": "post",
-      "body": "Careful with the spread around the session open — got clipped last week.",
+      "body": "Careful with the spread around the session open \u2014 got clipped last week.",
       "tags": [
         "Supply & Demand"
       ],
@@ -2220,7 +2322,9 @@
         "contract_kinds": [
           "multiplier",
           "cfd_mt5"
-        ]
+        ],
+        "last_price": 5284.42,
+        "change_pct_24h": 0.42
       },
       "room_id": "room_OTC_SPC",
       "kind": "post",
@@ -2260,7 +2364,9 @@
         "decimal_places": 2,
         "contract_kinds": [
           "binary"
-        ]
+        ],
+        "last_price": 1602.45,
+        "change_pct_24h": -0.91
       },
       "room_id": "room_stpRNG",
       "kind": "discussion",
@@ -2302,7 +2408,9 @@
           "binary",
           "multiplier",
           "cfd_mt5"
-        ]
+        ],
+        "last_price": 1.26418,
+        "change_pct_24h": 0.14
       },
       "room_id": "room_frxGBPUSD",
       "kind": "post",
@@ -2348,7 +2456,9 @@
         "contract_kinds": [
           "binary",
           "multiplier"
-        ]
+        ],
+        "last_price": 238.76,
+        "change_pct_24h": 0.68
       },
       "room_id": "room_R_50",
       "kind": "market_talk",
@@ -2390,7 +2500,9 @@
           "binary",
           "multiplier",
           "cfd_mt5"
-        ]
+        ],
+        "last_price": 2342.18,
+        "change_pct_24h": -0.68
       },
       "room_id": "room_frxXAUUSD",
       "kind": "post",
@@ -2430,11 +2542,13 @@
         "decimal_places": 2,
         "contract_kinds": [
           "cfd_mt5"
-        ]
+        ],
+        "last_price": 38420.5,
+        "change_pct_24h": -0.36
       },
       "room_id": "room_OTC_N225",
       "kind": "post",
-      "body": "Careful with the spread around the session open — got clipped last week.",
+      "body": "Careful with the spread around the session open \u2014 got clipped last week.",
       "tags": [
         "ICT"
       ],
@@ -2470,7 +2584,9 @@
         "decimal_places": 2,
         "contract_kinds": [
           "cfd_mt5"
-        ]
+        ],
+        "last_price": 18642.8,
+        "change_pct_24h": 0.62
       },
       "room_id": "room_OTC_GDAXI",
       "kind": "post",
@@ -2515,7 +2631,9 @@
         "decimal_places": 2,
         "contract_kinds": [
           "cfd_mt5"
-        ]
+        ],
+        "last_price": 1024.6,
+        "change_pct_24h": 0.31
       },
       "room_id": "room_frxXPDUSD",
       "kind": "discussion",
@@ -2555,11 +2673,13 @@
         "decimal_places": 2,
         "contract_kinds": [
           "cfd_mt5"
-        ]
+        ],
+        "last_price": 1024.6,
+        "change_pct_24h": 0.31
       },
       "room_id": "room_frxXPDUSD",
       "kind": "post",
-      "body": "Careful with the spread around the session open — got clipped last week.",
+      "body": "Careful with the spread around the session open \u2014 got clipped last week.",
       "tags": [
         "SMC"
       ],
@@ -2596,11 +2716,13 @@
         "contract_kinds": [
           "binary",
           "multiplier"
-        ]
+        ],
+        "last_price": 8342.11,
+        "change_pct_24h": -1.12
       },
       "room_id": "room_BOOM1000",
       "kind": "market_talk",
-      "body": "V75 just swept liquidity 🔥 Watching the 543k area closely.",
+      "body": "V75 just swept liquidity \ud83d\udd25 Watching the 543k area closely.",
       "tags": [
         "Breakout"
       ],
@@ -2638,11 +2760,13 @@
           "binary",
           "multiplier",
           "cfd_mt5"
-        ]
+        ],
+        "last_price": 2342.18,
+        "change_pct_24h": -0.68
       },
       "room_id": "room_frxXAUUSD",
       "kind": "market_talk",
-      "body": "Careful with the spread around the session open — got clipped last week.",
+      "body": "Careful with the spread around the session open \u2014 got clipped last week.",
       "tags": [
         "Liquidity Sweep"
       ],
@@ -2678,11 +2802,13 @@
         "decimal_places": 2,
         "contract_kinds": [
           "multiplier"
-        ]
+        ],
+        "last_price": 6104.88,
+        "change_pct_24h": 0.19
       },
       "room_id": "room_CRASH300",
       "kind": "discussion",
-      "body": "V75 just swept liquidity 🔥 Watching the 543k area closely.",
+      "body": "V75 just swept liquidity \ud83d\udd25 Watching the 543k area closely.",
       "tags": [
         "Supply & Demand"
       ],
@@ -2719,7 +2845,9 @@
         "contract_kinds": [
           "multiplier",
           "cfd_mt5"
-        ]
+        ],
+        "last_price": 0.6284,
+        "change_pct_24h": 1.12
       },
       "room_id": "room_cryXRPUSD",
       "kind": "discussion",
@@ -2766,7 +2894,9 @@
           "binary",
           "multiplier",
           "cfd_mt5"
-        ]
+        ],
+        "last_price": 27.842,
+        "change_pct_24h": 1.14
       },
       "room_id": "room_frxXAGUSD",
       "kind": "post",
@@ -2807,7 +2937,9 @@
         "contract_kinds": [
           "binary",
           "cfd_mt5"
-        ]
+        ],
+        "last_price": 164.372,
+        "change_pct_24h": -0.44
       },
       "room_id": "room_frxEURJPY",
       "kind": "discussion",
@@ -2848,11 +2980,13 @@
         "contract_kinds": [
           "multiplier",
           "cfd_mt5"
-        ]
+        ],
+        "last_price": 68420.5,
+        "change_pct_24h": -2.14
       },
       "room_id": "room_cryBTCUSD",
       "kind": "post",
-      "body": "Careful with the spread around the session open — got clipped last week.",
+      "body": "Careful with the spread around the session open \u2014 got clipped last week.",
       "tags": [
         "Scalping"
       ],
@@ -2889,7 +3023,9 @@
         "contract_kinds": [
           "binary",
           "multiplier"
-        ]
+        ],
+        "last_price": 4291.63,
+        "change_pct_24h": 0.42
       },
       "room_id": "room_CRASH500",
       "kind": "post",
@@ -2931,7 +3067,9 @@
           "binary",
           "multiplier",
           "cfd_mt5"
-        ]
+        ],
+        "last_price": 2342.18,
+        "change_pct_24h": -0.68
       },
       "room_id": "room_frxXAUUSD",
       "kind": "post",
@@ -2972,7 +3110,9 @@
         "contract_kinds": [
           "binary",
           "multiplier"
-        ]
+        ],
+        "last_price": 8342.11,
+        "change_pct_24h": -1.12
       },
       "room_id": "room_BOOM1000",
       "kind": "market_talk",
@@ -3017,7 +3157,9 @@
         "decimal_places": 2,
         "contract_kinds": [
           "cfd_mt5"
-        ]
+        ],
+        "last_price": 18642.8,
+        "change_pct_24h": 0.62
       },
       "room_id": "room_OTC_GDAXI",
       "kind": "market_talk",
@@ -3058,7 +3200,9 @@
         "contract_kinds": [
           "multiplier",
           "cfd_mt5"
-        ]
+        ],
+        "last_price": 39284.1,
+        "change_pct_24h": 0.24
       },
       "room_id": "room_OTC_DJI",
       "kind": "post",
@@ -3098,7 +3242,9 @@
         "decimal_places": 3,
         "contract_kinds": [
           "binary"
-        ]
+        ],
+        "last_price": 1284.66,
+        "change_pct_24h": 0.44
       },
       "room_id": "room_RB100",
       "kind": "discussion",
@@ -3145,7 +3291,9 @@
           "binary",
           "multiplier",
           "cfd_mt5"
-        ]
+        ],
+        "last_price": 0.90218,
+        "change_pct_24h": 0.07
       },
       "room_id": "room_frxUSDCHF",
       "kind": "market_talk",
@@ -3191,7 +3339,9 @@
         "contract_kinds": [
           "binary",
           "multiplier"
-        ]
+        ],
+        "last_price": 8342.11,
+        "change_pct_24h": -1.12
       },
       "room_id": "room_BOOM1000",
       "kind": "discussion",
@@ -3231,7 +3381,9 @@
         "decimal_places": 3,
         "contract_kinds": [
           "binary"
-        ]
+        ],
+        "last_price": 1284.66,
+        "change_pct_24h": 0.44
       },
       "room_id": "room_RB100",
       "kind": "post",
@@ -3271,7 +3423,9 @@
         "decimal_places": 2,
         "contract_kinds": [
           "cfd_mt5"
-        ]
+        ],
+        "last_price": 7842.1,
+        "change_pct_24h": -0.29
       },
       "room_id": "room_OTC_AS51",
       "kind": "post",
@@ -3311,7 +3465,9 @@
         "decimal_places": 3,
         "contract_kinds": [
           "cfd_mt5"
-        ]
+        ],
+        "last_price": 191.246,
+        "change_pct_24h": 0.52
       },
       "room_id": "room_frxGBPJPY",
       "kind": "post",
@@ -3351,7 +3507,9 @@
         "decimal_places": 2,
         "contract_kinds": [
           "cfd_mt5"
-        ]
+        ],
+        "last_price": 452.18,
+        "change_pct_24h": -0.63
       },
       "room_id": "room_cryBCHUSD",
       "kind": "discussion",
@@ -3397,7 +3555,9 @@
         "contract_kinds": [
           "binary",
           "multiplier"
-        ]
+        ],
+        "last_price": 542871.21,
+        "change_pct_24h": -1.17
       },
       "room_id": "room_R_75",
       "kind": "discussion",
@@ -3438,7 +3598,9 @@
         "contract_kinds": [
           "multiplier",
           "cfd_mt5"
-        ]
+        ],
+        "last_price": 18420.6,
+        "change_pct_24h": -0.88
       },
       "room_id": "room_OTC_NDX",
       "kind": "post",
@@ -3480,7 +3642,9 @@
           "binary",
           "multiplier",
           "cfd_mt5"
-        ]
+        ],
+        "last_price": 151.284,
+        "change_pct_24h": 0.38
       },
       "room_id": "room_frxUSDJPY",
       "kind": "post",
@@ -3520,7 +3684,9 @@
         "decimal_places": 2,
         "contract_kinds": [
           "multiplier"
-        ]
+        ],
+        "last_price": 6104.88,
+        "change_pct_24h": 0.19
       },
       "room_id": "room_CRASH300",
       "kind": "market_talk",
@@ -3561,7 +3727,9 @@
         "contract_kinds": [
           "binary",
           "multiplier"
-        ]
+        ],
+        "last_price": 8342.11,
+        "change_pct_24h": -1.12
       },
       "room_id": "room_BOOM1000",
       "kind": "discussion",
@@ -3601,7 +3769,9 @@
         "decimal_places": 4,
         "contract_kinds": [
           "cfd_mt5"
-        ]
+        ],
+        "last_price": 0.1642,
+        "change_pct_24h": 4.18
       },
       "room_id": "room_cryDOGUSD",
       "kind": "discussion",
@@ -3642,7 +3812,9 @@
         "contract_kinds": [
           "binary",
           "cfd_mt5"
-        ]
+        ],
+        "last_price": 0.85922,
+        "change_pct_24h": 0.09
       },
       "room_id": "room_frxEURGBP",
       "kind": "discussion",
@@ -3682,7 +3854,9 @@
         "decimal_places": 4,
         "contract_kinds": [
           "cfd_mt5"
-        ]
+        ],
+        "last_price": 0.4482,
+        "change_pct_24h": 1.24
       },
       "room_id": "room_cryADAUSD",
       "kind": "post",
@@ -3723,11 +3897,13 @@
         "contract_kinds": [
           "binary",
           "cfd_mt5"
-        ]
+        ],
+        "last_price": 0.60184,
+        "change_pct_24h": -0.19
       },
       "room_id": "room_frxNZDUSD",
       "kind": "discussion",
-      "body": "V75 just swept liquidity 🔥 Watching the 543k area closely.",
+      "body": "V75 just swept liquidity \ud83d\udd25 Watching the 543k area closely.",
       "tags": [
         "Breakout"
       ],
@@ -3764,7 +3940,9 @@
         "contract_kinds": [
           "multiplier",
           "cfd_mt5"
-        ]
+        ],
+        "last_price": 18420.6,
+        "change_pct_24h": -0.88
       },
       "room_id": "room_OTC_NDX",
       "kind": "post",
@@ -3806,7 +3984,9 @@
           "binary",
           "multiplier",
           "cfd_mt5"
-        ]
+        ],
+        "last_price": 0.90218,
+        "change_pct_24h": 0.07
       },
       "room_id": "room_frxUSDCHF",
       "kind": "post",
@@ -3852,7 +4032,9 @@
         "contract_kinds": [
           "binary",
           "multiplier"
-        ]
+        ],
+        "last_price": 95.21,
+        "change_pct_24h": 0.35
       },
       "room_id": "room_R_25",
       "kind": "discussion",
@@ -3893,7 +4075,9 @@
         "contract_kinds": [
           "binary",
           "multiplier"
-        ]
+        ],
+        "last_price": 9120.44,
+        "change_pct_24h": -0.74
       },
       "room_id": "room_BOOM500",
       "kind": "post",
@@ -3934,7 +4118,9 @@
         "contract_kinds": [
           "multiplier",
           "cfd_mt5"
-        ]
+        ],
+        "last_price": 3542.18,
+        "change_pct_24h": 1.68
       },
       "room_id": "room_cryETHUSD",
       "kind": "post",
@@ -3980,7 +4166,9 @@
         "contract_kinds": [
           "binary",
           "multiplier"
-        ]
+        ],
+        "last_price": 6210.9,
+        "change_pct_24h": -0.55
       },
       "room_id": "room_JD100",
       "kind": "post",
@@ -4021,11 +4209,13 @@
         "contract_kinds": [
           "binary",
           "multiplier"
-        ]
+        ],
+        "last_price": 542893.42,
+        "change_pct_24h": 1.28
       },
       "room_id": "room_1HZ75V",
       "kind": "post",
-      "body": "V75 just swept liquidity 🔥 Watching the 543k area closely.",
+      "body": "V75 just swept liquidity \ud83d\udd25 Watching the 543k area closely.",
       "tags": [
         "Liquidity Sweep"
       ],
@@ -4062,7 +4252,9 @@
         "contract_kinds": [
           "multiplier",
           "cfd_mt5"
-        ]
+        ],
+        "last_price": 68420.5,
+        "change_pct_24h": -2.14
       },
       "room_id": "room_cryBTCUSD",
       "kind": "market_talk",
@@ -4102,7 +4294,9 @@
         "decimal_places": 2,
         "contract_kinds": [
           "cfd_mt5"
-        ]
+        ],
+        "last_price": 8142.3,
+        "change_pct_24h": 0.18
       },
       "room_id": "room_OTC_FTSE",
       "kind": "discussion",
@@ -4147,11 +4341,13 @@
         "decimal_places": 2,
         "contract_kinds": [
           "cfd_mt5"
-        ]
+        ],
+        "last_price": 7842.1,
+        "change_pct_24h": -0.29
       },
       "room_id": "room_OTC_AS51",
       "kind": "market_talk",
-      "body": "V75 just swept liquidity 🔥 Watching the 543k area closely.",
+      "body": "V75 just swept liquidity \ud83d\udd25 Watching the 543k area closely.",
       "tags": [
         "ICT"
       ],
@@ -4187,7 +4383,9 @@
         "decimal_places": 2,
         "contract_kinds": [
           "binary"
-        ]
+        ],
+        "last_price": 1602.45,
+        "change_pct_24h": -0.91
       },
       "room_id": "room_stpRNG",
       "kind": "post",
@@ -4228,11 +4426,13 @@
         "contract_kinds": [
           "binary",
           "multiplier"
-        ]
+        ],
+        "last_price": 1247.84,
+        "change_pct_24h": -0.82
       },
       "room_id": "room_1HZ100V",
       "kind": "post",
-      "body": "V75 just swept liquidity 🔥 Watching the 543k area closely.",
+      "body": "V75 just swept liquidity \ud83d\udd25 Watching the 543k area closely.",
       "tags": [
         "Swing"
       ],
@@ -4273,7 +4473,9 @@
         "decimal_places": 4,
         "contract_kinds": [
           "cfd_mt5"
-        ]
+        ],
+        "last_price": 0.1642,
+        "change_pct_24h": 4.18
       },
       "room_id": "room_cryDOGUSD",
       "kind": "discussion",
@@ -4314,11 +4516,13 @@
         "contract_kinds": [
           "multiplier",
           "cfd_mt5"
-        ]
+        ],
+        "last_price": 39284.1,
+        "change_pct_24h": 0.24
       },
       "room_id": "room_OTC_DJI",
       "kind": "market_talk",
-      "body": "Careful with the spread around the session open — got clipped last week.",
+      "body": "Careful with the spread around the session open \u2014 got clipped last week.",
       "tags": [
         "SMC"
       ],
@@ -4360,7 +4564,9 @@
         "contract_kinds": [
           "binary",
           "multiplier"
-        ]
+        ],
+        "last_price": 95.21,
+        "change_pct_24h": 0.35
       },
       "room_id": "room_R_25",
       "kind": "market_talk",
@@ -4402,7 +4608,9 @@
           "binary",
           "multiplier",
           "cfd_mt5"
-        ]
+        ],
+        "last_price": 0.65712,
+        "change_pct_24h": -0.26
       },
       "room_id": "room_frxAUDUSD",
       "kind": "post",
@@ -4443,11 +4651,13 @@
         "contract_kinds": [
           "binary",
           "multiplier"
-        ]
+        ],
+        "last_price": 4820.15,
+        "change_pct_24h": -0.58
       },
       "room_id": "room_CRASH1000",
       "kind": "discussion",
-      "body": "V75 just swept liquidity 🔥 Watching the 543k area closely.",
+      "body": "V75 just swept liquidity \ud83d\udd25 Watching the 543k area closely.",
       "tags": [
         "Scalping"
       ],
@@ -4483,11 +4693,13 @@
         "decimal_places": 2,
         "contract_kinds": [
           "cfd_mt5"
-        ]
+        ],
+        "last_price": 452.18,
+        "change_pct_24h": -0.63
       },
       "room_id": "room_cryBCHUSD",
       "kind": "post",
-      "body": "Careful with the spread around the session open — got clipped last week.",
+      "body": "Careful with the spread around the session open \u2014 got clipped last week.",
       "tags": [
         "Breakout"
       ],
@@ -4528,11 +4740,13 @@
         "decimal_places": 3,
         "contract_kinds": [
           "cfd_mt5"
-        ]
+        ],
+        "last_price": 191.246,
+        "change_pct_24h": 0.52
       },
       "room_id": "room_frxGBPJPY",
       "kind": "post",
-      "body": "Careful with the spread around the session open — got clipped last week.",
+      "body": "Careful with the spread around the session open \u2014 got clipped last week.",
       "tags": [
         "Liquidity Sweep"
       ],
@@ -4569,7 +4783,9 @@
         "contract_kinds": [
           "binary",
           "multiplier"
-        ]
+        ],
+        "last_price": 239.14,
+        "change_pct_24h": -0.71
       },
       "room_id": "room_1HZ50V",
       "kind": "market_talk",
@@ -4610,7 +4826,9 @@
         "contract_kinds": [
           "multiplier",
           "cfd_mt5"
-        ]
+        ],
+        "last_price": 172.44,
+        "change_pct_24h": 3.42
       },
       "room_id": "room_crySOLUSD",
       "kind": "post",
@@ -4656,7 +4874,9 @@
         "contract_kinds": [
           "binary",
           "multiplier"
-        ]
+        ],
+        "last_price": 1245.1,
+        "change_pct_24h": 0.64
       },
       "room_id": "room_R_100",
       "kind": "post",
@@ -4702,11 +4922,13 @@
         "contract_kinds": [
           "multiplier",
           "cfd_mt5"
-        ]
+        ],
+        "last_price": 68420.5,
+        "change_pct_24h": -2.14
       },
       "room_id": "room_cryBTCUSD",
       "kind": "post",
-      "body": "Careful with the spread around the session open — got clipped last week.",
+      "body": "Careful with the spread around the session open \u2014 got clipped last week.",
       "tags": [
         "Scalping"
       ],
@@ -4743,7 +4965,9 @@
         "contract_kinds": [
           "binary",
           "multiplier"
-        ]
+        ],
+        "last_price": 542893.42,
+        "change_pct_24h": 1.28
       },
       "room_id": "room_1HZ75V",
       "kind": "discussion",
@@ -4783,7 +5007,9 @@
         "decimal_places": 2,
         "contract_kinds": [
           "cfd_mt5"
-        ]
+        ],
+        "last_price": 962.4,
+        "change_pct_24h": 0.42
       },
       "room_id": "room_frxXPTUSD",
       "kind": "post",
@@ -4824,7 +5050,9 @@
         "contract_kinds": [
           "binary",
           "multiplier"
-        ]
+        ],
+        "last_price": 542893.42,
+        "change_pct_24h": 1.28
       },
       "room_id": "room_1HZ75V",
       "kind": "market_talk",

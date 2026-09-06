@@ -1,5 +1,5 @@
 /* ==========================================================================
-   MARKETBRIDGE — COLLECTION
+   VYBE — COLLECTION
    One controller for every filtered, paginated list in the customer app.
 
    Ports to Laravel as a Livewire component using WithPagination: the filter
@@ -142,12 +142,17 @@
           '<h3>' + MB.esc(o.emptyTitle || 'Nothing found') + '</h3>' +
           '<p>' + MB.esc(o.emptyText || 'Try a different filter.') + '</p></div>';
         MB.mountIcons(host);
+      if (MB.applyPermissions) { MB.applyPermissions(host); }
         renderPager();
+        /* done() reports every render, empty included, so headers that
+           summarise the filtered set do not go stale. */
+        if (o.done) { o.done([], view, host); }
         return;
       }
 
       host.innerHTML = rows.map(o.template).join('');
       MB.mountIcons(host);
+      if (MB.applyPermissions) { MB.applyPermissions(host); }
       if (MB.mountCharts) { MB.mountCharts(host); }
       if (MB.mountTicks) { MB.mountTicks(host); }
       renderPager();
@@ -172,6 +177,15 @@
       rows: function () { return view.slice(); },
       all: function () { return all.slice(); },
       refresh: function () { render(); return api; },
+      /** Swap the underlying rows, keeping filters and resetting to page 1. */
+      replace: function (rows) {
+        all = rows || [];
+        if (o.prepare) { all = o.prepare(all); }
+        page = 1;
+        shown = perPage;
+        render();
+        return api;
+      },
       /* Bind a [data-group] chip/tab row straight to a filter key */
       bind: function (selector, key) {
         var el = typeof selector === 'string' ? MB.$(selector) : selector;
@@ -221,6 +235,7 @@
           ? 'Serve this folder over HTTP so the mock data can load.'
           : 'Something went wrong. Try again shortly.') + '</p></div>';
       MB.mountIcons(host);
+      if (MB.applyPermissions) { MB.applyPermissions(host); }
       if (global.console) { console.warn('[MB.collection]', o.from, err); }
     });
 
