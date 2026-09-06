@@ -490,11 +490,30 @@
   /* ======================================================================
      BOOT
      ====================================================================== */
+  /* ======================================================================
+     SESSION
+
+     The customer app has no <body data-role>, so the signed-in user's role
+     comes from /me. Loaded once here, handed to MB.roles, and announced as
+     'mb:session' so a page can render its moderator controls the moment it
+     knows who is looking.
+     ====================================================================== */
+  function bootSession() {
+    if (!MB.roles || !MB.api) { return; }
+    MB.api.get('me').then(function (r) {
+      var u = r.data || {};
+      MB.session = u;
+      MB.roles.setUser(u.role);
+      if (MB.applyPermissions) { MB.applyPermissions(); }
+      document.dispatchEvent(new CustomEvent('mb:session', { detail: { user: u } }));
+    }).catch(function () { /* a signed-out visitor simply has no role */ });
+  }
+
   MB.mountShell = function () {
     var body = document.body;
     var shell = body.getAttribute('data-shell');
 
-    if (shell === 'app')   { renderTopbar(body); renderTabbar(body); renderAcctDrawer(); body.classList.add('has-app'); }
+    if (shell === 'app')   { renderTopbar(body); renderTabbar(body); renderAcctDrawer(); body.classList.add('has-app'); bootSession(); }
     if (shell === 'auth')  { body.classList.add('has-auth'); }
     if (shell === 'admin') { renderAdminRail(body); applyPermissions(); }
     if (shell === 'site')  { renderSiteHeader(body); renderSiteFooter(); }

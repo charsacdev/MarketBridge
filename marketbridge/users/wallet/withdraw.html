@@ -15,7 +15,7 @@
 <link rel="stylesheet" href="../../assets/css/base.css">
 <link rel="stylesheet" href="../../assets/css/components.css">
 <link rel="stylesheet" href="../../assets/css/app.css">
-<script>(function(){var t='dark';try{t=localStorage.getItem('mb.theme')||'dark';}catch(e){}var m=/[?&]theme=(dark|light|system)/.exec(location.search);if(m){t=m[1];}if(t!=='system'){document.documentElement.setAttribute('data-theme',t);}})();</script>
+<script>(function(){var t='dark';try{t=localStorage.getItem('mb.theme')||'dark';}catch(e){}var m=/[?&]theme=(dark|light|system)\b/.exec(location.search);if(m){t=m[1];}if(t!=='system'){document.documentElement.setAttribute('data-theme',t);}})();</script>
 </head>
 <body data-shell="app" data-nav="home" data-root="../../" data-title="Withdraw Funds" data-sub="Choose how to withdraw" data-back="../index.html" data-unread="3">
 
@@ -30,11 +30,11 @@
     </section>
 
     <div class="segment segment-green" data-group id="wMethod">
-      <button class="is-active" data-value="deriv">Deriv</button>
-      <button data-value="kaastro">Kaastro Wallet</button>
+      <button class="is-active" data-value="kaastro">Kaastro <b class="seg-rec">Recommended</b></button>
+      <button data-value="deriv">Deriv</button>
     </div>
 
-    <div id="paneDeriv">
+    <div id="paneDeriv" class="hide">
       <a class="pay-option" href="#">
         <span class="po-num">1</span>
         <span class="grow">
@@ -46,7 +46,7 @@
       <a class="btn btn-ghost btn-block mt4" href="#">Continue to Deriv →</a>
     </div>
 
-    <div id="paneKaastro" class="hide">
+    <div id="paneKaastro">
       <div class="card">
         <div class="label">1. Enter amount (USD)</div>
         <div class="field mt3">
@@ -61,14 +61,29 @@
         <div class="t-h1 w-black c-up num mt2" id="wReceive">95.50 USD</div>
         <div class="t-xs c-3">Fee: <span id="wFee">4.50 USD</span></div>
 
-        <div class="alert alert-info mt4">
+        <div class="alert alert-green mt4">
+          <span data-icon="check"></span>
+          <div class="t-xs"><strong>Already registered with Kaastro?</strong> Continue
+          straight through &mdash; your details are already verified there.</div>
+        </div>
+
+        <div class="alert alert-info mt3">
+          <span data-icon="info"></span>
+          <div class="t-xs"><strong>Not registered yet?</strong> Creating a Kaastro
+          account takes a few minutes and unlocks better rates, faster settlement and
+          a full record of every withdrawal. You only do it once.</div>
+        </div>
+
+        <div class="alert alert-info mt3">
           <span data-icon="info"></span>
           <div class="t-xs">You will be redirected to Kaastro Wallet to complete your
           withdrawal. Their fees and processing times apply.</div>
         </div>
 
-        <a class="btn btn-primary btn-block mt4" href="leaving.html?to=kaastro&amp;dir=withdrawal">
+        <a class="btn btn-trade btn-block mt4" href="leaving.html?to=kaastro&amp;dir=withdrawal">
           Continue to Kaastro Wallet <span data-icon="external"></span></a>
+        <a class="btn btn-ghost btn-block mt2" href="leaving.html?to=kaastro&amp;dir=register">
+          Register on Kaastro <span data-icon="external"></span></a>
       </div>
     </div>
 
@@ -88,6 +103,7 @@
 <script src="../../assets/js/core/charts.js"></script>
 <script src="../../assets/js/core/ws.js"></script>
 <script src="../../assets/js/components/cards.js"></script>
+<script src="../../assets/js/core/roles.js"></script>
 <script src="../../assets/js/core/shell.js"></script>
 <script src="../../assets/js/core/pwa.js"></script>
 <script>

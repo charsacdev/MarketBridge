@@ -21,7 +21,7 @@
 <link rel="stylesheet" href="assets/css/components.css">
 <link rel="stylesheet" href="assets/css/public.css">
 <script>/* Applied before first paint so the theme never flashes. */
-(function(){var t='dark';try{t=localStorage.getItem('mb.theme')||'dark';}catch(e){}var m=/[?&]theme=(dark|light|system)/.exec(location.search);if(m){t=m[1];}if(t!=='system'){document.documentElement.setAttribute('data-theme',t);}})();</script>
+(function(){var t='dark';try{t=localStorage.getItem('mb.theme')||'dark';}catch(e){}var m=/[?&]theme=(dark|light|system)\b/.exec(location.search);if(m){t=m[1];}if(t!=='system'){document.documentElement.setAttribute('data-theme',t);}})();</script>
 </head>
 <body class="site" data-shell="site" data-nav="home" data-root="">
 

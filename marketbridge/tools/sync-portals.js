@@ -2,16 +2,16 @@
 /* ==========================================================================
    VYBE — PORTAL SYNC
 
-   The three staff portals share their page markup. superadmin/ is the source
-   of truth; this script projects the pages each lesser role is allowed to
-   open into admin/ and moderator/, changing only:
+   The two staff portals share their page markup. superadmin/ is the source of
+   truth; this script projects the pages admin/ is allowed to open, changing
+   only:
 
      - <body data-role="…">          so the rail and permission pass know
      - the portal name in the title
 
    Everything else — the table, the actions, the copy — stays byte-identical,
-   so a fix lands in all three portals at once. What each role may actually
-   DO is decided at runtime by assets/js/core/roles.js: controls carrying
+   so a fix lands in both portals at once. What each role may actually DO is
+   decided at runtime by assets/js/core/roles.js: controls carrying
    data-can="<action>" are removed for roles that lack the permission.
 
    Pages listed for a role must also appear in that role's `pages` array in
@@ -31,7 +31,11 @@ const path = require('path');
 const ROOT = path.resolve(__dirname, '..');
 const SRC = 'superadmin';
 
-/* Which pages each portal gets. Detail pages travel with their list page. */
+/* Which pages each portal gets. Detail pages travel with their list page.
+
+   There is no moderator entry, and there must not be one: a moderator is a
+   regular user with elevated reach inside the community, not a console user.
+   Their powers live in the customer app and are gated by MB.roles. */
 const PORTALS = {
   admin: [
     'index.html', 'analytics.html',
@@ -41,24 +45,19 @@ const PORTALS = {
     'community.html', 'community-detail.html',
     'resources.html', 'resource-edit.html',
     'reports.html', 'markets.html', 'transactions.html'
-  ],
-  moderator: [
-    'index.html',
-    'reports.html',
-    'community.html', 'community-detail.html',
-    'signals.html', 'signal-detail.html'
   ]
 };
 
 /* Pages that must never leave superadmin/, as a guard against a careless
    edit to the lists above. */
-const OWNER_ONLY = ['staff.html', 'staff-audit.html', 'capabilities.html', 'settings.html'];
+const OWNER_ONLY = ['agents.html', 'staff.html', 'staff-audit.html',
+                    'capabilities.html', 'settings.html'];
 
 function project(html, role) {
   let out = html.replace(/data-role="superadmin"/g, `data-role="${role}"`);
 
   /* The <title> says which console you are in. */
-  const label = { admin: 'Admin', moderator: 'Moderator', superadmin: 'Admin' }[role];
+  const label = { admin: 'Admin', superadmin: 'Admin' }[role];
   out = out.replace(/<title>([^<]*?)— VYBE Admin<\/title>/,
                     `<title>$1— VYBE ${label}</title>`);
 
@@ -113,7 +112,7 @@ function main() {
     console.log('portals in sync');
     return;
   }
-  console.log(`synced ${written} page(s) into admin/ and moderator/`);
+  console.log(`synced ${written} page(s) into admin/`);
 }
 
 main();

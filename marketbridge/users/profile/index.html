@@ -15,7 +15,7 @@
 <link rel="stylesheet" href="../../assets/css/base.css">
 <link rel="stylesheet" href="../../assets/css/components.css">
 <link rel="stylesheet" href="../../assets/css/app.css">
-<script>(function(){var t='dark';try{t=localStorage.getItem('mb.theme')||'dark';}catch(e){}var m=/[?&]theme=(dark|light|system)/.exec(location.search);if(m){t=m[1];}if(t!=='system'){document.documentElement.setAttribute('data-theme',t);}})();</script>
+<script>(function(){var t='dark';try{t=localStorage.getItem('mb.theme')||'dark';}catch(e){}var m=/[?&]theme=(dark|light|system)\b/.exec(location.search);if(m){t=m[1];}if(t!=='system'){document.documentElement.setAttribute('data-theme',t);}})();</script>
 </head>
 <body data-shell="app" data-nav="home" data-root="../../" data-title="My Profile" data-back="../index.html" data-unread="3">
 
@@ -32,6 +32,8 @@
         <span class="pf-name">
           <span id="meName">&mdash;</span>
           <span class="pf-tick" id="meTick" hidden data-icon="check" data-icon-size="11"></span>
+          <span class="tag-mod" id="meMod" hidden>
+            <span data-icon="shield" data-icon-size="10"></span> Moderator</span>
         </span>
         <span class="pf-handle" id="meHandle">&mdash;</span>
         <span class="pf-verified" id="meVerified" hidden>
@@ -170,6 +172,7 @@
 <script src="../../assets/js/core/charts.js"></script>
 <script src="../../assets/js/core/ws.js"></script>
 <script src="../../assets/js/components/cards.js"></script>
+<script src="../../assets/js/core/roles.js"></script>
 <script src="../../assets/js/core/shell.js"></script>
 <script src="../../assets/js/core/pwa.js"></script>
 <script>
@@ -183,6 +186,8 @@ MB.ready(function () {
     MB.$('#meName').textContent = u.display_name;
     MB.$('#meHandle').textContent = '@' + u.username;
     if (u.is_verified) { MB.$('#meTick').hidden = false; MB.$('#meVerified').hidden = false; }
+    /* A moderator is a normal member with an extra badge — no separate app. */
+    if (u.role === 'moderator') { MB.$('#meMod').hidden = false; }
     MB.$('#meSince').textContent = 'Since ' + (u.member_since || 'Apr 2023');
 
     MB.$('#tbAmount').innerHTML = MB.fmt.money(d.total_balance || 0) +

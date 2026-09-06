@@ -36,6 +36,7 @@
     var mode = o.mode || 'pages';
     var shown = perPage;              /* used by 'more' mode */
     var pagerHost = null;
+    var pagerWatch = null;
     var countHost = o.countInto ? MB.$(o.countInto) : null;
 
     /* ------------------------------------------------------------------ */
@@ -53,7 +54,23 @@
       if (pagerHost && pagerHost.isConnected) { return pagerHost; }
       pagerHost = MB.el('div', { class: mode === 'more' ? 'load-more-wrap' : 'pager-wrap' });
       host.insertAdjacentElement('afterend', pagerHost);
+
+      /* The pager is a SIBLING of its list, so hiding the list — a tab pane,
+         say — leaves the pager on screen. Two panes then show their footers
+         at once under a third tab. Mirror the host's hidden state onto it. */
+      syncPagerVisibility();
+      if (global.MutationObserver && !pagerWatch) {
+        pagerWatch = new global.MutationObserver(syncPagerVisibility);
+        pagerWatch.observe(host, { attributes: true, attributeFilter: ['class', 'hidden', 'style'] });
+      }
       return pagerHost;
+    }
+
+    function syncPagerVisibility() {
+      if (!pagerHost) { return; }
+      var hidden = host.classList.contains('hide') || host.hidden ||
+                   host.style.display === 'none';
+      pagerHost.classList.toggle('hide', hidden);
     }
 
     function renderPager() {
@@ -62,7 +79,9 @@
 
       if (mode === 'more') {
         if (shown >= total) {
-          p.innerHTML = total
+          /* Only worth saying once the list was actually longer than a page —
+             "4 of 4 shown" under four rows is noise. */
+          p.innerHTML = total > perPage
             ? '<div class="list-end">' + total + ' of ' + total + ' shown</div>' : '';
           return;
         }

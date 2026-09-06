@@ -15,7 +15,7 @@
 <link rel="stylesheet" href="../../assets/css/base.css">
 <link rel="stylesheet" href="../../assets/css/components.css">
 <link rel="stylesheet" href="../../assets/css/app.css">
-<script>(function(){var t='dark';try{t=localStorage.getItem('mb.theme')||'dark';}catch(e){}var m=/[?&]theme=(dark|light|system)/.exec(location.search);if(m){t=m[1];}if(t!=='system'){document.documentElement.setAttribute('data-theme',t);}})();</script>
+<script>(function(){var t='dark';try{t=localStorage.getItem('mb.theme')||'dark';}catch(e){}var m=/[?&]theme=(dark|light|system)\b/.exec(location.search);if(m){t=m[1];}if(t!=='system'){document.documentElement.setAttribute('data-theme',t);}})();</script>
 </head>
 <body data-shell="app" data-nav="community" data-root="../../" data-title="Community" data-sub="Every market has a room. Every trader can have one too." data-unread="3">
 
@@ -75,6 +75,7 @@
 <script src="../../assets/js/core/charts.js"></script>
 <script src="../../assets/js/core/ws.js"></script>
 <script src="../../assets/js/components/cards.js"></script>
+<script src="../../assets/js/core/roles.js"></script>
 <script src="../../assets/js/core/shell.js"></script>
 <script src="../../assets/js/core/pwa.js"></script>
 <script>

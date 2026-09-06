@@ -14,7 +14,7 @@
 <link rel="stylesheet" href="../assets/css/base.css">
 <link rel="stylesheet" href="../assets/css/components.css">
 <link rel="stylesheet" href="../assets/css/admin.css">
-<script>(function(){var t='dark';try{t=localStorage.getItem('mb.theme')||'dark';}catch(e){}var m=/[?&]theme=(dark|light|system)/.exec(location.search);if(m){t=m[1];}if(t!=='system'){document.documentElement.setAttribute('data-theme',t);}})();</script>
+<script>(function(){var t='dark';try{t=localStorage.getItem('mb.theme')||'dark';}catch(e){}var m=/[?&]theme=(dark|light|system)\b/.exec(location.search);if(m){t=m[1];}if(t!=='system'){document.documentElement.setAttribute('data-theme',t);}})();</script>
 </head>
 <body data-shell="admin" data-role="admin" data-nav="boosted" data-root="../">
 

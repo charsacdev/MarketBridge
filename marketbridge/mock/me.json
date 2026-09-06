@@ -6,7 +6,7 @@
     "email": "john@example.com",
     "avatar_url": null,
     "is_verified": true,
-    "role": "user",
+    "role": "moderator",
     "bio": "Synthetic indices trader. V75 and Boom mostly.",
     "followers": 156,
     "following": 89,
@@ -48,6 +48,8 @@
       "best_signal": 320.5
     },
     "unread_notifications": 3,
-    "member_since": "Apr 2023"
+    "member_since": "Apr 2023",
+    "moderator_since": "2026-05-14T09:00:00.000Z",
+    "flags_raised": 37
   }
 }

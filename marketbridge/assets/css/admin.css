@@ -509,3 +509,7 @@ table.data.is-compact td { padding: var(--mb-s3) var(--mb-s4); }
     position: sticky; left: 0;
   }
 }
+
+/* The visibility switch on the Agents table — the one control that decides
+   whether a payment agent is put in front of users. */
+.agent-toggle { justify-content: center; }

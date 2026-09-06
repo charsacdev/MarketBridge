@@ -266,6 +266,94 @@
     return true;
   };
 
+  /* ----------------------------------------------------------------------
+     MODAL — a dialog with a body you supply and buttons you name.
+
+     MB.confirm is the yes/no case; this is everything else: a form, a search,
+     a role picker. Returns a handle so the caller can close it from inside.
+
+       var m = MB.modal({
+         title: 'Invite staff',
+         sub:   'They get an email with a one-time link',
+         body:  '<div class="field">…</div>',
+         wide:  true,
+         actions: [
+           { label: 'Cancel', kind: 'ghost', close: true },
+           { label: 'Send invite', kind: 'brand', onClick: function (m) { … } }
+         ],
+         onOpen: function (root, m) { … wire the body … }
+       });
+     ---------------------------------------------------------------------- */
+  MB.modal = function (opts) {
+    var o = opts || {};
+    var wrap = document.createElement('div');
+    wrap.className = 'sheet-backdrop';
+
+    var buttons = (o.actions || []).map(function (a, i) {
+      var kind = { ghost: 'btn-ghost', brand: 'btn-brand', trade: 'btn-trade',
+                   sell: 'btn-sell' }[a.kind] || 'btn-ghost';
+      return '<button class="btn ' + kind + ' grow" data-act="' + i + '"' +
+        (a.disabled ? ' disabled' : '') + '>' + MB.esc(a.label) + '</button>';
+    }).join('');
+
+    wrap.innerHTML =
+      '<div class="sheet' + (o.wide ? ' sheet-wide' : '') +
+        '" role="dialog" aria-modal="true" aria-label="' + MB.esc(o.title || 'Dialog') + '">' +
+        '<div class="sheet-grip"></div>' +
+        '<div class="sheet-head">' +
+          '<div class="grow">' +
+            '<h3 class="t-h2 w-bold">' + MB.esc(o.title || '') + '</h3>' +
+            (o.sub ? '<p class="t-xs c-3 mt2">' + MB.esc(o.sub) + '</p>' : '') +
+          '</div>' +
+          '<button class="icon-btn" data-x aria-label="Close">' + MB.icon('close', 18) + '</button>' +
+        '</div>' +
+        '<div class="sheet-body">' + (o.body || '') + '</div>' +
+        (buttons ? '<div class="sheet-foot">' + buttons + '</div>' : '') +
+      '</div>';
+
+    document.body.appendChild(wrap);
+    document.body.style.overflow = 'hidden';
+
+    var handle = {
+      root: wrap,
+      $: function (sel) { return wrap.querySelector(sel); },
+      $$: function (sel) { return Array.prototype.slice.call(wrap.querySelectorAll(sel)); },
+      close: function () {
+        document.removeEventListener('keydown', onKey);
+        document.body.style.overflow = '';
+        wrap.classList.remove('is-open');
+        setTimeout(function () { wrap.remove(); }, 220);
+        if (o.onClose) { o.onClose(); }
+      },
+      /* Lets a form enable its submit only once it is valid. */
+      setAction: function (i, patch) {
+        var b = wrap.querySelector('[data-act="' + i + '"]');
+        if (!b) { return; }
+        if (patch.disabled !== undefined) { b.disabled = !!patch.disabled; }
+        if (patch.label !== undefined) { b.textContent = patch.label; }
+      }
+    };
+
+    function onKey(e) { if (e.key === 'Escape') { handle.close(); } }
+    document.addEventListener('keydown', onKey);
+    wrap.querySelector('[data-x]').addEventListener('click', handle.close);
+    wrap.addEventListener('click', function (e) { if (e.target === wrap) { handle.close(); } });
+
+    (o.actions || []).forEach(function (a, i) {
+      var b = wrap.querySelector('[data-act="' + i + '"]');
+      if (!b) { return; }
+      b.addEventListener('click', function () {
+        if (a.onClick) { a.onClick(handle); }
+        if (a.close) { handle.close(); }
+      });
+    });
+
+    MB.mountIcons(wrap);
+    requestAnimationFrame(function () { wrap.classList.add('is-open'); });
+    if (o.onOpen) { o.onOpen(wrap, handle); }
+    return handle;
+  };
+
   MB.confirm = function (opts) {
     var o = opts || {};
     return new Promise(function (resolve) {

@@ -276,14 +276,30 @@ composer, the community feed and the room directory.
 
 ## Rooms and chat
 
-- **One room per market** — 49 of them, auto-derived from the catalogue.
-- **Personal trader rooms** — owned by a trader, with a member list. The owner
-  can remove any member except themselves; everyone else sees a read-only list.
-- **Uploads everywhere** — images and files up to 12 MB, 6 per message, via
-  browse, drag-and-drop or paste. `MB.uploads` holds them as object URLs and
-  hands `MB.uploads.list()` to the API; Stage 2 swaps in storage keys.
+Every market pair has a room, and every trader can run their own. Both use the
+same page; what differs is who owns it and what it is scoped to.
 
----
+**The chat fills the screen and scrolls itself.** While the Chat tab is open the
+app takes `100dvh` and only the message list scrolls, so the composer stays put
+and a new message does not push the page down. The room header collapses to an
+identity line in this mode — the description, market links and chart belong to
+the room rather than the conversation, and leaving them expanded left about 70px
+for the messages. They are all still there on the other tabs.
+
+New messages scroll into view only if the reader is already within 60px of the
+bottom; someone reading back is never yanked away.
+
+### A pager belongs to its list
+
+`MB.collection` inserts its pager as a **sibling** of the list it pages. That
+means hiding the list — a tab pane, say — leaves the pager on screen, and two
+hidden panes will show their footers stacked under a third tab. The collection
+now mirrors the host's hidden state onto its pager through a `MutationObserver`,
+so this cannot happen again on any page.
+
+The "N of N shown" footer only appears once the list was actually longer than a
+page. Under four rows it said "4 of 4 shown", which is noise.
+
 
 ## Brand
 
@@ -332,89 +348,149 @@ evenly between buy and sell), and the surfaces that summarise them show it:
 
 ---
 
-## Staff portals
+## Roles
 
-Three portals, cumulative in power. `assets/js/core/roles.js` is the single
-manifest: it declares each role's nav and its permission list, and nothing
-else states them.
+Three roles, one manifest (`assets/js/core/roles.js`). Two are consoles; the
+third is not.
 
-| Portal | Who it is for | Adds over the one before |
+### Moderator — a user, not a console
+
+A moderator **is a regular user**. They keep the whole customer app — trading,
+signals, wallet, profile — and what they gain lives inside the community:
+
+- **Every room, without joining.** Follower-only rooms are hidden from ordinary
+  users; `room.view_all` shows a moderator the whole board, plus a *Not joined*
+  tab.
+- **Flag a message.** A flag on every message but their own, opening a reason
+  sheet (spam, scam, abuse, off-topic, misleading claim, other) with an optional
+  note.
+- **Flag a room.** The same sheet, raised against the room itself.
+
+Everything a moderator can do is *see* or *raise*. Nothing removes, suspends or
+bans — a flag opens a report an admin acts on. That asymmetry is the role: it is
+what keeps a moderator a community member rather than a second class of staff,
+and it is why **there is no `moderator/` folder and must never be one.**
+
+Flags land in the admin Reports queue tagged `source: moderator`, so an admin
+can tell a trusted watcher's flag from a random user report and filter on it.
+
+### Admin and Super Admin — the consoles
+
+| | `admin/` | `superadmin/` |
 |---|---|---|
-| `moderator/` | Content policing | Reports, community rooms, signals. No people, money or settings. |
-| `admin/` | Day-to-day operations | Users, boosted, resources, markets, transactions, analytics. |
-| `superadmin/` | Owns the platform | Staff & Roles, Staff Audit, the capability registry, platform settings. |
+| People, content, money, markets | ✅ | ✅ |
+| Acts on moderator flags | ✅ | ✅ |
+| **Agents** — who users may pay | — | ✅ |
+| Staff & Roles, Staff Audit | — | ✅ |
+| Capability registry, Settings | — | ✅ |
 
-### One markup, three portals
+`superadmin/` is the source of truth for shared page markup;
+`node tools/sync-portals.js` projects it into `admin/`, changing only
+`<body data-role>` and the title. What each role may *do* is decided at runtime:
+any control carrying `data-can="<action>"` is **removed** — not hidden — for a
+role lacking the permission, and the pass re-runs after every table render.
 
-The pages are shared. `superadmin/` is the source of truth and
-`tools/sync-portals.js` projects the pages each lesser role may open into
-`admin/` and `moderator/`, changing only `data-role` on `<body>` and the title.
-Behaviour diverges at runtime instead of in the source:
+In the customer app there is no `<body data-role>`, so the role comes from `/me`
+via `MB.roles.setUser()`, announced as an `mb:session` event.
 
-```html
-<button data-can="user.suspend">Suspend</button>
+`?role=user|moderator|admin|superadmin` forces a role for one page load, for
+checking both sides of a permission without editing a fixture. QA only.
+
+### Dialogs
+
+`MB.confirm()` is the yes/no case. `MB.modal()` is everything else — a form, a
+search, a role picker — taking a body you supply and buttons you name, and
+returning a handle so the caller can close it or enable an action from inside:
+
+```js
+MB.modal({
+  title: 'Add staff', wide: true,
+  body: '…',
+  actions: [{ label: 'Cancel', kind: 'ghost', close: true },
+            { label: 'Send invite', kind: 'brand', onClick: function (m) { … } }],
+  onOpen: function (root, m) { m.setAction(1, { disabled: true }); }
+});
 ```
 
-`applyPermissions()` in `shell.js` **removes** every element whose `data-can`
-the current role does not hold, and re-runs after each datatable or collection
-render. Removing rather than hiding matters: a hidden control still exists in
-the DOM and still reads as an offer.
+**Staff & Roles** uses it for every action, because granting or removing
+someone's access should not happen on a stray click:
 
-```bash
-node tools/sync-portals.js           # after editing any superadmin/ page
-node tools/sync-portals.js --check   # CI: fail if the portals drifted
-```
+- **Add staff** — two paths in one dialog. *Register new admin* takes a name,
+  a work email and a role (moderator is excluded: it is not a console role).
+  *Elevate a user* searches the real member list by email or username and turns
+  an existing member into a moderator; anyone already a moderator is shown but
+  cannot be picked twice. The action button stays disabled until the form is
+  valid or a user is chosen, and relabels itself to match the path.
+- **Change role** — the three roles with what each one actually means, read
+  from the manifest. Save is disabled until the role changes.
+- **Block / Restore** — one button, two dialogs. Blocking asks for a reason and
+  an optional note and says plainly that the audit keeps everything; an already
+  blocked account offers Restore instead.
 
-None of this is a security control — it decides what the UI *offers*. Stage 2
-enforces the same manifest in Laravel middleware and policies, and the
-permission names here are deliberately the names those policies will use.
+Each dialog mutates the row set and calls `redraw()`, so the table and the stat
+counters follow immediately rather than waiting for a reload.
 
-### Responsive
-
-The rail collapses to a drawer at 1020px. Below that the topbar puts the page
-title on its own row and drops its actions to a second one, the subtitle and
-the header search are hidden, and filter rows stack. Tables stay tables — they
-scroll inside `.dt-scroll`, with a one-line hint underneath, because a clipped
-column otherwise reads as a bug.
-
-One thing worth knowing if you touch the grid: the `max-width: 1020px` rule
-must use `grid-template-columns: minmax(0, 1fr)`, not `1fr`. A plain `1fr`
-track cannot shrink below its content's min-content width, so a single wide
-table pushed the whole console past the viewport and everything clipped at the
-right edge.
-
-### Screens
+### Console screens
 
 | Screen | What it does |
 |---|---|
-| `users` → `user-detail` | Profile, trading, transaction history, rooms, and security — last IP, location, device, OS, browser, sessions, 2FA, failed logins |
-| `signals` → `signal-detail` | Chart, body, execution parameters or analysis levels, and full provenance |
+| `users` → `user-detail` | Profile, trading, transactions, rooms, security |
+| `signals` → `signal-detail` | Chart, body, execution or analysis levels, provenance |
 | `boosted` | Impressions, click-through, placement, expiry |
-| `community` → `community-detail` | Growth chart, owner and creator, members with removal, block/flag. Manages market (pair) rooms and personal trader rooms together |
-| `resources` → `resource-edit` | Upload cover and files, free or paid with a price, and a curriculum builder |
-| `markets` | Add and edit markets, including which contract kinds are executable |
-| `transactions` | Approval queue for withdrawals, with per-row and bulk approve/reject |
-| `reports` | Slide-over review with remove / warn / suspend / ban / dismiss |
-| `capabilities` | The Deriv capability registry — what is genuinely executable |
-| `staff` *(owner)* | Who holds access, their role and 2FA state, and the manifest rendered as a comparison |
-| `staff-audit` *(owner)* | Append-only record of every staff action, with severity and IP |
+| `community` → `community-detail` | Growth, owner, members, block/flag |
+| `resources` → `resource-edit` | Upload, free or paid, curriculum builder |
+| `markets` | Add and edit markets, and their executable contract kinds |
+| `transactions` | Withdrawal approval queue, per-row and bulk |
+| `reports` | Review queue, with moderator flags marked as such |
+| `agents` *(owner)* | The Deriv agent directory and its visibility switches |
+| `staff`, `staff-audit` *(owner)* | Who has access; every action they took |
+| `capabilities`, `settings` *(owner)* | What Deriv can execute; platform config |
 
-Every table is a `MB.datatable()` — sortable columns, live search, per-column
-filters, rows-per-page, row selection, export and working pagination.
-`MB.statSlider()` renders the scrollable stat bands; it lives in
-`components/datatable.js` rather than being pasted into each page.
+---
 
-The owner account cannot be demoted or disabled from `staff` — that is the one
-door the page must not be able to lock behind itself.
+## Deposits and withdrawals
 
-### Removed deliberately
+Both screens carry the same **Kaastro | Deriv** switcher, and Kaastro leads on
+both, marked **Recommended**. Each says plainly that Kaastro is the quick path
+for people already registered, and that registering once unlocks better rates
+and a full record — with a *Register on Kaastro* button beside the continue one.
 
-`admin/partners.html` and `admin/audit-logs.html` were removed at the client's
-request, along with their nav entries and fixtures. The staff audit is a
-different thing: it records *staff* actions, not user activity.
+### The Deriv agent route
 
-Users can never reach a staff portal from the customer app. There is no link,
-and Settings does not offer one.
+Deriv's own payment agents, reached over WhatsApp. Two steps:
+
+1. **Collect** — amount, nickname, which Deriv account to credit, and
+   optionally a country to narrow the list.
+2. **Choose an agent** — only agents the Super Admin has ticked, filtered to
+   those whose limits cover the amount, each showing the local-currency
+   estimate at their last advertised rate.
+
+Tapping an agent opens WhatsApp with the message already written:
+
+> Hello *Adebayo Payments*, I am from VYBE by MarketBridge.
+>
+> I want to fund my Deriv account:
+> • Amount: $250.00 USD
+> • Nickname: JohnT
+> • Deriv account: USD Wallet (CR1234567)
+>
+> Please send me the account for payment and your rate. Thank you.
+
+The user never has to explain themselves twice, and the agent has everything
+needed to reply with an account and a rate.
+
+**What this flow is careful about.** VYBE is not party to the transaction: the
+screen says so before the list, rates are labelled *indicative* rather than
+quoted, and tapping an agent records an intent for support to trace — a note,
+never a transaction. Money never touches VYBE on any route here.
+
+### Who users are allowed to see
+
+`superadmin/agents.html` lists Deriv's directory with one control that matters:
+a visibility tick per agent. Only ticked agents reach the deposit screen.
+Hiding is immediate; **showing** asks for confirmation and states whether Deriv
+has verified that agent — because ticking one puts them in front of someone
+about to send money.
 
 ---
 

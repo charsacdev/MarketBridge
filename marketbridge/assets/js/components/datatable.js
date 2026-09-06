@@ -60,7 +60,14 @@
       Object.keys(filters).forEach(function (k) {
         var v = filters[k];
         if (!v || v === 'all') { return; }
-        view = view.filter(function (r) { return String(value(r, k)) === v; });
+        /* A column may map its row to a filterable label — needed whenever the
+           stored value is not what the dropdown offers (a boolean shown as
+           "visible" / "hidden", for instance). */
+        var col = cols.filter(function (c) { return c.key === k; })[0] || {};
+        view = view.filter(function (r) {
+          var actual = col.filterValue ? col.filterValue(r) : value(r, k);
+          return String(actual) === v;
+        });
       });
 
       if (sortKey) {

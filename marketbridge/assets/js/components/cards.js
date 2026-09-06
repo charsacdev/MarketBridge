@@ -601,18 +601,34 @@
       '</div></div>';
     }).join('');
 
-    return '<div class="msg' + (msg.is_own ? ' msg-own' : '') + '">' +
+    /* A moderator gets a flag on every message but their own. It raises a
+       report for the admins — it never removes anything, which is the whole
+       point of the role. data-can lets the permission pass strip it for
+       everyone else without this template knowing who is looking. */
+    var flag = msg.is_own ? '' :
+      '<button class="msg-flag" data-can="message.flag" data-flag-msg="' +
+        MB.esc(msg.id || '') + '" aria-label="Flag this message for review">' +
+        MB.icon('flag', 13) + '</button>';
+
+    return '<div class="msg' + (msg.is_own ? ' msg-own' : '') +
+        (msg.is_flagged ? ' is-flagged' : '') + '">' +
       MB.avatar(msg.author, 'avatar-sm') +
       '<div class="msg-body">' +
         '<div class="msg-head">' +
           '<span class="msg-name">' + MB.esc(msg.author.username) + '</span>' +
           (msg.author.is_pro ? '<span class="badge badge-pro">Pro</span>' : '') +
+          (msg.author.role === 'moderator'
+            ? '<span class="badge badge-mod">Mod</span>' : '') +
           '<span class="msg-time">' + MB.fmt.ago(msg.created_at) + '</span>' +
+          flag +
         '</div>' +
         '<div class="msg-bubble">' +
           (msg.body ? '<div class="msg-text">' + MB.esc(msg.body) + '</div>' : '') +
           att +
         '</div>' +
+        (msg.is_flagged
+          ? '<div class="msg-flagged">' + MB.icon('flag', 11) +
+            ' Flagged for review</div>' : '') +
       '</div>' +
     '</div>';
   };

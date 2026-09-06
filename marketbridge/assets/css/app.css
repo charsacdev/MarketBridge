@@ -367,3 +367,168 @@
   font-size: 10px; font-weight: var(--mb-w-semi); margin-left: 3px;
   color: var(--mb-text-3);
 }
+
+/* ==========================================================================
+   PAYMENT AGENTS — the Deriv deposit route
+   ========================================================================== */
+/* "Recommended" sits inside the segment button without breaking its baseline */
+.segment .seg-rec {
+  display: inline-block; margin-left: 6px; padding: 1px 6px;
+  border-radius: var(--mb-r-pill); font-size: 9px; font-weight: var(--mb-w-black);
+  letter-spacing: .04em; text-transform: uppercase;
+  background: var(--mb-green-soft); color: var(--mb-green);
+}
+.segment button.is-active .seg-rec {
+  background: rgba(255, 255, 255, .22); color: inherit;
+}
+
+.agent-row {
+  display: flex; align-items: center; gap: var(--mb-s3);
+  padding: var(--mb-s4); border-bottom: 1px solid var(--mb-border);
+  transition: background var(--mb-base) var(--mb-ease);
+}
+.agent-row:last-child { border-bottom: 0; }
+.agent-row:hover { background: var(--mb-surface-2); }
+.agent-row .ar-name { font-size: var(--mb-t-sm); font-weight: var(--mb-w-bold); }
+.agent-row .ar-meta {
+  display: block; font-size: var(--mb-t-xs); color: var(--mb-text-3); margin-top: 2px;
+}
+.agent-row .ar-rate {
+  display: block; font-size: var(--mb-t-xs); color: var(--mb-text-2);
+  font-weight: var(--mb-w-semi); margin-top: 3px;
+}
+/* WhatsApp green is WhatsApp's, not ours — it has to look like the app it opens */
+.wa-btn {
+  display: inline-flex; align-items: center; gap: 6px; flex: none;
+  padding: 7px var(--mb-s3); border-radius: var(--mb-r-pill);
+  background: #25D366; color: #06251A;
+  font-size: var(--mb-t-xs); font-weight: var(--mb-w-bold);
+}
+.wa-btn svg { width: 17px; height: 17px; }
+@media (max-width: 420px) {
+  .wa-btn span:last-child { display: none; }
+  .wa-btn { padding: 8px; }
+}
+
+/* ==========================================================================
+   MODERATION — a moderator is a member with a flag, not a console user
+   ========================================================================== */
+.mod-strip {
+  display: flex; align-items: center; gap: var(--mb-s3); flex-wrap: wrap;
+  padding: var(--mb-s3) var(--mb-s4);
+  background: var(--mb-info-soft); border-top: 1px solid var(--mb-info-line);
+}
+.mod-strip-tag {
+  display: inline-flex; align-items: center; gap: 5px; flex: none;
+  font-size: 10px; font-weight: var(--mb-w-black); letter-spacing: .06em;
+  text-transform: uppercase; color: var(--mb-info);
+}
+.mod-strip .btn { flex: none; }
+@media (max-width: 520px) {
+  .mod-strip .grow { flex: 1 1 100%; }
+  .mod-strip .btn { flex: 1 1 auto; justify-content: center; }
+}
+
+.badge-mod { background: var(--mb-info-soft); color: var(--mb-info); }
+
+/* The flag sits in the message header and stays quiet until hovered */
+.msg-flag {
+  margin-left: auto; flex: none; display: inline-flex; align-items: center;
+  padding: 2px 5px; border-radius: var(--mb-r-sm);
+  color: var(--mb-text-3); opacity: .5;
+  transition: opacity var(--mb-base) var(--mb-ease), color var(--mb-base) var(--mb-ease);
+}
+.msg:hover .msg-flag { opacity: 1; }
+.msg-flag:hover { color: var(--mb-sell); background: var(--mb-sell-soft); opacity: 1; }
+.msg-flag svg { width: 13px; height: 13px; }
+
+.msg.is-flagged .msg-bubble {
+  border: 1px solid var(--mb-warn); background: var(--mb-warn-soft);
+}
+.msg-flagged {
+  display: inline-flex; align-items: center; gap: 4px; margin-top: 4px;
+  font-size: 10px; font-weight: var(--mb-w-semi); color: var(--mb-warn);
+}
+.msg-flagged svg { width: 11px; height: 11px; }
+
+.flag-quote {
+  margin-top: var(--mb-s3); padding: var(--mb-s3);
+  border-left: 3px solid var(--mb-border-2); border-radius: var(--mb-r-sm);
+  background: var(--mb-surface-2); font-size: var(--mb-t-sm);
+  color: var(--mb-text-2); max-height: 120px; overflow: auto;
+}
+
+/* Explains a moderator's extra reach where it applies */
+.mod-note {
+  display: flex; gap: var(--mb-s3); align-items: flex-start;
+  padding: var(--mb-s3) var(--mb-s4); border-radius: var(--mb-r-md);
+  background: var(--mb-info-soft); border: 1px solid var(--mb-info-line);
+  font-size: var(--mb-t-xs); color: var(--mb-text-2);
+}
+.mod-note svg { color: var(--mb-info); flex: none; margin-top: 1px; }
+
+/* A compact "Moderator" tag, worn next to the name wherever the user appears */
+.tag-mod {
+  display: inline-flex; align-items: center; gap: 4px; flex: none;
+  padding: 2px 7px; border-radius: var(--mb-r-pill);
+  font-size: 10px; font-weight: var(--mb-w-bold); letter-spacing: .03em;
+  background: var(--mb-info-soft); color: var(--mb-info);
+  border: 1px solid var(--mb-info-line);
+}
+.tag-mod svg { width: 10px; height: 10px; }
+
+/* Agent initials get a defined chip; MB.avatar's colour comes from a user
+   object, and an agent is not one. */
+.agent-row .avatar {
+  background: var(--mb-surface-3); color: var(--mb-text-2);
+  font-weight: var(--mb-w-bold);
+}
+
+/* ==========================================================================
+   FULL-HEIGHT ROOM
+
+   A chat room should sit inside the screen and scroll its own messages, not
+   grow the page: the composer stays reachable and new messages arrive without
+   pushing the whole document down. Applied only while the Chat tab is open —
+   Posts, Signals and Members scroll normally.
+   ========================================================================== */
+.app.is-chatroom { height: 100vh; height: 100dvh; overflow: hidden; }
+
+.app.is-chatroom .page {
+  min-height: 0;                  /* let the flex child actually shrink */
+  overflow: hidden;
+  padding-bottom: calc(var(--mb-nav-h) + var(--mb-safe-b));
+  gap: var(--mb-s4);
+}
+
+/* Everything above the chat keeps its natural height; the chat takes the rest */
+.app.is-chatroom #paneChat {
+  flex: 1; min-height: 0;
+  display: flex; flex-direction: column; gap: var(--mb-s3);
+}
+.app.is-chatroom .chat {
+  flex: 1; min-height: 0;
+  overflow-y: auto; overscroll-behavior: contain;
+  -webkit-overflow-scrolling: touch;
+  padding-right: 2px;             /* room for the scrollbar, not the text */
+  scroll-behavior: smooth;
+}
+.app.is-chatroom .composer { flex: none; margin-top: 0; }
+
+/* In chat mode the header collapses to an identity line. The description,
+   the market links and the chart belong to the room, not to the conversation,
+   and they were leaving roughly 70px for the messages. They are all still
+   there on the other tabs. */
+.app.is-chatroom #rDesc,
+.app.is-chatroom #rLinks,
+.app.is-chatroom #rChartWrap { display: none; }
+
+.app.is-chatroom .mod-strip {
+  padding: var(--mb-s2) var(--mb-s4);
+}
+.app.is-chatroom .mod-strip .grow { display: none; }   /* the explainer */
+
+/* Tighter still when the screen is short */
+@media (max-height: 700px) {
+  .app.is-chatroom .mod-strip { display: none; }
+}

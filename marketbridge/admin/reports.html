@@ -14,7 +14,7 @@
 <link rel="stylesheet" href="../assets/css/base.css">
 <link rel="stylesheet" href="../assets/css/components.css">
 <link rel="stylesheet" href="../assets/css/admin.css">
-<script>(function(){var t='dark';try{t=localStorage.getItem('mb.theme')||'dark';}catch(e){}var m=/[?&]theme=(dark|light|system)/.exec(location.search);if(m){t=m[1];}if(t!=='system'){document.documentElement.setAttribute('data-theme',t);}})();</script>
+<script>(function(){var t='dark';try{t=localStorage.getItem('mb.theme')||'dark';}catch(e){}var m=/[?&]theme=(dark|light|system)\b/.exec(location.search);if(m){t=m[1];}if(t!=='system'){document.documentElement.setAttribute('data-theme',t);}})();</script>
 </head>
 <body data-shell="admin" data-role="admin" data-nav="reports" data-root="../">
 
@@ -140,11 +140,27 @@ MB.ready(function () {
               '<div class="h c-3 truncate" style="max-width:250px">' + MB.esc(r.excerpt) + '</div></div>'; } },
         { key:'target_type', label:'Target', sortable:true,
           filter:['post','comment','signal','profile','room','message'],
-          render: function (r) { return '<span class="c-2">' + r.target_type + '</span>'; } },
+          render: function (r) {
+            return '<span class="c-2">' + r.target_type + '</span>' +
+              (r.room ? '<div class="h c-3 truncate">' + MB.esc(r.room) + '</div>' : '');
+          } },
         { key:'reported_user', label:'Reported user', sortable:true,
           render: function (r) { return userCell(r.reported_user, null, 'user-detail.html?u=' + r.reported_user); } },
-        { key:'reported_by', label:'By', sortable:true,
-          render: function (r) { return '<span class="c-2">@' + MB.esc(r.reported_by) + '</span>'; } },
+        { key:'reported_by', label:'Raised by', sortable:true,
+          render: function (r) {
+            /* A moderator flag carries more weight than a random report —
+               it comes from someone the platform trusts to watch rooms. */
+            return '<span class="c-2">@' + MB.esc(r.reported_by) + '</span>' +
+              (r.source === 'moderator'
+                ? '<div class="h"><span class="role-tag role-moderator">Moderator</span></div>'
+                : '');
+          } },
+        { key:'source', label:'Source', sortable:true, filter:['moderator','user'],
+          render: function (r) {
+            return r.source === 'moderator'
+              ? '<span class="badge badge-info">moderator</span>'
+              : '<span class="c-3">user report</span>';
+          } },
         { key:'status', label:'Status', sortable:true, filter:['pending','under_review','resolved','rejected'],
           render: function (r) { return statusBadge(r.status); } },
         { key:'created_at', label:'When', sortable:true,
